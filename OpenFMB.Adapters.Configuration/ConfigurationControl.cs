@@ -761,7 +761,11 @@ namespace OpenFMB.Adapters.Configuration
                         sNode.Nodes.Add(profileNode);
                     }
 
+                    LoadWorkspaceTree();
+
                     MarkDirty(true);
+
+                   
                 }
             }
         }

@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
+using OpenFMB.Adapters.Core.Models.Schemas;
 using System.ComponentModel;
 using System.Dynamic;
 using System.Runtime.CompilerServices;
@@ -39,6 +40,16 @@ namespace OpenFMB.Adapters.Core.Models
 
         public virtual void ToYaml(YamlMappingNode root)
         {
+            if (string.IsNullOrEmpty(FileInformation.Edition))
+            {
+                FileInformation.Edition = SchemaManager.DefaultVersion;
+            }
+
+            if (string.IsNullOrEmpty(FileInformation.Version))
+            {
+                FileInformation.Version = ConfigurationManager.Version;
+            }
+
             var json = JsonConvert.SerializeObject(this);
             var dict = JsonConvert.DeserializeObject<ExpandoObject>(json, new ExpandoObjectConverter());
 
