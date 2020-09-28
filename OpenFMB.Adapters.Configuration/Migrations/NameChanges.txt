@@ -1,0 +1,8 @@
+// newname:oldname
+analogeventandstatusggio:analogstatusggio
+booleaneventandstatusggio:booleanstatusggio
+integereventandstatusggio:integerstatusggio
+stringeventandstatusggio:stringstatusggio
+switchDiscreteControl:switchControl
+operation-type:control-code
+switchDiscreteControlXSWI:switchControlScheduleFSCH

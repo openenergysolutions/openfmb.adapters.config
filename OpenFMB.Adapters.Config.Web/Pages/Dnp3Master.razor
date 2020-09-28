@@ -1,0 +1,110 @@
+﻿@page "/dnp3-master"
+
+@if (!IsPageReady)
+{
+    <div class="spinner"></div>
+}
+else
+{
+    <MatButton Unelevated="true" OnClick="@OpenDialog">Add Session</MatButton>
+    <MatButton Unelevated="true" OnClick="@Validate">Download</MatButton>
+    <MatDialog @bind-IsOpen="@dialogIsOpen">
+        <MatDialogTitle>Add New Session</MatDialogTitle>
+        <MatDialogContent>
+            <p>Enter session name</p>
+            <MatTextField @bind-Value="@sessionName"></MatTextField>
+        </MatDialogContent>
+        <MatDialogActions>
+            <MatButton OnClick="@(e => { dialogIsOpen = false; })">Cancel</MatButton>
+            <MatButton OnClick="@OkClick">OK</MatButton>
+        </MatDialogActions>
+    </MatDialog>
+
+    <MatDialog @bind-IsOpen="@validating">
+        <MatDialogTitle>OpenFMB</MatDialogTitle>
+        <MatDialogContent>
+            <p>Validating...</p>
+        </MatDialogContent>
+        <MatDialogActions>
+            <MatButton OnClick="@DoneClick">Close</MatButton>
+        </MatDialogActions>
+    </MatDialog>
+
+    <MatDivider Style="margin-top: 2rem !important; margin-bottom: 2rem !important"></MatDivider>
+    <MatSelect @bind-Value="selectedSession">
+        @foreach (var session in Sessions)
+        {
+            <MatOptionString>@session.Name</MatOptionString>
+        }
+
+    </MatSelect>
+    <MatDivider Style="margin-top: 2rem !important"></MatDivider>
+
+    <div style="margin-top: 2rem !important">
+        <p>BreakerReadingProfile</p>
+        <MatAccordion>             
+            @foreach (var node in Mapping.Nodes)
+            {
+                <MatExpansionPanel>
+                    <MatExpansionPanelSummary>
+                        <MatExpansionPanelHeader>Component: @node.Name</MatExpansionPanelHeader>
+                    </MatExpansionPanelSummary>
+                    <MatExpansionPanelDetails>
+                        <MatChipSet Choice="true" @bind-SelectedChip="selectedChip">
+                            @foreach (var child in node.Nodes)
+                            {
+                                <MatChip Label="@child.Name" Value="@child.Path"></MatChip>
+                            }
+                        </MatChipSet>
+                    </MatExpansionPanelDetails>
+                </MatExpansionPanel>
+            }
+        </MatAccordion>
+    </div>
+    <MatDivider Style="margin-top: 2rem !important;margin-bottom: 2rem !important;"></MatDivider>
+    @if (selectedChip != null)
+    {
+        UpdateTree(selectedChip.Value.ToString());
+        <table style="margin-top: 2rem" width="100%">
+            <tr>
+                <td width="50%" valign="top">
+                    <Tree Nodes="Items" ChildSelector="@(item => item.Nodes)" @bind-SelectedNode="selectedNode" HasChildNodes="@(item => item.Nodes?.Any() == true)">
+                        <TitleTemplate>
+                            @context.Text
+                        </TitleTemplate>
+                    </Tree>
+                </td>
+                <td width="50%" valign="top">
+                    @if (selectedNode != null)
+                    {
+                        JSRuntime.InvokeVoidAsync("console.log", selectedNode);
+                    }
+                </td>
+            </tr>
+        </table>
+    }
+}
+
+@code {
+
+    string selectedSession;
+
+    MatChip selectedChip = null;
+    TreeNode selectedNode = null;
+
+    bool dialogIsOpen = false;
+    bool validating = false;
+
+    string sessionName;
+
+    void OpenDialog()
+    {
+        sessionName = null;
+        dialogIsOpen = true;
+    }
+
+    void OkClick()
+    {
+        dialogIsOpen = false;
+    }    
+}

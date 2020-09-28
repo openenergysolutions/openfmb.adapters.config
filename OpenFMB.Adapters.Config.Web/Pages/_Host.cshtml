@@ -1,0 +1,8 @@
+﻿@page "/"
+@namespace OpenFMB.Adapters.Config.Web.Pages
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = "_Layout";
+}
+
+@(await Html.RenderComponentAsync<App>(RenderMode.ServerPrerendered)) 

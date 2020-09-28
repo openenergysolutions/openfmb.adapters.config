@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="AdapterFileInformation.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Models\Schemas\config.json" />
+    <None Remove="Models\Schemas\dnp3-master.json" />
+    <None Remove="Models\Schemas\dnp3-outstation.json" />
+    <None Remove="Models\Schemas\goose-pub.json" />
+    <None Remove="Models\Schemas\goose-sub.json" />
+    <None Remove="Models\Schemas\modbus-master.json" />
+    <None Remove="Models\Schemas\modbus-outstation.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Models\Schemas\config.json" />
+    <EmbeddedResource Include="Models\Schemas\dnp3-master.json" />
+    <EmbeddedResource Include="Models\Schemas\dnp3-outstation.json" />
+    <EmbeddedResource Include="Models\Schemas\goose-pub.json" />
+    <EmbeddedResource Include="Models\Schemas\goose-sub.json" />
+    <EmbeddedResource Include="Models\Schemas\modbus-master.json" />
+    <EmbeddedResource Include="Models\Schemas\modbus-outstation.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" Version="3.13.0" />
+    <PackageReference Include="Newtonsoft.Json.Schema" Version="3.0.13" />
+    <PackageReference Include="YamlDotNet" Version="8.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OpenFMB.Models\OpenFMB.Models.csproj" />
+  </ItemGroup>
+
+</Project>
