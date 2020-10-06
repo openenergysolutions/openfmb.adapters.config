@@ -1074,35 +1074,47 @@ namespace OpenFMB.Adapters.Configuration
 
         private void SuggestedCorrectionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (navTreeView.SelectedNode != null && navTreeView.SelectedNode.Parent != null)
+            if (navTreeView.SelectedNode != null)
             {
-                var parentTreeNode = navTreeView.SelectedNode.Parent as DataTreeNode;
-                var selectedTreeNode = navTreeView.SelectedNode as DataTreeNode;
-
-                Node parentNode = parentTreeNode.Data;
-
-                SuggestedCorrectionForm form = new SuggestedCorrectionForm(selectedTreeNode.Data, _profile);
-                if (form.ShowDialog() == DialogResult.OK)
+                if (navTreeView.SelectedNode.Parent != null)
                 {
-                    if (form.CorrectionType == CorrectionType.Replace)
-                    {                        
-                        try
-                        {
-                            navTreeView.BeginUpdate();
-                            parentTreeNode.Nodes.Clear();
-                            parentNode.Nodes.Clear();
+                    var parentTreeNode = navTreeView.SelectedNode.Parent as DataTreeNode;
+                    var selectedTreeNode = navTreeView.SelectedNode as DataTreeNode;
 
-                            AddNode(parentNode.Tag as JToken, parentNode, parentTreeNode);
-                            ShowMappingNodes(parentNode);
+                    Node parentNode = parentTreeNode.Data;
 
-                            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(""));
-                            UpdateProfileDetails();
-                        }
-                        finally
+                    SuggestedCorrectionForm form = new SuggestedCorrectionForm(selectedTreeNode.Data, _profile);
+                    if (form.ShowDialog() == DialogResult.OK)
+                    {
+                        if (form.CorrectionType == CorrectionType.Replace)
                         {
-                            navTreeView.EndUpdate();
+                            try
+                            {
+                                navTreeView.BeginUpdate();
+                                parentTreeNode.Nodes.Clear();
+                                parentNode.Nodes.Clear();
+
+                                AddNode(parentNode.Tag as JToken, parentNode, parentTreeNode);
+                                ShowMappingNodes(parentNode);
+
+                                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(""));
+                                UpdateProfileDetails();
+                            }
+                            finally
+                            {
+                                navTreeView.EndUpdate();
+                            }
                         }
-                    }                    
+                    }
+                }
+                else if (navTreeView.SelectedNode == navTreeView.Nodes[0]) // root
+                {
+                    // mass correction
+                    var nodes = _profile.GetAllNavigatorNodes().Where(x => x.Name == "f" && x.Schema == null);
+                    foreach(var n in nodes)
+                    {
+
+                    }
                 }
             }
         }
@@ -1114,11 +1126,18 @@ namespace OpenFMB.Adapters.Configuration
             resetToolStripMenuItem.Enabled = false;
             if (selectedNode != null)
             {
-                if (!selectedNode.Data.IsValid)
+                if (selectedNode == navTreeView.Nodes[0]) // root
                 {
-                    if (selectedNode.Data.Parent != null && selectedNode.Data.Parent.IsValid)
+                    suggestedCorrectionToolStripMenuItem.Enabled = _profile.GetAllNavigatorNodes().Where(x => x.Name == "f" && x.Schema == null).Count() > 0;
+                }
+                else
+                {
+                    if (!selectedNode.Data.IsValid)
                     {
-                        suggestedCorrectionToolStripMenuItem.Enabled = true;
+                        if (selectedNode.Data.Parent != null && selectedNode.Data.Parent.Schema != null)
+                        {
+                            suggestedCorrectionToolStripMenuItem.Enabled = true;
+                        }
                     }
                 }
 

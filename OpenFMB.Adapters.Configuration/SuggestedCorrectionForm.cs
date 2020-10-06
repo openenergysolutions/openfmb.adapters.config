@@ -282,7 +282,7 @@ namespace OpenFMB.Adapters.Configuration
 
                     oldObj.Remove(prop.Name);
                 }
-                else if ((oldName = GetNameChanged(oldObj, prop.Name)) != null)
+                else if ((oldName = GetOldName(oldObj, prop.Name)) != null)
                 {
                     var value = oldObj[oldName];
                     prop.Value = value;
@@ -302,34 +302,104 @@ namespace OpenFMB.Adapters.Configuration
                 return;
             }
 
-            foreach(var prop in newObj.Properties())
+            if (oldObj.ContainsKey("i"))
             {
-                string oldName;
+                // Delete "i"
+                oldObj.Remove("i");
+            }
 
-                if (oldObj.ContainsKey(prop.Name))
+            if (oldObj.ContainsKey("f"))
+            {
+                // move up (skip "f") 
+                oldObj = oldObj.GetValue("f") as JObject;
+
+                // and skip "value" for "mag", "ang" has "value because it is optional
+                if (newProp.Name == "mag")
+                {
+                    oldObj = oldObj.GetValue("value") as JObject;
+
+                    foreach (var prop in oldObj.Properties())
+                    {
+                        string newName;
+                        if (newObj.ContainsKey(prop.Name))
+                        {
+                            newObj[prop.Name] = prop.Value;
+                        }
+                        else if ((newName = GetNewName(newObj, prop.Name)) != null)
+                        {
+                            var value = oldObj[prop.Name];
+                            newObj[newName] = value;
+                        }
+                        else
+                        {
+                            newObj.Add(prop.Name, prop.Value);
+                        }
+                    }
+                }
+                else if (newProp.Name == "ang")
                 {                    
-                    var value = oldObj[prop.Name];                    
-                    prop.Value = value;
+                    foreach (var prop in newObj.Properties())
+                    {                        
+                        if (oldObj.ContainsKey(prop.Name))
+                        {
+                            var value = oldObj[prop.Name] as JObject;
 
-                    oldObj.Remove(prop.Name);
-                }
-                else if ((oldName = GetNameChanged(oldObj, prop.Name)) != null)
-                {
-                    var value = oldObj[oldName];
-                    prop.Value = value;
+                            if (value.ContainsKey("float-field-type"))
+                            {
+                                var v = value.GetValue("float-field-type");
 
-                    oldObj.Remove(oldName);
+                                value.Add("double-field-type", v);
+                                value.Remove("float-field-type");                                
+                            }
+                            
+                            prop.Value = value;
+                            break;
+                        }                        
+                    }
                 }
-                else
+                                
+            }
+            else
+            {
+                foreach (var prop in newObj.Properties())
                 {
-                    Merge(oldProp, prop);
+                    string oldName;
+
+                    if (oldObj.ContainsKey(prop.Name))
+                    {
+                        var value = oldObj[prop.Name];
+                        prop.Value = value;
+
+                        oldObj.Remove(prop.Name);
+                    }
+                    else if ((oldName = GetOldName(oldObj, prop.Name)) != null)
+                    {
+                        var value = oldObj[oldName];
+                        prop.Value = value;
+
+                        oldObj.Remove(oldName);
+                    }                    
+                    else
+                    {
+                        Merge(oldProp, prop);
+                    }
                 }
             }
         }
 
-        private string GetNameChanged(JObject obj, string currentName)
+        private string GetOldName(JObject obj, string currentName)
         {
             var name = MigrationManager.GetOldName(currentName);
+            if (name != null && obj.ContainsKey(name))
+            {
+                return name;
+            }
+            return null;
+        }
+
+        private string GetNewName(JObject obj, string oldName)
+        {
+            var name = MigrationManager.GetNewName(oldName);
             if (name != null && obj.ContainsKey(name))
             {
                 return name;

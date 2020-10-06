@@ -6,3 +6,4 @@ stringeventandstatusggio:stringstatusggio
 switchDiscreteControl:switchControl
 operation-type:control-code
 switchDiscreteControlXSWI:switchControlScheduleFSCH
+double-field-type:float-field-type
