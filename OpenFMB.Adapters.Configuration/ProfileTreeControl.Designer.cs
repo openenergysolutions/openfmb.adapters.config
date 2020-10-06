@@ -73,6 +73,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.deviceMridLabel = new System.Windows.Forms.Label();
             this.headerLabel = new System.Windows.Forms.Label();
+            this.quickFixToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -260,11 +261,12 @@
             this.toolStripSeparator4,
             this.viewErrorToolStripMenuItem,
             this.suggestedCorrectionToolStripMenuItem,
+            this.quickFixToolStripMenuItem,
             this.resetToolStripMenuItem,
             this.toolStripSeparator5,
             this.viewSchemaToolStripMenuItem});
             this.navTreeContextMenu.Name = "navTreeContextMenu";
-            this.navTreeContextMenu.Size = new System.Drawing.Size(205, 298);
+            this.navTreeContextMenu.Size = new System.Drawing.Size(205, 342);
             this.navTreeContextMenu.Opening += new System.ComponentModel.CancelEventHandler(this.NavTreeContextMenu_Opening);
             // 
             // expandToolStripMenuItem
@@ -512,6 +514,13 @@
             this.headerLabel.TabIndex = 0;
             this.headerLabel.Text = "SECTION HEADER";
             // 
+            // quickFixToolStripMenuItem
+            // 
+            this.quickFixToolStripMenuItem.Name = "quickFixToolStripMenuItem";
+            this.quickFixToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.quickFixToolStripMenuItem.Text = "Quick Fix All Errors";
+            this.quickFixToolStripMenuItem.Click += new System.EventHandler(this.QuickFixToolStripMenuItem_Click);
+            // 
             // ProfileTreeControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -581,5 +590,6 @@
         private System.Windows.Forms.ToolStripMenuItem viewSchemaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewErrorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem copyToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem quickFixToolStripMenuItem;
     }
 }

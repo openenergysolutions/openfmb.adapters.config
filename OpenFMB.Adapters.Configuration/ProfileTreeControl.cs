@@ -222,119 +222,128 @@ namespace OpenFMB.Adapters.Configuration
 
                 var temp = parentNode.DataNode as DataTreeNode;
                 navTreeView.SelectedNode = temp;
-                
-                flowLayoutPanel.Controls.Clear();
 
-                if (parentNode.Name == "command-order")
+                try
                 {
-                    var mapping = new NavigatorCommandOrderNode(parentNode);
-                    mapping.PropertyChanged += NavigatorNode_PropertyChanged;
-                    flowLayoutPanel.Controls.Add(mapping);
-                }
-                else
-                {
-                    foreach (var node in parentNode.Nodes)
+                    flowLayoutPanel.SuspendLayout();
+
+                    flowLayoutPanel.Controls.Clear();
+
+                    if (parentNode.Name == "command-order")
                     {
-                        if ((node.Tag is JProperty) && (node.Tag as JProperty).Value is JValue)
+                        var mapping = new NavigatorCommandOrderNode(parentNode);
+                        mapping.PropertyChanged += NavigatorNode_PropertyChanged;
+                        flowLayoutPanel.Controls.Add(mapping);
+                    }
+                    else
+                    {
+                        foreach (var node in parentNode.Nodes)
                         {
-                            if (node.Schema == null)
+                            if ((node.Tag is JProperty) && (node.Tag as JProperty).Value is JValue)
                             {
-                                // Error node
-                                var mapping = new NavigatorStringNode(node);
-                                // profile name is not allowed to modify.  Make it readonly
-                                mapping.ReadOnly = true;
-                                flowLayoutPanel.Controls.Add(mapping);
-                            }
-                            else
-                            {
-                                var val = (node.Tag as JProperty).Value as JValue;
-
-                                if (node.Schema.Type == JSchemaType.Number || node.Schema.Type == JSchemaType.Integer)
+                                if (node.Schema == null)
                                 {
-                                    var mapping = new NavigatorNumericNode(node);
-                                    mapping.PropertyChanged += NavigatorNode_PropertyChanged;
+                                    // Error node
+                                    var mapping = new NavigatorStringNode(node);
+                                    // profile name is not allowed to modify.  Make it readonly
+                                    mapping.ReadOnly = true;
                                     flowLayoutPanel.Controls.Add(mapping);
                                 }
-                                else if (node.Schema.Type == JSchemaType.String || (node.Schema.Type == null && node.Schema.Const != null))
+                                else
                                 {
-                                    if (node.Name == "command-id")
+                                    var val = (node.Tag as JProperty).Value as JValue;
+
+                                    if (node.Schema.Type == JSchemaType.Number || node.Schema.Type == JSchemaType.Integer)
                                     {
-                                        var commandOrderNode = _profile.GetAllNavigatorNodes().FirstOrDefault(x => x.Name == "command-order");
-                                        var commandOrderProperty = commandOrderNode.Tag as JProperty;
-                                        var commandIds = (commandOrderProperty.Value as JArray).Select(x => x.ToString()).ToList();                                        
-                                        var mapping = new NavigatorCommandIdNode(node, commandIds);
+                                        var mapping = new NavigatorNumericNode(node);
                                         mapping.PropertyChanged += NavigatorNode_PropertyChanged;
                                         flowLayoutPanel.Controls.Add(mapping);
                                     }
-                                    else if (node.HasEnums || node.Parent.HasOptionsForKey(node.Name))
+                                    else if (node.Schema.Type == JSchemaType.String || (node.Schema.Type == null && node.Schema.Const != null))
                                     {
-                                        var mapping = new NavigatorStringSelectionNode(node);
-                                        mapping.PropertyChanged += NavigatorNode_PropertyChanged;
-                                        flowLayoutPanel.Controls.Add(mapping);
-                                    }
-                                    else
-                                    {
-                                        // check schema format
-                                        if (node.Schema.Pattern == "[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}")
+                                        if (node.Name == "command-id")
                                         {
-                                            var mapping = new NavigatorGuidNode(node);
+                                            var commandOrderNode = _profile.GetAllNavigatorNodes().FirstOrDefault(x => x.Name == "command-order");
+                                            var commandOrderProperty = commandOrderNode.Tag as JProperty;
+                                            var commandIds = (commandOrderProperty.Value as JArray).Select(x => x.ToString()).ToList();
+                                            var mapping = new NavigatorCommandIdNode(node, commandIds);
+                                            mapping.PropertyChanged += NavigatorNode_PropertyChanged;
+                                            flowLayoutPanel.Controls.Add(mapping);
+                                        }
+                                        else if (node.HasEnums || node.Parent.HasOptionsForKey(node.Name))
+                                        {
+                                            var mapping = new NavigatorStringSelectionNode(node);
                                             mapping.PropertyChanged += NavigatorNode_PropertyChanged;
                                             flowLayoutPanel.Controls.Add(mapping);
                                         }
                                         else
                                         {
-                                            if (node.Name == "poll-name" && _profile.PluginName == PluginsSection.Dnp3Master)
+                                            // check schema format
+                                            if (node.Schema.Pattern == "[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}")
                                             {
-                                                // DNP3 poll-name
-                                                var sessionConfig = _profile.SessionConfiguration as Dnp3SessionConfiguration;
-                                                var specific = sessionConfig.SessionSpecificConfig as Dnp3MasterSpecificConfig;
-                                                var polls = specific.Polls.Select(x => x.Name);
-
-                                                var mapping = new NavigatorPollNameNode(node, polls);
+                                                var mapping = new NavigatorGuidNode(node);
                                                 mapping.PropertyChanged += NavigatorNode_PropertyChanged;
                                                 flowLayoutPanel.Controls.Add(mapping);
                                             }
                                             else
-                                            {                                                
-                                                if (node.Name == "name" && IsProfileName(parentNode.Name))
+                                            {
+                                                if (node.Name == "poll-name" && _profile.PluginName == PluginsSection.Dnp3Master)
                                                 {
-                                                    var mapping = new NavigatorStringNode(node, "Name of OpenFMB profile");
-                                                    // profile name is not allowed to modify.  Make it readonly
-                                                    mapping.ReadOnly = true;
+                                                    // DNP3 poll-name
+                                                    var sessionConfig = _profile.SessionConfiguration as Dnp3SessionConfiguration;
+                                                    var specific = sessionConfig.SessionSpecificConfig as Dnp3MasterSpecificConfig;
+                                                    var polls = specific.Polls.Select(x => x.Name);
+
+                                                    var mapping = new NavigatorPollNameNode(node, polls);
                                                     mapping.PropertyChanged += NavigatorNode_PropertyChanged;
                                                     flowLayoutPanel.Controls.Add(mapping);
                                                 }
                                                 else
                                                 {
-                                                    var mapping = new NavigatorStringNode(node);                                                                                                        
-                                                    mapping.PropertyChanged += NavigatorNode_PropertyChanged;
-                                                    flowLayoutPanel.Controls.Add(mapping);
+                                                    if (node.Name == "name" && IsProfileName(parentNode.Name))
+                                                    {
+                                                        var mapping = new NavigatorStringNode(node, "Name of OpenFMB profile");
+                                                        // profile name is not allowed to modify.  Make it readonly
+                                                        mapping.ReadOnly = true;
+                                                        mapping.PropertyChanged += NavigatorNode_PropertyChanged;
+                                                        flowLayoutPanel.Controls.Add(mapping);
+                                                    }
+                                                    else
+                                                    {
+                                                        var mapping = new NavigatorStringNode(node);
+                                                        mapping.PropertyChanged += NavigatorNode_PropertyChanged;
+                                                        flowLayoutPanel.Controls.Add(mapping);
+                                                    }
                                                 }
                                             }
                                         }
                                     }
-                                }
-                                else if (node.Schema.Type == JSchemaType.Boolean)
-                                {
-                                    var mapping = new NavigatorBooleanNode(node);
-                                    mapping.PropertyChanged += NavigatorNode_PropertyChanged;
-                                    flowLayoutPanel.Controls.Add(mapping);
+                                    else if (node.Schema.Type == JSchemaType.Boolean)
+                                    {
+                                        var mapping = new NavigatorBooleanNode(node);
+                                        mapping.PropertyChanged += NavigatorNode_PropertyChanged;
+                                        flowLayoutPanel.Controls.Add(mapping);
+                                    }
                                 }
                             }
-                        }
-                        else if (node.Tag is JValue)
-                        {
-                            var mapping = new NavigatorStringNode(node);
-                            mapping.PropertyChanged += NavigatorNode_PropertyChanged;
-                            flowLayoutPanel.Controls.Add(mapping);
-                        }
-                        else
-                        {
-                            NavigatorNode mapping = new NavigatorNode(node);
-                            mapping.OnDrillDown += MappingOnDrillDown;
-                            flowLayoutPanel.Controls.Add(mapping);
+                            else if (node.Tag is JValue)
+                            {
+                                var mapping = new NavigatorStringNode(node);
+                                mapping.PropertyChanged += NavigatorNode_PropertyChanged;
+                                flowLayoutPanel.Controls.Add(mapping);
+                            }
+                            else
+                            {
+                                NavigatorNode mapping = new NavigatorNode(node);
+                                mapping.OnDrillDown += MappingOnDrillDown;
+                                flowLayoutPanel.Controls.Add(mapping);
+                            }
                         }
                     }
+                }
+                finally
+                {
+                    flowLayoutPanel.ResumeLayout(true);
                 }
 
                 BuildBreadScrum(_selectedNode);
@@ -819,24 +828,33 @@ namespace OpenFMB.Adapters.Configuration
         {
             if (navTreeView.Nodes.Count > 0)
             {
-                navTreeView.CollapseAll();
-                var mappedNodes = (navTreeView.Nodes[0] as DataTreeNode).GetAllNodes().Where(x => x.Data.Value == "mapped");
-                foreach(var n in mappedNodes)
+                try
                 {
-                    n.Expand();
-                    var temp = n.Parent;
-                    while(true)
+                    navTreeView.BeginUpdate();
+
+                    navTreeView.CollapseAll();
+                    var mappedNodes = (navTreeView.Nodes[0] as DataTreeNode).GetAllNodes().Where(x => x.Data.Value == "mapped");
+                    foreach (var n in mappedNodes)
                     {
-                        if (temp != null)
+                        n.Expand();
+                        var temp = n.Parent;
+                        while (true)
                         {
-                            temp.Expand();
-                            temp = temp.Parent;
-                        }
-                        else
-                        {
-                            break;
+                            if (temp != null)
+                            {
+                                temp.Expand();
+                                temp = temp.Parent;
+                            }
+                            else
+                            {
+                                break;
+                            }
                         }
                     }
+                }
+                finally
+                {
+                    navTreeView.EndUpdate();
                 }
             }
         }
@@ -845,23 +863,32 @@ namespace OpenFMB.Adapters.Configuration
         {
             if (navTreeView.Nodes.Count > 0)
             {
-                navTreeView.CollapseAll();
-                var mappedNodes = (navTreeView.Nodes[0] as DataTreeNode).GetAllNodes().Where(x => x.IsValid == false);
-                foreach (var n in mappedNodes)
-                {                    
-                    var temp = n.Parent;
-                    while (true)
+                try
+                {
+                    navTreeView.BeginUpdate();
+
+                    navTreeView.CollapseAll();
+                    var mappedNodes = (navTreeView.Nodes[0] as DataTreeNode).GetAllNodes().Where(x => x.IsValid == false);
+                    foreach (var n in mappedNodes)
                     {
-                        if (temp != null)
+                        var temp = n.Parent;
+                        while (true)
                         {
-                            temp.Expand();
-                            temp = temp.Parent;
-                        }
-                        else
-                        {
-                            break;
+                            if (temp != null)
+                            {
+                                temp.Expand();
+                                temp = temp.Parent;
+                            }
+                            else
+                            {
+                                break;
+                            }
                         }
                     }
+                }
+                finally
+                {
+                    navTreeView.EndUpdate();
                 }
             }
         }
@@ -1097,6 +1124,12 @@ namespace OpenFMB.Adapters.Configuration
                                 AddNode(parentNode.Tag as JToken, parentNode, parentTreeNode);
                                 ShowMappingNodes(parentNode);
 
+                                if (!parentNode.IsValid)
+                                {
+                                    _profile.Validate();
+                                    ValidateNode(parentTreeNode);
+                                }
+
                                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(""));
                                 UpdateProfileDetails();
                             }
@@ -1106,15 +1139,76 @@ namespace OpenFMB.Adapters.Configuration
                             }
                         }
                     }
-                }
-                else if (navTreeView.SelectedNode == navTreeView.Nodes[0]) // root
-                {
-                    // mass correction
-                    var nodes = _profile.GetAllNavigatorNodes().Where(x => x.Name == "f" && x.Schema == null);
-                    foreach(var n in nodes)
-                    {
+                }                
+            }
+        }
 
+        private void QuickFixToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (navTreeView.SelectedNode == navTreeView.Nodes[0]) // root
+            {
+                // mass correction for "f" and "i"
+                var nodes = _profile.GetAllNavigatorNodes().Where(x => x.Name == "f" && x.Schema == null);
+
+                var allTreeNodes = (navTreeView.SelectedNode as DataTreeNode).GetAllNodes();
+
+                try
+                {
+                    navTreeView.BeginUpdate();
+
+                    foreach (var n in nodes)
+                    {
+                        try
+                        {
+                            var treeNode = allTreeNodes.FirstOrDefault(x => x.Data == n);
+                            if (treeNode != null)
+                            {
+                                var suggested = MigrationManager.SuggestCorrection(n);
+                                if (suggested != null)
+                                {
+                                    if (MigrationManager.AcceptCorrection(CorrectionType.Replace, suggested, n.Parent))
+                                    {
+                                        var parentTreeNode = treeNode.Parent as DataTreeNode;
+                                        var selectedTreeNode = treeNode as DataTreeNode;
+
+                                        Node parentNode = parentTreeNode.Data;
+                                        
+                                        parentTreeNode.Nodes.Clear();
+                                        parentNode.Nodes.Clear();
+
+                                        AddNode(parentNode.Tag as JToken, parentNode, parentTreeNode);                                        
+                                    }
+                                }
+                            }
+                        }
+                        catch
+                        {
+                            // ignore
+                        }
                     }
+
+                    _profile.Validate();
+
+                    // mag node for modbus
+                    var errorNodes = _profile.GetAllNavigatorNodes(true).Where(x => (x.Name == "mag" || x.Name == "ang") && x.IsValid == false);
+                    foreach(var n in errorNodes)
+                    {
+                        ValidateNode(n);
+                        var treeNode = allTreeNodes.FirstOrDefault(x => x.Data == n);
+                        if (treeNode != null)
+                        {
+                            treeNode.Update();
+                        }
+                    }
+                }
+                finally
+                {
+                    navTreeView.EndUpdate();
+
+                    ShowMappingNodes(navTreeView.Nodes[0] as DataTreeNode);
+
+                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(""));
+                    UpdateProfileDetails();
                 }
             }
         }
@@ -1123,12 +1217,17 @@ namespace OpenFMB.Adapters.Configuration
         {
             var selectedNode = navTreeView.SelectedNode as DataTreeNode;
             suggestedCorrectionToolStripMenuItem.Enabled = false;
+            quickFixToolStripMenuItem.Visible = false;
             resetToolStripMenuItem.Enabled = false;
             if (selectedNode != null)
             {
                 if (selectedNode == navTreeView.Nodes[0]) // root
                 {
-                    suggestedCorrectionToolStripMenuItem.Enabled = _profile.GetAllNavigatorNodes().Where(x => x.Name == "f" && x.Schema == null).Count() > 0;
+                    var count = _profile.GetAllNavigatorNodes(true).Where(x => x.Name == "f" && x.Schema == null).Count();
+                    if (count > 0)
+                    {
+                        quickFixToolStripMenuItem.Visible = true;
+                    }
                 }
                 else
                 {
@@ -1282,6 +1381,6 @@ namespace OpenFMB.Adapters.Configuration
                 _logger.Log(Level.Debug, ex.Message, ex);
             }
                  
-        }
+        }        
     }
 }

@@ -208,9 +208,9 @@ namespace OpenFMB.Adapters.Core.Models
             return null;
         }
 
-        public List<Node> GetAllNavigatorNodes()
+        public List<Node> GetAllNavigatorNodes(bool refresh = false)
         {
-            if (_allNavigatorNodes == null)
+            if (refresh || _allNavigatorNodes == null)
             {
                 _allNavigatorNodes = NavigatorRoot.Traverse().ToList();
             }

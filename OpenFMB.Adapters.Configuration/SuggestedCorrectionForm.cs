@@ -79,333 +79,30 @@ namespace OpenFMB.Adapters.Configuration
 
             try
             {
-                JSchema schema = _selectedParentNode.Parent != null ? _selectedParentNode.Parent.Schema : _selectedParentNode.Schema;
+                _newToken = MigrationManager.SuggestCorrection(selectedNode);
 
-                if (schema != null)
+                if (_newToken != null)
                 {
-                    if (schema.Type == JSchemaType.Object)
-                    {
-                        var oldProp = _selectedParentNode.Tag as JProperty;
+                    _correctionType = CorrectionType.Replace;
 
-                        // Deep clone before merge
-                        oldProp = oldProp.DeepClone() as JProperty;
+                    acceptButton.Visible = true;
+                    rightText.Text = TokenToYaml(_newToken);
+                    _correctionType = CorrectionType.Replace;
 
-                        JObject jObject = null;
-                        if (oldProp.Value is JObject)
-                        {
-                            jObject = GenerateToken(schema, oldProp) as JObject;
-                        }
-                        else
-                        {
-                            jObject = JsonGenerator.Generate(schema) as JObject;
-                        }
-                        JToken token;
-
-                        if (jObject.TryGetValue(_selectedParentNode.Name, out token))
-                        {
-                            // !!!! This token.Parent is same level as node.Tag object                                                        
-                            var newProp = token.Parent as JProperty;
-
-                            Merge(oldProp, newProp);                            
-
-                            _newToken = newProp;
-                            _correctionType = CorrectionType.Replace;
-
-                            acceptButton.Visible = true;
-
-                            rightText.Text = TokenToYaml(newProp);
-                        }
-                        else
-                        {
-                            rightText.Text = TokenToYaml(jObject);
-                        }
-
-                        DoDiff();
-                    }
-                    else if (schema.Type == JSchemaType.Array)
-                    {
-                        var firstElement = schema.Items.FirstOrDefault();
-
-                        var oldObj = _selectedParentNode.Tag as JObject;
-                        oldObj = oldObj.DeepClone() as JObject;                        
-
-                        foreach (var oneOf in firstElement.OneOf)
-                        {
-                            foreach(var key in oneOf.Required)
-                            {
-                                if (oldObj.ContainsKey(key))
-                                {
-                                    var val = oldObj[key].ToString();
-                                    var s = oneOf.Properties[key].Const?.ToString();
-
-                                    if (val == s)
-                                    {
-                                        // found                                        
-                                        var newObj = GenerateToken(oneOf, oldObj) as JObject;
-                                        Merge(oldObj, newObj);
-
-                                        _newToken = newObj;
-                                        _correctionType = CorrectionType.Replace;
-
-                                        acceptButton.Visible = true;
-
-                                        rightText.Text = TokenToYaml(newObj);
-
-                                        break;
-                                    }
-                                }
-                            }
-                        }
-
-                        DoDiff();
-                    }
-                    else
-                    {
-                        _logger.Log(Level.Debug, "Suggested correction: Schema Type = " + schema.Type);
-                        rightText.Text = "No suggestion";
-                    }
+                    DoDiff();
                 }
                 else
                 {
-                    rightText.Text = "No schema found";
+                    rightText.Text = "No suggestion";
                 }
             }
-            catch (Exception ex)
+            catch
             {
-                _logger.Log(Level.Error, ex.Message, ex);
-
                 rightText.Text = "No schema found";
 
                 _correctionType = CorrectionType.Unknown;
-            }
-        }
-
-        private JToken GenerateToken(JSchema schema, JObject oldObj, JObject existing = null)
-        {
-            if (existing == null)
-            {
-                existing = JsonGenerator.Generate(schema) as JObject;
-            }
-
-            if (schema.OneOf.Count > 0)
-            {
-                foreach(var oneOf in schema.OneOf)
-                {
-                    foreach (var key in oneOf.Required)
-                    {
-                        if (oldObj.ContainsKey(key))
-                        {
-                            var val = oldObj[key].ToString();
-                            var s = oneOf.Properties[key].Const?.ToString();
-
-                            if (val == s)
-                            {
-                                var newToken = JsonGenerator.Generate(oneOf) as JObject;
-                                existing.Merge(newToken, new JsonMergeSettings()
-                                {
-                                    MergeArrayHandling = MergeArrayHandling.Union
-                                });
-
-                                return GenerateToken(oneOf, oldObj, existing);
-                            }
-                        }
-                    }
-                }                
             }            
-
-            return existing;
-        }
-
-        private JToken GenerateToken(JSchema schema, JProperty oldProperty, JObject existing = null)
-        {
-            if (existing == null)
-            {
-                existing = JsonGenerator.Generate(schema) as JObject;
-            }
-
-            if (schema.Properties.Count > 0)
-            {
-                foreach (var prop in schema.Properties)
-                {
-                    if (prop.Key == oldProperty.Name)
-                    {
-                        return GenerateToken(prop.Value, oldProperty, existing);
-                    }
-                }
-            }
-
-            if (schema.OneOf.Count > 0)
-            {
-                var myObj = oldProperty.Value as JObject;
-                foreach (var oneOf in schema.OneOf)
-                {
-                    foreach (var key in oneOf.Required)
-                    {
-                        if (myObj.ContainsKey(key))
-                        {
-                            var val = myObj[key].ToString();
-                            var s = oneOf.Properties[key].Const?.ToString();
-
-                            if (val == s)
-                            {
-                                var newToken = JsonGenerator.Generate(oneOf) as JObject;
-                                var temp = existing[oldProperty.Name] as JObject;
-                                temp.Merge(newToken, new JsonMergeSettings()
-                                {
-                                    MergeArrayHandling = MergeArrayHandling.Union
-                                });
-
-                                return GenerateToken(oneOf, oldProperty, existing);
-                            }
-                        }
-                    }
-                }
-            }
-            return existing;
-        }
-
-        private void Merge(JObject oldObj, JObject newObj)
-        {            
-            if (newObj == null || oldObj == null)
-            {
-                return;
-            }
-
-            foreach (var prop in newObj.Properties())
-            {
-                string oldName;
-
-                if (oldObj.ContainsKey(prop.Name))
-                {
-                    var value = oldObj[prop.Name];
-                    prop.Value = value;
-
-                    oldObj.Remove(prop.Name);
-                }
-                else if ((oldName = GetOldName(oldObj, prop.Name)) != null)
-                {
-                    var value = oldObj[oldName];
-                    prop.Value = value;
-
-                    oldObj.Remove(oldName);
-                }                
-            }
-        }
-
-        private void Merge(JProperty oldProp, JProperty newProp)
-        {            
-            var newObj = newProp.Value as JObject;
-            var oldObj = oldProp.Value as JObject;
-
-            if (newObj == null || oldObj == null)
-            {
-                return;
-            }
-
-            if (oldObj.ContainsKey("i"))
-            {
-                // Delete "i"
-                oldObj.Remove("i");
-            }
-
-            if (oldObj.ContainsKey("f"))
-            {
-                // move up (skip "f") 
-                oldObj = oldObj.GetValue("f") as JObject;
-
-                // and skip "value" for "mag", "ang" has "value because it is optional
-                if (newProp.Name == "mag")
-                {
-                    oldObj = oldObj.GetValue("value") as JObject;
-
-                    foreach (var prop in oldObj.Properties())
-                    {
-                        string newName;
-                        if (newObj.ContainsKey(prop.Name))
-                        {
-                            newObj[prop.Name] = prop.Value;
-                        }
-                        else if ((newName = GetNewName(newObj, prop.Name)) != null)
-                        {
-                            var value = oldObj[prop.Name];
-                            newObj[newName] = value;
-                        }
-                        else
-                        {
-                            newObj.Add(prop.Name, prop.Value);
-                        }
-                    }
-                }
-                else if (newProp.Name == "ang")
-                {                    
-                    foreach (var prop in newObj.Properties())
-                    {                        
-                        if (oldObj.ContainsKey(prop.Name))
-                        {
-                            var value = oldObj[prop.Name] as JObject;
-
-                            if (value.ContainsKey("float-field-type"))
-                            {
-                                var v = value.GetValue("float-field-type");
-
-                                value.Add("double-field-type", v);
-                                value.Remove("float-field-type");                                
-                            }
-                            
-                            prop.Value = value;
-                            break;
-                        }                        
-                    }
-                }
-                                
-            }
-            else
-            {
-                foreach (var prop in newObj.Properties())
-                {
-                    string oldName;
-
-                    if (oldObj.ContainsKey(prop.Name))
-                    {
-                        var value = oldObj[prop.Name];
-                        prop.Value = value;
-
-                        oldObj.Remove(prop.Name);
-                    }
-                    else if ((oldName = GetOldName(oldObj, prop.Name)) != null)
-                    {
-                        var value = oldObj[oldName];
-                        prop.Value = value;
-
-                        oldObj.Remove(oldName);
-                    }                    
-                    else
-                    {
-                        Merge(oldProp, prop);
-                    }
-                }
-            }
-        }
-
-        private string GetOldName(JObject obj, string currentName)
-        {
-            var name = MigrationManager.GetOldName(currentName);
-            if (name != null && obj.ContainsKey(name))
-            {
-                return name;
-            }
-            return null;
-        }
-
-        private string GetNewName(JObject obj, string oldName)
-        {
-            var name = MigrationManager.GetNewName(oldName);
-            if (name != null && obj.ContainsKey(name))
-            {
-                return name;
-            }
-            return null;
-        }
+        }        
 
         private string TokenToYaml(JToken token)
         {
@@ -472,64 +169,78 @@ namespace OpenFMB.Adapters.Configuration
         {
             try
             {
-                if (_correctionType == CorrectionType.Replace)
+                var result = MigrationManager.AcceptCorrection(_correctionType, _newToken, _selectedParentNode);
+                if (result)
                 {
-                    if (_newToken != null)
-                    {
-                        if (_newToken is JProperty)
-                        {
-                            var prop = _newToken as JProperty;
-                            var parent = _selectedParentNode.Parent;
-                            var tag = parent.Tag as JProperty;
-                            if (tag != null)
-                            {
-                                var properties = tag.Value as JObject;
-
-                                if (properties.ContainsKey(prop.Name))
-                                {
-                                    properties[prop.Name] = prop.Value;
-
-                                    DialogResult = DialogResult.OK;
-                                }
-                            }
-                            else
-                            {
-                                var properties = parent.Tag as JObject;
-                                if (properties.ContainsKey(prop.Name))
-                                {
-                                    properties[prop.Name] = prop.Value;
-
-                                    DialogResult = DialogResult.OK;
-                                }
-                            }
-                        }
-                        else if (_newToken is JObject)
-                        {                            
-                            var tag = _selectedParentNode.Tag as JObject;
-                            tag.RemoveAll();
-
-                            tag.Merge(_newToken);
-
-                            DialogResult = DialogResult.OK;                                                   
-                        }
-                    }
+                    DialogResult = DialogResult.OK;
                 }
-                else if (_correctionType == CorrectionType.Delete)
-                {
-                    // TODO
-                }
-                else
-                {
-                    DialogResult = DialogResult.Cancel;
-                }
-
                 Close();
             }
-            catch (Exception ex)
+            catch
             {
-                _logger.Log(Level.Error, ex.Message, ex);
                 MessageBox.Show(this, "An unexpected error has occurred.  Check logs for more information.", Program.AppName, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+            //try
+            //{
+            //    if (_correctionType == CorrectionType.Replace)
+            //    {
+            //        if (_newToken != null)
+            //        {
+            //            if (_newToken is JProperty)
+            //            {
+            //                var prop = _newToken as JProperty;
+            //                var parent = _selectedParentNode.Parent;
+            //                var tag = parent.Tag as JProperty;
+            //                if (tag != null)
+            //                {
+            //                    var properties = tag.Value as JObject;
+
+            //                    if (properties.ContainsKey(prop.Name))
+            //                    {
+            //                        properties[prop.Name] = prop.Value;
+
+            //                        DialogResult = DialogResult.OK;
+            //                    }
+            //                }
+            //                else
+            //                {
+            //                    var properties = parent.Tag as JObject;
+            //                    if (properties.ContainsKey(prop.Name))
+            //                    {
+            //                        properties[prop.Name] = prop.Value;
+
+            //                        DialogResult = DialogResult.OK;
+            //                    }
+            //                }
+            //            }
+            //            else if (_newToken is JObject)
+            //            {                            
+            //                var tag = _selectedParentNode.Tag as JObject;
+            //                tag.RemoveAll();
+
+            //                tag.Merge(_newToken);
+
+            //                DialogResult = DialogResult.OK;                                                   
+            //            }
+            //        }
+            //    }
+            //    else if (_correctionType == CorrectionType.Delete)
+            //    {
+            //        // TODO
+            //    }
+            //    else
+            //    {
+            //        DialogResult = DialogResult.Cancel;
+            //    }
+
+            //    Close();
+            //}
+            //catch (Exception ex)
+            //{
+            //    _logger.Log(Level.Error, ex.Message, ex);
+            //    MessageBox.Show(this, "An unexpected error has occurred.  Check logs for more information.", Program.AppName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //}
         }
     }
 

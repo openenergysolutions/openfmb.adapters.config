@@ -79,18 +79,18 @@ namespace OpenFMB.Adapters.Configuration
 
         public static JToken SuggestCorrection(Node selectedNode)
         {            
-            var _selectedParentNode = selectedNode.Parent;
-            JToken _newToken = null;
+            var selectedParentNode = selectedNode.Parent;
+            JToken newToken = null;
 
             try
             {
-                JSchema schema = _selectedParentNode.Parent != null ? _selectedParentNode.Parent.Schema : _selectedParentNode.Schema;
+                JSchema schema = selectedParentNode.Parent != null ? selectedParentNode.Parent.Schema : selectedParentNode.Schema;
 
                 if (schema != null)
                 {
                     if (schema.Type == JSchemaType.Object)
                     {
-                        var oldProp = _selectedParentNode.Tag as JProperty;
+                        var oldProp = selectedParentNode.Tag as JProperty;
 
                         // Deep clone before merge
                         oldProp = oldProp.DeepClone() as JProperty;
@@ -106,14 +106,14 @@ namespace OpenFMB.Adapters.Configuration
                         }
                         JToken token;
 
-                        if (jObject.TryGetValue(_selectedParentNode.Name, out token))
+                        if (jObject.TryGetValue(selectedParentNode.Name, out token))
                         {
                             // !!!! This token.Parent is same level as node.Tag object                                                        
                             var newProp = token.Parent as JProperty;
 
                             Merge(oldProp, newProp);
 
-                            _newToken = newProp;                            
+                            newToken = newProp;                            
                         }                        
 
                     }
@@ -121,7 +121,7 @@ namespace OpenFMB.Adapters.Configuration
                     {
                         var firstElement = schema.Items.FirstOrDefault();
 
-                        var oldObj = _selectedParentNode.Tag as JObject;
+                        var oldObj = selectedParentNode.Tag as JObject;
                         oldObj = oldObj.DeepClone() as JObject;
 
                         foreach (var oneOf in firstElement.OneOf)
@@ -139,7 +139,7 @@ namespace OpenFMB.Adapters.Configuration
                                         var newObj = GenerateToken(oneOf, oldObj) as JObject;
                                         Merge(oldObj, newObj);
 
-                                        _newToken = newObj;                                        
+                                        newToken = newObj;                                        
 
                                         break;
                                     }
@@ -155,9 +155,68 @@ namespace OpenFMB.Adapters.Configuration
             }
             catch (Exception ex)
             {
-                _logger.Log(Level.Error, ex.Message, ex);                
+                _logger.Log(Level.Error, ex.Message, ex);
+                throw;
             }
-            return _newToken;
+            return newToken;
+        }
+
+        public static bool AcceptCorrection(CorrectionType correctionType, JToken newToken, Node selectedParentNode)
+        {
+            bool result = false;
+            try
+            {
+                if (correctionType == CorrectionType.Replace)
+                {
+                    if (newToken != null)
+                    {
+                        if (newToken is JProperty)
+                        {
+                            var prop = newToken as JProperty;
+                            var parent = selectedParentNode.Parent;
+                            var tag = parent.Tag as JProperty;
+                            if (tag != null)
+                            {
+                                var properties = tag.Value as JObject;
+
+                                if (properties.ContainsKey(prop.Name))
+                                {
+                                    properties[prop.Name] = prop.Value;
+
+                                    result = true;
+                                }
+                            }
+                            else
+                            {
+                                var properties = parent.Tag as JObject;
+                                if (properties.ContainsKey(prop.Name))
+                                {
+                                    properties[prop.Name] = prop.Value;
+
+                                    result = true;
+                                }
+                            }
+                        }
+                        else if (newToken is JObject)
+                        {
+                            var tag = selectedParentNode.Tag as JObject;
+                            tag.RemoveAll();
+
+                            tag.Merge(newToken);
+
+                            result = true;
+                        }
+                    }
+                }                
+            }
+            catch (Exception ex)
+            {
+                _logger.Log(Level.Error, ex.Message, ex);
+                result = false;
+                throw;
+            }
+
+            return result;
         }
 
         private static JToken GenerateToken(JSchema schema, JObject oldObj, JObject existing = null)
