@@ -574,6 +574,7 @@ namespace OpenFMB.Adapters.Core.Models
         }
 
         [Category("Polls"), DisplayName("Poll Policy"), Description("Specify DNP3 periodic poll policy that will be used by specific profile mapping.")]
+        [JsonProperty("polls")]
         public ObservableCollection<Dnp3Poll> Polls { get; set; } = new ObservableCollection<Dnp3Poll>();
 
         [Browsable(false)]

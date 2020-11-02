@@ -49,27 +49,48 @@ namespace OpenFMB.Adapters.Core.Parsers
             List<ICsvRow> rows = new List<ICsvRow>();
             using (var reader = new StreamReader(filePath))
             {
+                bool hasDescription = false;
+
                 if (pluginName == PluginsSection.ModbusMaster)
                 {
-                    string line;
+                    string line;                    
 
                     while ((line = reader.ReadLine()) != null)
                     {
                         var tokens = line.Split(',');
-                        if (tokens[0] == "Path")
+                        if (tokens[0].ToLower() == "path")
                         {
+                            if (tokens[1].ToLower() == "description")
+                            {
+                                hasDescription = true;
+                            }
                             continue;
                         }
 
-                        rows.Add(new ModbusCsvRow()
+                        if (hasDescription)
                         {
-                            Path = tokens[0],
-                            Description = tokens[1],
-                            Index = tokens[2],
-                            UpperIndex = tokens[3],
-                            DataType = tokens[4],
-                            Value = ""
-                        });
+                            rows.Add(new ModbusCsvRow()
+                            {
+                                Path = tokens[0],
+                                Description = tokens[1],
+                                Index = tokens[2],
+                                UpperIndex = tokens[3],
+                                DataType = tokens[4],
+                                Value = string.Empty
+                            });
+                        }
+                        else
+                        {
+                            rows.Add(new ModbusCsvRow()
+                            {
+                                Path = tokens[0],
+                                Description = string.Empty,
+                                Index = tokens[1],
+                                UpperIndex = tokens[2],
+                                DataType = tokens[3],
+                                Value = string.Empty
+                            });
+                        }
                     }
                 }
                 else if (pluginName == PluginsSection.Dnp3Master)
@@ -79,19 +100,37 @@ namespace OpenFMB.Adapters.Core.Parsers
                     while ((line = reader.ReadLine()) != null)
                     {
                         var tokens = line.Split(',');
-                        if (tokens[0] == "Path")
+                        if (tokens[0].ToLower() == "path")
                         {
+                            if (tokens[1].ToLower() == "description")
+                            {
+                                hasDescription = true;
+                            }
                             continue;
                         }
 
-                        rows.Add(new Dnp3CsvRow()
+                        if (hasDescription)
                         {
-                            Path = tokens[0],
-                            Description = tokens[1],
-                            Index = tokens[2],
-                            DataType = tokens[3],
-                            Value = ""
-                        });
+                            rows.Add(new Dnp3CsvRow()
+                            {
+                                Path = tokens[0],
+                                Description = tokens[1],
+                                Index = tokens[2],
+                                DataType = tokens[3],
+                                Value = string.Empty
+                            });
+                        }
+                        else
+                        {
+                            rows.Add(new Dnp3CsvRow()
+                            {
+                                Path = tokens[0],
+                                Description = string.Empty,
+                                Index = tokens[1],
+                                DataType = tokens[2],
+                                Value = string.Empty
+                            });
+                        }
                     }
                 }
                 else
