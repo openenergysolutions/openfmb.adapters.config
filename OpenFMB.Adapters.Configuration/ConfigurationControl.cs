@@ -1551,6 +1551,12 @@ namespace OpenFMB.Adapters.Configuration
         {
             try
             {
+                if (string.IsNullOrWhiteSpace(e.Label))
+                {
+                    e.CancelEdit = true;
+                    return;
+                }
+
                 var dataNode = e.Node.Tag as DataNode;
 
                 if (dataNode is FolderNode)
