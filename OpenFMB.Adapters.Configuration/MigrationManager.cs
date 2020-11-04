@@ -77,8 +77,120 @@ namespace OpenFMB.Adapters.Configuration
             return null;
         }
 
+        //private static void CheckOneOf(JSchema schema, JObject properties)
+        //{            
+        //    foreach (var oneOf in schema.OneOf)
+        //    {
+        //        foreach (var req in schema.Required)
+        //        {
+        //            if (!properties.ContainsKey(req))
+        //            {
+        //                var temp = JsonGenerator.Generate(oneOf) as JObject;
+        //                properties.Add(req, temp.GetValue(req));
+        //            }
+        //        }
+
+        //        foreach (var oneOfProp in oneOf.Properties)
+        //        {
+        //            if (properties.ContainsKey(oneOfProp.Key))
+        //            {
+        //                var value = properties.GetValue(oneOfProp.Key)?.ToString();
+        //                if (oneOfProp.Value.Const?.ToString() == value)
+        //                {                            
+        //                    CheckOneOf(oneOf, properties);
+        //                }
+        //            }
+        //        }                
+        //    }            
+        //}
+
+        public static JToken AddMissingOneOf(Node selectedNode)
+        {
+            if (selectedNode.Error != null && selectedNode.Error.StartsWith("JSON is valid against no schemas from 'oneOf'."))
+            {
+                // Only handle mapping for modbus-master
+                // Add source-type
+                var oldProp = selectedNode.Tag as JProperty;                             
+               
+                var parentProperty = selectedNode.Parent.Tag as JProperty;
+                parentProperty = parentProperty.DeepClone() as JProperty;
+
+                foreach (var v in (parentProperty.Value as JObject))
+                {
+                    if (v.Key == oldProp.Name)
+                    {
+                        var val = v.Value as JObject;
+                        //CheckOneOf(selectedNode.Schema, val);
+                        if (val.ContainsKey("enum-field-type"))
+                        {
+                            if (!val.ContainsKey("source-type"))
+                            {
+                                if (val.ContainsKey("enum-mapping-type"))
+                                {
+                                    var enumMappingType = val.GetValue("enum-mapping-type");
+                                    val.Add("source-type", enumMappingType);
+
+                                    if ("holding_register" == enumMappingType?.ToString())
+                                    {
+                                        val["enum-mapping-type"] = new JValue("single_register");
+                                    }
+                                }
+                            }
+                        }
+                        else if (val.ContainsKey("bool-field-type"))
+                        {
+                            if (!val.ContainsKey("invert"))
+                            {
+                                val.Add("invert", new JValue(false));
+                            }
+                        }
+                        break;
+                    }
+                }
+
+                return parentProperty;
+            }
+            return null;
+        }
+
+        public static JToken AddMissingProperties(Node selectedNode)
+        {
+            if (selectedNode.Error != null && selectedNode.Error.StartsWith("Required properties are missing from object"))
+            {
+                var missingProps = selectedNode.Error.Replace("Required properties are missing from object:", "");
+                var tokens = missingProps.Trim().TrimEnd('.').Split(',');
+
+                var oldProp = selectedNode.Tag as JProperty;
+
+                var parentProperty = selectedNode.Parent.Tag as JProperty;
+                parentProperty = parentProperty.DeepClone() as JProperty;
+
+                foreach (var v in (parentProperty.Value as JObject))
+                {
+                    if (v.Key == oldProp.Name)
+                    {
+                        var targetProp = v.Value as JObject;
+                        foreach (var t in tokens)
+                        {
+                            var name = t.Trim();
+                            var kvp = selectedNode.Schema.Properties.FirstOrDefault(x => x.Key == name);
+                            if (kvp.Value != null)
+                            {
+                                var jObject = JsonGenerator.Generate(kvp.Value) as JObject;
+                                targetProp.Add(name, jObject);
+                            }
+                        }
+                        break;
+                    }
+                }                                                                               
+
+                return parentProperty;
+            }
+            return null;
+        }
+
         public static JToken SuggestCorrection(Node selectedNode)
-        {            
+        {               
             var selectedParentNode = selectedNode.Parent;
             JToken newToken = null;
 

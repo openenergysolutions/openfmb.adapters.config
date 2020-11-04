@@ -1121,12 +1121,13 @@ namespace OpenFMB.Adapters.Configuration
                                 parentTreeNode.Nodes.Clear();
                                 parentNode.Nodes.Clear();
 
+                                _profile.Validate();
+
                                 AddNode(parentNode.Tag as JToken, parentNode, parentTreeNode);
-                                ShowMappingNodes(parentNode);
+                                ShowMappingNodes(parentNode);                                
 
                                 if (!parentNode.IsValid)
-                                {
-                                    _profile.Validate();
+                                {                                    
                                     ValidateNode(parentTreeNode);
                                 }
 

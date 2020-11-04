@@ -243,6 +243,26 @@ namespace OpenFMB.Adapters.Configuration.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap new_config {
+            get {
+                object obj = ResourceManager.GetObject("new_config", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap new_template {
+            get {
+                object obj = ResourceManager.GetObject("new_template", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap open_folder {
             get {
                 object obj = ResourceManager.GetObject("open_folder", resourceCulture);

@@ -116,6 +116,12 @@
     <Compile Include="CreateMappingTemplateStep1.Designer.cs">
       <DependentUpon>CreateMappingTemplateStep1.cs</DependentUpon>
     </Compile>
+    <Compile Include="RecentFolderControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RecentFolderControl.Designer.cs">
+      <DependentUpon>RecentFolderControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="SessionPathForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -511,6 +517,9 @@
     <EmbeddedResource Include="CreateMappingTemplateStep1.resx">
       <DependentUpon>CreateMappingTemplateStep1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="RecentFolderControl.resx">
+      <DependentUpon>RecentFolderControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SessionPathForm.resx">
       <DependentUpon>SessionPathForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -746,6 +755,8 @@
     <None Include="Resources\schema.png" />
     <None Include="Resources\template.png" />
     <None Include="Resources\folder_arrow.png" />
+    <None Include="Resources\new_config.png" />
+    <None Include="Resources\new_template.png" />
     <Content Include="Resources\template_icon.png" />
     <Content Include="Resources\warning.png" />
     <None Include="Resources\edit.png" />

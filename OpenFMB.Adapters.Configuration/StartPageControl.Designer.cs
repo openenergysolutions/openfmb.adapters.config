@@ -30,23 +30,50 @@
         {
             this.components = new System.ComponentModel.Container();
             this.appName = new System.Windows.Forms.Label();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.recentPanel = new System.Windows.Forms.Panel();
             this.newTemplateButton = new System.Windows.Forms.Button();
             this.openConfigurationButton = new System.Windows.Forms.Button();
             this.newConfigurationButton = new System.Windows.Forms.Button();
             this.openSclButton = new System.Windows.Forms.Button();
-            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.contextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.removeFromListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.copyPathToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // appName
             // 
             this.appName.AutoSize = true;
             this.appName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.appName.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.appName.Location = new System.Drawing.Point(33, 42);
+            this.appName.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.appName.Location = new System.Drawing.Point(33, 52);
             this.appName.Name = "appName";
-            this.appName.Size = new System.Drawing.Size(305, 20);
+            this.appName.Size = new System.Drawing.Size(44, 20);
             this.appName.TabIndex = 0;
-            this.appName.Text = "OpenFMB GOOSE Adapter Configuration";
+            this.appName.Text = "Start";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label1.Location = new System.Drawing.Point(353, 52);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(159, 20);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Recent Work Folders";
+            // 
+            // recentPanel
+            // 
+            this.recentPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.recentPanel.Location = new System.Drawing.Point(358, 85);
+            this.recentPanel.Name = "recentPanel";
+            this.recentPanel.Size = new System.Drawing.Size(410, 436);
+            this.recentPanel.TabIndex = 6;
             // 
             // newTemplateButton
             // 
@@ -121,11 +148,37 @@
             this.openSclButton.Visible = false;
             this.openSclButton.Click += new System.EventHandler(this.OpenSclButton_Click);
             // 
+            // contextMenuStrip
+            // 
+            this.contextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.removeFromListToolStripMenuItem,
+            this.copyPathToolStripMenuItem});
+            this.contextMenuStrip.Name = "contextMenuStrip";
+            this.contextMenuStrip.Size = new System.Drawing.Size(170, 48);
+            // 
+            // removeFromListToolStripMenuItem
+            // 
+            this.removeFromListToolStripMenuItem.Image = global::OpenFMB.Adapters.Configuration.Properties.Resources.checkmark;
+            this.removeFromListToolStripMenuItem.Name = "removeFromListToolStripMenuItem";
+            this.removeFromListToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
+            this.removeFromListToolStripMenuItem.Text = "Remove From List";
+            this.removeFromListToolStripMenuItem.Click += new System.EventHandler(this.RemoveFromListToolStripMenuItem_Click);
+            // 
+            // copyPathToolStripMenuItem
+            // 
+            this.copyPathToolStripMenuItem.Image = global::OpenFMB.Adapters.Configuration.Properties.Resources.copy;
+            this.copyPathToolStripMenuItem.Name = "copyPathToolStripMenuItem";
+            this.copyPathToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
+            this.copyPathToolStripMenuItem.Text = "Copy Path";
+            this.copyPathToolStripMenuItem.Click += new System.EventHandler(this.CopyPathToolStripMenuItem_Click);
+            // 
             // StartPageControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.recentPanel);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.newTemplateButton);
             this.Controls.Add(this.openConfigurationButton);
             this.Controls.Add(this.newConfigurationButton);
@@ -133,6 +186,7 @@
             this.Controls.Add(this.appName);
             this.Name = "StartPageControl";
             this.Size = new System.Drawing.Size(784, 533);
+            this.contextMenuStrip.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -146,5 +200,10 @@
         private System.Windows.Forms.Button openConfigurationButton;
         private System.Windows.Forms.Button newTemplateButton;
         private System.Windows.Forms.ToolTip toolTip;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel recentPanel;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip;
+        private System.Windows.Forms.ToolStripMenuItem removeFromListToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem copyPathToolStripMenuItem;
     }
 }

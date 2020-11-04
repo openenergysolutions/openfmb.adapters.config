@@ -52,13 +52,16 @@ namespace OpenFMB.Adapters.Configuration
 
             var list = Settings.Default.RecentFiles.ToList();
 
-            if (list.FirstOrDefault(x => x.Equals(filePath, StringComparison.InvariantCultureIgnoreCase)) == null)
+            var old = list.FirstOrDefault(x => x.Equals(filePath, StringComparison.InvariantCultureIgnoreCase));
+            if (old != null)
             {
-                list.Add(filePath);
-                if (list.Count > 10)
-                {
-                    list.RemoveAt(0);
-                }
+                list.Remove(old);
+            }
+
+            list.Add(filePath);
+            if (list.Count > 10)
+            {
+                list.RemoveAt(0);
             }
 
             Settings.Default.RecentFiles.Clear();

@@ -67,7 +67,9 @@ namespace OpenFMB.Adapters.Configuration
             toolTip.SetToolTip(expandButton, "Hide/Show Navigation Pane");
             toolTip.SetToolTip(logShowHideButton, "Hide/Show Log Pane");
             toolTip.SetToolTip(saveAdapterButton, "Save");
-            toolTip.SetToolTip(closeAdapterButton, "Close");            
+            toolTip.SetToolTip(closeAdapterButton, "Close");
+            toolTip.SetToolTip(newConfigButton, "New Adapter Configuration");
+            toolTip.SetToolTip(newTemplateButton, "New Adapter Configuration");
 
             _configurationManager.OnConfigurationSaved += OnConfigurationSaved;
 
@@ -1033,6 +1035,11 @@ namespace OpenFMB.Adapters.Configuration
             LoadWorkspaceTree();
         }
 
+        internal bool IsFolderSelected()
+        {
+            return workspaceTree.SelectedNode?.Tag is FolderNode;
+        }
+
         private void WorkspaceTreeContextMenu_Opening(object sender, CancelEventArgs e)
         {
             var selectedNode = workspaceTree.SelectedNode;
@@ -1043,65 +1050,86 @@ namespace OpenFMB.Adapters.Configuration
             else
             {
                 deleteToolStripMenuItem.Enabled = renameToolStripMenuItem.Enabled = selectedNode != workspaceTree.Nodes[0];  // can't delete/rename root node
-                newFolderToolStripMenuItem.Enabled = newTemplateToolStripMenuItem.Enabled = newAdapterConfigurationToolStripMenuItem.Enabled = selectedNode.Tag is FolderNode;
+                newFolderToolStripMenuItem.Enabled = selectedNode.Tag is FolderNode;
                 editToolStripMenuItem.Enabled = ((selectedNode.Tag as FileNode)?.FileInformation.Id == ConfigFileType.MainAdapter || (selectedNode.Tag as FileNode)?.FileInformation.Id == ConfigFileType.Template);
                 pasteToolStripMenuItem.Visible = _copiedDataNode != null;
             }
         }
 
-        private void NewAdapterConfigurationToolStripMenuItem_Click(object sender, EventArgs e)
+        private void NewConfigButton_Click(object sender, EventArgs e)
         {
             var selectedNode = workspaceTree.SelectedNode;
-            if (selectedNode != null)
+            if (selectedNode == null)
             {
-                var folder = selectedNode.Tag as FolderNode;
-                if (folder != null)
-                {
-                    try
-                    {
-                        _configurationManager.SuspendFileWatcher();
+                selectedNode = workspaceTree.Nodes[0];
+            }
 
-                        CreateAdapterConfigurationForm form = new CreateAdapterConfigurationForm(folder.Path, false);
-                        if (form.ShowDialog() == DialogResult.OK)
-                        {
-                            Editable editable = form.Output;
-                            HandleFileAddedToWorkspace(selectedNode, editable);
-                        }
-                    }
-                    finally
-                    {
-                        Thread.Sleep(1000);
-                        _configurationManager.ResumeFileWatcher();
-                    }
+            var folder = selectedNode.Tag as FolderNode;
+            if (folder == null)
+            {
+                selectedNode = selectedNode.Parent;
+                folder = selectedNode.Tag as FolderNode;
+            }
+
+            CreateNewConfiguration(folder.Path, selectedNode);
+
+        }
+
+        private void NewTemplateButton_Click(object sender, EventArgs e)
+        {
+            var selectedNode = workspaceTree.SelectedNode;
+            if (selectedNode == null)
+            {
+                selectedNode = workspaceTree.Nodes[0];
+            }
+
+            var folder = selectedNode.Tag as FolderNode;
+            if (folder == null)
+            {
+                selectedNode = selectedNode.Parent;
+                folder = selectedNode.Tag as FolderNode;
+            }
+
+            CreateNewTemplate(folder.Path, selectedNode);
+        }
+
+        private void CreateNewConfiguration(string folderPath, TreeNode selectedNode)
+        {
+            try
+            {
+                _configurationManager.SuspendFileWatcher();
+
+                CreateAdapterConfigurationForm form = new CreateAdapterConfigurationForm(folderPath, false);
+                if (form.ShowDialog() == DialogResult.OK)
+                {
+                    Editable editable = form.Output;
+                    HandleFileAddedToWorkspace(selectedNode, editable);
                 }
+            }
+            finally
+            {
+                Thread.Sleep(1000);
+                _configurationManager.ResumeFileWatcher();
             }
         }
 
-        private void NewTemplateToolStripMenuItem_Click(object sender, EventArgs e)
+        private void CreateNewTemplate(string folderPath, TreeNode selectedNode)
         {
-            var selectedNode = workspaceTree.SelectedNode;
-            if (selectedNode != null)
+            try
             {
-                var folder = selectedNode.Tag as FolderNode;
-                if (folder != null)
-                {
-                    try
-                    {
-                        _configurationManager.SuspendFileWatcher();
+                _configurationManager.SuspendFileWatcher();
 
-                        CreateTemplateConfigurationForm form = new CreateTemplateConfigurationForm(folder.Path, false);
-                        if (form.ShowDialog() == DialogResult.OK)
-                        {
-                            Editable editable = form.Output;
-                            HandleFileAddedToWorkspace(selectedNode, editable);
-                        }
-                    }
-                    finally
-                    {
-                        Thread.Sleep(1000);
-                        _configurationManager.ResumeFileWatcher();
-                    }
+                CreateTemplateConfigurationForm form = new CreateTemplateConfigurationForm(folderPath, false);
+                if (form.ShowDialog() == DialogResult.OK)
+                {
+                    Editable editable = form.Output;
+                    HandleFileAddedToWorkspace(selectedNode, editable);
                 }
+            }
+            finally
+            {
+                Thread.Sleep(1000);
+                _configurationManager.ResumeFileWatcher();
             }
         }
 
@@ -1487,6 +1515,7 @@ namespace OpenFMB.Adapters.Configuration
                     c.SendToBack();
                 }
             }
+            newConfigButton.Visible = newTemplateButton.Visible = tabControl.SelectedIndex == 0;
         }
 
         private void TreeView_DrawNode(object sender, DrawTreeNodeEventArgs e)
@@ -1617,7 +1646,7 @@ namespace OpenFMB.Adapters.Configuration
         private void PasteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             HandleWorkspaceNodePasting();
-        }
+        }        
     }
 
     [Serializable]

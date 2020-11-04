@@ -35,7 +35,7 @@ namespace OpenFMB.Adapters.Configuration
         
         private StartPageControl _startPage;        
 
-        private readonly static ILogger _logger = MasterLogger.Instance;
+        private readonly static ILogger _logger = MasterLogger.Instance;        
 
         internal SplashScreen Splash
         {
@@ -101,20 +101,26 @@ namespace OpenFMB.Adapters.Configuration
             folderBrowserDialog.SelectedPath = Settings.Default.PreviousWorkingFolder;
             if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
             {
-                try
-                {
-                    LoadConfigurations(folderBrowserDialog.SelectedPath);
-                }
-                catch (Exception ex)
-                {
-                    Debug.WriteLine(ex.StackTrace);
-                    MessageBox.Show("Invalid configuration folder.", Program.AppName, MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                finally
-                {
-                    Settings.Default.PreviousWorkingFolder = folderBrowserDialog.SelectedPath;
-                    Settings.Default.Save();
-                }
+                OpenConfigurationFolder(folderBrowserDialog.SelectedPath);
+            }
+        }
+
+        public void OpenConfigurationFolder(string folderPath)
+        {
+            try
+            {
+                LoadConfigurations(folderPath);
+                RecentFileManager.AddFile(folderPath);
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.StackTrace);
+                MessageBox.Show("Invalid configuration folder.", Program.AppName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Settings.Default.PreviousWorkingFolder = folderPath;
+                Settings.Default.Save();
             }
         }
 
@@ -197,7 +203,7 @@ namespace OpenFMB.Adapters.Configuration
 
         private void FileToolStripMenuItem_DropDownOpening(object sender, EventArgs e)
         {
-            newToolStripMenuItem.Enabled = openToolStripMenuItem.Enabled = startPageStripMenuItem.Enabled = string.IsNullOrEmpty(_configManger.WorkingDirectory);
+            newToolStripMenuItem.Visible = openToolStripMenuItem.Enabled = startPageStripMenuItem.Enabled = string.IsNullOrEmpty(_configManger.WorkingDirectory);
             
             var top = FindFrontMost();
 
@@ -207,7 +213,7 @@ namespace OpenFMB.Adapters.Configuration
                 closeToolStripMenuItem.Enabled = true;
             }
             else if (top is ConfigurationControl)
-            {
+            {                
                 closeToolStripMenuItem.Text = $"Close Work Folder";
                 closeToolStripMenuItem.Enabled = true;
             }

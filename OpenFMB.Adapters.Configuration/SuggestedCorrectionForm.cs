@@ -18,15 +18,12 @@ using DiffMatchPatch;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using Newtonsoft.Json.Linq;
-using Newtonsoft.Json.Schema;
-using OpenFMB.Adapters.Core.Json;
 using OpenFMB.Adapters.Core.Models;
 using OpenFMB.Adapters.Core.Utility.Logs;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Dynamic;
-using System.Linq;
 using System.Windows.Forms;
 
 namespace OpenFMB.Adapters.Configuration
@@ -79,7 +76,15 @@ namespace OpenFMB.Adapters.Configuration
 
             try
             {
-                _newToken = MigrationManager.SuggestCorrection(selectedNode);
+                _newToken = MigrationManager.AddMissingProperties(selectedNode);
+                if (_newToken == null)
+                {
+                    _newToken = MigrationManager.AddMissingOneOf(selectedNode);
+                }
+                if (_newToken == null)
+                {
+                    _newToken = MigrationManager.SuggestCorrection(selectedNode);
+                }
 
                 if (_newToken != null)
                 {
@@ -96,7 +101,7 @@ namespace OpenFMB.Adapters.Configuration
                     rightText.Text = "No suggestion";
                 }
             }
-            catch
+            catch (Exception ex)
             {
                 rightText.Text = "No schema found";
 
@@ -179,68 +184,7 @@ namespace OpenFMB.Adapters.Configuration
             catch
             {
                 MessageBox.Show(this, "An unexpected error has occurred.  Check logs for more information.", Program.AppName, MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-
-            //try
-            //{
-            //    if (_correctionType == CorrectionType.Replace)
-            //    {
-            //        if (_newToken != null)
-            //        {
-            //            if (_newToken is JProperty)
-            //            {
-            //                var prop = _newToken as JProperty;
-            //                var parent = _selectedParentNode.Parent;
-            //                var tag = parent.Tag as JProperty;
-            //                if (tag != null)
-            //                {
-            //                    var properties = tag.Value as JObject;
-
-            //                    if (properties.ContainsKey(prop.Name))
-            //                    {
-            //                        properties[prop.Name] = prop.Value;
-
-            //                        DialogResult = DialogResult.OK;
-            //                    }
-            //                }
-            //                else
-            //                {
-            //                    var properties = parent.Tag as JObject;
-            //                    if (properties.ContainsKey(prop.Name))
-            //                    {
-            //                        properties[prop.Name] = prop.Value;
-
-            //                        DialogResult = DialogResult.OK;
-            //                    }
-            //                }
-            //            }
-            //            else if (_newToken is JObject)
-            //            {                            
-            //                var tag = _selectedParentNode.Tag as JObject;
-            //                tag.RemoveAll();
-
-            //                tag.Merge(_newToken);
-
-            //                DialogResult = DialogResult.OK;                                                   
-            //            }
-            //        }
-            //    }
-            //    else if (_correctionType == CorrectionType.Delete)
-            //    {
-            //        // TODO
-            //    }
-            //    else
-            //    {
-            //        DialogResult = DialogResult.Cancel;
-            //    }
-
-            //    Close();
-            //}
-            //catch (Exception ex)
-            //{
-            //    _logger.Log(Level.Error, ex.Message, ex);
-            //    MessageBox.Show(this, "An unexpected error has occurred.  Check logs for more information.", Program.AppName, MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
+            }            
         }
     }
 

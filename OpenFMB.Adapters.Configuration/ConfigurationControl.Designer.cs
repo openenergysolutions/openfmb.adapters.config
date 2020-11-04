@@ -78,6 +78,8 @@
             this.placeHolder = new System.Windows.Forms.Panel();
             this.outputControl = new OpenFMB.Adapters.Configuration.OutputControl();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.newTemplateButton = new OpenFMB.Adapters.Configuration.FlatButton();
+            this.newConfigButton = new OpenFMB.Adapters.Configuration.FlatButton();
             this.logShowHideButton = new OpenFMB.Adapters.Configuration.FlatButton();
             this.expandButton = new OpenFMB.Adapters.Configuration.FlatButton();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
@@ -203,14 +205,14 @@
             this.newAdapterConfigurationToolStripMenuItem.Name = "newAdapterConfigurationToolStripMenuItem";
             this.newAdapterConfigurationToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
             this.newAdapterConfigurationToolStripMenuItem.Text = "New Adapter Configuration";
-            this.newAdapterConfigurationToolStripMenuItem.Click += new System.EventHandler(this.NewAdapterConfigurationToolStripMenuItem_Click);
+            this.newAdapterConfigurationToolStripMenuItem.Click += new System.EventHandler(this.NewConfigButton_Click);
             // 
             // newTemplateToolStripMenuItem
             // 
             this.newTemplateToolStripMenuItem.Name = "newTemplateToolStripMenuItem";
             this.newTemplateToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
             this.newTemplateToolStripMenuItem.Text = "New Template";
-            this.newTemplateToolStripMenuItem.Click += new System.EventHandler(this.NewTemplateToolStripMenuItem_Click);
+            this.newTemplateToolStripMenuItem.Click += new System.EventHandler(this.NewTemplateButton_Click);
             // 
             // toolStripSeparator8
             // 
@@ -562,6 +564,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.GrayText;
+            this.panel1.Controls.Add(this.newTemplateButton);
+            this.panel1.Controls.Add(this.newConfigButton);
             this.panel1.Controls.Add(this.logShowHideButton);
             this.panel1.Controls.Add(this.expandButton);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -569,6 +573,38 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(48, 600);
             this.panel1.TabIndex = 0;
+            // 
+            // newTemplateButton
+            // 
+            this.newTemplateButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.newTemplateButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.GrayText;
+            this.newTemplateButton.FlatAppearance.BorderSize = 0;
+            this.newTemplateButton.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GrayText;
+            this.newTemplateButton.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GrayText;
+            this.newTemplateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.newTemplateButton.Image = global::OpenFMB.Adapters.Configuration.Properties.Resources.new_template;
+            this.newTemplateButton.Location = new System.Drawing.Point(11, 90);
+            this.newTemplateButton.Name = "newTemplateButton";
+            this.newTemplateButton.Size = new System.Drawing.Size(25, 25);
+            this.newTemplateButton.TabIndex = 3;
+            this.newTemplateButton.UseVisualStyleBackColor = true;
+            this.newTemplateButton.Click += new System.EventHandler(this.NewTemplateButton_Click);
+            // 
+            // newConfigButton
+            // 
+            this.newConfigButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.newConfigButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.GrayText;
+            this.newConfigButton.FlatAppearance.BorderSize = 0;
+            this.newConfigButton.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GrayText;
+            this.newConfigButton.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GrayText;
+            this.newConfigButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.newConfigButton.Image = global::OpenFMB.Adapters.Configuration.Properties.Resources.new_config;
+            this.newConfigButton.Location = new System.Drawing.Point(9, 49);
+            this.newConfigButton.Name = "newConfigButton";
+            this.newConfigButton.Size = new System.Drawing.Size(25, 25);
+            this.newConfigButton.TabIndex = 2;
+            this.newConfigButton.UseVisualStyleBackColor = true;
+            this.newConfigButton.Click += new System.EventHandler(this.NewConfigButton_Click);
             // 
             // logShowHideButton
             // 
@@ -691,5 +727,7 @@
         private System.Windows.Forms.ToolStripMenuItem copyToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator9;
         private System.Windows.Forms.ToolStripMenuItem pasteToolStripMenuItem;
+        private FlatButton newConfigButton;
+        private FlatButton newTemplateButton;
     }
 }
