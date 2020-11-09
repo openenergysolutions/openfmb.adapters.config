@@ -27,6 +27,8 @@ namespace OpenFMB.Adapters.Core.Parsers
 {
     public class CSVParser
     {
+        private static readonly Regex CsvParser = new Regex(",(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))");
+
         public static bool IsConfiguredForType(SessionablePluginType type, string filePath)
         {            
             using (var reader = new StreamReader(filePath))
@@ -57,7 +59,7 @@ namespace OpenFMB.Adapters.Core.Parsers
 
                     while ((line = reader.ReadLine()) != null)
                     {
-                        var tokens = line.Split(',');
+                        var tokens = CsvParser.Split(line);
                         if (tokens[0].ToLower() == "path")
                         {
                             if (tokens[1].ToLower() == "description")
@@ -99,7 +101,7 @@ namespace OpenFMB.Adapters.Core.Parsers
 
                     while ((line = reader.ReadLine()) != null)
                     {
-                        var tokens = line.Split(',');
+                        var tokens = CsvParser.Split(line);
                         if (tokens[0].ToLower() == "path")
                         {
                             if (tokens[1].ToLower() == "description")
