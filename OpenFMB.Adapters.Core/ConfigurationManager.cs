@@ -296,37 +296,37 @@ namespace OpenFMB.Adapters.Core
 
                             foreach (var p in profiles)
                             {
-                                var sub = ProfileRegistry.IsReadingProfile(p.ProfileName) || ProfileRegistry.IsStatusProfile(p.ProfileName) || ProfileRegistry.IsEventProfile(p.ProfileName);
-                                if (sub)
+                                var pub = ProfileRegistry.IsReadingProfile(p.ProfileName) || ProfileRegistry.IsStatusProfile(p.ProfileName) || ProfileRegistry.IsEventProfile(p.ProfileName);
+                                if (pub)
                                 {
                                     if (!type.HasValue)
                                     {
-                                        UpdateTopics(session, p, plugins.NatsPlugin.Subscribes, false);
-                                        UpdateTopics(session, p, plugins.MqttPlugin.Subscribes, false);
+                                        UpdateTopics(session, p, plugins.NatsPlugin.Publishes, true);
+                                        UpdateTopics(session, p, plugins.MqttPlugin.Publishes, true);
                                     }
                                     else if (type == TransportPluginType.NATS)
                                     {
-                                        UpdateTopics(session, p, plugins.NatsPlugin.Subscribes, false);
+                                        UpdateTopics(session, p, plugins.NatsPlugin.Publishes, true);
                                     }
                                     else if (type == TransportPluginType.MQTT)
                                     {
-                                        UpdateTopics(session, p, plugins.MqttPlugin.Subscribes, false);
+                                        UpdateTopics(session, p, plugins.MqttPlugin.Publishes, true);
                                     }
                                 }
                                 else if (ProfileRegistry.IsControlProfile(p.ProfileName))
                                 {
                                     if (!type.HasValue)
                                     {
-                                        UpdateTopics(session, p, plugins.NatsPlugin.Publishes, true);
-                                        UpdateTopics(session, p, plugins.MqttPlugin.Publishes, true);
+                                        UpdateTopics(session, p, plugins.NatsPlugin.Subscribes, false);
+                                        UpdateTopics(session, p, plugins.MqttPlugin.Subscribes, false);
                                     }
                                     else if (type == TransportPluginType.NATS)
                                     {
-                                        UpdateTopics(session, p, plugins.NatsPlugin.Publishes, true);
+                                        UpdateTopics(session, p, plugins.NatsPlugin.Subscribes, false);
                                     }
                                     else if (type == TransportPluginType.MQTT)
                                     {
-                                        UpdateTopics(session, p, plugins.MqttPlugin.Publishes, true);
+                                        UpdateTopics(session, p, plugins.MqttPlugin.Subscribes, false);
                                     }
                                 }
                             }
