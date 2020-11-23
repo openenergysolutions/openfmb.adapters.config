@@ -636,6 +636,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ConfigurationControl.resx">
       <DependentUpon>ConfigurationControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GOOSEDetailsControl.resx">
       <DependentUpon>GOOSEDetailsControl.cs</DependentUpon>

@@ -199,11 +199,7 @@ namespace OpenFMB.Adapters.Configuration
         private void ShowMappingNodes(Node parentNode)
         {
             if (parentNode != null)
-            {
-                if (parentNode.Schema == null)
-                {
-                    _profile.GetSchemaByPath(parentNode.Path, null);
-                }
+            {                
                 _selectedNode = parentNode;
 
                 addNewElementButton.Enabled = !parentNode.IsRepeatable && parentNode.Schema?.Type == JSchemaType.Array;
@@ -427,7 +423,7 @@ namespace OpenFMB.Adapters.Configuration
             {
                 if (nodeParent.Schema == null)
                 {                    
-                    nodeParent.Schema = _profile.GetSchemaByPath(nodeParent.Path, token.SchemaType())?.Schema;
+                    nodeParent.Schema = _profile.GetSchemaByPath(nodeParent, token.SchemaType())?.Schema;
                 }                
             }
             else if (token is JObject)
@@ -441,11 +437,7 @@ namespace OpenFMB.Adapters.Configuration
                         childNode.Tag = property;
                         childNode.Parent = nodeParent;
                         nodeParent.Nodes.Add(childNode);                       
-                        childNode.Schema = _profile.GetSchemaByPath(childNode.Path, property.Value.SchemaType())?.Schema;
-                        if (childNode.Schema == null)
-                        {
-                            childNode.Schema = _profile.GetSchemaByPath(childNode.Path + ".[0]", property.Value.SchemaType())?.Schema;                            
-                        }
+                        childNode.Schema = _profile.GetSchemaByPath(childNode, property.Value.SchemaType())?.Schema;                        
 
                         ValidateNode(childNode);
 
@@ -466,7 +458,7 @@ namespace OpenFMB.Adapters.Configuration
                     childNode.Tag = array[i];
                     childNode.Parent = nodeParent;
                     nodeParent.Nodes.Add(childNode);
-                    childNode.Schema = _profile.GetSchemaByPath(childNode.Path, token.SchemaType())?.Schema;                   
+                    childNode.Schema = _profile.GetSchemaByPath(childNode, token.SchemaType())?.Schema;                   
 
                     ValidateNode(childNode);
 
