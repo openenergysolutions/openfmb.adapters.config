@@ -265,6 +265,7 @@ namespace OpenFMB.Adapters.Core.Models.Schemas
             if (!_schemaNodesDictionary.TryGetValue(key, out dict))
             {
                 dict = new Dictionary<string, List<Node>>();
+                _schemaNodesDictionary[key] = dict;
 
                 var node = new Node(profileName);
                 node.Schema = GetSchemaForProfile(plugInName, profileName);

@@ -208,6 +208,85 @@ namespace OpenFMB.Adapters.Core.Models
             return null;
         }
 
+        public Node GetSchemaByPath(Node targetNode, JSchemaType? schemaType)
+        {            
+            var path = targetNode.Path;
+
+            List<Node> nodes;
+
+            path = Utils.ReplaceWithIndexZeroArray(path);
+
+            if (_schemaLookup.TryGetValue(path, out nodes))
+            {
+                if (nodes.Count == 1)
+                {
+                    return nodes.FirstOrDefault();
+                }
+
+                var node = nodes.LastOrDefault(x => (x.Schema.Type == schemaType || !x.Schema.Type.HasValue) && x.Schema.Const?.ToString() == targetNode.Value);
+                
+                if (node == null)
+                {
+                    // Siblings
+                    if (targetNode.Parent != null)
+                    {
+                        foreach(var sibling in targetNode.Parent.Nodes.Where(n => n != targetNode))
+                        {
+                            if (targetNode.Parent.Schema.Type == JSchemaType.Array)
+                            {
+                                foreach (var item in targetNode.Parent.Schema.Items)
+                                {
+                                    JSchema schema;
+                                    if (item.Properties.TryGetValue(sibling.Name, out schema))
+                                    {
+                                        if (item.Properties.TryGetValue(targetNode.Name, out schema))
+                                        {
+                                            node = nodes.FirstOrDefault(x => x.Schema == schema);
+                                            if (node != null)
+                                            {
+                                                return node;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                foreach (var oneOf in targetNode.Parent.Schema.OneOf)
+                                {
+                                    JSchema schema;
+                                    if (oneOf.Properties.TryGetValue(sibling.Name, out schema))
+                                    {
+                                        if (schema.Const?.ToString() == sibling.Value)
+                                        {
+                                            if (oneOf.Properties.TryGetValue(targetNode.Name, out schema))
+                                            {
+                                                node = nodes.FirstOrDefault(x => x.Schema == schema);
+                                                if (node != null)
+                                                {
+                                                    return node;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (node != null)
+                    {
+                        return node;
+                    }
+                    return nodes.LastOrDefault();
+                }
+                else
+                {
+                    return node;
+                }
+            }
+            return null;
+        }
+
         public List<Node> GetAllNavigatorNodes(bool refresh = false)
         {
             if (refresh || _allNavigatorNodes == null)
@@ -362,12 +441,21 @@ namespace OpenFMB.Adapters.Core.Models
                 var obj = Token as JObject;
                 if (obj.ContainsKey("command-order"))
                 {
-                    var array = obj["command-order"] as JArray;                    
+                    List<string> existings = new List<string>();
+
+                    var array = obj["command-order"] as JArray; 
+                    
+                    foreach(var a in array)
+                    {
+                        existings.Add((a as JValue)?.Value?.ToString());
+                    }
+                    existings = existings.Union(allCommandId).ToList();
+
                     array.Clear();
 
-                    for (int i = 0; i < allCommandId.Count; ++i)
+                    for (int i = 0; i < existings.Count; ++i)
                     {
-                        var value = new JValue(allCommandId[i]);
+                        var value = new JValue(existings[i]);
                         array.Add(value);                        
                     }
 
