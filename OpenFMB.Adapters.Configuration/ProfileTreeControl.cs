@@ -266,6 +266,14 @@ namespace OpenFMB.Adapters.Configuration
                                             var commandOrderNode = _profile.GetAllNavigatorNodes().FirstOrDefault(x => x.Name == "command-order");
                                             var commandOrderProperty = commandOrderNode.Tag as JProperty;
                                             var commandIds = (commandOrderProperty.Value as JArray).Select(x => x.ToString()).ToList();
+                                            if (!string.IsNullOrWhiteSpace(node.Value))
+                                            {
+                                                if (!commandIds.Contains(node.Value))
+                                                {
+                                                    commandIds.Add(node.Value);
+                                                    _profile.UpdateCommandIds(commandIds);
+                                                }
+                                            }
                                             var mapping = new NavigatorCommandIdNode(node, commandIds);
                                             mapping.PropertyChanged += NavigatorNode_PropertyChanged;
                                             flowLayoutPanel.Controls.Add(mapping);
@@ -279,7 +287,8 @@ namespace OpenFMB.Adapters.Configuration
                                         else
                                         {
                                             // check schema format
-                                            if (node.Schema.Pattern == "[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}")
+                                            //if (node.Schema.Pattern == "[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}")
+                                            if (node.Path.IndexOf(".mrid.", StringComparison.InvariantCultureIgnoreCase) > 0)
                                             {
                                                 var mapping = new NavigatorGuidNode(node);
                                                 mapping.PropertyChanged += NavigatorNode_PropertyChanged;
@@ -427,7 +436,7 @@ namespace OpenFMB.Adapters.Configuration
             {
                 if (nodeParent.Schema == null)
                 {                    
-                    nodeParent.Schema = _profile.GetSchemaByPath(nodeParent.Path, token.SchemaType())?.Schema;
+                    nodeParent.Schema = _profile.GetSchemaByPath(nodeParent, token.SchemaType())?.Schema;
                 }                
             }
             else if (token is JObject)
@@ -441,7 +450,7 @@ namespace OpenFMB.Adapters.Configuration
                         childNode.Tag = property;
                         childNode.Parent = nodeParent;
                         nodeParent.Nodes.Add(childNode);                       
-                        childNode.Schema = _profile.GetSchemaByPath(childNode.Path, property.Value.SchemaType())?.Schema;
+                        childNode.Schema = _profile.GetSchemaByPath(childNode, property.Value.SchemaType())?.Schema;
                         if (childNode.Schema == null)
                         {
                             childNode.Schema = _profile.GetSchemaByPath(childNode.Path + ".[0]", property.Value.SchemaType())?.Schema;                            
@@ -466,7 +475,7 @@ namespace OpenFMB.Adapters.Configuration
                     childNode.Tag = array[i];
                     childNode.Parent = nodeParent;
                     nodeParent.Nodes.Add(childNode);
-                    childNode.Schema = _profile.GetSchemaByPath(childNode.Path, token.SchemaType())?.Schema;                   
+                    childNode.Schema = _profile.GetSchemaByPath(childNode, token.SchemaType())?.Schema;                   
 
                     ValidateNode(childNode);
 
@@ -539,9 +548,8 @@ namespace OpenFMB.Adapters.Configuration
                 AddNode(parentNode.Tag as JToken, parentNode, treeNode);
             }
             else if (sender is NavigatorCommandIdNode)
-            {
-                var temp = _profile.GetAllNavigatorNodes().Where(x => x.Name == "command-id");
-                var commandIds = _profile.GetAllNavigatorNodes().Where(x => x.Name == "command-id").Select(x => x.Value).Distinct().ToList();
+            {                
+                var commandIds = _profile.GetAllNavigatorNodes(true).Where(x => x.Name == "command-id").Select(x => x.Value).Distinct().ToList();
                 _profile.UpdateCommandIds(commandIds);
 
                 var navNode = _profile.GetAllNavigatorNodes().FirstOrDefault(n => n.Name == "command-order");
