@@ -40,6 +40,7 @@
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.errorLabel = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.linkLabel = new System.Windows.Forms.LinkLabel();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -110,12 +111,12 @@
             // 
             this.saveFilePathTextBox.Location = new System.Drawing.Point(132, 130);
             this.saveFilePathTextBox.Name = "saveFilePathTextBox";
-            this.saveFilePathTextBox.Size = new System.Drawing.Size(478, 20);
+            this.saveFilePathTextBox.Size = new System.Drawing.Size(454, 20);
             this.saveFilePathTextBox.TabIndex = 14;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(619, 129);
+            this.button1.Location = new System.Drawing.Point(594, 129);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 15;
@@ -144,6 +145,7 @@
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.linkLabel);
             this.groupBox1.Controls.Add(this.protocolTextBox);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.errorLabel);
@@ -160,6 +162,19 @@
             this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Generate Mapping";
+            // 
+            // linkLabel
+            // 
+            this.linkLabel.AutoSize = true;
+            this.linkLabel.Location = new System.Drawing.Point(675, 135);
+            this.linkLabel.Name = "linkLabel";
+            this.linkLabel.Size = new System.Drawing.Size(52, 13);
+            this.linkLabel.TabIndex = 17;
+            this.linkLabel.TabStop = true;
+            this.linkLabel.Text = "Open File";
+            this.linkLabel.Visible = false;
+            this.linkLabel.VisitedLinkColor = System.Drawing.Color.Blue;
+            this.linkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabel_LinkClicked);
             // 
             // CreateMappingTemplateStep3
             // 
@@ -189,5 +204,6 @@
         private System.Windows.Forms.SaveFileDialog saveFileDialog;
         private System.Windows.Forms.Label errorLabel;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.LinkLabel linkLabel;
     }
 }

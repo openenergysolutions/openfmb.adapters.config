@@ -11,6 +11,7 @@ using OpenFMB.Adapters.Core.Models;
 using OpenFMB.Adapters.Core.Models.Plugins;
 using OpenFMB.Adapters.Core;
 using System.IO;
+using System.Diagnostics;
 
 namespace OpenFMB.Adapters.Configuration
 {
@@ -105,10 +106,13 @@ namespace OpenFMB.Adapters.Configuration
                         File.WriteAllText(saveFilePathTextBox.Text, sb.ToString());
 
                         MessageBox.Show(this, $"Mapping template has been saved at '{saveFilePathTextBox.Text}'.", Program.AppName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        linkLabel.Visible = true;
                     }
                     else
                     {
                         MessageBox.Show(this, "No tag selected.  Please go back and select tags to be mapped.", Program.AppName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        linkLabel.Visible = false;
                     }
                 }
             }
@@ -124,6 +128,15 @@ namespace OpenFMB.Adapters.Configuration
             {
                 saveFilePathTextBox.Text = saveFileDialog.FileName;
             }
+        }
+
+        private void LinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            try
+            {
+                Process.Start(saveFilePathTextBox.Text);
+            }
+            catch { }
         }
     }
 }

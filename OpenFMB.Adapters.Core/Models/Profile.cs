@@ -255,8 +255,14 @@ namespace OpenFMB.Adapters.Core.Models
                                             }
                                         }
                                     }
+
+                                    return nodes.FirstOrDefault();
                                 }
                             }
+                        }
+                        else
+                        {
+                            return nodes.FirstOrDefault();
                         }
                     }                    
                 }

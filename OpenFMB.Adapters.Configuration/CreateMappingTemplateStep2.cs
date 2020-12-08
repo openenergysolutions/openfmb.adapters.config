@@ -16,6 +16,7 @@ namespace OpenFMB.Adapters.Configuration
     public partial class CreateMappingTemplateStep2 : UserControl
     {
         private ProfileModel _profileModel;
+        private List<Data> _datasource;
 
         public ProfileModel ProfileModel
         {
@@ -34,12 +35,10 @@ namespace OpenFMB.Adapters.Configuration
         public List<Data> SelectedData
         {
             get
-            {
-                var ds = dataBindingSource.DataSource as BindingList<Data>;
-
-                if (ds != null)
+            {                
+                if (_datasource != null)
                 {
-                    return ds.Where(x => x.Selected).ToList();
+                    return _datasource.Where(x => x.Selected).ToList();
                 }
                 return new List<Data>();
             }
@@ -52,13 +51,13 @@ namespace OpenFMB.Adapters.Configuration
 
         private void LoadGrid()
         {
-            var list = _profileModel?.Topics.Select(x => x.Attributes).Select(y => new Data()
+            _datasource = _profileModel?.Topics.Select(x => x.Attributes).Select(y => new Data()
             {
                 Label = y.Label,
                 Path = y.Path
             }).ToList();
 
-            dataBindingSource.DataSource = new BindingList<Data>(list);
+            dataBindingSource.DataSource = _datasource;
         }
 
         private void FilterTextBox_TextChanged(object sender, EventArgs e)
@@ -66,17 +65,8 @@ namespace OpenFMB.Adapters.Configuration
             try
             {
                 string search = filterTextBox.Text.Trim();
-
-                var list = _profileModel.Topics.Where(x => x.Attributes.Name.IndexOf(search, StringComparison.InvariantCultureIgnoreCase) >= 0 || x.Attributes.Path.IndexOf(search, StringComparison.InvariantCultureIgnoreCase) >= 0).Select(a => a.Attributes);
-
-                var dataList = list.Select(y => new Data()
-                {
-                    Label = y.Label,
-                    Path = y.Path
-                });
-
-                dataBindingSource.DataSource = new BindingList<Data>(dataList.ToList());
-
+                var list = _datasource.FindAll(x => x.Label.IndexOf(search, StringComparison.InvariantCultureIgnoreCase) >= 0 || x.Path.IndexOf(search, StringComparison.InvariantCultureIgnoreCase) >= 0);
+                dataBindingSource.DataSource = list;
             }
             catch { }
         }
