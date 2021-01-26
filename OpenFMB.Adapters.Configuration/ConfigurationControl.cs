@@ -708,7 +708,7 @@ namespace OpenFMB.Adapters.Configuration
                     }
                 }
             }
-        }
+        }        
 
         private void DeleteProfileToolStripMenuItem_Click(object sender, EventArgs e)
         {

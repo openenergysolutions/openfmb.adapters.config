@@ -74,7 +74,7 @@ namespace openfmb.coordinationservicemodule {
             "GAEgASgLMhkuY29tbW9ubW9kdWxlLkxvZ2ljYWxOb2RlQgSAtRgBElsKF0Nv",
             "b3JkaW5hdGlvblNlcnZpY2VNb2RlGAIgASgLMjouY29vcmRpbmF0aW9uc2Vy",
             "dmljZW1vZHVsZS5FTkdfQ29vcmRpbmF0aW9uU2VydmljZU1vZGVLaW5kEicK",
-            "BklzbGFuZBgDIAEoCzIXLmNvbW1vbm1vZHVsZS5TdGF0dXNTUFMSMAoPUGVy",
+            "BklzbGFuZBgDIAEoCzIXLmNvbW1vbm1vZHVsZS5TdGF0dXNEUFMSMAoPUGVy",
             "bWlzc2libGVBdXRvGAQgASgLMhcuY29tbW9ubW9kdWxlLlN0YXR1c1NQUxIy",
             "ChFQZXJtaXNzaWJsZU1hbnVhbBgFIAEoCzIXLmNvbW1vbm1vZHVsZS5TdGF0",
             "dXNTUFMSMwoSUGVybWlzc2libGVOZXR6ZXJvGAYgASgLMhcuY29tbW9ubW9k",
@@ -90,17 +90,18 @@ namespace openfmb.coordinationservicemodule {
             "c3RlbRgCIAEoCzIfLmNvbW1vbm1vZHVsZS5BcHBsaWNhdGlvblN5c3RlbUII",
             "iLUYAZC1GAESUwoSY29vcmRpbmF0aW9uU3RhdHVzGAMgASgLMi0uY29vcmRp",
             "bmF0aW9uc2VydmljZW1vZHVsZS5Db29yZGluYXRpb25TdGF0dXNCCIi1GAGQ",
-            "tRgBOgTA8xgBKocCChtDb29yZGluYXRpb25TZXJ2aWNlTW9kZUtpbmQSJAog",
-            "Q29vcmRpbmF0aW9uU2VydmljZU1vZGVLaW5kX25vbmUQABIkCiBDb29yZGlu",
-            "YXRpb25TZXJ2aWNlTW9kZUtpbmRfYXV0bxABEiYKIkNvb3JkaW5hdGlvblNl",
-            "cnZpY2VNb2RlS2luZF9tYW51YWwQAhInCiNDb29yZGluYXRpb25TZXJ2aWNl",
-            "TW9kZUtpbmRfbmV0emVybxADEiUKIUNvb3JkaW5hdGlvblNlcnZpY2VNb2Rl",
-            "S2luZF9zdGFydBAEEiQKIENvb3JkaW5hdGlvblNlcnZpY2VNb2RlS2luZF9z",
-            "dG9wEAVCqwEKIW9wZW5mbWIuY29vcmRpbmF0aW9uc2VydmljZW1vZHVsZVAB",
-            "WmBnaXRsYWIuY29tL29wZW5mbWIvcHNtL29wcy9wcm90b2J1Zi9nby1vcGVu",
-            "Zm1iLW9wcy1wcm90b2J1Zi92Mi9vcGVuZm1iL2Nvb3JkaW5hdGlvbnNlcnZp",
-            "Y2Vtb2R1bGWqAiFvcGVuZm1iLmNvb3JkaW5hdGlvbnNlcnZpY2Vtb2R1bGVi",
-            "BnByb3RvMw=="));
+            "tRgBOgTA8xgBKrICChtDb29yZGluYXRpb25TZXJ2aWNlTW9kZUtpbmQSKQol",
+            "Q29vcmRpbmF0aW9uU2VydmljZU1vZGVLaW5kX1VOREVGSU5FRBAAEiQKIENv",
+            "b3JkaW5hdGlvblNlcnZpY2VNb2RlS2luZF9ub25lEAESJAogQ29vcmRpbmF0",
+            "aW9uU2VydmljZU1vZGVLaW5kX2F1dG8QAhImCiJDb29yZGluYXRpb25TZXJ2",
+            "aWNlTW9kZUtpbmRfbWFudWFsEAMSJwojQ29vcmRpbmF0aW9uU2VydmljZU1v",
+            "ZGVLaW5kX25ldHplcm8QBBIlCiFDb29yZGluYXRpb25TZXJ2aWNlTW9kZUtp",
+            "bmRfc3RhcnQQBRIkCiBDb29yZGluYXRpb25TZXJ2aWNlTW9kZUtpbmRfc3Rv",
+            "cBAGQqsBCiFvcGVuZm1iLmNvb3JkaW5hdGlvbnNlcnZpY2Vtb2R1bGVQAVpg",
+            "Z2l0bGFiLmNvbS9vcGVuZm1iL3BzbS9vcHMvcHJvdG9idWYvZ28tb3BlbmZt",
+            "Yi1vcHMtcHJvdG9idWYvdjIvb3BlbmZtYi9jb29yZGluYXRpb25zZXJ2aWNl",
+            "bW9kdWxlqgIhb3BlbmZtYi5jb29yZGluYXRpb25zZXJ2aWNlbW9kdWxlYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::openfmb.UmlReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::openfmb.commonmodule.CommonmoduleReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::openfmb.coordinationservicemodule.CoordinationServiceModeKind), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -126,29 +127,33 @@ namespace openfmb.coordinationservicemodule {
   /// </summary>
   public enum CoordinationServiceModeKind {
     /// <summary>
-    /// MISSING DOCUMENTATION!!!
+    /// Undefined
     /// </summary>
-    [pbr::OriginalName("CoordinationServiceModeKind_none")] None = 0,
+    [pbr::OriginalName("CoordinationServiceModeKind_UNDEFINED")] Undefined = 0,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("CoordinationServiceModeKind_auto")] Auto = 1,
+    [pbr::OriginalName("CoordinationServiceModeKind_none")] None = 1,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("CoordinationServiceModeKind_manual")] Manual = 2,
+    [pbr::OriginalName("CoordinationServiceModeKind_auto")] Auto = 2,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("CoordinationServiceModeKind_netzero")] Netzero = 3,
+    [pbr::OriginalName("CoordinationServiceModeKind_manual")] Manual = 3,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("CoordinationServiceModeKind_start")] Start = 4,
+    [pbr::OriginalName("CoordinationServiceModeKind_netzero")] Netzero = 4,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("CoordinationServiceModeKind_stop")] Stop = 5,
+    [pbr::OriginalName("CoordinationServiceModeKind_start")] Start = 5,
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [pbr::OriginalName("CoordinationServiceModeKind_stop")] Stop = 6,
   }
 
   #endregion
@@ -194,7 +199,7 @@ namespace openfmb.coordinationservicemodule {
 
     /// <summary>Field number for the "value" field.</summary>
     public const int ValueFieldNumber = 1;
-    private global::openfmb.coordinationservicemodule.CoordinationServiceModeKind value_ = global::openfmb.coordinationservicemodule.CoordinationServiceModeKind.None;
+    private global::openfmb.coordinationservicemodule.CoordinationServiceModeKind value_ = global::openfmb.coordinationservicemodule.CoordinationServiceModeKind.Undefined;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::openfmb.coordinationservicemodule.CoordinationServiceModeKind Value {
       get { return value_; }
@@ -223,7 +228,7 @@ namespace openfmb.coordinationservicemodule {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Value != global::openfmb.coordinationservicemodule.CoordinationServiceModeKind.None) hash ^= Value.GetHashCode();
+      if (Value != global::openfmb.coordinationservicemodule.CoordinationServiceModeKind.Undefined) hash ^= Value.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -240,7 +245,7 @@ namespace openfmb.coordinationservicemodule {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Value != global::openfmb.coordinationservicemodule.CoordinationServiceModeKind.None) {
+      if (Value != global::openfmb.coordinationservicemodule.CoordinationServiceModeKind.Undefined) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Value);
       }
@@ -253,7 +258,7 @@ namespace openfmb.coordinationservicemodule {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Value != global::openfmb.coordinationservicemodule.CoordinationServiceModeKind.None) {
+      if (Value != global::openfmb.coordinationservicemodule.CoordinationServiceModeKind.Undefined) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Value);
       }
@@ -266,7 +271,7 @@ namespace openfmb.coordinationservicemodule {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Value != global::openfmb.coordinationservicemodule.CoordinationServiceModeKind.None) {
+      if (Value != global::openfmb.coordinationservicemodule.CoordinationServiceModeKind.Undefined) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Value);
       }
       if (_unknownFields != null) {
@@ -280,7 +285,7 @@ namespace openfmb.coordinationservicemodule {
       if (other == null) {
         return;
       }
-      if (other.Value != global::openfmb.coordinationservicemodule.CoordinationServiceModeKind.None) {
+      if (other.Value != global::openfmb.coordinationservicemodule.CoordinationServiceModeKind.Undefined) {
         Value = other.Value;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -370,7 +375,7 @@ namespace openfmb.coordinationservicemodule {
 
     /// <summary>Field number for the "setVal" field.</summary>
     public const int SetValFieldNumber = 1;
-    private global::openfmb.coordinationservicemodule.CoordinationServiceModeKind setVal_ = global::openfmb.coordinationservicemodule.CoordinationServiceModeKind.None;
+    private global::openfmb.coordinationservicemodule.CoordinationServiceModeKind setVal_ = global::openfmb.coordinationservicemodule.CoordinationServiceModeKind.Undefined;
     /// <summary>
     /// The value of the coordination service mode.
     /// </summary>
@@ -419,7 +424,7 @@ namespace openfmb.coordinationservicemodule {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (SetVal != global::openfmb.coordinationservicemodule.CoordinationServiceModeKind.None) hash ^= SetVal.GetHashCode();
+      if (SetVal != global::openfmb.coordinationservicemodule.CoordinationServiceModeKind.Undefined) hash ^= SetVal.GetHashCode();
       if (setValExtension_ != null) hash ^= SetValExtension.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -437,7 +442,7 @@ namespace openfmb.coordinationservicemodule {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (SetVal != global::openfmb.coordinationservicemodule.CoordinationServiceModeKind.None) {
+      if (SetVal != global::openfmb.coordinationservicemodule.CoordinationServiceModeKind.Undefined) {
         output.WriteRawTag(8);
         output.WriteEnum((int) SetVal);
       }
@@ -453,7 +458,7 @@ namespace openfmb.coordinationservicemodule {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (SetVal != global::openfmb.coordinationservicemodule.CoordinationServiceModeKind.None) {
+      if (SetVal != global::openfmb.coordinationservicemodule.CoordinationServiceModeKind.Undefined) {
         output.WriteRawTag(8);
         output.WriteEnum((int) SetVal);
       }
@@ -469,7 +474,7 @@ namespace openfmb.coordinationservicemodule {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (SetVal != global::openfmb.coordinationservicemodule.CoordinationServiceModeKind.None) {
+      if (SetVal != global::openfmb.coordinationservicemodule.CoordinationServiceModeKind.Undefined) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) SetVal);
       }
       if (setValExtension_ != null) {
@@ -486,7 +491,7 @@ namespace openfmb.coordinationservicemodule {
       if (other == null) {
         return;
       }
-      if (other.SetVal != global::openfmb.coordinationservicemodule.CoordinationServiceModeKind.None) {
+      if (other.SetVal != global::openfmb.coordinationservicemodule.CoordinationServiceModeKind.Undefined) {
         SetVal = other.SetVal;
       }
       if (other.setValExtension_ != null) {
@@ -2522,12 +2527,12 @@ namespace openfmb.coordinationservicemodule {
 
     /// <summary>Field number for the "Island" field.</summary>
     public const int IslandFieldNumber = 3;
-    private global::openfmb.commonmodule.StatusSPS island_;
+    private global::openfmb.commonmodule.StatusDPS island_;
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.StatusSPS Island {
+    public global::openfmb.commonmodule.StatusDPS Island {
       get { return island_; }
       set {
         island_ = value;
@@ -2786,7 +2791,7 @@ namespace openfmb.coordinationservicemodule {
       }
       if (other.island_ != null) {
         if (island_ == null) {
-          Island = new global::openfmb.commonmodule.StatusSPS();
+          Island = new global::openfmb.commonmodule.StatusDPS();
         }
         Island.MergeFrom(other.Island);
       }
@@ -2850,7 +2855,7 @@ namespace openfmb.coordinationservicemodule {
           }
           case 26: {
             if (island_ == null) {
-              Island = new global::openfmb.commonmodule.StatusSPS();
+              Island = new global::openfmb.commonmodule.StatusDPS();
             }
             input.ReadMessage(Island);
             break;
@@ -2920,7 +2925,7 @@ namespace openfmb.coordinationservicemodule {
           }
           case 26: {
             if (island_ == null) {
-              Island = new global::openfmb.commonmodule.StatusSPS();
+              Island = new global::openfmb.commonmodule.StatusDPS();
             }
             input.ReadMessage(Island);
             break;

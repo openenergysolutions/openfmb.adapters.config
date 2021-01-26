@@ -29,16 +29,16 @@ namespace openfmb.interconnectionmodule {
             "Z2xlL3Byb3RvYnVmL3dyYXBwZXJzLnByb3RvGh9jb21tb25tb2R1bGUvY29t",
             "bW9ubW9kdWxlLnByb3RvIqUEChRJbnRlcmNvbm5lY3Rpb25Qb2ludBIzChFi",
             "bGFja1N0YXJ0RW5hYmxlZBgBIAEoCzIYLmNvbW1vbm1vZHVsZS5Db250cm9s",
-            "RFBDEjoKGGZyZXF1ZW5jeVNldFBvaW50RW5hYmxlZBgCIAEoCzIYLmNvbW1v",
-            "bm1vZHVsZS5Db250cm9sRFBDEigKBmlzbGFuZBgDIAEoCzIYLmNvbW1vbm1v",
-            "ZHVsZS5Db250cm9sRFBDEi8KCnBjdEh6RHJvb3AYBCABKAsyGy5nb29nbGUu",
+            "U1BDEjoKGGZyZXF1ZW5jeVNldFBvaW50RW5hYmxlZBgCIAEoCzIYLmNvbW1v",
+            "bm1vZHVsZS5Db250cm9sU1BDEigKBmlzbGFuZBgDIAEoCzIYLmNvbW1vbm1v",
+            "ZHVsZS5Db250cm9sU1BDEi8KCnBjdEh6RHJvb3AYBCABKAsyGy5nb29nbGUu",
             "cHJvdG9idWYuRmxvYXRWYWx1ZRIuCglwY3RWRHJvb3AYBSABKAsyGy5nb29n",
             "bGUucHJvdG9idWYuRmxvYXRWYWx1ZRIpCglyYW1wUmF0ZXMYBiABKAsyFi5j",
             "b21tb25tb2R1bGUuUmFtcFJhdGUSPAoacmVhY3RpdmVQd3JTZXRQb2ludEVu",
-            "YWJsZWQYByABKAsyGC5jb21tb25tb2R1bGUuQ29udHJvbERQQxI4ChZyZWFs",
+            "YWJsZWQYByABKAsyGC5jb21tb25tb2R1bGUuQ29udHJvbFNQQxI4ChZyZWFs",
             "UHdyU2V0UG9pbnRFbmFibGVkGAggASgLMhguY29tbW9ubW9kdWxlLkNvbnRy",
-            "b2xEUEMSOAoWdm9sdGFnZVNldFBvaW50RW5hYmxlZBgJIAEoCzIYLmNvbW1v",
-            "bm1vZHVsZS5Db250cm9sRFBDEjQKCXN0YXJ0VGltZRgKIAEoCzIXLmNvbW1v",
+            "b2xTUEMSOAoWdm9sdGFnZVNldFBvaW50RW5hYmxlZBgJIAEoCzIYLmNvbW1v",
+            "bm1vZHVsZS5Db250cm9sU1BDEjQKCXN0YXJ0VGltZRgKIAEoCzIXLmNvbW1v",
             "bm1vZHVsZS5UaW1lc3RhbXBCCIi1GAGQtRgBIlsKEkludGVyY29ubmVjdGlv",
             "bkNTRxJFCgZjcnZQdHMYASADKAsyKy5pbnRlcmNvbm5lY3Rpb25tb2R1bGUu",
             "SW50ZXJjb25uZWN0aW9uUG9pbnRCCIi1GAGQtRgBImoKIkludGVyY29ubmVj",
@@ -145,12 +145,12 @@ namespace openfmb.interconnectionmodule {
 
     /// <summary>Field number for the "blackStartEnabled" field.</summary>
     public const int BlackStartEnabledFieldNumber = 1;
-    private global::openfmb.commonmodule.ControlDPC blackStartEnabled_;
+    private global::openfmb.commonmodule.ControlSPC blackStartEnabled_;
     /// <summary>
     /// Black start enable
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.ControlDPC BlackStartEnabled {
+    public global::openfmb.commonmodule.ControlSPC BlackStartEnabled {
       get { return blackStartEnabled_; }
       set {
         blackStartEnabled_ = value;
@@ -159,12 +159,12 @@ namespace openfmb.interconnectionmodule {
 
     /// <summary>Field number for the "frequencySetPointEnabled" field.</summary>
     public const int FrequencySetPointEnabledFieldNumber = 2;
-    private global::openfmb.commonmodule.ControlDPC frequencySetPointEnabled_;
+    private global::openfmb.commonmodule.ControlSPC frequencySetPointEnabled_;
     /// <summary>
     /// Enable frequency set point
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.ControlDPC FrequencySetPointEnabled {
+    public global::openfmb.commonmodule.ControlSPC FrequencySetPointEnabled {
       get { return frequencySetPointEnabled_; }
       set {
         frequencySetPointEnabled_ = value;
@@ -173,12 +173,12 @@ namespace openfmb.interconnectionmodule {
 
     /// <summary>Field number for the "island" field.</summary>
     public const int IslandFieldNumber = 3;
-    private global::openfmb.commonmodule.ControlDPC island_;
+    private global::openfmb.commonmodule.ControlSPC island_;
     /// <summary>
     /// Island control
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.ControlDPC Island {
+    public global::openfmb.commonmodule.ControlSPC Island {
       get { return island_; }
       set {
         island_ = value;
@@ -233,12 +233,12 @@ namespace openfmb.interconnectionmodule {
 
     /// <summary>Field number for the "reactivePwrSetPointEnabled" field.</summary>
     public const int ReactivePwrSetPointEnabledFieldNumber = 7;
-    private global::openfmb.commonmodule.ControlDPC reactivePwrSetPointEnabled_;
+    private global::openfmb.commonmodule.ControlSPC reactivePwrSetPointEnabled_;
     /// <summary>
     /// Enable reactive power set point
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.ControlDPC ReactivePwrSetPointEnabled {
+    public global::openfmb.commonmodule.ControlSPC ReactivePwrSetPointEnabled {
       get { return reactivePwrSetPointEnabled_; }
       set {
         reactivePwrSetPointEnabled_ = value;
@@ -247,12 +247,12 @@ namespace openfmb.interconnectionmodule {
 
     /// <summary>Field number for the "realPwrSetPointEnabled" field.</summary>
     public const int RealPwrSetPointEnabledFieldNumber = 8;
-    private global::openfmb.commonmodule.ControlDPC realPwrSetPointEnabled_;
+    private global::openfmb.commonmodule.ControlSPC realPwrSetPointEnabled_;
     /// <summary>
     /// Enable real power set point
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.ControlDPC RealPwrSetPointEnabled {
+    public global::openfmb.commonmodule.ControlSPC RealPwrSetPointEnabled {
       get { return realPwrSetPointEnabled_; }
       set {
         realPwrSetPointEnabled_ = value;
@@ -261,12 +261,12 @@ namespace openfmb.interconnectionmodule {
 
     /// <summary>Field number for the "voltageSetPointEnabled" field.</summary>
     public const int VoltageSetPointEnabledFieldNumber = 9;
-    private global::openfmb.commonmodule.ControlDPC voltageSetPointEnabled_;
+    private global::openfmb.commonmodule.ControlSPC voltageSetPointEnabled_;
     /// <summary>
     /// Enable voltage set point
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.ControlDPC VoltageSetPointEnabled {
+    public global::openfmb.commonmodule.ControlSPC VoltageSetPointEnabled {
       get { return voltageSetPointEnabled_; }
       set {
         voltageSetPointEnabled_ = value;
@@ -479,19 +479,19 @@ namespace openfmb.interconnectionmodule {
       }
       if (other.blackStartEnabled_ != null) {
         if (blackStartEnabled_ == null) {
-          BlackStartEnabled = new global::openfmb.commonmodule.ControlDPC();
+          BlackStartEnabled = new global::openfmb.commonmodule.ControlSPC();
         }
         BlackStartEnabled.MergeFrom(other.BlackStartEnabled);
       }
       if (other.frequencySetPointEnabled_ != null) {
         if (frequencySetPointEnabled_ == null) {
-          FrequencySetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+          FrequencySetPointEnabled = new global::openfmb.commonmodule.ControlSPC();
         }
         FrequencySetPointEnabled.MergeFrom(other.FrequencySetPointEnabled);
       }
       if (other.island_ != null) {
         if (island_ == null) {
-          Island = new global::openfmb.commonmodule.ControlDPC();
+          Island = new global::openfmb.commonmodule.ControlSPC();
         }
         Island.MergeFrom(other.Island);
       }
@@ -513,19 +513,19 @@ namespace openfmb.interconnectionmodule {
       }
       if (other.reactivePwrSetPointEnabled_ != null) {
         if (reactivePwrSetPointEnabled_ == null) {
-          ReactivePwrSetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+          ReactivePwrSetPointEnabled = new global::openfmb.commonmodule.ControlSPC();
         }
         ReactivePwrSetPointEnabled.MergeFrom(other.ReactivePwrSetPointEnabled);
       }
       if (other.realPwrSetPointEnabled_ != null) {
         if (realPwrSetPointEnabled_ == null) {
-          RealPwrSetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+          RealPwrSetPointEnabled = new global::openfmb.commonmodule.ControlSPC();
         }
         RealPwrSetPointEnabled.MergeFrom(other.RealPwrSetPointEnabled);
       }
       if (other.voltageSetPointEnabled_ != null) {
         if (voltageSetPointEnabled_ == null) {
-          VoltageSetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+          VoltageSetPointEnabled = new global::openfmb.commonmodule.ControlSPC();
         }
         VoltageSetPointEnabled.MergeFrom(other.VoltageSetPointEnabled);
       }
@@ -551,21 +551,21 @@ namespace openfmb.interconnectionmodule {
             break;
           case 10: {
             if (blackStartEnabled_ == null) {
-              BlackStartEnabled = new global::openfmb.commonmodule.ControlDPC();
+              BlackStartEnabled = new global::openfmb.commonmodule.ControlSPC();
             }
             input.ReadMessage(BlackStartEnabled);
             break;
           }
           case 18: {
             if (frequencySetPointEnabled_ == null) {
-              FrequencySetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+              FrequencySetPointEnabled = new global::openfmb.commonmodule.ControlSPC();
             }
             input.ReadMessage(FrequencySetPointEnabled);
             break;
           }
           case 26: {
             if (island_ == null) {
-              Island = new global::openfmb.commonmodule.ControlDPC();
+              Island = new global::openfmb.commonmodule.ControlSPC();
             }
             input.ReadMessage(Island);
             break;
@@ -593,21 +593,21 @@ namespace openfmb.interconnectionmodule {
           }
           case 58: {
             if (reactivePwrSetPointEnabled_ == null) {
-              ReactivePwrSetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+              ReactivePwrSetPointEnabled = new global::openfmb.commonmodule.ControlSPC();
             }
             input.ReadMessage(ReactivePwrSetPointEnabled);
             break;
           }
           case 66: {
             if (realPwrSetPointEnabled_ == null) {
-              RealPwrSetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+              RealPwrSetPointEnabled = new global::openfmb.commonmodule.ControlSPC();
             }
             input.ReadMessage(RealPwrSetPointEnabled);
             break;
           }
           case 74: {
             if (voltageSetPointEnabled_ == null) {
-              VoltageSetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+              VoltageSetPointEnabled = new global::openfmb.commonmodule.ControlSPC();
             }
             input.ReadMessage(VoltageSetPointEnabled);
             break;
@@ -635,21 +635,21 @@ namespace openfmb.interconnectionmodule {
             break;
           case 10: {
             if (blackStartEnabled_ == null) {
-              BlackStartEnabled = new global::openfmb.commonmodule.ControlDPC();
+              BlackStartEnabled = new global::openfmb.commonmodule.ControlSPC();
             }
             input.ReadMessage(BlackStartEnabled);
             break;
           }
           case 18: {
             if (frequencySetPointEnabled_ == null) {
-              FrequencySetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+              FrequencySetPointEnabled = new global::openfmb.commonmodule.ControlSPC();
             }
             input.ReadMessage(FrequencySetPointEnabled);
             break;
           }
           case 26: {
             if (island_ == null) {
-              Island = new global::openfmb.commonmodule.ControlDPC();
+              Island = new global::openfmb.commonmodule.ControlSPC();
             }
             input.ReadMessage(Island);
             break;
@@ -677,21 +677,21 @@ namespace openfmb.interconnectionmodule {
           }
           case 58: {
             if (reactivePwrSetPointEnabled_ == null) {
-              ReactivePwrSetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+              ReactivePwrSetPointEnabled = new global::openfmb.commonmodule.ControlSPC();
             }
             input.ReadMessage(ReactivePwrSetPointEnabled);
             break;
           }
           case 66: {
             if (realPwrSetPointEnabled_ == null) {
-              RealPwrSetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+              RealPwrSetPointEnabled = new global::openfmb.commonmodule.ControlSPC();
             }
             input.ReadMessage(RealPwrSetPointEnabled);
             break;
           }
           case 74: {
             if (voltageSetPointEnabled_ == null) {
-              VoltageSetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+              VoltageSetPointEnabled = new global::openfmb.commonmodule.ControlSPC();
             }
             input.ReadMessage(VoltageSetPointEnabled);
             break;

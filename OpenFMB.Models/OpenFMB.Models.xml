@@ -294,12 +294,140 @@
             LN: Power cap bank  Name: YPSH
             </summary>
         </member>
+        <member name="F:openfmb.capbankmodule.CapBankControlYPSH.AmpLmtFieldNumber">
+            <summary>Field number for the "AmpLmt" field.</summary>
+        </member>
+        <member name="P:openfmb.capbankmodule.CapBankControlYPSH.AmpLmt">
+            <summary>
+            Current limit (boolean field)
+            </summary>
+        </member>
+        <member name="F:openfmb.capbankmodule.CapBankControlYPSH.AmpThdHiFieldNumber">
+            <summary>Field number for the "AmpThdHi" field.</summary>
+        </member>
+        <member name="P:openfmb.capbankmodule.CapBankControlYPSH.AmpThdHi">
+            <summary>
+            High current  threshold
+            </summary>
+        </member>
+        <member name="F:openfmb.capbankmodule.CapBankControlYPSH.AmpThdLoFieldNumber">
+            <summary>Field number for the "AmpThdLo" field.</summary>
+        </member>
+        <member name="P:openfmb.capbankmodule.CapBankControlYPSH.AmpThdLo">
+            <summary>
+            Low current threshold
+            </summary>
+        </member>
+        <member name="F:openfmb.capbankmodule.CapBankControlYPSH.CtlModeAutoFieldNumber">
+            <summary>Field number for the "CtlModeAuto" field.</summary>
+        </member>
+        <member name="P:openfmb.capbankmodule.CapBankControlYPSH.CtlModeAuto">
+            <summary>
+            Control mode auto
+            </summary>
+        </member>
+        <member name="F:openfmb.capbankmodule.CapBankControlYPSH.CtlModeOvrRdFieldNumber">
+            <summary>Field number for the "CtlModeOvrRd" field.</summary>
+        </member>
+        <member name="P:openfmb.capbankmodule.CapBankControlYPSH.CtlModeOvrRd">
+            <summary>
+            Control mode override
+            </summary>
+        </member>
+        <member name="F:openfmb.capbankmodule.CapBankControlYPSH.CtlModeRemFieldNumber">
+            <summary>Field number for the "CtlModeRem" field.</summary>
+        </member>
+        <member name="P:openfmb.capbankmodule.CapBankControlYPSH.CtlModeRem">
+            <summary>
+            Control mode remote
+            </summary>
+        </member>
+        <member name="F:openfmb.capbankmodule.CapBankControlYPSH.DirModeFieldNumber">
+            <summary>Field number for the "DirMode" field.</summary>
+        </member>
+        <member name="P:openfmb.capbankmodule.CapBankControlYPSH.DirMode">
+            <summary>
+            The control characteristics for power flow operation
+            </summary>
+        </member>
         <member name="F:openfmb.capbankmodule.CapBankControlYPSH.PosFieldNumber">
             <summary>Field number for the "Pos" field.</summary>
         </member>
         <member name="P:openfmb.capbankmodule.CapBankControlYPSH.Pos">
             <summary>
             (controllable) Position of the switch of power shunt.
+            </summary>
+        </member>
+        <member name="F:openfmb.capbankmodule.CapBankControlYPSH.TempLmtFieldNumber">
+            <summary>Field number for the "TempLmt" field.</summary>
+        </member>
+        <member name="P:openfmb.capbankmodule.CapBankControlYPSH.TempLmt">
+            <summary>
+            Temperature limit (boolean field)
+            </summary>
+        </member>
+        <member name="F:openfmb.capbankmodule.CapBankControlYPSH.TempThdHiFieldNumber">
+            <summary>Field number for the "TempThdHi" field.</summary>
+        </member>
+        <member name="P:openfmb.capbankmodule.CapBankControlYPSH.TempThdHi">
+            <summary>
+            High temperature threshold
+            </summary>
+        </member>
+        <member name="F:openfmb.capbankmodule.CapBankControlYPSH.TempThdLoFieldNumber">
+            <summary>Field number for the "TempThdLo" field.</summary>
+        </member>
+        <member name="P:openfmb.capbankmodule.CapBankControlYPSH.TempThdLo">
+            <summary>
+            Low temperature threshold
+            </summary>
+        </member>
+        <member name="F:openfmb.capbankmodule.CapBankControlYPSH.VArLmtFieldNumber">
+            <summary>Field number for the "VArLmt" field.</summary>
+        </member>
+        <member name="P:openfmb.capbankmodule.CapBankControlYPSH.VArLmt">
+            <summary>
+            VAr limit (boolean field)
+            </summary>
+        </member>
+        <member name="F:openfmb.capbankmodule.CapBankControlYPSH.VArThdHiFieldNumber">
+            <summary>Field number for the "VArThdHi" field.</summary>
+        </member>
+        <member name="P:openfmb.capbankmodule.CapBankControlYPSH.VArThdHi">
+            <summary>
+            High VAr threshold
+            </summary>
+        </member>
+        <member name="F:openfmb.capbankmodule.CapBankControlYPSH.VArThdLoFieldNumber">
+            <summary>Field number for the "VArThdLo" field.</summary>
+        </member>
+        <member name="P:openfmb.capbankmodule.CapBankControlYPSH.VArThdLo">
+            <summary>
+            Low VAr threshold
+            </summary>
+        </member>
+        <member name="F:openfmb.capbankmodule.CapBankControlYPSH.VolLmtFieldNumber">
+            <summary>Field number for the "VolLmt" field.</summary>
+        </member>
+        <member name="P:openfmb.capbankmodule.CapBankControlYPSH.VolLmt">
+            <summary>
+            Voltage limit (boolean field)
+            </summary>
+        </member>
+        <member name="F:openfmb.capbankmodule.CapBankControlYPSH.VolThdHiFieldNumber">
+            <summary>Field number for the "VolThdHi" field.</summary>
+        </member>
+        <member name="P:openfmb.capbankmodule.CapBankControlYPSH.VolThdHi">
+            <summary>
+            High voltage threshold
+            </summary>
+        </member>
+        <member name="F:openfmb.capbankmodule.CapBankControlYPSH.VolThdLoFieldNumber">
+            <summary>Field number for the "VolThdLo" field.</summary>
+        </member>
+        <member name="P:openfmb.capbankmodule.CapBankControlYPSH.VolThdLo">
+            <summary>
+            Low voltage threshold
             </summary>
         </member>
         <member name="T:openfmb.capbankmodule.CapBankPoint">
@@ -442,10 +570,10 @@
             UML inherited base object
             </summary>
         </member>
-        <member name="F:openfmb.capbankmodule.CapBankDiscreteControlYPSH.PosFieldNumber">
-            <summary>Field number for the "Pos" field.</summary>
+        <member name="F:openfmb.capbankmodule.CapBankDiscreteControlYPSH.ControlFieldNumber">
+            <summary>Field number for the "control" field.</summary>
         </member>
-        <member name="P:openfmb.capbankmodule.CapBankDiscreteControlYPSH.Pos">
+        <member name="P:openfmb.capbankmodule.CapBankDiscreteControlYPSH.Control">
             <summary>
             MISSING DOCUMENTATION!!!
             </summary>
@@ -522,6 +650,30 @@
             UML inherited base object
             </summary>
         </member>
+        <member name="F:openfmb.capbankmodule.CapBankEventAndStatusYPSH.AmpLmtFieldNumber">
+            <summary>Field number for the "AmpLmt" field.</summary>
+        </member>
+        <member name="P:openfmb.capbankmodule.CapBankEventAndStatusYPSH.AmpLmt">
+            <summary>
+            True if current limit (high, low, or both) are set
+            </summary>
+        </member>
+        <member name="F:openfmb.capbankmodule.CapBankEventAndStatusYPSH.CtlModeFieldNumber">
+            <summary>Field number for the "CtlMode" field.</summary>
+        </member>
+        <member name="P:openfmb.capbankmodule.CapBankEventAndStatusYPSH.CtlMode">
+            <summary>
+            Control mode
+            </summary>
+        </member>
+        <member name="F:openfmb.capbankmodule.CapBankEventAndStatusYPSH.DirRevFieldNumber">
+            <summary>Field number for the "DirRev" field.</summary>
+        </member>
+        <member name="P:openfmb.capbankmodule.CapBankEventAndStatusYPSH.DirRev">
+            <summary>
+            True if power flow is reversed
+            </summary>
+        </member>
         <member name="F:openfmb.capbankmodule.CapBankEventAndStatusYPSH.DynamicTestFieldNumber">
             <summary>Field number for the "DynamicTest" field.</summary>
         </member>
@@ -536,6 +688,30 @@
         <member name="P:openfmb.capbankmodule.CapBankEventAndStatusYPSH.Pos">
             <summary>
             (controllable) Position of the switch of power shunt.
+            </summary>
+        </member>
+        <member name="F:openfmb.capbankmodule.CapBankEventAndStatusYPSH.TempLmtFieldNumber">
+            <summary>Field number for the "TempLmt" field.</summary>
+        </member>
+        <member name="P:openfmb.capbankmodule.CapBankEventAndStatusYPSH.TempLmt">
+            <summary>
+            True if temperature limit (high, low, or both) are set
+            </summary>
+        </member>
+        <member name="F:openfmb.capbankmodule.CapBankEventAndStatusYPSH.VArLmtFieldNumber">
+            <summary>Field number for the "VArLmt" field.</summary>
+        </member>
+        <member name="P:openfmb.capbankmodule.CapBankEventAndStatusYPSH.VArLmt">
+            <summary>
+            True if VAr limit (high, low, or both) are set
+            </summary>
+        </member>
+        <member name="F:openfmb.capbankmodule.CapBankEventAndStatusYPSH.VolLmtFieldNumber">
+            <summary>Field number for the "VolLmt" field.</summary>
+        </member>
+        <member name="P:openfmb.capbankmodule.CapBankEventAndStatusYPSH.VolLmt">
+            <summary>
+            True if voltage limit (high, low, or both) are set
             </summary>
         </member>
         <member name="T:openfmb.capbankmodule.CapBankEvent">
@@ -621,6 +797,14 @@
             <summary>Field number for the "readingMMXU" field.</summary>
         </member>
         <member name="P:openfmb.capbankmodule.CapBankReading.ReadingMMXU">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.capbankmodule.CapBankReading.SecondaryReadingMMXUFieldNumber">
+            <summary>Field number for the "secondaryReadingMMXU" field.</summary>
+        </member>
+        <member name="P:openfmb.capbankmodule.CapBankReading.SecondaryReadingMMXU">
             <summary>
             MISSING DOCUMENTATION!!!
             </summary>
@@ -715,6 +899,11 @@
             Reclose action kind such as idle, cycling, or lockout.
             </summary>
         </member>
+        <member name="F:openfmb.commonmodule.FaultDirectionKind.Undefined">
+            <summary>
+            Undefined
+            </summary>
+        </member>
         <member name="F:openfmb.commonmodule.FaultDirectionKind.Unknown">
             <summary>
             MISSING DOCUMENTATION!!!
@@ -738,6 +927,11 @@
         <member name="T:openfmb.commonmodule.PhaseFaultDirectionKind">
             <summary>
             Reclose action kind such as idle, cycling, or lockout.
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.PhaseFaultDirectionKind.Undefined">
+            <summary>
+            Undefined
             </summary>
         </member>
         <member name="F:openfmb.commonmodule.PhaseFaultDirectionKind.Unknown">
@@ -943,6 +1137,11 @@
             The unit multipliers defined for the CIM.
             </summary>
         </member>
+        <member name="F:openfmb.commonmodule.UnitMultiplierKind.Undefined">
+            <summary>
+            Undefined
+            </summary>
+        </member>
         <member name="F:openfmb.commonmodule.UnitMultiplierKind.None">
             <summary>
             No multiplier or equivalently multiply by 1.
@@ -1134,6 +1333,11 @@
             'good', some reasons may be found in the 'detailQual'.
             </summary>
         </member>
+        <member name="F:openfmb.commonmodule.ValidityKind.Undefined">
+            <summary>
+            Undefined
+            </summary>
+        </member>
         <member name="F:openfmb.commonmodule.ValidityKind.Good">
             <summary>
             Supervision function has detected no abnormal condition of either the acquisition function or
@@ -1167,6 +1371,11 @@
             There are various means to clear a substitution. As an example, a substitution that was done
             following an invalid condition may be cleared automatically if the invalid condition is cleared.
             However, this is a local issue and therefore
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.SourceKind.Undefined">
+            <summary>
+            Undefined
             </summary>
         </member>
         <member name="F:openfmb.commonmodule.SourceKind.Process">
@@ -1229,6 +1438,11 @@
         <member name="T:openfmb.commonmodule.ScheduleParameterKind">
             <summary>
             ESS function kind
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.ScheduleParameterKind.Undefined">
+            <summary>
+            Undefined
             </summary>
         </member>
         <member name="F:openfmb.commonmodule.ScheduleParameterKind.None">
@@ -1657,6 +1871,11 @@
             machine diagram)   A simplified state machine diagram (from Herb F.) is provided.
             </summary>
         </member>
+        <member name="F:openfmb.commonmodule.DynamicTestKind.Undefined">
+            <summary>
+            Undefined
+            </summary>
+        </member>
         <member name="F:openfmb.commonmodule.DynamicTestKind.None">
             <summary>
             None
@@ -1680,6 +1899,11 @@
         <member name="T:openfmb.commonmodule.HealthKind">
             <summary>
             State kind
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.HealthKind.Undefined">
+            <summary>
+            No problems, normal operation ("green").
             </summary>
         </member>
         <member name="F:openfmb.commonmodule.HealthKind.None">
@@ -1708,6 +1932,11 @@
             MISSING DOCUMENTATION!!!
             </summary>
         </member>
+        <member name="F:openfmb.commonmodule.SwitchingCapabilityKind.Undefined">
+            <summary>
+            Undefined
+            </summary>
+        </member>
         <member name="F:openfmb.commonmodule.SwitchingCapabilityKind.None">
             <summary>
             MISSING DOCUMENTATION!!!
@@ -1731,6 +1960,11 @@
         <member name="T:openfmb.commonmodule.DbPosKind">
             <summary>
             Double point position status
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.DbPosKind.Undefined">
+            <summary>
+            Undefined
             </summary>
         </member>
         <member name="F:openfmb.commonmodule.DbPosKind.Transient">
@@ -1758,6 +1992,11 @@
             Reclose action kind such as idle, cycling, or lockout.
             </summary>
         </member>
+        <member name="F:openfmb.commonmodule.RecloseActionKind.Undefined">
+            <summary>
+            Undefined
+            </summary>
+        </member>
         <member name="F:openfmb.commonmodule.RecloseActionKind.Idle">
             <summary>
             Idle state
@@ -1773,9 +2012,170 @@
             Lockout state
             </summary>
         </member>
+        <member name="T:openfmb.commonmodule.ControlModeKind">
+            <summary>
+            Dynamic test status (see IEC61850-7-2 section 20.2.1 Direct control with normal security, state
+            machine diagram)   A simplified state machine diagram (from Herb F.) is provided.
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.ControlModeKind.Undefined">
+            <summary>
+            Undefined
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.ControlModeKind.Auto">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.ControlModeKind.Manual">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.ControlModeKind.Override">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.ControlModeKind.Remote">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.commonmodule.DirectionModeKind">
+            <summary>
+            The control characteristics for power flow operation
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.DirectionModeKind.Undefined">
+            <summary>
+            Undefined
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.DirectionModeKind.LockedForward">
+            <summary>
+            Testing status
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.DirectionModeKind.LockedReverse">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.DirectionModeKind.ReverseIdle">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.DirectionModeKind.Bidirectional">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.DirectionModeKind.NeutralIdle">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.DirectionModeKind.Cogeneration">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.DirectionModeKind.ReactiveBidirectional">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.DirectionModeKind.BiasBidirectional">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.DirectionModeKind.BiasCogeneration">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.DirectionModeKind.ReverseCogeneration">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.commonmodule.ReactivePowerControlKind">
+            <summary>
+            Real power control kind
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.ReactivePowerControlKind.Undefined">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.ReactivePowerControlKind.Advanced">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.ReactivePowerControlKind.Droop">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.ReactivePowerControlKind.Voltage">
+            <summary>
+            Voltage setpoint
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.ReactivePowerControlKind.ReactivePower">
+            <summary>
+            Reactive power setpoint
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.ReactivePowerControlKind.PowerFactor">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.commonmodule.RealPowerControlKind">
+            <summary>
+            Real power control kind
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.RealPowerControlKind.Undefined">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.RealPowerControlKind.Advanced">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.RealPowerControlKind.Droop">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.RealPowerControlKind.Isochronous">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.RealPowerControlKind.RealPower">
+            <summary>
+            Real power setpoint
+            </summary>
+        </member>
         <member name="T:openfmb.commonmodule.StateKind">
             <summary>
             State kind
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.StateKind.Undefined">
+            <summary>
+            MISSING DOCUMENTATION!!!
             </summary>
         </member>
         <member name="F:openfmb.commonmodule.StateKind.Off">
@@ -1789,6 +2189,51 @@
             </summary>
         </member>
         <member name="F:openfmb.commonmodule.StateKind.Standby">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.commonmodule.VoltLimitModeKind">
+            <summary>
+            Voltage-limiting types
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.VoltLimitModeKind.Undefined">
+            <summary>
+            Undefined
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.VoltLimitModeKind.Off">
+            <summary>
+            Testing status
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.VoltLimitModeKind.HighLimitOnly">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.VoltLimitModeKind.LowLimitOnly">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.VoltLimitModeKind.HighLowLimits">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.VoltLimitModeKind.IvvcHighLimitOnly">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.VoltLimitModeKind.IvvcLowLimitOnly">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.VoltLimitModeKind.IvvcHighLowLimits">
             <summary>
             MISSING DOCUMENTATION!!!
             </summary>
@@ -1992,30 +2437,6 @@
         </member>
         <member name="F:openfmb.commonmodule.Optional_PhaseCodeKind.ValueFieldNumber">
             <summary>Field number for the "value" field.</summary>
-        </member>
-        <member name="T:openfmb.commonmodule.AnalogueValue">
-            <summary>
-            Analogue value (AnalogueValue)
-            </summary>
-        </member>
-        <member name="F:openfmb.commonmodule.AnalogueValue.FFieldNumber">
-            <summary>Field number for the "f" field.</summary>
-        </member>
-        <member name="P:openfmb.commonmodule.AnalogueValue.F">
-            <summary>
-            Floating point representation of the measured value. The formula to convert between 'f' and the
-            process value (pVal) shall be: &lt;i>pVal&lt;/i>='f'*10exp('Unit.multiplier') in ['Unit.SIUnit'].
-            </summary>
-        </member>
-        <member name="F:openfmb.commonmodule.AnalogueValue.IFieldNumber">
-            <summary>Field number for the "i" field.</summary>
-        </member>
-        <member name="P:openfmb.commonmodule.AnalogueValue.I">
-            <summary>
-            Integer representation of the measured value. The formula to convert between 'i' and the process
-            value (pVal) shall be: &lt;i>pVal&lt;/i>=(('i'*'ScaledValueConfig.scaleFactor')+'ScaledValueConfig.offset'
-             in ['Unit.SIUnit'].
-            </summary>
         </member>
         <member name="T:openfmb.commonmodule.Unit">
             <summary>
@@ -2361,27 +2782,6 @@
             Phase code
             </summary>
         </member>
-        <member name="T:openfmb.commonmodule.AnalogueValueCtl">
-            <summary>
-            Analogue value control (AnalogueValueCtl)
-            </summary>
-        </member>
-        <member name="F:openfmb.commonmodule.AnalogueValueCtl.FFieldNumber">
-            <summary>Field number for the "f" field.</summary>
-        </member>
-        <member name="P:openfmb.commonmodule.AnalogueValueCtl.F">
-            <summary>
-            Floating point representation of the measured value.  See 'AnalogueValue.f'.
-            </summary>
-        </member>
-        <member name="F:openfmb.commonmodule.AnalogueValueCtl.IFieldNumber">
-            <summary>Field number for the "i" field.</summary>
-        </member>
-        <member name="P:openfmb.commonmodule.AnalogueValueCtl.I">
-            <summary>
-            Integer representation of the measured value. See 'AnalogueValue.i'.
-            </summary>
-        </member>
         <member name="T:openfmb.commonmodule.NamedObject">
             <summary>
             This is a root class similar to IdentifiedObject but without the mRID. The reason to separate
@@ -2437,14 +2837,6 @@
         <member name="P:openfmb.commonmodule.ASG.SetMag">
             <summary>
             The value of the analogue setting.
-            </summary>
-        </member>
-        <member name="F:openfmb.commonmodule.ASG.UnitsFieldNumber">
-            <summary>Field number for the "units" field.</summary>
-        </member>
-        <member name="P:openfmb.commonmodule.ASG.Units">
-            <summary>
-            Unit for 'setMag', 'minVal', 'maxVal', 'stepSize'.
             </summary>
         </member>
         <member name="T:openfmb.commonmodule.BCR">
@@ -3953,6 +4345,43 @@
             Phase C control.
             </summary>
         </member>
+        <member name="T:openfmb.commonmodule.PhaseSPC">
+            <summary>
+            [OpenFMB CDC extension] Per Phase SPC.
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.PhaseSPC.Phs3FieldNumber">
+            <summary>Field number for the "phs3" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.PhaseSPC.Phs3">
+            <summary>
+            3 Phase control.
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.PhaseSPC.PhsAFieldNumber">
+            <summary>Field number for the "phsA" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.PhaseSPC.PhsA">
+            <summary>
+            Phase A control.
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.PhaseSPC.PhsBFieldNumber">
+            <summary>Field number for the "phsB" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.PhaseSPC.PhsB">
+            <summary>
+            Phase B control.
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.PhaseSPC.PhsCFieldNumber">
+            <summary>Field number for the "phsC" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.PhaseSPC.PhsC">
+            <summary>
+            Phase C control.
+            </summary>
+        </member>
         <member name="T:openfmb.commonmodule.PhaseSPS">
             <summary>
             [OpenFMB CDC extension] Per Phase DPS.
@@ -4450,35 +4879,6 @@
             UML inherited base object
             </summary>
         </member>
-        <member name="T:openfmb.commonmodule.StatusSPC">
-            <summary>
-            Controllable single point (SPC)
-            </summary>
-        </member>
-        <member name="F:openfmb.commonmodule.StatusSPC.QFieldNumber">
-            <summary>Field number for the "q" field.</summary>
-        </member>
-        <member name="P:openfmb.commonmodule.StatusSPC.Q">
-            <summary>
-            Quality of the value in 'stVal'.
-            </summary>
-        </member>
-        <member name="F:openfmb.commonmodule.StatusSPC.StValFieldNumber">
-            <summary>Field number for the "stVal" field.</summary>
-        </member>
-        <member name="P:openfmb.commonmodule.StatusSPC.StVal">
-            <summary>
-            Status value of the controllable data object.
-            </summary>
-        </member>
-        <member name="F:openfmb.commonmodule.StatusSPC.TFieldNumber">
-            <summary>Field number for the "t" field.</summary>
-        </member>
-        <member name="P:openfmb.commonmodule.StatusSPC.T">
-            <summary>
-            Timestamp of the last change of the value in any of 'stVal' or 'q'.
-            </summary>
-        </member>
         <member name="T:openfmb.commonmodule.StatusValue">
             <summary>
             Status value
@@ -4605,7 +5005,22 @@
             [OpenFMB Extension]  String control value.
             </summary>
         </member>
+        <member name="F:openfmb.commonmodule.Optional_ControlModeKind.ValueFieldNumber">
+            <summary>Field number for the "value" field.</summary>
+        </member>
+        <member name="F:openfmb.commonmodule.Optional_DirectionModeKind.ValueFieldNumber">
+            <summary>Field number for the "value" field.</summary>
+        </member>
+        <member name="F:openfmb.commonmodule.Optional_ReactivePowerControlKind.ValueFieldNumber">
+            <summary>Field number for the "value" field.</summary>
+        </member>
+        <member name="F:openfmb.commonmodule.Optional_RealPowerControlKind.ValueFieldNumber">
+            <summary>Field number for the "value" field.</summary>
+        </member>
         <member name="F:openfmb.commonmodule.Optional_StateKind.ValueFieldNumber">
+            <summary>Field number for the "value" field.</summary>
+        </member>
+        <member name="F:openfmb.commonmodule.Optional_VoltLimitModeKind.ValueFieldNumber">
             <summary>Field number for the "value" field.</summary>
         </member>
         <member name="T:openfmb.coordinationservicemodule.CoordinationservicemoduleReflection">
@@ -4617,6 +5032,11 @@
         <member name="T:openfmb.coordinationservicemodule.CoordinationServiceModeKind">
             <summary>
             State kind
+            </summary>
+        </member>
+        <member name="F:openfmb.coordinationservicemodule.CoordinationServiceModeKind.Undefined">
+            <summary>
+            Undefined
             </summary>
         </member>
         <member name="F:openfmb.coordinationservicemodule.CoordinationServiceModeKind.None">
@@ -6137,71 +6557,6 @@
         <member name="P:openfmb.generationmodule.GenerationmoduleReflection.Descriptor">
             <summary>File descriptor for generationmodule/generationmodule.proto</summary>
         </member>
-        <member name="T:openfmb.generationmodule.RealPowerControlKind">
-            <summary>
-            Real power control kind
-            </summary>
-        </member>
-        <member name="F:openfmb.generationmodule.RealPowerControlKind.Undefined">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.generationmodule.RealPowerControlKind.Advanced">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.generationmodule.RealPowerControlKind.Droop">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.generationmodule.RealPowerControlKind.Isochronous">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.generationmodule.RealPowerControlKind.RealPower">
-            <summary>
-            Real power setpoint
-            </summary>
-        </member>
-        <member name="T:openfmb.generationmodule.ReactivePowerControlKind">
-            <summary>
-            Real power control kind
-            </summary>
-        </member>
-        <member name="F:openfmb.generationmodule.ReactivePowerControlKind.Undefined">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.generationmodule.ReactivePowerControlKind.Advanced">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.generationmodule.ReactivePowerControlKind.Droop">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.generationmodule.ReactivePowerControlKind.Voltage">
-            <summary>
-            Voltage setpoint
-            </summary>
-        </member>
-        <member name="F:openfmb.generationmodule.ReactivePowerControlKind.ReactivePower">
-            <summary>
-            Reactive power setpoint
-            </summary>
-        </member>
-        <member name="F:openfmb.generationmodule.ReactivePowerControlKind.PowerFactor">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
         <member name="T:openfmb.generationmodule.GenerationPoint">
             <summary>
             Point definition (Point)
@@ -6440,9 +6795,6 @@
             MISSING DOCUMENTATION!!!
             </summary>
         </member>
-        <member name="F:openfmb.generationmodule.Optional_RealPowerControlKind.ValueFieldNumber">
-            <summary>Field number for the "value" field.</summary>
-        </member>
         <member name="T:openfmb.generationmodule.DroopParameter">
             <summary>
             Generation discrete control
@@ -6500,9 +6852,6 @@
             <summary>
             MISSING DOCUMENTATION!!!
             </summary>
-        </member>
-        <member name="F:openfmb.generationmodule.Optional_ReactivePowerControlKind.ValueFieldNumber">
-            <summary>Field number for the "value" field.</summary>
         </member>
         <member name="T:openfmb.generationmodule.ReactivePowerControl">
             <summary>
@@ -7611,6 +7960,14 @@
             UML inherited base object
             </summary>
         </member>
+        <member name="F:openfmb.loadmodule.LoadStatus.IsUncontrollableFieldNumber">
+            <summary>Field number for the "isUncontrollable" field.</summary>
+        </member>
+        <member name="P:openfmb.loadmodule.LoadStatus.IsUncontrollable">
+            <summary>
+            True if the load is uncontrollable.
+            </summary>
+        </member>
         <member name="F:openfmb.loadmodule.LoadStatus.LoadStatusZGLDFieldNumber">
             <summary>Field number for the "loadStatusZGLD" field.</summary>
         </member>
@@ -8001,6 +8358,60 @@
         <member name="P:openfmb.regulatormodule.RegulatormoduleReflection.Descriptor">
             <summary>File descriptor for regulatormodule/regulatormodule.proto</summary>
         </member>
+        <member name="T:openfmb.regulatormodule.DirectionalATCC">
+            <summary>
+            LN: Automatic tap changer controller   Name: ATCC
+            </summary>
+        </member>
+        <member name="F:openfmb.regulatormodule.DirectionalATCC.BndWidFieldNumber">
+            <summary>Field number for the "BndWid" field.</summary>
+        </member>
+        <member name="P:openfmb.regulatormodule.DirectionalATCC.BndWid">
+            <summary>
+            Control (secondary) voltage bandwidth (i.e., range), given either as voltage value or percentage
+            of the nominal voltage (forward power flow presumed).
+            </summary>
+        </member>
+        <member name="F:openfmb.regulatormodule.DirectionalATCC.CtlDlTmmsFieldNumber">
+            <summary>Field number for the "CtlDlTmms" field.</summary>
+        </member>
+        <member name="P:openfmb.regulatormodule.DirectionalATCC.CtlDlTmms">
+            <summary>
+            Time to wait before operating, after reaching the control point (forward power flow presumed).
+            </summary>
+        </member>
+        <member name="F:openfmb.regulatormodule.DirectionalATCC.LDCRFieldNumber">
+            <summary>Field number for the "LDCR" field.</summary>
+        </member>
+        <member name="P:openfmb.regulatormodule.DirectionalATCC.LDCR">
+            <summary>
+            Line drop voltage due to line resistance component (forward power flow presumed) at rated current.
+            </summary>
+        </member>
+        <member name="F:openfmb.regulatormodule.DirectionalATCC.LDCXFieldNumber">
+            <summary>Field number for the "LDCX" field.</summary>
+        </member>
+        <member name="P:openfmb.regulatormodule.DirectionalATCC.LDCX">
+            <summary>
+            Line drop voltage due to line reactance component (forward power flow presumed) at rated current.
+            </summary>
+        </member>
+        <member name="F:openfmb.regulatormodule.DirectionalATCC.VolSptFieldNumber">
+            <summary>Field number for the "VolSpt" field.</summary>
+        </member>
+        <member name="P:openfmb.regulatormodule.DirectionalATCC.VolSpt">
+            <summary>
+            (controllable) Voltage setpoint. Analog value (MX) feeds back the setpoint of the controller.
+            </summary>
+        </member>
+        <member name="F:openfmb.regulatormodule.DirectionalATCC.VoltageSetPointEnabledFieldNumber">
+            <summary>Field number for the "voltageSetPointEnabled" field.</summary>
+        </member>
+        <member name="P:openfmb.regulatormodule.DirectionalATCC.VoltageSetPointEnabled">
+            <summary>
+            Enable voltage set point
+            </summary>
+        </member>
         <member name="T:openfmb.regulatormodule.RegulatorControlATCC">
             <summary>
             LN: Automatic tap changer controller   Name: ATCC
@@ -8014,45 +8425,37 @@
             UML inherited base object
             </summary>
         </member>
-        <member name="F:openfmb.regulatormodule.RegulatorControlATCC.BndCtrFieldNumber">
-            <summary>Field number for the "BndCtr" field.</summary>
+        <member name="F:openfmb.regulatormodule.RegulatorControlATCC.DirFwdFieldNumber">
+            <summary>Field number for the "DirFwd" field.</summary>
         </member>
-        <member name="P:openfmb.regulatormodule.RegulatorControlATCC.BndCtr">
+        <member name="P:openfmb.regulatormodule.RegulatorControlATCC.DirFwd">
             <summary>
-            Centre of voltage control bandwidth (forward power flow presumed).
+            Forward voltage regulation
             </summary>
         </member>
-        <member name="F:openfmb.regulatormodule.RegulatorControlATCC.BndWidFieldNumber">
-            <summary>Field number for the "BndWid" field.</summary>
+        <member name="F:openfmb.regulatormodule.RegulatorControlATCC.DirModeFieldNumber">
+            <summary>Field number for the "DirMode" field.</summary>
         </member>
-        <member name="P:openfmb.regulatormodule.RegulatorControlATCC.BndWid">
+        <member name="P:openfmb.regulatormodule.RegulatorControlATCC.DirMode">
             <summary>
-            Control (secondary) voltage bandwidth (i.e., range), given either as voltage value or percentage
-            of the nominal voltage (forward power flow presumed).
+            The control characteristics for power flow operation
             </summary>
         </member>
-        <member name="F:openfmb.regulatormodule.RegulatorControlATCC.CtlDlTmmsFieldNumber">
-            <summary>Field number for the "CtlDlTmms" field.</summary>
+        <member name="F:openfmb.regulatormodule.RegulatorControlATCC.DirRevFieldNumber">
+            <summary>Field number for the "DirRev" field.</summary>
         </member>
-        <member name="P:openfmb.regulatormodule.RegulatorControlATCC.CtlDlTmms">
+        <member name="P:openfmb.regulatormodule.RegulatorControlATCC.DirRev">
             <summary>
-            Time to wait before operating, after reaching the control point (forward power flow presumed).
+            Reverse voltage regulation
             </summary>
         </member>
-        <member name="F:openfmb.regulatormodule.RegulatorControlATCC.LDCRFieldNumber">
-            <summary>Field number for the "LDCR" field.</summary>
+        <member name="F:openfmb.regulatormodule.RegulatorControlATCC.DirThdFieldNumber">
+            <summary>Field number for the "DirThd" field.</summary>
         </member>
-        <member name="P:openfmb.regulatormodule.RegulatorControlATCC.LDCR">
+        <member name="P:openfmb.regulatormodule.RegulatorControlATCC.DirThd">
             <summary>
-            Line drop voltage due to line resistance component (forward power flow presumed) at rated current.
-            </summary>
-        </member>
-        <member name="F:openfmb.regulatormodule.RegulatorControlATCC.LDCXFieldNumber">
-            <summary>Field number for the "LDCX" field.</summary>
-        </member>
-        <member name="P:openfmb.regulatormodule.RegulatorControlATCC.LDCX">
-            <summary>
-            Line drop voltage due to line reactance component (forward power flow presumed) at rated current.
+            This is the percentage used to determine the current threshold at which the control recognizes
+            current flow direction. Below the threshold, the current flow is considered to be indeterminate.
             </summary>
         </member>
         <member name="F:openfmb.regulatormodule.RegulatorControlATCC.ParOpFieldNumber">
@@ -8079,28 +8482,44 @@
             (controllable) Tap position change to the specified value.
             </summary>
         </member>
-        <member name="F:openfmb.regulatormodule.RegulatorControlATCC.TapPosFieldNumber">
-            <summary>Field number for the "TapPos" field.</summary>
+        <member name="F:openfmb.regulatormodule.RegulatorControlATCC.TapOpLFieldNumber">
+            <summary>Field number for the "TapOpL" field.</summary>
         </member>
-        <member name="P:openfmb.regulatormodule.RegulatorControlATCC.TapPos">
+        <member name="P:openfmb.regulatormodule.RegulatorControlATCC.TapOpL">
             <summary>
-            (controllable) Tap position change to the specified value.
+            If true, tap position shall be lowered.
             </summary>
         </member>
-        <member name="F:openfmb.regulatormodule.RegulatorControlATCC.VolSptFieldNumber">
-            <summary>Field number for the "VolSpt" field.</summary>
+        <member name="F:openfmb.regulatormodule.RegulatorControlATCC.TapOpRFieldNumber">
+            <summary>Field number for the "TapOpR" field.</summary>
         </member>
-        <member name="P:openfmb.regulatormodule.RegulatorControlATCC.VolSpt">
+        <member name="P:openfmb.regulatormodule.RegulatorControlATCC.TapOpR">
             <summary>
-            (controllable) Voltage setpoint. Analog value (MX) feeds back the setpoint of the controller.
+            If true, tap position shall be raised.
             </summary>
         </member>
-        <member name="F:openfmb.regulatormodule.RegulatorControlATCC.VoltageSetPointEnabledFieldNumber">
-            <summary>Field number for the "voltageSetPointEnabled" field.</summary>
+        <member name="F:openfmb.regulatormodule.RegulatorControlATCC.VolLmtHiFieldNumber">
+            <summary>Field number for the "VolLmtHi" field.</summary>
         </member>
-        <member name="P:openfmb.regulatormodule.RegulatorControlATCC.VoltageSetPointEnabled">
+        <member name="P:openfmb.regulatormodule.RegulatorControlATCC.VolLmtHi">
             <summary>
-            Enable voltage set point
+            High voltage limit for Voltage Limiter
+            </summary>
+        </member>
+        <member name="F:openfmb.regulatormodule.RegulatorControlATCC.VolLmtLoFieldNumber">
+            <summary>Field number for the "VolLmtLo" field.</summary>
+        </member>
+        <member name="P:openfmb.regulatormodule.RegulatorControlATCC.VolLmtLo">
+            <summary>
+            Low voltage limit for Voltage Limiter
+            </summary>
+        </member>
+        <member name="F:openfmb.regulatormodule.RegulatorControlATCC.VolLmtModeFieldNumber">
+            <summary>Field number for the "VolLmtMode" field.</summary>
+        </member>
+        <member name="P:openfmb.regulatormodule.RegulatorControlATCC.VolLmtMode">
+            <summary>
+            Voltage-limiting types
             </summary>
         </member>
         <member name="T:openfmb.regulatormodule.RegulatorPoint">
@@ -8325,6 +8744,46 @@
             of the nominal voltage (forward power flow presumed).
             </summary>
         </member>
+        <member name="F:openfmb.regulatormodule.RegulatorEventAndStatusATCC.BndWidHiFieldNumber">
+            <summary>Field number for the "BndWidHi" field.</summary>
+        </member>
+        <member name="P:openfmb.regulatormodule.RegulatorEventAndStatusATCC.BndWidHi">
+            <summary>
+            Compensated Voltage Secondary compared with set point plus or minus Bandwidth
+            </summary>
+        </member>
+        <member name="F:openfmb.regulatormodule.RegulatorEventAndStatusATCC.BndWidLoFieldNumber">
+            <summary>Field number for the "BndWidLo" field.</summary>
+        </member>
+        <member name="P:openfmb.regulatormodule.RegulatorEventAndStatusATCC.BndWidLo">
+            <summary>
+            Compensated Voltage Secondary compared with set point plus or minus Bandwidth
+            </summary>
+        </member>
+        <member name="F:openfmb.regulatormodule.RegulatorEventAndStatusATCC.DirCtlRevFieldNumber">
+            <summary>Field number for the "DirCtlRev" field.</summary>
+        </member>
+        <member name="P:openfmb.regulatormodule.RegulatorEventAndStatusATCC.DirCtlRev">
+            <summary>
+            Current Power Direction is the direction that regulator is regulating.
+            </summary>
+        </member>
+        <member name="F:openfmb.regulatormodule.RegulatorEventAndStatusATCC.DirIndtFieldNumber">
+            <summary>Field number for the "DirIndt" field.</summary>
+        </member>
+        <member name="P:openfmb.regulatormodule.RegulatorEventAndStatusATCC.DirIndt">
+            <summary>
+            True if direction is indeterminate.
+            </summary>
+        </member>
+        <member name="F:openfmb.regulatormodule.RegulatorEventAndStatusATCC.DirRevFieldNumber">
+            <summary>Field number for the "DirRev" field.</summary>
+        </member>
+        <member name="P:openfmb.regulatormodule.RegulatorEventAndStatusATCC.DirRev">
+            <summary>
+            True if the current direction is the same as the System Direction
+            </summary>
+        </member>
         <member name="F:openfmb.regulatormodule.RegulatorEventAndStatusATCC.LDCRFieldNumber">
             <summary>Field number for the "LDCR" field.</summary>
         </member>
@@ -8388,6 +8847,22 @@
         <member name="P:openfmb.regulatormodule.RegulatorEventAndStatusATCC.TapPos">
             <summary>
             (controllable) Tap position change to the specified value.
+            </summary>
+        </member>
+        <member name="F:openfmb.regulatormodule.RegulatorEventAndStatusATCC.VolLmtHiFieldNumber">
+            <summary>Field number for the "VolLmtHi" field.</summary>
+        </member>
+        <member name="P:openfmb.regulatormodule.RegulatorEventAndStatusATCC.VolLmtHi">
+            <summary>
+            Load Voltage Secondary compared with VolLmtHi
+            </summary>
+        </member>
+        <member name="F:openfmb.regulatormodule.RegulatorEventAndStatusATCC.VolLmtLoFieldNumber">
+            <summary>Field number for the "VolLmtLo" field.</summary>
+        </member>
+        <member name="P:openfmb.regulatormodule.RegulatorEventAndStatusATCC.VolLmtLo">
+            <summary>
+            Load Voltage Secondary compared with VolLmtLo
             </summary>
         </member>
         <member name="F:openfmb.regulatormodule.RegulatorEventAndStatusATCC.VolSptFieldNumber">
@@ -8518,6 +8993,14 @@
             <summary>Field number for the "readingMMXU" field.</summary>
         </member>
         <member name="P:openfmb.regulatormodule.RegulatorReading.ReadingMMXU">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.regulatormodule.RegulatorReading.SecondaryReadingMMXUFieldNumber">
+            <summary>Field number for the "secondaryReadingMMXU" field.</summary>
+        </member>
+        <member name="P:openfmb.regulatormodule.RegulatorReading.SecondaryReadingMMXU">
             <summary>
             MISSING DOCUMENTATION!!!
             </summary>

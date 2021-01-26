@@ -58,241 +58,237 @@ namespace openfmb.commonmodule {
             "T3B0aW9uYWxfVW5pdFN5bWJvbEtpbmQSKgoFdmFsdWUYAyABKAsyGy5nb29n",
             "bGUucHJvdG9idWYuRmxvYXRWYWx1ZSJEChZPcHRpb25hbF9QaGFzZUNvZGVL",
             "aW5kEioKBXZhbHVlGAEgASgOMhsuY29tbW9ubW9kdWxlLlBoYXNlQ29kZUtp",
-            "bmQiXwoNQW5hbG9ndWVWYWx1ZRImCgFmGAEgASgLMhsuZ29vZ2xlLnByb3Rv",
-            "YnVmLkZsb2F0VmFsdWUSJgoBaRgCIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5J",
-            "bnQzMlZhbHVlIn0KBFVuaXQSPQoKbXVsdGlwbGllchgBIAEoCzIpLmNvbW1v",
-            "bm1vZHVsZS5PcHRpb25hbF9Vbml0TXVsdGlwbGllcktpbmQSNgoGU0lVbml0",
-            "GAIgASgOMhwuY29tbW9ubW9kdWxlLlVuaXRTeW1ib2xLaW5kQgiItRgBkLUY",
-            "ASJCChVPcHRpb25hbF9WYWxpZGl0eUtpbmQSKQoFdmFsdWUYASABKA4yGi5j",
-            "b21tb25tb2R1bGUuVmFsaWRpdHlLaW5kIvkBCgpEZXRhaWxRdWFsEh4KDGJh",
-            "ZFJlZmVyZW5jZRgBIAEoCEIIiLUYAZC1GAESGQoHZmFpbHVyZRgCIAEoCEII",
-            "iLUYAZC1GAESHAoKaW5hY2N1cmF0ZRgDIAEoCEIIiLUYAZC1GAESHgoMaW5j",
-            "b25zaXN0ZW50GAQgASgIQgiItRgBkLUYARIZCgdvbGREYXRhGAUgASgIQgiI",
-            "tRgBkLUYARIdCgtvc2NpbGxhdG9yeRgGIAEoCEIIiLUYAZC1GAESHAoKb3V0",
-            "T2ZSYW5nZRgHIAEoCEIIiLUYAZC1GAESGgoIb3ZlcmZsb3cYCCABKAhCCIi1",
-            "GAGQtRgBIj4KE09wdGlvbmFsX1NvdXJjZUtpbmQSJwoFdmFsdWUYASABKA4y",
-            "GC5jb21tb25tb2R1bGUuU291cmNlS2luZCLoAQoHUXVhbGl0eRI2CgpkZXRh",
-            "aWxRdWFsGAEgASgLMhguY29tbW9ubW9kdWxlLkRldGFpbFF1YWxCCIi1GAGQ",
-            "tRgBEiEKD29wZXJhdG9yQmxvY2tlZBgCIAEoCEIIiLUYAZC1GAESMgoGc291",
-            "cmNlGAMgASgOMhguY29tbW9ubW9kdWxlLlNvdXJjZUtpbmRCCIi1GAGQtRgB",
-            "EhYKBHRlc3QYBCABKAhCCIi1GAGQtRgBEjYKCHZhbGlkaXR5GAUgASgOMhou",
-            "Y29tbW9ubW9kdWxlLlZhbGlkaXR5S2luZEIIiLUYAZC1GAEiSgoZT3B0aW9u",
-            "YWxfVGltZUFjY3VyYWN5S2luZBItCgV2YWx1ZRgBIAEoDjIeLmNvbW1vbm1v",
-            "ZHVsZS5UaW1lQWNjdXJhY3lLaW5kIrkBCgtUaW1lUXVhbGl0eRIeCgxjbG9j",
-            "a0ZhaWx1cmUYASABKAhCCIi1GAGQtRgBEiYKFGNsb2NrTm90U3luY2hyb25p",
-            "emVkGAIgASgIQgiItRgBkLUYARIiChBsZWFwU2Vjb25kc0tub3duGAMgASgI",
-            "QgiItRgBkLUYARI+Cgx0aW1lQWNjdXJhY3kYBCABKA4yHi5jb21tb25tb2R1",
-            "bGUuVGltZUFjY3VyYWN5S2luZEIIiLUYAZC1GAEicgoJVGltZXN0YW1wEhkK",
-            "B3NlY29uZHMYAiABKARCCIi1GAGQtRgBEiUKAnRxGAMgASgLMhkuY29tbW9u",
-            "bW9kdWxlLlRpbWVRdWFsaXR5Eh0KC25hbm9zZWNvbmRzGAQgASgNQgiItRgB",
-            "kLUYAUoECAEQAiKhAQoCTVYSMgoDbWFnGAEgASgLMhsuY29tbW9ubW9kdWxl",
-            "LkFuYWxvZ3VlVmFsdWVCCIi1GAGQtRgBEiAKAXEYAiABKAsyFS5jb21tb25t",
-            "b2R1bGUuUXVhbGl0eRIiCgF0GAMgASgLMhcuY29tbW9ubW9kdWxlLlRpbWVz",
-            "dGFtcBIhCgV1bml0cxgEIAEoCzISLmNvbW1vbm1vZHVsZS5Vbml0Ik0KC0xv",
-            "Z2ljYWxOb2RlEj4KEGlkZW50aWZpZWRPYmplY3QYASABKAsyHi5jb21tb25t",
-            "b2R1bGUuSWRlbnRpZmllZE9iamVjdEIEgLUYASKvAQoYQW5hbG9nRXZlbnRB",
-            "bmRTdGF0dXNHR0lPEjQKC2xvZ2ljYWxOb2RlGAEgASgLMhkuY29tbW9ubW9k",
-            "dWxlLkxvZ2ljYWxOb2RlQgSAtRgBEigKBEFuSW4YAiABKAsyEC5jb21tb25t",
-            "b2R1bGUuTVZCCIi1GAGQtRgBEjMKBVBoYXNlGAMgASgLMiQuY29tbW9ubW9k",
-            "dWxlLk9wdGlvbmFsX1BoYXNlQ29kZUtpbmQiYgoQQW5hbG9ndWVWYWx1ZUN0",
-            "bBImCgFmGAEgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUSJgoB",
-            "aRgCIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5JbnQzMlZhbHVlImwKC05hbWVk",
-            "T2JqZWN0EjEKC2Rlc2NyaXB0aW9uGAEgASgLMhwuZ29vZ2xlLnByb3RvYnVm",
-            "LlN0cmluZ1ZhbHVlEioKBG5hbWUYAiABKAsyHC5nb29nbGUucHJvdG9idWYu",
-            "U3RyaW5nVmFsdWUiZQoRQXBwbGljYXRpb25TeXN0ZW0SNAoLbmFtZWRPYmpl",
-            "Y3QYASABKAsyGS5jb21tb25tb2R1bGUuTmFtZWRPYmplY3RCBIC1GAESGgoE",
-            "bVJJRBgCIAEoCUIMoLUYAYi1GAGQtRgBImIKA0FTRxI4CgZzZXRNYWcYASAB",
-            "KAsyHi5jb21tb25tb2R1bGUuQW5hbG9ndWVWYWx1ZUN0bEIIiLUYAZC1GAES",
-            "IQoFdW5pdHMYAiABKAsyEi5jb21tb25tb2R1bGUuVW5pdCJrCgNCQ1ISGAoG",
-            "YWN0VmFsGAEgASgDQgiItRgBkLUYARIgCgFxGAIgASgLMhUuY29tbW9ubW9k",
-            "dWxlLlF1YWxpdHkSIgoBdBgDIAEoCzIXLmNvbW1vbm1vZHVsZS5UaW1lc3Rh",
-            "bXBKBAgEEAUiagoJU3RhdHVzU1BTEiAKAXEYASABKAsyFS5jb21tb25tb2R1",
-            "bGUuUXVhbGl0eRIXCgVzdFZhbBgCIAEoCEIIiLUYAZC1GAESIgoBdBgDIAEo",
-            "CzIXLmNvbW1vbm1vZHVsZS5UaW1lc3RhbXAitgEKGUJvb2xlYW5FdmVudEFu",
-            "ZFN0YXR1c0dHSU8SNAoLbG9naWNhbE5vZGUYASABKAsyGS5jb21tb25tb2R1",
-            "bGUuTG9naWNhbE5vZGVCBIC1GAESLgoDSW5kGAIgASgLMhcuY29tbW9ubW9k",
-            "dWxlLlN0YXR1c1NQU0IIiLUYAZC1GAESMwoFUGhhc2UYAyABKAsyJC5jb21t",
-            "b25tb2R1bGUuT3B0aW9uYWxfUGhhc2VDb2RlS2luZCJ3Cg9DaGVja0NvbmRp",
-            "dGlvbnMSMgoOaW50ZXJsb2NrQ2hlY2sYASABKAsyGi5nb29nbGUucHJvdG9i",
-            "dWYuQm9vbFZhbHVlEjAKDHN5bmNocm9DaGVjaxgCIAEoCzIaLmdvb2dsZS5w",
-            "cm90b2J1Zi5Cb29sVmFsdWUiZgoGVmVjdG9yEigKA2FuZxgBIAEoCzIbLmNv",
-            "bW1vbm1vZHVsZS5BbmFsb2d1ZVZhbHVlEjIKA21hZxgCIAEoCzIbLmNvbW1v",
-            "bm1vZHVsZS5BbmFsb2d1ZVZhbHVlQgiItRgBkLUYASJ/CgNDTVYSLAoEY1Zh",
-            "bBgBIAEoCzIULmNvbW1vbm1vZHVsZS5WZWN0b3JCCIi1GAGQtRgBEiAKAXEY",
-            "AiABKAsyFS5jb21tb25tb2R1bGUuUXVhbGl0eRIiCgF0GAMgASgLMhcuY29t",
-            "bW9ubW9kdWxlLlRpbWVzdGFtcEoECAQQBSJrChNDb25kdWN0aW5nRXF1aXBt",
-            "ZW50EjQKC25hbWVkT2JqZWN0GAEgASgLMhkuY29tbW9ubW9kdWxlLk5hbWVk",
-            "T2JqZWN0QgSAtRgBEh4KBG1SSUQYAiABKAlCEKi1GAGgtRgBiLUYAZC1GAEi",
-            "eAoIVGVybWluYWwSNgoMYUNEQ1Rlcm1pbmFsGAEgASgLMhouY29tbW9ubW9k",
-            "dWxlLkFDRENUZXJtaW5hbEIEgLUYARI0CgZwaGFzZXMYAiABKAsyJC5jb21t",
-            "b25tb2R1bGUuT3B0aW9uYWxfUGhhc2VDb2RlS2luZCJYCiJDb25kdWN0aW5n",
-            "RXF1aXBtZW50VGVybWluYWxSZWFkaW5nEjIKCHRlcm1pbmFsGAEgASgLMhYu",
-            "Y29tbW9ubW9kdWxlLlRlcm1pbmFsQgiItRgBkLUYASJGCgpDb250cm9sQVBD",
-            "EjgKBmN0bFZhbBgBIAEoCzIeLmNvbW1vbm1vZHVsZS5BbmFsb2d1ZVZhbHVl",
-            "Q3RsQgiItRgBkLUYASImCgpDb250cm9sRFBDEhgKBmN0bFZhbBgBIAEoCEII",
-            "iLUYAZC1GAEiUgoQQ29udHJvbFRpbWVzdGFtcBIZCgdzZWNvbmRzGAIgASgE",
-            "QgiItRgBkLUYARIdCgtuYW5vc2Vjb25kcxgDIAEoDUIIiLUYAZC1GAFKBAgB",
-            "EAIiVAoeT3B0aW9uYWxfU2NoZWR1bGVQYXJhbWV0ZXJLaW5kEjIKBXZhbHVl",
-            "GAEgASgOMiMuY29tbW9ubW9kdWxlLlNjaGVkdWxlUGFyYW1ldGVyS2luZCJ+",
-            "ChVFTkdfU2NoZWR1bGVQYXJhbWV0ZXISTAoVc2NoZWR1bGVQYXJhbWV0ZXJU",
-            "eXBlGAEgASgOMiMuY29tbW9ubW9kdWxlLlNjaGVkdWxlUGFyYW1ldGVyS2lu",
-            "ZEIIiLUYAZC1GAESFwoFdmFsdWUYAiABKAJCCIi1GAGQtRgBIpYBCg1TY2hl",
-            "ZHVsZVBvaW50EkgKEXNjaGVkdWxlUGFyYW1ldGVyGAEgAygLMiMuY29tbW9u",
-            "bW9kdWxlLkVOR19TY2hlZHVsZVBhcmFtZXRlckIIiLUYAZC1GAESOwoJc3Rh",
-            "cnRUaW1lGAIgASgLMh4uY29tbW9ubW9kdWxlLkNvbnRyb2xUaW1lc3RhbXBC",
-            "CIi1GAGQtRgBIkQKC1NjaGVkdWxlQ1NHEjUKBnNjaFB0cxgBIAMoCzIbLmNv",
-            "bW1vbm1vZHVsZS5TY2hlZHVsZVBvaW50QgiItRgBkLUYASJLChNDb250cm9s",
-            "U2NoZWR1bGVGU0NIEjQKB1ZhbEFDU0cYASABKAsyGS5jb21tb25tb2R1bGUu",
-            "U2NoZWR1bGVDU0dCCIi1GAGQtRgBIk0KFUxvZ2ljYWxOb2RlRm9yQ29udHJv",
-            "bBI0Cgtsb2dpY2FsTm9kZRgBIAEoCzIZLmNvbW1vbm1vZHVsZS5Mb2dpY2Fs",
-            "Tm9kZUIEgLUYASLdAQoLQ29udHJvbEZTQ0MSSAoVbG9naWNhbE5vZGVGb3JD",
-            "b250cm9sGAEgASgLMiMuY29tbW9ubW9kdWxlLkxvZ2ljYWxOb2RlRm9yQ29u",
-            "dHJvbEIEgLUYARI+ChNjb250cm9sU2NoZWR1bGVGU0NIGAIgASgLMiEuY29t",
-            "bW9ubW9kdWxlLkNvbnRyb2xTY2hlZHVsZUZTQ0gSRAoZaXNsYW5kQ29udHJv",
-            "bFNjaGVkdWxlRlNDSBgDIAEoCzIhLmNvbW1vbm1vZHVsZS5Db250cm9sU2No",
-            "ZWR1bGVGU0NIIiYKCkNvbnRyb2xJTkMSGAoGY3RsVmFsGAEgASgFQgiItRgB",
-            "kLUYASJJCgpDb250cm9sSU5HEhgKBnNldFZhbBgBIAEoBUIIiLUYAZC1GAES",
-            "IQoFdW5pdHMYAiABKAsyEi5jb21tb25tb2R1bGUuVW5pdCImCgpDb250cm9s",
-            "SVNDEhgKBmN0bFZhbBgBIAEoBUIIiLUYAZC1GAEiigEKC01lc3NhZ2VJbmZv",
-            "Ej4KEGlkZW50aWZpZWRPYmplY3QYASABKAsyHi5jb21tb25tb2R1bGUuSWRl",
-            "bnRpZmllZE9iamVjdEIEgLUYARI7ChBtZXNzYWdlVGltZVN0YW1wGAIgASgL",
-            "MhcuY29tbW9ubW9kdWxlLlRpbWVzdGFtcEIIiLUYAZC1GAEiSgoSQ29udHJv",
-            "bE1lc3NhZ2VJbmZvEjQKC21lc3NhZ2VJbmZvGAEgASgLMhkuY29tbW9ubW9k",
-            "dWxlLk1lc3NhZ2VJbmZvQgSAtRgBIiYKCkNvbnRyb2xTUEMSGAoGY3RsVmFs",
-            "GAEgASgIQgiItRgBkLUYASKlAQoMQ29udHJvbFZhbHVlEj4KEGlkZW50aWZp",
-            "ZWRPYmplY3QYASABKAsyHi5jb21tb25tb2R1bGUuSWRlbnRpZmllZE9iamVj",
-            "dEIEgLUYARIqCgZtb2RCbGsYAyABKAsyGi5nb29nbGUucHJvdG9idWYuQm9v",
-            "bFZhbHVlEikKBXJlc2V0GAQgASgLMhouZ29vZ2xlLnByb3RvYnVmLkJvb2xW",
-            "YWx1ZSJoChBEYXRlVGltZUludGVydmFsEigKA2VuZBgBIAEoCzIbLmdvb2ds",
-            "ZS5wcm90b2J1Zi5JbnQ2NFZhbHVlEioKBXN0YXJ0GAIgASgLMhsuZ29vZ2xl",
-            "LnByb3RvYnVmLkludDY0VmFsdWUiawoDREVMEiAKBXBoc0FCGAEgASgLMhEu",
-            "Y29tbW9ubW9kdWxlLkNNVhIgCgVwaHNCQxgCIAEoCzIRLmNvbW1vbm1vZHVs",
-            "ZS5DTVYSIAoFcGhzQ0EYAyABKAsyES5jb21tb25tb2R1bGUuQ01WIqoBCghQ",
-            "aGFzZURQQxImCgRwaHMzGAEgASgLMhguY29tbW9ubW9kdWxlLkNvbnRyb2xE",
-            "UEMSJgoEcGhzQRgCIAEoCzIYLmNvbW1vbm1vZHVsZS5Db250cm9sRFBDEiYK",
-            "BHBoc0IYAyABKAsyGC5jb21tb25tb2R1bGUuQ29udHJvbERQQxImCgRwaHND",
-            "GAQgASgLMhguY29tbW9ubW9kdWxlLkNvbnRyb2xEUEMioQIKE0Rpc2NyZXRl",
-            "Q29udHJvbFhDQlISSAoVbG9naWNhbE5vZGVGb3JDb250cm9sGAEgASgLMiMu",
-            "Y29tbW9ubW9kdWxlLkxvZ2ljYWxOb2RlRm9yQ29udHJvbEIEgLUYARIjCgNQ",
-            "b3MYAiABKAsyFi5jb21tb25tb2R1bGUuUGhhc2VEUEMSMAoOUHJvdGVjdGlv",
-            "bk1vZGUYAyABKAsyGC5jb21tb25tb2R1bGUuQ29udHJvbElOQxIwCg5SZWNs",
-            "b3NlRW5hYmxlZBgEIAEoCzIYLmNvbW1vbm1vZHVsZS5Db250cm9sU1BDEjcK",
-            "FVJlc2V0UHJvdGVjdGlvblBpY2t1cBgFIAEoCzIYLmNvbW1vbm1vZHVsZS5D",
-            "b250cm9sU1BDIowBCg5FbmVyZ3lDb25zdW1lchJEChNjb25kdWN0aW5nRXF1",
-            "aXBtZW50GAEgASgLMiEuY29tbW9ubW9kdWxlLkNvbmR1Y3RpbmdFcXVpcG1l",
-            "bnRCBIC1GAESNAoOb3BlcmF0aW5nTGltaXQYAiABKAsyHC5nb29nbGUucHJv",
-            "dG9idWYuU3RyaW5nVmFsdWUiRgoXT3B0aW9uYWxfQ2FsY01ldGhvZEtpbmQS",
-            "KwoFdmFsdWUYASABKA4yHC5jb21tb25tb2R1bGUuQ2FsY01ldGhvZEtpbmQi",
-            "TAoSRU5HX0NhbGNNZXRob2RLaW5kEjYKBnNldFZhbBgBIAEoDjIcLmNvbW1v",
-            "bm1vZHVsZS5DYWxjTWV0aG9kS2luZEIIiLUYAZC1GAEiUAocT3B0aW9uYWxf",
-            "R3JpZENvbm5lY3RNb2RlS2luZBIwCgV2YWx1ZRgBIAEoDjIhLmNvbW1vbm1v",
-            "ZHVsZS5HcmlkQ29ubmVjdE1vZGVLaW5kIo0BChdFTkdfR3JpZENvbm5lY3RN",
-            "b2RlS2luZBI7CgZzZXRWYWwYASABKA4yIS5jb21tb25tb2R1bGUuR3JpZENv",
-            "bm5lY3RNb2RlS2luZEIIiLUYAZC1GAESNQoPc2V0VmFsRXh0ZW5zaW9uGAIg",
-            "ASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlIj4KE09wdGlvbmFs",
-            "X1BGU2lnbktpbmQSJwoFdmFsdWUYASABKA4yGC5jb21tb25tb2R1bGUuUEZT",
-            "aWduS2luZCJECg5FTkdfUEZTaWduS2luZBIyCgZzZXRWYWwYASABKA4yGC5j",
-            "b21tb25tb2R1bGUuUEZTaWduS2luZEIIiLUYAZC1GAEiTAoaT3B0aW9uYWxf",
-            "QmVoYXZpb3VyTW9kZUtpbmQSLgoFdmFsdWUYASABKA4yHy5jb21tb25tb2R1",
-            "bGUuQmVoYXZpb3VyTW9kZUtpbmQilwEKFUVOU19CZWhhdmlvdXJNb2RlS2lu",
-            "ZBIgCgFxGAEgASgLMhUuY29tbW9ubW9kdWxlLlF1YWxpdHkSOAoFc3RWYWwY",
-            "AiABKA4yHy5jb21tb25tb2R1bGUuQmVoYXZpb3VyTW9kZUtpbmRCCIi1GAGQ",
-            "tRgBEiIKAXQYAyABKAsyFy5jb21tb25tb2R1bGUuVGltZXN0YW1wIlQKHk9w",
-            "dGlvbmFsX0RFUkdlbmVyYXRvclN0YXRlS2luZBIyCgV2YWx1ZRgBIAEoDjIj",
-            "LmNvbW1vbm1vZHVsZS5ERVJHZW5lcmF0b3JTdGF0ZUtpbmQinwEKGUVOU19E",
-            "RVJHZW5lcmF0b3JTdGF0ZUtpbmQSIAoBcRgBIAEoCzIVLmNvbW1vbm1vZHVs",
-            "ZS5RdWFsaXR5EjwKBXN0VmFsGAIgASgOMiMuY29tbW9ubW9kdWxlLkRFUkdl",
-            "bmVyYXRvclN0YXRlS2luZEIIiLUYAZC1GAESIgoBdBgDIAEoCzIXLmNvbW1v",
-            "bm1vZHVsZS5UaW1lc3RhbXAiSAoYT3B0aW9uYWxfRHluYW1pY1Rlc3RLaW5k",
-            "EiwKBXZhbHVlGAEgASgOMh0uY29tbW9ubW9kdWxlLkR5bmFtaWNUZXN0S2lu",
-            "ZCKTAQoTRU5TX0R5bmFtaWNUZXN0S2luZBIgCgFxGAEgASgLMhUuY29tbW9u",
-            "bW9kdWxlLlF1YWxpdHkSNgoFc3RWYWwYAiABKA4yHS5jb21tb25tb2R1bGUu",
-            "RHluYW1pY1Rlc3RLaW5kQgiItRgBkLUYARIiCgF0GAMgASgLMhcuY29tbW9u",
-            "bW9kdWxlLlRpbWVzdGFtcCJ3ChdFTlNfR3JpZENvbm5lY3RNb2RlS2luZBI6",
-            "CgVzdFZhbBgBIAEoDjIhLmNvbW1vbm1vZHVsZS5HcmlkQ29ubmVjdE1vZGVL",
-            "aW5kQgiItRgBkLUYARIgCg5zdFZhbEV4dGVuc2lvbhgCIAEoCUIIiLUYAZC1",
-            "GAEiPgoTT3B0aW9uYWxfSGVhbHRoS2luZBInCgV2YWx1ZRgBIAEoDjIYLmNv",
-            "bW1vbm1vZHVsZS5IZWFsdGhLaW5kImwKDkVOU19IZWFsdGhLaW5kEicKAWQY",
-            "ASABKAsyHC5nb29nbGUucHJvdG9idWYuU3RyaW5nVmFsdWUSMQoFc3RWYWwY",
-            "AiABKA4yGC5jb21tb25tb2R1bGUuSGVhbHRoS2luZEIIiLUYAZC1GAEiWAog",
-            "T3B0aW9uYWxfU3dpdGNoaW5nQ2FwYWJpbGl0eUtpbmQSNAoFdmFsdWUYASAB",
-            "KA4yJS5jb21tb25tb2R1bGUuU3dpdGNoaW5nQ2FwYWJpbGl0eUtpbmQiiQEK",
-            "G0VOU19Td2l0Y2hpbmdDYXBhYmlsaXR5S2luZBIqCgZibGtFbmEYASABKAsy",
-            "Gi5nb29nbGUucHJvdG9idWYuQm9vbFZhbHVlEj4KBXN0VmFsGAIgASgOMiUu",
-            "Y29tbW9ubW9kdWxlLlN3aXRjaGluZ0NhcGFiaWxpdHlLaW5kQgiItRgBkLUY",
-            "ASJLCgNFU1MSRAoTY29uZHVjdGluZ0VxdWlwbWVudBgBIAEoCzIhLmNvbW1v",
-            "bm1vZHVsZS5Db25kdWN0aW5nRXF1aXBtZW50QgSAtRgBIkgKEEV2ZW50TWVz",
-            "c2FnZUluZm8SNAoLbWVzc2FnZUluZm8YASABKAsyGS5jb21tb25tb2R1bGUu",
-            "TWVzc2FnZUluZm9CBIC1GAEieAoKRXZlbnRWYWx1ZRI+ChBpZGVudGlmaWVk",
-            "T2JqZWN0GAEgASgLMh4uY29tbW9ubW9kdWxlLklkZW50aWZpZWRPYmplY3RC",
-            "BIC1GAESKgoGbW9kQmxrGAIgASgLMhouZ29vZ2xlLnByb3RvYnVmLkJvb2xW",
-            "YWx1ZSJVChNGb3JlY2FzdFZhbHVlU291cmNlEj4KEGlkZW50aWZpZWRPYmpl",
+            "bmQifQoEVW5pdBI9CgptdWx0aXBsaWVyGAEgASgLMikuY29tbW9ubW9kdWxl",
+            "Lk9wdGlvbmFsX1VuaXRNdWx0aXBsaWVyS2luZBI2CgZTSVVuaXQYAiABKA4y",
+            "HC5jb21tb25tb2R1bGUuVW5pdFN5bWJvbEtpbmRCCIi1GAGQtRgBIkIKFU9w",
+            "dGlvbmFsX1ZhbGlkaXR5S2luZBIpCgV2YWx1ZRgBIAEoDjIaLmNvbW1vbm1v",
+            "ZHVsZS5WYWxpZGl0eUtpbmQi+QEKCkRldGFpbFF1YWwSHgoMYmFkUmVmZXJl",
+            "bmNlGAEgASgIQgiItRgBkLUYARIZCgdmYWlsdXJlGAIgASgIQgiItRgBkLUY",
+            "ARIcCgppbmFjY3VyYXRlGAMgASgIQgiItRgBkLUYARIeCgxpbmNvbnNpc3Rl",
+            "bnQYBCABKAhCCIi1GAGQtRgBEhkKB29sZERhdGEYBSABKAhCCIi1GAGQtRgB",
+            "Eh0KC29zY2lsbGF0b3J5GAYgASgIQgiItRgBkLUYARIcCgpvdXRPZlJhbmdl",
+            "GAcgASgIQgiItRgBkLUYARIaCghvdmVyZmxvdxgIIAEoCEIIiLUYAZC1GAEi",
+            "PgoTT3B0aW9uYWxfU291cmNlS2luZBInCgV2YWx1ZRgBIAEoDjIYLmNvbW1v",
+            "bm1vZHVsZS5Tb3VyY2VLaW5kIugBCgdRdWFsaXR5EjYKCmRldGFpbFF1YWwY",
+            "ASABKAsyGC5jb21tb25tb2R1bGUuRGV0YWlsUXVhbEIIiLUYAZC1GAESIQoP",
+            "b3BlcmF0b3JCbG9ja2VkGAIgASgIQgiItRgBkLUYARIyCgZzb3VyY2UYAyAB",
+            "KA4yGC5jb21tb25tb2R1bGUuU291cmNlS2luZEIIiLUYAZC1GAESFgoEdGVz",
+            "dBgEIAEoCEIIiLUYAZC1GAESNgoIdmFsaWRpdHkYBSABKA4yGi5jb21tb25t",
+            "b2R1bGUuVmFsaWRpdHlLaW5kQgiItRgBkLUYASJKChlPcHRpb25hbF9UaW1l",
+            "QWNjdXJhY3lLaW5kEi0KBXZhbHVlGAEgASgOMh4uY29tbW9ubW9kdWxlLlRp",
+            "bWVBY2N1cmFjeUtpbmQiuQEKC1RpbWVRdWFsaXR5Eh4KDGNsb2NrRmFpbHVy",
+            "ZRgBIAEoCEIIiLUYAZC1GAESJgoUY2xvY2tOb3RTeW5jaHJvbml6ZWQYAiAB",
+            "KAhCCIi1GAGQtRgBEiIKEGxlYXBTZWNvbmRzS25vd24YAyABKAhCCIi1GAGQ",
+            "tRgBEj4KDHRpbWVBY2N1cmFjeRgEIAEoDjIeLmNvbW1vbm1vZHVsZS5UaW1l",
+            "QWNjdXJhY3lLaW5kQgiItRgBkLUYASJyCglUaW1lc3RhbXASGQoHc2Vjb25k",
+            "cxgCIAEoBEIIiLUYAZC1GAESJQoCdHEYAyABKAsyGS5jb21tb25tb2R1bGUu",
+            "VGltZVF1YWxpdHkSHQoLbmFub3NlY29uZHMYBCABKA1CCIi1GAGQtRgBSgQI",
+            "ARACIoQBCgJNVhIVCgNtYWcYASABKAFCCIi1GAGQtRgBEiAKAXEYAiABKAsy",
+            "FS5jb21tb25tb2R1bGUuUXVhbGl0eRIiCgF0GAMgASgLMhcuY29tbW9ubW9k",
+            "dWxlLlRpbWVzdGFtcBIhCgV1bml0cxgEIAEoCzISLmNvbW1vbm1vZHVsZS5V",
+            "bml0Ik0KC0xvZ2ljYWxOb2RlEj4KEGlkZW50aWZpZWRPYmplY3QYASABKAsy",
+            "Hi5jb21tb25tb2R1bGUuSWRlbnRpZmllZE9iamVjdEIEgLUYASKvAQoYQW5h",
+            "bG9nRXZlbnRBbmRTdGF0dXNHR0lPEjQKC2xvZ2ljYWxOb2RlGAEgASgLMhku",
+            "Y29tbW9ubW9kdWxlLkxvZ2ljYWxOb2RlQgSAtRgBEigKBEFuSW4YAiABKAsy",
+            "EC5jb21tb25tb2R1bGUuTVZCCIi1GAGQtRgBEjMKBVBoYXNlGAMgASgLMiQu",
+            "Y29tbW9ubW9kdWxlLk9wdGlvbmFsX1BoYXNlQ29kZUtpbmQibAoLTmFtZWRP",
+            "YmplY3QSMQoLZGVzY3JpcHRpb24YASABKAsyHC5nb29nbGUucHJvdG9idWYu",
+            "U3RyaW5nVmFsdWUSKgoEbmFtZRgCIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5T",
+            "dHJpbmdWYWx1ZSJlChFBcHBsaWNhdGlvblN5c3RlbRI0CgtuYW1lZE9iamVj",
+            "dBgBIAEoCzIZLmNvbW1vbm1vZHVsZS5OYW1lZE9iamVjdEIEgLUYARIaCgRt",
+            "UklEGAIgASgJQgygtRgBiLUYAZC1GAEiHwoDQVNHEhgKBnNldE1hZxgBIAEo",
+            "AUIIiLUYAZC1GAEiawoDQkNSEhgKBmFjdFZhbBgBIAEoA0IIiLUYAZC1GAES",
+            "IAoBcRgCIAEoCzIVLmNvbW1vbm1vZHVsZS5RdWFsaXR5EiIKAXQYAyABKAsy",
+            "Fy5jb21tb25tb2R1bGUuVGltZXN0YW1wSgQIBBAFImoKCVN0YXR1c1NQUxIg",
+            "CgFxGAEgASgLMhUuY29tbW9ubW9kdWxlLlF1YWxpdHkSFwoFc3RWYWwYAiAB",
+            "KAhCCIi1GAGQtRgBEiIKAXQYAyABKAsyFy5jb21tb25tb2R1bGUuVGltZXN0",
+            "YW1wIrYBChlCb29sZWFuRXZlbnRBbmRTdGF0dXNHR0lPEjQKC2xvZ2ljYWxO",
+            "b2RlGAEgASgLMhkuY29tbW9ubW9kdWxlLkxvZ2ljYWxOb2RlQgSAtRgBEi4K",
+            "A0luZBgCIAEoCzIXLmNvbW1vbm1vZHVsZS5TdGF0dXNTUFNCCIi1GAGQtRgB",
+            "EjMKBVBoYXNlGAMgASgLMiQuY29tbW9ubW9kdWxlLk9wdGlvbmFsX1BoYXNl",
+            "Q29kZUtpbmQidwoPQ2hlY2tDb25kaXRpb25zEjIKDmludGVybG9ja0NoZWNr",
+            "GAEgASgLMhouZ29vZ2xlLnByb3RvYnVmLkJvb2xWYWx1ZRIwCgxzeW5jaHJv",
+            "Q2hlY2sYAiABKAsyGi5nb29nbGUucHJvdG9idWYuQm9vbFZhbHVlIkoKBlZl",
+            "Y3RvchIpCgNhbmcYASABKAsyHC5nb29nbGUucHJvdG9idWYuRG91YmxlVmFs",
+            "dWUSFQoDbWFnGAIgASgBQgiItRgBkLUYASJ/CgNDTVYSLAoEY1ZhbBgBIAEo",
+            "CzIULmNvbW1vbm1vZHVsZS5WZWN0b3JCCIi1GAGQtRgBEiAKAXEYAiABKAsy",
+            "FS5jb21tb25tb2R1bGUuUXVhbGl0eRIiCgF0GAMgASgLMhcuY29tbW9ubW9k",
+            "dWxlLlRpbWVzdGFtcEoECAQQBSJrChNDb25kdWN0aW5nRXF1aXBtZW50EjQK",
+            "C25hbWVkT2JqZWN0GAEgASgLMhkuY29tbW9ubW9kdWxlLk5hbWVkT2JqZWN0",
+            "QgSAtRgBEh4KBG1SSUQYAiABKAlCEKi1GAGgtRgBiLUYAZC1GAEieAoIVGVy",
+            "bWluYWwSNgoMYUNEQ1Rlcm1pbmFsGAEgASgLMhouY29tbW9ubW9kdWxlLkFD",
+            "RENUZXJtaW5hbEIEgLUYARI0CgZwaGFzZXMYAiABKAsyJC5jb21tb25tb2R1",
+            "bGUuT3B0aW9uYWxfUGhhc2VDb2RlS2luZCJYCiJDb25kdWN0aW5nRXF1aXBt",
+            "ZW50VGVybWluYWxSZWFkaW5nEjIKCHRlcm1pbmFsGAEgASgLMhYuY29tbW9u",
+            "bW9kdWxlLlRlcm1pbmFsQgiItRgBkLUYASImCgpDb250cm9sQVBDEhgKBmN0",
+            "bFZhbBgBIAEoAUIIiLUYAZC1GAEiJgoKQ29udHJvbERQQxIYCgZjdGxWYWwY",
+            "ASABKAhCCIi1GAGQtRgBIlIKEENvbnRyb2xUaW1lc3RhbXASGQoHc2Vjb25k",
+            "cxgCIAEoBEIIiLUYAZC1GAESHQoLbmFub3NlY29uZHMYAyABKA1CCIi1GAGQ",
+            "tRgBSgQIARACIlQKHk9wdGlvbmFsX1NjaGVkdWxlUGFyYW1ldGVyS2luZBIy",
+            "CgV2YWx1ZRgBIAEoDjIjLmNvbW1vbm1vZHVsZS5TY2hlZHVsZVBhcmFtZXRl",
+            "cktpbmQifgoVRU5HX1NjaGVkdWxlUGFyYW1ldGVyEkwKFXNjaGVkdWxlUGFy",
+            "YW1ldGVyVHlwZRgBIAEoDjIjLmNvbW1vbm1vZHVsZS5TY2hlZHVsZVBhcmFt",
+            "ZXRlcktpbmRCCIi1GAGQtRgBEhcKBXZhbHVlGAIgASgBQgiItRgBkLUYASKW",
+            "AQoNU2NoZWR1bGVQb2ludBJIChFzY2hlZHVsZVBhcmFtZXRlchgBIAMoCzIj",
+            "LmNvbW1vbm1vZHVsZS5FTkdfU2NoZWR1bGVQYXJhbWV0ZXJCCIi1GAGQtRgB",
+            "EjsKCXN0YXJ0VGltZRgCIAEoCzIeLmNvbW1vbm1vZHVsZS5Db250cm9sVGlt",
+            "ZXN0YW1wQgiItRgBkLUYASJECgtTY2hlZHVsZUNTRxI1CgZzY2hQdHMYASAD",
+            "KAsyGy5jb21tb25tb2R1bGUuU2NoZWR1bGVQb2ludEIIiLUYAZC1GAEiSwoT",
+            "Q29udHJvbFNjaGVkdWxlRlNDSBI0CgdWYWxBQ1NHGAEgASgLMhkuY29tbW9u",
+            "bW9kdWxlLlNjaGVkdWxlQ1NHQgiItRgBkLUYASJNChVMb2dpY2FsTm9kZUZv",
+            "ckNvbnRyb2wSNAoLbG9naWNhbE5vZGUYASABKAsyGS5jb21tb25tb2R1bGUu",
+            "TG9naWNhbE5vZGVCBIC1GAEi3QEKC0NvbnRyb2xGU0NDEkgKFWxvZ2ljYWxO",
+            "b2RlRm9yQ29udHJvbBgBIAEoCzIjLmNvbW1vbm1vZHVsZS5Mb2dpY2FsTm9k",
+            "ZUZvckNvbnRyb2xCBIC1GAESPgoTY29udHJvbFNjaGVkdWxlRlNDSBgCIAEo",
+            "CzIhLmNvbW1vbm1vZHVsZS5Db250cm9sU2NoZWR1bGVGU0NIEkQKGWlzbGFu",
+            "ZENvbnRyb2xTY2hlZHVsZUZTQ0gYAyABKAsyIS5jb21tb25tb2R1bGUuQ29u",
+            "dHJvbFNjaGVkdWxlRlNDSCImCgpDb250cm9sSU5DEhgKBmN0bFZhbBgBIAEo",
+            "BUIIiLUYAZC1GAEiSQoKQ29udHJvbElORxIYCgZzZXRWYWwYASABKAVCCIi1",
+            "GAGQtRgBEiEKBXVuaXRzGAIgASgLMhIuY29tbW9ubW9kdWxlLlVuaXQiJgoK",
+            "Q29udHJvbElTQxIYCgZjdGxWYWwYASABKAVCCIi1GAGQtRgBIooBCgtNZXNz",
+            "YWdlSW5mbxI+ChBpZGVudGlmaWVkT2JqZWN0GAEgASgLMh4uY29tbW9ubW9k",
+            "dWxlLklkZW50aWZpZWRPYmplY3RCBIC1GAESOwoQbWVzc2FnZVRpbWVTdGFt",
+            "cBgCIAEoCzIXLmNvbW1vbm1vZHVsZS5UaW1lc3RhbXBCCIi1GAGQtRgBIkoK",
+            "EkNvbnRyb2xNZXNzYWdlSW5mbxI0CgttZXNzYWdlSW5mbxgBIAEoCzIZLmNv",
+            "bW1vbm1vZHVsZS5NZXNzYWdlSW5mb0IEgLUYASImCgpDb250cm9sU1BDEhgK",
+            "BmN0bFZhbBgBIAEoCEIIiLUYAZC1GAEipQEKDENvbnRyb2xWYWx1ZRI+ChBp",
+            "ZGVudGlmaWVkT2JqZWN0GAEgASgLMh4uY29tbW9ubW9kdWxlLklkZW50aWZp",
+            "ZWRPYmplY3RCBIC1GAESKgoGbW9kQmxrGAMgASgLMhouZ29vZ2xlLnByb3Rv",
+            "YnVmLkJvb2xWYWx1ZRIpCgVyZXNldBgEIAEoCzIaLmdvb2dsZS5wcm90b2J1",
+            "Zi5Cb29sVmFsdWUiaAoQRGF0ZVRpbWVJbnRlcnZhbBIoCgNlbmQYASABKAsy",
+            "Gy5nb29nbGUucHJvdG9idWYuSW50NjRWYWx1ZRIqCgVzdGFydBgCIAEoCzIb",
+            "Lmdvb2dsZS5wcm90b2J1Zi5JbnQ2NFZhbHVlImsKA0RFTBIgCgVwaHNBQhgB",
+            "IAEoCzIRLmNvbW1vbm1vZHVsZS5DTVYSIAoFcGhzQkMYAiABKAsyES5jb21t",
+            "b25tb2R1bGUuQ01WEiAKBXBoc0NBGAMgASgLMhEuY29tbW9ubW9kdWxlLkNN",
+            "ViKqAQoIUGhhc2VEUEMSJgoEcGhzMxgBIAEoCzIYLmNvbW1vbm1vZHVsZS5D",
+            "b250cm9sRFBDEiYKBHBoc0EYAiABKAsyGC5jb21tb25tb2R1bGUuQ29udHJv",
+            "bERQQxImCgRwaHNCGAMgASgLMhguY29tbW9ubW9kdWxlLkNvbnRyb2xEUEMS",
+            "JgoEcGhzQxgEIAEoCzIYLmNvbW1vbm1vZHVsZS5Db250cm9sRFBDIqECChNE",
+            "aXNjcmV0ZUNvbnRyb2xYQ0JSEkgKFWxvZ2ljYWxOb2RlRm9yQ29udHJvbBgB",
+            "IAEoCzIjLmNvbW1vbm1vZHVsZS5Mb2dpY2FsTm9kZUZvckNvbnRyb2xCBIC1",
+            "GAESIwoDUG9zGAIgASgLMhYuY29tbW9ubW9kdWxlLlBoYXNlRFBDEjAKDlBy",
+            "b3RlY3Rpb25Nb2RlGAMgASgLMhguY29tbW9ubW9kdWxlLkNvbnRyb2xJTkMS",
+            "MAoOUmVjbG9zZUVuYWJsZWQYBCABKAsyGC5jb21tb25tb2R1bGUuQ29udHJv",
+            "bFNQQxI3ChVSZXNldFByb3RlY3Rpb25QaWNrdXAYBSABKAsyGC5jb21tb25t",
+            "b2R1bGUuQ29udHJvbFNQQyKMAQoORW5lcmd5Q29uc3VtZXISRAoTY29uZHVj",
+            "dGluZ0VxdWlwbWVudBgBIAEoCzIhLmNvbW1vbm1vZHVsZS5Db25kdWN0aW5n",
+            "RXF1aXBtZW50QgSAtRgBEjQKDm9wZXJhdGluZ0xpbWl0GAIgASgLMhwuZ29v",
+            "Z2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlIkYKF09wdGlvbmFsX0NhbGNNZXRo",
+            "b2RLaW5kEisKBXZhbHVlGAEgASgOMhwuY29tbW9ubW9kdWxlLkNhbGNNZXRo",
+            "b2RLaW5kIkwKEkVOR19DYWxjTWV0aG9kS2luZBI2CgZzZXRWYWwYASABKA4y",
+            "HC5jb21tb25tb2R1bGUuQ2FsY01ldGhvZEtpbmRCCIi1GAGQtRgBIlAKHE9w",
+            "dGlvbmFsX0dyaWRDb25uZWN0TW9kZUtpbmQSMAoFdmFsdWUYASABKA4yIS5j",
+            "b21tb25tb2R1bGUuR3JpZENvbm5lY3RNb2RlS2luZCKNAQoXRU5HX0dyaWRD",
+            "b25uZWN0TW9kZUtpbmQSOwoGc2V0VmFsGAEgASgOMiEuY29tbW9ubW9kdWxl",
+            "LkdyaWRDb25uZWN0TW9kZUtpbmRCCIi1GAGQtRgBEjUKD3NldFZhbEV4dGVu",
+            "c2lvbhgCIAEoCzIcLmdvb2dsZS5wcm90b2J1Zi5TdHJpbmdWYWx1ZSI+ChNP",
+            "cHRpb25hbF9QRlNpZ25LaW5kEicKBXZhbHVlGAEgASgOMhguY29tbW9ubW9k",
+            "dWxlLlBGU2lnbktpbmQiRAoORU5HX1BGU2lnbktpbmQSMgoGc2V0VmFsGAEg",
+            "ASgOMhguY29tbW9ubW9kdWxlLlBGU2lnbktpbmRCCIi1GAGQtRgBIkwKGk9w",
+            "dGlvbmFsX0JlaGF2aW91ck1vZGVLaW5kEi4KBXZhbHVlGAEgASgOMh8uY29t",
+            "bW9ubW9kdWxlLkJlaGF2aW91ck1vZGVLaW5kIpcBChVFTlNfQmVoYXZpb3Vy",
+            "TW9kZUtpbmQSIAoBcRgBIAEoCzIVLmNvbW1vbm1vZHVsZS5RdWFsaXR5EjgK",
+            "BXN0VmFsGAIgASgOMh8uY29tbW9ubW9kdWxlLkJlaGF2aW91ck1vZGVLaW5k",
+            "QgiItRgBkLUYARIiCgF0GAMgASgLMhcuY29tbW9ubW9kdWxlLlRpbWVzdGFt",
+            "cCJUCh5PcHRpb25hbF9ERVJHZW5lcmF0b3JTdGF0ZUtpbmQSMgoFdmFsdWUY",
+            "ASABKA4yIy5jb21tb25tb2R1bGUuREVSR2VuZXJhdG9yU3RhdGVLaW5kIp8B",
+            "ChlFTlNfREVSR2VuZXJhdG9yU3RhdGVLaW5kEiAKAXEYASABKAsyFS5jb21t",
+            "b25tb2R1bGUuUXVhbGl0eRI8CgVzdFZhbBgCIAEoDjIjLmNvbW1vbm1vZHVs",
+            "ZS5ERVJHZW5lcmF0b3JTdGF0ZUtpbmRCCIi1GAGQtRgBEiIKAXQYAyABKAsy",
+            "Fy5jb21tb25tb2R1bGUuVGltZXN0YW1wIkgKGE9wdGlvbmFsX0R5bmFtaWNU",
+            "ZXN0S2luZBIsCgV2YWx1ZRgBIAEoDjIdLmNvbW1vbm1vZHVsZS5EeW5hbWlj",
+            "VGVzdEtpbmQikwEKE0VOU19EeW5hbWljVGVzdEtpbmQSIAoBcRgBIAEoCzIV",
+            "LmNvbW1vbm1vZHVsZS5RdWFsaXR5EjYKBXN0VmFsGAIgASgOMh0uY29tbW9u",
+            "bW9kdWxlLkR5bmFtaWNUZXN0S2luZEIIiLUYAZC1GAESIgoBdBgDIAEoCzIX",
+            "LmNvbW1vbm1vZHVsZS5UaW1lc3RhbXAidwoXRU5TX0dyaWRDb25uZWN0TW9k",
+            "ZUtpbmQSOgoFc3RWYWwYASABKA4yIS5jb21tb25tb2R1bGUuR3JpZENvbm5l",
+            "Y3RNb2RlS2luZEIIiLUYAZC1GAESIAoOc3RWYWxFeHRlbnNpb24YAiABKAlC",
+            "CIi1GAGQtRgBIj4KE09wdGlvbmFsX0hlYWx0aEtpbmQSJwoFdmFsdWUYASAB",
+            "KA4yGC5jb21tb25tb2R1bGUuSGVhbHRoS2luZCJsCg5FTlNfSGVhbHRoS2lu",
+            "ZBInCgFkGAEgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEjEK",
+            "BXN0VmFsGAIgASgOMhguY29tbW9ubW9kdWxlLkhlYWx0aEtpbmRCCIi1GAGQ",
+            "tRgBIlgKIE9wdGlvbmFsX1N3aXRjaGluZ0NhcGFiaWxpdHlLaW5kEjQKBXZh",
+            "bHVlGAEgASgOMiUuY29tbW9ubW9kdWxlLlN3aXRjaGluZ0NhcGFiaWxpdHlL",
+            "aW5kIokBChtFTlNfU3dpdGNoaW5nQ2FwYWJpbGl0eUtpbmQSKgoGYmxrRW5h",
+            "GAEgASgLMhouZ29vZ2xlLnByb3RvYnVmLkJvb2xWYWx1ZRI+CgVzdFZhbBgC",
+            "IAEoDjIlLmNvbW1vbm1vZHVsZS5Td2l0Y2hpbmdDYXBhYmlsaXR5S2luZEII",
+            "iLUYAZC1GAEiSwoDRVNTEkQKE2NvbmR1Y3RpbmdFcXVpcG1lbnQYASABKAsy",
+            "IS5jb21tb25tb2R1bGUuQ29uZHVjdGluZ0VxdWlwbWVudEIEgLUYASJIChBF",
+            "dmVudE1lc3NhZ2VJbmZvEjQKC21lc3NhZ2VJbmZvGAEgASgLMhkuY29tbW9u",
+            "bW9kdWxlLk1lc3NhZ2VJbmZvQgSAtRgBIngKCkV2ZW50VmFsdWUSPgoQaWRl",
+            "bnRpZmllZE9iamVjdBgBIAEoCzIeLmNvbW1vbm1vZHVsZS5JZGVudGlmaWVk",
+            "T2JqZWN0QgSAtRgBEioKBm1vZEJsaxgCIAEoCzIaLmdvb2dsZS5wcm90b2J1",
+            "Zi5Cb29sVmFsdWUiVQoTRm9yZWNhc3RWYWx1ZVNvdXJjZRI+ChBpZGVudGlm",
+            "aWVkT2JqZWN0GAEgASgLMh4uY29tbW9ubW9kdWxlLklkZW50aWZpZWRPYmpl",
+            "Y3RCBIC1GAEinAEKC0ZvcmVjYXN0SUVEEkQKE2ZvcmVjYXN0VmFsdWVTb3Vy",
+            "Y2UYASABKAsyIS5jb21tb25tb2R1bGUuRm9yZWNhc3RWYWx1ZVNvdXJjZUIE",
+            "gLUYARIlChNzb3VyY2VBcHBsaWNhdGlvbklEGAIgASgJQgiItRgBkLUYARIg",
+            "Cg5zb3VyY2VEYXRlVGltZRgDIAEoA0IIiLUYAZC1GAEiTwoNRm9yZWNhc3RW",
+            "YWx1ZRI+ChBpZGVudGlmaWVkT2JqZWN0GAEgASgLMh4uY29tbW9ubW9kdWxl",
+            "LklkZW50aWZpZWRPYmplY3RCBIC1GAEiagoJU3RhdHVzSU5TEiAKAXEYASAB",
+            "KAsyFS5jb21tb25tb2R1bGUuUXVhbGl0eRIXCgVzdFZhbBgCIAEoBUIIiLUY",
+            "AZC1GAESIgoBdBgDIAEoCzIXLmNvbW1vbm1vZHVsZS5UaW1lc3RhbXAiuAEK",
+            "GUludGVnZXJFdmVudEFuZFN0YXR1c0dHSU8SNAoLbG9naWNhbE5vZGUYASAB",
+            "KAsyGS5jb21tb25tb2R1bGUuTG9naWNhbE5vZGVCBIC1GAESMAoFSW50SW4Y",
+            "AiABKAsyFy5jb21tb25tb2R1bGUuU3RhdHVzSU5TQgiItRgBkLUYARIzCgVQ",
+            "aGFzZRgDIAEoCzIkLmNvbW1vbm1vZHVsZS5PcHRpb25hbF9QaGFzZUNvZGVL",
+            "aW5kIo8CChxMb2dpY2FsTm9kZUZvckV2ZW50QW5kU3RhdHVzEjQKC2xvZ2lj",
+            "YWxOb2RlGAEgASgLMhkuY29tbW9ubW9kdWxlLkxvZ2ljYWxOb2RlQgSAtRgB",
+            "EjAKA0JlaBgCIAEoCzIjLmNvbW1vbm1vZHVsZS5FTlNfQmVoYXZpb3VyTW9k",
+            "ZUtpbmQSLgoIRUVIZWFsdGgYAyABKAsyHC5jb21tb25tb2R1bGUuRU5TX0hl",
+            "YWx0aEtpbmQSKwoKSG90TGluZVRhZxgEIAEoCzIXLmNvbW1vbm1vZHVsZS5T",
+            "dGF0dXNTUFMSKgoJUmVtb3RlQmxrGAUgASgLMhcuY29tbW9ubW9kdWxlLlN0",
+            "YXR1c1NQUyJSChBNZWFzdXJlbWVudFZhbHVlEj4KEGlkZW50aWZpZWRPYmpl",
             "Y3QYASABKAsyHi5jb21tb25tb2R1bGUuSWRlbnRpZmllZE9iamVjdEIEgLUY",
-            "ASKcAQoLRm9yZWNhc3RJRUQSRAoTZm9yZWNhc3RWYWx1ZVNvdXJjZRgBIAEo",
-            "CzIhLmNvbW1vbm1vZHVsZS5Gb3JlY2FzdFZhbHVlU291cmNlQgSAtRgBEiUK",
-            "E3NvdXJjZUFwcGxpY2F0aW9uSUQYAiABKAlCCIi1GAGQtRgBEiAKDnNvdXJj",
-            "ZURhdGVUaW1lGAMgASgDQgiItRgBkLUYASJPCg1Gb3JlY2FzdFZhbHVlEj4K",
-            "EGlkZW50aWZpZWRPYmplY3QYASABKAsyHi5jb21tb25tb2R1bGUuSWRlbnRp",
-            "ZmllZE9iamVjdEIEgLUYASJqCglTdGF0dXNJTlMSIAoBcRgBIAEoCzIVLmNv",
-            "bW1vbm1vZHVsZS5RdWFsaXR5EhcKBXN0VmFsGAIgASgFQgiItRgBkLUYARIi",
-            "CgF0GAMgASgLMhcuY29tbW9ubW9kdWxlLlRpbWVzdGFtcCK4AQoZSW50ZWdl",
-            "ckV2ZW50QW5kU3RhdHVzR0dJTxI0Cgtsb2dpY2FsTm9kZRgBIAEoCzIZLmNv",
-            "bW1vbm1vZHVsZS5Mb2dpY2FsTm9kZUIEgLUYARIwCgVJbnRJbhgCIAEoCzIX",
-            "LmNvbW1vbm1vZHVsZS5TdGF0dXNJTlNCCIi1GAGQtRgBEjMKBVBoYXNlGAMg",
-            "ASgLMiQuY29tbW9ubW9kdWxlLk9wdGlvbmFsX1BoYXNlQ29kZUtpbmQijwIK",
-            "HExvZ2ljYWxOb2RlRm9yRXZlbnRBbmRTdGF0dXMSNAoLbG9naWNhbE5vZGUY",
-            "ASABKAsyGS5jb21tb25tb2R1bGUuTG9naWNhbE5vZGVCBIC1GAESMAoDQmVo",
-            "GAIgASgLMiMuY29tbW9ubW9kdWxlLkVOU19CZWhhdmlvdXJNb2RlS2luZBIu",
-            "CghFRUhlYWx0aBgDIAEoCzIcLmNvbW1vbm1vZHVsZS5FTlNfSGVhbHRoS2lu",
-            "ZBIrCgpIb3RMaW5lVGFnGAQgASgLMhcuY29tbW9ubW9kdWxlLlN0YXR1c1NQ",
-            "UxIqCglSZW1vdGVCbGsYBSABKAsyFy5jb21tb25tb2R1bGUuU3RhdHVzU1BT",
-            "IlIKEE1lYXN1cmVtZW50VmFsdWUSPgoQaWRlbnRpZmllZE9iamVjdBgBIAEo",
-            "CzIeLmNvbW1vbm1vZHVsZS5JZGVudGlmaWVkT2JqZWN0QgSAtRgBIk0KBU1l",
-            "dGVyEkQKE2NvbmR1Y3RpbmdFcXVpcG1lbnQYASABKAsyIS5jb21tb25tb2R1",
-            "bGUuQ29uZHVjdGluZ0VxdWlwbWVudEIEgLUYASJPChdPcHRpbWl6YXRpb25N",
-            "ZXNzYWdlSW5mbxI0CgttZXNzYWdlSW5mbxgBIAEoCzIZLmNvbW1vbm1vZHVs",
-            "ZS5NZXNzYWdlSW5mb0IEgLUYASKqAQoIUGhhc2VBUEMSJgoEcGhzMxgBIAEo",
-            "CzIYLmNvbW1vbm1vZHVsZS5Db250cm9sQVBDEiYKBHBoc0EYAiABKAsyGC5j",
-            "b21tb25tb2R1bGUuQ29udHJvbEFQQxImCgRwaHNCGAMgASgLMhguY29tbW9u",
-            "bW9kdWxlLkNvbnRyb2xBUEMSJgoEcGhzQxgEIAEoCzIYLmNvbW1vbm1vZHVs",
-            "ZS5Db250cm9sQVBDIjwKEk9wdGlvbmFsX0RiUG9zS2luZBImCgV2YWx1ZRgB",
-            "IAEoDjIXLmNvbW1vbm1vZHVsZS5EYlBvc0tpbmQigwEKCVN0YXR1c0RQUxIg",
-            "CgFxGAEgASgLMhUuY29tbW9ubW9kdWxlLlF1YWxpdHkSMAoFc3RWYWwYAiAB",
-            "KA4yFy5jb21tb25tb2R1bGUuRGJQb3NLaW5kQgiItRgBkLUYARIiCgF0GAMg",
-            "ASgLMhcuY29tbW9ubW9kdWxlLlRpbWVzdGFtcCKmAQoIUGhhc2VEUFMSJQoE",
-            "cGhzMxgBIAEoCzIXLmNvbW1vbm1vZHVsZS5TdGF0dXNEUFMSJQoEcGhzQRgC",
-            "IAEoCzIXLmNvbW1vbm1vZHVsZS5TdGF0dXNEUFMSJQoEcGhzQhgDIAEoCzIX",
-            "LmNvbW1vbm1vZHVsZS5TdGF0dXNEUFMSJQoEcGhzQxgEIAEoCzIXLmNvbW1v",
-            "bm1vZHVsZS5TdGF0dXNEUFMipgEKCFBoYXNlSU5TEiUKBHBoczMYASABKAsy",
-            "Fy5jb21tb25tb2R1bGUuU3RhdHVzSU5TEiUKBHBoc0EYAiABKAsyFy5jb21t",
-            "b25tb2R1bGUuU3RhdHVzSU5TEiUKBHBoc0IYAyABKAsyFy5jb21tb25tb2R1",
-            "bGUuU3RhdHVzSU5TEiUKBHBoc0MYBCABKAsyFy5jb21tb25tb2R1bGUuU3Rh",
-            "dHVzSU5TIqoBCghQaGFzZUlTQxImCgRwaHMzGAEgASgLMhguY29tbW9ubW9k",
-            "dWxlLkNvbnRyb2xJU0MSJgoEcGhzQRgCIAEoCzIYLmNvbW1vbm1vZHVsZS5D",
-            "b250cm9sSVNDEiYKBHBoc0IYAyABKAsyGC5jb21tb25tb2R1bGUuQ29udHJv",
-            "bElTQxImCgRwaHNDGAQgASgLMhguY29tbW9ubW9kdWxlLkNvbnRyb2xJU0Mi",
-            "/gIKC1JlYWRpbmdNTVROEjQKC2xvZ2ljYWxOb2RlGAEgASgLMhkuY29tbW9u",
-            "bW9kdWxlLkxvZ2ljYWxOb2RlQgSAtRgBEiEKBkRtZFZBaBgCIAEoCzIRLmNv",
-            "bW1vbm1vZHVsZS5CQ1ISIgoHRG1kVkFyaBgDIAEoCzIRLmNvbW1vbm1vZHVs",
-            "ZS5CQ1ISIAoFRG1kV2gYBCABKAsyES5jb21tb25tb2R1bGUuQkNSEiEKBlN1",
-            "cFZBaBgFIAEoCzIRLmNvbW1vbm1vZHVsZS5CQ1ISIgoHU3VwVkFyaBgGIAEo",
-            "CzIRLmNvbW1vbm1vZHVsZS5CQ1ISIAoFU3VwV2gYByABKAsyES5jb21tb25t",
-            "b2R1bGUuQkNSEiEKBlRvdFZBaBgIIAEoCzIRLmNvbW1vbm1vZHVsZS5CQ1IS",
-            "IgoHVG90VkFyaBgJIAEoCzIRLmNvbW1vbm1vZHVsZS5CQ1ISIAoFVG90V2gY",
-            "CiABKAsyES5jb21tb25tb2R1bGUuQkNSIoQCCglQaGFzZU1NVE4SJwoEcGhz",
-            "QRgBIAEoCzIZLmNvbW1vbm1vZHVsZS5SZWFkaW5nTU1UThIoCgVwaHNBQhgC",
-            "IAEoCzIZLmNvbW1vbm1vZHVsZS5SZWFkaW5nTU1UThInCgRwaHNCGAMgASgL",
-            "MhkuY29tbW9ubW9kdWxlLlJlYWRpbmdNTVROEigKBXBoc0JDGAQgASgLMhku",
-            "Y29tbW9ubW9kdWxlLlJlYWRpbmdNTVROEicKBHBoc0MYBSABKAsyGS5jb21t",
-            "b25tb2R1bGUuUmVhZGluZ01NVE4SKAoFcGhzQ0EYBiABKAsyGS5jb21tb25t",
-            "b2R1bGUuUmVhZGluZ01NVE4iTAoaT3B0aW9uYWxfUmVjbG9zZUFjdGlvbktp",
-            "bmQSLgoFdmFsdWUYASABKA4yHy5jb21tb25tb2R1bGUuUmVjbG9zZUFjdGlv",
-            "bktpbmQi9AEKElBoYXNlUmVjbG9zZUFjdGlvbhI2CgRwaHMzGAEgASgLMigu",
-            "Y29tbW9ubW9kdWxlLk9wdGlvbmFsX1JlY2xvc2VBY3Rpb25LaW5kEjYKBHBo",
-            "c0EYAiABKAsyKC5jb21tb25tb2R1bGUuT3B0aW9uYWxfUmVjbG9zZUFjdGlv",
-            "bktpbmQSNgoEcGhzQhgDIAEoCzIoLmNvbW1vbm1vZHVsZS5PcHRpb25hbF9S",
-            "ZWNsb3NlQWN0aW9uS2luZBI2CgRwaHNDGAQgASgLMiguY29tbW9ubW9kdWxl",
-            "Lk9wdGlvbmFsX1JlY2xvc2VBY3Rpb25LaW5kIqYBCghQaGFzZVNQUxIlCgRw",
+            "ASJNCgVNZXRlchJEChNjb25kdWN0aW5nRXF1aXBtZW50GAEgASgLMiEuY29t",
+            "bW9ubW9kdWxlLkNvbmR1Y3RpbmdFcXVpcG1lbnRCBIC1GAEiTwoXT3B0aW1p",
+            "emF0aW9uTWVzc2FnZUluZm8SNAoLbWVzc2FnZUluZm8YASABKAsyGS5jb21t",
+            "b25tb2R1bGUuTWVzc2FnZUluZm9CBIC1GAEiqgEKCFBoYXNlQVBDEiYKBHBo",
+            "czMYASABKAsyGC5jb21tb25tb2R1bGUuQ29udHJvbEFQQxImCgRwaHNBGAIg",
+            "ASgLMhguY29tbW9ubW9kdWxlLkNvbnRyb2xBUEMSJgoEcGhzQhgDIAEoCzIY",
+            "LmNvbW1vbm1vZHVsZS5Db250cm9sQVBDEiYKBHBoc0MYBCABKAsyGC5jb21t",
+            "b25tb2R1bGUuQ29udHJvbEFQQyI8ChJPcHRpb25hbF9EYlBvc0tpbmQSJgoF",
+            "dmFsdWUYASABKA4yFy5jb21tb25tb2R1bGUuRGJQb3NLaW5kIoMBCglTdGF0",
+            "dXNEUFMSIAoBcRgBIAEoCzIVLmNvbW1vbm1vZHVsZS5RdWFsaXR5EjAKBXN0",
+            "VmFsGAIgASgOMhcuY29tbW9ubW9kdWxlLkRiUG9zS2luZEIIiLUYAZC1GAES",
+            "IgoBdBgDIAEoCzIXLmNvbW1vbm1vZHVsZS5UaW1lc3RhbXAipgEKCFBoYXNl",
+            "RFBTEiUKBHBoczMYASABKAsyFy5jb21tb25tb2R1bGUuU3RhdHVzRFBTEiUK",
+            "BHBoc0EYAiABKAsyFy5jb21tb25tb2R1bGUuU3RhdHVzRFBTEiUKBHBoc0IY",
+            "AyABKAsyFy5jb21tb25tb2R1bGUuU3RhdHVzRFBTEiUKBHBoc0MYBCABKAsy",
+            "Fy5jb21tb25tb2R1bGUuU3RhdHVzRFBTIqYBCghQaGFzZUlOUxIlCgRwaHMz",
+            "GAEgASgLMhcuY29tbW9ubW9kdWxlLlN0YXR1c0lOUxIlCgRwaHNBGAIgASgL",
+            "MhcuY29tbW9ubW9kdWxlLlN0YXR1c0lOUxIlCgRwaHNCGAMgASgLMhcuY29t",
+            "bW9ubW9kdWxlLlN0YXR1c0lOUxIlCgRwaHNDGAQgASgLMhcuY29tbW9ubW9k",
+            "dWxlLlN0YXR1c0lOUyKqAQoIUGhhc2VJU0MSJgoEcGhzMxgBIAEoCzIYLmNv",
+            "bW1vbm1vZHVsZS5Db250cm9sSVNDEiYKBHBoc0EYAiABKAsyGC5jb21tb25t",
+            "b2R1bGUuQ29udHJvbElTQxImCgRwaHNCGAMgASgLMhguY29tbW9ubW9kdWxl",
+            "LkNvbnRyb2xJU0MSJgoEcGhzQxgEIAEoCzIYLmNvbW1vbm1vZHVsZS5Db250",
+            "cm9sSVNDIv4CCgtSZWFkaW5nTU1UThI0Cgtsb2dpY2FsTm9kZRgBIAEoCzIZ",
+            "LmNvbW1vbm1vZHVsZS5Mb2dpY2FsTm9kZUIEgLUYARIhCgZEbWRWQWgYAiAB",
+            "KAsyES5jb21tb25tb2R1bGUuQkNSEiIKB0RtZFZBcmgYAyABKAsyES5jb21t",
+            "b25tb2R1bGUuQkNSEiAKBURtZFdoGAQgASgLMhEuY29tbW9ubW9kdWxlLkJD",
+            "UhIhCgZTdXBWQWgYBSABKAsyES5jb21tb25tb2R1bGUuQkNSEiIKB1N1cFZB",
+            "cmgYBiABKAsyES5jb21tb25tb2R1bGUuQkNSEiAKBVN1cFdoGAcgASgLMhEu",
+            "Y29tbW9ubW9kdWxlLkJDUhIhCgZUb3RWQWgYCCABKAsyES5jb21tb25tb2R1",
+            "bGUuQkNSEiIKB1RvdFZBcmgYCSABKAsyES5jb21tb25tb2R1bGUuQkNSEiAK",
+            "BVRvdFdoGAogASgLMhEuY29tbW9ubW9kdWxlLkJDUiKEAgoJUGhhc2VNTVRO",
+            "EicKBHBoc0EYASABKAsyGS5jb21tb25tb2R1bGUuUmVhZGluZ01NVE4SKAoF",
+            "cGhzQUIYAiABKAsyGS5jb21tb25tb2R1bGUuUmVhZGluZ01NVE4SJwoEcGhz",
+            "QhgDIAEoCzIZLmNvbW1vbm1vZHVsZS5SZWFkaW5nTU1UThIoCgVwaHNCQxgE",
+            "IAEoCzIZLmNvbW1vbm1vZHVsZS5SZWFkaW5nTU1UThInCgRwaHNDGAUgASgL",
+            "MhkuY29tbW9ubW9kdWxlLlJlYWRpbmdNTVROEigKBXBoc0NBGAYgASgLMhku",
+            "Y29tbW9ubW9kdWxlLlJlYWRpbmdNTVROIkwKGk9wdGlvbmFsX1JlY2xvc2VB",
+            "Y3Rpb25LaW5kEi4KBXZhbHVlGAEgASgOMh8uY29tbW9ubW9kdWxlLlJlY2xv",
+            "c2VBY3Rpb25LaW5kIvQBChJQaGFzZVJlY2xvc2VBY3Rpb24SNgoEcGhzMxgB",
+            "IAEoCzIoLmNvbW1vbm1vZHVsZS5PcHRpb25hbF9SZWNsb3NlQWN0aW9uS2lu",
+            "ZBI2CgRwaHNBGAIgASgLMiguY29tbW9ubW9kdWxlLk9wdGlvbmFsX1JlY2xv",
+            "c2VBY3Rpb25LaW5kEjYKBHBoc0IYAyABKAsyKC5jb21tb25tb2R1bGUuT3B0",
+            "aW9uYWxfUmVjbG9zZUFjdGlvbktpbmQSNgoEcGhzQxgEIAEoCzIoLmNvbW1v",
+            "bm1vZHVsZS5PcHRpb25hbF9SZWNsb3NlQWN0aW9uS2luZCKqAQoIUGhhc2VT",
+            "UEMSJgoEcGhzMxgBIAEoCzIYLmNvbW1vbm1vZHVsZS5Db250cm9sU1BDEiYK",
+            "BHBoc0EYAiABKAsyGC5jb21tb25tb2R1bGUuQ29udHJvbFNQQxImCgRwaHNC",
+            "GAMgASgLMhguY29tbW9ubW9kdWxlLkNvbnRyb2xTUEMSJgoEcGhzQxgEIAEo",
+            "CzIYLmNvbW1vbm1vZHVsZS5Db250cm9sU1BDIqYBCghQaGFzZVNQUxIlCgRw",
             "aHMzGAEgASgLMhcuY29tbW9ubW9kdWxlLlN0YXR1c1NQUxIlCgRwaHNBGAIg",
             "ASgLMhcuY29tbW9ubW9kdWxlLlN0YXR1c1NQUxIlCgRwaHNCGAMgASgLMhcu",
             "Y29tbW9ubW9kdWxlLlN0YXR1c1NQUxIlCgRwaHNDGAQgASgLMhcuY29tbW9u",
@@ -344,59 +340,68 @@ namespace openfmb.commonmodule {
             "bW9kdWxlLlF1YWxpdHkSFwoFc3RWYWwYAiABKAVCCIi1GAGQtRgBEiIKAXQY",
             "AyABKAsyFy5jb21tb25tb2R1bGUuVGltZXN0YW1wIkkKEVN0YXR1c01lc3Nh",
             "Z2VJbmZvEjQKC21lc3NhZ2VJbmZvGAEgASgLMhkuY29tbW9ubW9kdWxlLk1l",
-            "c3NhZ2VJbmZvQgSAtRgBImoKCVN0YXR1c1NQQxIgCgFxGAEgASgLMhUuY29t",
-            "bW9ubW9kdWxlLlF1YWxpdHkSFwoFc3RWYWwYAiABKAhCCIi1GAGQtRgBEiIK",
-            "AXQYAyABKAsyFy5jb21tb25tb2R1bGUuVGltZXN0YW1wInkKC1N0YXR1c1Zh",
-            "bHVlEj4KEGlkZW50aWZpZWRPYmplY3QYASABKAsyHi5jb21tb25tb2R1bGUu",
-            "SWRlbnRpZmllZE9iamVjdEIEgLUYARIqCgZtb2RCbGsYAiABKAsyGi5nb29n",
-            "bGUucHJvdG9idWYuQm9vbFZhbHVlImQKA1ZTUxIgCgFxGAEgASgLMhUuY29t",
-            "bW9ubW9kdWxlLlF1YWxpdHkSFwoFc3RWYWwYAiABKAlCCIi1GAGQtRgBEiIK",
-            "AXQYAyABKAsyFy5jb21tb25tb2R1bGUuVGltZXN0YW1wIrEBChhTdHJpbmdF",
-            "dmVudEFuZFN0YXR1c0dHSU8SNAoLbG9naWNhbE5vZGUYASABKAsyGS5jb21t",
-            "b25tb2R1bGUuTG9naWNhbE5vZGVCBIC1GAESMwoFUGhhc2UYAiABKAsyJC5j",
-            "b21tb25tb2R1bGUuT3B0aW9uYWxfUGhhc2VDb2RlS2luZBIqCgVTdHJJbhgD",
-            "IAEoCzIRLmNvbW1vbm1vZHVsZS5WU1NCCIi1GAGQtRgBInsKC1N3aXRjaFBv",
-            "aW50Ei8KA1BvcxgBIAEoCzIYLmNvbW1vbm1vZHVsZS5Db250cm9sRFBDQgiI",
-            "tRgBkLUYARI7CglzdGFydFRpbWUYAiABKAsyHi5jb21tb25tb2R1bGUuQ29u",
-            "dHJvbFRpbWVzdGFtcEIIiLUYAZC1GAEiQAoJU3dpdGNoQ1NHEjMKBmNydlB0",
-            "cxgBIAMoCzIZLmNvbW1vbm1vZHVsZS5Td2l0Y2hQb2ludEIIiLUYAZC1GAEi",
-            "HwoDVlNDEhgKBmN0bFZhbBgBIAEoCUIIiLUYAZC1GAEiPAoST3B0aW9uYWxf",
-            "U3RhdGVLaW5kEiYKBXZhbHVlGAEgASgOMhcuY29tbW9ubW9kdWxlLlN0YXRl",
-            "S2luZCqSAQoSRmF1bHREaXJlY3Rpb25LaW5kEh4KGkZhdWx0RGlyZWN0aW9u",
-            "S2luZF91bmtub3duEAASHgoaRmF1bHREaXJlY3Rpb25LaW5kX2ZvcndhcmQQ",
-            "ARIfChtGYXVsdERpcmVjdGlvbktpbmRfYmFja3dhcmQQAhIbChdGYXVsdERp",
-            "cmVjdGlvbktpbmRfYm90aBADKokBChdQaGFzZUZhdWx0RGlyZWN0aW9uS2lu",
-            "ZBIjCh9QaGFzZUZhdWx0RGlyZWN0aW9uS2luZF91bmtub3duEAASIwofUGhh",
-            "c2VGYXVsdERpcmVjdGlvbktpbmRfZm9yd2FyZBABEiQKIFBoYXNlRmF1bHRE",
-            "aXJlY3Rpb25LaW5kX2JhY2t3YXJkEAIq9QYKDlVuaXRTeW1ib2xLaW5kEhcK",
-            "E1VuaXRTeW1ib2xLaW5kX25vbmUQABIYChRVbml0U3ltYm9sS2luZF9tZXRl",
-            "chACEhcKE1VuaXRTeW1ib2xLaW5kX2dyYW0QAxIWChJVbml0U3ltYm9sS2lu",
-            "ZF9BbXAQBRIWChJVbml0U3ltYm9sS2luZF9kZWcQCRIWChJVbml0U3ltYm9s",
-            "S2luZF9yYWQQChIXChNVbml0U3ltYm9sS2luZF9kZWdDEBcSGAoUVW5pdFN5",
-            "bWJvbEtpbmRfRmFyYWQQGRIWChJVbml0U3ltYm9sS2luZF9zZWMQGxIYChRV",
-            "bml0U3ltYm9sS2luZF9IZW5yeRAcEhQKEFVuaXRTeW1ib2xLaW5kX1YQHRIW",
-            "ChJVbml0U3ltYm9sS2luZF9vaG0QHhIYChRVbml0U3ltYm9sS2luZF9Kb3Vs",
-            "ZRAfEhkKFVVuaXRTeW1ib2xLaW5kX05ld3RvbhAgEhUKEVVuaXRTeW1ib2xL",
-            "aW5kX0h6ECESFAoQVW5pdFN5bWJvbEtpbmRfVxAmEhUKEVVuaXRTeW1ib2xL",
-            "aW5kX1BhECcSFQoRVW5pdFN5bWJvbEtpbmRfbTIQKRIaChZVbml0U3ltYm9s",
-            "S2luZF9TaWVtZW5zEDUSFQoRVW5pdFN5bWJvbEtpbmRfVkEQPRIWChJVbml0",
-            "U3ltYm9sS2luZF9WQXIQPxIZChVVbml0U3ltYm9sS2luZF93UGVyVkEQQRIW",
-            "ChJVbml0U3ltYm9sS2luZF9WQWgQRxIVChFVbml0U3ltYm9sS2luZF9XaBBI",
-            "EhcKE1VuaXRTeW1ib2xLaW5kX1ZBcmgQSRIZChVVbml0U3ltYm9sS2luZF9o",
-            "elBlclMQSxIYChRVbml0U3ltYm9sS2luZF93UGVyUxBREhgKFFVuaXRTeW1i",
-            "b2xLaW5kX290aGVyEGQSFQoRVW5pdFN5bWJvbEtpbmRfQWgQahIXChJVbml0",
-            "U3ltYm9sS2luZF9taW4QnwESGAoTVW5pdFN5bWJvbEtpbmRfaG91chCgARIW",
-            "ChFVbml0U3ltYm9sS2luZF9tMxCmARIaChVVbml0U3ltYm9sS2luZF93UGVy",
-            "TTIQswESGAoTVW5pdFN5bWJvbEtpbmRfZGVnRhCXAhIXChJVbml0U3ltYm9s",
-            "S2luZF9tcGgQ9AMq9AIKElVuaXRNdWx0aXBsaWVyS2luZBIbChdVbml0TXVs",
-            "dGlwbGllcktpbmRfbm9uZRAAEhwKGFVuaXRNdWx0aXBsaWVyS2luZF9vdGhl",
-            "chABEhwKGFVuaXRNdWx0aXBsaWVyS2luZF9jZW50aRACEhsKF1VuaXRNdWx0",
-            "aXBsaWVyS2luZF9kZWNpEAMSGwoXVW5pdE11bHRpcGxpZXJLaW5kX0dpZ2EQ",
-            "BBIbChdVbml0TXVsdGlwbGllcktpbmRfa2lsbxAFEhsKF1VuaXRNdWx0aXBs",
-            "aWVyS2luZF9NZWdhEAYSHAoYVW5pdE11bHRpcGxpZXJLaW5kX21pY3JvEAcS",
-            "HAoYVW5pdE11bHRpcGxpZXJLaW5kX21pbGxpEAgSGwoXVW5pdE11bHRpcGxp",
-            "ZXJLaW5kX25hbm8QCRIbChdVbml0TXVsdGlwbGllcktpbmRfcGljbxAKEhsK",
-            "F1VuaXRNdWx0aXBsaWVyS2luZF9UZXJhEAsqoQQKDVBoYXNlQ29kZUtpbmQS",
+            "c3NhZ2VJbmZvQgSAtRgBInkKC1N0YXR1c1ZhbHVlEj4KEGlkZW50aWZpZWRP",
+            "YmplY3QYASABKAsyHi5jb21tb25tb2R1bGUuSWRlbnRpZmllZE9iamVjdEIE",
+            "gLUYARIqCgZtb2RCbGsYAiABKAsyGi5nb29nbGUucHJvdG9idWYuQm9vbFZh",
+            "bHVlImQKA1ZTUxIgCgFxGAEgASgLMhUuY29tbW9ubW9kdWxlLlF1YWxpdHkS",
+            "FwoFc3RWYWwYAiABKAlCCIi1GAGQtRgBEiIKAXQYAyABKAsyFy5jb21tb25t",
+            "b2R1bGUuVGltZXN0YW1wIrEBChhTdHJpbmdFdmVudEFuZFN0YXR1c0dHSU8S",
+            "NAoLbG9naWNhbE5vZGUYASABKAsyGS5jb21tb25tb2R1bGUuTG9naWNhbE5v",
+            "ZGVCBIC1GAESMwoFUGhhc2UYAiABKAsyJC5jb21tb25tb2R1bGUuT3B0aW9u",
+            "YWxfUGhhc2VDb2RlS2luZBIqCgVTdHJJbhgDIAEoCzIRLmNvbW1vbm1vZHVs",
+            "ZS5WU1NCCIi1GAGQtRgBInsKC1N3aXRjaFBvaW50Ei8KA1BvcxgBIAEoCzIY",
+            "LmNvbW1vbm1vZHVsZS5Db250cm9sRFBDQgiItRgBkLUYARI7CglzdGFydFRp",
+            "bWUYAiABKAsyHi5jb21tb25tb2R1bGUuQ29udHJvbFRpbWVzdGFtcEIIiLUY",
+            "AZC1GAEiQAoJU3dpdGNoQ1NHEjMKBmNydlB0cxgBIAMoCzIZLmNvbW1vbm1v",
+            "ZHVsZS5Td2l0Y2hQb2ludEIIiLUYAZC1GAEiHwoDVlNDEhgKBmN0bFZhbBgB",
+            "IAEoCUIIiLUYAZC1GAEiSAoYT3B0aW9uYWxfQ29udHJvbE1vZGVLaW5kEiwK",
+            "BXZhbHVlGAEgASgOMh0uY29tbW9ubW9kdWxlLkNvbnRyb2xNb2RlS2luZCJM",
+            "ChpPcHRpb25hbF9EaXJlY3Rpb25Nb2RlS2luZBIuCgV2YWx1ZRgBIAEoDjIf",
+            "LmNvbW1vbm1vZHVsZS5EaXJlY3Rpb25Nb2RlS2luZCJaCiFPcHRpb25hbF9S",
+            "ZWFjdGl2ZVBvd2VyQ29udHJvbEtpbmQSNQoFdmFsdWUYASABKA4yJi5jb21t",
+            "b25tb2R1bGUuUmVhY3RpdmVQb3dlckNvbnRyb2xLaW5kIlIKHU9wdGlvbmFs",
+            "X1JlYWxQb3dlckNvbnRyb2xLaW5kEjEKBXZhbHVlGAEgASgOMiIuY29tbW9u",
+            "bW9kdWxlLlJlYWxQb3dlckNvbnRyb2xLaW5kIjwKEk9wdGlvbmFsX1N0YXRl",
+            "S2luZBImCgV2YWx1ZRgBIAEoDjIXLmNvbW1vbm1vZHVsZS5TdGF0ZUtpbmQi",
+            "TAoaT3B0aW9uYWxfVm9sdExpbWl0TW9kZUtpbmQSLgoFdmFsdWUYASABKA4y",
+            "Hy5jb21tb25tb2R1bGUuVm9sdExpbWl0TW9kZUtpbmQqtAEKEkZhdWx0RGly",
+            "ZWN0aW9uS2luZBIgChxGYXVsdERpcmVjdGlvbktpbmRfVU5ERUZJTkVEEAAS",
+            "HgoaRmF1bHREaXJlY3Rpb25LaW5kX3Vua25vd24QARIeChpGYXVsdERpcmVj",
+            "dGlvbktpbmRfZm9yd2FyZBACEh8KG0ZhdWx0RGlyZWN0aW9uS2luZF9iYWNr",
+            "d2FyZBADEhsKF0ZhdWx0RGlyZWN0aW9uS2luZF9ib3RoEAQqsAEKF1BoYXNl",
+            "RmF1bHREaXJlY3Rpb25LaW5kEiUKIVBoYXNlRmF1bHREaXJlY3Rpb25LaW5k",
+            "X1VOREVGSU5FRBAAEiMKH1BoYXNlRmF1bHREaXJlY3Rpb25LaW5kX3Vua25v",
+            "d24QARIjCh9QaGFzZUZhdWx0RGlyZWN0aW9uS2luZF9mb3J3YXJkEAISJAog",
+            "UGhhc2VGYXVsdERpcmVjdGlvbktpbmRfYmFja3dhcmQQAyr1BgoOVW5pdFN5",
+            "bWJvbEtpbmQSFwoTVW5pdFN5bWJvbEtpbmRfbm9uZRAAEhgKFFVuaXRTeW1i",
+            "b2xLaW5kX21ldGVyEAISFwoTVW5pdFN5bWJvbEtpbmRfZ3JhbRADEhYKElVu",
+            "aXRTeW1ib2xLaW5kX0FtcBAFEhYKElVuaXRTeW1ib2xLaW5kX2RlZxAJEhYK",
+            "ElVuaXRTeW1ib2xLaW5kX3JhZBAKEhcKE1VuaXRTeW1ib2xLaW5kX2RlZ0MQ",
+            "FxIYChRVbml0U3ltYm9sS2luZF9GYXJhZBAZEhYKElVuaXRTeW1ib2xLaW5k",
+            "X3NlYxAbEhgKFFVuaXRTeW1ib2xLaW5kX0hlbnJ5EBwSFAoQVW5pdFN5bWJv",
+            "bEtpbmRfVhAdEhYKElVuaXRTeW1ib2xLaW5kX29obRAeEhgKFFVuaXRTeW1i",
+            "b2xLaW5kX0pvdWxlEB8SGQoVVW5pdFN5bWJvbEtpbmRfTmV3dG9uECASFQoR",
+            "VW5pdFN5bWJvbEtpbmRfSHoQIRIUChBVbml0U3ltYm9sS2luZF9XECYSFQoR",
+            "VW5pdFN5bWJvbEtpbmRfUGEQJxIVChFVbml0U3ltYm9sS2luZF9tMhApEhoK",
+            "FlVuaXRTeW1ib2xLaW5kX1NpZW1lbnMQNRIVChFVbml0U3ltYm9sS2luZF9W",
+            "QRA9EhYKElVuaXRTeW1ib2xLaW5kX1ZBchA/EhkKFVVuaXRTeW1ib2xLaW5k",
+            "X3dQZXJWQRBBEhYKElVuaXRTeW1ib2xLaW5kX1ZBaBBHEhUKEVVuaXRTeW1i",
+            "b2xLaW5kX1doEEgSFwoTVW5pdFN5bWJvbEtpbmRfVkFyaBBJEhkKFVVuaXRT",
+            "eW1ib2xLaW5kX2h6UGVyUxBLEhgKFFVuaXRTeW1ib2xLaW5kX3dQZXJTEFES",
+            "GAoUVW5pdFN5bWJvbEtpbmRfb3RoZXIQZBIVChFVbml0U3ltYm9sS2luZF9B",
+            "aBBqEhcKElVuaXRTeW1ib2xLaW5kX21pbhCfARIYChNVbml0U3ltYm9sS2lu",
+            "ZF9ob3VyEKABEhYKEVVuaXRTeW1ib2xLaW5kX20zEKYBEhoKFVVuaXRTeW1i",
+            "b2xLaW5kX3dQZXJNMhCzARIYChNVbml0U3ltYm9sS2luZF9kZWdGEJcCEhcK",
+            "ElVuaXRTeW1ib2xLaW5kX21waBD0AyqWAwoSVW5pdE11bHRpcGxpZXJLaW5k",
+            "EiAKHFVuaXRNdWx0aXBsaWVyS2luZF9VTkRFRklORUQQABIbChdVbml0TXVs",
+            "dGlwbGllcktpbmRfbm9uZRABEhwKGFVuaXRNdWx0aXBsaWVyS2luZF9vdGhl",
+            "chACEhwKGFVuaXRNdWx0aXBsaWVyS2luZF9jZW50aRADEhsKF1VuaXRNdWx0",
+            "aXBsaWVyS2luZF9kZWNpEAQSGwoXVW5pdE11bHRpcGxpZXJLaW5kX0dpZ2EQ",
+            "BRIbChdVbml0TXVsdGlwbGllcktpbmRfa2lsbxAGEhsKF1VuaXRNdWx0aXBs",
+            "aWVyS2luZF9NZWdhEAcSHAoYVW5pdE11bHRpcGxpZXJLaW5kX21pY3JvEAgS",
+            "HAoYVW5pdE11bHRpcGxpZXJLaW5kX21pbGxpEAkSGwoXVW5pdE11bHRpcGxp",
+            "ZXJLaW5kX25hbm8QChIbChdVbml0TXVsdGlwbGllcktpbmRfcGljbxALEhsK",
+            "F1VuaXRNdWx0aXBsaWVyS2luZF9UZXJhEAwqoQQKDVBoYXNlQ29kZUtpbmQS",
             "FgoSUGhhc2VDb2RlS2luZF9ub25lEAASFwoTUGhhc2VDb2RlS2luZF9vdGhl",
             "chABEhMKD1BoYXNlQ29kZUtpbmRfThAQEhMKD1BoYXNlQ29kZUtpbmRfQxAg",
             "EhQKEFBoYXNlQ29kZUtpbmRfQ04QIRIUChBQaGFzZUNvZGVLaW5kX0FDECgS",
@@ -408,104 +413,141 @@ namespace openfmb.commonmodule {
             "ARIXChJQaGFzZUNvZGVLaW5kX0FCQ04Q4QESFQoQUGhhc2VDb2RlS2luZF9z",
             "MhCAAhIWChFQaGFzZUNvZGVLaW5kX3MyThCBAhIVChBQaGFzZUNvZGVLaW5k",
             "X3MxEIAEEhYKEVBoYXNlQ29kZUtpbmRfczFOEIEEEhYKEVBoYXNlQ29kZUtp",
-            "bmRfczEyEIAGEhcKElBoYXNlQ29kZUtpbmRfczEyThCBBip5CgxWYWxpZGl0",
-            "eUtpbmQSFQoRVmFsaWRpdHlLaW5kX2dvb2QQABIYChRWYWxpZGl0eUtpbmRf",
-            "aW52YWxpZBABEhkKFVZhbGlkaXR5S2luZF9yZXNlcnZlZBACEh0KGVZhbGlk",
-            "aXR5S2luZF9xdWVzdGlvbmFibGUQAypACgpTb3VyY2VLaW5kEhYKElNvdXJj",
-            "ZUtpbmRfcHJvY2VzcxAAEhoKFlNvdXJjZUtpbmRfc3Vic3RpdHV0ZWQQASrq",
-            "AQoQVGltZUFjY3VyYWN5S2luZBIeChpUaW1lQWNjdXJhY3lLaW5kX1VOREVG",
-            "SU5FRBAAEhcKE1RpbWVBY2N1cmFjeUtpbmRfVDAQBxIXChNUaW1lQWNjdXJh",
-            "Y3lLaW5kX1QxEAoSFwoTVGltZUFjY3VyYWN5S2luZF9UMhAOEhcKE1RpbWVB",
-            "Y2N1cmFjeUtpbmRfVDMQEBIXChNUaW1lQWNjdXJhY3lLaW5kX1Q0EBISFwoT",
-            "VGltZUFjY3VyYWN5S2luZF9UNRAUEiAKHFRpbWVBY2N1cmFjeUtpbmRfdW5z",
-            "cGVjaWZpZWQQHyrDDQoVU2NoZWR1bGVQYXJhbWV0ZXJLaW5kEh4KGlNjaGVk",
-            "dWxlUGFyYW1ldGVyS2luZF9ub25lEAASHwobU2NoZWR1bGVQYXJhbWV0ZXJL",
-            "aW5kX290aGVyEAESIwofU2NoZWR1bGVQYXJhbWV0ZXJLaW5kX0FfbmV0X21h",
-            "ZxACEiQKIFNjaGVkdWxlUGFyYW1ldGVyS2luZF9BX25ldXRfbWFnEAMSJAog",
-            "U2NoZWR1bGVQYXJhbWV0ZXJLaW5kX0FfcGhzQV9tYWcQBBIkCiBTY2hlZHVs",
-            "ZVBhcmFtZXRlcktpbmRfQV9waHNCX21hZxAFEiQKIFNjaGVkdWxlUGFyYW1l",
-            "dGVyS2luZF9BX3Boc0NfbWFnEAYSIAocU2NoZWR1bGVQYXJhbWV0ZXJLaW5k",
-            "X0h6X21hZxAHEiQKIFNjaGVkdWxlUGFyYW1ldGVyS2luZF9QRl9uZXRfbWFn",
-            "EAgSJQohU2NoZWR1bGVQYXJhbWV0ZXJLaW5kX1BGX25ldXRfbWFnEAkSJQoh",
-            "U2NoZWR1bGVQYXJhbWV0ZXJLaW5kX1BGX3Boc0FfbWFnEAoSJQohU2NoZWR1",
-            "bGVQYXJhbWV0ZXJLaW5kX1BGX3Boc0JfbWFnEAsSJQohU2NoZWR1bGVQYXJh",
-            "bWV0ZXJLaW5kX1BGX3Boc0NfbWFnEAwSJQohU2NoZWR1bGVQYXJhbWV0ZXJL",
-            "aW5kX1BoVl9uZXRfYW5nEA0SJQohU2NoZWR1bGVQYXJhbWV0ZXJLaW5kX1Bo",
-            "Vl9uZXRfbWFnEA4SJgoiU2NoZWR1bGVQYXJhbWV0ZXJLaW5kX1BoVl9uZXV0",
-            "X2FuZxAPEiYKIlNjaGVkdWxlUGFyYW1ldGVyS2luZF9QaFZfbmV1dF9tYWcQ",
-            "EBImCiJTY2hlZHVsZVBhcmFtZXRlcktpbmRfUGhWX3Boc0FfYW5nEBESJgoi",
-            "U2NoZWR1bGVQYXJhbWV0ZXJLaW5kX1BoVl9waHNBX21hZxASEiYKIlNjaGVk",
-            "dWxlUGFyYW1ldGVyS2luZF9QaFZfcGhzQl9hbmcQExImCiJTY2hlZHVsZVBh",
-            "cmFtZXRlcktpbmRfUGhWX3Boc0JfbWFnEBQSJgoiU2NoZWR1bGVQYXJhbWV0",
-            "ZXJLaW5kX1BoVl9waHNDX2FuZxAVEiYKIlNjaGVkdWxlUGFyYW1ldGVyS2lu",
-            "ZF9QaFZfcGhzQ19tYWcQFhInCiNTY2hlZHVsZVBhcmFtZXRlcktpbmRfUFBW",
-            "X3Boc0FCX2FuZxAXEicKI1NjaGVkdWxlUGFyYW1ldGVyS2luZF9QUFZfcGhz",
-            "QUJfbWFnEBgSJwojU2NoZWR1bGVQYXJhbWV0ZXJLaW5kX1BQVl9waHNCQ19h",
-            "bmcQGRInCiNTY2hlZHVsZVBhcmFtZXRlcktpbmRfUFBWX3Boc0JDX21hZxAa",
-            "EicKI1NjaGVkdWxlUGFyYW1ldGVyS2luZF9QUFZfcGhzQ0FfYW5nEBsSJwoj",
-            "U2NoZWR1bGVQYXJhbWV0ZXJLaW5kX1BQVl9waHNDQV9tYWcQHBIkCiBTY2hl",
-            "ZHVsZVBhcmFtZXRlcktpbmRfVkFfbmV0X21hZxAdEiUKIVNjaGVkdWxlUGFy",
-            "YW1ldGVyS2luZF9WQV9uZXV0X21hZxAeEiUKIVNjaGVkdWxlUGFyYW1ldGVy",
-            "S2luZF9WQV9waHNBX21hZxAfEiUKIVNjaGVkdWxlUGFyYW1ldGVyS2luZF9W",
-            "QV9waHNCX21hZxAgEiUKIVNjaGVkdWxlUGFyYW1ldGVyS2luZF9WQV9waHND",
-            "X21hZxAhEiUKIVNjaGVkdWxlUGFyYW1ldGVyS2luZF9WQXJfbmV0X21hZxAi",
-            "EiYKIlNjaGVkdWxlUGFyYW1ldGVyS2luZF9WQXJfbmV1dF9tYWcQIxImCiJT",
-            "Y2hlZHVsZVBhcmFtZXRlcktpbmRfVkFyX3Boc0FfbWFnECQSJgoiU2NoZWR1",
-            "bGVQYXJhbWV0ZXJLaW5kX1ZBcl9waHNCX21hZxAlEiYKIlNjaGVkdWxlUGFy",
-            "YW1ldGVyS2luZF9WQXJfcGhzQ19tYWcQJhIjCh9TY2hlZHVsZVBhcmFtZXRl",
-            "cktpbmRfV19uZXRfbWFnECcSJAogU2NoZWR1bGVQYXJhbWV0ZXJLaW5kX1df",
-            "bmV1dF9tYWcQKBIkCiBTY2hlZHVsZVBhcmFtZXRlcktpbmRfV19waHNBX21h",
-            "ZxApEiQKIFNjaGVkdWxlUGFyYW1ldGVyS2luZF9XX3Boc0JfbWFnECoSJAog",
-            "U2NoZWR1bGVQYXJhbWV0ZXJLaW5kX1dfcGhzQ19tYWcQKyp/Cg5DYWxjTWV0",
-            "aG9kS2luZBIcChhDYWxjTWV0aG9kS2luZF9VTkRFRklORUQQABIaChZDYWxj",
-            "TWV0aG9kS2luZF9QX0NMQVNTEAsSGgoWQ2FsY01ldGhvZEtpbmRfTV9DTEFT",
-            "UxAMEhcKE0NhbGNNZXRob2RLaW5kX0RJRkYQDSq2AgoTR3JpZENvbm5lY3RN",
-            "b2RlS2luZBIhCh1HcmlkQ29ubmVjdE1vZGVLaW5kX1VOREVGSU5FRBAAEhsK",
-            "F0dyaWRDb25uZWN0TW9kZUtpbmRfQ1NJEAESHgoaR3JpZENvbm5lY3RNb2Rl",
-            "S2luZF9WQ19WU0kQAhIeChpHcmlkQ29ubmVjdE1vZGVLaW5kX0NDX1ZTSRAD",
-            "EhwKGEdyaWRDb25uZWN0TW9kZUtpbmRfbm9uZRBiEh0KGUdyaWRDb25uZWN0",
-            "TW9kZUtpbmRfb3RoZXIQYxIfChpHcmlkQ29ubmVjdE1vZGVLaW5kX1ZTSV9Q",
-            "URDQDxIfChpHcmlkQ29ubmVjdE1vZGVLaW5kX1ZTSV9WRhDRDxIgChtHcmlk",
-            "Q29ubmVjdE1vZGVLaW5kX1ZTSV9JU08Q0g8qTgoKUEZTaWduS2luZBIYChRQ",
-            "RlNpZ25LaW5kX1VOREVGSU5FRBAAEhIKDlBGU2lnbktpbmRfSUVDEAESEgoO",
-            "UEZTaWduS2luZF9FRUkQAirIAQoRQmVoYXZpb3VyTW9kZUtpbmQSHwobQmVo",
-            "YXZpb3VyTW9kZUtpbmRfVU5ERUZJTkVEEAASGAoUQmVoYXZpb3VyTW9kZUtp",
-            "bmRfb24QARIdChlCZWhhdmlvdXJNb2RlS2luZF9ibG9ja2VkEAISGgoWQmVo",
-            "YXZpb3VyTW9kZUtpbmRfdGVzdBADEiIKHkJlaGF2aW91ck1vZGVLaW5kX3Rl",
-            "c3RfYmxvY2tlZBAEEhkKFUJlaGF2aW91ck1vZGVLaW5kX29mZhAFKuADChVE",
-            "RVJHZW5lcmF0b3JTdGF0ZUtpbmQSIwofREVSR2VuZXJhdG9yU3RhdGVLaW5k",
-            "X1VOREVGSU5FRBAAEicKI0RFUkdlbmVyYXRvclN0YXRlS2luZF9Ob3Rfb3Bl",
-            "cmF0aW5nEAESIwofREVSR2VuZXJhdG9yU3RhdGVLaW5kX09wZXJhdGluZxAC",
-            "EiUKIURFUkdlbmVyYXRvclN0YXRlS2luZF9TdGFydGluZ191cBADEicKI0RF",
-            "UkdlbmVyYXRvclN0YXRlS2luZF9TaHV0dGluZ19kb3duEAQSLQopREVSR2Vu",
-            "ZXJhdG9yU3RhdGVLaW5kX0F0X2Rpc2Nvbm5lY3RfbGV2ZWwQBRIqCiZERVJH",
-            "ZW5lcmF0b3JTdGF0ZUtpbmRfUmFtcGluZ19pbl9wb3dlchAGEjMKL0RFUkdl",
-            "bmVyYXRvclN0YXRlS2luZF9SYW1waW5nX2luX3JlYWN0aXZlX3Bvd2VyEAcS",
-            "IQodREVSR2VuZXJhdG9yU3RhdGVLaW5kX1N0YW5kYnkQCBIwCixERVJHZW5l",
-            "cmF0b3JTdGF0ZUtpbmRfTm90X2FwcGxpY2FibGVfVW5rbm93bhBiEh8KG0RF",
-            "UkdlbmVyYXRvclN0YXRlS2luZF9PdGhlchBjKoMBCg9EeW5hbWljVGVzdEtp",
-            "bmQSGAoURHluYW1pY1Rlc3RLaW5kX25vbmUQABIbChdEeW5hbWljVGVzdEtp",
-            "bmRfdGVzdGluZxABEh0KGUR5bmFtaWNUZXN0S2luZF9vcGVyYXRpbmcQAhIa",
-            "ChZEeW5hbWljVGVzdEtpbmRfZmFpbGVkEAMqYgoKSGVhbHRoS2luZBITCg9I",
-            "ZWFsdGhLaW5kX25vbmUQABIRCg1IZWFsdGhLaW5kX09LEAESFgoSSGVhbHRo",
-            "S2luZF9XYXJuaW5nEAISFAoQSGVhbHRoS2luZF9BbGFybRADKqwBChdTd2l0",
-            "Y2hpbmdDYXBhYmlsaXR5S2luZBIgChxTd2l0Y2hpbmdDYXBhYmlsaXR5S2lu",
-            "ZF9ub25lEAASIAocU3dpdGNoaW5nQ2FwYWJpbGl0eUtpbmRfb3BlbhABEiEK",
-            "HVN3aXRjaGluZ0NhcGFiaWxpdHlLaW5kX2Nsb3NlEAISKgomU3dpdGNoaW5n",
-            "Q2FwYWJpbGl0eUtpbmRfb3Blbl9hbmRfY2xvc2UQAyplCglEYlBvc0tpbmQS",
-            "FwoTRGJQb3NLaW5kX3RyYW5zaWVudBAAEhQKEERiUG9zS2luZF9jbG9zZWQQ",
-            "ARISCg5EYlBvc0tpbmRfb3BlbhACEhUKEURiUG9zS2luZF9pbnZhbGlkEAMq",
-            "bQoRUmVjbG9zZUFjdGlvbktpbmQSGgoWUmVjbG9zZUFjdGlvbktpbmRfaWRs",
-            "ZRAAEh0KGVJlY2xvc2VBY3Rpb25LaW5kX2N5Y2xpbmcQARIdChlSZWNsb3Nl",
-            "QWN0aW9uS2luZF9sb2Nrb3V0EAIqRwoJU3RhdGVLaW5kEhEKDVN0YXRlS2lu",
-            "ZF9vZmYQABIQCgxTdGF0ZUtpbmRfb24QARIVChFTdGF0ZUtpbmRfc3RhbmRi",
-            "eRACQoQBChRvcGVuZm1iLmNvbW1vbm1vZHVsZVABWlNnaXRsYWIuY29tL29w",
-            "ZW5mbWIvcHNtL29wcy9wcm90b2J1Zi9nby1vcGVuZm1iLW9wcy1wcm90b2J1",
-            "Zi92Mi9vcGVuZm1iL2NvbW1vbm1vZHVsZaoCFG9wZW5mbWIuY29tbW9ubW9k",
-            "dWxlYgZwcm90bzM="));
+            "bmRfczEyEIAGEhcKElBoYXNlQ29kZUtpbmRfczEyThCBBiqVAQoMVmFsaWRp",
+            "dHlLaW5kEhoKFlZhbGlkaXR5S2luZF9VTkRFRklORUQQABIVChFWYWxpZGl0",
+            "eUtpbmRfZ29vZBABEhgKFFZhbGlkaXR5S2luZF9pbnZhbGlkEAISGQoVVmFs",
+            "aWRpdHlLaW5kX3Jlc2VydmVkEAMSHQoZVmFsaWRpdHlLaW5kX3F1ZXN0aW9u",
+            "YWJsZRAEKloKClNvdXJjZUtpbmQSGAoUU291cmNlS2luZF9VTkRFRklORUQQ",
+            "ABIWChJTb3VyY2VLaW5kX3Byb2Nlc3MQARIaChZTb3VyY2VLaW5kX3N1YnN0",
+            "aXR1dGVkEAIq6gEKEFRpbWVBY2N1cmFjeUtpbmQSHgoaVGltZUFjY3VyYWN5",
+            "S2luZF9VTkRFRklORUQQABIXChNUaW1lQWNjdXJhY3lLaW5kX1QwEAcSFwoT",
+            "VGltZUFjY3VyYWN5S2luZF9UMRAKEhcKE1RpbWVBY2N1cmFjeUtpbmRfVDIQ",
+            "DhIXChNUaW1lQWNjdXJhY3lLaW5kX1QzEBASFwoTVGltZUFjY3VyYWN5S2lu",
+            "ZF9UNBASEhcKE1RpbWVBY2N1cmFjeUtpbmRfVDUQFBIgChxUaW1lQWNjdXJh",
+            "Y3lLaW5kX3Vuc3BlY2lmaWVkEB8q6A0KFVNjaGVkdWxlUGFyYW1ldGVyS2lu",
+            "ZBIjCh9TY2hlZHVsZVBhcmFtZXRlcktpbmRfVU5ERUZJTkVEEAASHgoaU2No",
+            "ZWR1bGVQYXJhbWV0ZXJLaW5kX25vbmUQARIfChtTY2hlZHVsZVBhcmFtZXRl",
+            "cktpbmRfb3RoZXIQAhIjCh9TY2hlZHVsZVBhcmFtZXRlcktpbmRfQV9uZXRf",
+            "bWFnEAMSJAogU2NoZWR1bGVQYXJhbWV0ZXJLaW5kX0FfbmV1dF9tYWcQBBIk",
+            "CiBTY2hlZHVsZVBhcmFtZXRlcktpbmRfQV9waHNBX21hZxAFEiQKIFNjaGVk",
+            "dWxlUGFyYW1ldGVyS2luZF9BX3Boc0JfbWFnEAYSJAogU2NoZWR1bGVQYXJh",
+            "bWV0ZXJLaW5kX0FfcGhzQ19tYWcQBxIgChxTY2hlZHVsZVBhcmFtZXRlcktp",
+            "bmRfSHpfbWFnEAgSJAogU2NoZWR1bGVQYXJhbWV0ZXJLaW5kX1BGX25ldF9t",
+            "YWcQCRIlCiFTY2hlZHVsZVBhcmFtZXRlcktpbmRfUEZfbmV1dF9tYWcQChIl",
+            "CiFTY2hlZHVsZVBhcmFtZXRlcktpbmRfUEZfcGhzQV9tYWcQCxIlCiFTY2hl",
+            "ZHVsZVBhcmFtZXRlcktpbmRfUEZfcGhzQl9tYWcQDBIlCiFTY2hlZHVsZVBh",
+            "cmFtZXRlcktpbmRfUEZfcGhzQ19tYWcQDRIlCiFTY2hlZHVsZVBhcmFtZXRl",
+            "cktpbmRfUGhWX25ldF9hbmcQDhIlCiFTY2hlZHVsZVBhcmFtZXRlcktpbmRf",
+            "UGhWX25ldF9tYWcQDxImCiJTY2hlZHVsZVBhcmFtZXRlcktpbmRfUGhWX25l",
+            "dXRfYW5nEBASJgoiU2NoZWR1bGVQYXJhbWV0ZXJLaW5kX1BoVl9uZXV0X21h",
+            "ZxAREiYKIlNjaGVkdWxlUGFyYW1ldGVyS2luZF9QaFZfcGhzQV9hbmcQEhIm",
+            "CiJTY2hlZHVsZVBhcmFtZXRlcktpbmRfUGhWX3Boc0FfbWFnEBMSJgoiU2No",
+            "ZWR1bGVQYXJhbWV0ZXJLaW5kX1BoVl9waHNCX2FuZxAUEiYKIlNjaGVkdWxl",
+            "UGFyYW1ldGVyS2luZF9QaFZfcGhzQl9tYWcQFRImCiJTY2hlZHVsZVBhcmFt",
+            "ZXRlcktpbmRfUGhWX3Boc0NfYW5nEBYSJgoiU2NoZWR1bGVQYXJhbWV0ZXJL",
+            "aW5kX1BoVl9waHNDX21hZxAXEicKI1NjaGVkdWxlUGFyYW1ldGVyS2luZF9Q",
+            "UFZfcGhzQUJfYW5nEBgSJwojU2NoZWR1bGVQYXJhbWV0ZXJLaW5kX1BQVl9w",
+            "aHNBQl9tYWcQGRInCiNTY2hlZHVsZVBhcmFtZXRlcktpbmRfUFBWX3Boc0JD",
+            "X2FuZxAaEicKI1NjaGVkdWxlUGFyYW1ldGVyS2luZF9QUFZfcGhzQkNfbWFn",
+            "EBsSJwojU2NoZWR1bGVQYXJhbWV0ZXJLaW5kX1BQVl9waHNDQV9hbmcQHBIn",
+            "CiNTY2hlZHVsZVBhcmFtZXRlcktpbmRfUFBWX3Boc0NBX21hZxAdEiQKIFNj",
+            "aGVkdWxlUGFyYW1ldGVyS2luZF9WQV9uZXRfbWFnEB4SJQohU2NoZWR1bGVQ",
+            "YXJhbWV0ZXJLaW5kX1ZBX25ldXRfbWFnEB8SJQohU2NoZWR1bGVQYXJhbWV0",
+            "ZXJLaW5kX1ZBX3Boc0FfbWFnECASJQohU2NoZWR1bGVQYXJhbWV0ZXJLaW5k",
+            "X1ZBX3Boc0JfbWFnECESJQohU2NoZWR1bGVQYXJhbWV0ZXJLaW5kX1ZBX3Bo",
+            "c0NfbWFnECISJQohU2NoZWR1bGVQYXJhbWV0ZXJLaW5kX1ZBcl9uZXRfbWFn",
+            "ECMSJgoiU2NoZWR1bGVQYXJhbWV0ZXJLaW5kX1ZBcl9uZXV0X21hZxAkEiYK",
+            "IlNjaGVkdWxlUGFyYW1ldGVyS2luZF9WQXJfcGhzQV9tYWcQJRImCiJTY2hl",
+            "ZHVsZVBhcmFtZXRlcktpbmRfVkFyX3Boc0JfbWFnECYSJgoiU2NoZWR1bGVQ",
+            "YXJhbWV0ZXJLaW5kX1ZBcl9waHNDX21hZxAnEiMKH1NjaGVkdWxlUGFyYW1l",
+            "dGVyS2luZF9XX25ldF9tYWcQKBIkCiBTY2hlZHVsZVBhcmFtZXRlcktpbmRf",
+            "V19uZXV0X21hZxApEiQKIFNjaGVkdWxlUGFyYW1ldGVyS2luZF9XX3Boc0Ff",
+            "bWFnECoSJAogU2NoZWR1bGVQYXJhbWV0ZXJLaW5kX1dfcGhzQl9tYWcQKxIk",
+            "CiBTY2hlZHVsZVBhcmFtZXRlcktpbmRfV19waHNDX21hZxAsKn8KDkNhbGNN",
+            "ZXRob2RLaW5kEhwKGENhbGNNZXRob2RLaW5kX1VOREVGSU5FRBAAEhoKFkNh",
+            "bGNNZXRob2RLaW5kX1BfQ0xBU1MQCxIaChZDYWxjTWV0aG9kS2luZF9NX0NM",
+            "QVNTEAwSFwoTQ2FsY01ldGhvZEtpbmRfRElGRhANKrYCChNHcmlkQ29ubmVj",
+            "dE1vZGVLaW5kEiEKHUdyaWRDb25uZWN0TW9kZUtpbmRfVU5ERUZJTkVEEAAS",
+            "GwoXR3JpZENvbm5lY3RNb2RlS2luZF9DU0kQARIeChpHcmlkQ29ubmVjdE1v",
+            "ZGVLaW5kX1ZDX1ZTSRACEh4KGkdyaWRDb25uZWN0TW9kZUtpbmRfQ0NfVlNJ",
+            "EAMSHAoYR3JpZENvbm5lY3RNb2RlS2luZF9ub25lEGISHQoZR3JpZENvbm5l",
+            "Y3RNb2RlS2luZF9vdGhlchBjEh8KGkdyaWRDb25uZWN0TW9kZUtpbmRfVlNJ",
+            "X1BRENAPEh8KGkdyaWRDb25uZWN0TW9kZUtpbmRfVlNJX1ZGENEPEiAKG0dy",
+            "aWRDb25uZWN0TW9kZUtpbmRfVlNJX0lTTxDSDypOCgpQRlNpZ25LaW5kEhgK",
+            "FFBGU2lnbktpbmRfVU5ERUZJTkVEEAASEgoOUEZTaWduS2luZF9JRUMQARIS",
+            "Cg5QRlNpZ25LaW5kX0VFSRACKsgBChFCZWhhdmlvdXJNb2RlS2luZBIfChtC",
+            "ZWhhdmlvdXJNb2RlS2luZF9VTkRFRklORUQQABIYChRCZWhhdmlvdXJNb2Rl",
+            "S2luZF9vbhABEh0KGUJlaGF2aW91ck1vZGVLaW5kX2Jsb2NrZWQQAhIaChZC",
+            "ZWhhdmlvdXJNb2RlS2luZF90ZXN0EAMSIgoeQmVoYXZpb3VyTW9kZUtpbmRf",
+            "dGVzdF9ibG9ja2VkEAQSGQoVQmVoYXZpb3VyTW9kZUtpbmRfb2ZmEAUq4AMK",
+            "FURFUkdlbmVyYXRvclN0YXRlS2luZBIjCh9ERVJHZW5lcmF0b3JTdGF0ZUtp",
+            "bmRfVU5ERUZJTkVEEAASJwojREVSR2VuZXJhdG9yU3RhdGVLaW5kX05vdF9v",
+            "cGVyYXRpbmcQARIjCh9ERVJHZW5lcmF0b3JTdGF0ZUtpbmRfT3BlcmF0aW5n",
+            "EAISJQohREVSR2VuZXJhdG9yU3RhdGVLaW5kX1N0YXJ0aW5nX3VwEAMSJwoj",
+            "REVSR2VuZXJhdG9yU3RhdGVLaW5kX1NodXR0aW5nX2Rvd24QBBItCilERVJH",
+            "ZW5lcmF0b3JTdGF0ZUtpbmRfQXRfZGlzY29ubmVjdF9sZXZlbBAFEioKJkRF",
+            "UkdlbmVyYXRvclN0YXRlS2luZF9SYW1waW5nX2luX3Bvd2VyEAYSMwovREVS",
+            "R2VuZXJhdG9yU3RhdGVLaW5kX1JhbXBpbmdfaW5fcmVhY3RpdmVfcG93ZXIQ",
+            "BxIhCh1ERVJHZW5lcmF0b3JTdGF0ZUtpbmRfU3RhbmRieRAIEjAKLERFUkdl",
+            "bmVyYXRvclN0YXRlS2luZF9Ob3RfYXBwbGljYWJsZV9Vbmtub3duEGISHwob",
+            "REVSR2VuZXJhdG9yU3RhdGVLaW5kX090aGVyEGMqogEKD0R5bmFtaWNUZXN0",
+            "S2luZBIdChlEeW5hbWljVGVzdEtpbmRfVU5ERUZJTkVEEAASGAoURHluYW1p",
+            "Y1Rlc3RLaW5kX25vbmUQARIbChdEeW5hbWljVGVzdEtpbmRfdGVzdGluZxAC",
+            "Eh0KGUR5bmFtaWNUZXN0S2luZF9vcGVyYXRpbmcQAxIaChZEeW5hbWljVGVz",
+            "dEtpbmRfZmFpbGVkEAQqfAoKSGVhbHRoS2luZBIYChRIZWFsdGhLaW5kX1VO",
+            "REVGSU5FRBAAEhMKD0hlYWx0aEtpbmRfbm9uZRABEhEKDUhlYWx0aEtpbmRf",
+            "T0sQAhIWChJIZWFsdGhLaW5kX1dhcm5pbmcQAxIUChBIZWFsdGhLaW5kX0Fs",
+            "YXJtEAQq0wEKF1N3aXRjaGluZ0NhcGFiaWxpdHlLaW5kEiUKIVN3aXRjaGlu",
+            "Z0NhcGFiaWxpdHlLaW5kX1VOREVGSU5FRBAAEiAKHFN3aXRjaGluZ0NhcGFi",
+            "aWxpdHlLaW5kX25vbmUQARIgChxTd2l0Y2hpbmdDYXBhYmlsaXR5S2luZF9v",
+            "cGVuEAISIQodU3dpdGNoaW5nQ2FwYWJpbGl0eUtpbmRfY2xvc2UQAxIqCiZT",
+            "d2l0Y2hpbmdDYXBhYmlsaXR5S2luZF9vcGVuX2FuZF9jbG9zZRAEKn4KCURi",
+            "UG9zS2luZBIXChNEYlBvc0tpbmRfVU5ERUZJTkVEEAASFwoTRGJQb3NLaW5k",
+            "X3RyYW5zaWVudBABEhQKEERiUG9zS2luZF9jbG9zZWQQAhISCg5EYlBvc0tp",
+            "bmRfb3BlbhADEhUKEURiUG9zS2luZF9pbnZhbGlkEAQqjgEKEVJlY2xvc2VB",
+            "Y3Rpb25LaW5kEh8KG1JlY2xvc2VBY3Rpb25LaW5kX1VOREVGSU5FRBAAEhoK",
+            "FlJlY2xvc2VBY3Rpb25LaW5kX2lkbGUQARIdChlSZWNsb3NlQWN0aW9uS2lu",
+            "ZF9jeWNsaW5nEAISHQoZUmVjbG9zZUFjdGlvbktpbmRfbG9ja291dBADKqAB",
+            "Cg9Db250cm9sTW9kZUtpbmQSHQoZQ29udHJvbE1vZGVLaW5kX1VOREVGSU5F",
+            "RBAAEhgKFENvbnRyb2xNb2RlS2luZF9hdXRvEAESGgoWQ29udHJvbE1vZGVL",
+            "aW5kX21hbnVhbBACEhwKGENvbnRyb2xNb2RlS2luZF9vdmVycmlkZRADEhoK",
+            "FkNvbnRyb2xNb2RlS2luZF9yZW1vdGUQBCq+AwoRRGlyZWN0aW9uTW9kZUtp",
+            "bmQSHwobRGlyZWN0aW9uTW9kZUtpbmRfVU5ERUZJTkVEEAASJAogRGlyZWN0",
+            "aW9uTW9kZUtpbmRfbG9ja2VkX2ZvcndhcmQQARIkCiBEaXJlY3Rpb25Nb2Rl",
+            "S2luZF9sb2NrZWRfcmV2ZXJzZRACEiIKHkRpcmVjdGlvbk1vZGVLaW5kX3Jl",
+            "dmVyc2VfaWRsZRADEiMKH0RpcmVjdGlvbk1vZGVLaW5kX2JpZGlyZWN0aW9u",
+            "YWwQBBIiCh5EaXJlY3Rpb25Nb2RlS2luZF9uZXV0cmFsX2lkbGUQBRIiCh5E",
+            "aXJlY3Rpb25Nb2RlS2luZF9jb2dlbmVyYXRpb24QBhIsCihEaXJlY3Rpb25N",
+            "b2RlS2luZF9yZWFjdGl2ZV9iaWRpcmVjdGlvbmFsEAcSKAokRGlyZWN0aW9u",
+            "TW9kZUtpbmRfYmlhc19iaWRpcmVjdGlvbmFsEAgSJwojRGlyZWN0aW9uTW9k",
+            "ZUtpbmRfYmlhc19jb2dlbmVyYXRpb24QCRIqCiZEaXJlY3Rpb25Nb2RlS2lu",
+            "ZF9yZXZlcnNlX2NvZ2VuZXJhdGlvbhAKKokCChhSZWFjdGl2ZVBvd2VyQ29u",
+            "dHJvbEtpbmQSJgoiUmVhY3RpdmVQb3dlckNvbnRyb2xLaW5kX1VOREVGSU5F",
+            "RBAAEiUKIVJlYWN0aXZlUG93ZXJDb250cm9sS2luZF9hZHZhbmNlZBABEiIK",
+            "HlJlYWN0aXZlUG93ZXJDb250cm9sS2luZF9kcm9vcBACEiQKIFJlYWN0aXZl",
+            "UG93ZXJDb250cm9sS2luZF92b2x0YWdlEAMSKgomUmVhY3RpdmVQb3dlckNv",
+            "bnRyb2xLaW5kX3JlYWN0aXZlUG93ZXIQBBIoCiRSZWFjdGl2ZVBvd2VyQ29u",
+            "dHJvbEtpbmRfcG93ZXJGYWN0b3IQBSrHAQoUUmVhbFBvd2VyQ29udHJvbEtp",
+            "bmQSIgoeUmVhbFBvd2VyQ29udHJvbEtpbmRfVU5ERUZJTkVEEAASIQodUmVh",
+            "bFBvd2VyQ29udHJvbEtpbmRfYWR2YW5jZWQQARIeChpSZWFsUG93ZXJDb250",
+            "cm9sS2luZF9kcm9vcBACEiQKIFJlYWxQb3dlckNvbnRyb2xLaW5kX2lzb2No",
+            "cm9ub3VzEAMSIgoeUmVhbFBvd2VyQ29udHJvbEtpbmRfcmVhbFBvd2VyEAQq",
+            "YAoJU3RhdGVLaW5kEhcKE1N0YXRlS2luZF9VTkRFRklORUQQABIRCg1TdGF0",
+            "ZUtpbmRfb2ZmEAESEAoMU3RhdGVLaW5kX29uEAISFQoRU3RhdGVLaW5kX3N0",
+            "YW5kYnkQAyrGAgoRVm9sdExpbWl0TW9kZUtpbmQSHwobVm9sdExpbWl0TW9k",
+            "ZUtpbmRfVU5ERUZJTkVEEAASGQoVVm9sdExpbWl0TW9kZUtpbmRfb2ZmEAES",
+            "JQohVm9sdExpbWl0TW9kZUtpbmRfaGlnaF9saW1pdF9vbmx5EAISJAogVm9s",
+            "dExpbWl0TW9kZUtpbmRfbG93X2xpbWl0X29ubHkQAxIlCiFWb2x0TGltaXRN",
+            "b2RlS2luZF9oaWdoX2xvd19saW1pdHMQBBIqCiZWb2x0TGltaXRNb2RlS2lu",
+            "ZF9pdnZjX2hpZ2hfbGltaXRfb25seRAFEikKJVZvbHRMaW1pdE1vZGVLaW5k",
+            "X2l2dmNfbG93X2xpbWl0X29ubHkQBhIqCiZWb2x0TGltaXRNb2RlS2luZF9p",
+            "dnZjX2hpZ2hfbG93X2xpbWl0cxAHQoQBChRvcGVuZm1iLmNvbW1vbm1vZHVs",
+            "ZVABWlNnaXRsYWIuY29tL29wZW5mbWIvcHNtL29wcy9wcm90b2J1Zi9nby1v",
+            "cGVuZm1iLW9wcy1wcm90b2J1Zi92Mi9vcGVuZm1iL2NvbW1vbm1vZHVsZaoC",
+            "FG9wZW5mbWIuY29tbW9ubW9kdWxlYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::openfmb.UmlReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::openfmb.commonmodule.FaultDirectionKind), typeof(global::openfmb.commonmodule.PhaseFaultDirectionKind), typeof(global::openfmb.commonmodule.UnitSymbolKind), typeof(global::openfmb.commonmodule.UnitMultiplierKind), typeof(global::openfmb.commonmodule.PhaseCodeKind), typeof(global::openfmb.commonmodule.ValidityKind), typeof(global::openfmb.commonmodule.SourceKind), typeof(global::openfmb.commonmodule.TimeAccuracyKind), typeof(global::openfmb.commonmodule.ScheduleParameterKind), typeof(global::openfmb.commonmodule.CalcMethodKind), typeof(global::openfmb.commonmodule.GridConnectModeKind), typeof(global::openfmb.commonmodule.PFSignKind), typeof(global::openfmb.commonmodule.BehaviourModeKind), typeof(global::openfmb.commonmodule.DERGeneratorStateKind), typeof(global::openfmb.commonmodule.DynamicTestKind), typeof(global::openfmb.commonmodule.HealthKind), typeof(global::openfmb.commonmodule.SwitchingCapabilityKind), typeof(global::openfmb.commonmodule.DbPosKind), typeof(global::openfmb.commonmodule.RecloseActionKind), typeof(global::openfmb.commonmodule.StateKind), }, null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::openfmb.commonmodule.FaultDirectionKind), typeof(global::openfmb.commonmodule.PhaseFaultDirectionKind), typeof(global::openfmb.commonmodule.UnitSymbolKind), typeof(global::openfmb.commonmodule.UnitMultiplierKind), typeof(global::openfmb.commonmodule.PhaseCodeKind), typeof(global::openfmb.commonmodule.ValidityKind), typeof(global::openfmb.commonmodule.SourceKind), typeof(global::openfmb.commonmodule.TimeAccuracyKind), typeof(global::openfmb.commonmodule.ScheduleParameterKind), typeof(global::openfmb.commonmodule.CalcMethodKind), typeof(global::openfmb.commonmodule.GridConnectModeKind), typeof(global::openfmb.commonmodule.PFSignKind), typeof(global::openfmb.commonmodule.BehaviourModeKind), typeof(global::openfmb.commonmodule.DERGeneratorStateKind), typeof(global::openfmb.commonmodule.DynamicTestKind), typeof(global::openfmb.commonmodule.HealthKind), typeof(global::openfmb.commonmodule.SwitchingCapabilityKind), typeof(global::openfmb.commonmodule.DbPosKind), typeof(global::openfmb.commonmodule.RecloseActionKind), typeof(global::openfmb.commonmodule.ControlModeKind), typeof(global::openfmb.commonmodule.DirectionModeKind), typeof(global::openfmb.commonmodule.ReactivePowerControlKind), typeof(global::openfmb.commonmodule.RealPowerControlKind), typeof(global::openfmb.commonmodule.StateKind), typeof(global::openfmb.commonmodule.VoltLimitModeKind), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.Optional_FaultDirectionKind), global::openfmb.commonmodule.Optional_FaultDirectionKind.Parser, new[]{ "Value" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.Optional_PhaseFaultDirectionKind), global::openfmb.commonmodule.Optional_PhaseFaultDirectionKind.Parser, new[]{ "Value" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.ACD), global::openfmb.commonmodule.ACD.Parser, new[]{ "DirGeneral", "DirNeut", "DirPhsA", "DirPhsB", "DirPhsC", "General", "Neut", "PhsA", "PhsB", "PhsC" }, null, null, null, null),
@@ -515,7 +557,6 @@ namespace openfmb.commonmodule {
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.Optional_UnitMultiplierKind), global::openfmb.commonmodule.Optional_UnitMultiplierKind.Parser, new[]{ "Value" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.ActivePower), global::openfmb.commonmodule.ActivePower.Parser, new[]{ "Multiplier", "Unit", "Value" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.Optional_PhaseCodeKind), global::openfmb.commonmodule.Optional_PhaseCodeKind.Parser, new[]{ "Value" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.AnalogueValue), global::openfmb.commonmodule.AnalogueValue.Parser, new[]{ "F", "I" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.Unit), global::openfmb.commonmodule.Unit.Parser, new[]{ "Multiplier", "SIUnit" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.Optional_ValidityKind), global::openfmb.commonmodule.Optional_ValidityKind.Parser, new[]{ "Value" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.DetailQual), global::openfmb.commonmodule.DetailQual.Parser, new[]{ "BadReference", "Failure", "Inaccurate", "Inconsistent", "OldData", "Oscillatory", "OutOfRange", "Overflow" }, null, null, null, null),
@@ -527,10 +568,9 @@ namespace openfmb.commonmodule {
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.MV), global::openfmb.commonmodule.MV.Parser, new[]{ "Mag", "Q", "T", "Units" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.LogicalNode), global::openfmb.commonmodule.LogicalNode.Parser, new[]{ "IdentifiedObject" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.AnalogEventAndStatusGGIO), global::openfmb.commonmodule.AnalogEventAndStatusGGIO.Parser, new[]{ "LogicalNode", "AnIn", "Phase" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.AnalogueValueCtl), global::openfmb.commonmodule.AnalogueValueCtl.Parser, new[]{ "F", "I" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.NamedObject), global::openfmb.commonmodule.NamedObject.Parser, new[]{ "Description", "Name" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.ApplicationSystem), global::openfmb.commonmodule.ApplicationSystem.Parser, new[]{ "NamedObject", "MRID" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.ASG), global::openfmb.commonmodule.ASG.Parser, new[]{ "SetMag", "Units" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.ASG), global::openfmb.commonmodule.ASG.Parser, new[]{ "SetMag" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.BCR), global::openfmb.commonmodule.BCR.Parser, new[]{ "ActVal", "Q", "T" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.StatusSPS), global::openfmb.commonmodule.StatusSPS.Parser, new[]{ "Q", "StVal", "T" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.BooleanEventAndStatusGGIO), global::openfmb.commonmodule.BooleanEventAndStatusGGIO.Parser, new[]{ "LogicalNode", "Ind", "Phase" }, null, null, null, null),
@@ -601,6 +641,7 @@ namespace openfmb.commonmodule {
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.PhaseMMTN), global::openfmb.commonmodule.PhaseMMTN.Parser, new[]{ "PhsA", "PhsAB", "PhsB", "PhsBC", "PhsC", "PhsCA" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.Optional_RecloseActionKind), global::openfmb.commonmodule.Optional_RecloseActionKind.Parser, new[]{ "Value" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.PhaseRecloseAction), global::openfmb.commonmodule.PhaseRecloseAction.Parser, new[]{ "Phs3", "PhsA", "PhsB", "PhsC" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.PhaseSPC), global::openfmb.commonmodule.PhaseSPC.Parser, new[]{ "Phs3", "PhsA", "PhsB", "PhsC" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.PhaseSPS), global::openfmb.commonmodule.PhaseSPS.Parser, new[]{ "Phs3", "PhsA", "PhsB", "PhsC" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.PMG), global::openfmb.commonmodule.PMG.Parser, new[]{ "Net", "PhsA", "PhsB", "PhsC" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.RampRate), global::openfmb.commonmodule.RampRate.Parser, new[]{ "NegativeReactivePowerKVArPerMin", "NegativeRealPowerKWPerMin", "PositiveReactivePowerKVArPerMin", "PositiveRealPowerKWPerMin" }, null, null, null, null),
@@ -612,14 +653,18 @@ namespace openfmb.commonmodule {
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.StatusINC), global::openfmb.commonmodule.StatusINC.Parser, new[]{ "Q", "StVal", "T" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.StatusISC), global::openfmb.commonmodule.StatusISC.Parser, new[]{ "Q", "StVal", "T" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.StatusMessageInfo), global::openfmb.commonmodule.StatusMessageInfo.Parser, new[]{ "MessageInfo" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.StatusSPC), global::openfmb.commonmodule.StatusSPC.Parser, new[]{ "Q", "StVal", "T" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.StatusValue), global::openfmb.commonmodule.StatusValue.Parser, new[]{ "IdentifiedObject", "ModBlk" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.VSS), global::openfmb.commonmodule.VSS.Parser, new[]{ "Q", "StVal", "T" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.StringEventAndStatusGGIO), global::openfmb.commonmodule.StringEventAndStatusGGIO.Parser, new[]{ "LogicalNode", "Phase", "StrIn" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.SwitchPoint), global::openfmb.commonmodule.SwitchPoint.Parser, new[]{ "Pos", "StartTime" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.SwitchCSG), global::openfmb.commonmodule.SwitchCSG.Parser, new[]{ "CrvPts" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.VSC), global::openfmb.commonmodule.VSC.Parser, new[]{ "CtlVal" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.Optional_StateKind), global::openfmb.commonmodule.Optional_StateKind.Parser, new[]{ "Value" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.Optional_ControlModeKind), global::openfmb.commonmodule.Optional_ControlModeKind.Parser, new[]{ "Value" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.Optional_DirectionModeKind), global::openfmb.commonmodule.Optional_DirectionModeKind.Parser, new[]{ "Value" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.Optional_ReactivePowerControlKind), global::openfmb.commonmodule.Optional_ReactivePowerControlKind.Parser, new[]{ "Value" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.Optional_RealPowerControlKind), global::openfmb.commonmodule.Optional_RealPowerControlKind.Parser, new[]{ "Value" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.Optional_StateKind), global::openfmb.commonmodule.Optional_StateKind.Parser, new[]{ "Value" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.commonmodule.Optional_VoltLimitModeKind), global::openfmb.commonmodule.Optional_VoltLimitModeKind.Parser, new[]{ "Value" }, null, null, null, null)
           }));
     }
     #endregion
@@ -631,21 +676,25 @@ namespace openfmb.commonmodule {
   /// </summary>
   public enum FaultDirectionKind {
     /// <summary>
-    /// MISSING DOCUMENTATION!!!
+    /// Undefined
     /// </summary>
-    [pbr::OriginalName("FaultDirectionKind_unknown")] Unknown = 0,
+    [pbr::OriginalName("FaultDirectionKind_UNDEFINED")] Undefined = 0,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("FaultDirectionKind_forward")] Forward = 1,
+    [pbr::OriginalName("FaultDirectionKind_unknown")] Unknown = 1,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("FaultDirectionKind_backward")] Backward = 2,
+    [pbr::OriginalName("FaultDirectionKind_forward")] Forward = 2,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("FaultDirectionKind_both")] Both = 3,
+    [pbr::OriginalName("FaultDirectionKind_backward")] Backward = 3,
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [pbr::OriginalName("FaultDirectionKind_both")] Both = 4,
   }
 
   /// <summary>
@@ -653,17 +702,21 @@ namespace openfmb.commonmodule {
   /// </summary>
   public enum PhaseFaultDirectionKind {
     /// <summary>
-    /// MISSING DOCUMENTATION!!!
+    /// Undefined
     /// </summary>
-    [pbr::OriginalName("PhaseFaultDirectionKind_unknown")] Unknown = 0,
+    [pbr::OriginalName("PhaseFaultDirectionKind_UNDEFINED")] Undefined = 0,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("PhaseFaultDirectionKind_forward")] Forward = 1,
+    [pbr::OriginalName("PhaseFaultDirectionKind_unknown")] Unknown = 1,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("PhaseFaultDirectionKind_backward")] Backward = 2,
+    [pbr::OriginalName("PhaseFaultDirectionKind_forward")] Forward = 2,
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [pbr::OriginalName("PhaseFaultDirectionKind_backward")] Backward = 3,
   }
 
   /// <summary>
@@ -820,53 +873,57 @@ namespace openfmb.commonmodule {
   /// </summary>
   public enum UnitMultiplierKind {
     /// <summary>
+    /// Undefined
+    /// </summary>
+    [pbr::OriginalName("UnitMultiplierKind_UNDEFINED")] Undefined = 0,
+    /// <summary>
     /// No multiplier or equivalently multiply by 1.
     /// </summary>
-    [pbr::OriginalName("UnitMultiplierKind_none")] None = 0,
+    [pbr::OriginalName("UnitMultiplierKind_none")] None = 1,
     /// <summary>
     /// Other enum not listed
     /// </summary>
-    [pbr::OriginalName("UnitMultiplierKind_other")] Other = 1,
+    [pbr::OriginalName("UnitMultiplierKind_other")] Other = 2,
     /// <summary>
     /// Centi 10**-2.
     /// </summary>
-    [pbr::OriginalName("UnitMultiplierKind_centi")] Centi = 2,
+    [pbr::OriginalName("UnitMultiplierKind_centi")] Centi = 3,
     /// <summary>
     /// Deci 10**-1.
     /// </summary>
-    [pbr::OriginalName("UnitMultiplierKind_deci")] Deci = 3,
+    [pbr::OriginalName("UnitMultiplierKind_deci")] Deci = 4,
     /// <summary>
     /// Giga 10**9.
     /// </summary>
-    [pbr::OriginalName("UnitMultiplierKind_Giga")] Giga = 4,
+    [pbr::OriginalName("UnitMultiplierKind_Giga")] Giga = 5,
     /// <summary>
     /// Kilo 10**3.
     /// </summary>
-    [pbr::OriginalName("UnitMultiplierKind_kilo")] Kilo = 5,
+    [pbr::OriginalName("UnitMultiplierKind_kilo")] Kilo = 6,
     /// <summary>
     /// Mega 10**6.
     /// </summary>
-    [pbr::OriginalName("UnitMultiplierKind_Mega")] Mega = 6,
+    [pbr::OriginalName("UnitMultiplierKind_Mega")] Mega = 7,
     /// <summary>
     /// Micro 10**-6.
     /// </summary>
-    [pbr::OriginalName("UnitMultiplierKind_micro")] Micro = 7,
+    [pbr::OriginalName("UnitMultiplierKind_micro")] Micro = 8,
     /// <summary>
     /// Milli 10**-3.
     /// </summary>
-    [pbr::OriginalName("UnitMultiplierKind_milli")] Milli = 8,
+    [pbr::OriginalName("UnitMultiplierKind_milli")] Milli = 9,
     /// <summary>
     /// Nano 10**-9.
     /// </summary>
-    [pbr::OriginalName("UnitMultiplierKind_nano")] Nano = 9,
+    [pbr::OriginalName("UnitMultiplierKind_nano")] Nano = 10,
     /// <summary>
     /// Pico 10**-12.
     /// </summary>
-    [pbr::OriginalName("UnitMultiplierKind_pico")] Pico = 10,
+    [pbr::OriginalName("UnitMultiplierKind_pico")] Pico = 11,
     /// <summary>
     /// Tera 10**12.
     /// </summary>
-    [pbr::OriginalName("UnitMultiplierKind_Tera")] Tera = 11,
+    [pbr::OriginalName("UnitMultiplierKind_Tera")] Tera = 12,
   }
 
   /// <summary>
@@ -978,10 +1035,14 @@ namespace openfmb.commonmodule {
   /// </summary>
   public enum ValidityKind {
     /// <summary>
+    /// Undefined
+    /// </summary>
+    [pbr::OriginalName("ValidityKind_UNDEFINED")] Undefined = 0,
+    /// <summary>
     /// Supervision function has detected no abnormal condition of either the acquisition function or
     /// the information source.
     /// </summary>
-    [pbr::OriginalName("ValidityKind_good")] Good = 0,
+    [pbr::OriginalName("ValidityKind_good")] Good = 1,
     /// <summary>
     /// Supervision function has detected an abnormal condition of the acquisition function or the
     /// information source (missing or non-operating updating devices). The value is not defined under this
@@ -989,16 +1050,16 @@ namespace openfmb.commonmodule {
     /// be used.  EXAMPLE If an input unit detects an oscillation of one input it will mark the related
     /// information as invalid.
     /// </summary>
-    [pbr::OriginalName("ValidityKind_invalid")] Invalid = 1,
+    [pbr::OriginalName("ValidityKind_invalid")] Invalid = 2,
     /// <summary>
     /// Reserved
     /// </summary>
-    [pbr::OriginalName("ValidityKind_reserved")] Reserved = 2,
+    [pbr::OriginalName("ValidityKind_reserved")] Reserved = 3,
     /// <summary>
     /// Supervision function has detected any abnormal behaviour. However, the value could still be
     /// valid. It is client's responsibility to determine whether the values should be used.
     /// </summary>
-    [pbr::OriginalName("ValidityKind_questionable")] Questionable = 3,
+    [pbr::OriginalName("ValidityKind_questionable")] Questionable = 4,
   }
 
   /// <summary>
@@ -1010,14 +1071,18 @@ namespace openfmb.commonmodule {
   /// </summary>
   public enum SourceKind {
     /// <summary>
+    /// Undefined
+    /// </summary>
+    [pbr::OriginalName("SourceKind_UNDEFINED")] Undefined = 0,
+    /// <summary>
     /// The value is provided by an input function from the process I/O or is calculated from some
     /// application function.
     /// </summary>
-    [pbr::OriginalName("SourceKind_process")] Process = 0,
+    [pbr::OriginalName("SourceKind_process")] Process = 1,
     /// <summary>
     /// The value is provided by an operator input or by an automatic source.
     /// </summary>
-    [pbr::OriginalName("SourceKind_substituted")] Substituted = 1,
+    [pbr::OriginalName("SourceKind_substituted")] Substituted = 2,
   }
 
   /// <summary>
@@ -1064,181 +1129,185 @@ namespace openfmb.commonmodule {
   /// </summary>
   public enum ScheduleParameterKind {
     /// <summary>
+    /// Undefined
+    /// </summary>
+    [pbr::OriginalName("ScheduleParameterKind_UNDEFINED")] Undefined = 0,
+    /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("ScheduleParameterKind_none")] None = 0,
+    [pbr::OriginalName("ScheduleParameterKind_none")] None = 1,
     /// <summary>
     /// Other enum not listed
     /// </summary>
-    [pbr::OriginalName("ScheduleParameterKind_other")] Other = 1,
+    [pbr::OriginalName("ScheduleParameterKind_other")] Other = 2,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("ScheduleParameterKind_A_net_mag")] ANetMag = 2,
+    [pbr::OriginalName("ScheduleParameterKind_A_net_mag")] ANetMag = 3,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("ScheduleParameterKind_A_neut_mag")] ANeutMag = 3,
+    [pbr::OriginalName("ScheduleParameterKind_A_neut_mag")] ANeutMag = 4,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("ScheduleParameterKind_A_phsA_mag")] APhsAMag = 4,
+    [pbr::OriginalName("ScheduleParameterKind_A_phsA_mag")] APhsAMag = 5,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("ScheduleParameterKind_A_phsB_mag")] APhsBMag = 5,
+    [pbr::OriginalName("ScheduleParameterKind_A_phsB_mag")] APhsBMag = 6,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("ScheduleParameterKind_A_phsC_mag")] APhsCMag = 6,
+    [pbr::OriginalName("ScheduleParameterKind_A_phsC_mag")] APhsCMag = 7,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("ScheduleParameterKind_Hz_mag")] HzMag = 7,
+    [pbr::OriginalName("ScheduleParameterKind_Hz_mag")] HzMag = 8,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("ScheduleParameterKind_PF_net_mag")] PfNetMag = 8,
+    [pbr::OriginalName("ScheduleParameterKind_PF_net_mag")] PfNetMag = 9,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("ScheduleParameterKind_PF_neut_mag")] PfNeutMag = 9,
+    [pbr::OriginalName("ScheduleParameterKind_PF_neut_mag")] PfNeutMag = 10,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("ScheduleParameterKind_PF_phsA_mag")] PfPhsAMag = 10,
+    [pbr::OriginalName("ScheduleParameterKind_PF_phsA_mag")] PfPhsAMag = 11,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("ScheduleParameterKind_PF_phsB_mag")] PfPhsBMag = 11,
+    [pbr::OriginalName("ScheduleParameterKind_PF_phsB_mag")] PfPhsBMag = 12,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("ScheduleParameterKind_PF_phsC_mag")] PfPhsCMag = 12,
+    [pbr::OriginalName("ScheduleParameterKind_PF_phsC_mag")] PfPhsCMag = 13,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("ScheduleParameterKind_PhV_net_ang")] PhVNetAng = 13,
+    [pbr::OriginalName("ScheduleParameterKind_PhV_net_ang")] PhVNetAng = 14,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("ScheduleParameterKind_PhV_net_mag")] PhVNetMag = 14,
+    [pbr::OriginalName("ScheduleParameterKind_PhV_net_mag")] PhVNetMag = 15,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("ScheduleParameterKind_PhV_neut_ang")] PhVNeutAng = 15,
+    [pbr::OriginalName("ScheduleParameterKind_PhV_neut_ang")] PhVNeutAng = 16,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("ScheduleParameterKind_PhV_neut_mag")] PhVNeutMag = 16,
+    [pbr::OriginalName("ScheduleParameterKind_PhV_neut_mag")] PhVNeutMag = 17,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("ScheduleParameterKind_PhV_phsA_ang")] PhVPhsAAng = 17,
+    [pbr::OriginalName("ScheduleParameterKind_PhV_phsA_ang")] PhVPhsAAng = 18,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("ScheduleParameterKind_PhV_phsA_mag")] PhVPhsAMag = 18,
+    [pbr::OriginalName("ScheduleParameterKind_PhV_phsA_mag")] PhVPhsAMag = 19,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("ScheduleParameterKind_PhV_phsB_ang")] PhVPhsBAng = 19,
+    [pbr::OriginalName("ScheduleParameterKind_PhV_phsB_ang")] PhVPhsBAng = 20,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("ScheduleParameterKind_PhV_phsB_mag")] PhVPhsBMag = 20,
+    [pbr::OriginalName("ScheduleParameterKind_PhV_phsB_mag")] PhVPhsBMag = 21,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("ScheduleParameterKind_PhV_phsC_ang")] PhVPhsCAng = 21,
+    [pbr::OriginalName("ScheduleParameterKind_PhV_phsC_ang")] PhVPhsCAng = 22,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("ScheduleParameterKind_PhV_phsC_mag")] PhVPhsCMag = 22,
+    [pbr::OriginalName("ScheduleParameterKind_PhV_phsC_mag")] PhVPhsCMag = 23,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("ScheduleParameterKind_PPV_phsAB_ang")] PpvPhsAbAng = 23,
+    [pbr::OriginalName("ScheduleParameterKind_PPV_phsAB_ang")] PpvPhsAbAng = 24,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("ScheduleParameterKind_PPV_phsAB_mag")] PpvPhsAbMag = 24,
+    [pbr::OriginalName("ScheduleParameterKind_PPV_phsAB_mag")] PpvPhsAbMag = 25,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("ScheduleParameterKind_PPV_phsBC_ang")] PpvPhsBcAng = 25,
+    [pbr::OriginalName("ScheduleParameterKind_PPV_phsBC_ang")] PpvPhsBcAng = 26,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("ScheduleParameterKind_PPV_phsBC_mag")] PpvPhsBcMag = 26,
+    [pbr::OriginalName("ScheduleParameterKind_PPV_phsBC_mag")] PpvPhsBcMag = 27,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("ScheduleParameterKind_PPV_phsCA_ang")] PpvPhsCaAng = 27,
+    [pbr::OriginalName("ScheduleParameterKind_PPV_phsCA_ang")] PpvPhsCaAng = 28,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("ScheduleParameterKind_PPV_phsCA_mag")] PpvPhsCaMag = 28,
+    [pbr::OriginalName("ScheduleParameterKind_PPV_phsCA_mag")] PpvPhsCaMag = 29,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("ScheduleParameterKind_VA_net_mag")] VaNetMag = 29,
+    [pbr::OriginalName("ScheduleParameterKind_VA_net_mag")] VaNetMag = 30,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("ScheduleParameterKind_VA_neut_mag")] VaNeutMag = 30,
+    [pbr::OriginalName("ScheduleParameterKind_VA_neut_mag")] VaNeutMag = 31,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("ScheduleParameterKind_VA_phsA_mag")] VaPhsAMag = 31,
+    [pbr::OriginalName("ScheduleParameterKind_VA_phsA_mag")] VaPhsAMag = 32,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("ScheduleParameterKind_VA_phsB_mag")] VaPhsBMag = 32,
+    [pbr::OriginalName("ScheduleParameterKind_VA_phsB_mag")] VaPhsBMag = 33,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("ScheduleParameterKind_VA_phsC_mag")] VaPhsCMag = 33,
+    [pbr::OriginalName("ScheduleParameterKind_VA_phsC_mag")] VaPhsCMag = 34,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("ScheduleParameterKind_VAr_net_mag")] VarNetMag = 34,
+    [pbr::OriginalName("ScheduleParameterKind_VAr_net_mag")] VarNetMag = 35,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("ScheduleParameterKind_VAr_neut_mag")] VarNeutMag = 35,
+    [pbr::OriginalName("ScheduleParameterKind_VAr_neut_mag")] VarNeutMag = 36,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("ScheduleParameterKind_VAr_phsA_mag")] VarPhsAMag = 36,
+    [pbr::OriginalName("ScheduleParameterKind_VAr_phsA_mag")] VarPhsAMag = 37,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("ScheduleParameterKind_VAr_phsB_mag")] VarPhsBMag = 37,
+    [pbr::OriginalName("ScheduleParameterKind_VAr_phsB_mag")] VarPhsBMag = 38,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("ScheduleParameterKind_VAr_phsC_mag")] VarPhsCMag = 38,
+    [pbr::OriginalName("ScheduleParameterKind_VAr_phsC_mag")] VarPhsCMag = 39,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("ScheduleParameterKind_W_net_mag")] WNetMag = 39,
+    [pbr::OriginalName("ScheduleParameterKind_W_net_mag")] WNetMag = 40,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("ScheduleParameterKind_W_neut_mag")] WNeutMag = 40,
+    [pbr::OriginalName("ScheduleParameterKind_W_neut_mag")] WNeutMag = 41,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("ScheduleParameterKind_W_phsA_mag")] WPhsAMag = 41,
+    [pbr::OriginalName("ScheduleParameterKind_W_phsA_mag")] WPhsAMag = 42,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("ScheduleParameterKind_W_phsB_mag")] WPhsBMag = 42,
+    [pbr::OriginalName("ScheduleParameterKind_W_phsB_mag")] WPhsBMag = 43,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("ScheduleParameterKind_W_phsC_mag")] WPhsCMag = 43,
+    [pbr::OriginalName("ScheduleParameterKind_W_phsC_mag")] WPhsCMag = 44,
   }
 
   /// <summary>
@@ -1419,21 +1488,25 @@ namespace openfmb.commonmodule {
   /// </summary>
   public enum DynamicTestKind {
     /// <summary>
+    /// Undefined
+    /// </summary>
+    [pbr::OriginalName("DynamicTestKind_UNDEFINED")] Undefined = 0,
+    /// <summary>
     /// None
     /// </summary>
-    [pbr::OriginalName("DynamicTestKind_none")] None = 0,
+    [pbr::OriginalName("DynamicTestKind_none")] None = 1,
     /// <summary>
     /// Testing status
     /// </summary>
-    [pbr::OriginalName("DynamicTestKind_testing")] Testing = 1,
+    [pbr::OriginalName("DynamicTestKind_testing")] Testing = 2,
     /// <summary>
     /// Operating status
     /// </summary>
-    [pbr::OriginalName("DynamicTestKind_operating")] Operating = 2,
+    [pbr::OriginalName("DynamicTestKind_operating")] Operating = 3,
     /// <summary>
     /// Failed status
     /// </summary>
-    [pbr::OriginalName("DynamicTestKind_failed")] Failed = 3,
+    [pbr::OriginalName("DynamicTestKind_failed")] Failed = 4,
   }
 
   /// <summary>
@@ -1441,22 +1514,26 @@ namespace openfmb.commonmodule {
   /// </summary>
   public enum HealthKind {
     /// <summary>
+    /// No problems, normal operation ("green").
+    /// </summary>
+    [pbr::OriginalName("HealthKind_UNDEFINED")] Undefined = 0,
+    /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("HealthKind_none")] None = 0,
+    [pbr::OriginalName("HealthKind_none")] None = 1,
     /// <summary>
     /// No problems, normal operation ("green").
     /// </summary>
-    [pbr::OriginalName("HealthKind_OK")] Ok = 1,
+    [pbr::OriginalName("HealthKind_OK")] Ok = 2,
     /// <summary>
     /// Minor problems, but in safe operating mode ("yellow"). The exact meaning is a local issue,
     /// depending on the dedicated function/device.
     /// </summary>
-    [pbr::OriginalName("HealthKind_Warning")] Warning = 2,
+    [pbr::OriginalName("HealthKind_Warning")] Warning = 3,
     /// <summary>
     /// Severe problem, no operation possible ("red").
     /// </summary>
-    [pbr::OriginalName("HealthKind_Alarm")] Alarm = 3,
+    [pbr::OriginalName("HealthKind_Alarm")] Alarm = 4,
   }
 
   /// <summary>
@@ -1464,21 +1541,25 @@ namespace openfmb.commonmodule {
   /// </summary>
   public enum SwitchingCapabilityKind {
     /// <summary>
+    /// Undefined
+    /// </summary>
+    [pbr::OriginalName("SwitchingCapabilityKind_UNDEFINED")] Undefined = 0,
+    /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("SwitchingCapabilityKind_none")] None = 0,
+    [pbr::OriginalName("SwitchingCapabilityKind_none")] None = 1,
     /// <summary>
     /// Open
     /// </summary>
-    [pbr::OriginalName("SwitchingCapabilityKind_open")] Open = 1,
+    [pbr::OriginalName("SwitchingCapabilityKind_open")] Open = 2,
     /// <summary>
     /// Close
     /// </summary>
-    [pbr::OriginalName("SwitchingCapabilityKind_close")] Close = 2,
+    [pbr::OriginalName("SwitchingCapabilityKind_close")] Close = 3,
     /// <summary>
     /// Open and Close
     /// </summary>
-    [pbr::OriginalName("SwitchingCapabilityKind_open_and_close")] OpenAndClose = 3,
+    [pbr::OriginalName("SwitchingCapabilityKind_open_and_close")] OpenAndClose = 4,
   }
 
   /// <summary>
@@ -1486,21 +1567,25 @@ namespace openfmb.commonmodule {
   /// </summary>
   public enum DbPosKind {
     /// <summary>
+    /// Undefined
+    /// </summary>
+    [pbr::OriginalName("DbPosKind_UNDEFINED")] Undefined = 0,
+    /// <summary>
     /// Transient status
     /// </summary>
-    [pbr::OriginalName("DbPosKind_transient")] Transient = 0,
+    [pbr::OriginalName("DbPosKind_transient")] Transient = 1,
     /// <summary>
     /// Closed status
     /// </summary>
-    [pbr::OriginalName("DbPosKind_closed")] Closed = 1,
+    [pbr::OriginalName("DbPosKind_closed")] Closed = 2,
     /// <summary>
     /// Open status
     /// </summary>
-    [pbr::OriginalName("DbPosKind_open")] Open = 2,
+    [pbr::OriginalName("DbPosKind_open")] Open = 3,
     /// <summary>
     /// Invalid status
     /// </summary>
-    [pbr::OriginalName("DbPosKind_invalid")] Invalid = 3,
+    [pbr::OriginalName("DbPosKind_invalid")] Invalid = 4,
   }
 
   /// <summary>
@@ -1508,17 +1593,154 @@ namespace openfmb.commonmodule {
   /// </summary>
   public enum RecloseActionKind {
     /// <summary>
+    /// Undefined
+    /// </summary>
+    [pbr::OriginalName("RecloseActionKind_UNDEFINED")] Undefined = 0,
+    /// <summary>
     /// Idle state
     /// </summary>
-    [pbr::OriginalName("RecloseActionKind_idle")] Idle = 0,
+    [pbr::OriginalName("RecloseActionKind_idle")] Idle = 1,
     /// <summary>
     /// Cycling state
     /// </summary>
-    [pbr::OriginalName("RecloseActionKind_cycling")] Cycling = 1,
+    [pbr::OriginalName("RecloseActionKind_cycling")] Cycling = 2,
     /// <summary>
     /// Lockout state
     /// </summary>
-    [pbr::OriginalName("RecloseActionKind_lockout")] Lockout = 2,
+    [pbr::OriginalName("RecloseActionKind_lockout")] Lockout = 3,
+  }
+
+  /// <summary>
+  /// Dynamic test status (see IEC61850-7-2 section 20.2.1 Direct control with normal security, state
+  /// machine diagram)   A simplified state machine diagram (from Herb F.) is provided.
+  /// </summary>
+  public enum ControlModeKind {
+    /// <summary>
+    /// Undefined
+    /// </summary>
+    [pbr::OriginalName("ControlModeKind_UNDEFINED")] Undefined = 0,
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [pbr::OriginalName("ControlModeKind_auto")] Auto = 1,
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [pbr::OriginalName("ControlModeKind_manual")] Manual = 2,
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [pbr::OriginalName("ControlModeKind_override")] Override = 3,
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [pbr::OriginalName("ControlModeKind_remote")] Remote = 4,
+  }
+
+  /// <summary>
+  /// The control characteristics for power flow operation
+  /// </summary>
+  public enum DirectionModeKind {
+    /// <summary>
+    /// Undefined
+    /// </summary>
+    [pbr::OriginalName("DirectionModeKind_UNDEFINED")] Undefined = 0,
+    /// <summary>
+    /// Testing status
+    /// </summary>
+    [pbr::OriginalName("DirectionModeKind_locked_forward")] LockedForward = 1,
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [pbr::OriginalName("DirectionModeKind_locked_reverse")] LockedReverse = 2,
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [pbr::OriginalName("DirectionModeKind_reverse_idle")] ReverseIdle = 3,
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [pbr::OriginalName("DirectionModeKind_bidirectional")] Bidirectional = 4,
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [pbr::OriginalName("DirectionModeKind_neutral_idle")] NeutralIdle = 5,
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [pbr::OriginalName("DirectionModeKind_cogeneration")] Cogeneration = 6,
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [pbr::OriginalName("DirectionModeKind_reactive_bidirectional")] ReactiveBidirectional = 7,
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [pbr::OriginalName("DirectionModeKind_bias_bidirectional")] BiasBidirectional = 8,
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [pbr::OriginalName("DirectionModeKind_bias_cogeneration")] BiasCogeneration = 9,
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [pbr::OriginalName("DirectionModeKind_reverse_cogeneration")] ReverseCogeneration = 10,
+  }
+
+  /// <summary>
+  /// Real power control kind
+  /// </summary>
+  public enum ReactivePowerControlKind {
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [pbr::OriginalName("ReactivePowerControlKind_UNDEFINED")] Undefined = 0,
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [pbr::OriginalName("ReactivePowerControlKind_advanced")] Advanced = 1,
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [pbr::OriginalName("ReactivePowerControlKind_droop")] Droop = 2,
+    /// <summary>
+    /// Voltage setpoint
+    /// </summary>
+    [pbr::OriginalName("ReactivePowerControlKind_voltage")] Voltage = 3,
+    /// <summary>
+    /// Reactive power setpoint
+    /// </summary>
+    [pbr::OriginalName("ReactivePowerControlKind_reactivePower")] ReactivePower = 4,
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [pbr::OriginalName("ReactivePowerControlKind_powerFactor")] PowerFactor = 5,
+  }
+
+  /// <summary>
+  /// Real power control kind
+  /// </summary>
+  public enum RealPowerControlKind {
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [pbr::OriginalName("RealPowerControlKind_UNDEFINED")] Undefined = 0,
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [pbr::OriginalName("RealPowerControlKind_advanced")] Advanced = 1,
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [pbr::OriginalName("RealPowerControlKind_droop")] Droop = 2,
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [pbr::OriginalName("RealPowerControlKind_isochronous")] Isochronous = 3,
+    /// <summary>
+    /// Real power setpoint
+    /// </summary>
+    [pbr::OriginalName("RealPowerControlKind_realPower")] RealPower = 4,
   }
 
   /// <summary>
@@ -1528,15 +1750,57 @@ namespace openfmb.commonmodule {
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("StateKind_off")] Off = 0,
+    [pbr::OriginalName("StateKind_UNDEFINED")] Undefined = 0,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("StateKind_on")] On = 1,
+    [pbr::OriginalName("StateKind_off")] Off = 1,
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
-    [pbr::OriginalName("StateKind_standby")] Standby = 2,
+    [pbr::OriginalName("StateKind_on")] On = 2,
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [pbr::OriginalName("StateKind_standby")] Standby = 3,
+  }
+
+  /// <summary>
+  /// Voltage-limiting types
+  /// </summary>
+  public enum VoltLimitModeKind {
+    /// <summary>
+    /// Undefined
+    /// </summary>
+    [pbr::OriginalName("VoltLimitModeKind_UNDEFINED")] Undefined = 0,
+    /// <summary>
+    /// Testing status
+    /// </summary>
+    [pbr::OriginalName("VoltLimitModeKind_off")] Off = 1,
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [pbr::OriginalName("VoltLimitModeKind_high_limit_only")] HighLimitOnly = 2,
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [pbr::OriginalName("VoltLimitModeKind_low_limit_only")] LowLimitOnly = 3,
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [pbr::OriginalName("VoltLimitModeKind_high_low_limits")] HighLowLimits = 4,
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [pbr::OriginalName("VoltLimitModeKind_ivvc_high_limit_only")] IvvcHighLimitOnly = 5,
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [pbr::OriginalName("VoltLimitModeKind_ivvc_low_limit_only")] IvvcLowLimitOnly = 6,
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [pbr::OriginalName("VoltLimitModeKind_ivvc_high_low_limits")] IvvcHighLowLimits = 7,
   }
 
   #endregion
@@ -1582,7 +1846,7 @@ namespace openfmb.commonmodule {
 
     /// <summary>Field number for the "value" field.</summary>
     public const int ValueFieldNumber = 1;
-    private global::openfmb.commonmodule.FaultDirectionKind value_ = global::openfmb.commonmodule.FaultDirectionKind.Unknown;
+    private global::openfmb.commonmodule.FaultDirectionKind value_ = global::openfmb.commonmodule.FaultDirectionKind.Undefined;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::openfmb.commonmodule.FaultDirectionKind Value {
       get { return value_; }
@@ -1611,7 +1875,7 @@ namespace openfmb.commonmodule {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Value != global::openfmb.commonmodule.FaultDirectionKind.Unknown) hash ^= Value.GetHashCode();
+      if (Value != global::openfmb.commonmodule.FaultDirectionKind.Undefined) hash ^= Value.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1628,7 +1892,7 @@ namespace openfmb.commonmodule {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Value != global::openfmb.commonmodule.FaultDirectionKind.Unknown) {
+      if (Value != global::openfmb.commonmodule.FaultDirectionKind.Undefined) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Value);
       }
@@ -1641,7 +1905,7 @@ namespace openfmb.commonmodule {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Value != global::openfmb.commonmodule.FaultDirectionKind.Unknown) {
+      if (Value != global::openfmb.commonmodule.FaultDirectionKind.Undefined) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Value);
       }
@@ -1654,7 +1918,7 @@ namespace openfmb.commonmodule {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Value != global::openfmb.commonmodule.FaultDirectionKind.Unknown) {
+      if (Value != global::openfmb.commonmodule.FaultDirectionKind.Undefined) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Value);
       }
       if (_unknownFields != null) {
@@ -1668,7 +1932,7 @@ namespace openfmb.commonmodule {
       if (other == null) {
         return;
       }
-      if (other.Value != global::openfmb.commonmodule.FaultDirectionKind.Unknown) {
+      if (other.Value != global::openfmb.commonmodule.FaultDirectionKind.Undefined) {
         Value = other.Value;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -1754,7 +2018,7 @@ namespace openfmb.commonmodule {
 
     /// <summary>Field number for the "value" field.</summary>
     public const int ValueFieldNumber = 1;
-    private global::openfmb.commonmodule.PhaseFaultDirectionKind value_ = global::openfmb.commonmodule.PhaseFaultDirectionKind.Unknown;
+    private global::openfmb.commonmodule.PhaseFaultDirectionKind value_ = global::openfmb.commonmodule.PhaseFaultDirectionKind.Undefined;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::openfmb.commonmodule.PhaseFaultDirectionKind Value {
       get { return value_; }
@@ -1783,7 +2047,7 @@ namespace openfmb.commonmodule {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Value != global::openfmb.commonmodule.PhaseFaultDirectionKind.Unknown) hash ^= Value.GetHashCode();
+      if (Value != global::openfmb.commonmodule.PhaseFaultDirectionKind.Undefined) hash ^= Value.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1800,7 +2064,7 @@ namespace openfmb.commonmodule {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Value != global::openfmb.commonmodule.PhaseFaultDirectionKind.Unknown) {
+      if (Value != global::openfmb.commonmodule.PhaseFaultDirectionKind.Undefined) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Value);
       }
@@ -1813,7 +2077,7 @@ namespace openfmb.commonmodule {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Value != global::openfmb.commonmodule.PhaseFaultDirectionKind.Unknown) {
+      if (Value != global::openfmb.commonmodule.PhaseFaultDirectionKind.Undefined) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Value);
       }
@@ -1826,7 +2090,7 @@ namespace openfmb.commonmodule {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Value != global::openfmb.commonmodule.PhaseFaultDirectionKind.Unknown) {
+      if (Value != global::openfmb.commonmodule.PhaseFaultDirectionKind.Undefined) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Value);
       }
       if (_unknownFields != null) {
@@ -1840,7 +2104,7 @@ namespace openfmb.commonmodule {
       if (other == null) {
         return;
       }
-      if (other.Value != global::openfmb.commonmodule.PhaseFaultDirectionKind.Unknown) {
+      if (other.Value != global::openfmb.commonmodule.PhaseFaultDirectionKind.Undefined) {
         Value = other.Value;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -1938,7 +2202,7 @@ namespace openfmb.commonmodule {
 
     /// <summary>Field number for the "dirGeneral" field.</summary>
     public const int DirGeneralFieldNumber = 1;
-    private global::openfmb.commonmodule.FaultDirectionKind dirGeneral_ = global::openfmb.commonmodule.FaultDirectionKind.Unknown;
+    private global::openfmb.commonmodule.FaultDirectionKind dirGeneral_ = global::openfmb.commonmodule.FaultDirectionKind.Undefined;
     /// <summary>
     /// General direction of the fault. If the faults of individual phases have different directions,
     /// this attribute shall be set to 'dirGeneral'='both'.
@@ -2115,7 +2379,7 @@ namespace openfmb.commonmodule {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (DirGeneral != global::openfmb.commonmodule.FaultDirectionKind.Unknown) hash ^= DirGeneral.GetHashCode();
+      if (DirGeneral != global::openfmb.commonmodule.FaultDirectionKind.Undefined) hash ^= DirGeneral.GetHashCode();
       if (dirNeut_ != null) hash ^= DirNeut.GetHashCode();
       if (dirPhsA_ != null) hash ^= DirPhsA.GetHashCode();
       if (dirPhsB_ != null) hash ^= DirPhsB.GetHashCode();
@@ -2141,7 +2405,7 @@ namespace openfmb.commonmodule {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (DirGeneral != global::openfmb.commonmodule.FaultDirectionKind.Unknown) {
+      if (DirGeneral != global::openfmb.commonmodule.FaultDirectionKind.Undefined) {
         output.WriteRawTag(8);
         output.WriteEnum((int) DirGeneral);
       }
@@ -2186,7 +2450,7 @@ namespace openfmb.commonmodule {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (DirGeneral != global::openfmb.commonmodule.FaultDirectionKind.Unknown) {
+      if (DirGeneral != global::openfmb.commonmodule.FaultDirectionKind.Undefined) {
         output.WriteRawTag(8);
         output.WriteEnum((int) DirGeneral);
       }
@@ -2231,7 +2495,7 @@ namespace openfmb.commonmodule {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (DirGeneral != global::openfmb.commonmodule.FaultDirectionKind.Unknown) {
+      if (DirGeneral != global::openfmb.commonmodule.FaultDirectionKind.Undefined) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) DirGeneral);
       }
       if (dirNeut_ != null) {
@@ -2272,7 +2536,7 @@ namespace openfmb.commonmodule {
       if (other == null) {
         return;
       }
-      if (other.DirGeneral != global::openfmb.commonmodule.FaultDirectionKind.Unknown) {
+      if (other.DirGeneral != global::openfmb.commonmodule.FaultDirectionKind.Undefined) {
         DirGeneral = other.DirGeneral;
       }
       if (other.dirNeut_ != null) {
@@ -3269,7 +3533,7 @@ namespace openfmb.commonmodule {
 
     /// <summary>Field number for the "value" field.</summary>
     public const int ValueFieldNumber = 1;
-    private global::openfmb.commonmodule.UnitMultiplierKind value_ = global::openfmb.commonmodule.UnitMultiplierKind.None;
+    private global::openfmb.commonmodule.UnitMultiplierKind value_ = global::openfmb.commonmodule.UnitMultiplierKind.Undefined;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::openfmb.commonmodule.UnitMultiplierKind Value {
       get { return value_; }
@@ -3298,7 +3562,7 @@ namespace openfmb.commonmodule {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Value != global::openfmb.commonmodule.UnitMultiplierKind.None) hash ^= Value.GetHashCode();
+      if (Value != global::openfmb.commonmodule.UnitMultiplierKind.Undefined) hash ^= Value.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -3315,7 +3579,7 @@ namespace openfmb.commonmodule {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Value != global::openfmb.commonmodule.UnitMultiplierKind.None) {
+      if (Value != global::openfmb.commonmodule.UnitMultiplierKind.Undefined) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Value);
       }
@@ -3328,7 +3592,7 @@ namespace openfmb.commonmodule {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Value != global::openfmb.commonmodule.UnitMultiplierKind.None) {
+      if (Value != global::openfmb.commonmodule.UnitMultiplierKind.Undefined) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Value);
       }
@@ -3341,7 +3605,7 @@ namespace openfmb.commonmodule {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Value != global::openfmb.commonmodule.UnitMultiplierKind.None) {
+      if (Value != global::openfmb.commonmodule.UnitMultiplierKind.Undefined) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Value);
       }
       if (_unknownFields != null) {
@@ -3355,7 +3619,7 @@ namespace openfmb.commonmodule {
       if (other == null) {
         return;
       }
-      if (other.Value != global::openfmb.commonmodule.UnitMultiplierKind.None) {
+      if (other.Value != global::openfmb.commonmodule.UnitMultiplierKind.Undefined) {
         Value = other.Value;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -3856,242 +4120,6 @@ namespace openfmb.commonmodule {
   }
 
   /// <summary>
-  /// Analogue value (AnalogueValue)
-  /// </summary>
-  public sealed partial class AnalogueValue : pb::IMessage<AnalogueValue>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<AnalogueValue> _parser = new pb::MessageParser<AnalogueValue>(() => new AnalogueValue());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<AnalogueValue> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[9]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public AnalogueValue() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public AnalogueValue(AnalogueValue other) : this() {
-      F = other.F;
-      I = other.I;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public AnalogueValue Clone() {
-      return new AnalogueValue(this);
-    }
-
-    /// <summary>Field number for the "f" field.</summary>
-    public const int FFieldNumber = 1;
-    private static readonly pb::FieldCodec<float?> _single_f_codec = pb::FieldCodec.ForStructWrapper<float>(10);
-    private float? f_;
-    /// <summary>
-    /// Floating point representation of the measured value. The formula to convert between 'f' and the
-    /// process value (pVal) shall be: &lt;i>pVal&lt;/i>='f'*10exp('Unit.multiplier') in ['Unit.SIUnit'].
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public float? F {
-      get { return f_; }
-      set {
-        f_ = value;
-      }
-    }
-
-
-    /// <summary>Field number for the "i" field.</summary>
-    public const int IFieldNumber = 2;
-    private static readonly pb::FieldCodec<int?> _single_i_codec = pb::FieldCodec.ForStructWrapper<int>(18);
-    private int? i_;
-    /// <summary>
-    /// Integer representation of the measured value. The formula to convert between 'i' and the process
-    /// value (pVal) shall be: &lt;i>pVal&lt;/i>=(('i'*'ScaledValueConfig.scaleFactor')+'ScaledValueConfig.offset'
-    ///  in ['Unit.SIUnit'].
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int? I {
-      get { return i_; }
-      set {
-        i_ = value;
-      }
-    }
-
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as AnalogueValue);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(AnalogueValue other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (!pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.Equals(F, other.F)) return false;
-      if (I != other.I) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (f_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(F);
-      if (i_ != null) hash ^= I.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (f_ != null) {
-        _single_f_codec.WriteTagAndValue(output, F);
-      }
-      if (i_ != null) {
-        _single_i_codec.WriteTagAndValue(output, I);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (f_ != null) {
-        _single_f_codec.WriteTagAndValue(ref output, F);
-      }
-      if (i_ != null) {
-        _single_i_codec.WriteTagAndValue(ref output, I);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (f_ != null) {
-        size += _single_f_codec.CalculateSizeWithTag(F);
-      }
-      if (i_ != null) {
-        size += _single_i_codec.CalculateSizeWithTag(I);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(AnalogueValue other) {
-      if (other == null) {
-        return;
-      }
-      if (other.f_ != null) {
-        if (f_ == null || other.F != 0F) {
-          F = other.F;
-        }
-      }
-      if (other.i_ != null) {
-        if (i_ == null || other.I != 0) {
-          I = other.I;
-        }
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            float? value = _single_f_codec.Read(input);
-            if (f_ == null || value != 0F) {
-              F = value;
-            }
-            break;
-          }
-          case 18: {
-            int? value = _single_i_codec.Read(input);
-            if (i_ == null || value != 0) {
-              I = value;
-            }
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            float? value = _single_f_codec.Read(ref input);
-            if (f_ == null || value != 0F) {
-              F = value;
-            }
-            break;
-          }
-          case 18: {
-            int? value = _single_i_codec.Read(ref input);
-            if (i_ == null || value != 0) {
-              I = value;
-            }
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  /// <summary>
   /// Unit definition (Unit)
   /// </summary>
   public sealed partial class Unit : pb::IMessage<Unit>
@@ -4106,7 +4134,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[10]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4329,7 +4357,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[11]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4357,7 +4385,7 @@ namespace openfmb.commonmodule {
 
     /// <summary>Field number for the "value" field.</summary>
     public const int ValueFieldNumber = 1;
-    private global::openfmb.commonmodule.ValidityKind value_ = global::openfmb.commonmodule.ValidityKind.Good;
+    private global::openfmb.commonmodule.ValidityKind value_ = global::openfmb.commonmodule.ValidityKind.Undefined;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::openfmb.commonmodule.ValidityKind Value {
       get { return value_; }
@@ -4386,7 +4414,7 @@ namespace openfmb.commonmodule {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Value != global::openfmb.commonmodule.ValidityKind.Good) hash ^= Value.GetHashCode();
+      if (Value != global::openfmb.commonmodule.ValidityKind.Undefined) hash ^= Value.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -4403,7 +4431,7 @@ namespace openfmb.commonmodule {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Value != global::openfmb.commonmodule.ValidityKind.Good) {
+      if (Value != global::openfmb.commonmodule.ValidityKind.Undefined) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Value);
       }
@@ -4416,7 +4444,7 @@ namespace openfmb.commonmodule {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Value != global::openfmb.commonmodule.ValidityKind.Good) {
+      if (Value != global::openfmb.commonmodule.ValidityKind.Undefined) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Value);
       }
@@ -4429,7 +4457,7 @@ namespace openfmb.commonmodule {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Value != global::openfmb.commonmodule.ValidityKind.Good) {
+      if (Value != global::openfmb.commonmodule.ValidityKind.Undefined) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Value);
       }
       if (_unknownFields != null) {
@@ -4443,7 +4471,7 @@ namespace openfmb.commonmodule {
       if (other == null) {
         return;
       }
-      if (other.Value != global::openfmb.commonmodule.ValidityKind.Good) {
+      if (other.Value != global::openfmb.commonmodule.ValidityKind.Undefined) {
         Value = other.Value;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -4504,7 +4532,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[12]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4976,7 +5004,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[13]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5004,7 +5032,7 @@ namespace openfmb.commonmodule {
 
     /// <summary>Field number for the "value" field.</summary>
     public const int ValueFieldNumber = 1;
-    private global::openfmb.commonmodule.SourceKind value_ = global::openfmb.commonmodule.SourceKind.Process;
+    private global::openfmb.commonmodule.SourceKind value_ = global::openfmb.commonmodule.SourceKind.Undefined;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::openfmb.commonmodule.SourceKind Value {
       get { return value_; }
@@ -5033,7 +5061,7 @@ namespace openfmb.commonmodule {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Value != global::openfmb.commonmodule.SourceKind.Process) hash ^= Value.GetHashCode();
+      if (Value != global::openfmb.commonmodule.SourceKind.Undefined) hash ^= Value.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -5050,7 +5078,7 @@ namespace openfmb.commonmodule {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Value != global::openfmb.commonmodule.SourceKind.Process) {
+      if (Value != global::openfmb.commonmodule.SourceKind.Undefined) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Value);
       }
@@ -5063,7 +5091,7 @@ namespace openfmb.commonmodule {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Value != global::openfmb.commonmodule.SourceKind.Process) {
+      if (Value != global::openfmb.commonmodule.SourceKind.Undefined) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Value);
       }
@@ -5076,7 +5104,7 @@ namespace openfmb.commonmodule {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Value != global::openfmb.commonmodule.SourceKind.Process) {
+      if (Value != global::openfmb.commonmodule.SourceKind.Undefined) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Value);
       }
       if (_unknownFields != null) {
@@ -5090,7 +5118,7 @@ namespace openfmb.commonmodule {
       if (other == null) {
         return;
       }
-      if (other.Value != global::openfmb.commonmodule.SourceKind.Process) {
+      if (other.Value != global::openfmb.commonmodule.SourceKind.Undefined) {
         Value = other.Value;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -5155,7 +5183,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[14]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5221,7 +5249,7 @@ namespace openfmb.commonmodule {
 
     /// <summary>Field number for the "source" field.</summary>
     public const int SourceFieldNumber = 3;
-    private global::openfmb.commonmodule.SourceKind source_ = global::openfmb.commonmodule.SourceKind.Process;
+    private global::openfmb.commonmodule.SourceKind source_ = global::openfmb.commonmodule.SourceKind.Undefined;
     /// <summary>
     /// (default=process) Defines the source of a value. NOTE 1 Substitution may be done locally or via
     /// the communication services. In the second case, specific attributes with a FC=SV are used. NOTE 2
@@ -5255,7 +5283,7 @@ namespace openfmb.commonmodule {
 
     /// <summary>Field number for the "validity" field.</summary>
     public const int ValidityFieldNumber = 5;
-    private global::openfmb.commonmodule.ValidityKind validity_ = global::openfmb.commonmodule.ValidityKind.Good;
+    private global::openfmb.commonmodule.ValidityKind validity_ = global::openfmb.commonmodule.ValidityKind.Undefined;
     /// <summary>
     /// Validity of the value, as condensed information for the client. In case this value is not
     /// 'good', some reasons may be found in the 'detailQual'.
@@ -5294,9 +5322,9 @@ namespace openfmb.commonmodule {
       int hash = 1;
       if (detailQual_ != null) hash ^= DetailQual.GetHashCode();
       if (OperatorBlocked != false) hash ^= OperatorBlocked.GetHashCode();
-      if (Source != global::openfmb.commonmodule.SourceKind.Process) hash ^= Source.GetHashCode();
+      if (Source != global::openfmb.commonmodule.SourceKind.Undefined) hash ^= Source.GetHashCode();
       if (Test != false) hash ^= Test.GetHashCode();
-      if (Validity != global::openfmb.commonmodule.ValidityKind.Good) hash ^= Validity.GetHashCode();
+      if (Validity != global::openfmb.commonmodule.ValidityKind.Undefined) hash ^= Validity.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -5321,7 +5349,7 @@ namespace openfmb.commonmodule {
         output.WriteRawTag(16);
         output.WriteBool(OperatorBlocked);
       }
-      if (Source != global::openfmb.commonmodule.SourceKind.Process) {
+      if (Source != global::openfmb.commonmodule.SourceKind.Undefined) {
         output.WriteRawTag(24);
         output.WriteEnum((int) Source);
       }
@@ -5329,7 +5357,7 @@ namespace openfmb.commonmodule {
         output.WriteRawTag(32);
         output.WriteBool(Test);
       }
-      if (Validity != global::openfmb.commonmodule.ValidityKind.Good) {
+      if (Validity != global::openfmb.commonmodule.ValidityKind.Undefined) {
         output.WriteRawTag(40);
         output.WriteEnum((int) Validity);
       }
@@ -5350,7 +5378,7 @@ namespace openfmb.commonmodule {
         output.WriteRawTag(16);
         output.WriteBool(OperatorBlocked);
       }
-      if (Source != global::openfmb.commonmodule.SourceKind.Process) {
+      if (Source != global::openfmb.commonmodule.SourceKind.Undefined) {
         output.WriteRawTag(24);
         output.WriteEnum((int) Source);
       }
@@ -5358,7 +5386,7 @@ namespace openfmb.commonmodule {
         output.WriteRawTag(32);
         output.WriteBool(Test);
       }
-      if (Validity != global::openfmb.commonmodule.ValidityKind.Good) {
+      if (Validity != global::openfmb.commonmodule.ValidityKind.Undefined) {
         output.WriteRawTag(40);
         output.WriteEnum((int) Validity);
       }
@@ -5377,13 +5405,13 @@ namespace openfmb.commonmodule {
       if (OperatorBlocked != false) {
         size += 1 + 1;
       }
-      if (Source != global::openfmb.commonmodule.SourceKind.Process) {
+      if (Source != global::openfmb.commonmodule.SourceKind.Undefined) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Source);
       }
       if (Test != false) {
         size += 1 + 1;
       }
-      if (Validity != global::openfmb.commonmodule.ValidityKind.Good) {
+      if (Validity != global::openfmb.commonmodule.ValidityKind.Undefined) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Validity);
       }
       if (_unknownFields != null) {
@@ -5406,13 +5434,13 @@ namespace openfmb.commonmodule {
       if (other.OperatorBlocked != false) {
         OperatorBlocked = other.OperatorBlocked;
       }
-      if (other.Source != global::openfmb.commonmodule.SourceKind.Process) {
+      if (other.Source != global::openfmb.commonmodule.SourceKind.Undefined) {
         Source = other.Source;
       }
       if (other.Test != false) {
         Test = other.Test;
       }
-      if (other.Validity != global::openfmb.commonmodule.ValidityKind.Good) {
+      if (other.Validity != global::openfmb.commonmodule.ValidityKind.Undefined) {
         Validity = other.Validity;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -5508,7 +5536,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[15]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5683,7 +5711,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[16]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5986,7 +6014,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[17]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[16]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6251,7 +6279,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[18]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[17]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6268,7 +6296,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public MV(MV other) : this() {
-      mag_ = other.mag_ != null ? other.mag_.Clone() : null;
+      mag_ = other.mag_;
       q_ = other.q_ != null ? other.q_.Clone() : null;
       t_ = other.t_ != null ? other.t_.Clone() : null;
       units_ = other.units_ != null ? other.units_.Clone() : null;
@@ -6282,7 +6310,7 @@ namespace openfmb.commonmodule {
 
     /// <summary>Field number for the "mag" field.</summary>
     public const int MagFieldNumber = 1;
-    private global::openfmb.commonmodule.AnalogueValue mag_;
+    private double mag_;
     /// <summary>
     /// Value of the magnitude based on a deadband calculation from the instantaneous value 'instMag'.
     /// The value of 'mag' shall be updated to the current instantaneous value 'instMag' when the value has
@@ -6292,7 +6320,7 @@ namespace openfmb.commonmodule {
     /// is not the same as 'mag' of the constructed attribute class 'Vector'.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.AnalogueValue Mag {
+    public double Mag {
       get { return mag_; }
       set {
         mag_ = value;
@@ -6355,7 +6383,7 @@ namespace openfmb.commonmodule {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(Mag, other.Mag)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(Mag, other.Mag)) return false;
       if (!object.Equals(Q, other.Q)) return false;
       if (!object.Equals(T, other.T)) return false;
       if (!object.Equals(Units, other.Units)) return false;
@@ -6365,7 +6393,7 @@ namespace openfmb.commonmodule {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (mag_ != null) hash ^= Mag.GetHashCode();
+      if (Mag != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(Mag);
       if (q_ != null) hash ^= Q.GetHashCode();
       if (t_ != null) hash ^= T.GetHashCode();
       if (units_ != null) hash ^= Units.GetHashCode();
@@ -6385,9 +6413,9 @@ namespace openfmb.commonmodule {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (mag_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Mag);
+      if (Mag != 0D) {
+        output.WriteRawTag(9);
+        output.WriteDouble(Mag);
       }
       if (q_ != null) {
         output.WriteRawTag(18);
@@ -6410,9 +6438,9 @@ namespace openfmb.commonmodule {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (mag_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Mag);
+      if (Mag != 0D) {
+        output.WriteRawTag(9);
+        output.WriteDouble(Mag);
       }
       if (q_ != null) {
         output.WriteRawTag(18);
@@ -6435,8 +6463,8 @@ namespace openfmb.commonmodule {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (mag_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Mag);
+      if (Mag != 0D) {
+        size += 1 + 8;
       }
       if (q_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Q);
@@ -6458,11 +6486,8 @@ namespace openfmb.commonmodule {
       if (other == null) {
         return;
       }
-      if (other.mag_ != null) {
-        if (mag_ == null) {
-          Mag = new global::openfmb.commonmodule.AnalogueValue();
-        }
-        Mag.MergeFrom(other.Mag);
+      if (other.Mag != 0D) {
+        Mag = other.Mag;
       }
       if (other.q_ != null) {
         if (q_ == null) {
@@ -6496,11 +6521,8 @@ namespace openfmb.commonmodule {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 10: {
-            if (mag_ == null) {
-              Mag = new global::openfmb.commonmodule.AnalogueValue();
-            }
-            input.ReadMessage(Mag);
+          case 9: {
+            Mag = input.ReadDouble();
             break;
           }
           case 18: {
@@ -6538,11 +6560,8 @@ namespace openfmb.commonmodule {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 10: {
-            if (mag_ == null) {
-              Mag = new global::openfmb.commonmodule.AnalogueValue();
-            }
-            input.ReadMessage(Mag);
+          case 9: {
+            Mag = input.ReadDouble();
             break;
           }
           case 18: {
@@ -6588,7 +6607,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[19]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[18]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6775,7 +6794,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[20]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[19]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7044,239 +7063,6 @@ namespace openfmb.commonmodule {
   }
 
   /// <summary>
-  /// Analogue value control (AnalogueValueCtl)
-  /// </summary>
-  public sealed partial class AnalogueValueCtl : pb::IMessage<AnalogueValueCtl>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<AnalogueValueCtl> _parser = new pb::MessageParser<AnalogueValueCtl>(() => new AnalogueValueCtl());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<AnalogueValueCtl> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[21]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public AnalogueValueCtl() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public AnalogueValueCtl(AnalogueValueCtl other) : this() {
-      F = other.F;
-      I = other.I;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public AnalogueValueCtl Clone() {
-      return new AnalogueValueCtl(this);
-    }
-
-    /// <summary>Field number for the "f" field.</summary>
-    public const int FFieldNumber = 1;
-    private static readonly pb::FieldCodec<float?> _single_f_codec = pb::FieldCodec.ForStructWrapper<float>(10);
-    private float? f_;
-    /// <summary>
-    /// Floating point representation of the measured value.  See 'AnalogueValue.f'.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public float? F {
-      get { return f_; }
-      set {
-        f_ = value;
-      }
-    }
-
-
-    /// <summary>Field number for the "i" field.</summary>
-    public const int IFieldNumber = 2;
-    private static readonly pb::FieldCodec<int?> _single_i_codec = pb::FieldCodec.ForStructWrapper<int>(18);
-    private int? i_;
-    /// <summary>
-    /// Integer representation of the measured value. See 'AnalogueValue.i'.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int? I {
-      get { return i_; }
-      set {
-        i_ = value;
-      }
-    }
-
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as AnalogueValueCtl);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(AnalogueValueCtl other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (!pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.Equals(F, other.F)) return false;
-      if (I != other.I) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (f_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(F);
-      if (i_ != null) hash ^= I.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (f_ != null) {
-        _single_f_codec.WriteTagAndValue(output, F);
-      }
-      if (i_ != null) {
-        _single_i_codec.WriteTagAndValue(output, I);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (f_ != null) {
-        _single_f_codec.WriteTagAndValue(ref output, F);
-      }
-      if (i_ != null) {
-        _single_i_codec.WriteTagAndValue(ref output, I);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (f_ != null) {
-        size += _single_f_codec.CalculateSizeWithTag(F);
-      }
-      if (i_ != null) {
-        size += _single_i_codec.CalculateSizeWithTag(I);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(AnalogueValueCtl other) {
-      if (other == null) {
-        return;
-      }
-      if (other.f_ != null) {
-        if (f_ == null || other.F != 0F) {
-          F = other.F;
-        }
-      }
-      if (other.i_ != null) {
-        if (i_ == null || other.I != 0) {
-          I = other.I;
-        }
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            float? value = _single_f_codec.Read(input);
-            if (f_ == null || value != 0F) {
-              F = value;
-            }
-            break;
-          }
-          case 18: {
-            int? value = _single_i_codec.Read(input);
-            if (i_ == null || value != 0) {
-              I = value;
-            }
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            float? value = _single_f_codec.Read(ref input);
-            if (f_ == null || value != 0F) {
-              F = value;
-            }
-            break;
-          }
-          case 18: {
-            int? value = _single_i_codec.Read(ref input);
-            if (i_ == null || value != 0) {
-              I = value;
-            }
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  /// <summary>
   /// This is a root class similar to IdentifiedObject but without the mRID. The reason to separate
   /// the two classes is because the mRID may need to be defined as a separate key field for technology
   /// such as the DDS implementation.
@@ -7293,7 +7079,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[22]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[20]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7526,7 +7312,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[23]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[21]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7752,7 +7538,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[24]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[22]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7769,8 +7555,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ASG(ASG other) : this() {
-      setMag_ = other.setMag_ != null ? other.setMag_.Clone() : null;
-      units_ = other.units_ != null ? other.units_.Clone() : null;
+      setMag_ = other.setMag_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -7781,29 +7566,15 @@ namespace openfmb.commonmodule {
 
     /// <summary>Field number for the "setMag" field.</summary>
     public const int SetMagFieldNumber = 1;
-    private global::openfmb.commonmodule.AnalogueValueCtl setMag_;
+    private double setMag_;
     /// <summary>
     /// The value of the analogue setting.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.AnalogueValueCtl SetMag {
+    public double SetMag {
       get { return setMag_; }
       set {
         setMag_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "units" field.</summary>
-    public const int UnitsFieldNumber = 2;
-    private global::openfmb.commonmodule.Unit units_;
-    /// <summary>
-    /// Unit for 'setMag', 'minVal', 'maxVal', 'stepSize'.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.Unit Units {
-      get { return units_; }
-      set {
-        units_ = value;
       }
     }
 
@@ -7820,16 +7591,14 @@ namespace openfmb.commonmodule {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(SetMag, other.SetMag)) return false;
-      if (!object.Equals(Units, other.Units)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(SetMag, other.SetMag)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (setMag_ != null) hash ^= SetMag.GetHashCode();
-      if (units_ != null) hash ^= Units.GetHashCode();
+      if (SetMag != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(SetMag);
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -7846,13 +7615,9 @@ namespace openfmb.commonmodule {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (setMag_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(SetMag);
-      }
-      if (units_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(Units);
+      if (SetMag != 0D) {
+        output.WriteRawTag(9);
+        output.WriteDouble(SetMag);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -7863,13 +7628,9 @@ namespace openfmb.commonmodule {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (setMag_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(SetMag);
-      }
-      if (units_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(Units);
+      if (SetMag != 0D) {
+        output.WriteRawTag(9);
+        output.WriteDouble(SetMag);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -7880,11 +7641,8 @@ namespace openfmb.commonmodule {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (setMag_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SetMag);
-      }
-      if (units_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Units);
+      if (SetMag != 0D) {
+        size += 1 + 8;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -7897,17 +7655,8 @@ namespace openfmb.commonmodule {
       if (other == null) {
         return;
       }
-      if (other.setMag_ != null) {
-        if (setMag_ == null) {
-          SetMag = new global::openfmb.commonmodule.AnalogueValueCtl();
-        }
-        SetMag.MergeFrom(other.SetMag);
-      }
-      if (other.units_ != null) {
-        if (units_ == null) {
-          Units = new global::openfmb.commonmodule.Unit();
-        }
-        Units.MergeFrom(other.Units);
+      if (other.SetMag != 0D) {
+        SetMag = other.SetMag;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -7923,18 +7672,8 @@ namespace openfmb.commonmodule {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 10: {
-            if (setMag_ == null) {
-              SetMag = new global::openfmb.commonmodule.AnalogueValueCtl();
-            }
-            input.ReadMessage(SetMag);
-            break;
-          }
-          case 18: {
-            if (units_ == null) {
-              Units = new global::openfmb.commonmodule.Unit();
-            }
-            input.ReadMessage(Units);
+          case 9: {
+            SetMag = input.ReadDouble();
             break;
           }
         }
@@ -7951,18 +7690,8 @@ namespace openfmb.commonmodule {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 10: {
-            if (setMag_ == null) {
-              SetMag = new global::openfmb.commonmodule.AnalogueValueCtl();
-            }
-            input.ReadMessage(SetMag);
-            break;
-          }
-          case 18: {
-            if (units_ == null) {
-              Units = new global::openfmb.commonmodule.Unit();
-            }
-            input.ReadMessage(Units);
+          case 9: {
+            SetMag = input.ReadDouble();
             break;
           }
         }
@@ -7987,7 +7716,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[25]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[23]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8262,7 +7991,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[26]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[24]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8536,7 +8265,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[27]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[25]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8819,7 +8548,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[28]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[26]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -9054,7 +8783,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[29]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[27]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -9071,8 +8800,8 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public Vector(Vector other) : this() {
-      ang_ = other.ang_ != null ? other.ang_.Clone() : null;
-      mag_ = other.mag_ != null ? other.mag_.Clone() : null;
+      Ang = other.Ang;
+      mag_ = other.mag_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -9083,27 +8812,29 @@ namespace openfmb.commonmodule {
 
     /// <summary>Field number for the "ang" field.</summary>
     public const int AngFieldNumber = 1;
-    private global::openfmb.commonmodule.AnalogueValue ang_;
+    private static readonly pb::FieldCodec<double?> _single_ang_codec = pb::FieldCodec.ForStructWrapper<double>(10);
+    private double? ang_;
     /// <summary>
     /// (range=[-180...180]) Angle of the complex value (Unit.SIUnit='deg' and Unit.multiplier='');
     /// angle reference is defined in the context where this type is used.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.AnalogueValue Ang {
+    public double? Ang {
       get { return ang_; }
       set {
         ang_ = value;
       }
     }
 
+
     /// <summary>Field number for the "mag" field.</summary>
     public const int MagFieldNumber = 2;
-    private global::openfmb.commonmodule.AnalogueValue mag_;
+    private double mag_;
     /// <summary>
     /// Magnitude of the complex value.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.AnalogueValue Mag {
+    public double Mag {
       get { return mag_; }
       set {
         mag_ = value;
@@ -9123,16 +8854,16 @@ namespace openfmb.commonmodule {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(Ang, other.Ang)) return false;
-      if (!object.Equals(Mag, other.Mag)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.Equals(Ang, other.Ang)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(Mag, other.Mag)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (ang_ != null) hash ^= Ang.GetHashCode();
-      if (mag_ != null) hash ^= Mag.GetHashCode();
+      if (ang_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableDoubleEqualityComparer.GetHashCode(Ang);
+      if (Mag != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(Mag);
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -9150,12 +8881,11 @@ namespace openfmb.commonmodule {
       output.WriteRawMessage(this);
     #else
       if (ang_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Ang);
+        _single_ang_codec.WriteTagAndValue(output, Ang);
       }
-      if (mag_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(Mag);
+      if (Mag != 0D) {
+        output.WriteRawTag(17);
+        output.WriteDouble(Mag);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -9167,12 +8897,11 @@ namespace openfmb.commonmodule {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (ang_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Ang);
+        _single_ang_codec.WriteTagAndValue(ref output, Ang);
       }
-      if (mag_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(Mag);
+      if (Mag != 0D) {
+        output.WriteRawTag(17);
+        output.WriteDouble(Mag);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -9184,10 +8913,10 @@ namespace openfmb.commonmodule {
     public int CalculateSize() {
       int size = 0;
       if (ang_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Ang);
+        size += _single_ang_codec.CalculateSizeWithTag(Ang);
       }
-      if (mag_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Mag);
+      if (Mag != 0D) {
+        size += 1 + 8;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -9201,16 +8930,12 @@ namespace openfmb.commonmodule {
         return;
       }
       if (other.ang_ != null) {
-        if (ang_ == null) {
-          Ang = new global::openfmb.commonmodule.AnalogueValue();
+        if (ang_ == null || other.Ang != 0D) {
+          Ang = other.Ang;
         }
-        Ang.MergeFrom(other.Ang);
       }
-      if (other.mag_ != null) {
-        if (mag_ == null) {
-          Mag = new global::openfmb.commonmodule.AnalogueValue();
-        }
-        Mag.MergeFrom(other.Mag);
+      if (other.Mag != 0D) {
+        Mag = other.Mag;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -9227,17 +8952,14 @@ namespace openfmb.commonmodule {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            if (ang_ == null) {
-              Ang = new global::openfmb.commonmodule.AnalogueValue();
+            double? value = _single_ang_codec.Read(input);
+            if (ang_ == null || value != 0D) {
+              Ang = value;
             }
-            input.ReadMessage(Ang);
             break;
           }
-          case 18: {
-            if (mag_ == null) {
-              Mag = new global::openfmb.commonmodule.AnalogueValue();
-            }
-            input.ReadMessage(Mag);
+          case 17: {
+            Mag = input.ReadDouble();
             break;
           }
         }
@@ -9255,17 +8977,14 @@ namespace openfmb.commonmodule {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            if (ang_ == null) {
-              Ang = new global::openfmb.commonmodule.AnalogueValue();
+            double? value = _single_ang_codec.Read(ref input);
+            if (ang_ == null || value != 0D) {
+              Ang = value;
             }
-            input.ReadMessage(Ang);
             break;
           }
-          case 18: {
-            if (mag_ == null) {
-              Mag = new global::openfmb.commonmodule.AnalogueValue();
-            }
-            input.ReadMessage(Mag);
+          case 17: {
+            Mag = input.ReadDouble();
             break;
           }
         }
@@ -9290,7 +9009,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[30]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[28]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -9576,7 +9295,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[31]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[29]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -9803,7 +9522,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[32]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[30]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -10039,7 +9758,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[33]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[31]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -10226,7 +9945,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[34]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[32]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -10243,7 +9962,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ControlAPC(ControlAPC other) : this() {
-      ctlVal_ = other.ctlVal_ != null ? other.ctlVal_.Clone() : null;
+      ctlVal_ = other.ctlVal_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -10254,12 +9973,12 @@ namespace openfmb.commonmodule {
 
     /// <summary>Field number for the "ctlVal" field.</summary>
     public const int CtlValFieldNumber = 1;
-    private global::openfmb.commonmodule.AnalogueValueCtl ctlVal_;
+    private double ctlVal_;
     /// <summary>
     /// Service parameter that determines the control activity.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.AnalogueValueCtl CtlVal {
+    public double CtlVal {
       get { return ctlVal_; }
       set {
         ctlVal_ = value;
@@ -10279,14 +9998,14 @@ namespace openfmb.commonmodule {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(CtlVal, other.CtlVal)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(CtlVal, other.CtlVal)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (ctlVal_ != null) hash ^= CtlVal.GetHashCode();
+      if (CtlVal != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(CtlVal);
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -10303,9 +10022,9 @@ namespace openfmb.commonmodule {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (ctlVal_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(CtlVal);
+      if (CtlVal != 0D) {
+        output.WriteRawTag(9);
+        output.WriteDouble(CtlVal);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -10316,9 +10035,9 @@ namespace openfmb.commonmodule {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (ctlVal_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(CtlVal);
+      if (CtlVal != 0D) {
+        output.WriteRawTag(9);
+        output.WriteDouble(CtlVal);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -10329,8 +10048,8 @@ namespace openfmb.commonmodule {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (ctlVal_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CtlVal);
+      if (CtlVal != 0D) {
+        size += 1 + 8;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -10343,11 +10062,8 @@ namespace openfmb.commonmodule {
       if (other == null) {
         return;
       }
-      if (other.ctlVal_ != null) {
-        if (ctlVal_ == null) {
-          CtlVal = new global::openfmb.commonmodule.AnalogueValueCtl();
-        }
-        CtlVal.MergeFrom(other.CtlVal);
+      if (other.CtlVal != 0D) {
+        CtlVal = other.CtlVal;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -10363,11 +10079,8 @@ namespace openfmb.commonmodule {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 10: {
-            if (ctlVal_ == null) {
-              CtlVal = new global::openfmb.commonmodule.AnalogueValueCtl();
-            }
-            input.ReadMessage(CtlVal);
+          case 9: {
+            CtlVal = input.ReadDouble();
             break;
           }
         }
@@ -10384,11 +10097,8 @@ namespace openfmb.commonmodule {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 10: {
-            if (ctlVal_ == null) {
-              CtlVal = new global::openfmb.commonmodule.AnalogueValueCtl();
-            }
-            input.ReadMessage(CtlVal);
+          case 9: {
+            CtlVal = input.ReadDouble();
             break;
           }
         }
@@ -10413,7 +10123,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[35]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[33]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -10596,7 +10306,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[36]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[34]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -10810,7 +10520,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[37]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[35]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -10838,7 +10548,7 @@ namespace openfmb.commonmodule {
 
     /// <summary>Field number for the "value" field.</summary>
     public const int ValueFieldNumber = 1;
-    private global::openfmb.commonmodule.ScheduleParameterKind value_ = global::openfmb.commonmodule.ScheduleParameterKind.None;
+    private global::openfmb.commonmodule.ScheduleParameterKind value_ = global::openfmb.commonmodule.ScheduleParameterKind.Undefined;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::openfmb.commonmodule.ScheduleParameterKind Value {
       get { return value_; }
@@ -10867,7 +10577,7 @@ namespace openfmb.commonmodule {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Value != global::openfmb.commonmodule.ScheduleParameterKind.None) hash ^= Value.GetHashCode();
+      if (Value != global::openfmb.commonmodule.ScheduleParameterKind.Undefined) hash ^= Value.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -10884,7 +10594,7 @@ namespace openfmb.commonmodule {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Value != global::openfmb.commonmodule.ScheduleParameterKind.None) {
+      if (Value != global::openfmb.commonmodule.ScheduleParameterKind.Undefined) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Value);
       }
@@ -10897,7 +10607,7 @@ namespace openfmb.commonmodule {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Value != global::openfmb.commonmodule.ScheduleParameterKind.None) {
+      if (Value != global::openfmb.commonmodule.ScheduleParameterKind.Undefined) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Value);
       }
@@ -10910,7 +10620,7 @@ namespace openfmb.commonmodule {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Value != global::openfmb.commonmodule.ScheduleParameterKind.None) {
+      if (Value != global::openfmb.commonmodule.ScheduleParameterKind.Undefined) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Value);
       }
       if (_unknownFields != null) {
@@ -10924,7 +10634,7 @@ namespace openfmb.commonmodule {
       if (other == null) {
         return;
       }
-      if (other.Value != global::openfmb.commonmodule.ScheduleParameterKind.None) {
+      if (other.Value != global::openfmb.commonmodule.ScheduleParameterKind.Undefined) {
         Value = other.Value;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -10985,7 +10695,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[38]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[36]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -11014,7 +10724,7 @@ namespace openfmb.commonmodule {
 
     /// <summary>Field number for the "scheduleParameterType" field.</summary>
     public const int ScheduleParameterTypeFieldNumber = 1;
-    private global::openfmb.commonmodule.ScheduleParameterKind scheduleParameterType_ = global::openfmb.commonmodule.ScheduleParameterKind.None;
+    private global::openfmb.commonmodule.ScheduleParameterKind scheduleParameterType_ = global::openfmb.commonmodule.ScheduleParameterKind.Undefined;
     /// <summary>
     /// Schedule parameter type
     /// </summary>
@@ -11028,12 +10738,12 @@ namespace openfmb.commonmodule {
 
     /// <summary>Field number for the "value" field.</summary>
     public const int ValueFieldNumber = 2;
-    private float value_;
+    private double value_;
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public float Value {
+    public double Value {
       get { return value_; }
       set {
         value_ = value;
@@ -11054,15 +10764,15 @@ namespace openfmb.commonmodule {
         return true;
       }
       if (ScheduleParameterType != other.ScheduleParameterType) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Value, other.Value)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(Value, other.Value)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (ScheduleParameterType != global::openfmb.commonmodule.ScheduleParameterKind.None) hash ^= ScheduleParameterType.GetHashCode();
-      if (Value != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Value);
+      if (ScheduleParameterType != global::openfmb.commonmodule.ScheduleParameterKind.Undefined) hash ^= ScheduleParameterType.GetHashCode();
+      if (Value != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(Value);
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -11079,13 +10789,13 @@ namespace openfmb.commonmodule {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (ScheduleParameterType != global::openfmb.commonmodule.ScheduleParameterKind.None) {
+      if (ScheduleParameterType != global::openfmb.commonmodule.ScheduleParameterKind.Undefined) {
         output.WriteRawTag(8);
         output.WriteEnum((int) ScheduleParameterType);
       }
-      if (Value != 0F) {
-        output.WriteRawTag(21);
-        output.WriteFloat(Value);
+      if (Value != 0D) {
+        output.WriteRawTag(17);
+        output.WriteDouble(Value);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -11096,13 +10806,13 @@ namespace openfmb.commonmodule {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (ScheduleParameterType != global::openfmb.commonmodule.ScheduleParameterKind.None) {
+      if (ScheduleParameterType != global::openfmb.commonmodule.ScheduleParameterKind.Undefined) {
         output.WriteRawTag(8);
         output.WriteEnum((int) ScheduleParameterType);
       }
-      if (Value != 0F) {
-        output.WriteRawTag(21);
-        output.WriteFloat(Value);
+      if (Value != 0D) {
+        output.WriteRawTag(17);
+        output.WriteDouble(Value);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -11113,11 +10823,11 @@ namespace openfmb.commonmodule {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (ScheduleParameterType != global::openfmb.commonmodule.ScheduleParameterKind.None) {
+      if (ScheduleParameterType != global::openfmb.commonmodule.ScheduleParameterKind.Undefined) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ScheduleParameterType);
       }
-      if (Value != 0F) {
-        size += 1 + 4;
+      if (Value != 0D) {
+        size += 1 + 8;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -11130,10 +10840,10 @@ namespace openfmb.commonmodule {
       if (other == null) {
         return;
       }
-      if (other.ScheduleParameterType != global::openfmb.commonmodule.ScheduleParameterKind.None) {
+      if (other.ScheduleParameterType != global::openfmb.commonmodule.ScheduleParameterKind.Undefined) {
         ScheduleParameterType = other.ScheduleParameterType;
       }
-      if (other.Value != 0F) {
+      if (other.Value != 0D) {
         Value = other.Value;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -11154,8 +10864,8 @@ namespace openfmb.commonmodule {
             ScheduleParameterType = (global::openfmb.commonmodule.ScheduleParameterKind) input.ReadEnum();
             break;
           }
-          case 21: {
-            Value = input.ReadFloat();
+          case 17: {
+            Value = input.ReadDouble();
             break;
           }
         }
@@ -11176,8 +10886,8 @@ namespace openfmb.commonmodule {
             ScheduleParameterType = (global::openfmb.commonmodule.ScheduleParameterKind) input.ReadEnum();
             break;
           }
-          case 21: {
-            Value = input.ReadFloat();
+          case 17: {
+            Value = input.ReadDouble();
             break;
           }
         }
@@ -11202,7 +10912,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[39]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[37]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -11417,7 +11127,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[40]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[38]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -11584,7 +11294,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[41]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[39]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -11771,7 +11481,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[42]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[40]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -11959,7 +11669,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[43]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[41]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -12242,7 +11952,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[44]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[42]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -12420,7 +12130,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[45]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[43]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -12646,7 +12356,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[46]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[44]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -12824,7 +12534,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[47]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[45]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -13059,7 +12769,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[48]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[46]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -13246,7 +12956,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[49]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[47]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -13428,7 +13138,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[50]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[48]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -13711,7 +13421,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[51]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[49]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -13944,7 +13654,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[52]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[50]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -14227,7 +13937,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[53]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[51]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -14558,7 +14268,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[54]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[52]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -14938,7 +14648,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[55]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[53]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -15169,7 +14879,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[56]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[54]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -15344,7 +15054,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[57]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[55]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -15519,7 +15229,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[58]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[56]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -15694,7 +15404,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[59]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[57]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -15916,7 +15626,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[60]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[58]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -16091,7 +15801,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[61]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[59]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -16266,7 +15976,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[62]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[60]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -16441,7 +16151,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[63]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[61]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -16712,7 +16422,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[64]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[62]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -16887,7 +16597,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[65]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[63]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -17158,7 +16868,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[66]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[64]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -17186,7 +16896,7 @@ namespace openfmb.commonmodule {
 
     /// <summary>Field number for the "value" field.</summary>
     public const int ValueFieldNumber = 1;
-    private global::openfmb.commonmodule.DynamicTestKind value_ = global::openfmb.commonmodule.DynamicTestKind.None;
+    private global::openfmb.commonmodule.DynamicTestKind value_ = global::openfmb.commonmodule.DynamicTestKind.Undefined;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::openfmb.commonmodule.DynamicTestKind Value {
       get { return value_; }
@@ -17215,7 +16925,7 @@ namespace openfmb.commonmodule {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Value != global::openfmb.commonmodule.DynamicTestKind.None) hash ^= Value.GetHashCode();
+      if (Value != global::openfmb.commonmodule.DynamicTestKind.Undefined) hash ^= Value.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -17232,7 +16942,7 @@ namespace openfmb.commonmodule {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Value != global::openfmb.commonmodule.DynamicTestKind.None) {
+      if (Value != global::openfmb.commonmodule.DynamicTestKind.Undefined) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Value);
       }
@@ -17245,7 +16955,7 @@ namespace openfmb.commonmodule {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Value != global::openfmb.commonmodule.DynamicTestKind.None) {
+      if (Value != global::openfmb.commonmodule.DynamicTestKind.Undefined) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Value);
       }
@@ -17258,7 +16968,7 @@ namespace openfmb.commonmodule {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Value != global::openfmb.commonmodule.DynamicTestKind.None) {
+      if (Value != global::openfmb.commonmodule.DynamicTestKind.Undefined) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Value);
       }
       if (_unknownFields != null) {
@@ -17272,7 +16982,7 @@ namespace openfmb.commonmodule {
       if (other == null) {
         return;
       }
-      if (other.Value != global::openfmb.commonmodule.DynamicTestKind.None) {
+      if (other.Value != global::openfmb.commonmodule.DynamicTestKind.Undefined) {
         Value = other.Value;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -17333,7 +17043,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[67]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[65]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -17377,7 +17087,7 @@ namespace openfmb.commonmodule {
 
     /// <summary>Field number for the "stVal" field.</summary>
     public const int StValFieldNumber = 2;
-    private global::openfmb.commonmodule.DynamicTestKind stVal_ = global::openfmb.commonmodule.DynamicTestKind.None;
+    private global::openfmb.commonmodule.DynamicTestKind stVal_ = global::openfmb.commonmodule.DynamicTestKind.Undefined;
     /// <summary>
     /// Value of the data.
     /// </summary>
@@ -17426,7 +17136,7 @@ namespace openfmb.commonmodule {
     public override int GetHashCode() {
       int hash = 1;
       if (q_ != null) hash ^= Q.GetHashCode();
-      if (StVal != global::openfmb.commonmodule.DynamicTestKind.None) hash ^= StVal.GetHashCode();
+      if (StVal != global::openfmb.commonmodule.DynamicTestKind.Undefined) hash ^= StVal.GetHashCode();
       if (t_ != null) hash ^= T.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -17448,7 +17158,7 @@ namespace openfmb.commonmodule {
         output.WriteRawTag(10);
         output.WriteMessage(Q);
       }
-      if (StVal != global::openfmb.commonmodule.DynamicTestKind.None) {
+      if (StVal != global::openfmb.commonmodule.DynamicTestKind.Undefined) {
         output.WriteRawTag(16);
         output.WriteEnum((int) StVal);
       }
@@ -17469,7 +17179,7 @@ namespace openfmb.commonmodule {
         output.WriteRawTag(10);
         output.WriteMessage(Q);
       }
-      if (StVal != global::openfmb.commonmodule.DynamicTestKind.None) {
+      if (StVal != global::openfmb.commonmodule.DynamicTestKind.Undefined) {
         output.WriteRawTag(16);
         output.WriteEnum((int) StVal);
       }
@@ -17489,7 +17199,7 @@ namespace openfmb.commonmodule {
       if (q_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Q);
       }
-      if (StVal != global::openfmb.commonmodule.DynamicTestKind.None) {
+      if (StVal != global::openfmb.commonmodule.DynamicTestKind.Undefined) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) StVal);
       }
       if (t_ != null) {
@@ -17512,7 +17222,7 @@ namespace openfmb.commonmodule {
         }
         Q.MergeFrom(other.Q);
       }
-      if (other.StVal != global::openfmb.commonmodule.DynamicTestKind.None) {
+      if (other.StVal != global::openfmb.commonmodule.DynamicTestKind.Undefined) {
         StVal = other.StVal;
       }
       if (other.t_ != null) {
@@ -17607,7 +17317,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[68]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[66]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -17821,7 +17531,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[69]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[67]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -17849,7 +17559,7 @@ namespace openfmb.commonmodule {
 
     /// <summary>Field number for the "value" field.</summary>
     public const int ValueFieldNumber = 1;
-    private global::openfmb.commonmodule.HealthKind value_ = global::openfmb.commonmodule.HealthKind.None;
+    private global::openfmb.commonmodule.HealthKind value_ = global::openfmb.commonmodule.HealthKind.Undefined;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::openfmb.commonmodule.HealthKind Value {
       get { return value_; }
@@ -17878,7 +17588,7 @@ namespace openfmb.commonmodule {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Value != global::openfmb.commonmodule.HealthKind.None) hash ^= Value.GetHashCode();
+      if (Value != global::openfmb.commonmodule.HealthKind.Undefined) hash ^= Value.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -17895,7 +17605,7 @@ namespace openfmb.commonmodule {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Value != global::openfmb.commonmodule.HealthKind.None) {
+      if (Value != global::openfmb.commonmodule.HealthKind.Undefined) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Value);
       }
@@ -17908,7 +17618,7 @@ namespace openfmb.commonmodule {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Value != global::openfmb.commonmodule.HealthKind.None) {
+      if (Value != global::openfmb.commonmodule.HealthKind.Undefined) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Value);
       }
@@ -17921,7 +17631,7 @@ namespace openfmb.commonmodule {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Value != global::openfmb.commonmodule.HealthKind.None) {
+      if (Value != global::openfmb.commonmodule.HealthKind.Undefined) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Value);
       }
       if (_unknownFields != null) {
@@ -17935,7 +17645,7 @@ namespace openfmb.commonmodule {
       if (other == null) {
         return;
       }
-      if (other.Value != global::openfmb.commonmodule.HealthKind.None) {
+      if (other.Value != global::openfmb.commonmodule.HealthKind.Undefined) {
         Value = other.Value;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -17996,7 +17706,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[70]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[68]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -18042,7 +17752,7 @@ namespace openfmb.commonmodule {
 
     /// <summary>Field number for the "stVal" field.</summary>
     public const int StValFieldNumber = 2;
-    private global::openfmb.commonmodule.HealthKind stVal_ = global::openfmb.commonmodule.HealthKind.None;
+    private global::openfmb.commonmodule.HealthKind stVal_ = global::openfmb.commonmodule.HealthKind.Undefined;
     /// <summary>
     /// Value of the data.
     /// </summary>
@@ -18076,7 +17786,7 @@ namespace openfmb.commonmodule {
     public override int GetHashCode() {
       int hash = 1;
       if (d_ != null) hash ^= D.GetHashCode();
-      if (StVal != global::openfmb.commonmodule.HealthKind.None) hash ^= StVal.GetHashCode();
+      if (StVal != global::openfmb.commonmodule.HealthKind.Undefined) hash ^= StVal.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -18096,7 +17806,7 @@ namespace openfmb.commonmodule {
       if (d_ != null) {
         _single_d_codec.WriteTagAndValue(output, D);
       }
-      if (StVal != global::openfmb.commonmodule.HealthKind.None) {
+      if (StVal != global::openfmb.commonmodule.HealthKind.Undefined) {
         output.WriteRawTag(16);
         output.WriteEnum((int) StVal);
       }
@@ -18112,7 +17822,7 @@ namespace openfmb.commonmodule {
       if (d_ != null) {
         _single_d_codec.WriteTagAndValue(ref output, D);
       }
-      if (StVal != global::openfmb.commonmodule.HealthKind.None) {
+      if (StVal != global::openfmb.commonmodule.HealthKind.Undefined) {
         output.WriteRawTag(16);
         output.WriteEnum((int) StVal);
       }
@@ -18128,7 +17838,7 @@ namespace openfmb.commonmodule {
       if (d_ != null) {
         size += _single_d_codec.CalculateSizeWithTag(D);
       }
-      if (StVal != global::openfmb.commonmodule.HealthKind.None) {
+      if (StVal != global::openfmb.commonmodule.HealthKind.Undefined) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) StVal);
       }
       if (_unknownFields != null) {
@@ -18147,7 +17857,7 @@ namespace openfmb.commonmodule {
           D = other.D;
         }
       }
-      if (other.StVal != global::openfmb.commonmodule.HealthKind.None) {
+      if (other.StVal != global::openfmb.commonmodule.HealthKind.Undefined) {
         StVal = other.StVal;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -18219,7 +17929,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[71]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[69]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -18247,7 +17957,7 @@ namespace openfmb.commonmodule {
 
     /// <summary>Field number for the "value" field.</summary>
     public const int ValueFieldNumber = 1;
-    private global::openfmb.commonmodule.SwitchingCapabilityKind value_ = global::openfmb.commonmodule.SwitchingCapabilityKind.None;
+    private global::openfmb.commonmodule.SwitchingCapabilityKind value_ = global::openfmb.commonmodule.SwitchingCapabilityKind.Undefined;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::openfmb.commonmodule.SwitchingCapabilityKind Value {
       get { return value_; }
@@ -18276,7 +17986,7 @@ namespace openfmb.commonmodule {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Value != global::openfmb.commonmodule.SwitchingCapabilityKind.None) hash ^= Value.GetHashCode();
+      if (Value != global::openfmb.commonmodule.SwitchingCapabilityKind.Undefined) hash ^= Value.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -18293,7 +18003,7 @@ namespace openfmb.commonmodule {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Value != global::openfmb.commonmodule.SwitchingCapabilityKind.None) {
+      if (Value != global::openfmb.commonmodule.SwitchingCapabilityKind.Undefined) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Value);
       }
@@ -18306,7 +18016,7 @@ namespace openfmb.commonmodule {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Value != global::openfmb.commonmodule.SwitchingCapabilityKind.None) {
+      if (Value != global::openfmb.commonmodule.SwitchingCapabilityKind.Undefined) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Value);
       }
@@ -18319,7 +18029,7 @@ namespace openfmb.commonmodule {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Value != global::openfmb.commonmodule.SwitchingCapabilityKind.None) {
+      if (Value != global::openfmb.commonmodule.SwitchingCapabilityKind.Undefined) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Value);
       }
       if (_unknownFields != null) {
@@ -18333,7 +18043,7 @@ namespace openfmb.commonmodule {
       if (other == null) {
         return;
       }
-      if (other.Value != global::openfmb.commonmodule.SwitchingCapabilityKind.None) {
+      if (other.Value != global::openfmb.commonmodule.SwitchingCapabilityKind.Undefined) {
         Value = other.Value;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -18394,7 +18104,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[72]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[70]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -18439,7 +18149,7 @@ namespace openfmb.commonmodule {
 
     /// <summary>Field number for the "stVal" field.</summary>
     public const int StValFieldNumber = 2;
-    private global::openfmb.commonmodule.SwitchingCapabilityKind stVal_ = global::openfmb.commonmodule.SwitchingCapabilityKind.None;
+    private global::openfmb.commonmodule.SwitchingCapabilityKind stVal_ = global::openfmb.commonmodule.SwitchingCapabilityKind.Undefined;
     /// <summary>
     /// Value of the data.
     /// </summary>
@@ -18473,7 +18183,7 @@ namespace openfmb.commonmodule {
     public override int GetHashCode() {
       int hash = 1;
       if (blkEna_ != null) hash ^= BlkEna.GetHashCode();
-      if (StVal != global::openfmb.commonmodule.SwitchingCapabilityKind.None) hash ^= StVal.GetHashCode();
+      if (StVal != global::openfmb.commonmodule.SwitchingCapabilityKind.Undefined) hash ^= StVal.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -18493,7 +18203,7 @@ namespace openfmb.commonmodule {
       if (blkEna_ != null) {
         _single_blkEna_codec.WriteTagAndValue(output, BlkEna);
       }
-      if (StVal != global::openfmb.commonmodule.SwitchingCapabilityKind.None) {
+      if (StVal != global::openfmb.commonmodule.SwitchingCapabilityKind.Undefined) {
         output.WriteRawTag(16);
         output.WriteEnum((int) StVal);
       }
@@ -18509,7 +18219,7 @@ namespace openfmb.commonmodule {
       if (blkEna_ != null) {
         _single_blkEna_codec.WriteTagAndValue(ref output, BlkEna);
       }
-      if (StVal != global::openfmb.commonmodule.SwitchingCapabilityKind.None) {
+      if (StVal != global::openfmb.commonmodule.SwitchingCapabilityKind.Undefined) {
         output.WriteRawTag(16);
         output.WriteEnum((int) StVal);
       }
@@ -18525,7 +18235,7 @@ namespace openfmb.commonmodule {
       if (blkEna_ != null) {
         size += _single_blkEna_codec.CalculateSizeWithTag(BlkEna);
       }
-      if (StVal != global::openfmb.commonmodule.SwitchingCapabilityKind.None) {
+      if (StVal != global::openfmb.commonmodule.SwitchingCapabilityKind.Undefined) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) StVal);
       }
       if (_unknownFields != null) {
@@ -18544,7 +18254,7 @@ namespace openfmb.commonmodule {
           BlkEna = other.BlkEna;
         }
       }
-      if (other.StVal != global::openfmb.commonmodule.SwitchingCapabilityKind.None) {
+      if (other.StVal != global::openfmb.commonmodule.SwitchingCapabilityKind.Undefined) {
         StVal = other.StVal;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -18619,7 +18329,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[73]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[71]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -18806,7 +18516,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[74]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[72]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -18993,7 +18703,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[75]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[73]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -19227,7 +18937,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[76]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[74]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -19421,7 +19131,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[77]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[75]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -19687,7 +19397,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[78]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[76]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -19874,7 +19584,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[79]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[77]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -20148,7 +19858,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[80]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[78]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -20431,7 +20141,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[81]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[79]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -20812,7 +20522,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[82]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[80]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -21000,7 +20710,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[83]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[81]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -21187,7 +20897,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[84]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[82]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -21374,7 +21084,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[85]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[83]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -21702,7 +21412,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[86]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[84]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -21730,7 +21440,7 @@ namespace openfmb.commonmodule {
 
     /// <summary>Field number for the "value" field.</summary>
     public const int ValueFieldNumber = 1;
-    private global::openfmb.commonmodule.DbPosKind value_ = global::openfmb.commonmodule.DbPosKind.Transient;
+    private global::openfmb.commonmodule.DbPosKind value_ = global::openfmb.commonmodule.DbPosKind.Undefined;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::openfmb.commonmodule.DbPosKind Value {
       get { return value_; }
@@ -21759,7 +21469,7 @@ namespace openfmb.commonmodule {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Value != global::openfmb.commonmodule.DbPosKind.Transient) hash ^= Value.GetHashCode();
+      if (Value != global::openfmb.commonmodule.DbPosKind.Undefined) hash ^= Value.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -21776,7 +21486,7 @@ namespace openfmb.commonmodule {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Value != global::openfmb.commonmodule.DbPosKind.Transient) {
+      if (Value != global::openfmb.commonmodule.DbPosKind.Undefined) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Value);
       }
@@ -21789,7 +21499,7 @@ namespace openfmb.commonmodule {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Value != global::openfmb.commonmodule.DbPosKind.Transient) {
+      if (Value != global::openfmb.commonmodule.DbPosKind.Undefined) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Value);
       }
@@ -21802,7 +21512,7 @@ namespace openfmb.commonmodule {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Value != global::openfmb.commonmodule.DbPosKind.Transient) {
+      if (Value != global::openfmb.commonmodule.DbPosKind.Undefined) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Value);
       }
       if (_unknownFields != null) {
@@ -21816,7 +21526,7 @@ namespace openfmb.commonmodule {
       if (other == null) {
         return;
       }
-      if (other.Value != global::openfmb.commonmodule.DbPosKind.Transient) {
+      if (other.Value != global::openfmb.commonmodule.DbPosKind.Undefined) {
         Value = other.Value;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -21877,7 +21587,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[87]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[85]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -21921,7 +21631,7 @@ namespace openfmb.commonmodule {
 
     /// <summary>Field number for the "stVal" field.</summary>
     public const int StValFieldNumber = 2;
-    private global::openfmb.commonmodule.DbPosKind stVal_ = global::openfmb.commonmodule.DbPosKind.Transient;
+    private global::openfmb.commonmodule.DbPosKind stVal_ = global::openfmb.commonmodule.DbPosKind.Undefined;
     /// <summary>
     /// Status value of the controllable data object.
     /// </summary>
@@ -21970,7 +21680,7 @@ namespace openfmb.commonmodule {
     public override int GetHashCode() {
       int hash = 1;
       if (q_ != null) hash ^= Q.GetHashCode();
-      if (StVal != global::openfmb.commonmodule.DbPosKind.Transient) hash ^= StVal.GetHashCode();
+      if (StVal != global::openfmb.commonmodule.DbPosKind.Undefined) hash ^= StVal.GetHashCode();
       if (t_ != null) hash ^= T.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -21992,7 +21702,7 @@ namespace openfmb.commonmodule {
         output.WriteRawTag(10);
         output.WriteMessage(Q);
       }
-      if (StVal != global::openfmb.commonmodule.DbPosKind.Transient) {
+      if (StVal != global::openfmb.commonmodule.DbPosKind.Undefined) {
         output.WriteRawTag(16);
         output.WriteEnum((int) StVal);
       }
@@ -22013,7 +21723,7 @@ namespace openfmb.commonmodule {
         output.WriteRawTag(10);
         output.WriteMessage(Q);
       }
-      if (StVal != global::openfmb.commonmodule.DbPosKind.Transient) {
+      if (StVal != global::openfmb.commonmodule.DbPosKind.Undefined) {
         output.WriteRawTag(16);
         output.WriteEnum((int) StVal);
       }
@@ -22033,7 +21743,7 @@ namespace openfmb.commonmodule {
       if (q_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Q);
       }
-      if (StVal != global::openfmb.commonmodule.DbPosKind.Transient) {
+      if (StVal != global::openfmb.commonmodule.DbPosKind.Undefined) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) StVal);
       }
       if (t_ != null) {
@@ -22056,7 +21766,7 @@ namespace openfmb.commonmodule {
         }
         Q.MergeFrom(other.Q);
       }
-      if (other.StVal != global::openfmb.commonmodule.DbPosKind.Transient) {
+      if (other.StVal != global::openfmb.commonmodule.DbPosKind.Undefined) {
         StVal = other.StVal;
       }
       if (other.t_ != null) {
@@ -22151,7 +21861,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[88]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[86]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -22482,7 +22192,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[89]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[87]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -22813,7 +22523,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[90]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[88]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -23144,7 +22854,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[91]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[89]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -23763,7 +23473,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[92]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[90]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -24187,7 +23897,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[93]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[91]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -24215,7 +23925,7 @@ namespace openfmb.commonmodule {
 
     /// <summary>Field number for the "value" field.</summary>
     public const int ValueFieldNumber = 1;
-    private global::openfmb.commonmodule.RecloseActionKind value_ = global::openfmb.commonmodule.RecloseActionKind.Idle;
+    private global::openfmb.commonmodule.RecloseActionKind value_ = global::openfmb.commonmodule.RecloseActionKind.Undefined;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::openfmb.commonmodule.RecloseActionKind Value {
       get { return value_; }
@@ -24244,7 +23954,7 @@ namespace openfmb.commonmodule {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Value != global::openfmb.commonmodule.RecloseActionKind.Idle) hash ^= Value.GetHashCode();
+      if (Value != global::openfmb.commonmodule.RecloseActionKind.Undefined) hash ^= Value.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -24261,7 +23971,7 @@ namespace openfmb.commonmodule {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Value != global::openfmb.commonmodule.RecloseActionKind.Idle) {
+      if (Value != global::openfmb.commonmodule.RecloseActionKind.Undefined) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Value);
       }
@@ -24274,7 +23984,7 @@ namespace openfmb.commonmodule {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Value != global::openfmb.commonmodule.RecloseActionKind.Idle) {
+      if (Value != global::openfmb.commonmodule.RecloseActionKind.Undefined) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Value);
       }
@@ -24287,7 +23997,7 @@ namespace openfmb.commonmodule {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Value != global::openfmb.commonmodule.RecloseActionKind.Idle) {
+      if (Value != global::openfmb.commonmodule.RecloseActionKind.Undefined) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Value);
       }
       if (_unknownFields != null) {
@@ -24301,7 +24011,7 @@ namespace openfmb.commonmodule {
       if (other == null) {
         return;
       }
-      if (other.Value != global::openfmb.commonmodule.RecloseActionKind.Idle) {
+      if (other.Value != global::openfmb.commonmodule.RecloseActionKind.Undefined) {
         Value = other.Value;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -24362,7 +24072,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[94]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[92]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -24679,6 +24389,337 @@ namespace openfmb.commonmodule {
   }
 
   /// <summary>
+  /// [OpenFMB CDC extension] Per Phase SPC.
+  /// </summary>
+  public sealed partial class PhaseSPC : pb::IMessage<PhaseSPC>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<PhaseSPC> _parser = new pb::MessageParser<PhaseSPC>(() => new PhaseSPC());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<PhaseSPC> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[93]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PhaseSPC() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PhaseSPC(PhaseSPC other) : this() {
+      phs3_ = other.phs3_ != null ? other.phs3_.Clone() : null;
+      phsA_ = other.phsA_ != null ? other.phsA_.Clone() : null;
+      phsB_ = other.phsB_ != null ? other.phsB_.Clone() : null;
+      phsC_ = other.phsC_ != null ? other.phsC_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public PhaseSPC Clone() {
+      return new PhaseSPC(this);
+    }
+
+    /// <summary>Field number for the "phs3" field.</summary>
+    public const int Phs3FieldNumber = 1;
+    private global::openfmb.commonmodule.ControlSPC phs3_;
+    /// <summary>
+    /// 3 Phase control.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.ControlSPC Phs3 {
+      get { return phs3_; }
+      set {
+        phs3_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "phsA" field.</summary>
+    public const int PhsAFieldNumber = 2;
+    private global::openfmb.commonmodule.ControlSPC phsA_;
+    /// <summary>
+    /// Phase A control.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.ControlSPC PhsA {
+      get { return phsA_; }
+      set {
+        phsA_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "phsB" field.</summary>
+    public const int PhsBFieldNumber = 3;
+    private global::openfmb.commonmodule.ControlSPC phsB_;
+    /// <summary>
+    /// Phase B control.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.ControlSPC PhsB {
+      get { return phsB_; }
+      set {
+        phsB_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "phsC" field.</summary>
+    public const int PhsCFieldNumber = 4;
+    private global::openfmb.commonmodule.ControlSPC phsC_;
+    /// <summary>
+    /// Phase C control.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.ControlSPC PhsC {
+      get { return phsC_; }
+      set {
+        phsC_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as PhaseSPC);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(PhaseSPC other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Phs3, other.Phs3)) return false;
+      if (!object.Equals(PhsA, other.PhsA)) return false;
+      if (!object.Equals(PhsB, other.PhsB)) return false;
+      if (!object.Equals(PhsC, other.PhsC)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (phs3_ != null) hash ^= Phs3.GetHashCode();
+      if (phsA_ != null) hash ^= PhsA.GetHashCode();
+      if (phsB_ != null) hash ^= PhsB.GetHashCode();
+      if (phsC_ != null) hash ^= PhsC.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (phs3_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Phs3);
+      }
+      if (phsA_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(PhsA);
+      }
+      if (phsB_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(PhsB);
+      }
+      if (phsC_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(PhsC);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (phs3_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Phs3);
+      }
+      if (phsA_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(PhsA);
+      }
+      if (phsB_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(PhsB);
+      }
+      if (phsC_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(PhsC);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (phs3_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Phs3);
+      }
+      if (phsA_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PhsA);
+      }
+      if (phsB_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PhsB);
+      }
+      if (phsC_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PhsC);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(PhaseSPC other) {
+      if (other == null) {
+        return;
+      }
+      if (other.phs3_ != null) {
+        if (phs3_ == null) {
+          Phs3 = new global::openfmb.commonmodule.ControlSPC();
+        }
+        Phs3.MergeFrom(other.Phs3);
+      }
+      if (other.phsA_ != null) {
+        if (phsA_ == null) {
+          PhsA = new global::openfmb.commonmodule.ControlSPC();
+        }
+        PhsA.MergeFrom(other.PhsA);
+      }
+      if (other.phsB_ != null) {
+        if (phsB_ == null) {
+          PhsB = new global::openfmb.commonmodule.ControlSPC();
+        }
+        PhsB.MergeFrom(other.PhsB);
+      }
+      if (other.phsC_ != null) {
+        if (phsC_ == null) {
+          PhsC = new global::openfmb.commonmodule.ControlSPC();
+        }
+        PhsC.MergeFrom(other.PhsC);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (phs3_ == null) {
+              Phs3 = new global::openfmb.commonmodule.ControlSPC();
+            }
+            input.ReadMessage(Phs3);
+            break;
+          }
+          case 18: {
+            if (phsA_ == null) {
+              PhsA = new global::openfmb.commonmodule.ControlSPC();
+            }
+            input.ReadMessage(PhsA);
+            break;
+          }
+          case 26: {
+            if (phsB_ == null) {
+              PhsB = new global::openfmb.commonmodule.ControlSPC();
+            }
+            input.ReadMessage(PhsB);
+            break;
+          }
+          case 34: {
+            if (phsC_ == null) {
+              PhsC = new global::openfmb.commonmodule.ControlSPC();
+            }
+            input.ReadMessage(PhsC);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (phs3_ == null) {
+              Phs3 = new global::openfmb.commonmodule.ControlSPC();
+            }
+            input.ReadMessage(Phs3);
+            break;
+          }
+          case 18: {
+            if (phsA_ == null) {
+              PhsA = new global::openfmb.commonmodule.ControlSPC();
+            }
+            input.ReadMessage(PhsA);
+            break;
+          }
+          case 26: {
+            if (phsB_ == null) {
+              PhsB = new global::openfmb.commonmodule.ControlSPC();
+            }
+            input.ReadMessage(PhsB);
+            break;
+          }
+          case 34: {
+            if (phsC_ == null) {
+              PhsC = new global::openfmb.commonmodule.ControlSPC();
+            }
+            input.ReadMessage(PhsC);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
   /// [OpenFMB CDC extension] Per Phase DPS.
   /// </summary>
   public sealed partial class PhaseSPS : pb::IMessage<PhaseSPS>
@@ -24693,7 +24734,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[95]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[94]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -25025,7 +25066,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[96]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[95]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -25358,7 +25399,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[97]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[96]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -25685,7 +25726,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[98]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[97]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -25872,7 +25913,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[99]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[98]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -26491,7 +26532,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[100]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[99]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -26875,7 +26916,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[101]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[100]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -27551,7 +27592,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[102]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[101]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -28027,7 +28068,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[103]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[102]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -28301,7 +28342,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[104]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[103]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -28575,7 +28616,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[105]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[104]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -28748,280 +28789,6 @@ namespace openfmb.commonmodule {
   }
 
   /// <summary>
-  /// Controllable single point (SPC)
-  /// </summary>
-  public sealed partial class StatusSPC : pb::IMessage<StatusSPC>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<StatusSPC> _parser = new pb::MessageParser<StatusSPC>(() => new StatusSPC());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<StatusSPC> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[106]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public StatusSPC() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public StatusSPC(StatusSPC other) : this() {
-      q_ = other.q_ != null ? other.q_.Clone() : null;
-      stVal_ = other.stVal_;
-      t_ = other.t_ != null ? other.t_.Clone() : null;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public StatusSPC Clone() {
-      return new StatusSPC(this);
-    }
-
-    /// <summary>Field number for the "q" field.</summary>
-    public const int QFieldNumber = 1;
-    private global::openfmb.commonmodule.Quality q_;
-    /// <summary>
-    /// Quality of the value in 'stVal'.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.Quality Q {
-      get { return q_; }
-      set {
-        q_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "stVal" field.</summary>
-    public const int StValFieldNumber = 2;
-    private bool stVal_;
-    /// <summary>
-    /// Status value of the controllable data object.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool StVal {
-      get { return stVal_; }
-      set {
-        stVal_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "t" field.</summary>
-    public const int TFieldNumber = 3;
-    private global::openfmb.commonmodule.Timestamp t_;
-    /// <summary>
-    /// Timestamp of the last change of the value in any of 'stVal' or 'q'.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.Timestamp T {
-      get { return t_; }
-      set {
-        t_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as StatusSPC);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(StatusSPC other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (!object.Equals(Q, other.Q)) return false;
-      if (StVal != other.StVal) return false;
-      if (!object.Equals(T, other.T)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (q_ != null) hash ^= Q.GetHashCode();
-      if (StVal != false) hash ^= StVal.GetHashCode();
-      if (t_ != null) hash ^= T.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (q_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Q);
-      }
-      if (StVal != false) {
-        output.WriteRawTag(16);
-        output.WriteBool(StVal);
-      }
-      if (t_ != null) {
-        output.WriteRawTag(26);
-        output.WriteMessage(T);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (q_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Q);
-      }
-      if (StVal != false) {
-        output.WriteRawTag(16);
-        output.WriteBool(StVal);
-      }
-      if (t_ != null) {
-        output.WriteRawTag(26);
-        output.WriteMessage(T);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (q_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Q);
-      }
-      if (StVal != false) {
-        size += 1 + 1;
-      }
-      if (t_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(T);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(StatusSPC other) {
-      if (other == null) {
-        return;
-      }
-      if (other.q_ != null) {
-        if (q_ == null) {
-          Q = new global::openfmb.commonmodule.Quality();
-        }
-        Q.MergeFrom(other.Q);
-      }
-      if (other.StVal != false) {
-        StVal = other.StVal;
-      }
-      if (other.t_ != null) {
-        if (t_ == null) {
-          T = new global::openfmb.commonmodule.Timestamp();
-        }
-        T.MergeFrom(other.T);
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            if (q_ == null) {
-              Q = new global::openfmb.commonmodule.Quality();
-            }
-            input.ReadMessage(Q);
-            break;
-          }
-          case 16: {
-            StVal = input.ReadBool();
-            break;
-          }
-          case 26: {
-            if (t_ == null) {
-              T = new global::openfmb.commonmodule.Timestamp();
-            }
-            input.ReadMessage(T);
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            if (q_ == null) {
-              Q = new global::openfmb.commonmodule.Quality();
-            }
-            input.ReadMessage(Q);
-            break;
-          }
-          case 16: {
-            StVal = input.ReadBool();
-            break;
-          }
-          case 26: {
-            if (t_ == null) {
-              T = new global::openfmb.commonmodule.Timestamp();
-            }
-            input.ReadMessage(T);
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  /// <summary>
   /// Status value
   /// </summary>
   public sealed partial class StatusValue : pb::IMessage<StatusValue>
@@ -29036,7 +28803,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[107]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[105]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -29270,7 +29037,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[108]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[106]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -29544,7 +29311,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[109]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[107]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -29827,7 +29594,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[110]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[108]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -30062,7 +29829,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[111]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[109]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -30229,7 +29996,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[112]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[110]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -30392,6 +30159,694 @@ namespace openfmb.commonmodule {
 
   }
 
+  public sealed partial class Optional_ControlModeKind : pb::IMessage<Optional_ControlModeKind>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<Optional_ControlModeKind> _parser = new pb::MessageParser<Optional_ControlModeKind>(() => new Optional_ControlModeKind());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<Optional_ControlModeKind> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[111]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Optional_ControlModeKind() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Optional_ControlModeKind(Optional_ControlModeKind other) : this() {
+      value_ = other.value_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Optional_ControlModeKind Clone() {
+      return new Optional_ControlModeKind(this);
+    }
+
+    /// <summary>Field number for the "value" field.</summary>
+    public const int ValueFieldNumber = 1;
+    private global::openfmb.commonmodule.ControlModeKind value_ = global::openfmb.commonmodule.ControlModeKind.Undefined;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.ControlModeKind Value {
+      get { return value_; }
+      set {
+        value_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as Optional_ControlModeKind);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(Optional_ControlModeKind other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Value != other.Value) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Value != global::openfmb.commonmodule.ControlModeKind.Undefined) hash ^= Value.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Value != global::openfmb.commonmodule.ControlModeKind.Undefined) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Value);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Value != global::openfmb.commonmodule.ControlModeKind.Undefined) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Value);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Value != global::openfmb.commonmodule.ControlModeKind.Undefined) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Value);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(Optional_ControlModeKind other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Value != global::openfmb.commonmodule.ControlModeKind.Undefined) {
+        Value = other.Value;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Value = (global::openfmb.commonmodule.ControlModeKind) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Value = (global::openfmb.commonmodule.ControlModeKind) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class Optional_DirectionModeKind : pb::IMessage<Optional_DirectionModeKind>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<Optional_DirectionModeKind> _parser = new pb::MessageParser<Optional_DirectionModeKind>(() => new Optional_DirectionModeKind());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<Optional_DirectionModeKind> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[112]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Optional_DirectionModeKind() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Optional_DirectionModeKind(Optional_DirectionModeKind other) : this() {
+      value_ = other.value_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Optional_DirectionModeKind Clone() {
+      return new Optional_DirectionModeKind(this);
+    }
+
+    /// <summary>Field number for the "value" field.</summary>
+    public const int ValueFieldNumber = 1;
+    private global::openfmb.commonmodule.DirectionModeKind value_ = global::openfmb.commonmodule.DirectionModeKind.Undefined;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.DirectionModeKind Value {
+      get { return value_; }
+      set {
+        value_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as Optional_DirectionModeKind);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(Optional_DirectionModeKind other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Value != other.Value) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Value != global::openfmb.commonmodule.DirectionModeKind.Undefined) hash ^= Value.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Value != global::openfmb.commonmodule.DirectionModeKind.Undefined) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Value);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Value != global::openfmb.commonmodule.DirectionModeKind.Undefined) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Value);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Value != global::openfmb.commonmodule.DirectionModeKind.Undefined) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Value);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(Optional_DirectionModeKind other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Value != global::openfmb.commonmodule.DirectionModeKind.Undefined) {
+        Value = other.Value;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Value = (global::openfmb.commonmodule.DirectionModeKind) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Value = (global::openfmb.commonmodule.DirectionModeKind) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class Optional_ReactivePowerControlKind : pb::IMessage<Optional_ReactivePowerControlKind>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<Optional_ReactivePowerControlKind> _parser = new pb::MessageParser<Optional_ReactivePowerControlKind>(() => new Optional_ReactivePowerControlKind());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<Optional_ReactivePowerControlKind> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[113]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Optional_ReactivePowerControlKind() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Optional_ReactivePowerControlKind(Optional_ReactivePowerControlKind other) : this() {
+      value_ = other.value_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Optional_ReactivePowerControlKind Clone() {
+      return new Optional_ReactivePowerControlKind(this);
+    }
+
+    /// <summary>Field number for the "value" field.</summary>
+    public const int ValueFieldNumber = 1;
+    private global::openfmb.commonmodule.ReactivePowerControlKind value_ = global::openfmb.commonmodule.ReactivePowerControlKind.Undefined;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.ReactivePowerControlKind Value {
+      get { return value_; }
+      set {
+        value_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as Optional_ReactivePowerControlKind);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(Optional_ReactivePowerControlKind other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Value != other.Value) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Value != global::openfmb.commonmodule.ReactivePowerControlKind.Undefined) hash ^= Value.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Value != global::openfmb.commonmodule.ReactivePowerControlKind.Undefined) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Value);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Value != global::openfmb.commonmodule.ReactivePowerControlKind.Undefined) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Value);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Value != global::openfmb.commonmodule.ReactivePowerControlKind.Undefined) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Value);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(Optional_ReactivePowerControlKind other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Value != global::openfmb.commonmodule.ReactivePowerControlKind.Undefined) {
+        Value = other.Value;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Value = (global::openfmb.commonmodule.ReactivePowerControlKind) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Value = (global::openfmb.commonmodule.ReactivePowerControlKind) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class Optional_RealPowerControlKind : pb::IMessage<Optional_RealPowerControlKind>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<Optional_RealPowerControlKind> _parser = new pb::MessageParser<Optional_RealPowerControlKind>(() => new Optional_RealPowerControlKind());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<Optional_RealPowerControlKind> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[114]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Optional_RealPowerControlKind() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Optional_RealPowerControlKind(Optional_RealPowerControlKind other) : this() {
+      value_ = other.value_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Optional_RealPowerControlKind Clone() {
+      return new Optional_RealPowerControlKind(this);
+    }
+
+    /// <summary>Field number for the "value" field.</summary>
+    public const int ValueFieldNumber = 1;
+    private global::openfmb.commonmodule.RealPowerControlKind value_ = global::openfmb.commonmodule.RealPowerControlKind.Undefined;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.RealPowerControlKind Value {
+      get { return value_; }
+      set {
+        value_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as Optional_RealPowerControlKind);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(Optional_RealPowerControlKind other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Value != other.Value) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Value != global::openfmb.commonmodule.RealPowerControlKind.Undefined) hash ^= Value.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Value != global::openfmb.commonmodule.RealPowerControlKind.Undefined) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Value);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Value != global::openfmb.commonmodule.RealPowerControlKind.Undefined) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Value);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Value != global::openfmb.commonmodule.RealPowerControlKind.Undefined) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Value);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(Optional_RealPowerControlKind other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Value != global::openfmb.commonmodule.RealPowerControlKind.Undefined) {
+        Value = other.Value;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Value = (global::openfmb.commonmodule.RealPowerControlKind) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Value = (global::openfmb.commonmodule.RealPowerControlKind) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   public sealed partial class Optional_StateKind : pb::IMessage<Optional_StateKind>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -30404,7 +30859,7 @@ namespace openfmb.commonmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[113]; }
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[115]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -30432,7 +30887,7 @@ namespace openfmb.commonmodule {
 
     /// <summary>Field number for the "value" field.</summary>
     public const int ValueFieldNumber = 1;
-    private global::openfmb.commonmodule.StateKind value_ = global::openfmb.commonmodule.StateKind.Off;
+    private global::openfmb.commonmodule.StateKind value_ = global::openfmb.commonmodule.StateKind.Undefined;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::openfmb.commonmodule.StateKind Value {
       get { return value_; }
@@ -30461,7 +30916,7 @@ namespace openfmb.commonmodule {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Value != global::openfmb.commonmodule.StateKind.Off) hash ^= Value.GetHashCode();
+      if (Value != global::openfmb.commonmodule.StateKind.Undefined) hash ^= Value.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -30478,7 +30933,7 @@ namespace openfmb.commonmodule {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Value != global::openfmb.commonmodule.StateKind.Off) {
+      if (Value != global::openfmb.commonmodule.StateKind.Undefined) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Value);
       }
@@ -30491,7 +30946,7 @@ namespace openfmb.commonmodule {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Value != global::openfmb.commonmodule.StateKind.Off) {
+      if (Value != global::openfmb.commonmodule.StateKind.Undefined) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Value);
       }
@@ -30504,7 +30959,7 @@ namespace openfmb.commonmodule {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Value != global::openfmb.commonmodule.StateKind.Off) {
+      if (Value != global::openfmb.commonmodule.StateKind.Undefined) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Value);
       }
       if (_unknownFields != null) {
@@ -30518,7 +30973,7 @@ namespace openfmb.commonmodule {
       if (other == null) {
         return;
       }
-      if (other.Value != global::openfmb.commonmodule.StateKind.Off) {
+      if (other.Value != global::openfmb.commonmodule.StateKind.Undefined) {
         Value = other.Value;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -30555,6 +31010,178 @@ namespace openfmb.commonmodule {
             break;
           case 8: {
             Value = (global::openfmb.commonmodule.StateKind) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class Optional_VoltLimitModeKind : pb::IMessage<Optional_VoltLimitModeKind>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<Optional_VoltLimitModeKind> _parser = new pb::MessageParser<Optional_VoltLimitModeKind>(() => new Optional_VoltLimitModeKind());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<Optional_VoltLimitModeKind> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::openfmb.commonmodule.CommonmoduleReflection.Descriptor.MessageTypes[116]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Optional_VoltLimitModeKind() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Optional_VoltLimitModeKind(Optional_VoltLimitModeKind other) : this() {
+      value_ = other.value_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Optional_VoltLimitModeKind Clone() {
+      return new Optional_VoltLimitModeKind(this);
+    }
+
+    /// <summary>Field number for the "value" field.</summary>
+    public const int ValueFieldNumber = 1;
+    private global::openfmb.commonmodule.VoltLimitModeKind value_ = global::openfmb.commonmodule.VoltLimitModeKind.Undefined;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.VoltLimitModeKind Value {
+      get { return value_; }
+      set {
+        value_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as Optional_VoltLimitModeKind);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(Optional_VoltLimitModeKind other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Value != other.Value) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Value != global::openfmb.commonmodule.VoltLimitModeKind.Undefined) hash ^= Value.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Value != global::openfmb.commonmodule.VoltLimitModeKind.Undefined) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Value);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Value != global::openfmb.commonmodule.VoltLimitModeKind.Undefined) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Value);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Value != global::openfmb.commonmodule.VoltLimitModeKind.Undefined) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Value);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(Optional_VoltLimitModeKind other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Value != global::openfmb.commonmodule.VoltLimitModeKind.Undefined) {
+        Value = other.Value;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Value = (global::openfmb.commonmodule.VoltLimitModeKind) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Value = (global::openfmb.commonmodule.VoltLimitModeKind) input.ReadEnum();
             break;
           }
         }

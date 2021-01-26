@@ -28,93 +28,116 @@ namespace openfmb.capbankmodule {
             "b2R1bGUaCXVtbC5wcm90bxofY29tbW9ubW9kdWxlL2NvbW1vbm1vZHVsZS5w",
             "cm90byJVCg1DYXBCYW5rU3lzdGVtEkQKE2NvbmR1Y3RpbmdFcXVpcG1lbnQY",
             "ASABKAsyIS5jb21tb25tb2R1bGUuQ29uZHVjdGluZ0VxdWlwbWVudEIEgLUY",
-            "ASI5ChJDYXBCYW5rQ29udHJvbFlQU0gSIwoDUG9zGAEgASgLMhYuY29tbW9u",
-            "bW9kdWxlLlBoYXNlRFBDIngKDENhcEJhbmtQb2ludBIyCgdjb250cm9sGAEg",
-            "ASgLMiEuY2FwYmFua21vZHVsZS5DYXBCYW5rQ29udHJvbFlQU0gSNAoJc3Rh",
-            "cnRUaW1lGAIgASgLMhcuY29tbW9ubW9kdWxlLlRpbWVzdGFtcEIIiLUYAZC1",
-            "GAEiQwoKQ2FwQmFua0NTRxI1CgZjcnZQdHMYASADKAsyGy5jYXBiYW5rbW9k",
-            "dWxlLkNhcEJhbmtQb2ludEIIiLUYAZC1GAEiUQoaQ2FwQmFua0NvbnRyb2xT",
-            "Y2hlZHVsZUZTQ0gSMwoGVmFsQ1NHGAEgASgLMhkuY2FwYmFua21vZHVsZS5D",
-            "YXBCYW5rQ1NHQgiItRgBkLUYASKZAQoSQ2FwQmFua0NvbnRyb2xGU0NDEjQK",
-            "C2NvbnRyb2xGU0NDGAEgASgLMhkuY29tbW9ubW9kdWxlLkNvbnRyb2xGU0ND",
-            "QgSAtRgBEk0KGmNhcEJhbmtDb250cm9sU2NoZWR1bGVGU0NIGAIgASgLMiku",
-            "Y2FwYmFua21vZHVsZS5DYXBCYW5rQ29udHJvbFNjaGVkdWxlRlNDSCK1AQoO",
-            "Q2FwQmFua0NvbnRyb2wSNgoMY29udHJvbFZhbHVlGAEgASgLMhouY29tbW9u",
-            "bW9kdWxlLkNvbnRyb2xWYWx1ZUIEgLUYARIsCgVjaGVjaxgCIAEoCzIdLmNv",
-            "bW1vbm1vZHVsZS5DaGVja0NvbmRpdGlvbnMSPQoSY2FwQmFua0NvbnRyb2xG",
-            "U0NDGAMgASgLMiEuY2FwYmFua21vZHVsZS5DYXBCYW5rQ29udHJvbEZTQ0Mi",
-            "4QEKFUNhcEJhbmtDb250cm9sUHJvZmlsZRJCChJjb250cm9sTWVzc2FnZUlu",
-            "Zm8YASABKAsyIC5jb21tb25tb2R1bGUuQ29udHJvbE1lc3NhZ2VJbmZvQgSA",
-            "tRgBEj8KDmNhcEJhbmtDb250cm9sGAIgASgLMh0uY2FwYmFua21vZHVsZS5D",
-            "YXBCYW5rQ29udHJvbEIIiLUYAZC1GAESPQoNY2FwQmFua1N5c3RlbRgDIAEo",
-            "CzIcLmNhcGJhbmttb2R1bGUuQ2FwQmFua1N5c3RlbUIIiLUYAZC1GAE6BMDz",
-            "GAEiiwEKGkNhcEJhbmtEaXNjcmV0ZUNvbnRyb2xZUFNIEkgKFWxvZ2ljYWxO",
-            "b2RlRm9yQ29udHJvbBgBIAEoCzIjLmNvbW1vbm1vZHVsZS5Mb2dpY2FsTm9k",
-            "ZUZvckNvbnRyb2xCBIC1GAESIwoDUG9zGAIgASgLMhYuY29tbW9ubW9kdWxl",
-            "LlBoYXNlRFBDIs0BChZDYXBCYW5rRGlzY3JldGVDb250cm9sEjYKDGNvbnRy",
-            "b2xWYWx1ZRgBIAEoCzIaLmNvbW1vbm1vZHVsZS5Db250cm9sVmFsdWVCBIC1",
-            "GAESLAoFY2hlY2sYAiABKAsyHS5jb21tb25tb2R1bGUuQ2hlY2tDb25kaXRp",
-            "b25zEk0KGmNhcEJhbmtEaXNjcmV0ZUNvbnRyb2xZUFNIGAMgASgLMikuY2Fw",
-            "YmFua21vZHVsZS5DYXBCYW5rRGlzY3JldGVDb250cm9sWVBTSCLxAQodQ2Fw",
-            "QmFua0Rpc2NyZXRlQ29udHJvbFByb2ZpbGUSQgoSY29udHJvbE1lc3NhZ2VJ",
-            "bmZvGAEgASgLMiAuY29tbW9ubW9kdWxlLkNvbnRyb2xNZXNzYWdlSW5mb0IE",
-            "gLUYARJHCg5jYXBCYW5rQ29udHJvbBgCIAEoCzIlLmNhcGJhbmttb2R1bGUu",
-            "Q2FwQmFua0Rpc2NyZXRlQ29udHJvbEIIiLUYAZC1GAESPQoNY2FwQmFua1N5",
-            "c3RlbRgDIAEoCzIcLmNhcGJhbmttb2R1bGUuQ2FwQmFua1N5c3RlbUIIiLUY",
-            "AZC1GAE6BMDzGAEi0AEKGUNhcEJhbmtFdmVudEFuZFN0YXR1c1lQU0gSVgoc",
-            "bG9naWNhbE5vZGVGb3JFdmVudEFuZFN0YXR1cxgBIAEoCzIqLmNvbW1vbm1v",
-            "ZHVsZS5Mb2dpY2FsTm9kZUZvckV2ZW50QW5kU3RhdHVzQgSAtRgBEjYKC0R5",
-            "bmFtaWNUZXN0GAIgASgLMiEuY29tbW9ubW9kdWxlLkVOU19EeW5hbWljVGVz",
-            "dEtpbmQSIwoDUG9zGAMgASgLMhYuY29tbW9ubW9kdWxlLlBoYXNlRFBTIo8B",
-            "CgxDYXBCYW5rRXZlbnQSMgoKZXZlbnRWYWx1ZRgBIAEoCzIYLmNvbW1vbm1v",
-            "ZHVsZS5FdmVudFZhbHVlQgSAtRgBEksKGUNhcEJhbmtFdmVudEFuZFN0YXR1",
+            "ASL6BQoSQ2FwQmFua0NvbnRyb2xZUFNIEiYKBkFtcExtdBgBIAEoCzIWLmNv",
+            "bW1vbm1vZHVsZS5QaGFzZVNQQxIoCghBbXBUaGRIaRgCIAEoCzIWLmNvbW1v",
+            "bm1vZHVsZS5QaGFzZUFQQxIoCghBbXBUaGRMbxgDIAEoCzIWLmNvbW1vbm1v",
+            "ZHVsZS5QaGFzZUFQQxItCgtDdGxNb2RlQXV0bxgEIAEoCzIYLmNvbW1vbm1v",
+            "ZHVsZS5Db250cm9sU1BDEi4KDEN0bE1vZGVPdnJSZBgFIAEoCzIYLmNvbW1v",
+            "bm1vZHVsZS5Db250cm9sU1BDEiwKCkN0bE1vZGVSZW0YBiABKAsyGC5jb21t",
+            "b25tb2R1bGUuQ29udHJvbFNQQxI5CgdEaXJNb2RlGAcgASgLMiguY29tbW9u",
+            "bW9kdWxlLk9wdGlvbmFsX0RpcmVjdGlvbk1vZGVLaW5kEiMKA1BvcxgIIAEo",
+            "CzIWLmNvbW1vbm1vZHVsZS5QaGFzZVNQQxIpCgdUZW1wTG10GAkgASgLMhgu",
+            "Y29tbW9ubW9kdWxlLkNvbnRyb2xTUEMSKwoJVGVtcFRoZEhpGAogASgLMhgu",
+            "Y29tbW9ubW9kdWxlLkNvbnRyb2xBUEMSKwoJVGVtcFRoZExvGAsgASgLMhgu",
+            "Y29tbW9ubW9kdWxlLkNvbnRyb2xBUEMSJgoGVkFyTG10GAwgASgLMhYuY29t",
+            "bW9ubW9kdWxlLlBoYXNlU1BDEigKCFZBclRoZEhpGA0gASgLMhYuY29tbW9u",
+            "bW9kdWxlLlBoYXNlQVBDEigKCFZBclRoZExvGA4gASgLMhYuY29tbW9ubW9k",
+            "dWxlLlBoYXNlQVBDEiYKBlZvbExtdBgPIAEoCzIWLmNvbW1vbm1vZHVsZS5Q",
+            "aGFzZVNQQxIoCghWb2xUaGRIaRgQIAEoCzIWLmNvbW1vbm1vZHVsZS5QaGFz",
+            "ZUFQQxIoCghWb2xUaGRMbxgRIAEoCzIWLmNvbW1vbm1vZHVsZS5QaGFzZUFQ",
+            "QyJ4CgxDYXBCYW5rUG9pbnQSMgoHY29udHJvbBgBIAEoCzIhLmNhcGJhbmtt",
+            "b2R1bGUuQ2FwQmFua0NvbnRyb2xZUFNIEjQKCXN0YXJ0VGltZRgCIAEoCzIX",
+            "LmNvbW1vbm1vZHVsZS5UaW1lc3RhbXBCCIi1GAGQtRgBIkMKCkNhcEJhbmtD",
+            "U0cSNQoGY3J2UHRzGAEgAygLMhsuY2FwYmFua21vZHVsZS5DYXBCYW5rUG9p",
+            "bnRCCIi1GAGQtRgBIlEKGkNhcEJhbmtDb250cm9sU2NoZWR1bGVGU0NIEjMK",
+            "BlZhbENTRxgBIAEoCzIZLmNhcGJhbmttb2R1bGUuQ2FwQmFua0NTR0IIiLUY",
+            "AZC1GAEimQEKEkNhcEJhbmtDb250cm9sRlNDQxI0Cgtjb250cm9sRlNDQxgB",
+            "IAEoCzIZLmNvbW1vbm1vZHVsZS5Db250cm9sRlNDQ0IEgLUYARJNChpjYXBC",
+            "YW5rQ29udHJvbFNjaGVkdWxlRlNDSBgCIAEoCzIpLmNhcGJhbmttb2R1bGUu",
+            "Q2FwQmFua0NvbnRyb2xTY2hlZHVsZUZTQ0gitQEKDkNhcEJhbmtDb250cm9s",
+            "EjYKDGNvbnRyb2xWYWx1ZRgBIAEoCzIaLmNvbW1vbm1vZHVsZS5Db250cm9s",
+            "VmFsdWVCBIC1GAESLAoFY2hlY2sYAiABKAsyHS5jb21tb25tb2R1bGUuQ2hl",
+            "Y2tDb25kaXRpb25zEj0KEmNhcEJhbmtDb250cm9sRlNDQxgDIAEoCzIhLmNh",
+            "cGJhbmttb2R1bGUuQ2FwQmFua0NvbnRyb2xGU0NDIuEBChVDYXBCYW5rQ29u",
+            "dHJvbFByb2ZpbGUSQgoSY29udHJvbE1lc3NhZ2VJbmZvGAEgASgLMiAuY29t",
+            "bW9ubW9kdWxlLkNvbnRyb2xNZXNzYWdlSW5mb0IEgLUYARI/Cg5jYXBCYW5r",
+            "Q29udHJvbBgCIAEoCzIdLmNhcGJhbmttb2R1bGUuQ2FwQmFua0NvbnRyb2xC",
+            "CIi1GAGQtRgBEj0KDWNhcEJhbmtTeXN0ZW0YAyABKAsyHC5jYXBiYW5rbW9k",
+            "dWxlLkNhcEJhbmtTeXN0ZW1CCIi1GAGQtRgBOgTA8xgBIpoBChpDYXBCYW5r",
+            "RGlzY3JldGVDb250cm9sWVBTSBJIChVsb2dpY2FsTm9kZUZvckNvbnRyb2wY",
+            "ASABKAsyIy5jb21tb25tb2R1bGUuTG9naWNhbE5vZGVGb3JDb250cm9sQgSA",
+            "tRgBEjIKB2NvbnRyb2wYAiABKAsyIS5jYXBiYW5rbW9kdWxlLkNhcEJhbmtD",
+            "b250cm9sWVBTSCLNAQoWQ2FwQmFua0Rpc2NyZXRlQ29udHJvbBI2Cgxjb250",
+            "cm9sVmFsdWUYASABKAsyGi5jb21tb25tb2R1bGUuQ29udHJvbFZhbHVlQgSA",
+            "tRgBEiwKBWNoZWNrGAIgASgLMh0uY29tbW9ubW9kdWxlLkNoZWNrQ29uZGl0",
+            "aW9ucxJNChpjYXBCYW5rRGlzY3JldGVDb250cm9sWVBTSBgDIAEoCzIpLmNh",
+            "cGJhbmttb2R1bGUuQ2FwQmFua0Rpc2NyZXRlQ29udHJvbFlQU0gi8QEKHUNh",
+            "cEJhbmtEaXNjcmV0ZUNvbnRyb2xQcm9maWxlEkIKEmNvbnRyb2xNZXNzYWdl",
+            "SW5mbxgBIAEoCzIgLmNvbW1vbm1vZHVsZS5Db250cm9sTWVzc2FnZUluZm9C",
+            "BIC1GAESRwoOY2FwQmFua0NvbnRyb2wYAiABKAsyJS5jYXBiYW5rbW9kdWxl",
+            "LkNhcEJhbmtEaXNjcmV0ZUNvbnRyb2xCCIi1GAGQtRgBEj0KDWNhcEJhbmtT",
+            "eXN0ZW0YAyABKAsyHC5jYXBiYW5rbW9kdWxlLkNhcEJhbmtTeXN0ZW1CCIi1",
+            "GAGQtRgBOgTA8xgBItIDChlDYXBCYW5rRXZlbnRBbmRTdGF0dXNZUFNIElYK",
+            "HGxvZ2ljYWxOb2RlRm9yRXZlbnRBbmRTdGF0dXMYASABKAsyKi5jb21tb25t",
+            "b2R1bGUuTG9naWNhbE5vZGVGb3JFdmVudEFuZFN0YXR1c0IEgLUYARImCgZB",
+            "bXBMbXQYAiABKAsyFi5jb21tb25tb2R1bGUuUGhhc2VTUFMSNwoHQ3RsTW9k",
+            "ZRgDIAEoCzImLmNvbW1vbm1vZHVsZS5PcHRpb25hbF9Db250cm9sTW9kZUtp",
+            "bmQSJgoGRGlyUmV2GAQgASgLMhYuY29tbW9ubW9kdWxlLlBoYXNlU1BTEjYK",
+            "C0R5bmFtaWNUZXN0GAUgASgLMiEuY29tbW9ubW9kdWxlLkVOU19EeW5hbWlj",
+            "VGVzdEtpbmQSIwoDUG9zGAYgASgLMhYuY29tbW9ubW9kdWxlLlBoYXNlRFBT",
+            "EicKB1RlbXBMbXQYByABKAsyFi5jb21tb25tb2R1bGUuUGhhc2VTUFMSJgoG",
+            "VkFyTG10GAggASgLMhYuY29tbW9ubW9kdWxlLlBoYXNlU1BTEiYKBlZvbExt",
+            "dBgJIAEoCzIWLmNvbW1vbm1vZHVsZS5QaGFzZVNQUyKPAQoMQ2FwQmFua0V2",
+            "ZW50EjIKCmV2ZW50VmFsdWUYASABKAsyGC5jb21tb25tb2R1bGUuRXZlbnRW",
+            "YWx1ZUIEgLUYARJLChlDYXBCYW5rRXZlbnRBbmRTdGF0dXNZUFNIGAIgASgL",
+            "MiguY2FwYmFua21vZHVsZS5DYXBCYW5rRXZlbnRBbmRTdGF0dXNZUFNIItcB",
+            "ChNDYXBCYW5rRXZlbnRQcm9maWxlEj4KEGV2ZW50TWVzc2FnZUluZm8YASAB",
+            "KAsyHi5jb21tb25tb2R1bGUuRXZlbnRNZXNzYWdlSW5mb0IEgLUYARI7Cgxj",
+            "YXBCYW5rRXZlbnQYAiABKAsyGy5jYXBiYW5rbW9kdWxlLkNhcEJhbmtFdmVu",
+            "dEIIiLUYAZC1GAESPQoNY2FwQmFua1N5c3RlbRgDIAEoCzIcLmNhcGJhbmtt",
+            "b2R1bGUuQ2FwQmFua1N5c3RlbUIIiLUYAZC1GAE6BMDzGAEiuQIKDkNhcEJh",
+            "bmtSZWFkaW5nEmIKImNvbmR1Y3RpbmdFcXVpcG1lbnRUZXJtaW5hbFJlYWRp",
+            "bmcYASABKAsyMC5jb21tb25tb2R1bGUuQ29uZHVjdGluZ0VxdWlwbWVudFRl",
+            "cm1pbmFsUmVhZGluZ0IEgLUYARIqCglwaGFzZU1NVE4YAiABKAsyFy5jb21t",
+            "b25tb2R1bGUuUGhhc2VNTVROEi4KC3JlYWRpbmdNTVRSGAMgASgLMhkuY29t",
+            "bW9ubW9kdWxlLlJlYWRpbmdNTVRSEi4KC3JlYWRpbmdNTVhVGAQgASgLMhku",
+            "Y29tbW9ubW9kdWxlLlJlYWRpbmdNTVhVEjcKFHNlY29uZGFyeVJlYWRpbmdN",
+            "TVhVGAUgASgLMhkuY29tbW9ubW9kdWxlLlJlYWRpbmdNTVhVIuEBChVDYXBC",
+            "YW5rUmVhZGluZ1Byb2ZpbGUSQgoScmVhZGluZ01lc3NhZ2VJbmZvGAEgASgL",
+            "MiAuY29tbW9ubW9kdWxlLlJlYWRpbmdNZXNzYWdlSW5mb0IEgLUYARI/Cg5j",
+            "YXBCYW5rUmVhZGluZxgCIAEoCzIdLmNhcGJhbmttb2R1bGUuQ2FwQmFua1Jl",
+            "YWRpbmdCCIi1GAGQtRgBEj0KDWNhcEJhbmtTeXN0ZW0YAyABKAsyHC5jYXBi",
+            "YW5rbW9kdWxlLkNhcEJhbmtTeXN0ZW1CCIi1GAGQtRgBOgTA8xgBIpIBCg1D",
+            "YXBCYW5rU3RhdHVzEjQKC3N0YXR1c1ZhbHVlGAEgASgLMhkuY29tbW9ubW9k",
+            "dWxlLlN0YXR1c1ZhbHVlQgSAtRgBEksKGWNhcEJhbmtFdmVudEFuZFN0YXR1",
             "c1lQU0gYAiABKAsyKC5jYXBiYW5rbW9kdWxlLkNhcEJhbmtFdmVudEFuZFN0",
-            "YXR1c1lQU0gi1wEKE0NhcEJhbmtFdmVudFByb2ZpbGUSPgoQZXZlbnRNZXNz",
-            "YWdlSW5mbxgBIAEoCzIeLmNvbW1vbm1vZHVsZS5FdmVudE1lc3NhZ2VJbmZv",
-            "QgSAtRgBEjsKDGNhcEJhbmtFdmVudBgCIAEoCzIbLmNhcGJhbmttb2R1bGUu",
-            "Q2FwQmFua0V2ZW50QgiItRgBkLUYARI9Cg1jYXBCYW5rU3lzdGVtGAMgASgL",
-            "MhwuY2FwYmFua21vZHVsZS5DYXBCYW5rU3lzdGVtQgiItRgBkLUYAToEwPMY",
-            "ASKAAgoOQ2FwQmFua1JlYWRpbmcSYgoiY29uZHVjdGluZ0VxdWlwbWVudFRl",
-            "cm1pbmFsUmVhZGluZxgBIAEoCzIwLmNvbW1vbm1vZHVsZS5Db25kdWN0aW5n",
-            "RXF1aXBtZW50VGVybWluYWxSZWFkaW5nQgSAtRgBEioKCXBoYXNlTU1UThgC",
-            "IAEoCzIXLmNvbW1vbm1vZHVsZS5QaGFzZU1NVE4SLgoLcmVhZGluZ01NVFIY",
-            "AyABKAsyGS5jb21tb25tb2R1bGUuUmVhZGluZ01NVFISLgoLcmVhZGluZ01N",
-            "WFUYBCABKAsyGS5jb21tb25tb2R1bGUuUmVhZGluZ01NWFUi4QEKFUNhcEJh",
-            "bmtSZWFkaW5nUHJvZmlsZRJCChJyZWFkaW5nTWVzc2FnZUluZm8YASABKAsy",
-            "IC5jb21tb25tb2R1bGUuUmVhZGluZ01lc3NhZ2VJbmZvQgSAtRgBEj8KDmNh",
-            "cEJhbmtSZWFkaW5nGAIgASgLMh0uY2FwYmFua21vZHVsZS5DYXBCYW5rUmVh",
-            "ZGluZ0IIiLUYAZC1GAESPQoNY2FwQmFua1N5c3RlbRgDIAEoCzIcLmNhcGJh",
-            "bmttb2R1bGUuQ2FwQmFua1N5c3RlbUIIiLUYAZC1GAE6BMDzGAEikgEKDUNh",
-            "cEJhbmtTdGF0dXMSNAoLc3RhdHVzVmFsdWUYASABKAsyGS5jb21tb25tb2R1",
-            "bGUuU3RhdHVzVmFsdWVCBIC1GAESSwoZY2FwQmFua0V2ZW50QW5kU3RhdHVz",
-            "WVBTSBgCIAEoCzIoLmNhcGJhbmttb2R1bGUuQ2FwQmFua0V2ZW50QW5kU3Rh",
-            "dHVzWVBTSCLcAQoUQ2FwQmFua1N0YXR1c1Byb2ZpbGUSQAoRc3RhdHVzTWVz",
-            "c2FnZUluZm8YASABKAsyHy5jb21tb25tb2R1bGUuU3RhdHVzTWVzc2FnZUlu",
-            "Zm9CBIC1GAESPQoNY2FwQmFua1N0YXR1cxgCIAEoCzIcLmNhcGJhbmttb2R1",
-            "bGUuQ2FwQmFua1N0YXR1c0IIiLUYAZC1GAESPQoNY2FwQmFua1N5c3RlbRgD",
-            "IAEoCzIcLmNhcGJhbmttb2R1bGUuQ2FwQmFua1N5c3RlbUIIiLUYAZC1GAE6",
-            "BMDzGAFChwEKFW9wZW5mbWIuY2FwYmFua21vZHVsZVABWlRnaXRsYWIuY29t",
-            "L29wZW5mbWIvcHNtL29wcy9wcm90b2J1Zi9nby1vcGVuZm1iLW9wcy1wcm90",
-            "b2J1Zi92Mi9vcGVuZm1iL2NhcGJhbmttb2R1bGWqAhVvcGVuZm1iLmNhcGJh",
-            "bmttb2R1bGViBnByb3RvMw=="));
+            "YXR1c1lQU0gi3AEKFENhcEJhbmtTdGF0dXNQcm9maWxlEkAKEXN0YXR1c01l",
+            "c3NhZ2VJbmZvGAEgASgLMh8uY29tbW9ubW9kdWxlLlN0YXR1c01lc3NhZ2VJ",
+            "bmZvQgSAtRgBEj0KDWNhcEJhbmtTdGF0dXMYAiABKAsyHC5jYXBiYW5rbW9k",
+            "dWxlLkNhcEJhbmtTdGF0dXNCCIi1GAGQtRgBEj0KDWNhcEJhbmtTeXN0ZW0Y",
+            "AyABKAsyHC5jYXBiYW5rbW9kdWxlLkNhcEJhbmtTeXN0ZW1CCIi1GAGQtRgB",
+            "OgTA8xgBQocBChVvcGVuZm1iLmNhcGJhbmttb2R1bGVQAVpUZ2l0bGFiLmNv",
+            "bS9vcGVuZm1iL3BzbS9vcHMvcHJvdG9idWYvZ28tb3BlbmZtYi1vcHMtcHJv",
+            "dG9idWYvdjIvb3BlbmZtYi9jYXBiYW5rbW9kdWxlqgIVb3BlbmZtYi5jYXBi",
+            "YW5rbW9kdWxlYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::openfmb.UmlReflection.Descriptor, global::openfmb.commonmodule.CommonmoduleReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.capbankmodule.CapBankSystem), global::openfmb.capbankmodule.CapBankSystem.Parser, new[]{ "ConductingEquipment" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.capbankmodule.CapBankControlYPSH), global::openfmb.capbankmodule.CapBankControlYPSH.Parser, new[]{ "Pos" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.capbankmodule.CapBankControlYPSH), global::openfmb.capbankmodule.CapBankControlYPSH.Parser, new[]{ "AmpLmt", "AmpThdHi", "AmpThdLo", "CtlModeAuto", "CtlModeOvrRd", "CtlModeRem", "DirMode", "Pos", "TempLmt", "TempThdHi", "TempThdLo", "VArLmt", "VArThdHi", "VArThdLo", "VolLmt", "VolThdHi", "VolThdLo" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.capbankmodule.CapBankPoint), global::openfmb.capbankmodule.CapBankPoint.Parser, new[]{ "Control", "StartTime" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.capbankmodule.CapBankCSG), global::openfmb.capbankmodule.CapBankCSG.Parser, new[]{ "CrvPts" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.capbankmodule.CapBankControlScheduleFSCH), global::openfmb.capbankmodule.CapBankControlScheduleFSCH.Parser, new[]{ "ValCSG" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.capbankmodule.CapBankControlFSCC), global::openfmb.capbankmodule.CapBankControlFSCC.Parser, new[]{ "ControlFSCC", "CapBankControlScheduleFSCH" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.capbankmodule.CapBankControl), global::openfmb.capbankmodule.CapBankControl.Parser, new[]{ "ControlValue", "Check", "CapBankControlFSCC" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.capbankmodule.CapBankControlProfile), global::openfmb.capbankmodule.CapBankControlProfile.Parser, new[]{ "ControlMessageInfo", "CapBankControl", "CapBankSystem" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.capbankmodule.CapBankDiscreteControlYPSH), global::openfmb.capbankmodule.CapBankDiscreteControlYPSH.Parser, new[]{ "LogicalNodeForControl", "Pos" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.capbankmodule.CapBankDiscreteControlYPSH), global::openfmb.capbankmodule.CapBankDiscreteControlYPSH.Parser, new[]{ "LogicalNodeForControl", "Control" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.capbankmodule.CapBankDiscreteControl), global::openfmb.capbankmodule.CapBankDiscreteControl.Parser, new[]{ "ControlValue", "Check", "CapBankDiscreteControlYPSH" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.capbankmodule.CapBankDiscreteControlProfile), global::openfmb.capbankmodule.CapBankDiscreteControlProfile.Parser, new[]{ "ControlMessageInfo", "CapBankControl", "CapBankSystem" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.capbankmodule.CapBankEventAndStatusYPSH), global::openfmb.capbankmodule.CapBankEventAndStatusYPSH.Parser, new[]{ "LogicalNodeForEventAndStatus", "DynamicTest", "Pos" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.capbankmodule.CapBankEventAndStatusYPSH), global::openfmb.capbankmodule.CapBankEventAndStatusYPSH.Parser, new[]{ "LogicalNodeForEventAndStatus", "AmpLmt", "CtlMode", "DirRev", "DynamicTest", "Pos", "TempLmt", "VArLmt", "VolLmt" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.capbankmodule.CapBankEvent), global::openfmb.capbankmodule.CapBankEvent.Parser, new[]{ "EventValue", "CapBankEventAndStatusYPSH" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.capbankmodule.CapBankEventProfile), global::openfmb.capbankmodule.CapBankEventProfile.Parser, new[]{ "EventMessageInfo", "CapBankEvent", "CapBankSystem" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.capbankmodule.CapBankReading), global::openfmb.capbankmodule.CapBankReading.Parser, new[]{ "ConductingEquipmentTerminalReading", "PhaseMMTN", "ReadingMMTR", "ReadingMMXU" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.capbankmodule.CapBankReading), global::openfmb.capbankmodule.CapBankReading.Parser, new[]{ "ConductingEquipmentTerminalReading", "PhaseMMTN", "ReadingMMTR", "ReadingMMXU", "SecondaryReadingMMXU" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.capbankmodule.CapBankReadingProfile), global::openfmb.capbankmodule.CapBankReadingProfile.Parser, new[]{ "ReadingMessageInfo", "CapBankReading", "CapBankSystem" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.capbankmodule.CapBankStatus), global::openfmb.capbankmodule.CapBankStatus.Parser, new[]{ "StatusValue", "CapBankEventAndStatusYPSH" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.capbankmodule.CapBankStatusProfile), global::openfmb.capbankmodule.CapBankStatusProfile.Parser, new[]{ "StatusMessageInfo", "CapBankStatus", "CapBankSystem" }, null, null, null, null)
@@ -343,7 +366,23 @@ namespace openfmb.capbankmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public CapBankControlYPSH(CapBankControlYPSH other) : this() {
+      ampLmt_ = other.ampLmt_ != null ? other.ampLmt_.Clone() : null;
+      ampThdHi_ = other.ampThdHi_ != null ? other.ampThdHi_.Clone() : null;
+      ampThdLo_ = other.ampThdLo_ != null ? other.ampThdLo_.Clone() : null;
+      ctlModeAuto_ = other.ctlModeAuto_ != null ? other.ctlModeAuto_.Clone() : null;
+      ctlModeOvrRd_ = other.ctlModeOvrRd_ != null ? other.ctlModeOvrRd_.Clone() : null;
+      ctlModeRem_ = other.ctlModeRem_ != null ? other.ctlModeRem_.Clone() : null;
+      dirMode_ = other.dirMode_ != null ? other.dirMode_.Clone() : null;
       pos_ = other.pos_ != null ? other.pos_.Clone() : null;
+      tempLmt_ = other.tempLmt_ != null ? other.tempLmt_.Clone() : null;
+      tempThdHi_ = other.tempThdHi_ != null ? other.tempThdHi_.Clone() : null;
+      tempThdLo_ = other.tempThdLo_ != null ? other.tempThdLo_.Clone() : null;
+      vArLmt_ = other.vArLmt_ != null ? other.vArLmt_.Clone() : null;
+      vArThdHi_ = other.vArThdHi_ != null ? other.vArThdHi_.Clone() : null;
+      vArThdLo_ = other.vArThdLo_ != null ? other.vArThdLo_.Clone() : null;
+      volLmt_ = other.volLmt_ != null ? other.volLmt_.Clone() : null;
+      volThdHi_ = other.volThdHi_ != null ? other.volThdHi_.Clone() : null;
+      volThdLo_ = other.volThdLo_ != null ? other.volThdLo_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -352,17 +391,241 @@ namespace openfmb.capbankmodule {
       return new CapBankControlYPSH(this);
     }
 
+    /// <summary>Field number for the "AmpLmt" field.</summary>
+    public const int AmpLmtFieldNumber = 1;
+    private global::openfmb.commonmodule.PhaseSPC ampLmt_;
+    /// <summary>
+    /// Current limit (boolean field)
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.PhaseSPC AmpLmt {
+      get { return ampLmt_; }
+      set {
+        ampLmt_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "AmpThdHi" field.</summary>
+    public const int AmpThdHiFieldNumber = 2;
+    private global::openfmb.commonmodule.PhaseAPC ampThdHi_;
+    /// <summary>
+    /// High current  threshold
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.PhaseAPC AmpThdHi {
+      get { return ampThdHi_; }
+      set {
+        ampThdHi_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "AmpThdLo" field.</summary>
+    public const int AmpThdLoFieldNumber = 3;
+    private global::openfmb.commonmodule.PhaseAPC ampThdLo_;
+    /// <summary>
+    /// Low current threshold
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.PhaseAPC AmpThdLo {
+      get { return ampThdLo_; }
+      set {
+        ampThdLo_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "CtlModeAuto" field.</summary>
+    public const int CtlModeAutoFieldNumber = 4;
+    private global::openfmb.commonmodule.ControlSPC ctlModeAuto_;
+    /// <summary>
+    /// Control mode auto
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.ControlSPC CtlModeAuto {
+      get { return ctlModeAuto_; }
+      set {
+        ctlModeAuto_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "CtlModeOvrRd" field.</summary>
+    public const int CtlModeOvrRdFieldNumber = 5;
+    private global::openfmb.commonmodule.ControlSPC ctlModeOvrRd_;
+    /// <summary>
+    /// Control mode override
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.ControlSPC CtlModeOvrRd {
+      get { return ctlModeOvrRd_; }
+      set {
+        ctlModeOvrRd_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "CtlModeRem" field.</summary>
+    public const int CtlModeRemFieldNumber = 6;
+    private global::openfmb.commonmodule.ControlSPC ctlModeRem_;
+    /// <summary>
+    /// Control mode remote
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.ControlSPC CtlModeRem {
+      get { return ctlModeRem_; }
+      set {
+        ctlModeRem_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "DirMode" field.</summary>
+    public const int DirModeFieldNumber = 7;
+    private global::openfmb.commonmodule.Optional_DirectionModeKind dirMode_;
+    /// <summary>
+    /// The control characteristics for power flow operation
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.Optional_DirectionModeKind DirMode {
+      get { return dirMode_; }
+      set {
+        dirMode_ = value;
+      }
+    }
+
     /// <summary>Field number for the "Pos" field.</summary>
-    public const int PosFieldNumber = 1;
-    private global::openfmb.commonmodule.PhaseDPC pos_;
+    public const int PosFieldNumber = 8;
+    private global::openfmb.commonmodule.PhaseSPC pos_;
     /// <summary>
     /// (controllable) Position of the switch of power shunt.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.PhaseDPC Pos {
+    public global::openfmb.commonmodule.PhaseSPC Pos {
       get { return pos_; }
       set {
         pos_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "TempLmt" field.</summary>
+    public const int TempLmtFieldNumber = 9;
+    private global::openfmb.commonmodule.ControlSPC tempLmt_;
+    /// <summary>
+    /// Temperature limit (boolean field)
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.ControlSPC TempLmt {
+      get { return tempLmt_; }
+      set {
+        tempLmt_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "TempThdHi" field.</summary>
+    public const int TempThdHiFieldNumber = 10;
+    private global::openfmb.commonmodule.ControlAPC tempThdHi_;
+    /// <summary>
+    /// High temperature threshold
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.ControlAPC TempThdHi {
+      get { return tempThdHi_; }
+      set {
+        tempThdHi_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "TempThdLo" field.</summary>
+    public const int TempThdLoFieldNumber = 11;
+    private global::openfmb.commonmodule.ControlAPC tempThdLo_;
+    /// <summary>
+    /// Low temperature threshold
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.ControlAPC TempThdLo {
+      get { return tempThdLo_; }
+      set {
+        tempThdLo_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "VArLmt" field.</summary>
+    public const int VArLmtFieldNumber = 12;
+    private global::openfmb.commonmodule.PhaseSPC vArLmt_;
+    /// <summary>
+    /// VAr limit (boolean field)
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.PhaseSPC VArLmt {
+      get { return vArLmt_; }
+      set {
+        vArLmt_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "VArThdHi" field.</summary>
+    public const int VArThdHiFieldNumber = 13;
+    private global::openfmb.commonmodule.PhaseAPC vArThdHi_;
+    /// <summary>
+    /// High VAr threshold
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.PhaseAPC VArThdHi {
+      get { return vArThdHi_; }
+      set {
+        vArThdHi_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "VArThdLo" field.</summary>
+    public const int VArThdLoFieldNumber = 14;
+    private global::openfmb.commonmodule.PhaseAPC vArThdLo_;
+    /// <summary>
+    /// Low VAr threshold
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.PhaseAPC VArThdLo {
+      get { return vArThdLo_; }
+      set {
+        vArThdLo_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "VolLmt" field.</summary>
+    public const int VolLmtFieldNumber = 15;
+    private global::openfmb.commonmodule.PhaseSPC volLmt_;
+    /// <summary>
+    /// Voltage limit (boolean field)
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.PhaseSPC VolLmt {
+      get { return volLmt_; }
+      set {
+        volLmt_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "VolThdHi" field.</summary>
+    public const int VolThdHiFieldNumber = 16;
+    private global::openfmb.commonmodule.PhaseAPC volThdHi_;
+    /// <summary>
+    /// High voltage threshold
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.PhaseAPC VolThdHi {
+      get { return volThdHi_; }
+      set {
+        volThdHi_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "VolThdLo" field.</summary>
+    public const int VolThdLoFieldNumber = 17;
+    private global::openfmb.commonmodule.PhaseAPC volThdLo_;
+    /// <summary>
+    /// Low voltage threshold
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.PhaseAPC VolThdLo {
+      get { return volThdLo_; }
+      set {
+        volThdLo_ = value;
       }
     }
 
@@ -379,14 +642,46 @@ namespace openfmb.capbankmodule {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if (!object.Equals(AmpLmt, other.AmpLmt)) return false;
+      if (!object.Equals(AmpThdHi, other.AmpThdHi)) return false;
+      if (!object.Equals(AmpThdLo, other.AmpThdLo)) return false;
+      if (!object.Equals(CtlModeAuto, other.CtlModeAuto)) return false;
+      if (!object.Equals(CtlModeOvrRd, other.CtlModeOvrRd)) return false;
+      if (!object.Equals(CtlModeRem, other.CtlModeRem)) return false;
+      if (!object.Equals(DirMode, other.DirMode)) return false;
       if (!object.Equals(Pos, other.Pos)) return false;
+      if (!object.Equals(TempLmt, other.TempLmt)) return false;
+      if (!object.Equals(TempThdHi, other.TempThdHi)) return false;
+      if (!object.Equals(TempThdLo, other.TempThdLo)) return false;
+      if (!object.Equals(VArLmt, other.VArLmt)) return false;
+      if (!object.Equals(VArThdHi, other.VArThdHi)) return false;
+      if (!object.Equals(VArThdLo, other.VArThdLo)) return false;
+      if (!object.Equals(VolLmt, other.VolLmt)) return false;
+      if (!object.Equals(VolThdHi, other.VolThdHi)) return false;
+      if (!object.Equals(VolThdLo, other.VolThdLo)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
+      if (ampLmt_ != null) hash ^= AmpLmt.GetHashCode();
+      if (ampThdHi_ != null) hash ^= AmpThdHi.GetHashCode();
+      if (ampThdLo_ != null) hash ^= AmpThdLo.GetHashCode();
+      if (ctlModeAuto_ != null) hash ^= CtlModeAuto.GetHashCode();
+      if (ctlModeOvrRd_ != null) hash ^= CtlModeOvrRd.GetHashCode();
+      if (ctlModeRem_ != null) hash ^= CtlModeRem.GetHashCode();
+      if (dirMode_ != null) hash ^= DirMode.GetHashCode();
       if (pos_ != null) hash ^= Pos.GetHashCode();
+      if (tempLmt_ != null) hash ^= TempLmt.GetHashCode();
+      if (tempThdHi_ != null) hash ^= TempThdHi.GetHashCode();
+      if (tempThdLo_ != null) hash ^= TempThdLo.GetHashCode();
+      if (vArLmt_ != null) hash ^= VArLmt.GetHashCode();
+      if (vArThdHi_ != null) hash ^= VArThdHi.GetHashCode();
+      if (vArThdLo_ != null) hash ^= VArThdLo.GetHashCode();
+      if (volLmt_ != null) hash ^= VolLmt.GetHashCode();
+      if (volThdHi_ != null) hash ^= VolThdHi.GetHashCode();
+      if (volThdLo_ != null) hash ^= VolThdLo.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -403,9 +698,73 @@ namespace openfmb.capbankmodule {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (pos_ != null) {
+      if (ampLmt_ != null) {
         output.WriteRawTag(10);
+        output.WriteMessage(AmpLmt);
+      }
+      if (ampThdHi_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(AmpThdHi);
+      }
+      if (ampThdLo_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(AmpThdLo);
+      }
+      if (ctlModeAuto_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(CtlModeAuto);
+      }
+      if (ctlModeOvrRd_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(CtlModeOvrRd);
+      }
+      if (ctlModeRem_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(CtlModeRem);
+      }
+      if (dirMode_ != null) {
+        output.WriteRawTag(58);
+        output.WriteMessage(DirMode);
+      }
+      if (pos_ != null) {
+        output.WriteRawTag(66);
         output.WriteMessage(Pos);
+      }
+      if (tempLmt_ != null) {
+        output.WriteRawTag(74);
+        output.WriteMessage(TempLmt);
+      }
+      if (tempThdHi_ != null) {
+        output.WriteRawTag(82);
+        output.WriteMessage(TempThdHi);
+      }
+      if (tempThdLo_ != null) {
+        output.WriteRawTag(90);
+        output.WriteMessage(TempThdLo);
+      }
+      if (vArLmt_ != null) {
+        output.WriteRawTag(98);
+        output.WriteMessage(VArLmt);
+      }
+      if (vArThdHi_ != null) {
+        output.WriteRawTag(106);
+        output.WriteMessage(VArThdHi);
+      }
+      if (vArThdLo_ != null) {
+        output.WriteRawTag(114);
+        output.WriteMessage(VArThdLo);
+      }
+      if (volLmt_ != null) {
+        output.WriteRawTag(122);
+        output.WriteMessage(VolLmt);
+      }
+      if (volThdHi_ != null) {
+        output.WriteRawTag(130, 1);
+        output.WriteMessage(VolThdHi);
+      }
+      if (volThdLo_ != null) {
+        output.WriteRawTag(138, 1);
+        output.WriteMessage(VolThdLo);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -416,9 +775,73 @@ namespace openfmb.capbankmodule {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (pos_ != null) {
+      if (ampLmt_ != null) {
         output.WriteRawTag(10);
+        output.WriteMessage(AmpLmt);
+      }
+      if (ampThdHi_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(AmpThdHi);
+      }
+      if (ampThdLo_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(AmpThdLo);
+      }
+      if (ctlModeAuto_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(CtlModeAuto);
+      }
+      if (ctlModeOvrRd_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(CtlModeOvrRd);
+      }
+      if (ctlModeRem_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(CtlModeRem);
+      }
+      if (dirMode_ != null) {
+        output.WriteRawTag(58);
+        output.WriteMessage(DirMode);
+      }
+      if (pos_ != null) {
+        output.WriteRawTag(66);
         output.WriteMessage(Pos);
+      }
+      if (tempLmt_ != null) {
+        output.WriteRawTag(74);
+        output.WriteMessage(TempLmt);
+      }
+      if (tempThdHi_ != null) {
+        output.WriteRawTag(82);
+        output.WriteMessage(TempThdHi);
+      }
+      if (tempThdLo_ != null) {
+        output.WriteRawTag(90);
+        output.WriteMessage(TempThdLo);
+      }
+      if (vArLmt_ != null) {
+        output.WriteRawTag(98);
+        output.WriteMessage(VArLmt);
+      }
+      if (vArThdHi_ != null) {
+        output.WriteRawTag(106);
+        output.WriteMessage(VArThdHi);
+      }
+      if (vArThdLo_ != null) {
+        output.WriteRawTag(114);
+        output.WriteMessage(VArThdLo);
+      }
+      if (volLmt_ != null) {
+        output.WriteRawTag(122);
+        output.WriteMessage(VolLmt);
+      }
+      if (volThdHi_ != null) {
+        output.WriteRawTag(130, 1);
+        output.WriteMessage(VolThdHi);
+      }
+      if (volThdLo_ != null) {
+        output.WriteRawTag(138, 1);
+        output.WriteMessage(VolThdLo);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -429,8 +852,56 @@ namespace openfmb.capbankmodule {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
+      if (ampLmt_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(AmpLmt);
+      }
+      if (ampThdHi_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(AmpThdHi);
+      }
+      if (ampThdLo_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(AmpThdLo);
+      }
+      if (ctlModeAuto_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CtlModeAuto);
+      }
+      if (ctlModeOvrRd_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CtlModeOvrRd);
+      }
+      if (ctlModeRem_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CtlModeRem);
+      }
+      if (dirMode_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(DirMode);
+      }
       if (pos_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Pos);
+      }
+      if (tempLmt_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(TempLmt);
+      }
+      if (tempThdHi_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(TempThdHi);
+      }
+      if (tempThdLo_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(TempThdLo);
+      }
+      if (vArLmt_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(VArLmt);
+      }
+      if (vArThdHi_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(VArThdHi);
+      }
+      if (vArThdLo_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(VArThdLo);
+      }
+      if (volLmt_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(VolLmt);
+      }
+      if (volThdHi_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(VolThdHi);
+      }
+      if (volThdLo_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(VolThdLo);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -443,11 +914,107 @@ namespace openfmb.capbankmodule {
       if (other == null) {
         return;
       }
+      if (other.ampLmt_ != null) {
+        if (ampLmt_ == null) {
+          AmpLmt = new global::openfmb.commonmodule.PhaseSPC();
+        }
+        AmpLmt.MergeFrom(other.AmpLmt);
+      }
+      if (other.ampThdHi_ != null) {
+        if (ampThdHi_ == null) {
+          AmpThdHi = new global::openfmb.commonmodule.PhaseAPC();
+        }
+        AmpThdHi.MergeFrom(other.AmpThdHi);
+      }
+      if (other.ampThdLo_ != null) {
+        if (ampThdLo_ == null) {
+          AmpThdLo = new global::openfmb.commonmodule.PhaseAPC();
+        }
+        AmpThdLo.MergeFrom(other.AmpThdLo);
+      }
+      if (other.ctlModeAuto_ != null) {
+        if (ctlModeAuto_ == null) {
+          CtlModeAuto = new global::openfmb.commonmodule.ControlSPC();
+        }
+        CtlModeAuto.MergeFrom(other.CtlModeAuto);
+      }
+      if (other.ctlModeOvrRd_ != null) {
+        if (ctlModeOvrRd_ == null) {
+          CtlModeOvrRd = new global::openfmb.commonmodule.ControlSPC();
+        }
+        CtlModeOvrRd.MergeFrom(other.CtlModeOvrRd);
+      }
+      if (other.ctlModeRem_ != null) {
+        if (ctlModeRem_ == null) {
+          CtlModeRem = new global::openfmb.commonmodule.ControlSPC();
+        }
+        CtlModeRem.MergeFrom(other.CtlModeRem);
+      }
+      if (other.dirMode_ != null) {
+        if (dirMode_ == null) {
+          DirMode = new global::openfmb.commonmodule.Optional_DirectionModeKind();
+        }
+        DirMode.MergeFrom(other.DirMode);
+      }
       if (other.pos_ != null) {
         if (pos_ == null) {
-          Pos = new global::openfmb.commonmodule.PhaseDPC();
+          Pos = new global::openfmb.commonmodule.PhaseSPC();
         }
         Pos.MergeFrom(other.Pos);
+      }
+      if (other.tempLmt_ != null) {
+        if (tempLmt_ == null) {
+          TempLmt = new global::openfmb.commonmodule.ControlSPC();
+        }
+        TempLmt.MergeFrom(other.TempLmt);
+      }
+      if (other.tempThdHi_ != null) {
+        if (tempThdHi_ == null) {
+          TempThdHi = new global::openfmb.commonmodule.ControlAPC();
+        }
+        TempThdHi.MergeFrom(other.TempThdHi);
+      }
+      if (other.tempThdLo_ != null) {
+        if (tempThdLo_ == null) {
+          TempThdLo = new global::openfmb.commonmodule.ControlAPC();
+        }
+        TempThdLo.MergeFrom(other.TempThdLo);
+      }
+      if (other.vArLmt_ != null) {
+        if (vArLmt_ == null) {
+          VArLmt = new global::openfmb.commonmodule.PhaseSPC();
+        }
+        VArLmt.MergeFrom(other.VArLmt);
+      }
+      if (other.vArThdHi_ != null) {
+        if (vArThdHi_ == null) {
+          VArThdHi = new global::openfmb.commonmodule.PhaseAPC();
+        }
+        VArThdHi.MergeFrom(other.VArThdHi);
+      }
+      if (other.vArThdLo_ != null) {
+        if (vArThdLo_ == null) {
+          VArThdLo = new global::openfmb.commonmodule.PhaseAPC();
+        }
+        VArThdLo.MergeFrom(other.VArThdLo);
+      }
+      if (other.volLmt_ != null) {
+        if (volLmt_ == null) {
+          VolLmt = new global::openfmb.commonmodule.PhaseSPC();
+        }
+        VolLmt.MergeFrom(other.VolLmt);
+      }
+      if (other.volThdHi_ != null) {
+        if (volThdHi_ == null) {
+          VolThdHi = new global::openfmb.commonmodule.PhaseAPC();
+        }
+        VolThdHi.MergeFrom(other.VolThdHi);
+      }
+      if (other.volThdLo_ != null) {
+        if (volThdLo_ == null) {
+          VolThdLo = new global::openfmb.commonmodule.PhaseAPC();
+        }
+        VolThdLo.MergeFrom(other.VolThdLo);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -464,10 +1031,122 @@ namespace openfmb.capbankmodule {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
+            if (ampLmt_ == null) {
+              AmpLmt = new global::openfmb.commonmodule.PhaseSPC();
+            }
+            input.ReadMessage(AmpLmt);
+            break;
+          }
+          case 18: {
+            if (ampThdHi_ == null) {
+              AmpThdHi = new global::openfmb.commonmodule.PhaseAPC();
+            }
+            input.ReadMessage(AmpThdHi);
+            break;
+          }
+          case 26: {
+            if (ampThdLo_ == null) {
+              AmpThdLo = new global::openfmb.commonmodule.PhaseAPC();
+            }
+            input.ReadMessage(AmpThdLo);
+            break;
+          }
+          case 34: {
+            if (ctlModeAuto_ == null) {
+              CtlModeAuto = new global::openfmb.commonmodule.ControlSPC();
+            }
+            input.ReadMessage(CtlModeAuto);
+            break;
+          }
+          case 42: {
+            if (ctlModeOvrRd_ == null) {
+              CtlModeOvrRd = new global::openfmb.commonmodule.ControlSPC();
+            }
+            input.ReadMessage(CtlModeOvrRd);
+            break;
+          }
+          case 50: {
+            if (ctlModeRem_ == null) {
+              CtlModeRem = new global::openfmb.commonmodule.ControlSPC();
+            }
+            input.ReadMessage(CtlModeRem);
+            break;
+          }
+          case 58: {
+            if (dirMode_ == null) {
+              DirMode = new global::openfmb.commonmodule.Optional_DirectionModeKind();
+            }
+            input.ReadMessage(DirMode);
+            break;
+          }
+          case 66: {
             if (pos_ == null) {
-              Pos = new global::openfmb.commonmodule.PhaseDPC();
+              Pos = new global::openfmb.commonmodule.PhaseSPC();
             }
             input.ReadMessage(Pos);
+            break;
+          }
+          case 74: {
+            if (tempLmt_ == null) {
+              TempLmt = new global::openfmb.commonmodule.ControlSPC();
+            }
+            input.ReadMessage(TempLmt);
+            break;
+          }
+          case 82: {
+            if (tempThdHi_ == null) {
+              TempThdHi = new global::openfmb.commonmodule.ControlAPC();
+            }
+            input.ReadMessage(TempThdHi);
+            break;
+          }
+          case 90: {
+            if (tempThdLo_ == null) {
+              TempThdLo = new global::openfmb.commonmodule.ControlAPC();
+            }
+            input.ReadMessage(TempThdLo);
+            break;
+          }
+          case 98: {
+            if (vArLmt_ == null) {
+              VArLmt = new global::openfmb.commonmodule.PhaseSPC();
+            }
+            input.ReadMessage(VArLmt);
+            break;
+          }
+          case 106: {
+            if (vArThdHi_ == null) {
+              VArThdHi = new global::openfmb.commonmodule.PhaseAPC();
+            }
+            input.ReadMessage(VArThdHi);
+            break;
+          }
+          case 114: {
+            if (vArThdLo_ == null) {
+              VArThdLo = new global::openfmb.commonmodule.PhaseAPC();
+            }
+            input.ReadMessage(VArThdLo);
+            break;
+          }
+          case 122: {
+            if (volLmt_ == null) {
+              VolLmt = new global::openfmb.commonmodule.PhaseSPC();
+            }
+            input.ReadMessage(VolLmt);
+            break;
+          }
+          case 130: {
+            if (volThdHi_ == null) {
+              VolThdHi = new global::openfmb.commonmodule.PhaseAPC();
+            }
+            input.ReadMessage(VolThdHi);
+            break;
+          }
+          case 138: {
+            if (volThdLo_ == null) {
+              VolThdLo = new global::openfmb.commonmodule.PhaseAPC();
+            }
+            input.ReadMessage(VolThdLo);
             break;
           }
         }
@@ -485,10 +1164,122 @@ namespace openfmb.capbankmodule {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
+            if (ampLmt_ == null) {
+              AmpLmt = new global::openfmb.commonmodule.PhaseSPC();
+            }
+            input.ReadMessage(AmpLmt);
+            break;
+          }
+          case 18: {
+            if (ampThdHi_ == null) {
+              AmpThdHi = new global::openfmb.commonmodule.PhaseAPC();
+            }
+            input.ReadMessage(AmpThdHi);
+            break;
+          }
+          case 26: {
+            if (ampThdLo_ == null) {
+              AmpThdLo = new global::openfmb.commonmodule.PhaseAPC();
+            }
+            input.ReadMessage(AmpThdLo);
+            break;
+          }
+          case 34: {
+            if (ctlModeAuto_ == null) {
+              CtlModeAuto = new global::openfmb.commonmodule.ControlSPC();
+            }
+            input.ReadMessage(CtlModeAuto);
+            break;
+          }
+          case 42: {
+            if (ctlModeOvrRd_ == null) {
+              CtlModeOvrRd = new global::openfmb.commonmodule.ControlSPC();
+            }
+            input.ReadMessage(CtlModeOvrRd);
+            break;
+          }
+          case 50: {
+            if (ctlModeRem_ == null) {
+              CtlModeRem = new global::openfmb.commonmodule.ControlSPC();
+            }
+            input.ReadMessage(CtlModeRem);
+            break;
+          }
+          case 58: {
+            if (dirMode_ == null) {
+              DirMode = new global::openfmb.commonmodule.Optional_DirectionModeKind();
+            }
+            input.ReadMessage(DirMode);
+            break;
+          }
+          case 66: {
             if (pos_ == null) {
-              Pos = new global::openfmb.commonmodule.PhaseDPC();
+              Pos = new global::openfmb.commonmodule.PhaseSPC();
             }
             input.ReadMessage(Pos);
+            break;
+          }
+          case 74: {
+            if (tempLmt_ == null) {
+              TempLmt = new global::openfmb.commonmodule.ControlSPC();
+            }
+            input.ReadMessage(TempLmt);
+            break;
+          }
+          case 82: {
+            if (tempThdHi_ == null) {
+              TempThdHi = new global::openfmb.commonmodule.ControlAPC();
+            }
+            input.ReadMessage(TempThdHi);
+            break;
+          }
+          case 90: {
+            if (tempThdLo_ == null) {
+              TempThdLo = new global::openfmb.commonmodule.ControlAPC();
+            }
+            input.ReadMessage(TempThdLo);
+            break;
+          }
+          case 98: {
+            if (vArLmt_ == null) {
+              VArLmt = new global::openfmb.commonmodule.PhaseSPC();
+            }
+            input.ReadMessage(VArLmt);
+            break;
+          }
+          case 106: {
+            if (vArThdHi_ == null) {
+              VArThdHi = new global::openfmb.commonmodule.PhaseAPC();
+            }
+            input.ReadMessage(VArThdHi);
+            break;
+          }
+          case 114: {
+            if (vArThdLo_ == null) {
+              VArThdLo = new global::openfmb.commonmodule.PhaseAPC();
+            }
+            input.ReadMessage(VArThdLo);
+            break;
+          }
+          case 122: {
+            if (volLmt_ == null) {
+              VolLmt = new global::openfmb.commonmodule.PhaseSPC();
+            }
+            input.ReadMessage(VolLmt);
+            break;
+          }
+          case 130: {
+            if (volThdHi_ == null) {
+              VolThdHi = new global::openfmb.commonmodule.PhaseAPC();
+            }
+            input.ReadMessage(VolThdHi);
+            break;
+          }
+          case 138: {
+            if (volThdLo_ == null) {
+              VolThdLo = new global::openfmb.commonmodule.PhaseAPC();
+            }
+            input.ReadMessage(VolThdLo);
             break;
           }
         }
@@ -1922,7 +2713,7 @@ namespace openfmb.capbankmodule {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public CapBankDiscreteControlYPSH(CapBankDiscreteControlYPSH other) : this() {
       logicalNodeForControl_ = other.logicalNodeForControl_ != null ? other.logicalNodeForControl_.Clone() : null;
-      pos_ = other.pos_ != null ? other.pos_.Clone() : null;
+      control_ = other.control_ != null ? other.control_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1945,17 +2736,17 @@ namespace openfmb.capbankmodule {
       }
     }
 
-    /// <summary>Field number for the "Pos" field.</summary>
-    public const int PosFieldNumber = 2;
-    private global::openfmb.commonmodule.PhaseDPC pos_;
+    /// <summary>Field number for the "control" field.</summary>
+    public const int ControlFieldNumber = 2;
+    private global::openfmb.capbankmodule.CapBankControlYPSH control_;
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.PhaseDPC Pos {
-      get { return pos_; }
+    public global::openfmb.capbankmodule.CapBankControlYPSH Control {
+      get { return control_; }
       set {
-        pos_ = value;
+        control_ = value;
       }
     }
 
@@ -1973,7 +2764,7 @@ namespace openfmb.capbankmodule {
         return true;
       }
       if (!object.Equals(LogicalNodeForControl, other.LogicalNodeForControl)) return false;
-      if (!object.Equals(Pos, other.Pos)) return false;
+      if (!object.Equals(Control, other.Control)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1981,7 +2772,7 @@ namespace openfmb.capbankmodule {
     public override int GetHashCode() {
       int hash = 1;
       if (logicalNodeForControl_ != null) hash ^= LogicalNodeForControl.GetHashCode();
-      if (pos_ != null) hash ^= Pos.GetHashCode();
+      if (control_ != null) hash ^= Control.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2002,9 +2793,9 @@ namespace openfmb.capbankmodule {
         output.WriteRawTag(10);
         output.WriteMessage(LogicalNodeForControl);
       }
-      if (pos_ != null) {
+      if (control_ != null) {
         output.WriteRawTag(18);
-        output.WriteMessage(Pos);
+        output.WriteMessage(Control);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -2019,9 +2810,9 @@ namespace openfmb.capbankmodule {
         output.WriteRawTag(10);
         output.WriteMessage(LogicalNodeForControl);
       }
-      if (pos_ != null) {
+      if (control_ != null) {
         output.WriteRawTag(18);
-        output.WriteMessage(Pos);
+        output.WriteMessage(Control);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -2035,8 +2826,8 @@ namespace openfmb.capbankmodule {
       if (logicalNodeForControl_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(LogicalNodeForControl);
       }
-      if (pos_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Pos);
+      if (control_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Control);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2055,11 +2846,11 @@ namespace openfmb.capbankmodule {
         }
         LogicalNodeForControl.MergeFrom(other.LogicalNodeForControl);
       }
-      if (other.pos_ != null) {
-        if (pos_ == null) {
-          Pos = new global::openfmb.commonmodule.PhaseDPC();
+      if (other.control_ != null) {
+        if (control_ == null) {
+          Control = new global::openfmb.capbankmodule.CapBankControlYPSH();
         }
-        Pos.MergeFrom(other.Pos);
+        Control.MergeFrom(other.Control);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2083,10 +2874,10 @@ namespace openfmb.capbankmodule {
             break;
           }
           case 18: {
-            if (pos_ == null) {
-              Pos = new global::openfmb.commonmodule.PhaseDPC();
+            if (control_ == null) {
+              Control = new global::openfmb.capbankmodule.CapBankControlYPSH();
             }
-            input.ReadMessage(Pos);
+            input.ReadMessage(Control);
             break;
           }
         }
@@ -2111,10 +2902,10 @@ namespace openfmb.capbankmodule {
             break;
           }
           case 18: {
-            if (pos_ == null) {
-              Pos = new global::openfmb.commonmodule.PhaseDPC();
+            if (control_ == null) {
+              Control = new global::openfmb.capbankmodule.CapBankControlYPSH();
             }
-            input.ReadMessage(Pos);
+            input.ReadMessage(Control);
             break;
           }
         }
@@ -2724,8 +3515,14 @@ namespace openfmb.capbankmodule {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public CapBankEventAndStatusYPSH(CapBankEventAndStatusYPSH other) : this() {
       logicalNodeForEventAndStatus_ = other.logicalNodeForEventAndStatus_ != null ? other.logicalNodeForEventAndStatus_.Clone() : null;
+      ampLmt_ = other.ampLmt_ != null ? other.ampLmt_.Clone() : null;
+      ctlMode_ = other.ctlMode_ != null ? other.ctlMode_.Clone() : null;
+      dirRev_ = other.dirRev_ != null ? other.dirRev_.Clone() : null;
       dynamicTest_ = other.dynamicTest_ != null ? other.dynamicTest_.Clone() : null;
       pos_ = other.pos_ != null ? other.pos_.Clone() : null;
+      tempLmt_ = other.tempLmt_ != null ? other.tempLmt_.Clone() : null;
+      vArLmt_ = other.vArLmt_ != null ? other.vArLmt_.Clone() : null;
+      volLmt_ = other.volLmt_ != null ? other.volLmt_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2748,8 +3545,50 @@ namespace openfmb.capbankmodule {
       }
     }
 
+    /// <summary>Field number for the "AmpLmt" field.</summary>
+    public const int AmpLmtFieldNumber = 2;
+    private global::openfmb.commonmodule.PhaseSPS ampLmt_;
+    /// <summary>
+    /// True if current limit (high, low, or both) are set
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.PhaseSPS AmpLmt {
+      get { return ampLmt_; }
+      set {
+        ampLmt_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "CtlMode" field.</summary>
+    public const int CtlModeFieldNumber = 3;
+    private global::openfmb.commonmodule.Optional_ControlModeKind ctlMode_;
+    /// <summary>
+    /// Control mode
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.Optional_ControlModeKind CtlMode {
+      get { return ctlMode_; }
+      set {
+        ctlMode_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "DirRev" field.</summary>
+    public const int DirRevFieldNumber = 4;
+    private global::openfmb.commonmodule.PhaseSPS dirRev_;
+    /// <summary>
+    /// True if power flow is reversed
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.PhaseSPS DirRev {
+      get { return dirRev_; }
+      set {
+        dirRev_ = value;
+      }
+    }
+
     /// <summary>Field number for the "DynamicTest" field.</summary>
-    public const int DynamicTestFieldNumber = 2;
+    public const int DynamicTestFieldNumber = 5;
     private global::openfmb.commonmodule.ENS_DynamicTestKind dynamicTest_;
     /// <summary>
     /// MISSING DOCUMENTATION!!!
@@ -2763,7 +3602,7 @@ namespace openfmb.capbankmodule {
     }
 
     /// <summary>Field number for the "Pos" field.</summary>
-    public const int PosFieldNumber = 3;
+    public const int PosFieldNumber = 6;
     private global::openfmb.commonmodule.PhaseDPS pos_;
     /// <summary>
     /// (controllable) Position of the switch of power shunt.
@@ -2773,6 +3612,48 @@ namespace openfmb.capbankmodule {
       get { return pos_; }
       set {
         pos_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "TempLmt" field.</summary>
+    public const int TempLmtFieldNumber = 7;
+    private global::openfmb.commonmodule.PhaseSPS tempLmt_;
+    /// <summary>
+    /// True if temperature limit (high, low, or both) are set
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.PhaseSPS TempLmt {
+      get { return tempLmt_; }
+      set {
+        tempLmt_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "VArLmt" field.</summary>
+    public const int VArLmtFieldNumber = 8;
+    private global::openfmb.commonmodule.PhaseSPS vArLmt_;
+    /// <summary>
+    /// True if VAr limit (high, low, or both) are set
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.PhaseSPS VArLmt {
+      get { return vArLmt_; }
+      set {
+        vArLmt_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "VolLmt" field.</summary>
+    public const int VolLmtFieldNumber = 9;
+    private global::openfmb.commonmodule.PhaseSPS volLmt_;
+    /// <summary>
+    /// True if voltage limit (high, low, or both) are set
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.PhaseSPS VolLmt {
+      get { return volLmt_; }
+      set {
+        volLmt_ = value;
       }
     }
 
@@ -2790,8 +3671,14 @@ namespace openfmb.capbankmodule {
         return true;
       }
       if (!object.Equals(LogicalNodeForEventAndStatus, other.LogicalNodeForEventAndStatus)) return false;
+      if (!object.Equals(AmpLmt, other.AmpLmt)) return false;
+      if (!object.Equals(CtlMode, other.CtlMode)) return false;
+      if (!object.Equals(DirRev, other.DirRev)) return false;
       if (!object.Equals(DynamicTest, other.DynamicTest)) return false;
       if (!object.Equals(Pos, other.Pos)) return false;
+      if (!object.Equals(TempLmt, other.TempLmt)) return false;
+      if (!object.Equals(VArLmt, other.VArLmt)) return false;
+      if (!object.Equals(VolLmt, other.VolLmt)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2799,8 +3686,14 @@ namespace openfmb.capbankmodule {
     public override int GetHashCode() {
       int hash = 1;
       if (logicalNodeForEventAndStatus_ != null) hash ^= LogicalNodeForEventAndStatus.GetHashCode();
+      if (ampLmt_ != null) hash ^= AmpLmt.GetHashCode();
+      if (ctlMode_ != null) hash ^= CtlMode.GetHashCode();
+      if (dirRev_ != null) hash ^= DirRev.GetHashCode();
       if (dynamicTest_ != null) hash ^= DynamicTest.GetHashCode();
       if (pos_ != null) hash ^= Pos.GetHashCode();
+      if (tempLmt_ != null) hash ^= TempLmt.GetHashCode();
+      if (vArLmt_ != null) hash ^= VArLmt.GetHashCode();
+      if (volLmt_ != null) hash ^= VolLmt.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2821,13 +3714,37 @@ namespace openfmb.capbankmodule {
         output.WriteRawTag(10);
         output.WriteMessage(LogicalNodeForEventAndStatus);
       }
-      if (dynamicTest_ != null) {
+      if (ampLmt_ != null) {
         output.WriteRawTag(18);
+        output.WriteMessage(AmpLmt);
+      }
+      if (ctlMode_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(CtlMode);
+      }
+      if (dirRev_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(DirRev);
+      }
+      if (dynamicTest_ != null) {
+        output.WriteRawTag(42);
         output.WriteMessage(DynamicTest);
       }
       if (pos_ != null) {
-        output.WriteRawTag(26);
+        output.WriteRawTag(50);
         output.WriteMessage(Pos);
+      }
+      if (tempLmt_ != null) {
+        output.WriteRawTag(58);
+        output.WriteMessage(TempLmt);
+      }
+      if (vArLmt_ != null) {
+        output.WriteRawTag(66);
+        output.WriteMessage(VArLmt);
+      }
+      if (volLmt_ != null) {
+        output.WriteRawTag(74);
+        output.WriteMessage(VolLmt);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -2842,13 +3759,37 @@ namespace openfmb.capbankmodule {
         output.WriteRawTag(10);
         output.WriteMessage(LogicalNodeForEventAndStatus);
       }
-      if (dynamicTest_ != null) {
+      if (ampLmt_ != null) {
         output.WriteRawTag(18);
+        output.WriteMessage(AmpLmt);
+      }
+      if (ctlMode_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(CtlMode);
+      }
+      if (dirRev_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(DirRev);
+      }
+      if (dynamicTest_ != null) {
+        output.WriteRawTag(42);
         output.WriteMessage(DynamicTest);
       }
       if (pos_ != null) {
-        output.WriteRawTag(26);
+        output.WriteRawTag(50);
         output.WriteMessage(Pos);
+      }
+      if (tempLmt_ != null) {
+        output.WriteRawTag(58);
+        output.WriteMessage(TempLmt);
+      }
+      if (vArLmt_ != null) {
+        output.WriteRawTag(66);
+        output.WriteMessage(VArLmt);
+      }
+      if (volLmt_ != null) {
+        output.WriteRawTag(74);
+        output.WriteMessage(VolLmt);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -2862,11 +3803,29 @@ namespace openfmb.capbankmodule {
       if (logicalNodeForEventAndStatus_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(LogicalNodeForEventAndStatus);
       }
+      if (ampLmt_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(AmpLmt);
+      }
+      if (ctlMode_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CtlMode);
+      }
+      if (dirRev_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(DirRev);
+      }
       if (dynamicTest_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(DynamicTest);
       }
       if (pos_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Pos);
+      }
+      if (tempLmt_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(TempLmt);
+      }
+      if (vArLmt_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(VArLmt);
+      }
+      if (volLmt_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(VolLmt);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2885,6 +3844,24 @@ namespace openfmb.capbankmodule {
         }
         LogicalNodeForEventAndStatus.MergeFrom(other.LogicalNodeForEventAndStatus);
       }
+      if (other.ampLmt_ != null) {
+        if (ampLmt_ == null) {
+          AmpLmt = new global::openfmb.commonmodule.PhaseSPS();
+        }
+        AmpLmt.MergeFrom(other.AmpLmt);
+      }
+      if (other.ctlMode_ != null) {
+        if (ctlMode_ == null) {
+          CtlMode = new global::openfmb.commonmodule.Optional_ControlModeKind();
+        }
+        CtlMode.MergeFrom(other.CtlMode);
+      }
+      if (other.dirRev_ != null) {
+        if (dirRev_ == null) {
+          DirRev = new global::openfmb.commonmodule.PhaseSPS();
+        }
+        DirRev.MergeFrom(other.DirRev);
+      }
       if (other.dynamicTest_ != null) {
         if (dynamicTest_ == null) {
           DynamicTest = new global::openfmb.commonmodule.ENS_DynamicTestKind();
@@ -2896,6 +3873,24 @@ namespace openfmb.capbankmodule {
           Pos = new global::openfmb.commonmodule.PhaseDPS();
         }
         Pos.MergeFrom(other.Pos);
+      }
+      if (other.tempLmt_ != null) {
+        if (tempLmt_ == null) {
+          TempLmt = new global::openfmb.commonmodule.PhaseSPS();
+        }
+        TempLmt.MergeFrom(other.TempLmt);
+      }
+      if (other.vArLmt_ != null) {
+        if (vArLmt_ == null) {
+          VArLmt = new global::openfmb.commonmodule.PhaseSPS();
+        }
+        VArLmt.MergeFrom(other.VArLmt);
+      }
+      if (other.volLmt_ != null) {
+        if (volLmt_ == null) {
+          VolLmt = new global::openfmb.commonmodule.PhaseSPS();
+        }
+        VolLmt.MergeFrom(other.VolLmt);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2919,17 +3914,59 @@ namespace openfmb.capbankmodule {
             break;
           }
           case 18: {
+            if (ampLmt_ == null) {
+              AmpLmt = new global::openfmb.commonmodule.PhaseSPS();
+            }
+            input.ReadMessage(AmpLmt);
+            break;
+          }
+          case 26: {
+            if (ctlMode_ == null) {
+              CtlMode = new global::openfmb.commonmodule.Optional_ControlModeKind();
+            }
+            input.ReadMessage(CtlMode);
+            break;
+          }
+          case 34: {
+            if (dirRev_ == null) {
+              DirRev = new global::openfmb.commonmodule.PhaseSPS();
+            }
+            input.ReadMessage(DirRev);
+            break;
+          }
+          case 42: {
             if (dynamicTest_ == null) {
               DynamicTest = new global::openfmb.commonmodule.ENS_DynamicTestKind();
             }
             input.ReadMessage(DynamicTest);
             break;
           }
-          case 26: {
+          case 50: {
             if (pos_ == null) {
               Pos = new global::openfmb.commonmodule.PhaseDPS();
             }
             input.ReadMessage(Pos);
+            break;
+          }
+          case 58: {
+            if (tempLmt_ == null) {
+              TempLmt = new global::openfmb.commonmodule.PhaseSPS();
+            }
+            input.ReadMessage(TempLmt);
+            break;
+          }
+          case 66: {
+            if (vArLmt_ == null) {
+              VArLmt = new global::openfmb.commonmodule.PhaseSPS();
+            }
+            input.ReadMessage(VArLmt);
+            break;
+          }
+          case 74: {
+            if (volLmt_ == null) {
+              VolLmt = new global::openfmb.commonmodule.PhaseSPS();
+            }
+            input.ReadMessage(VolLmt);
             break;
           }
         }
@@ -2954,17 +3991,59 @@ namespace openfmb.capbankmodule {
             break;
           }
           case 18: {
+            if (ampLmt_ == null) {
+              AmpLmt = new global::openfmb.commonmodule.PhaseSPS();
+            }
+            input.ReadMessage(AmpLmt);
+            break;
+          }
+          case 26: {
+            if (ctlMode_ == null) {
+              CtlMode = new global::openfmb.commonmodule.Optional_ControlModeKind();
+            }
+            input.ReadMessage(CtlMode);
+            break;
+          }
+          case 34: {
+            if (dirRev_ == null) {
+              DirRev = new global::openfmb.commonmodule.PhaseSPS();
+            }
+            input.ReadMessage(DirRev);
+            break;
+          }
+          case 42: {
             if (dynamicTest_ == null) {
               DynamicTest = new global::openfmb.commonmodule.ENS_DynamicTestKind();
             }
             input.ReadMessage(DynamicTest);
             break;
           }
-          case 26: {
+          case 50: {
             if (pos_ == null) {
               Pos = new global::openfmb.commonmodule.PhaseDPS();
             }
             input.ReadMessage(Pos);
+            break;
+          }
+          case 58: {
+            if (tempLmt_ == null) {
+              TempLmt = new global::openfmb.commonmodule.PhaseSPS();
+            }
+            input.ReadMessage(TempLmt);
+            break;
+          }
+          case 66: {
+            if (vArLmt_ == null) {
+              VArLmt = new global::openfmb.commonmodule.PhaseSPS();
+            }
+            input.ReadMessage(VArLmt);
+            break;
+          }
+          case 74: {
+            if (volLmt_ == null) {
+              VolLmt = new global::openfmb.commonmodule.PhaseSPS();
+            }
+            input.ReadMessage(VolLmt);
             break;
           }
         }
@@ -3528,6 +4607,7 @@ namespace openfmb.capbankmodule {
       phaseMMTN_ = other.phaseMMTN_ != null ? other.phaseMMTN_.Clone() : null;
       readingMMTR_ = other.readingMMTR_ != null ? other.readingMMTR_.Clone() : null;
       readingMMXU_ = other.readingMMXU_ != null ? other.readingMMXU_.Clone() : null;
+      secondaryReadingMMXU_ = other.secondaryReadingMMXU_ != null ? other.secondaryReadingMMXU_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -3592,6 +4672,20 @@ namespace openfmb.capbankmodule {
       }
     }
 
+    /// <summary>Field number for the "secondaryReadingMMXU" field.</summary>
+    public const int SecondaryReadingMMXUFieldNumber = 5;
+    private global::openfmb.commonmodule.ReadingMMXU secondaryReadingMMXU_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.ReadingMMXU SecondaryReadingMMXU {
+      get { return secondaryReadingMMXU_; }
+      set {
+        secondaryReadingMMXU_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as CapBankReading);
@@ -3609,6 +4703,7 @@ namespace openfmb.capbankmodule {
       if (!object.Equals(PhaseMMTN, other.PhaseMMTN)) return false;
       if (!object.Equals(ReadingMMTR, other.ReadingMMTR)) return false;
       if (!object.Equals(ReadingMMXU, other.ReadingMMXU)) return false;
+      if (!object.Equals(SecondaryReadingMMXU, other.SecondaryReadingMMXU)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -3619,6 +4714,7 @@ namespace openfmb.capbankmodule {
       if (phaseMMTN_ != null) hash ^= PhaseMMTN.GetHashCode();
       if (readingMMTR_ != null) hash ^= ReadingMMTR.GetHashCode();
       if (readingMMXU_ != null) hash ^= ReadingMMXU.GetHashCode();
+      if (secondaryReadingMMXU_ != null) hash ^= SecondaryReadingMMXU.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -3651,6 +4747,10 @@ namespace openfmb.capbankmodule {
         output.WriteRawTag(34);
         output.WriteMessage(ReadingMMXU);
       }
+      if (secondaryReadingMMXU_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(SecondaryReadingMMXU);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -3676,6 +4776,10 @@ namespace openfmb.capbankmodule {
         output.WriteRawTag(34);
         output.WriteMessage(ReadingMMXU);
       }
+      if (secondaryReadingMMXU_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(SecondaryReadingMMXU);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -3696,6 +4800,9 @@ namespace openfmb.capbankmodule {
       }
       if (readingMMXU_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ReadingMMXU);
+      }
+      if (secondaryReadingMMXU_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SecondaryReadingMMXU);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -3731,6 +4838,12 @@ namespace openfmb.capbankmodule {
           ReadingMMXU = new global::openfmb.commonmodule.ReadingMMXU();
         }
         ReadingMMXU.MergeFrom(other.ReadingMMXU);
+      }
+      if (other.secondaryReadingMMXU_ != null) {
+        if (secondaryReadingMMXU_ == null) {
+          SecondaryReadingMMXU = new global::openfmb.commonmodule.ReadingMMXU();
+        }
+        SecondaryReadingMMXU.MergeFrom(other.SecondaryReadingMMXU);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -3774,6 +4887,13 @@ namespace openfmb.capbankmodule {
             input.ReadMessage(ReadingMMXU);
             break;
           }
+          case 42: {
+            if (secondaryReadingMMXU_ == null) {
+              SecondaryReadingMMXU = new global::openfmb.commonmodule.ReadingMMXU();
+            }
+            input.ReadMessage(SecondaryReadingMMXU);
+            break;
+          }
         }
       }
     #endif
@@ -3814,6 +4934,13 @@ namespace openfmb.capbankmodule {
               ReadingMMXU = new global::openfmb.commonmodule.ReadingMMXU();
             }
             input.ReadMessage(ReadingMMXU);
+            break;
+          }
+          case 42: {
+            if (secondaryReadingMMXU_ == null) {
+              SecondaryReadingMMXU = new global::openfmb.commonmodule.ReadingMMXU();
+            }
+            input.ReadMessage(SecondaryReadingMMXU);
             break;
           }
         }

@@ -190,7 +190,7 @@ namespace OpenFMB.Adapters.Core.Models
         public Node GetSchemaByPath(string path, JSchemaType? schemaType)
         {
             List<Node> nodes;
-            
+
             path = Utils.ReplaceWithIndexZeroArray(path);
 
             if (_schemaLookup.TryGetValue(path, out nodes))
@@ -209,80 +209,67 @@ namespace OpenFMB.Adapters.Core.Models
         }
 
         public Node GetSchemaByPath(Node targetNode, JSchemaType? schemaType)
-        {            
-            var path = targetNode.Path;
-
+        {
             List<Node> nodes;
 
-            path = Utils.ReplaceWithIndexZeroArray(path);
+            var path = Utils.ReplaceWithIndexZeroArray(targetNode.Path);
+
+            if (schemaType == JSchemaType.Array)
+            {
+                if (!path.EndsWith(".[0]"))
+                {
+                    path = path + ".[0]";
+                }
+            }                        
 
             if (_schemaLookup.TryGetValue(path, out nodes))
             {
-                if (nodes.Count == 1)
+                if (nodes.Count > 1)
                 {
-                    return nodes.FirstOrDefault();
-                }
-
-                var node = nodes.LastOrDefault(x => (x.Schema.Type == schemaType || !x.Schema.Type.HasValue) && x.Schema.Const?.ToString() == targetNode.Value);
-                
-                if (node == null)
-                {
-                    // Siblings
                     if (targetNode.Parent != null)
                     {
-                        foreach(var sibling in targetNode.Parent.Nodes.Where(n => n != targetNode))
+                        List<Node> parentNodes;
+                        var parentPath = Utils.ReplaceWithIndexZeroArray(targetNode.Parent.Path);
+                        if (_schemaLookup.TryGetValue(parentPath, out parentNodes))
                         {
-                            if (targetNode.Parent.Schema.Type == JSchemaType.Array)
+                            var parentNode = parentNodes.FirstOrDefault();
+                            if (parentNode != null)
                             {
-                                foreach (var item in targetNode.Parent.Schema.Items)
+                                var child = parentNode.Nodes.FirstOrDefault(x => x.Schema.Const?.ToString() == targetNode.Value);
+                                if (child != null)
                                 {
-                                    JSchema schema;
-                                    if (item.Properties.TryGetValue(sibling.Name, out schema))
-                                    {
-                                        if (item.Properties.TryGetValue(targetNode.Name, out schema))
-                                        {
-                                            node = nodes.FirstOrDefault(x => x.Schema == schema);
-                                            if (node != null)
-                                            {
-                                                return node;
-                                            }
-                                        }
-                                    }
+                                    return child;
                                 }
-                            }
-                            else
-                            {
-                                foreach (var oneOf in targetNode.Parent.Schema.OneOf)
-                                {
-                                    JSchema schema;
-                                    if (oneOf.Properties.TryGetValue(sibling.Name, out schema))
-                                    {
-                                        if (schema.Const?.ToString() == sibling.Value)
+                                else
+                                {                                    
+                                    foreach(var sibling in targetNode.Parent.Nodes)
+                                    {                                        
+                                        if (sibling != targetNode)
                                         {
-                                            if (oneOf.Properties.TryGetValue(targetNode.Name, out schema))
+                                            var temp = parentNode.Nodes.FirstOrDefault(x => x.Schema.Const?.ToString() == sibling.Value);
+                                            if (temp != null)
                                             {
-                                                node = nodes.FirstOrDefault(x => x.Schema == schema);
-                                                if (node != null)
-                                                {
-                                                    return node;
-                                                }
+                                                var index = parentNode.Nodes.IndexOf(temp);
+                                                var subList = parentNode.Nodes.GetRange(index, parentNode.Nodes.Count - index);
+                                                return subList.FirstOrDefault(x => x.Name == targetNode.Name);
                                             }
                                         }
                                     }
+
+                                    return nodes.FirstOrDefault();
                                 }
                             }
                         }
-                    }
-                    if (node != null)
-                    {
-                        return node;
-                    }
-                    return nodes.LastOrDefault();
+                        else
+                        {
+                            return nodes.FirstOrDefault();
+                        }
+                    }                    
                 }
                 else
                 {
-                    return node;
-                }
+                    return nodes.FirstOrDefault();
+                }                
             }
             return null;
         }
@@ -376,7 +363,7 @@ namespace OpenFMB.Adapters.Core.Models
             {
                 if (nodeParent.Schema == null)
                 {
-                    nodeParent.Schema = GetSchemaByPath(nodeParent.Path, token.SchemaType())?.Schema;
+                    nodeParent.Schema = GetSchemaByPath(nodeParent, token.SchemaType())?.Schema;
                 }
             }
             else if (token is JObject)
@@ -388,11 +375,11 @@ namespace OpenFMB.Adapters.Core.Models
                     childNode.Tag = property;
                     childNode.Parent = nodeParent;
                     nodeParent.Nodes.Add(childNode);
-                    childNode.Schema = GetSchemaByPath(childNode.Path, property.Value.SchemaType())?.Schema;
-                    if (childNode.Schema == null)
-                    {
-                        childNode.Schema = GetSchemaByPath(childNode.Path + ".[0]", property.Value.SchemaType())?.Schema;
-                    }
+                    childNode.Schema = GetSchemaByPath(childNode, property.Value.SchemaType())?.Schema;
+                    //if (childNode.Schema == null)
+                    //{
+                    //    childNode.Schema = GetSchemaByPath(childNode.Path + ".[0]", property.Value.SchemaType())?.Schema;
+                    //}
 
                     AddNode(property.Value, childNode);
                 }
@@ -407,7 +394,7 @@ namespace OpenFMB.Adapters.Core.Models
                     childNode.Tag = array[i];
                     childNode.Parent = nodeParent;
                     nodeParent.Nodes.Add(childNode);
-                    childNode.Schema = GetSchemaByPath(childNode.Path, token.SchemaType())?.Schema;                   
+                    childNode.Schema = GetSchemaByPath(childNode, token.SchemaType())?.Schema;                   
 
                     AddNode(array[i], childNode);
                 }
@@ -424,7 +411,7 @@ namespace OpenFMB.Adapters.Core.Models
                         childNode.Tag = array[i];
                         childNode.Parent = nodeParent;
                         nodeParent.Nodes.Add(childNode);
-                        childNode.Schema = GetSchemaByPath(childNode.Path, token.SchemaType())?.Schema;
+                        childNode.Schema = GetSchemaByPath(childNode, token.SchemaType())?.Schema;
                     }
                 }
             }
@@ -441,21 +428,12 @@ namespace OpenFMB.Adapters.Core.Models
                 var obj = Token as JObject;
                 if (obj.ContainsKey("command-order"))
                 {
-                    List<string> existings = new List<string>();
-
-                    var array = obj["command-order"] as JArray; 
-                    
-                    foreach(var a in array)
-                    {
-                        existings.Add((a as JValue)?.Value?.ToString());
-                    }
-                    existings = existings.Union(allCommandId).ToList();
-
+                    var array = obj["command-order"] as JArray;                    
                     array.Clear();
 
-                    for (int i = 0; i < existings.Count; ++i)
+                    for (int i = 0; i < allCommandId.Count; ++i)
                     {
-                        var value = new JValue(existings[i]);
+                        var value = new JValue(allCommandId[i]);
                         array.Add(value);                        
                     }
 

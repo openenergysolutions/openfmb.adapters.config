@@ -25,75 +25,77 @@ namespace openfmb.loadmodule {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Chtsb2FkbW9kdWxlL2xvYWRtb2R1bGUucHJvdG8SCmxvYWRtb2R1bGUaCXVt",
-            "bC5wcm90bxofY29tbW9ubW9kdWxlL2NvbW1vbm1vZHVsZS5wcm90byLFAgoJ",
-            "TG9hZFBvaW50EikKCXJhbXBSYXRlcxgBIAEoCzIWLmNvbW1vbm1vZHVsZS5S",
-            "YW1wUmF0ZRI8ChpyZWFjdGl2ZVB3clNldFBvaW50RW5hYmxlZBgCIAEoCzIY",
-            "LmNvbW1vbm1vZHVsZS5Db250cm9sRFBDEjgKFnJlYWxQd3JTZXRQb2ludEVu",
-            "YWJsZWQYAyABKAsyGC5jb21tb25tb2R1bGUuQ29udHJvbERQQxInCgVyZXNl",
-            "dBgEIAEoCzIYLmNvbW1vbm1vZHVsZS5Db250cm9sRFBDEi8KBXN0YXRlGAUg",
-            "ASgLMiAuY29tbW9ubW9kdWxlLk9wdGlvbmFsX1N0YXRlS2luZBI7CglzdGFy",
-            "dFRpbWUYBiABKAsyHi5jb21tb25tb2R1bGUuQ29udHJvbFRpbWVzdGFtcEII",
-            "iLUYAZC1GAEiOgoHTG9hZENTRxIvCgZjcnZQdHMYASADKAsyFS5sb2FkbW9k",
-            "dWxlLkxvYWRQb2ludEIIiLUYAZC1GAEiSQoXTG9hZENvbnRyb2xTY2hlZHVs",
-            "ZUZTQ0gSLgoHVmFsRENTRxgBIAEoCzITLmxvYWRtb2R1bGUuTG9hZENTR0II",
-            "iLUYAZC1GAEijQEKD0xvYWRDb250cm9sRlNDQxI0Cgtjb250cm9sRlNDQxgB",
-            "IAEoCzIZLmNvbW1vbm1vZHVsZS5Db250cm9sRlNDQ0IEgLUYARJEChdsb2Fk",
-            "Q29udHJvbFNjaGVkdWxlRlNDSBgCIAEoCzIjLmxvYWRtb2R1bGUuTG9hZENv",
-            "bnRyb2xTY2hlZHVsZUZTQ0giqQEKC0xvYWRDb250cm9sEjYKDGNvbnRyb2xW",
-            "YWx1ZRgBIAEoCzIaLmNvbW1vbm1vZHVsZS5Db250cm9sVmFsdWVCBIC1GAES",
-            "LAoFY2hlY2sYAiABKAsyHS5jb21tb25tb2R1bGUuQ2hlY2tDb25kaXRpb25z",
-            "EjQKD2xvYWRDb250cm9sRlNDQxgDIAEoCzIbLmxvYWRtb2R1bGUuTG9hZENv",
-            "bnRyb2xGU0NDItYBChJMb2FkQ29udHJvbFByb2ZpbGUSQgoSY29udHJvbE1l",
-            "c3NhZ2VJbmZvGAEgASgLMiAuY29tbW9ubW9kdWxlLkNvbnRyb2xNZXNzYWdl",
-            "SW5mb0IEgLUYARI+Cg5lbmVyZ3lDb25zdW1lchgCIAEoCzIcLmNvbW1vbm1v",
-            "ZHVsZS5FbmVyZ3lDb25zdW1lckIIiLUYAZC1GAESNgoLbG9hZENvbnRyb2wY",
-            "AyABKAsyFy5sb2FkbW9kdWxlLkxvYWRDb250cm9sQgiItRgBkLUYAToEwPMY",
-            "ASKLAgoPTG9hZFBvaW50U3RhdHVzEikKCXJhbXBSYXRlcxgBIAEoCzIWLmNv",
-            "bW1vbm1vZHVsZS5SYW1wUmF0ZRI7ChpyZWFjdGl2ZVB3clNldFBvaW50RW5h",
-            "YmxlZBgCIAEoCzIXLmNvbW1vbm1vZHVsZS5TdGF0dXNEUFMSNwoWcmVhbFB3",
-            "clNldFBvaW50RW5hYmxlZBgDIAEoCzIXLmNvbW1vbm1vZHVsZS5TdGF0dXNE",
-            "UFMSJgoFcmVzZXQYBCABKAsyFy5jb21tb25tb2R1bGUuU3RhdHVzRFBTEi8K",
-            "BXN0YXRlGAUgASgLMiAuY29tbW9ubW9kdWxlLk9wdGlvbmFsX1N0YXRlS2lu",
-            "ZCKEAgoWTG9hZEV2ZW50QW5kU3RhdHVzWkdMRBJWChxsb2dpY2FsTm9kZUZv",
-            "ckV2ZW50QW5kU3RhdHVzGAEgASgLMiouY29tbW9ubW9kdWxlLkxvZ2ljYWxO",
-            "b2RlRm9yRXZlbnRBbmRTdGF0dXNCBIC1GAESNgoLRHluYW1pY1Rlc3QYAiAB",
-            "KAsyIS5jb21tb25tb2R1bGUuRU5TX0R5bmFtaWNUZXN0S2luZBIoCgdFbWdT",
-            "dG9wGAMgASgLMhcuY29tbW9ubW9kdWxlLlN0YXR1c1NQUxIwCgtQb2ludFN0",
-            "YXR1cxgEIAEoCzIbLmxvYWRtb2R1bGUuTG9hZFBvaW50U3RhdHVzIlkKDUxv",
-            "YWRFdmVudFpHTEQSSAoWbG9hZEV2ZW50QW5kU3RhdHVzWkdMRBgBIAEoCzIi",
-            "LmxvYWRtb2R1bGUuTG9hZEV2ZW50QW5kU3RhdHVzWkdMREIEgLUYASJxCglM",
-            "b2FkRXZlbnQSMgoKZXZlbnRWYWx1ZRgBIAEoCzIYLmNvbW1vbm1vZHVsZS5F",
-            "dmVudFZhbHVlQgSAtRgBEjAKDWxvYWRFdmVudFpHTEQYAiABKAsyGS5sb2Fk",
-            "bW9kdWxlLkxvYWRFdmVudFpHTEQizAEKEExvYWRFdmVudFByb2ZpbGUSPgoQ",
-            "ZXZlbnRNZXNzYWdlSW5mbxgBIAEoCzIeLmNvbW1vbm1vZHVsZS5FdmVudE1l",
-            "c3NhZ2VJbmZvQgSAtRgBEj4KDmVuZXJneUNvbnN1bWVyGAIgASgLMhwuY29t",
-            "bW9ubW9kdWxlLkVuZXJneUNvbnN1bWVyQgiItRgBkLUYARIyCglsb2FkRXZl",
-            "bnQYAyABKAsyFS5sb2FkbW9kdWxlLkxvYWRFdmVudEIIiLUYAZC1GAE6BMDz",
-            "GAEi/QEKC0xvYWRSZWFkaW5nEmIKImNvbmR1Y3RpbmdFcXVpcG1lbnRUZXJt",
-            "aW5hbFJlYWRpbmcYASABKAsyMC5jb21tb25tb2R1bGUuQ29uZHVjdGluZ0Vx",
-            "dWlwbWVudFRlcm1pbmFsUmVhZGluZ0IEgLUYARIqCglwaGFzZU1NVE4YAiAB",
-            "KAsyFy5jb21tb25tb2R1bGUuUGhhc2VNTVROEi4KC3JlYWRpbmdNTVRSGAMg",
-            "ASgLMhkuY29tbW9ubW9kdWxlLlJlYWRpbmdNTVRSEi4KC3JlYWRpbmdNTVhV",
-            "GAQgASgLMhkuY29tbW9ubW9kdWxlLlJlYWRpbmdNTVhVItYBChJMb2FkUmVh",
-            "ZGluZ1Byb2ZpbGUSQgoScmVhZGluZ01lc3NhZ2VJbmZvGAEgASgLMiAuY29t",
-            "bW9ubW9kdWxlLlJlYWRpbmdNZXNzYWdlSW5mb0IEgLUYARI+Cg5lbmVyZ3lD",
-            "b25zdW1lchgCIAEoCzIcLmNvbW1vbm1vZHVsZS5FbmVyZ3lDb25zdW1lckII",
-            "iLUYAZC1GAESNgoLbG9hZFJlYWRpbmcYAyABKAsyFy5sb2FkbW9kdWxlLkxv",
-            "YWRSZWFkaW5nQgiItRgBkLUYAToEwPMYASJaCg5Mb2FkU3RhdHVzWkdMRBJI",
+            "bC5wcm90bxoeZ29vZ2xlL3Byb3RvYnVmL3dyYXBwZXJzLnByb3RvGh9jb21t",
+            "b25tb2R1bGUvY29tbW9ubW9kdWxlLnByb3RvIsUCCglMb2FkUG9pbnQSKQoJ",
+            "cmFtcFJhdGVzGAEgASgLMhYuY29tbW9ubW9kdWxlLlJhbXBSYXRlEjwKGnJl",
+            "YWN0aXZlUHdyU2V0UG9pbnRFbmFibGVkGAIgASgLMhguY29tbW9ubW9kdWxl",
+            "LkNvbnRyb2xTUEMSOAoWcmVhbFB3clNldFBvaW50RW5hYmxlZBgDIAEoCzIY",
+            "LmNvbW1vbm1vZHVsZS5Db250cm9sU1BDEicKBXJlc2V0GAQgASgLMhguY29t",
+            "bW9ubW9kdWxlLkNvbnRyb2xTUEMSLwoFc3RhdGUYBSABKAsyIC5jb21tb25t",
+            "b2R1bGUuT3B0aW9uYWxfU3RhdGVLaW5kEjsKCXN0YXJ0VGltZRgGIAEoCzIe",
+            "LmNvbW1vbm1vZHVsZS5Db250cm9sVGltZXN0YW1wQgiItRgBkLUYASI6CgdM",
+            "b2FkQ1NHEi8KBmNydlB0cxgBIAMoCzIVLmxvYWRtb2R1bGUuTG9hZFBvaW50",
+            "QgiItRgBkLUYASJJChdMb2FkQ29udHJvbFNjaGVkdWxlRlNDSBIuCgdWYWxE",
+            "Q1NHGAEgASgLMhMubG9hZG1vZHVsZS5Mb2FkQ1NHQgiItRgBkLUYASKNAQoP",
+            "TG9hZENvbnRyb2xGU0NDEjQKC2NvbnRyb2xGU0NDGAEgASgLMhkuY29tbW9u",
+            "bW9kdWxlLkNvbnRyb2xGU0NDQgSAtRgBEkQKF2xvYWRDb250cm9sU2NoZWR1",
+            "bGVGU0NIGAIgASgLMiMubG9hZG1vZHVsZS5Mb2FkQ29udHJvbFNjaGVkdWxl",
+            "RlNDSCKpAQoLTG9hZENvbnRyb2wSNgoMY29udHJvbFZhbHVlGAEgASgLMhou",
+            "Y29tbW9ubW9kdWxlLkNvbnRyb2xWYWx1ZUIEgLUYARIsCgVjaGVjaxgCIAEo",
+            "CzIdLmNvbW1vbm1vZHVsZS5DaGVja0NvbmRpdGlvbnMSNAoPbG9hZENvbnRy",
+            "b2xGU0NDGAMgASgLMhsubG9hZG1vZHVsZS5Mb2FkQ29udHJvbEZTQ0Mi1gEK",
+            "EkxvYWRDb250cm9sUHJvZmlsZRJCChJjb250cm9sTWVzc2FnZUluZm8YASAB",
+            "KAsyIC5jb21tb25tb2R1bGUuQ29udHJvbE1lc3NhZ2VJbmZvQgSAtRgBEj4K",
+            "DmVuZXJneUNvbnN1bWVyGAIgASgLMhwuY29tbW9ubW9kdWxlLkVuZXJneUNv",
+            "bnN1bWVyQgiItRgBkLUYARI2Cgtsb2FkQ29udHJvbBgDIAEoCzIXLmxvYWRt",
+            "b2R1bGUuTG9hZENvbnRyb2xCCIi1GAGQtRgBOgTA8xgBIosCCg9Mb2FkUG9p",
+            "bnRTdGF0dXMSKQoJcmFtcFJhdGVzGAEgASgLMhYuY29tbW9ubW9kdWxlLlJh",
+            "bXBSYXRlEjsKGnJlYWN0aXZlUHdyU2V0UG9pbnRFbmFibGVkGAIgASgLMhcu",
+            "Y29tbW9ubW9kdWxlLlN0YXR1c1NQUxI3ChZyZWFsUHdyU2V0UG9pbnRFbmFi",
+            "bGVkGAMgASgLMhcuY29tbW9ubW9kdWxlLlN0YXR1c1NQUxImCgVyZXNldBgE",
+            "IAEoCzIXLmNvbW1vbm1vZHVsZS5TdGF0dXNTUFMSLwoFc3RhdGUYBSABKAsy",
+            "IC5jb21tb25tb2R1bGUuT3B0aW9uYWxfU3RhdGVLaW5kIoQCChZMb2FkRXZl",
+            "bnRBbmRTdGF0dXNaR0xEElYKHGxvZ2ljYWxOb2RlRm9yRXZlbnRBbmRTdGF0",
+            "dXMYASABKAsyKi5jb21tb25tb2R1bGUuTG9naWNhbE5vZGVGb3JFdmVudEFu",
+            "ZFN0YXR1c0IEgLUYARI2CgtEeW5hbWljVGVzdBgCIAEoCzIhLmNvbW1vbm1v",
+            "ZHVsZS5FTlNfRHluYW1pY1Rlc3RLaW5kEigKB0VtZ1N0b3AYAyABKAsyFy5j",
+            "b21tb25tb2R1bGUuU3RhdHVzU1BTEjAKC1BvaW50U3RhdHVzGAQgASgLMhsu",
+            "bG9hZG1vZHVsZS5Mb2FkUG9pbnRTdGF0dXMiWQoNTG9hZEV2ZW50WkdMRBJI",
             "ChZsb2FkRXZlbnRBbmRTdGF0dXNaR0xEGAEgASgLMiIubG9hZG1vZHVsZS5M",
-            "b2FkRXZlbnRBbmRTdGF0dXNaR0xEQgSAtRgBInYKCkxvYWRTdGF0dXMSNAoL",
-            "c3RhdHVzVmFsdWUYASABKAsyGS5jb21tb25tb2R1bGUuU3RhdHVzVmFsdWVC",
-            "BIC1GAESMgoObG9hZFN0YXR1c1pHTEQYAiABKAsyGi5sb2FkbW9kdWxlLkxv",
-            "YWRTdGF0dXNaR0xEItEBChFMb2FkU3RhdHVzUHJvZmlsZRJAChFzdGF0dXNN",
-            "ZXNzYWdlSW5mbxgBIAEoCzIfLmNvbW1vbm1vZHVsZS5TdGF0dXNNZXNzYWdl",
-            "SW5mb0IEgLUYARI+Cg5lbmVyZ3lDb25zdW1lchgCIAEoCzIcLmNvbW1vbm1v",
-            "ZHVsZS5FbmVyZ3lDb25zdW1lckIIiLUYAZC1GAESNAoKbG9hZFN0YXR1cxgD",
-            "IAEoCzIWLmxvYWRtb2R1bGUuTG9hZFN0YXR1c0IIiLUYAZC1GAE6BMDzGAFC",
-            "fgoSb3BlbmZtYi5sb2FkbW9kdWxlUAFaUWdpdGxhYi5jb20vb3BlbmZtYi9w",
-            "c20vb3BzL3Byb3RvYnVmL2dvLW9wZW5mbWItb3BzLXByb3RvYnVmL3YyL29w",
-            "ZW5mbWIvbG9hZG1vZHVsZaoCEm9wZW5mbWIubG9hZG1vZHVsZWIGcHJvdG8z"));
+            "b2FkRXZlbnRBbmRTdGF0dXNaR0xEQgSAtRgBInEKCUxvYWRFdmVudBIyCgpl",
+            "dmVudFZhbHVlGAEgASgLMhguY29tbW9ubW9kdWxlLkV2ZW50VmFsdWVCBIC1",
+            "GAESMAoNbG9hZEV2ZW50WkdMRBgCIAEoCzIZLmxvYWRtb2R1bGUuTG9hZEV2",
+            "ZW50WkdMRCLMAQoQTG9hZEV2ZW50UHJvZmlsZRI+ChBldmVudE1lc3NhZ2VJ",
+            "bmZvGAEgASgLMh4uY29tbW9ubW9kdWxlLkV2ZW50TWVzc2FnZUluZm9CBIC1",
+            "GAESPgoOZW5lcmd5Q29uc3VtZXIYAiABKAsyHC5jb21tb25tb2R1bGUuRW5l",
+            "cmd5Q29uc3VtZXJCCIi1GAGQtRgBEjIKCWxvYWRFdmVudBgDIAEoCzIVLmxv",
+            "YWRtb2R1bGUuTG9hZEV2ZW50QgiItRgBkLUYAToEwPMYASL9AQoLTG9hZFJl",
+            "YWRpbmcSYgoiY29uZHVjdGluZ0VxdWlwbWVudFRlcm1pbmFsUmVhZGluZxgB",
+            "IAEoCzIwLmNvbW1vbm1vZHVsZS5Db25kdWN0aW5nRXF1aXBtZW50VGVybWlu",
+            "YWxSZWFkaW5nQgSAtRgBEioKCXBoYXNlTU1UThgCIAEoCzIXLmNvbW1vbm1v",
+            "ZHVsZS5QaGFzZU1NVE4SLgoLcmVhZGluZ01NVFIYAyABKAsyGS5jb21tb25t",
+            "b2R1bGUuUmVhZGluZ01NVFISLgoLcmVhZGluZ01NWFUYBCABKAsyGS5jb21t",
+            "b25tb2R1bGUuUmVhZGluZ01NWFUi1gEKEkxvYWRSZWFkaW5nUHJvZmlsZRJC",
+            "ChJyZWFkaW5nTWVzc2FnZUluZm8YASABKAsyIC5jb21tb25tb2R1bGUuUmVh",
+            "ZGluZ01lc3NhZ2VJbmZvQgSAtRgBEj4KDmVuZXJneUNvbnN1bWVyGAIgASgL",
+            "MhwuY29tbW9ubW9kdWxlLkVuZXJneUNvbnN1bWVyQgiItRgBkLUYARI2Cgts",
+            "b2FkUmVhZGluZxgDIAEoCzIXLmxvYWRtb2R1bGUuTG9hZFJlYWRpbmdCCIi1",
+            "GAGQtRgBOgTA8xgBIloKDkxvYWRTdGF0dXNaR0xEEkgKFmxvYWRFdmVudEFu",
+            "ZFN0YXR1c1pHTEQYASABKAsyIi5sb2FkbW9kdWxlLkxvYWRFdmVudEFuZFN0",
+            "YXR1c1pHTERCBIC1GAEirAEKCkxvYWRTdGF0dXMSNAoLc3RhdHVzVmFsdWUY",
+            "ASABKAsyGS5jb21tb25tb2R1bGUuU3RhdHVzVmFsdWVCBIC1GAESNAoQaXNV",
+            "bmNvbnRyb2xsYWJsZRgCIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5Cb29sVmFs",
+            "dWUSMgoObG9hZFN0YXR1c1pHTEQYAyABKAsyGi5sb2FkbW9kdWxlLkxvYWRT",
+            "dGF0dXNaR0xEItEBChFMb2FkU3RhdHVzUHJvZmlsZRJAChFzdGF0dXNNZXNz",
+            "YWdlSW5mbxgBIAEoCzIfLmNvbW1vbm1vZHVsZS5TdGF0dXNNZXNzYWdlSW5m",
+            "b0IEgLUYARI+Cg5lbmVyZ3lDb25zdW1lchgCIAEoCzIcLmNvbW1vbm1vZHVs",
+            "ZS5FbmVyZ3lDb25zdW1lckIIiLUYAZC1GAESNAoKbG9hZFN0YXR1cxgDIAEo",
+            "CzIWLmxvYWRtb2R1bGUuTG9hZFN0YXR1c0IIiLUYAZC1GAE6BMDzGAFCfgoS",
+            "b3BlbmZtYi5sb2FkbW9kdWxlUAFaUWdpdGxhYi5jb20vb3BlbmZtYi9wc20v",
+            "b3BzL3Byb3RvYnVmL2dvLW9wZW5mbWItb3BzLXByb3RvYnVmL3YyL29wZW5m",
+            "bWIvbG9hZG1vZHVsZaoCEm9wZW5mbWIubG9hZG1vZHVsZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::openfmb.UmlReflection.Descriptor, global::openfmb.commonmodule.CommonmoduleReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::openfmb.UmlReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::openfmb.commonmodule.CommonmoduleReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.loadmodule.LoadPoint), global::openfmb.loadmodule.LoadPoint.Parser, new[]{ "RampRates", "ReactivePwrSetPointEnabled", "RealPwrSetPointEnabled", "Reset", "State", "StartTime" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.loadmodule.LoadCSG), global::openfmb.loadmodule.LoadCSG.Parser, new[]{ "CrvPts" }, null, null, null, null),
@@ -109,7 +111,7 @@ namespace openfmb.loadmodule {
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.loadmodule.LoadReading), global::openfmb.loadmodule.LoadReading.Parser, new[]{ "ConductingEquipmentTerminalReading", "PhaseMMTN", "ReadingMMTR", "ReadingMMXU" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.loadmodule.LoadReadingProfile), global::openfmb.loadmodule.LoadReadingProfile.Parser, new[]{ "ReadingMessageInfo", "EnergyConsumer", "LoadReading" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.loadmodule.LoadStatusZGLD), global::openfmb.loadmodule.LoadStatusZGLD.Parser, new[]{ "LoadEventAndStatusZGLD" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.loadmodule.LoadStatus), global::openfmb.loadmodule.LoadStatus.Parser, new[]{ "StatusValue", "LoadStatusZGLD" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.loadmodule.LoadStatus), global::openfmb.loadmodule.LoadStatus.Parser, new[]{ "StatusValue", "IsUncontrollable", "LoadStatusZGLD" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.loadmodule.LoadStatusProfile), global::openfmb.loadmodule.LoadStatusProfile.Parser, new[]{ "StatusMessageInfo", "EnergyConsumer", "LoadStatus" }, null, null, null, null)
           }));
     }
@@ -179,12 +181,12 @@ namespace openfmb.loadmodule {
 
     /// <summary>Field number for the "reactivePwrSetPointEnabled" field.</summary>
     public const int ReactivePwrSetPointEnabledFieldNumber = 2;
-    private global::openfmb.commonmodule.ControlDPC reactivePwrSetPointEnabled_;
+    private global::openfmb.commonmodule.ControlSPC reactivePwrSetPointEnabled_;
     /// <summary>
     /// Enable reactive power set point
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.ControlDPC ReactivePwrSetPointEnabled {
+    public global::openfmb.commonmodule.ControlSPC ReactivePwrSetPointEnabled {
       get { return reactivePwrSetPointEnabled_; }
       set {
         reactivePwrSetPointEnabled_ = value;
@@ -193,12 +195,12 @@ namespace openfmb.loadmodule {
 
     /// <summary>Field number for the "realPwrSetPointEnabled" field.</summary>
     public const int RealPwrSetPointEnabledFieldNumber = 3;
-    private global::openfmb.commonmodule.ControlDPC realPwrSetPointEnabled_;
+    private global::openfmb.commonmodule.ControlSPC realPwrSetPointEnabled_;
     /// <summary>
     /// Enable joint real power set point
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.ControlDPC RealPwrSetPointEnabled {
+    public global::openfmb.commonmodule.ControlSPC RealPwrSetPointEnabled {
       get { return realPwrSetPointEnabled_; }
       set {
         realPwrSetPointEnabled_ = value;
@@ -207,12 +209,12 @@ namespace openfmb.loadmodule {
 
     /// <summary>Field number for the "reset" field.</summary>
     public const int ResetFieldNumber = 4;
-    private global::openfmb.commonmodule.ControlDPC reset_;
+    private global::openfmb.commonmodule.ControlSPC reset_;
     /// <summary>
     /// Reset device
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.ControlDPC Reset {
+    public global::openfmb.commonmodule.ControlSPC Reset {
       get { return reset_; }
       set {
         reset_ = value;
@@ -397,19 +399,19 @@ namespace openfmb.loadmodule {
       }
       if (other.reactivePwrSetPointEnabled_ != null) {
         if (reactivePwrSetPointEnabled_ == null) {
-          ReactivePwrSetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+          ReactivePwrSetPointEnabled = new global::openfmb.commonmodule.ControlSPC();
         }
         ReactivePwrSetPointEnabled.MergeFrom(other.ReactivePwrSetPointEnabled);
       }
       if (other.realPwrSetPointEnabled_ != null) {
         if (realPwrSetPointEnabled_ == null) {
-          RealPwrSetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+          RealPwrSetPointEnabled = new global::openfmb.commonmodule.ControlSPC();
         }
         RealPwrSetPointEnabled.MergeFrom(other.RealPwrSetPointEnabled);
       }
       if (other.reset_ != null) {
         if (reset_ == null) {
-          Reset = new global::openfmb.commonmodule.ControlDPC();
+          Reset = new global::openfmb.commonmodule.ControlSPC();
         }
         Reset.MergeFrom(other.Reset);
       }
@@ -448,21 +450,21 @@ namespace openfmb.loadmodule {
           }
           case 18: {
             if (reactivePwrSetPointEnabled_ == null) {
-              ReactivePwrSetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+              ReactivePwrSetPointEnabled = new global::openfmb.commonmodule.ControlSPC();
             }
             input.ReadMessage(ReactivePwrSetPointEnabled);
             break;
           }
           case 26: {
             if (realPwrSetPointEnabled_ == null) {
-              RealPwrSetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+              RealPwrSetPointEnabled = new global::openfmb.commonmodule.ControlSPC();
             }
             input.ReadMessage(RealPwrSetPointEnabled);
             break;
           }
           case 34: {
             if (reset_ == null) {
-              Reset = new global::openfmb.commonmodule.ControlDPC();
+              Reset = new global::openfmb.commonmodule.ControlSPC();
             }
             input.ReadMessage(Reset);
             break;
@@ -504,21 +506,21 @@ namespace openfmb.loadmodule {
           }
           case 18: {
             if (reactivePwrSetPointEnabled_ == null) {
-              ReactivePwrSetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+              ReactivePwrSetPointEnabled = new global::openfmb.commonmodule.ControlSPC();
             }
             input.ReadMessage(ReactivePwrSetPointEnabled);
             break;
           }
           case 26: {
             if (realPwrSetPointEnabled_ == null) {
-              RealPwrSetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+              RealPwrSetPointEnabled = new global::openfmb.commonmodule.ControlSPC();
             }
             input.ReadMessage(RealPwrSetPointEnabled);
             break;
           }
           case 34: {
             if (reset_ == null) {
-              Reset = new global::openfmb.commonmodule.ControlDPC();
+              Reset = new global::openfmb.commonmodule.ControlSPC();
             }
             input.ReadMessage(Reset);
             break;
@@ -1760,12 +1762,12 @@ namespace openfmb.loadmodule {
 
     /// <summary>Field number for the "reactivePwrSetPointEnabled" field.</summary>
     public const int ReactivePwrSetPointEnabledFieldNumber = 2;
-    private global::openfmb.commonmodule.StatusDPS reactivePwrSetPointEnabled_;
+    private global::openfmb.commonmodule.StatusSPS reactivePwrSetPointEnabled_;
     /// <summary>
     /// Enable reactive power set point
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.StatusDPS ReactivePwrSetPointEnabled {
+    public global::openfmb.commonmodule.StatusSPS ReactivePwrSetPointEnabled {
       get { return reactivePwrSetPointEnabled_; }
       set {
         reactivePwrSetPointEnabled_ = value;
@@ -1774,12 +1776,12 @@ namespace openfmb.loadmodule {
 
     /// <summary>Field number for the "realPwrSetPointEnabled" field.</summary>
     public const int RealPwrSetPointEnabledFieldNumber = 3;
-    private global::openfmb.commonmodule.StatusDPS realPwrSetPointEnabled_;
+    private global::openfmb.commonmodule.StatusSPS realPwrSetPointEnabled_;
     /// <summary>
     /// Enable joint real power set point
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.StatusDPS RealPwrSetPointEnabled {
+    public global::openfmb.commonmodule.StatusSPS RealPwrSetPointEnabled {
       get { return realPwrSetPointEnabled_; }
       set {
         realPwrSetPointEnabled_ = value;
@@ -1788,12 +1790,12 @@ namespace openfmb.loadmodule {
 
     /// <summary>Field number for the "reset" field.</summary>
     public const int ResetFieldNumber = 4;
-    private global::openfmb.commonmodule.StatusDPS reset_;
+    private global::openfmb.commonmodule.StatusSPS reset_;
     /// <summary>
     /// Reset device
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.StatusDPS Reset {
+    public global::openfmb.commonmodule.StatusSPS Reset {
       get { return reset_; }
       set {
         reset_ = value;
@@ -1951,19 +1953,19 @@ namespace openfmb.loadmodule {
       }
       if (other.reactivePwrSetPointEnabled_ != null) {
         if (reactivePwrSetPointEnabled_ == null) {
-          ReactivePwrSetPointEnabled = new global::openfmb.commonmodule.StatusDPS();
+          ReactivePwrSetPointEnabled = new global::openfmb.commonmodule.StatusSPS();
         }
         ReactivePwrSetPointEnabled.MergeFrom(other.ReactivePwrSetPointEnabled);
       }
       if (other.realPwrSetPointEnabled_ != null) {
         if (realPwrSetPointEnabled_ == null) {
-          RealPwrSetPointEnabled = new global::openfmb.commonmodule.StatusDPS();
+          RealPwrSetPointEnabled = new global::openfmb.commonmodule.StatusSPS();
         }
         RealPwrSetPointEnabled.MergeFrom(other.RealPwrSetPointEnabled);
       }
       if (other.reset_ != null) {
         if (reset_ == null) {
-          Reset = new global::openfmb.commonmodule.StatusDPS();
+          Reset = new global::openfmb.commonmodule.StatusSPS();
         }
         Reset.MergeFrom(other.Reset);
       }
@@ -1996,21 +1998,21 @@ namespace openfmb.loadmodule {
           }
           case 18: {
             if (reactivePwrSetPointEnabled_ == null) {
-              ReactivePwrSetPointEnabled = new global::openfmb.commonmodule.StatusDPS();
+              ReactivePwrSetPointEnabled = new global::openfmb.commonmodule.StatusSPS();
             }
             input.ReadMessage(ReactivePwrSetPointEnabled);
             break;
           }
           case 26: {
             if (realPwrSetPointEnabled_ == null) {
-              RealPwrSetPointEnabled = new global::openfmb.commonmodule.StatusDPS();
+              RealPwrSetPointEnabled = new global::openfmb.commonmodule.StatusSPS();
             }
             input.ReadMessage(RealPwrSetPointEnabled);
             break;
           }
           case 34: {
             if (reset_ == null) {
-              Reset = new global::openfmb.commonmodule.StatusDPS();
+              Reset = new global::openfmb.commonmodule.StatusSPS();
             }
             input.ReadMessage(Reset);
             break;
@@ -2045,21 +2047,21 @@ namespace openfmb.loadmodule {
           }
           case 18: {
             if (reactivePwrSetPointEnabled_ == null) {
-              ReactivePwrSetPointEnabled = new global::openfmb.commonmodule.StatusDPS();
+              ReactivePwrSetPointEnabled = new global::openfmb.commonmodule.StatusSPS();
             }
             input.ReadMessage(ReactivePwrSetPointEnabled);
             break;
           }
           case 26: {
             if (realPwrSetPointEnabled_ == null) {
-              RealPwrSetPointEnabled = new global::openfmb.commonmodule.StatusDPS();
+              RealPwrSetPointEnabled = new global::openfmb.commonmodule.StatusSPS();
             }
             input.ReadMessage(RealPwrSetPointEnabled);
             break;
           }
           case 34: {
             if (reset_ == null) {
-              Reset = new global::openfmb.commonmodule.StatusDPS();
+              Reset = new global::openfmb.commonmodule.StatusSPS();
             }
             input.ReadMessage(Reset);
             break;
@@ -3948,6 +3950,7 @@ namespace openfmb.loadmodule {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public LoadStatus(LoadStatus other) : this() {
       statusValue_ = other.statusValue_ != null ? other.statusValue_.Clone() : null;
+      IsUncontrollable = other.IsUncontrollable;
       loadStatusZGLD_ = other.loadStatusZGLD_ != null ? other.loadStatusZGLD_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -3971,8 +3974,24 @@ namespace openfmb.loadmodule {
       }
     }
 
+    /// <summary>Field number for the "isUncontrollable" field.</summary>
+    public const int IsUncontrollableFieldNumber = 2;
+    private static readonly pb::FieldCodec<bool?> _single_isUncontrollable_codec = pb::FieldCodec.ForStructWrapper<bool>(18);
+    private bool? isUncontrollable_;
+    /// <summary>
+    /// True if the load is uncontrollable.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool? IsUncontrollable {
+      get { return isUncontrollable_; }
+      set {
+        isUncontrollable_ = value;
+      }
+    }
+
+
     /// <summary>Field number for the "loadStatusZGLD" field.</summary>
-    public const int LoadStatusZGLDFieldNumber = 2;
+    public const int LoadStatusZGLDFieldNumber = 3;
     private global::openfmb.loadmodule.LoadStatusZGLD loadStatusZGLD_;
     /// <summary>
     /// MISSING DOCUMENTATION!!!
@@ -3999,6 +4018,7 @@ namespace openfmb.loadmodule {
         return true;
       }
       if (!object.Equals(StatusValue, other.StatusValue)) return false;
+      if (IsUncontrollable != other.IsUncontrollable) return false;
       if (!object.Equals(LoadStatusZGLD, other.LoadStatusZGLD)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -4007,6 +4027,7 @@ namespace openfmb.loadmodule {
     public override int GetHashCode() {
       int hash = 1;
       if (statusValue_ != null) hash ^= StatusValue.GetHashCode();
+      if (isUncontrollable_ != null) hash ^= IsUncontrollable.GetHashCode();
       if (loadStatusZGLD_ != null) hash ^= LoadStatusZGLD.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -4028,8 +4049,11 @@ namespace openfmb.loadmodule {
         output.WriteRawTag(10);
         output.WriteMessage(StatusValue);
       }
+      if (isUncontrollable_ != null) {
+        _single_isUncontrollable_codec.WriteTagAndValue(output, IsUncontrollable);
+      }
       if (loadStatusZGLD_ != null) {
-        output.WriteRawTag(18);
+        output.WriteRawTag(26);
         output.WriteMessage(LoadStatusZGLD);
       }
       if (_unknownFields != null) {
@@ -4045,8 +4069,11 @@ namespace openfmb.loadmodule {
         output.WriteRawTag(10);
         output.WriteMessage(StatusValue);
       }
+      if (isUncontrollable_ != null) {
+        _single_isUncontrollable_codec.WriteTagAndValue(ref output, IsUncontrollable);
+      }
       if (loadStatusZGLD_ != null) {
-        output.WriteRawTag(18);
+        output.WriteRawTag(26);
         output.WriteMessage(LoadStatusZGLD);
       }
       if (_unknownFields != null) {
@@ -4060,6 +4087,9 @@ namespace openfmb.loadmodule {
       int size = 0;
       if (statusValue_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(StatusValue);
+      }
+      if (isUncontrollable_ != null) {
+        size += _single_isUncontrollable_codec.CalculateSizeWithTag(IsUncontrollable);
       }
       if (loadStatusZGLD_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(LoadStatusZGLD);
@@ -4080,6 +4110,11 @@ namespace openfmb.loadmodule {
           StatusValue = new global::openfmb.commonmodule.StatusValue();
         }
         StatusValue.MergeFrom(other.StatusValue);
+      }
+      if (other.isUncontrollable_ != null) {
+        if (isUncontrollable_ == null || other.IsUncontrollable != false) {
+          IsUncontrollable = other.IsUncontrollable;
+        }
       }
       if (other.loadStatusZGLD_ != null) {
         if (loadStatusZGLD_ == null) {
@@ -4109,6 +4144,13 @@ namespace openfmb.loadmodule {
             break;
           }
           case 18: {
+            bool? value = _single_isUncontrollable_codec.Read(input);
+            if (isUncontrollable_ == null || value != false) {
+              IsUncontrollable = value;
+            }
+            break;
+          }
+          case 26: {
             if (loadStatusZGLD_ == null) {
               LoadStatusZGLD = new global::openfmb.loadmodule.LoadStatusZGLD();
             }
@@ -4137,6 +4179,13 @@ namespace openfmb.loadmodule {
             break;
           }
           case 18: {
+            bool? value = _single_isUncontrollable_codec.Read(ref input);
+            if (isUncontrollable_ == null || value != false) {
+              IsUncontrollable = value;
+            }
+            break;
+          }
+          case 26: {
             if (loadStatusZGLD_ == null) {
               LoadStatusZGLD = new global::openfmb.loadmodule.LoadStatusZGLD();
             }

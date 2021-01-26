@@ -54,8 +54,7 @@
             // 
             // propertyGrid
             // 
-            this.propertyGrid.CategoryForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.propertyGrid.DisabledItemForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.propertyGrid.CategoryForeColor = System.Drawing.SystemColors.ControlDarkDark;            
             this.propertyGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.propertyGrid.Location = new System.Drawing.Point(0, 0);
             this.propertyGrid.Name = "propertyGrid";
