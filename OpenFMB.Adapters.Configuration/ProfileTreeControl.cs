@@ -532,8 +532,8 @@ namespace OpenFMB.Adapters.Configuration
             }
             else if (sender is NavigatorCommandIdNode)
             {
-                var temp = _profile.GetAllNavigatorNodes().Where(x => x.Name == "command-id");
-                var commandIds = _profile.GetAllNavigatorNodes().Where(x => x.Name == "command-id").Select(x => x.Value).Distinct().ToList();
+                var temp = _profile.GetAllNavigatorNodes(true).Where(x => x.Name == "command-id");
+                var commandIds = _profile.GetAllNavigatorNodes(true).Where(x => x.Name == "command-id").Select(x => x.Value).Distinct().ToList();
                 _profile.UpdateCommandIds(commandIds);
 
                 var navNode = _profile.GetAllNavigatorNodes().FirstOrDefault(n => n.Name == "command-order");

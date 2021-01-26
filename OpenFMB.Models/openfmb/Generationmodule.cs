@@ -28,20 +28,20 @@ namespace openfmb.generationmodule {
             "bmVyYXRpb25tb2R1bGUaCXVtbC5wcm90bxoeZ29vZ2xlL3Byb3RvYnVmL3dy",
             "YXBwZXJzLnByb3RvGh9jb21tb25tb2R1bGUvY29tbW9ubW9kdWxlLnByb3Rv",
             "IsoFCg9HZW5lcmF0aW9uUG9pbnQSMwoRYmxhY2tTdGFydEVuYWJsZWQYASAB",
-            "KAsyGC5jb21tb25tb2R1bGUuQ29udHJvbERQQxI6ChhmcmVxdWVuY3lTZXRQ",
-            "b2ludEVuYWJsZWQYAiABKAsyGC5jb21tb25tb2R1bGUuQ29udHJvbERQQxIv",
+            "KAsyGC5jb21tb25tb2R1bGUuQ29udHJvbFNQQxI6ChhmcmVxdWVuY3lTZXRQ",
+            "b2ludEVuYWJsZWQYAiABKAsyGC5jb21tb25tb2R1bGUuQ29udHJvbFNQQxIv",
             "CgpwY3RIekRyb29wGAMgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFs",
             "dWUSLgoJcGN0VkRyb29wGAQgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0",
             "VmFsdWUSKQoJcmFtcFJhdGVzGAUgASgLMhYuY29tbW9ubW9kdWxlLlJhbXBS",
             "YXRlEjwKGnJlYWN0aXZlUHdyU2V0UG9pbnRFbmFibGVkGAYgASgLMhguY29t",
-            "bW9ubW9kdWxlLkNvbnRyb2xEUEMSOAoWcmVhbFB3clNldFBvaW50RW5hYmxl",
-            "ZBgHIAEoCzIYLmNvbW1vbm1vZHVsZS5Db250cm9sRFBDEicKBXJlc2V0GAgg",
-            "ASgLMhguY29tbW9ubW9kdWxlLkNvbnRyb2xEUEMSLwoFc3RhdGUYCSABKAsy",
+            "bW9ubW9kdWxlLkNvbnRyb2xTUEMSOAoWcmVhbFB3clNldFBvaW50RW5hYmxl",
+            "ZBgHIAEoCzIYLmNvbW1vbm1vZHVsZS5Db250cm9sU1BDEicKBXJlc2V0GAgg",
+            "ASgLMhguY29tbW9ubW9kdWxlLkNvbnRyb2xTUEMSLwoFc3RhdGUYCSABKAsy",
             "IC5jb21tb25tb2R1bGUuT3B0aW9uYWxfU3RhdGVLaW5kEjAKDnN5bmNCYWNr",
-            "VG9HcmlkGAogASgLMhguY29tbW9ubW9kdWxlLkNvbnRyb2xEUEMSPwoddHJh",
+            "VG9HcmlkGAogASgLMhguY29tbW9ubW9kdWxlLkNvbnRyb2xTUEMSPwoddHJh",
             "bnNUb0lzbG5kT25HcmlkTG9zc0VuYWJsZWQYCyABKAsyGC5jb21tb25tb2R1",
-            "bGUuQ29udHJvbERQQxI4ChZ2b2x0YWdlU2V0UG9pbnRFbmFibGVkGAwgASgL",
-            "MhguY29tbW9ubW9kdWxlLkNvbnRyb2xEUEMSOwoJc3RhcnRUaW1lGA0gASgL",
+            "bGUuQ29udHJvbFNQQxI4ChZ2b2x0YWdlU2V0UG9pbnRFbmFibGVkGAwgASgL",
+            "MhguY29tbW9ubW9kdWxlLkNvbnRyb2xTUEMSOwoJc3RhcnRUaW1lGA0gASgL",
             "Mh4uY29tbW9ubW9kdWxlLkNvbnRyb2xUaW1lc3RhbXBCCIi1GAGQtRgBIkwK",
             "DUdlbmVyYXRpb25DU0cSOwoGY3J2UHRzGAEgAygLMiEuZ2VuZXJhdGlvbm1v",
             "ZHVsZS5HZW5lcmF0aW9uUG9pbnRCCIi1GAGQtRgBIlsKHUdlbmVyYXRpb25D",
@@ -63,111 +63,96 @@ namespace openfmb.generationmodule {
             "tRgBEkIKDmdlbmVyYXRpbmdVbml0GAIgASgLMiAuZ2VuZXJhdGlvbm1vZHVs",
             "ZS5HZW5lcmF0aW5nVW5pdEIIiLUYAZC1GAESSAoRZ2VuZXJhdGlvbkNvbnRy",
             "b2wYAyABKAsyIy5nZW5lcmF0aW9ubW9kdWxlLkdlbmVyYXRpb25Db250cm9s",
-            "QgiItRgBkLUYAToEwPMYASJWCh1PcHRpb25hbF9SZWFsUG93ZXJDb250cm9s",
-            "S2luZBI1CgV2YWx1ZRgBIAEoDjImLmdlbmVyYXRpb25tb2R1bGUuUmVhbFBv",
-            "d2VyQ29udHJvbEtpbmQicQoORHJvb3BQYXJhbWV0ZXISKgoFc2xvcGUYASAB",
-            "KAsyGy5nb29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZRIzCg51bmxvYWRlZE9m",
-            "ZnNldBgCIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5GbG9hdFZhbHVlIowCChBS",
-            "ZWFsUG93ZXJDb250cm9sEjcKDWRyb29wU2V0cG9pbnQYASABKAsyIC5nZW5l",
-            "cmF0aW9ubW9kdWxlLkRyb29wUGFyYW1ldGVyEjgKE2lzb2Nocm9ub3VzU2V0",
-            "cG9pbnQYAiABKAsyGy5nb29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZRJNChRy",
-            "ZWFsUG93ZXJDb250cm9sTW9kZRgDIAEoCzIvLmdlbmVyYXRpb25tb2R1bGUu",
-            "T3B0aW9uYWxfUmVhbFBvd2VyQ29udHJvbEtpbmQSNgoRcmVhbFBvd2VyU2V0",
-            "cG9pbnQYBCABKAsyGy5nb29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZSJeCiFP",
-            "cHRpb25hbF9SZWFjdGl2ZVBvd2VyQ29udHJvbEtpbmQSOQoFdmFsdWUYASAB",
-            "KA4yKi5nZW5lcmF0aW9ubW9kdWxlLlJlYWN0aXZlUG93ZXJDb250cm9sS2lu",
-            "ZCLSAgoUUmVhY3RpdmVQb3dlckNvbnRyb2wSNwoNZHJvb3BTZXRwb2ludBgB",
-            "IAEoCzIgLmdlbmVyYXRpb25tb2R1bGUuRHJvb3BQYXJhbWV0ZXISOAoTcG93",
-            "ZXJGYWN0b3JTZXRwb2ludBgCIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5GbG9h",
-            "dFZhbHVlElUKGHJlYWN0aXZlUG93ZXJDb250cm9sTW9kZRgDIAEoCzIzLmdl",
-            "bmVyYXRpb25tb2R1bGUuT3B0aW9uYWxfUmVhY3RpdmVQb3dlckNvbnRyb2xL",
-            "aW5kEjoKFXJlYWN0aXZlUG93ZXJTZXRwb2ludBgEIAEoCzIbLmdvb2dsZS5w",
-            "cm90b2J1Zi5GbG9hdFZhbHVlEjQKD3ZvbHRhZ2VTZXRwb2ludBgFIAEoCzIb",
-            "Lmdvb2dsZS5wcm90b2J1Zi5GbG9hdFZhbHVlIoUCChlHZW5lcmF0aW9uRGlz",
-            "Y3JldGVDb250cm9sEjYKDGNvbnRyb2xWYWx1ZRgBIAEoCzIaLmNvbW1vbm1v",
-            "ZHVsZS5Db250cm9sVmFsdWVCBIC1GAESLAoFY2hlY2sYAiABKAsyHS5jb21t",
-            "b25tb2R1bGUuQ2hlY2tDb25kaXRpb25zEkQKFFJlYWN0aXZlUG93ZXJDb250",
-            "cm9sGAMgASgLMiYuZ2VuZXJhdGlvbm1vZHVsZS5SZWFjdGl2ZVBvd2VyQ29u",
-            "dHJvbBI8ChBSZWFsUG93ZXJDb250cm9sGAQgASgLMiIuZ2VuZXJhdGlvbm1v",
-            "ZHVsZS5SZWFsUG93ZXJDb250cm9sIooCCiBHZW5lcmF0aW9uRGlzY3JldGVD",
-            "b250cm9sUHJvZmlsZRJCChJjb250cm9sTWVzc2FnZUluZm8YASABKAsyIC5j",
-            "b21tb25tb2R1bGUuQ29udHJvbE1lc3NhZ2VJbmZvQgSAtRgBEkIKDmdlbmVy",
-            "YXRpbmdVbml0GAIgASgLMiAuZ2VuZXJhdGlvbm1vZHVsZS5HZW5lcmF0aW5n",
-            "VW5pdEIIiLUYAZC1GAESWAoZZ2VuZXJhdGlvbkRpc2NyZXRlQ29udHJvbBgD",
-            "IAEoCzIrLmdlbmVyYXRpb25tb2R1bGUuR2VuZXJhdGlvbkRpc2NyZXRlQ29u",
-            "dHJvbEIIiLUYAZC1GAE6BMDzGAEigwIKEUdlbmVyYXRpb25SZWFkaW5nEmIK",
-            "ImNvbmR1Y3RpbmdFcXVpcG1lbnRUZXJtaW5hbFJlYWRpbmcYASABKAsyMC5j",
-            "b21tb25tb2R1bGUuQ29uZHVjdGluZ0VxdWlwbWVudFRlcm1pbmFsUmVhZGlu",
-            "Z0IEgLUYARIqCglwaGFzZU1NVE4YAiABKAsyFy5jb21tb25tb2R1bGUuUGhh",
-            "c2VNTVROEi4KC3JlYWRpbmdNTVRSGAMgASgLMhkuY29tbW9ubW9kdWxlLlJl",
-            "YWRpbmdNTVRSEi4KC3JlYWRpbmdNTVhVGAQgASgLMhkuY29tbW9ubW9kdWxl",
-            "LlJlYWRpbmdNTVhVIvIBChhHZW5lcmF0aW9uUmVhZGluZ1Byb2ZpbGUSQgoS",
-            "cmVhZGluZ01lc3NhZ2VJbmZvGAEgASgLMiAuY29tbW9ubW9kdWxlLlJlYWRp",
-            "bmdNZXNzYWdlSW5mb0IEgLUYARJCCg5nZW5lcmF0aW5nVW5pdBgCIAEoCzIg",
-            "LmdlbmVyYXRpb25tb2R1bGUuR2VuZXJhdGluZ1VuaXRCCIi1GAGQtRgBEkgK",
-            "EWdlbmVyYXRpb25SZWFkaW5nGAMgASgLMiMuZ2VuZXJhdGlvbm1vZHVsZS5H",
-            "ZW5lcmF0aW9uUmVhZGluZ0IIiLUYAZC1GAE6BMDzGAEi4wQKFUdlbmVyYXRp",
-            "b25Qb2ludFN0YXR1cxIyChFibGFja1N0YXJ0RW5hYmxlZBgBIAEoCzIXLmNv",
-            "bW1vbm1vZHVsZS5TdGF0dXNEUFMSOQoYZnJlcXVlbmN5U2V0UG9pbnRFbmFi",
-            "bGVkGAIgASgLMhcuY29tbW9ubW9kdWxlLlN0YXR1c0RQUxIvCgpwY3RIekRy",
-            "b29wGAMgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUSLgoJcGN0",
-            "VkRyb29wGAQgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUSKQoJ",
-            "cmFtcFJhdGVzGAUgASgLMhYuY29tbW9ubW9kdWxlLlJhbXBSYXRlEjsKGnJl",
-            "YWN0aXZlUHdyU2V0UG9pbnRFbmFibGVkGAYgASgLMhcuY29tbW9ubW9kdWxl",
-            "LlN0YXR1c0RQUxI3ChZyZWFsUHdyU2V0UG9pbnRFbmFibGVkGAcgASgLMhcu",
-            "Y29tbW9ubW9kdWxlLlN0YXR1c0RQUxIvCgVzdGF0ZRgIIAEoCzIgLmNvbW1v",
-            "bm1vZHVsZS5PcHRpb25hbF9TdGF0ZUtpbmQSLwoOc3luY0JhY2tUb0dyaWQY",
-            "CSABKAsyFy5jb21tb25tb2R1bGUuU3RhdHVzRFBTEj4KHXRyYW5zVG9Jc2xu",
-            "ZE9uR3JpZExvc3NFbmFibGVkGAogASgLMhcuY29tbW9ubW9kdWxlLlN0YXR1",
-            "c0RQUxI3ChZ2b2x0YWdlU2V0UG9pbnRFbmFibGVkGAsgASgLMhcuY29tbW9u",
-            "bW9kdWxlLlN0YXR1c0RQUyLrAgocR2VuZXJhdGlvbkV2ZW50QW5kU3RhdHVz",
-            "WkdFThJWChxsb2dpY2FsTm9kZUZvckV2ZW50QW5kU3RhdHVzGAEgASgLMiou",
-            "Y29tbW9ubW9kdWxlLkxvZ2ljYWxOb2RlRm9yRXZlbnRBbmRTdGF0dXNCBIC1",
-            "GAESKQoIQXV4UHdyU3QYAiABKAsyFy5jb21tb25tb2R1bGUuU3RhdHVzU1BT",
-            "EjYKC0R5bmFtaWNUZXN0GAMgASgLMiEuY29tbW9ubW9kdWxlLkVOU19EeW5h",
-            "bWljVGVzdEtpbmQSKAoHRW1nU3RvcBgEIAEoCzIXLmNvbW1vbm1vZHVsZS5T",
-            "dGF0dXNTUFMSKAoHR25TeW5TdBgFIAEoCzIXLmNvbW1vbm1vZHVsZS5TdGF0",
-            "dXNTUFMSPAoLUG9pbnRTdGF0dXMYBiABKAsyJy5nZW5lcmF0aW9ubW9kdWxl",
-            "LkdlbmVyYXRpb25Qb2ludFN0YXR1cyJxChNHZW5lcmF0aW9uRXZlbnRaR0VO",
-            "EloKHGdlbmVyYXRpb25FdmVudEFuZFN0YXR1c1pHRU4YASABKAsyLi5nZW5l",
-            "cmF0aW9ubW9kdWxlLkdlbmVyYXRpb25FdmVudEFuZFN0YXR1c1pHRU5CBIC1",
-            "GAEiiQEKD0dlbmVyYXRpb25FdmVudBIyCgpldmVudFZhbHVlGAEgASgLMhgu",
-            "Y29tbW9ubW9kdWxlLkV2ZW50VmFsdWVCBIC1GAESQgoTZ2VuZXJhdGlvbkV2",
-            "ZW50WkdFThgCIAEoCzIlLmdlbmVyYXRpb25tb2R1bGUuR2VuZXJhdGlvbkV2",
-            "ZW50WkdFTiLoAQoWR2VuZXJhdGlvbkV2ZW50UHJvZmlsZRI+ChBldmVudE1l",
-            "c3NhZ2VJbmZvGAEgASgLMh4uY29tbW9ubW9kdWxlLkV2ZW50TWVzc2FnZUlu",
-            "Zm9CBIC1GAESQgoOZ2VuZXJhdGluZ1VuaXQYAiABKAsyIC5nZW5lcmF0aW9u",
-            "bW9kdWxlLkdlbmVyYXRpbmdVbml0QgiItRgBkLUYARJECg9nZW5lcmF0aW9u",
-            "RXZlbnQYAyABKAsyIS5nZW5lcmF0aW9ubW9kdWxlLkdlbmVyYXRpb25FdmVu",
-            "dEIIiLUYAZC1GAE6BMDzGAEicgoUR2VuZXJhdGlvblN0YXR1c1pHRU4SWgoc",
-            "Z2VuZXJhdGlvbkV2ZW50QW5kU3RhdHVzWkdFThgBIAEoCzIuLmdlbmVyYXRp",
-            "b25tb2R1bGUuR2VuZXJhdGlvbkV2ZW50QW5kU3RhdHVzWkdFTkIEgLUYASKO",
-            "AQoQR2VuZXJhdGlvblN0YXR1cxI0CgtzdGF0dXNWYWx1ZRgBIAEoCzIZLmNv",
-            "bW1vbm1vZHVsZS5TdGF0dXNWYWx1ZUIEgLUYARJEChRnZW5lcmF0aW9uU3Rh",
-            "dHVzWkdFThgCIAEoCzImLmdlbmVyYXRpb25tb2R1bGUuR2VuZXJhdGlvblN0",
-            "YXR1c1pHRU4i7QEKF0dlbmVyYXRpb25TdGF0dXNQcm9maWxlEkAKEXN0YXR1",
-            "c01lc3NhZ2VJbmZvGAEgASgLMh8uY29tbW9ubW9kdWxlLlN0YXR1c01lc3Nh",
-            "Z2VJbmZvQgSAtRgBEkIKDmdlbmVyYXRpbmdVbml0GAIgASgLMiAuZ2VuZXJh",
-            "dGlvbm1vZHVsZS5HZW5lcmF0aW5nVW5pdEIIiLUYAZC1GAESRgoQZ2VuZXJh",
-            "dGlvblN0YXR1cxgDIAEoCzIiLmdlbmVyYXRpb25tb2R1bGUuR2VuZXJhdGlv",
-            "blN0YXR1c0IIiLUYAZC1GAE6BMDzGAEqxwEKFFJlYWxQb3dlckNvbnRyb2xL",
-            "aW5kEiIKHlJlYWxQb3dlckNvbnRyb2xLaW5kX1VOREVGSU5FRBAAEiEKHVJl",
-            "YWxQb3dlckNvbnRyb2xLaW5kX2FkdmFuY2VkEAESHgoaUmVhbFBvd2VyQ29u",
-            "dHJvbEtpbmRfZHJvb3AQAhIkCiBSZWFsUG93ZXJDb250cm9sS2luZF9pc29j",
-            "aHJvbm91cxADEiIKHlJlYWxQb3dlckNvbnRyb2xLaW5kX3JlYWxQb3dlchAE",
-            "KokCChhSZWFjdGl2ZVBvd2VyQ29udHJvbEtpbmQSJgoiUmVhY3RpdmVQb3dl",
-            "ckNvbnRyb2xLaW5kX1VOREVGSU5FRBAAEiUKIVJlYWN0aXZlUG93ZXJDb250",
-            "cm9sS2luZF9hZHZhbmNlZBABEiIKHlJlYWN0aXZlUG93ZXJDb250cm9sS2lu",
-            "ZF9kcm9vcBACEiQKIFJlYWN0aXZlUG93ZXJDb250cm9sS2luZF92b2x0YWdl",
-            "EAMSKgomUmVhY3RpdmVQb3dlckNvbnRyb2xLaW5kX3JlYWN0aXZlUG93ZXIQ",
-            "BBIoCiRSZWFjdGl2ZVBvd2VyQ29udHJvbEtpbmRfcG93ZXJGYWN0b3IQBUKQ",
-            "AQoYb3BlbmZtYi5nZW5lcmF0aW9ubW9kdWxlUAFaV2dpdGxhYi5jb20vb3Bl",
-            "bmZtYi9wc20vb3BzL3Byb3RvYnVmL2dvLW9wZW5mbWItb3BzLXByb3RvYnVm",
-            "L3YyL29wZW5mbWIvZ2VuZXJhdGlvbm1vZHVsZaoCGG9wZW5mbWIuZ2VuZXJh",
-            "dGlvbm1vZHVsZWIGcHJvdG8z"));
+            "QgiItRgBkLUYAToEwPMYASJxCg5Ecm9vcFBhcmFtZXRlchIqCgVzbG9wZRgB",
+            "IAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5GbG9hdFZhbHVlEjMKDnVubG9hZGVk",
+            "T2Zmc2V0GAIgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUiiAIK",
+            "EFJlYWxQb3dlckNvbnRyb2wSNwoNZHJvb3BTZXRwb2ludBgBIAEoCzIgLmdl",
+            "bmVyYXRpb25tb2R1bGUuRHJvb3BQYXJhbWV0ZXISOAoTaXNvY2hyb25vdXNT",
+            "ZXRwb2ludBgCIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5GbG9hdFZhbHVlEkkK",
+            "FHJlYWxQb3dlckNvbnRyb2xNb2RlGAMgASgLMisuY29tbW9ubW9kdWxlLk9w",
+            "dGlvbmFsX1JlYWxQb3dlckNvbnRyb2xLaW5kEjYKEXJlYWxQb3dlclNldHBv",
+            "aW50GAQgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUizgIKFFJl",
+            "YWN0aXZlUG93ZXJDb250cm9sEjcKDWRyb29wU2V0cG9pbnQYASABKAsyIC5n",
+            "ZW5lcmF0aW9ubW9kdWxlLkRyb29wUGFyYW1ldGVyEjgKE3Bvd2VyRmFjdG9y",
+            "U2V0cG9pbnQYAiABKAsyGy5nb29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZRJR",
+            "ChhyZWFjdGl2ZVBvd2VyQ29udHJvbE1vZGUYAyABKAsyLy5jb21tb25tb2R1",
+            "bGUuT3B0aW9uYWxfUmVhY3RpdmVQb3dlckNvbnRyb2xLaW5kEjoKFXJlYWN0",
+            "aXZlUG93ZXJTZXRwb2ludBgEIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5GbG9h",
+            "dFZhbHVlEjQKD3ZvbHRhZ2VTZXRwb2ludBgFIAEoCzIbLmdvb2dsZS5wcm90",
+            "b2J1Zi5GbG9hdFZhbHVlIoUCChlHZW5lcmF0aW9uRGlzY3JldGVDb250cm9s",
+            "EjYKDGNvbnRyb2xWYWx1ZRgBIAEoCzIaLmNvbW1vbm1vZHVsZS5Db250cm9s",
+            "VmFsdWVCBIC1GAESLAoFY2hlY2sYAiABKAsyHS5jb21tb25tb2R1bGUuQ2hl",
+            "Y2tDb25kaXRpb25zEkQKFFJlYWN0aXZlUG93ZXJDb250cm9sGAMgASgLMiYu",
+            "Z2VuZXJhdGlvbm1vZHVsZS5SZWFjdGl2ZVBvd2VyQ29udHJvbBI8ChBSZWFs",
+            "UG93ZXJDb250cm9sGAQgASgLMiIuZ2VuZXJhdGlvbm1vZHVsZS5SZWFsUG93",
+            "ZXJDb250cm9sIooCCiBHZW5lcmF0aW9uRGlzY3JldGVDb250cm9sUHJvZmls",
+            "ZRJCChJjb250cm9sTWVzc2FnZUluZm8YASABKAsyIC5jb21tb25tb2R1bGUu",
+            "Q29udHJvbE1lc3NhZ2VJbmZvQgSAtRgBEkIKDmdlbmVyYXRpbmdVbml0GAIg",
+            "ASgLMiAuZ2VuZXJhdGlvbm1vZHVsZS5HZW5lcmF0aW5nVW5pdEIIiLUYAZC1",
+            "GAESWAoZZ2VuZXJhdGlvbkRpc2NyZXRlQ29udHJvbBgDIAEoCzIrLmdlbmVy",
+            "YXRpb25tb2R1bGUuR2VuZXJhdGlvbkRpc2NyZXRlQ29udHJvbEIIiLUYAZC1",
+            "GAE6BMDzGAEigwIKEUdlbmVyYXRpb25SZWFkaW5nEmIKImNvbmR1Y3RpbmdF",
+            "cXVpcG1lbnRUZXJtaW5hbFJlYWRpbmcYASABKAsyMC5jb21tb25tb2R1bGUu",
+            "Q29uZHVjdGluZ0VxdWlwbWVudFRlcm1pbmFsUmVhZGluZ0IEgLUYARIqCglw",
+            "aGFzZU1NVE4YAiABKAsyFy5jb21tb25tb2R1bGUuUGhhc2VNTVROEi4KC3Jl",
+            "YWRpbmdNTVRSGAMgASgLMhkuY29tbW9ubW9kdWxlLlJlYWRpbmdNTVRSEi4K",
+            "C3JlYWRpbmdNTVhVGAQgASgLMhkuY29tbW9ubW9kdWxlLlJlYWRpbmdNTVhV",
+            "IvIBChhHZW5lcmF0aW9uUmVhZGluZ1Byb2ZpbGUSQgoScmVhZGluZ01lc3Nh",
+            "Z2VJbmZvGAEgASgLMiAuY29tbW9ubW9kdWxlLlJlYWRpbmdNZXNzYWdlSW5m",
+            "b0IEgLUYARJCCg5nZW5lcmF0aW5nVW5pdBgCIAEoCzIgLmdlbmVyYXRpb25t",
+            "b2R1bGUuR2VuZXJhdGluZ1VuaXRCCIi1GAGQtRgBEkgKEWdlbmVyYXRpb25S",
+            "ZWFkaW5nGAMgASgLMiMuZ2VuZXJhdGlvbm1vZHVsZS5HZW5lcmF0aW9uUmVh",
+            "ZGluZ0IIiLUYAZC1GAE6BMDzGAEi4wQKFUdlbmVyYXRpb25Qb2ludFN0YXR1",
+            "cxIyChFibGFja1N0YXJ0RW5hYmxlZBgBIAEoCzIXLmNvbW1vbm1vZHVsZS5T",
+            "dGF0dXNTUFMSOQoYZnJlcXVlbmN5U2V0UG9pbnRFbmFibGVkGAIgASgLMhcu",
+            "Y29tbW9ubW9kdWxlLlN0YXR1c1NQUxIvCgpwY3RIekRyb29wGAMgASgLMhsu",
+            "Z29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUSLgoJcGN0VkRyb29wGAQgASgL",
+            "MhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUSKQoJcmFtcFJhdGVzGAUg",
+            "ASgLMhYuY29tbW9ubW9kdWxlLlJhbXBSYXRlEjsKGnJlYWN0aXZlUHdyU2V0",
+            "UG9pbnRFbmFibGVkGAYgASgLMhcuY29tbW9ubW9kdWxlLlN0YXR1c1NQUxI3",
+            "ChZyZWFsUHdyU2V0UG9pbnRFbmFibGVkGAcgASgLMhcuY29tbW9ubW9kdWxl",
+            "LlN0YXR1c1NQUxIvCgVzdGF0ZRgIIAEoCzIgLmNvbW1vbm1vZHVsZS5PcHRp",
+            "b25hbF9TdGF0ZUtpbmQSLwoOc3luY0JhY2tUb0dyaWQYCSABKAsyFy5jb21t",
+            "b25tb2R1bGUuU3RhdHVzU1BTEj4KHXRyYW5zVG9Jc2xuZE9uR3JpZExvc3NF",
+            "bmFibGVkGAogASgLMhcuY29tbW9ubW9kdWxlLlN0YXR1c1NQUxI3ChZ2b2x0",
+            "YWdlU2V0UG9pbnRFbmFibGVkGAsgASgLMhcuY29tbW9ubW9kdWxlLlN0YXR1",
+            "c1NQUyLrAgocR2VuZXJhdGlvbkV2ZW50QW5kU3RhdHVzWkdFThJWChxsb2dp",
+            "Y2FsTm9kZUZvckV2ZW50QW5kU3RhdHVzGAEgASgLMiouY29tbW9ubW9kdWxl",
+            "LkxvZ2ljYWxOb2RlRm9yRXZlbnRBbmRTdGF0dXNCBIC1GAESKQoIQXV4UHdy",
+            "U3QYAiABKAsyFy5jb21tb25tb2R1bGUuU3RhdHVzU1BTEjYKC0R5bmFtaWNU",
+            "ZXN0GAMgASgLMiEuY29tbW9ubW9kdWxlLkVOU19EeW5hbWljVGVzdEtpbmQS",
+            "KAoHRW1nU3RvcBgEIAEoCzIXLmNvbW1vbm1vZHVsZS5TdGF0dXNTUFMSKAoH",
+            "R25TeW5TdBgFIAEoCzIXLmNvbW1vbm1vZHVsZS5TdGF0dXNTUFMSPAoLUG9p",
+            "bnRTdGF0dXMYBiABKAsyJy5nZW5lcmF0aW9ubW9kdWxlLkdlbmVyYXRpb25Q",
+            "b2ludFN0YXR1cyJxChNHZW5lcmF0aW9uRXZlbnRaR0VOEloKHGdlbmVyYXRp",
+            "b25FdmVudEFuZFN0YXR1c1pHRU4YASABKAsyLi5nZW5lcmF0aW9ubW9kdWxl",
+            "LkdlbmVyYXRpb25FdmVudEFuZFN0YXR1c1pHRU5CBIC1GAEiiQEKD0dlbmVy",
+            "YXRpb25FdmVudBIyCgpldmVudFZhbHVlGAEgASgLMhguY29tbW9ubW9kdWxl",
+            "LkV2ZW50VmFsdWVCBIC1GAESQgoTZ2VuZXJhdGlvbkV2ZW50WkdFThgCIAEo",
+            "CzIlLmdlbmVyYXRpb25tb2R1bGUuR2VuZXJhdGlvbkV2ZW50WkdFTiLoAQoW",
+            "R2VuZXJhdGlvbkV2ZW50UHJvZmlsZRI+ChBldmVudE1lc3NhZ2VJbmZvGAEg",
+            "ASgLMh4uY29tbW9ubW9kdWxlLkV2ZW50TWVzc2FnZUluZm9CBIC1GAESQgoO",
+            "Z2VuZXJhdGluZ1VuaXQYAiABKAsyIC5nZW5lcmF0aW9ubW9kdWxlLkdlbmVy",
+            "YXRpbmdVbml0QgiItRgBkLUYARJECg9nZW5lcmF0aW9uRXZlbnQYAyABKAsy",
+            "IS5nZW5lcmF0aW9ubW9kdWxlLkdlbmVyYXRpb25FdmVudEIIiLUYAZC1GAE6",
+            "BMDzGAEicgoUR2VuZXJhdGlvblN0YXR1c1pHRU4SWgocZ2VuZXJhdGlvbkV2",
+            "ZW50QW5kU3RhdHVzWkdFThgBIAEoCzIuLmdlbmVyYXRpb25tb2R1bGUuR2Vu",
+            "ZXJhdGlvbkV2ZW50QW5kU3RhdHVzWkdFTkIEgLUYASKOAQoQR2VuZXJhdGlv",
+            "blN0YXR1cxI0CgtzdGF0dXNWYWx1ZRgBIAEoCzIZLmNvbW1vbm1vZHVsZS5T",
+            "dGF0dXNWYWx1ZUIEgLUYARJEChRnZW5lcmF0aW9uU3RhdHVzWkdFThgCIAEo",
+            "CzImLmdlbmVyYXRpb25tb2R1bGUuR2VuZXJhdGlvblN0YXR1c1pHRU4i7QEK",
+            "F0dlbmVyYXRpb25TdGF0dXNQcm9maWxlEkAKEXN0YXR1c01lc3NhZ2VJbmZv",
+            "GAEgASgLMh8uY29tbW9ubW9kdWxlLlN0YXR1c01lc3NhZ2VJbmZvQgSAtRgB",
+            "EkIKDmdlbmVyYXRpbmdVbml0GAIgASgLMiAuZ2VuZXJhdGlvbm1vZHVsZS5H",
+            "ZW5lcmF0aW5nVW5pdEIIiLUYAZC1GAESRgoQZ2VuZXJhdGlvblN0YXR1cxgD",
+            "IAEoCzIiLmdlbmVyYXRpb25tb2R1bGUuR2VuZXJhdGlvblN0YXR1c0IIiLUY",
+            "AZC1GAE6BMDzGAFCkAEKGG9wZW5mbWIuZ2VuZXJhdGlvbm1vZHVsZVABWldn",
+            "aXRsYWIuY29tL29wZW5mbWIvcHNtL29wcy9wcm90b2J1Zi9nby1vcGVuZm1i",
+            "LW9wcy1wcm90b2J1Zi92Mi9vcGVuZm1iL2dlbmVyYXRpb25tb2R1bGWqAhhv",
+            "cGVuZm1iLmdlbmVyYXRpb25tb2R1bGViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::openfmb.UmlReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::openfmb.commonmodule.CommonmoduleReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::openfmb.generationmodule.RealPowerControlKind), typeof(global::openfmb.generationmodule.ReactivePowerControlKind), }, null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.generationmodule.GenerationPoint), global::openfmb.generationmodule.GenerationPoint.Parser, new[]{ "BlackStartEnabled", "FrequencySetPointEnabled", "PctHzDroop", "PctVDroop", "RampRates", "ReactivePwrSetPointEnabled", "RealPwrSetPointEnabled", "Reset", "State", "SyncBackToGrid", "TransToIslndOnGridLossEnabled", "VoltageSetPointEnabled", "StartTime" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.generationmodule.GenerationCSG), global::openfmb.generationmodule.GenerationCSG.Parser, new[]{ "CrvPts" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.generationmodule.GenerationControlScheduleFSCH), global::openfmb.generationmodule.GenerationControlScheduleFSCH.Parser, new[]{ "ValDCSG" }, null, null, null, null),
@@ -175,10 +160,8 @@ namespace openfmb.generationmodule {
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.generationmodule.GenerationControl), global::openfmb.generationmodule.GenerationControl.Parser, new[]{ "ControlValue", "Check", "GenerationControlFSCC" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.generationmodule.GeneratingUnit), global::openfmb.generationmodule.GeneratingUnit.Parser, new[]{ "ConductingEquipment", "MaxOperatingP" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.generationmodule.GenerationControlProfile), global::openfmb.generationmodule.GenerationControlProfile.Parser, new[]{ "ControlMessageInfo", "GeneratingUnit", "GenerationControl" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.generationmodule.Optional_RealPowerControlKind), global::openfmb.generationmodule.Optional_RealPowerControlKind.Parser, new[]{ "Value" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.generationmodule.DroopParameter), global::openfmb.generationmodule.DroopParameter.Parser, new[]{ "Slope", "UnloadedOffset" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.generationmodule.RealPowerControl), global::openfmb.generationmodule.RealPowerControl.Parser, new[]{ "DroopSetpoint", "IsochronousSetpoint", "RealPowerControlMode", "RealPowerSetpoint" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.generationmodule.Optional_ReactivePowerControlKind), global::openfmb.generationmodule.Optional_ReactivePowerControlKind.Parser, new[]{ "Value" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.generationmodule.ReactivePowerControl), global::openfmb.generationmodule.ReactivePowerControl.Parser, new[]{ "DroopSetpoint", "PowerFactorSetpoint", "ReactivePowerControlMode", "ReactivePowerSetpoint", "VoltageSetpoint" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.generationmodule.GenerationDiscreteControl), global::openfmb.generationmodule.GenerationDiscreteControl.Parser, new[]{ "ControlValue", "Check", "ReactivePowerControl", "RealPowerControl" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.generationmodule.GenerationDiscreteControlProfile), global::openfmb.generationmodule.GenerationDiscreteControlProfile.Parser, new[]{ "ControlMessageInfo", "GeneratingUnit", "GenerationDiscreteControl" }, null, null, null, null),
@@ -197,65 +180,6 @@ namespace openfmb.generationmodule {
     #endregion
 
   }
-  #region Enums
-  /// <summary>
-  /// Real power control kind
-  /// </summary>
-  public enum RealPowerControlKind {
-    /// <summary>
-    /// MISSING DOCUMENTATION!!!
-    /// </summary>
-    [pbr::OriginalName("RealPowerControlKind_UNDEFINED")] Undefined = 0,
-    /// <summary>
-    /// MISSING DOCUMENTATION!!!
-    /// </summary>
-    [pbr::OriginalName("RealPowerControlKind_advanced")] Advanced = 1,
-    /// <summary>
-    /// MISSING DOCUMENTATION!!!
-    /// </summary>
-    [pbr::OriginalName("RealPowerControlKind_droop")] Droop = 2,
-    /// <summary>
-    /// MISSING DOCUMENTATION!!!
-    /// </summary>
-    [pbr::OriginalName("RealPowerControlKind_isochronous")] Isochronous = 3,
-    /// <summary>
-    /// Real power setpoint
-    /// </summary>
-    [pbr::OriginalName("RealPowerControlKind_realPower")] RealPower = 4,
-  }
-
-  /// <summary>
-  /// Real power control kind
-  /// </summary>
-  public enum ReactivePowerControlKind {
-    /// <summary>
-    /// MISSING DOCUMENTATION!!!
-    /// </summary>
-    [pbr::OriginalName("ReactivePowerControlKind_UNDEFINED")] Undefined = 0,
-    /// <summary>
-    /// MISSING DOCUMENTATION!!!
-    /// </summary>
-    [pbr::OriginalName("ReactivePowerControlKind_advanced")] Advanced = 1,
-    /// <summary>
-    /// MISSING DOCUMENTATION!!!
-    /// </summary>
-    [pbr::OriginalName("ReactivePowerControlKind_droop")] Droop = 2,
-    /// <summary>
-    /// Voltage setpoint
-    /// </summary>
-    [pbr::OriginalName("ReactivePowerControlKind_voltage")] Voltage = 3,
-    /// <summary>
-    /// Reactive power setpoint
-    /// </summary>
-    [pbr::OriginalName("ReactivePowerControlKind_reactivePower")] ReactivePower = 4,
-    /// <summary>
-    /// MISSING DOCUMENTATION!!!
-    /// </summary>
-    [pbr::OriginalName("ReactivePowerControlKind_powerFactor")] PowerFactor = 5,
-  }
-
-  #endregion
-
   #region Messages
   /// <summary>
   /// Point definition (Point)
@@ -312,12 +236,12 @@ namespace openfmb.generationmodule {
 
     /// <summary>Field number for the "blackStartEnabled" field.</summary>
     public const int BlackStartEnabledFieldNumber = 1;
-    private global::openfmb.commonmodule.ControlDPC blackStartEnabled_;
+    private global::openfmb.commonmodule.ControlSPC blackStartEnabled_;
     /// <summary>
     /// Black start enable
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.ControlDPC BlackStartEnabled {
+    public global::openfmb.commonmodule.ControlSPC BlackStartEnabled {
       get { return blackStartEnabled_; }
       set {
         blackStartEnabled_ = value;
@@ -326,12 +250,12 @@ namespace openfmb.generationmodule {
 
     /// <summary>Field number for the "frequencySetPointEnabled" field.</summary>
     public const int FrequencySetPointEnabledFieldNumber = 2;
-    private global::openfmb.commonmodule.ControlDPC frequencySetPointEnabled_;
+    private global::openfmb.commonmodule.ControlSPC frequencySetPointEnabled_;
     /// <summary>
     /// Enable frequency set point
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.ControlDPC FrequencySetPointEnabled {
+    public global::openfmb.commonmodule.ControlSPC FrequencySetPointEnabled {
       get { return frequencySetPointEnabled_; }
       set {
         frequencySetPointEnabled_ = value;
@@ -386,12 +310,12 @@ namespace openfmb.generationmodule {
 
     /// <summary>Field number for the "reactivePwrSetPointEnabled" field.</summary>
     public const int ReactivePwrSetPointEnabledFieldNumber = 6;
-    private global::openfmb.commonmodule.ControlDPC reactivePwrSetPointEnabled_;
+    private global::openfmb.commonmodule.ControlSPC reactivePwrSetPointEnabled_;
     /// <summary>
     /// Enable reactive power set point
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.ControlDPC ReactivePwrSetPointEnabled {
+    public global::openfmb.commonmodule.ControlSPC ReactivePwrSetPointEnabled {
       get { return reactivePwrSetPointEnabled_; }
       set {
         reactivePwrSetPointEnabled_ = value;
@@ -400,12 +324,12 @@ namespace openfmb.generationmodule {
 
     /// <summary>Field number for the "realPwrSetPointEnabled" field.</summary>
     public const int RealPwrSetPointEnabledFieldNumber = 7;
-    private global::openfmb.commonmodule.ControlDPC realPwrSetPointEnabled_;
+    private global::openfmb.commonmodule.ControlSPC realPwrSetPointEnabled_;
     /// <summary>
     /// Enable joint real power set point
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.ControlDPC RealPwrSetPointEnabled {
+    public global::openfmb.commonmodule.ControlSPC RealPwrSetPointEnabled {
       get { return realPwrSetPointEnabled_; }
       set {
         realPwrSetPointEnabled_ = value;
@@ -414,12 +338,12 @@ namespace openfmb.generationmodule {
 
     /// <summary>Field number for the "reset" field.</summary>
     public const int ResetFieldNumber = 8;
-    private global::openfmb.commonmodule.ControlDPC reset_;
+    private global::openfmb.commonmodule.ControlSPC reset_;
     /// <summary>
     /// Reset device
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.ControlDPC Reset {
+    public global::openfmb.commonmodule.ControlSPC Reset {
       get { return reset_; }
       set {
         reset_ = value;
@@ -442,12 +366,12 @@ namespace openfmb.generationmodule {
 
     /// <summary>Field number for the "syncBackToGrid" field.</summary>
     public const int SyncBackToGridFieldNumber = 10;
-    private global::openfmb.commonmodule.ControlDPC syncBackToGrid_;
+    private global::openfmb.commonmodule.ControlSPC syncBackToGrid_;
     /// <summary>
     /// Synchronize back to grid
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.ControlDPC SyncBackToGrid {
+    public global::openfmb.commonmodule.ControlSPC SyncBackToGrid {
       get { return syncBackToGrid_; }
       set {
         syncBackToGrid_ = value;
@@ -456,12 +380,12 @@ namespace openfmb.generationmodule {
 
     /// <summary>Field number for the "transToIslndOnGridLossEnabled" field.</summary>
     public const int TransToIslndOnGridLossEnabledFieldNumber = 11;
-    private global::openfmb.commonmodule.ControlDPC transToIslndOnGridLossEnabled_;
+    private global::openfmb.commonmodule.ControlSPC transToIslndOnGridLossEnabled_;
     /// <summary>
     /// Transition to island on grid loss enable
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.ControlDPC TransToIslndOnGridLossEnabled {
+    public global::openfmb.commonmodule.ControlSPC TransToIslndOnGridLossEnabled {
       get { return transToIslndOnGridLossEnabled_; }
       set {
         transToIslndOnGridLossEnabled_ = value;
@@ -470,12 +394,12 @@ namespace openfmb.generationmodule {
 
     /// <summary>Field number for the "voltageSetPointEnabled" field.</summary>
     public const int VoltageSetPointEnabledFieldNumber = 12;
-    private global::openfmb.commonmodule.ControlDPC voltageSetPointEnabled_;
+    private global::openfmb.commonmodule.ControlSPC voltageSetPointEnabled_;
     /// <summary>
     /// Enable voltage set point
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.ControlDPC VoltageSetPointEnabled {
+    public global::openfmb.commonmodule.ControlSPC VoltageSetPointEnabled {
       get { return voltageSetPointEnabled_; }
       set {
         voltageSetPointEnabled_ = value;
@@ -727,13 +651,13 @@ namespace openfmb.generationmodule {
       }
       if (other.blackStartEnabled_ != null) {
         if (blackStartEnabled_ == null) {
-          BlackStartEnabled = new global::openfmb.commonmodule.ControlDPC();
+          BlackStartEnabled = new global::openfmb.commonmodule.ControlSPC();
         }
         BlackStartEnabled.MergeFrom(other.BlackStartEnabled);
       }
       if (other.frequencySetPointEnabled_ != null) {
         if (frequencySetPointEnabled_ == null) {
-          FrequencySetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+          FrequencySetPointEnabled = new global::openfmb.commonmodule.ControlSPC();
         }
         FrequencySetPointEnabled.MergeFrom(other.FrequencySetPointEnabled);
       }
@@ -755,19 +679,19 @@ namespace openfmb.generationmodule {
       }
       if (other.reactivePwrSetPointEnabled_ != null) {
         if (reactivePwrSetPointEnabled_ == null) {
-          ReactivePwrSetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+          ReactivePwrSetPointEnabled = new global::openfmb.commonmodule.ControlSPC();
         }
         ReactivePwrSetPointEnabled.MergeFrom(other.ReactivePwrSetPointEnabled);
       }
       if (other.realPwrSetPointEnabled_ != null) {
         if (realPwrSetPointEnabled_ == null) {
-          RealPwrSetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+          RealPwrSetPointEnabled = new global::openfmb.commonmodule.ControlSPC();
         }
         RealPwrSetPointEnabled.MergeFrom(other.RealPwrSetPointEnabled);
       }
       if (other.reset_ != null) {
         if (reset_ == null) {
-          Reset = new global::openfmb.commonmodule.ControlDPC();
+          Reset = new global::openfmb.commonmodule.ControlSPC();
         }
         Reset.MergeFrom(other.Reset);
       }
@@ -779,19 +703,19 @@ namespace openfmb.generationmodule {
       }
       if (other.syncBackToGrid_ != null) {
         if (syncBackToGrid_ == null) {
-          SyncBackToGrid = new global::openfmb.commonmodule.ControlDPC();
+          SyncBackToGrid = new global::openfmb.commonmodule.ControlSPC();
         }
         SyncBackToGrid.MergeFrom(other.SyncBackToGrid);
       }
       if (other.transToIslndOnGridLossEnabled_ != null) {
         if (transToIslndOnGridLossEnabled_ == null) {
-          TransToIslndOnGridLossEnabled = new global::openfmb.commonmodule.ControlDPC();
+          TransToIslndOnGridLossEnabled = new global::openfmb.commonmodule.ControlSPC();
         }
         TransToIslndOnGridLossEnabled.MergeFrom(other.TransToIslndOnGridLossEnabled);
       }
       if (other.voltageSetPointEnabled_ != null) {
         if (voltageSetPointEnabled_ == null) {
-          VoltageSetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+          VoltageSetPointEnabled = new global::openfmb.commonmodule.ControlSPC();
         }
         VoltageSetPointEnabled.MergeFrom(other.VoltageSetPointEnabled);
       }
@@ -817,14 +741,14 @@ namespace openfmb.generationmodule {
             break;
           case 10: {
             if (blackStartEnabled_ == null) {
-              BlackStartEnabled = new global::openfmb.commonmodule.ControlDPC();
+              BlackStartEnabled = new global::openfmb.commonmodule.ControlSPC();
             }
             input.ReadMessage(BlackStartEnabled);
             break;
           }
           case 18: {
             if (frequencySetPointEnabled_ == null) {
-              FrequencySetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+              FrequencySetPointEnabled = new global::openfmb.commonmodule.ControlSPC();
             }
             input.ReadMessage(FrequencySetPointEnabled);
             break;
@@ -852,21 +776,21 @@ namespace openfmb.generationmodule {
           }
           case 50: {
             if (reactivePwrSetPointEnabled_ == null) {
-              ReactivePwrSetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+              ReactivePwrSetPointEnabled = new global::openfmb.commonmodule.ControlSPC();
             }
             input.ReadMessage(ReactivePwrSetPointEnabled);
             break;
           }
           case 58: {
             if (realPwrSetPointEnabled_ == null) {
-              RealPwrSetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+              RealPwrSetPointEnabled = new global::openfmb.commonmodule.ControlSPC();
             }
             input.ReadMessage(RealPwrSetPointEnabled);
             break;
           }
           case 66: {
             if (reset_ == null) {
-              Reset = new global::openfmb.commonmodule.ControlDPC();
+              Reset = new global::openfmb.commonmodule.ControlSPC();
             }
             input.ReadMessage(Reset);
             break;
@@ -880,21 +804,21 @@ namespace openfmb.generationmodule {
           }
           case 82: {
             if (syncBackToGrid_ == null) {
-              SyncBackToGrid = new global::openfmb.commonmodule.ControlDPC();
+              SyncBackToGrid = new global::openfmb.commonmodule.ControlSPC();
             }
             input.ReadMessage(SyncBackToGrid);
             break;
           }
           case 90: {
             if (transToIslndOnGridLossEnabled_ == null) {
-              TransToIslndOnGridLossEnabled = new global::openfmb.commonmodule.ControlDPC();
+              TransToIslndOnGridLossEnabled = new global::openfmb.commonmodule.ControlSPC();
             }
             input.ReadMessage(TransToIslndOnGridLossEnabled);
             break;
           }
           case 98: {
             if (voltageSetPointEnabled_ == null) {
-              VoltageSetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+              VoltageSetPointEnabled = new global::openfmb.commonmodule.ControlSPC();
             }
             input.ReadMessage(VoltageSetPointEnabled);
             break;
@@ -922,14 +846,14 @@ namespace openfmb.generationmodule {
             break;
           case 10: {
             if (blackStartEnabled_ == null) {
-              BlackStartEnabled = new global::openfmb.commonmodule.ControlDPC();
+              BlackStartEnabled = new global::openfmb.commonmodule.ControlSPC();
             }
             input.ReadMessage(BlackStartEnabled);
             break;
           }
           case 18: {
             if (frequencySetPointEnabled_ == null) {
-              FrequencySetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+              FrequencySetPointEnabled = new global::openfmb.commonmodule.ControlSPC();
             }
             input.ReadMessage(FrequencySetPointEnabled);
             break;
@@ -957,21 +881,21 @@ namespace openfmb.generationmodule {
           }
           case 50: {
             if (reactivePwrSetPointEnabled_ == null) {
-              ReactivePwrSetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+              ReactivePwrSetPointEnabled = new global::openfmb.commonmodule.ControlSPC();
             }
             input.ReadMessage(ReactivePwrSetPointEnabled);
             break;
           }
           case 58: {
             if (realPwrSetPointEnabled_ == null) {
-              RealPwrSetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+              RealPwrSetPointEnabled = new global::openfmb.commonmodule.ControlSPC();
             }
             input.ReadMessage(RealPwrSetPointEnabled);
             break;
           }
           case 66: {
             if (reset_ == null) {
-              Reset = new global::openfmb.commonmodule.ControlDPC();
+              Reset = new global::openfmb.commonmodule.ControlSPC();
             }
             input.ReadMessage(Reset);
             break;
@@ -985,21 +909,21 @@ namespace openfmb.generationmodule {
           }
           case 82: {
             if (syncBackToGrid_ == null) {
-              SyncBackToGrid = new global::openfmb.commonmodule.ControlDPC();
+              SyncBackToGrid = new global::openfmb.commonmodule.ControlSPC();
             }
             input.ReadMessage(SyncBackToGrid);
             break;
           }
           case 90: {
             if (transToIslndOnGridLossEnabled_ == null) {
-              TransToIslndOnGridLossEnabled = new global::openfmb.commonmodule.ControlDPC();
+              TransToIslndOnGridLossEnabled = new global::openfmb.commonmodule.ControlSPC();
             }
             input.ReadMessage(TransToIslndOnGridLossEnabled);
             break;
           }
           case 98: {
             if (voltageSetPointEnabled_ == null) {
-              VoltageSetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+              VoltageSetPointEnabled = new global::openfmb.commonmodule.ControlSPC();
             }
             input.ReadMessage(VoltageSetPointEnabled);
             break;
@@ -2411,178 +2335,6 @@ namespace openfmb.generationmodule {
 
   }
 
-  public sealed partial class Optional_RealPowerControlKind : pb::IMessage<Optional_RealPowerControlKind>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<Optional_RealPowerControlKind> _parser = new pb::MessageParser<Optional_RealPowerControlKind>(() => new Optional_RealPowerControlKind());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<Optional_RealPowerControlKind> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[7]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public Optional_RealPowerControlKind() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public Optional_RealPowerControlKind(Optional_RealPowerControlKind other) : this() {
-      value_ = other.value_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public Optional_RealPowerControlKind Clone() {
-      return new Optional_RealPowerControlKind(this);
-    }
-
-    /// <summary>Field number for the "value" field.</summary>
-    public const int ValueFieldNumber = 1;
-    private global::openfmb.generationmodule.RealPowerControlKind value_ = global::openfmb.generationmodule.RealPowerControlKind.Undefined;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.generationmodule.RealPowerControlKind Value {
-      get { return value_; }
-      set {
-        value_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as Optional_RealPowerControlKind);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(Optional_RealPowerControlKind other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (Value != other.Value) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (Value != global::openfmb.generationmodule.RealPowerControlKind.Undefined) hash ^= Value.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (Value != global::openfmb.generationmodule.RealPowerControlKind.Undefined) {
-        output.WriteRawTag(8);
-        output.WriteEnum((int) Value);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Value != global::openfmb.generationmodule.RealPowerControlKind.Undefined) {
-        output.WriteRawTag(8);
-        output.WriteEnum((int) Value);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (Value != global::openfmb.generationmodule.RealPowerControlKind.Undefined) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Value);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(Optional_RealPowerControlKind other) {
-      if (other == null) {
-        return;
-      }
-      if (other.Value != global::openfmb.generationmodule.RealPowerControlKind.Undefined) {
-        Value = other.Value;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            Value = (global::openfmb.generationmodule.RealPowerControlKind) input.ReadEnum();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            Value = (global::openfmb.generationmodule.RealPowerControlKind) input.ReadEnum();
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
   /// <summary>
   /// Generation discrete control
   /// </summary>
@@ -2598,7 +2350,7 @@ namespace openfmb.generationmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[8]; }
+      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2831,7 +2583,7 @@ namespace openfmb.generationmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[9]; }
+      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2892,12 +2644,12 @@ namespace openfmb.generationmodule {
 
     /// <summary>Field number for the "realPowerControlMode" field.</summary>
     public const int RealPowerControlModeFieldNumber = 3;
-    private global::openfmb.generationmodule.Optional_RealPowerControlKind realPowerControlMode_;
+    private global::openfmb.commonmodule.Optional_RealPowerControlKind realPowerControlMode_;
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.generationmodule.Optional_RealPowerControlKind RealPowerControlMode {
+    public global::openfmb.commonmodule.Optional_RealPowerControlKind RealPowerControlMode {
       get { return realPowerControlMode_; }
       set {
         realPowerControlMode_ = value;
@@ -3045,7 +2797,7 @@ namespace openfmb.generationmodule {
       }
       if (other.realPowerControlMode_ != null) {
         if (realPowerControlMode_ == null) {
-          RealPowerControlMode = new global::openfmb.generationmodule.Optional_RealPowerControlKind();
+          RealPowerControlMode = new global::openfmb.commonmodule.Optional_RealPowerControlKind();
         }
         RealPowerControlMode.MergeFrom(other.RealPowerControlMode);
       }
@@ -3084,7 +2836,7 @@ namespace openfmb.generationmodule {
           }
           case 26: {
             if (realPowerControlMode_ == null) {
-              RealPowerControlMode = new global::openfmb.generationmodule.Optional_RealPowerControlKind();
+              RealPowerControlMode = new global::openfmb.commonmodule.Optional_RealPowerControlKind();
             }
             input.ReadMessage(RealPowerControlMode);
             break;
@@ -3126,7 +2878,7 @@ namespace openfmb.generationmodule {
           }
           case 26: {
             if (realPowerControlMode_ == null) {
-              RealPowerControlMode = new global::openfmb.generationmodule.Optional_RealPowerControlKind();
+              RealPowerControlMode = new global::openfmb.commonmodule.Optional_RealPowerControlKind();
             }
             input.ReadMessage(RealPowerControlMode);
             break;
@@ -3136,178 +2888,6 @@ namespace openfmb.generationmodule {
             if (realPowerSetpoint_ == null || value != 0F) {
               RealPowerSetpoint = value;
             }
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  public sealed partial class Optional_ReactivePowerControlKind : pb::IMessage<Optional_ReactivePowerControlKind>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<Optional_ReactivePowerControlKind> _parser = new pb::MessageParser<Optional_ReactivePowerControlKind>(() => new Optional_ReactivePowerControlKind());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<Optional_ReactivePowerControlKind> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[10]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public Optional_ReactivePowerControlKind() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public Optional_ReactivePowerControlKind(Optional_ReactivePowerControlKind other) : this() {
-      value_ = other.value_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public Optional_ReactivePowerControlKind Clone() {
-      return new Optional_ReactivePowerControlKind(this);
-    }
-
-    /// <summary>Field number for the "value" field.</summary>
-    public const int ValueFieldNumber = 1;
-    private global::openfmb.generationmodule.ReactivePowerControlKind value_ = global::openfmb.generationmodule.ReactivePowerControlKind.Undefined;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.generationmodule.ReactivePowerControlKind Value {
-      get { return value_; }
-      set {
-        value_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as Optional_ReactivePowerControlKind);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(Optional_ReactivePowerControlKind other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (Value != other.Value) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (Value != global::openfmb.generationmodule.ReactivePowerControlKind.Undefined) hash ^= Value.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (Value != global::openfmb.generationmodule.ReactivePowerControlKind.Undefined) {
-        output.WriteRawTag(8);
-        output.WriteEnum((int) Value);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Value != global::openfmb.generationmodule.ReactivePowerControlKind.Undefined) {
-        output.WriteRawTag(8);
-        output.WriteEnum((int) Value);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (Value != global::openfmb.generationmodule.ReactivePowerControlKind.Undefined) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Value);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(Optional_ReactivePowerControlKind other) {
-      if (other == null) {
-        return;
-      }
-      if (other.Value != global::openfmb.generationmodule.ReactivePowerControlKind.Undefined) {
-        Value = other.Value;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            Value = (global::openfmb.generationmodule.ReactivePowerControlKind) input.ReadEnum();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            Value = (global::openfmb.generationmodule.ReactivePowerControlKind) input.ReadEnum();
             break;
           }
         }
@@ -3332,7 +2912,7 @@ namespace openfmb.generationmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[11]; }
+      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3394,12 +2974,12 @@ namespace openfmb.generationmodule {
 
     /// <summary>Field number for the "reactivePowerControlMode" field.</summary>
     public const int ReactivePowerControlModeFieldNumber = 3;
-    private global::openfmb.generationmodule.Optional_ReactivePowerControlKind reactivePowerControlMode_;
+    private global::openfmb.commonmodule.Optional_ReactivePowerControlKind reactivePowerControlMode_;
     /// <summary>
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.generationmodule.Optional_ReactivePowerControlKind ReactivePowerControlMode {
+    public global::openfmb.commonmodule.Optional_ReactivePowerControlKind ReactivePowerControlMode {
       get { return reactivePowerControlMode_; }
       set {
         reactivePowerControlMode_ = value;
@@ -3574,7 +3154,7 @@ namespace openfmb.generationmodule {
       }
       if (other.reactivePowerControlMode_ != null) {
         if (reactivePowerControlMode_ == null) {
-          ReactivePowerControlMode = new global::openfmb.generationmodule.Optional_ReactivePowerControlKind();
+          ReactivePowerControlMode = new global::openfmb.commonmodule.Optional_ReactivePowerControlKind();
         }
         ReactivePowerControlMode.MergeFrom(other.ReactivePowerControlMode);
       }
@@ -3618,7 +3198,7 @@ namespace openfmb.generationmodule {
           }
           case 26: {
             if (reactivePowerControlMode_ == null) {
-              ReactivePowerControlMode = new global::openfmb.generationmodule.Optional_ReactivePowerControlKind();
+              ReactivePowerControlMode = new global::openfmb.commonmodule.Optional_ReactivePowerControlKind();
             }
             input.ReadMessage(ReactivePowerControlMode);
             break;
@@ -3667,7 +3247,7 @@ namespace openfmb.generationmodule {
           }
           case 26: {
             if (reactivePowerControlMode_ == null) {
-              ReactivePowerControlMode = new global::openfmb.generationmodule.Optional_ReactivePowerControlKind();
+              ReactivePowerControlMode = new global::openfmb.commonmodule.Optional_ReactivePowerControlKind();
             }
             input.ReadMessage(ReactivePowerControlMode);
             break;
@@ -3708,7 +3288,7 @@ namespace openfmb.generationmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[12]; }
+      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4039,7 +3619,7 @@ namespace openfmb.generationmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[13]; }
+      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4322,7 +3902,7 @@ namespace openfmb.generationmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[14]; }
+      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4653,7 +4233,7 @@ namespace openfmb.generationmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[15]; }
+      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4936,7 +4516,7 @@ namespace openfmb.generationmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[16]; }
+      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4974,12 +4554,12 @@ namespace openfmb.generationmodule {
 
     /// <summary>Field number for the "blackStartEnabled" field.</summary>
     public const int BlackStartEnabledFieldNumber = 1;
-    private global::openfmb.commonmodule.StatusDPS blackStartEnabled_;
+    private global::openfmb.commonmodule.StatusSPS blackStartEnabled_;
     /// <summary>
     /// Black start enable
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.StatusDPS BlackStartEnabled {
+    public global::openfmb.commonmodule.StatusSPS BlackStartEnabled {
       get { return blackStartEnabled_; }
       set {
         blackStartEnabled_ = value;
@@ -4988,12 +4568,12 @@ namespace openfmb.generationmodule {
 
     /// <summary>Field number for the "frequencySetPointEnabled" field.</summary>
     public const int FrequencySetPointEnabledFieldNumber = 2;
-    private global::openfmb.commonmodule.StatusDPS frequencySetPointEnabled_;
+    private global::openfmb.commonmodule.StatusSPS frequencySetPointEnabled_;
     /// <summary>
     /// Enable frequency set point
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.StatusDPS FrequencySetPointEnabled {
+    public global::openfmb.commonmodule.StatusSPS FrequencySetPointEnabled {
       get { return frequencySetPointEnabled_; }
       set {
         frequencySetPointEnabled_ = value;
@@ -5048,12 +4628,12 @@ namespace openfmb.generationmodule {
 
     /// <summary>Field number for the "reactivePwrSetPointEnabled" field.</summary>
     public const int ReactivePwrSetPointEnabledFieldNumber = 6;
-    private global::openfmb.commonmodule.StatusDPS reactivePwrSetPointEnabled_;
+    private global::openfmb.commonmodule.StatusSPS reactivePwrSetPointEnabled_;
     /// <summary>
     /// Enable reactive power set point
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.StatusDPS ReactivePwrSetPointEnabled {
+    public global::openfmb.commonmodule.StatusSPS ReactivePwrSetPointEnabled {
       get { return reactivePwrSetPointEnabled_; }
       set {
         reactivePwrSetPointEnabled_ = value;
@@ -5062,12 +4642,12 @@ namespace openfmb.generationmodule {
 
     /// <summary>Field number for the "realPwrSetPointEnabled" field.</summary>
     public const int RealPwrSetPointEnabledFieldNumber = 7;
-    private global::openfmb.commonmodule.StatusDPS realPwrSetPointEnabled_;
+    private global::openfmb.commonmodule.StatusSPS realPwrSetPointEnabled_;
     /// <summary>
     /// Enable real power set point
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.StatusDPS RealPwrSetPointEnabled {
+    public global::openfmb.commonmodule.StatusSPS RealPwrSetPointEnabled {
       get { return realPwrSetPointEnabled_; }
       set {
         realPwrSetPointEnabled_ = value;
@@ -5090,12 +4670,12 @@ namespace openfmb.generationmodule {
 
     /// <summary>Field number for the "syncBackToGrid" field.</summary>
     public const int SyncBackToGridFieldNumber = 9;
-    private global::openfmb.commonmodule.StatusDPS syncBackToGrid_;
+    private global::openfmb.commonmodule.StatusSPS syncBackToGrid_;
     /// <summary>
     /// Synchronize back to grid
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.StatusDPS SyncBackToGrid {
+    public global::openfmb.commonmodule.StatusSPS SyncBackToGrid {
       get { return syncBackToGrid_; }
       set {
         syncBackToGrid_ = value;
@@ -5104,12 +4684,12 @@ namespace openfmb.generationmodule {
 
     /// <summary>Field number for the "transToIslndOnGridLossEnabled" field.</summary>
     public const int TransToIslndOnGridLossEnabledFieldNumber = 10;
-    private global::openfmb.commonmodule.StatusDPS transToIslndOnGridLossEnabled_;
+    private global::openfmb.commonmodule.StatusSPS transToIslndOnGridLossEnabled_;
     /// <summary>
     /// Transition to island on grid loss enable
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.StatusDPS TransToIslndOnGridLossEnabled {
+    public global::openfmb.commonmodule.StatusSPS TransToIslndOnGridLossEnabled {
       get { return transToIslndOnGridLossEnabled_; }
       set {
         transToIslndOnGridLossEnabled_ = value;
@@ -5118,12 +4698,12 @@ namespace openfmb.generationmodule {
 
     /// <summary>Field number for the "voltageSetPointEnabled" field.</summary>
     public const int VoltageSetPointEnabledFieldNumber = 11;
-    private global::openfmb.commonmodule.StatusDPS voltageSetPointEnabled_;
+    private global::openfmb.commonmodule.StatusSPS voltageSetPointEnabled_;
     /// <summary>
     /// Enable voltage set point
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.StatusDPS VoltageSetPointEnabled {
+    public global::openfmb.commonmodule.StatusSPS VoltageSetPointEnabled {
       get { return voltageSetPointEnabled_; }
       set {
         voltageSetPointEnabled_ = value;
@@ -5335,13 +4915,13 @@ namespace openfmb.generationmodule {
       }
       if (other.blackStartEnabled_ != null) {
         if (blackStartEnabled_ == null) {
-          BlackStartEnabled = new global::openfmb.commonmodule.StatusDPS();
+          BlackStartEnabled = new global::openfmb.commonmodule.StatusSPS();
         }
         BlackStartEnabled.MergeFrom(other.BlackStartEnabled);
       }
       if (other.frequencySetPointEnabled_ != null) {
         if (frequencySetPointEnabled_ == null) {
-          FrequencySetPointEnabled = new global::openfmb.commonmodule.StatusDPS();
+          FrequencySetPointEnabled = new global::openfmb.commonmodule.StatusSPS();
         }
         FrequencySetPointEnabled.MergeFrom(other.FrequencySetPointEnabled);
       }
@@ -5363,13 +4943,13 @@ namespace openfmb.generationmodule {
       }
       if (other.reactivePwrSetPointEnabled_ != null) {
         if (reactivePwrSetPointEnabled_ == null) {
-          ReactivePwrSetPointEnabled = new global::openfmb.commonmodule.StatusDPS();
+          ReactivePwrSetPointEnabled = new global::openfmb.commonmodule.StatusSPS();
         }
         ReactivePwrSetPointEnabled.MergeFrom(other.ReactivePwrSetPointEnabled);
       }
       if (other.realPwrSetPointEnabled_ != null) {
         if (realPwrSetPointEnabled_ == null) {
-          RealPwrSetPointEnabled = new global::openfmb.commonmodule.StatusDPS();
+          RealPwrSetPointEnabled = new global::openfmb.commonmodule.StatusSPS();
         }
         RealPwrSetPointEnabled.MergeFrom(other.RealPwrSetPointEnabled);
       }
@@ -5381,19 +4961,19 @@ namespace openfmb.generationmodule {
       }
       if (other.syncBackToGrid_ != null) {
         if (syncBackToGrid_ == null) {
-          SyncBackToGrid = new global::openfmb.commonmodule.StatusDPS();
+          SyncBackToGrid = new global::openfmb.commonmodule.StatusSPS();
         }
         SyncBackToGrid.MergeFrom(other.SyncBackToGrid);
       }
       if (other.transToIslndOnGridLossEnabled_ != null) {
         if (transToIslndOnGridLossEnabled_ == null) {
-          TransToIslndOnGridLossEnabled = new global::openfmb.commonmodule.StatusDPS();
+          TransToIslndOnGridLossEnabled = new global::openfmb.commonmodule.StatusSPS();
         }
         TransToIslndOnGridLossEnabled.MergeFrom(other.TransToIslndOnGridLossEnabled);
       }
       if (other.voltageSetPointEnabled_ != null) {
         if (voltageSetPointEnabled_ == null) {
-          VoltageSetPointEnabled = new global::openfmb.commonmodule.StatusDPS();
+          VoltageSetPointEnabled = new global::openfmb.commonmodule.StatusSPS();
         }
         VoltageSetPointEnabled.MergeFrom(other.VoltageSetPointEnabled);
       }
@@ -5413,14 +4993,14 @@ namespace openfmb.generationmodule {
             break;
           case 10: {
             if (blackStartEnabled_ == null) {
-              BlackStartEnabled = new global::openfmb.commonmodule.StatusDPS();
+              BlackStartEnabled = new global::openfmb.commonmodule.StatusSPS();
             }
             input.ReadMessage(BlackStartEnabled);
             break;
           }
           case 18: {
             if (frequencySetPointEnabled_ == null) {
-              FrequencySetPointEnabled = new global::openfmb.commonmodule.StatusDPS();
+              FrequencySetPointEnabled = new global::openfmb.commonmodule.StatusSPS();
             }
             input.ReadMessage(FrequencySetPointEnabled);
             break;
@@ -5448,14 +5028,14 @@ namespace openfmb.generationmodule {
           }
           case 50: {
             if (reactivePwrSetPointEnabled_ == null) {
-              ReactivePwrSetPointEnabled = new global::openfmb.commonmodule.StatusDPS();
+              ReactivePwrSetPointEnabled = new global::openfmb.commonmodule.StatusSPS();
             }
             input.ReadMessage(ReactivePwrSetPointEnabled);
             break;
           }
           case 58: {
             if (realPwrSetPointEnabled_ == null) {
-              RealPwrSetPointEnabled = new global::openfmb.commonmodule.StatusDPS();
+              RealPwrSetPointEnabled = new global::openfmb.commonmodule.StatusSPS();
             }
             input.ReadMessage(RealPwrSetPointEnabled);
             break;
@@ -5469,21 +5049,21 @@ namespace openfmb.generationmodule {
           }
           case 74: {
             if (syncBackToGrid_ == null) {
-              SyncBackToGrid = new global::openfmb.commonmodule.StatusDPS();
+              SyncBackToGrid = new global::openfmb.commonmodule.StatusSPS();
             }
             input.ReadMessage(SyncBackToGrid);
             break;
           }
           case 82: {
             if (transToIslndOnGridLossEnabled_ == null) {
-              TransToIslndOnGridLossEnabled = new global::openfmb.commonmodule.StatusDPS();
+              TransToIslndOnGridLossEnabled = new global::openfmb.commonmodule.StatusSPS();
             }
             input.ReadMessage(TransToIslndOnGridLossEnabled);
             break;
           }
           case 90: {
             if (voltageSetPointEnabled_ == null) {
-              VoltageSetPointEnabled = new global::openfmb.commonmodule.StatusDPS();
+              VoltageSetPointEnabled = new global::openfmb.commonmodule.StatusSPS();
             }
             input.ReadMessage(VoltageSetPointEnabled);
             break;
@@ -5504,14 +5084,14 @@ namespace openfmb.generationmodule {
             break;
           case 10: {
             if (blackStartEnabled_ == null) {
-              BlackStartEnabled = new global::openfmb.commonmodule.StatusDPS();
+              BlackStartEnabled = new global::openfmb.commonmodule.StatusSPS();
             }
             input.ReadMessage(BlackStartEnabled);
             break;
           }
           case 18: {
             if (frequencySetPointEnabled_ == null) {
-              FrequencySetPointEnabled = new global::openfmb.commonmodule.StatusDPS();
+              FrequencySetPointEnabled = new global::openfmb.commonmodule.StatusSPS();
             }
             input.ReadMessage(FrequencySetPointEnabled);
             break;
@@ -5539,14 +5119,14 @@ namespace openfmb.generationmodule {
           }
           case 50: {
             if (reactivePwrSetPointEnabled_ == null) {
-              ReactivePwrSetPointEnabled = new global::openfmb.commonmodule.StatusDPS();
+              ReactivePwrSetPointEnabled = new global::openfmb.commonmodule.StatusSPS();
             }
             input.ReadMessage(ReactivePwrSetPointEnabled);
             break;
           }
           case 58: {
             if (realPwrSetPointEnabled_ == null) {
-              RealPwrSetPointEnabled = new global::openfmb.commonmodule.StatusDPS();
+              RealPwrSetPointEnabled = new global::openfmb.commonmodule.StatusSPS();
             }
             input.ReadMessage(RealPwrSetPointEnabled);
             break;
@@ -5560,21 +5140,21 @@ namespace openfmb.generationmodule {
           }
           case 74: {
             if (syncBackToGrid_ == null) {
-              SyncBackToGrid = new global::openfmb.commonmodule.StatusDPS();
+              SyncBackToGrid = new global::openfmb.commonmodule.StatusSPS();
             }
             input.ReadMessage(SyncBackToGrid);
             break;
           }
           case 82: {
             if (transToIslndOnGridLossEnabled_ == null) {
-              TransToIslndOnGridLossEnabled = new global::openfmb.commonmodule.StatusDPS();
+              TransToIslndOnGridLossEnabled = new global::openfmb.commonmodule.StatusSPS();
             }
             input.ReadMessage(TransToIslndOnGridLossEnabled);
             break;
           }
           case 90: {
             if (voltageSetPointEnabled_ == null) {
-              VoltageSetPointEnabled = new global::openfmb.commonmodule.StatusDPS();
+              VoltageSetPointEnabled = new global::openfmb.commonmodule.StatusSPS();
             }
             input.ReadMessage(VoltageSetPointEnabled);
             break;
@@ -5601,7 +5181,7 @@ namespace openfmb.generationmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[17]; }
+      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6028,7 +5608,7 @@ namespace openfmb.generationmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[18]; }
+      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[16]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6215,7 +5795,7 @@ namespace openfmb.generationmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[19]; }
+      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[17]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6450,7 +6030,7 @@ namespace openfmb.generationmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[20]; }
+      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[18]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6733,7 +6313,7 @@ namespace openfmb.generationmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[21]; }
+      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[19]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6920,7 +6500,7 @@ namespace openfmb.generationmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[22]; }
+      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[20]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7155,7 +6735,7 @@ namespace openfmb.generationmodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[23]; }
+      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[21]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

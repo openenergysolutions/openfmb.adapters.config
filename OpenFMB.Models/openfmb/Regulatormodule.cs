@@ -26,104 +26,121 @@ namespace openfmb.regulatormodule {
           string.Concat(
             "CiVyZWd1bGF0b3Jtb2R1bGUvcmVndWxhdG9ybW9kdWxlLnByb3RvEg9yZWd1",
             "bGF0b3Jtb2R1bGUaCXVtbC5wcm90bxofY29tbW9ubW9kdWxlL2NvbW1vbm1v",
-            "ZHVsZS5wcm90byKkBAoUUmVndWxhdG9yQ29udHJvbEFUQ0MSSAoVbG9naWNh",
-            "bE5vZGVGb3JDb250cm9sGAEgASgLMiMuY29tbW9ubW9kdWxlLkxvZ2ljYWxO",
-            "b2RlRm9yQ29udHJvbEIEgLUYARIhCgZCbmRDdHIYAiABKAsyES5jb21tb25t",
-            "b2R1bGUuQVNHEiEKBkJuZFdpZBgDIAEoCzIRLmNvbW1vbm1vZHVsZS5BU0cS",
-            "KwoJQ3RsRGxUbW1zGAQgASgLMhguY29tbW9ubW9kdWxlLkNvbnRyb2xJTkcS",
-            "HwoETERDUhgFIAEoCzIRLmNvbW1vbm1vZHVsZS5BU0cSHwoETERDWBgGIAEo",
-            "CzIRLmNvbW1vbm1vZHVsZS5BU0cSJwoFUGFyT3AYByABKAsyGC5jb21tb25t",
-            "b2R1bGUuQ29udHJvbFNQQxIpCglyYW1wUmF0ZXMYCCABKAsyFi5jb21tb25t",
-            "b2R1bGUuUmFtcFJhdGUSLwoFc3RhdGUYCSABKAsyIC5jb21tb25tb2R1bGUu",
-            "T3B0aW9uYWxfU3RhdGVLaW5kEiYKBlRhcFBvcxgKIAEoCzIWLmNvbW1vbm1v",
-            "ZHVsZS5QaGFzZUlTQxImCgZWb2xTcHQYCyABKAsyFi5jb21tb25tb2R1bGUu",
-            "UGhhc2VBUEMSOAoWdm9sdGFnZVNldFBvaW50RW5hYmxlZBgMIAEoCzIYLmNv",
-            "bW1vbm1vZHVsZS5Db250cm9sRFBDIn4KDlJlZ3VsYXRvclBvaW50EjYKB2Nv",
-            "bnRyb2wYASABKAsyJS5yZWd1bGF0b3Jtb2R1bGUuUmVndWxhdG9yQ29udHJv",
-            "bEFUQ0MSNAoJc3RhcnRUaW1lGAggASgLMhcuY29tbW9ubW9kdWxlLlRpbWVz",
-            "dGFtcEIIiLUYAZC1GAEiSQoMUmVndWxhdG9yQ1NHEjkKBmNydlB0cxgBIAMo",
-            "CzIfLnJlZ3VsYXRvcm1vZHVsZS5SZWd1bGF0b3JQb2ludEIIiLUYAZC1GAEi",
-            "WAocUmVndWxhdG9yQ29udHJvbFNjaGVkdWxlRlNDSBI4CgdWYWxEQ1NHGAEg",
-            "ASgLMh0ucmVndWxhdG9ybW9kdWxlLlJlZ3VsYXRvckNTR0IIiLUYAZC1GAEi",
-            "oQEKFFJlZ3VsYXRvckNvbnRyb2xGU0NDEjQKC2NvbnRyb2xGU0NDGAEgASgL",
-            "MhkuY29tbW9ubW9kdWxlLkNvbnRyb2xGU0NDQgSAtRgBElMKHHJlZ3VsYXRv",
-            "ckNvbnRyb2xTY2hlZHVsZUZTQ0gYAiABKAsyLS5yZWd1bGF0b3Jtb2R1bGUu",
-            "UmVndWxhdG9yQ29udHJvbFNjaGVkdWxlRlNDSCK9AQoQUmVndWxhdG9yQ29u",
-            "dHJvbBI2Cgxjb250cm9sVmFsdWUYASABKAsyGi5jb21tb25tb2R1bGUuQ29u",
-            "dHJvbFZhbHVlQgSAtRgBEiwKBWNoZWNrGAIgASgLMh0uY29tbW9ubW9kdWxl",
-            "LkNoZWNrQ29uZGl0aW9ucxJDChRyZWd1bGF0b3JDb250cm9sRlNDQxgDIAEo",
-            "CzIlLnJlZ3VsYXRvcm1vZHVsZS5SZWd1bGF0b3JDb250cm9sRlNDQyJXCg9S",
-            "ZWd1bGF0b3JTeXN0ZW0SRAoTY29uZHVjdGluZ0VxdWlwbWVudBgBIAEoCzIh",
-            "LmNvbW1vbm1vZHVsZS5Db25kdWN0aW5nRXF1aXBtZW50QgSAtRgBIu8BChdS",
-            "ZWd1bGF0b3JDb250cm9sUHJvZmlsZRJCChJjb250cm9sTWVzc2FnZUluZm8Y",
-            "ASABKAsyIC5jb21tb25tb2R1bGUuQ29udHJvbE1lc3NhZ2VJbmZvQgSAtRgB",
-            "EkUKEHJlZ3VsYXRvckNvbnRyb2wYAiABKAsyIS5yZWd1bGF0b3Jtb2R1bGUu",
-            "UmVndWxhdG9yQ29udHJvbEIIiLUYAZC1GAESQwoPcmVndWxhdG9yU3lzdGVt",
-            "GAMgASgLMiAucmVndWxhdG9ybW9kdWxlLlJlZ3VsYXRvclN5c3RlbUIIiLUY",
-            "AZC1GAE6BMDzGAEixQEKGFJlZ3VsYXRvckRpc2NyZXRlQ29udHJvbBI2Cgxj",
-            "b250cm9sVmFsdWUYASABKAsyGi5jb21tb25tb2R1bGUuQ29udHJvbFZhbHVl",
-            "QgSAtRgBEiwKBWNoZWNrGAIgASgLMh0uY29tbW9ubW9kdWxlLkNoZWNrQ29u",
-            "ZGl0aW9ucxJDChRyZWd1bGF0b3JDb250cm9sQVRDQxgDIAEoCzIlLnJlZ3Vs",
-            "YXRvcm1vZHVsZS5SZWd1bGF0b3JDb250cm9sQVRDQyKHAgofUmVndWxhdG9y",
-            "RGlzY3JldGVDb250cm9sUHJvZmlsZRJCChJjb250cm9sTWVzc2FnZUluZm8Y",
-            "ASABKAsyIC5jb21tb25tb2R1bGUuQ29udHJvbE1lc3NhZ2VJbmZvQgSAtRgB",
-            "ElUKGHJlZ3VsYXRvckRpc2NyZXRlQ29udHJvbBgCIAEoCzIpLnJlZ3VsYXRv",
-            "cm1vZHVsZS5SZWd1bGF0b3JEaXNjcmV0ZUNvbnRyb2xCCIi1GAGQtRgBEkMK",
-            "D3JlZ3VsYXRvclN5c3RlbRgDIAEoCzIgLnJlZ3VsYXRvcm1vZHVsZS5SZWd1",
-            "bGF0b3JTeXN0ZW1CCIi1GAGQtRgBOgTA8xgBIogEChtSZWd1bGF0b3JFdmVu",
-            "dEFuZFN0YXR1c0FUQ0MSIQoGQm5kQ3RyGAEgASgLMhEuY29tbW9ubW9kdWxl",
-            "LkFTRxIhCgZCbmRXaWQYAiABKAsyES5jb21tb25tb2R1bGUuQVNHEh8KBExE",
-            "Q1IYAyABKAsyES5jb21tb25tb2R1bGUuQVNHEh8KBExEQ1gYBCABKAsyES5j",
-            "b21tb25tb2R1bGUuQVNHEiYKBVBhck9wGAUgASgLMhcuY29tbW9ubW9kdWxl",
-            "LlN0YXR1c1NQUxIpCglyYW1wUmF0ZXMYBiABKAsyFi5jb21tb25tb2R1bGUu",
-            "UmFtcFJhdGUSLwoFc3RhdGUYByABKAsyIC5jb21tb25tb2R1bGUuT3B0aW9u",
-            "YWxfU3RhdGVLaW5kEikKCFN0RGxUbW1zGAggASgLMhcuY29tbW9ubW9kdWxl",
-            "LlN0YXR1c0lOQxIpCghUYXBPcEVychgJIAEoCzIXLmNvbW1vbm1vZHVsZS5T",
-            "dGF0dXNTUFMSJgoGVGFwUG9zGAogASgLMhYuY29tbW9ubW9kdWxlLlBoYXNl",
-            "SU5TEiYKBlZvbFNwdBgLIAEoCzIWLmNvbW1vbm1vZHVsZS5QaGFzZUFQQxI3",
-            "ChZ2b2x0YWdlU2V0UG9pbnRFbmFibGVkGAwgASgLMhcuY29tbW9ubW9kdWxl",
-            "LlN0YXR1c1NQQyLwAQobUmVndWxhdG9yRXZlbnRBbmRTdGF0dXNBTkNSElYK",
-            "HGxvZ2ljYWxOb2RlRm9yRXZlbnRBbmRTdGF0dXMYASABKAsyKi5jb21tb25t",
-            "b2R1bGUuTG9naWNhbE5vZGVGb3JFdmVudEFuZFN0YXR1c0IEgLUYARI2CgtE",
-            "eW5hbWljVGVzdBgCIAEoCzIhLmNvbW1vbm1vZHVsZS5FTlNfRHluYW1pY1Rl",
-            "c3RLaW5kEkEKC1BvaW50U3RhdHVzGAMgASgLMiwucmVndWxhdG9ybW9kdWxl",
-            "LlJlZ3VsYXRvckV2ZW50QW5kU3RhdHVzQVRDQyKXAQoOUmVndWxhdG9yRXZl",
-            "bnQSMgoKZXZlbnRWYWx1ZRgBIAEoCzIYLmNvbW1vbm1vZHVsZS5FdmVudFZh",
-            "bHVlQgSAtRgBElEKG3JlZ3VsYXRvckV2ZW50QW5kU3RhdHVzQU5DUhgCIAEo",
-            "CzIsLnJlZ3VsYXRvcm1vZHVsZS5SZWd1bGF0b3JFdmVudEFuZFN0YXR1c0FO",
-            "Q1Ii5QEKFVJlZ3VsYXRvckV2ZW50UHJvZmlsZRI+ChBldmVudE1lc3NhZ2VJ",
-            "bmZvGAEgASgLMh4uY29tbW9ubW9kdWxlLkV2ZW50TWVzc2FnZUluZm9CBIC1",
-            "GAESQQoOcmVndWxhdG9yRXZlbnQYAiABKAsyHy5yZWd1bGF0b3Jtb2R1bGUu",
-            "UmVndWxhdG9yRXZlbnRCCIi1GAGQtRgBEkMKD3JlZ3VsYXRvclN5c3RlbRgD",
-            "IAEoCzIgLnJlZ3VsYXRvcm1vZHVsZS5SZWd1bGF0b3JTeXN0ZW1CCIi1GAGQ",
-            "tRgBOgTA8xgBIoICChBSZWd1bGF0b3JSZWFkaW5nEmIKImNvbmR1Y3RpbmdF",
-            "cXVpcG1lbnRUZXJtaW5hbFJlYWRpbmcYASABKAsyMC5jb21tb25tb2R1bGUu",
-            "Q29uZHVjdGluZ0VxdWlwbWVudFRlcm1pbmFsUmVhZGluZ0IEgLUYARIqCglw",
-            "aGFzZU1NVE4YAiABKAsyFy5jb21tb25tb2R1bGUuUGhhc2VNTVROEi4KC3Jl",
-            "YWRpbmdNTVRSGAMgASgLMhkuY29tbW9ubW9kdWxlLlJlYWRpbmdNTVRSEi4K",
-            "C3JlYWRpbmdNTVhVGAQgASgLMhkuY29tbW9ubW9kdWxlLlJlYWRpbmdNTVhV",
-            "IvMBChdSZWd1bGF0b3JSZWFkaW5nUHJvZmlsZRJCChJyZWFkaW5nTWVzc2Fn",
-            "ZUluZm8YASABKAsyIC5jb21tb25tb2R1bGUuUmVhZGluZ01lc3NhZ2VJbmZv",
-            "QgSAtRgBEkkKEHJlZ3VsYXRvclJlYWRpbmcYAiADKAsyIS5yZWd1bGF0b3Jt",
-            "b2R1bGUuUmVndWxhdG9yUmVhZGluZ0IMiLUYAZC1GAGYtRgCEkMKD3JlZ3Vs",
-            "YXRvclN5c3RlbRgDIAEoCzIgLnJlZ3VsYXRvcm1vZHVsZS5SZWd1bGF0b3JT",
-            "eXN0ZW1CCIi1GAGQtRgBOgTA8xgBIpoBCg9SZWd1bGF0b3JTdGF0dXMSNAoL",
-            "c3RhdHVzVmFsdWUYASABKAsyGS5jb21tb25tb2R1bGUuU3RhdHVzVmFsdWVC",
+            "ZHVsZS5wcm90byKQAgoPRGlyZWN0aW9uYWxBVENDEiYKBkJuZFdpZBgBIAEo",
+            "CzIWLmNvbW1vbm1vZHVsZS5QaGFzZUFQQxIpCglDdGxEbFRtbXMYAiABKAsy",
+            "Fi5jb21tb25tb2R1bGUuUGhhc2VJU0MSJAoETERDUhgDIAEoCzIWLmNvbW1v",
+            "bm1vZHVsZS5QaGFzZUFQQxIkCgRMRENYGAQgASgLMhYuY29tbW9ubW9kdWxl",
+            "LlBoYXNlQVBDEiYKBlZvbFNwdBgFIAEoCzIWLmNvbW1vbm1vZHVsZS5QaGFz",
+            "ZUFQQxI2ChZ2b2x0YWdlU2V0UG9pbnRFbmFibGVkGAYgASgLMhYuY29tbW9u",
+            "bW9kdWxlLlBoYXNlRFBDIowFChRSZWd1bGF0b3JDb250cm9sQVRDQxJIChVs",
+            "b2dpY2FsTm9kZUZvckNvbnRyb2wYASABKAsyIy5jb21tb25tb2R1bGUuTG9n",
+            "aWNhbE5vZGVGb3JDb250cm9sQgSAtRgBEjAKBkRpckZ3ZBgCIAEoCzIgLnJl",
+            "Z3VsYXRvcm1vZHVsZS5EaXJlY3Rpb25hbEFUQ0MSOQoHRGlyTW9kZRgDIAEo",
+            "CzIoLmNvbW1vbm1vZHVsZS5PcHRpb25hbF9EaXJlY3Rpb25Nb2RlS2luZBIw",
+            "CgZEaXJSZXYYBCABKAsyIC5yZWd1bGF0b3Jtb2R1bGUuRGlyZWN0aW9uYWxB",
+            "VENDEiYKBkRpclRoZBgFIAEoCzIWLmNvbW1vbm1vZHVsZS5QaGFzZUFQQxIl",
+            "CgVQYXJPcBgGIAEoCzIWLmNvbW1vbm1vZHVsZS5QaGFzZVNQQxIpCglyYW1w",
+            "UmF0ZXMYByABKAsyFi5jb21tb25tb2R1bGUuUmFtcFJhdGUSLwoFc3RhdGUY",
+            "CCABKAsyIC5jb21tb25tb2R1bGUuT3B0aW9uYWxfU3RhdGVLaW5kEiYKBlRh",
+            "cE9wTBgJIAEoCzIWLmNvbW1vbm1vZHVsZS5QaGFzZVNQQxImCgZUYXBPcFIY",
+            "CiABKAsyFi5jb21tb25tb2R1bGUuUGhhc2VTUEMSKAoIVm9sTG10SGkYCyAB",
+            "KAsyFi5jb21tb25tb2R1bGUuUGhhc2VBUEMSKAoIVm9sTG10TG8YDCABKAsy",
+            "Fi5jb21tb25tb2R1bGUuUGhhc2VBUEMSPAoKVm9sTG10TW9kZRgNIAEoCzIo",
+            "LmNvbW1vbm1vZHVsZS5PcHRpb25hbF9Wb2x0TGltaXRNb2RlS2luZCJ+Cg5S",
+            "ZWd1bGF0b3JQb2ludBI2Cgdjb250cm9sGAEgASgLMiUucmVndWxhdG9ybW9k",
+            "dWxlLlJlZ3VsYXRvckNvbnRyb2xBVENDEjQKCXN0YXJ0VGltZRgIIAEoCzIX",
+            "LmNvbW1vbm1vZHVsZS5UaW1lc3RhbXBCCIi1GAGQtRgBIkkKDFJlZ3VsYXRv",
+            "ckNTRxI5CgZjcnZQdHMYASADKAsyHy5yZWd1bGF0b3Jtb2R1bGUuUmVndWxh",
+            "dG9yUG9pbnRCCIi1GAGQtRgBIlgKHFJlZ3VsYXRvckNvbnRyb2xTY2hlZHVs",
+            "ZUZTQ0gSOAoHVmFsRENTRxgBIAEoCzIdLnJlZ3VsYXRvcm1vZHVsZS5SZWd1",
+            "bGF0b3JDU0dCCIi1GAGQtRgBIqEBChRSZWd1bGF0b3JDb250cm9sRlNDQxI0",
+            "Cgtjb250cm9sRlNDQxgBIAEoCzIZLmNvbW1vbm1vZHVsZS5Db250cm9sRlND",
+            "Q0IEgLUYARJTChxyZWd1bGF0b3JDb250cm9sU2NoZWR1bGVGU0NIGAIgASgL",
+            "Mi0ucmVndWxhdG9ybW9kdWxlLlJlZ3VsYXRvckNvbnRyb2xTY2hlZHVsZUZT",
+            "Q0givQEKEFJlZ3VsYXRvckNvbnRyb2wSNgoMY29udHJvbFZhbHVlGAEgASgL",
+            "MhouY29tbW9ubW9kdWxlLkNvbnRyb2xWYWx1ZUIEgLUYARIsCgVjaGVjaxgC",
+            "IAEoCzIdLmNvbW1vbm1vZHVsZS5DaGVja0NvbmRpdGlvbnMSQwoUcmVndWxh",
+            "dG9yQ29udHJvbEZTQ0MYAyABKAsyJS5yZWd1bGF0b3Jtb2R1bGUuUmVndWxh",
+            "dG9yQ29udHJvbEZTQ0MiVwoPUmVndWxhdG9yU3lzdGVtEkQKE2NvbmR1Y3Rp",
+            "bmdFcXVpcG1lbnQYASABKAsyIS5jb21tb25tb2R1bGUuQ29uZHVjdGluZ0Vx",
+            "dWlwbWVudEIEgLUYASLvAQoXUmVndWxhdG9yQ29udHJvbFByb2ZpbGUSQgoS",
+            "Y29udHJvbE1lc3NhZ2VJbmZvGAEgASgLMiAuY29tbW9ubW9kdWxlLkNvbnRy",
+            "b2xNZXNzYWdlSW5mb0IEgLUYARJFChByZWd1bGF0b3JDb250cm9sGAIgASgL",
+            "MiEucmVndWxhdG9ybW9kdWxlLlJlZ3VsYXRvckNvbnRyb2xCCIi1GAGQtRgB",
+            "EkMKD3JlZ3VsYXRvclN5c3RlbRgDIAEoCzIgLnJlZ3VsYXRvcm1vZHVsZS5S",
+            "ZWd1bGF0b3JTeXN0ZW1CCIi1GAGQtRgBOgTA8xgBIsUBChhSZWd1bGF0b3JE",
+            "aXNjcmV0ZUNvbnRyb2wSNgoMY29udHJvbFZhbHVlGAEgASgLMhouY29tbW9u",
+            "bW9kdWxlLkNvbnRyb2xWYWx1ZUIEgLUYARIsCgVjaGVjaxgCIAEoCzIdLmNv",
+            "bW1vbm1vZHVsZS5DaGVja0NvbmRpdGlvbnMSQwoUcmVndWxhdG9yQ29udHJv",
+            "bEFUQ0MYAyABKAsyJS5yZWd1bGF0b3Jtb2R1bGUuUmVndWxhdG9yQ29udHJv",
+            "bEFUQ0MihwIKH1JlZ3VsYXRvckRpc2NyZXRlQ29udHJvbFByb2ZpbGUSQgoS",
+            "Y29udHJvbE1lc3NhZ2VJbmZvGAEgASgLMiAuY29tbW9ubW9kdWxlLkNvbnRy",
+            "b2xNZXNzYWdlSW5mb0IEgLUYARJVChhyZWd1bGF0b3JEaXNjcmV0ZUNvbnRy",
+            "b2wYAiABKAsyKS5yZWd1bGF0b3Jtb2R1bGUuUmVndWxhdG9yRGlzY3JldGVD",
+            "b250cm9sQgiItRgBkLUYARJDCg9yZWd1bGF0b3JTeXN0ZW0YAyABKAsyIC5y",
+            "ZWd1bGF0b3Jtb2R1bGUuUmVndWxhdG9yU3lzdGVtQgiItRgBkLUYAToEwPMY",
+            "ASKsBgobUmVndWxhdG9yRXZlbnRBbmRTdGF0dXNBVENDEiEKBkJuZEN0chgB",
+            "IAEoCzIRLmNvbW1vbm1vZHVsZS5BU0cSIQoGQm5kV2lkGAIgASgLMhEuY29t",
+            "bW9ubW9kdWxlLkFTRxIoCghCbmRXaWRIaRgDIAEoCzIWLmNvbW1vbm1vZHVs",
+            "ZS5QaGFzZVNQUxIoCghCbmRXaWRMbxgEIAEoCzIWLmNvbW1vbm1vZHVsZS5Q",
+            "aGFzZVNQUxIpCglEaXJDdGxSZXYYBSABKAsyFi5jb21tb25tb2R1bGUuUGhh",
+            "c2VTUFMSJwoHRGlySW5kdBgGIAEoCzIWLmNvbW1vbm1vZHVsZS5QaGFzZVNQ",
+            "UxImCgZEaXJSZXYYByABKAsyFi5jb21tb25tb2R1bGUuUGhhc2VTUFMSHwoE",
+            "TERDUhgIIAEoCzIRLmNvbW1vbm1vZHVsZS5BU0cSHwoETERDWBgJIAEoCzIR",
+            "LmNvbW1vbm1vZHVsZS5BU0cSJgoFUGFyT3AYCiABKAsyFy5jb21tb25tb2R1",
+            "bGUuU3RhdHVzU1BTEikKCXJhbXBSYXRlcxgLIAEoCzIWLmNvbW1vbm1vZHVs",
+            "ZS5SYW1wUmF0ZRIvCgVzdGF0ZRgMIAEoCzIgLmNvbW1vbm1vZHVsZS5PcHRp",
+            "b25hbF9TdGF0ZUtpbmQSKQoIU3REbFRtbXMYDSABKAsyFy5jb21tb25tb2R1",
+            "bGUuU3RhdHVzSU5DEikKCFRhcE9wRXJyGA4gASgLMhcuY29tbW9ubW9kdWxl",
+            "LlN0YXR1c1NQUxImCgZUYXBQb3MYDyABKAsyFi5jb21tb25tb2R1bGUuUGhh",
+            "c2VJTlMSKAoIVm9sTG10SGkYECABKAsyFi5jb21tb25tb2R1bGUuUGhhc2VT",
+            "UFMSKAoIVm9sTG10TG8YESABKAsyFi5jb21tb25tb2R1bGUuUGhhc2VTUFMS",
+            "JgoGVm9sU3B0GBIgASgLMhYuY29tbW9ubW9kdWxlLlBoYXNlQVBDEjcKFnZv",
+            "bHRhZ2VTZXRQb2ludEVuYWJsZWQYEyABKAsyFy5jb21tb25tb2R1bGUuU3Rh",
+            "dHVzU1BTIvABChtSZWd1bGF0b3JFdmVudEFuZFN0YXR1c0FOQ1ISVgocbG9n",
+            "aWNhbE5vZGVGb3JFdmVudEFuZFN0YXR1cxgBIAEoCzIqLmNvbW1vbm1vZHVs",
+            "ZS5Mb2dpY2FsTm9kZUZvckV2ZW50QW5kU3RhdHVzQgSAtRgBEjYKC0R5bmFt",
+            "aWNUZXN0GAIgASgLMiEuY29tbW9ubW9kdWxlLkVOU19EeW5hbWljVGVzdEtp",
+            "bmQSQQoLUG9pbnRTdGF0dXMYAyABKAsyLC5yZWd1bGF0b3Jtb2R1bGUuUmVn",
+            "dWxhdG9yRXZlbnRBbmRTdGF0dXNBVENDIpcBCg5SZWd1bGF0b3JFdmVudBIy",
+            "CgpldmVudFZhbHVlGAEgASgLMhguY29tbW9ubW9kdWxlLkV2ZW50VmFsdWVC",
             "BIC1GAESUQobcmVndWxhdG9yRXZlbnRBbmRTdGF0dXNBTkNSGAIgASgLMiwu",
-            "cmVndWxhdG9ybW9kdWxlLlJlZ3VsYXRvckV2ZW50QW5kU3RhdHVzQU5DUiLq",
-            "AQoWUmVndWxhdG9yU3RhdHVzUHJvZmlsZRJAChFzdGF0dXNNZXNzYWdlSW5m",
-            "bxgBIAEoCzIfLmNvbW1vbm1vZHVsZS5TdGF0dXNNZXNzYWdlSW5mb0IEgLUY",
-            "ARJDCg9yZWd1bGF0b3JTdGF0dXMYAiABKAsyIC5yZWd1bGF0b3Jtb2R1bGUu",
-            "UmVndWxhdG9yU3RhdHVzQgiItRgBkLUYARJDCg9yZWd1bGF0b3JTeXN0ZW0Y",
-            "AyABKAsyIC5yZWd1bGF0b3Jtb2R1bGUuUmVndWxhdG9yU3lzdGVtQgiItRgB",
-            "kLUYAToEwPMYAUKNAQoXb3BlbmZtYi5yZWd1bGF0b3Jtb2R1bGVQAVpWZ2l0",
-            "bGFiLmNvbS9vcGVuZm1iL3BzbS9vcHMvcHJvdG9idWYvZ28tb3BlbmZtYi1v",
-            "cHMtcHJvdG9idWYvdjIvb3BlbmZtYi9yZWd1bGF0b3Jtb2R1bGWqAhdvcGVu",
-            "Zm1iLnJlZ3VsYXRvcm1vZHVsZWIGcHJvdG8z"));
+            "cmVndWxhdG9ybW9kdWxlLlJlZ3VsYXRvckV2ZW50QW5kU3RhdHVzQU5DUiLl",
+            "AQoVUmVndWxhdG9yRXZlbnRQcm9maWxlEj4KEGV2ZW50TWVzc2FnZUluZm8Y",
+            "ASABKAsyHi5jb21tb25tb2R1bGUuRXZlbnRNZXNzYWdlSW5mb0IEgLUYARJB",
+            "Cg5yZWd1bGF0b3JFdmVudBgCIAEoCzIfLnJlZ3VsYXRvcm1vZHVsZS5SZWd1",
+            "bGF0b3JFdmVudEIIiLUYAZC1GAESQwoPcmVndWxhdG9yU3lzdGVtGAMgASgL",
+            "MiAucmVndWxhdG9ybW9kdWxlLlJlZ3VsYXRvclN5c3RlbUIIiLUYAZC1GAE6",
+            "BMDzGAEiuwIKEFJlZ3VsYXRvclJlYWRpbmcSYgoiY29uZHVjdGluZ0VxdWlw",
+            "bWVudFRlcm1pbmFsUmVhZGluZxgBIAEoCzIwLmNvbW1vbm1vZHVsZS5Db25k",
+            "dWN0aW5nRXF1aXBtZW50VGVybWluYWxSZWFkaW5nQgSAtRgBEioKCXBoYXNl",
+            "TU1UThgCIAEoCzIXLmNvbW1vbm1vZHVsZS5QaGFzZU1NVE4SLgoLcmVhZGlu",
+            "Z01NVFIYAyABKAsyGS5jb21tb25tb2R1bGUuUmVhZGluZ01NVFISLgoLcmVh",
+            "ZGluZ01NWFUYBCABKAsyGS5jb21tb25tb2R1bGUuUmVhZGluZ01NWFUSNwoU",
+            "c2Vjb25kYXJ5UmVhZGluZ01NWFUYBSABKAsyGS5jb21tb25tb2R1bGUuUmVh",
+            "ZGluZ01NWFUi8wEKF1JlZ3VsYXRvclJlYWRpbmdQcm9maWxlEkIKEnJlYWRp",
+            "bmdNZXNzYWdlSW5mbxgBIAEoCzIgLmNvbW1vbm1vZHVsZS5SZWFkaW5nTWVz",
+            "c2FnZUluZm9CBIC1GAESSQoQcmVndWxhdG9yUmVhZGluZxgCIAMoCzIhLnJl",
+            "Z3VsYXRvcm1vZHVsZS5SZWd1bGF0b3JSZWFkaW5nQgyItRgBkLUYAZi1GAIS",
+            "QwoPcmVndWxhdG9yU3lzdGVtGAMgASgLMiAucmVndWxhdG9ybW9kdWxlLlJl",
+            "Z3VsYXRvclN5c3RlbUIIiLUYAZC1GAE6BMDzGAEimgEKD1JlZ3VsYXRvclN0",
+            "YXR1cxI0CgtzdGF0dXNWYWx1ZRgBIAEoCzIZLmNvbW1vbm1vZHVsZS5TdGF0",
+            "dXNWYWx1ZUIEgLUYARJRChtyZWd1bGF0b3JFdmVudEFuZFN0YXR1c0FOQ1IY",
+            "AiABKAsyLC5yZWd1bGF0b3Jtb2R1bGUuUmVndWxhdG9yRXZlbnRBbmRTdGF0",
+            "dXNBTkNSIuoBChZSZWd1bGF0b3JTdGF0dXNQcm9maWxlEkAKEXN0YXR1c01l",
+            "c3NhZ2VJbmZvGAEgASgLMh8uY29tbW9ubW9kdWxlLlN0YXR1c01lc3NhZ2VJ",
+            "bmZvQgSAtRgBEkMKD3JlZ3VsYXRvclN0YXR1cxgCIAEoCzIgLnJlZ3VsYXRv",
+            "cm1vZHVsZS5SZWd1bGF0b3JTdGF0dXNCCIi1GAGQtRgBEkMKD3JlZ3VsYXRv",
+            "clN5c3RlbRgDIAEoCzIgLnJlZ3VsYXRvcm1vZHVsZS5SZWd1bGF0b3JTeXN0",
+            "ZW1CCIi1GAGQtRgBOgTA8xgBQo0BChdvcGVuZm1iLnJlZ3VsYXRvcm1vZHVs",
+            "ZVABWlZnaXRsYWIuY29tL29wZW5mbWIvcHNtL29wcy9wcm90b2J1Zi9nby1v",
+            "cGVuZm1iLW9wcy1wcm90b2J1Zi92Mi9vcGVuZm1iL3JlZ3VsYXRvcm1vZHVs",
+            "ZaoCF29wZW5mbWIucmVndWxhdG9ybW9kdWxlYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::openfmb.UmlReflection.Descriptor, global::openfmb.commonmodule.CommonmoduleReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.regulatormodule.RegulatorControlATCC), global::openfmb.regulatormodule.RegulatorControlATCC.Parser, new[]{ "LogicalNodeForControl", "BndCtr", "BndWid", "CtlDlTmms", "LDCR", "LDCX", "ParOp", "RampRates", "State", "TapPos", "VolSpt", "VoltageSetPointEnabled" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.regulatormodule.DirectionalATCC), global::openfmb.regulatormodule.DirectionalATCC.Parser, new[]{ "BndWid", "CtlDlTmms", "LDCR", "LDCX", "VolSpt", "VoltageSetPointEnabled" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.regulatormodule.RegulatorControlATCC), global::openfmb.regulatormodule.RegulatorControlATCC.Parser, new[]{ "LogicalNodeForControl", "DirFwd", "DirMode", "DirRev", "DirThd", "ParOp", "RampRates", "State", "TapOpL", "TapOpR", "VolLmtHi", "VolLmtLo", "VolLmtMode" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.regulatormodule.RegulatorPoint), global::openfmb.regulatormodule.RegulatorPoint.Parser, new[]{ "Control", "StartTime" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.regulatormodule.RegulatorCSG), global::openfmb.regulatormodule.RegulatorCSG.Parser, new[]{ "CrvPts" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.regulatormodule.RegulatorControlScheduleFSCH), global::openfmb.regulatormodule.RegulatorControlScheduleFSCH.Parser, new[]{ "ValDCSG" }, null, null, null, null),
@@ -133,11 +150,11 @@ namespace openfmb.regulatormodule {
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.regulatormodule.RegulatorControlProfile), global::openfmb.regulatormodule.RegulatorControlProfile.Parser, new[]{ "ControlMessageInfo", "RegulatorControl", "RegulatorSystem" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.regulatormodule.RegulatorDiscreteControl), global::openfmb.regulatormodule.RegulatorDiscreteControl.Parser, new[]{ "ControlValue", "Check", "RegulatorControlATCC" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.regulatormodule.RegulatorDiscreteControlProfile), global::openfmb.regulatormodule.RegulatorDiscreteControlProfile.Parser, new[]{ "ControlMessageInfo", "RegulatorDiscreteControl", "RegulatorSystem" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.regulatormodule.RegulatorEventAndStatusATCC), global::openfmb.regulatormodule.RegulatorEventAndStatusATCC.Parser, new[]{ "BndCtr", "BndWid", "LDCR", "LDCX", "ParOp", "RampRates", "State", "StDlTmms", "TapOpErr", "TapPos", "VolSpt", "VoltageSetPointEnabled" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.regulatormodule.RegulatorEventAndStatusATCC), global::openfmb.regulatormodule.RegulatorEventAndStatusATCC.Parser, new[]{ "BndCtr", "BndWid", "BndWidHi", "BndWidLo", "DirCtlRev", "DirIndt", "DirRev", "LDCR", "LDCX", "ParOp", "RampRates", "State", "StDlTmms", "TapOpErr", "TapPos", "VolLmtHi", "VolLmtLo", "VolSpt", "VoltageSetPointEnabled" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.regulatormodule.RegulatorEventAndStatusANCR), global::openfmb.regulatormodule.RegulatorEventAndStatusANCR.Parser, new[]{ "LogicalNodeForEventAndStatus", "DynamicTest", "PointStatus" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.regulatormodule.RegulatorEvent), global::openfmb.regulatormodule.RegulatorEvent.Parser, new[]{ "EventValue", "RegulatorEventAndStatusANCR" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.regulatormodule.RegulatorEventProfile), global::openfmb.regulatormodule.RegulatorEventProfile.Parser, new[]{ "EventMessageInfo", "RegulatorEvent", "RegulatorSystem" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.regulatormodule.RegulatorReading), global::openfmb.regulatormodule.RegulatorReading.Parser, new[]{ "ConductingEquipmentTerminalReading", "PhaseMMTN", "ReadingMMTR", "ReadingMMXU" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.regulatormodule.RegulatorReading), global::openfmb.regulatormodule.RegulatorReading.Parser, new[]{ "ConductingEquipmentTerminalReading", "PhaseMMTN", "ReadingMMTR", "ReadingMMXU", "SecondaryReadingMMXU" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.regulatormodule.RegulatorReadingProfile), global::openfmb.regulatormodule.RegulatorReadingProfile.Parser, new[]{ "ReadingMessageInfo", "RegulatorReading", "RegulatorSystem" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.regulatormodule.RegulatorStatus), global::openfmb.regulatormodule.RegulatorStatus.Parser, new[]{ "StatusValue", "RegulatorEventAndStatusANCR" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.regulatormodule.RegulatorStatusProfile), global::openfmb.regulatormodule.RegulatorStatusProfile.Parser, new[]{ "StatusMessageInfo", "RegulatorStatus", "RegulatorSystem" }, null, null, null, null)
@@ -147,6 +164,434 @@ namespace openfmb.regulatormodule {
 
   }
   #region Messages
+  /// <summary>
+  /// LN: Automatic tap changer controller   Name: ATCC
+  /// </summary>
+  public sealed partial class DirectionalATCC : pb::IMessage<DirectionalATCC>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<DirectionalATCC> _parser = new pb::MessageParser<DirectionalATCC>(() => new DirectionalATCC());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<DirectionalATCC> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::openfmb.regulatormodule.RegulatormoduleReflection.Descriptor.MessageTypes[0]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public DirectionalATCC() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public DirectionalATCC(DirectionalATCC other) : this() {
+      bndWid_ = other.bndWid_ != null ? other.bndWid_.Clone() : null;
+      ctlDlTmms_ = other.ctlDlTmms_ != null ? other.ctlDlTmms_.Clone() : null;
+      lDCR_ = other.lDCR_ != null ? other.lDCR_.Clone() : null;
+      lDCX_ = other.lDCX_ != null ? other.lDCX_.Clone() : null;
+      volSpt_ = other.volSpt_ != null ? other.volSpt_.Clone() : null;
+      voltageSetPointEnabled_ = other.voltageSetPointEnabled_ != null ? other.voltageSetPointEnabled_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public DirectionalATCC Clone() {
+      return new DirectionalATCC(this);
+    }
+
+    /// <summary>Field number for the "BndWid" field.</summary>
+    public const int BndWidFieldNumber = 1;
+    private global::openfmb.commonmodule.PhaseAPC bndWid_;
+    /// <summary>
+    /// Control (secondary) voltage bandwidth (i.e., range), given either as voltage value or percentage
+    /// of the nominal voltage (forward power flow presumed).
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.PhaseAPC BndWid {
+      get { return bndWid_; }
+      set {
+        bndWid_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "CtlDlTmms" field.</summary>
+    public const int CtlDlTmmsFieldNumber = 2;
+    private global::openfmb.commonmodule.PhaseISC ctlDlTmms_;
+    /// <summary>
+    /// Time to wait before operating, after reaching the control point (forward power flow presumed).
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.PhaseISC CtlDlTmms {
+      get { return ctlDlTmms_; }
+      set {
+        ctlDlTmms_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "LDCR" field.</summary>
+    public const int LDCRFieldNumber = 3;
+    private global::openfmb.commonmodule.PhaseAPC lDCR_;
+    /// <summary>
+    /// Line drop voltage due to line resistance component (forward power flow presumed) at rated current.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.PhaseAPC LDCR {
+      get { return lDCR_; }
+      set {
+        lDCR_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "LDCX" field.</summary>
+    public const int LDCXFieldNumber = 4;
+    private global::openfmb.commonmodule.PhaseAPC lDCX_;
+    /// <summary>
+    /// Line drop voltage due to line reactance component (forward power flow presumed) at rated current.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.PhaseAPC LDCX {
+      get { return lDCX_; }
+      set {
+        lDCX_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "VolSpt" field.</summary>
+    public const int VolSptFieldNumber = 5;
+    private global::openfmb.commonmodule.PhaseAPC volSpt_;
+    /// <summary>
+    /// (controllable) Voltage setpoint. Analog value (MX) feeds back the setpoint of the controller.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.PhaseAPC VolSpt {
+      get { return volSpt_; }
+      set {
+        volSpt_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "voltageSetPointEnabled" field.</summary>
+    public const int VoltageSetPointEnabledFieldNumber = 6;
+    private global::openfmb.commonmodule.PhaseDPC voltageSetPointEnabled_;
+    /// <summary>
+    /// Enable voltage set point
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.PhaseDPC VoltageSetPointEnabled {
+      get { return voltageSetPointEnabled_; }
+      set {
+        voltageSetPointEnabled_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as DirectionalATCC);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(DirectionalATCC other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(BndWid, other.BndWid)) return false;
+      if (!object.Equals(CtlDlTmms, other.CtlDlTmms)) return false;
+      if (!object.Equals(LDCR, other.LDCR)) return false;
+      if (!object.Equals(LDCX, other.LDCX)) return false;
+      if (!object.Equals(VolSpt, other.VolSpt)) return false;
+      if (!object.Equals(VoltageSetPointEnabled, other.VoltageSetPointEnabled)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (bndWid_ != null) hash ^= BndWid.GetHashCode();
+      if (ctlDlTmms_ != null) hash ^= CtlDlTmms.GetHashCode();
+      if (lDCR_ != null) hash ^= LDCR.GetHashCode();
+      if (lDCX_ != null) hash ^= LDCX.GetHashCode();
+      if (volSpt_ != null) hash ^= VolSpt.GetHashCode();
+      if (voltageSetPointEnabled_ != null) hash ^= VoltageSetPointEnabled.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (bndWid_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(BndWid);
+      }
+      if (ctlDlTmms_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(CtlDlTmms);
+      }
+      if (lDCR_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(LDCR);
+      }
+      if (lDCX_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(LDCX);
+      }
+      if (volSpt_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(VolSpt);
+      }
+      if (voltageSetPointEnabled_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(VoltageSetPointEnabled);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (bndWid_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(BndWid);
+      }
+      if (ctlDlTmms_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(CtlDlTmms);
+      }
+      if (lDCR_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(LDCR);
+      }
+      if (lDCX_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(LDCX);
+      }
+      if (volSpt_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(VolSpt);
+      }
+      if (voltageSetPointEnabled_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(VoltageSetPointEnabled);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (bndWid_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(BndWid);
+      }
+      if (ctlDlTmms_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CtlDlTmms);
+      }
+      if (lDCR_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LDCR);
+      }
+      if (lDCX_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LDCX);
+      }
+      if (volSpt_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(VolSpt);
+      }
+      if (voltageSetPointEnabled_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(VoltageSetPointEnabled);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(DirectionalATCC other) {
+      if (other == null) {
+        return;
+      }
+      if (other.bndWid_ != null) {
+        if (bndWid_ == null) {
+          BndWid = new global::openfmb.commonmodule.PhaseAPC();
+        }
+        BndWid.MergeFrom(other.BndWid);
+      }
+      if (other.ctlDlTmms_ != null) {
+        if (ctlDlTmms_ == null) {
+          CtlDlTmms = new global::openfmb.commonmodule.PhaseISC();
+        }
+        CtlDlTmms.MergeFrom(other.CtlDlTmms);
+      }
+      if (other.lDCR_ != null) {
+        if (lDCR_ == null) {
+          LDCR = new global::openfmb.commonmodule.PhaseAPC();
+        }
+        LDCR.MergeFrom(other.LDCR);
+      }
+      if (other.lDCX_ != null) {
+        if (lDCX_ == null) {
+          LDCX = new global::openfmb.commonmodule.PhaseAPC();
+        }
+        LDCX.MergeFrom(other.LDCX);
+      }
+      if (other.volSpt_ != null) {
+        if (volSpt_ == null) {
+          VolSpt = new global::openfmb.commonmodule.PhaseAPC();
+        }
+        VolSpt.MergeFrom(other.VolSpt);
+      }
+      if (other.voltageSetPointEnabled_ != null) {
+        if (voltageSetPointEnabled_ == null) {
+          VoltageSetPointEnabled = new global::openfmb.commonmodule.PhaseDPC();
+        }
+        VoltageSetPointEnabled.MergeFrom(other.VoltageSetPointEnabled);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (bndWid_ == null) {
+              BndWid = new global::openfmb.commonmodule.PhaseAPC();
+            }
+            input.ReadMessage(BndWid);
+            break;
+          }
+          case 18: {
+            if (ctlDlTmms_ == null) {
+              CtlDlTmms = new global::openfmb.commonmodule.PhaseISC();
+            }
+            input.ReadMessage(CtlDlTmms);
+            break;
+          }
+          case 26: {
+            if (lDCR_ == null) {
+              LDCR = new global::openfmb.commonmodule.PhaseAPC();
+            }
+            input.ReadMessage(LDCR);
+            break;
+          }
+          case 34: {
+            if (lDCX_ == null) {
+              LDCX = new global::openfmb.commonmodule.PhaseAPC();
+            }
+            input.ReadMessage(LDCX);
+            break;
+          }
+          case 42: {
+            if (volSpt_ == null) {
+              VolSpt = new global::openfmb.commonmodule.PhaseAPC();
+            }
+            input.ReadMessage(VolSpt);
+            break;
+          }
+          case 50: {
+            if (voltageSetPointEnabled_ == null) {
+              VoltageSetPointEnabled = new global::openfmb.commonmodule.PhaseDPC();
+            }
+            input.ReadMessage(VoltageSetPointEnabled);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (bndWid_ == null) {
+              BndWid = new global::openfmb.commonmodule.PhaseAPC();
+            }
+            input.ReadMessage(BndWid);
+            break;
+          }
+          case 18: {
+            if (ctlDlTmms_ == null) {
+              CtlDlTmms = new global::openfmb.commonmodule.PhaseISC();
+            }
+            input.ReadMessage(CtlDlTmms);
+            break;
+          }
+          case 26: {
+            if (lDCR_ == null) {
+              LDCR = new global::openfmb.commonmodule.PhaseAPC();
+            }
+            input.ReadMessage(LDCR);
+            break;
+          }
+          case 34: {
+            if (lDCX_ == null) {
+              LDCX = new global::openfmb.commonmodule.PhaseAPC();
+            }
+            input.ReadMessage(LDCX);
+            break;
+          }
+          case 42: {
+            if (volSpt_ == null) {
+              VolSpt = new global::openfmb.commonmodule.PhaseAPC();
+            }
+            input.ReadMessage(VolSpt);
+            break;
+          }
+          case 50: {
+            if (voltageSetPointEnabled_ == null) {
+              VoltageSetPointEnabled = new global::openfmb.commonmodule.PhaseDPC();
+            }
+            input.ReadMessage(VoltageSetPointEnabled);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   /// <summary>
   /// LN: Automatic tap changer controller   Name: ATCC
   /// </summary>
@@ -162,7 +607,7 @@ namespace openfmb.regulatormodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.regulatormodule.RegulatormoduleReflection.Descriptor.MessageTypes[0]; }
+      get { return global::openfmb.regulatormodule.RegulatormoduleReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -180,17 +625,18 @@ namespace openfmb.regulatormodule {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public RegulatorControlATCC(RegulatorControlATCC other) : this() {
       logicalNodeForControl_ = other.logicalNodeForControl_ != null ? other.logicalNodeForControl_.Clone() : null;
-      bndCtr_ = other.bndCtr_ != null ? other.bndCtr_.Clone() : null;
-      bndWid_ = other.bndWid_ != null ? other.bndWid_.Clone() : null;
-      ctlDlTmms_ = other.ctlDlTmms_ != null ? other.ctlDlTmms_.Clone() : null;
-      lDCR_ = other.lDCR_ != null ? other.lDCR_.Clone() : null;
-      lDCX_ = other.lDCX_ != null ? other.lDCX_.Clone() : null;
+      dirFwd_ = other.dirFwd_ != null ? other.dirFwd_.Clone() : null;
+      dirMode_ = other.dirMode_ != null ? other.dirMode_.Clone() : null;
+      dirRev_ = other.dirRev_ != null ? other.dirRev_.Clone() : null;
+      dirThd_ = other.dirThd_ != null ? other.dirThd_.Clone() : null;
       parOp_ = other.parOp_ != null ? other.parOp_.Clone() : null;
       rampRates_ = other.rampRates_ != null ? other.rampRates_.Clone() : null;
       state_ = other.state_ != null ? other.state_.Clone() : null;
-      tapPos_ = other.tapPos_ != null ? other.tapPos_.Clone() : null;
-      volSpt_ = other.volSpt_ != null ? other.volSpt_.Clone() : null;
-      voltageSetPointEnabled_ = other.voltageSetPointEnabled_ != null ? other.voltageSetPointEnabled_.Clone() : null;
+      tapOpL_ = other.tapOpL_ != null ? other.tapOpL_.Clone() : null;
+      tapOpR_ = other.tapOpR_ != null ? other.tapOpR_.Clone() : null;
+      volLmtHi_ = other.volLmtHi_ != null ? other.volLmtHi_.Clone() : null;
+      volLmtLo_ = other.volLmtLo_ != null ? other.volLmtLo_.Clone() : null;
+      volLmtMode_ = other.volLmtMode_ != null ? other.volLmtMode_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -213,85 +659,71 @@ namespace openfmb.regulatormodule {
       }
     }
 
-    /// <summary>Field number for the "BndCtr" field.</summary>
-    public const int BndCtrFieldNumber = 2;
-    private global::openfmb.commonmodule.ASG bndCtr_;
+    /// <summary>Field number for the "DirFwd" field.</summary>
+    public const int DirFwdFieldNumber = 2;
+    private global::openfmb.regulatormodule.DirectionalATCC dirFwd_;
     /// <summary>
-    /// Centre of voltage control bandwidth (forward power flow presumed).
+    /// Forward voltage regulation
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.ASG BndCtr {
-      get { return bndCtr_; }
+    public global::openfmb.regulatormodule.DirectionalATCC DirFwd {
+      get { return dirFwd_; }
       set {
-        bndCtr_ = value;
+        dirFwd_ = value;
       }
     }
 
-    /// <summary>Field number for the "BndWid" field.</summary>
-    public const int BndWidFieldNumber = 3;
-    private global::openfmb.commonmodule.ASG bndWid_;
+    /// <summary>Field number for the "DirMode" field.</summary>
+    public const int DirModeFieldNumber = 3;
+    private global::openfmb.commonmodule.Optional_DirectionModeKind dirMode_;
     /// <summary>
-    /// Control (secondary) voltage bandwidth (i.e., range), given either as voltage value or percentage
-    /// of the nominal voltage (forward power flow presumed).
+    /// The control characteristics for power flow operation
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.ASG BndWid {
-      get { return bndWid_; }
+    public global::openfmb.commonmodule.Optional_DirectionModeKind DirMode {
+      get { return dirMode_; }
       set {
-        bndWid_ = value;
+        dirMode_ = value;
       }
     }
 
-    /// <summary>Field number for the "CtlDlTmms" field.</summary>
-    public const int CtlDlTmmsFieldNumber = 4;
-    private global::openfmb.commonmodule.ControlING ctlDlTmms_;
+    /// <summary>Field number for the "DirRev" field.</summary>
+    public const int DirRevFieldNumber = 4;
+    private global::openfmb.regulatormodule.DirectionalATCC dirRev_;
     /// <summary>
-    /// Time to wait before operating, after reaching the control point (forward power flow presumed).
+    /// Reverse voltage regulation
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.ControlING CtlDlTmms {
-      get { return ctlDlTmms_; }
+    public global::openfmb.regulatormodule.DirectionalATCC DirRev {
+      get { return dirRev_; }
       set {
-        ctlDlTmms_ = value;
+        dirRev_ = value;
       }
     }
 
-    /// <summary>Field number for the "LDCR" field.</summary>
-    public const int LDCRFieldNumber = 5;
-    private global::openfmb.commonmodule.ASG lDCR_;
+    /// <summary>Field number for the "DirThd" field.</summary>
+    public const int DirThdFieldNumber = 5;
+    private global::openfmb.commonmodule.PhaseAPC dirThd_;
     /// <summary>
-    /// Line drop voltage due to line resistance component (forward power flow presumed) at rated current.
+    /// This is the percentage used to determine the current threshold at which the control recognizes
+    /// current flow direction. Below the threshold, the current flow is considered to be indeterminate.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.ASG LDCR {
-      get { return lDCR_; }
+    public global::openfmb.commonmodule.PhaseAPC DirThd {
+      get { return dirThd_; }
       set {
-        lDCR_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "LDCX" field.</summary>
-    public const int LDCXFieldNumber = 6;
-    private global::openfmb.commonmodule.ASG lDCX_;
-    /// <summary>
-    /// Line drop voltage due to line reactance component (forward power flow presumed) at rated current.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.ASG LDCX {
-      get { return lDCX_; }
-      set {
-        lDCX_ = value;
+        dirThd_ = value;
       }
     }
 
     /// <summary>Field number for the "ParOp" field.</summary>
-    public const int ParOpFieldNumber = 7;
-    private global::openfmb.commonmodule.ControlSPC parOp_;
+    public const int ParOpFieldNumber = 6;
+    private global::openfmb.commonmodule.PhaseSPC parOp_;
     /// <summary>
     /// (controllable) If true, transformers operate in parallel, otherwise they operate independently.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.ControlSPC ParOp {
+    public global::openfmb.commonmodule.PhaseSPC ParOp {
       get { return parOp_; }
       set {
         parOp_ = value;
@@ -299,7 +731,7 @@ namespace openfmb.regulatormodule {
     }
 
     /// <summary>Field number for the "rampRates" field.</summary>
-    public const int RampRatesFieldNumber = 8;
+    public const int RampRatesFieldNumber = 7;
     private global::openfmb.commonmodule.RampRate rampRates_;
     /// <summary>
     /// Ramp rates
@@ -313,7 +745,7 @@ namespace openfmb.regulatormodule {
     }
 
     /// <summary>Field number for the "state" field.</summary>
-    public const int StateFieldNumber = 9;
+    public const int StateFieldNumber = 8;
     private global::openfmb.commonmodule.Optional_StateKind state_;
     /// <summary>
     /// (controllable) Tap position change to the specified value.
@@ -326,45 +758,73 @@ namespace openfmb.regulatormodule {
       }
     }
 
-    /// <summary>Field number for the "TapPos" field.</summary>
-    public const int TapPosFieldNumber = 10;
-    private global::openfmb.commonmodule.PhaseISC tapPos_;
+    /// <summary>Field number for the "TapOpL" field.</summary>
+    public const int TapOpLFieldNumber = 9;
+    private global::openfmb.commonmodule.PhaseSPC tapOpL_;
     /// <summary>
-    /// (controllable) Tap position change to the specified value.
+    /// If true, tap position shall be lowered.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.PhaseISC TapPos {
-      get { return tapPos_; }
+    public global::openfmb.commonmodule.PhaseSPC TapOpL {
+      get { return tapOpL_; }
       set {
-        tapPos_ = value;
+        tapOpL_ = value;
       }
     }
 
-    /// <summary>Field number for the "VolSpt" field.</summary>
-    public const int VolSptFieldNumber = 11;
-    private global::openfmb.commonmodule.PhaseAPC volSpt_;
+    /// <summary>Field number for the "TapOpR" field.</summary>
+    public const int TapOpRFieldNumber = 10;
+    private global::openfmb.commonmodule.PhaseSPC tapOpR_;
     /// <summary>
-    /// (controllable) Voltage setpoint. Analog value (MX) feeds back the setpoint of the controller.
+    /// If true, tap position shall be raised.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.PhaseAPC VolSpt {
-      get { return volSpt_; }
+    public global::openfmb.commonmodule.PhaseSPC TapOpR {
+      get { return tapOpR_; }
       set {
-        volSpt_ = value;
+        tapOpR_ = value;
       }
     }
 
-    /// <summary>Field number for the "voltageSetPointEnabled" field.</summary>
-    public const int VoltageSetPointEnabledFieldNumber = 12;
-    private global::openfmb.commonmodule.ControlDPC voltageSetPointEnabled_;
+    /// <summary>Field number for the "VolLmtHi" field.</summary>
+    public const int VolLmtHiFieldNumber = 11;
+    private global::openfmb.commonmodule.PhaseAPC volLmtHi_;
     /// <summary>
-    /// Enable voltage set point
+    /// High voltage limit for Voltage Limiter
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.ControlDPC VoltageSetPointEnabled {
-      get { return voltageSetPointEnabled_; }
+    public global::openfmb.commonmodule.PhaseAPC VolLmtHi {
+      get { return volLmtHi_; }
       set {
-        voltageSetPointEnabled_ = value;
+        volLmtHi_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "VolLmtLo" field.</summary>
+    public const int VolLmtLoFieldNumber = 12;
+    private global::openfmb.commonmodule.PhaseAPC volLmtLo_;
+    /// <summary>
+    /// Low voltage limit for Voltage Limiter
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.PhaseAPC VolLmtLo {
+      get { return volLmtLo_; }
+      set {
+        volLmtLo_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "VolLmtMode" field.</summary>
+    public const int VolLmtModeFieldNumber = 13;
+    private global::openfmb.commonmodule.Optional_VoltLimitModeKind volLmtMode_;
+    /// <summary>
+    /// Voltage-limiting types
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.Optional_VoltLimitModeKind VolLmtMode {
+      get { return volLmtMode_; }
+      set {
+        volLmtMode_ = value;
       }
     }
 
@@ -382,17 +842,18 @@ namespace openfmb.regulatormodule {
         return true;
       }
       if (!object.Equals(LogicalNodeForControl, other.LogicalNodeForControl)) return false;
-      if (!object.Equals(BndCtr, other.BndCtr)) return false;
-      if (!object.Equals(BndWid, other.BndWid)) return false;
-      if (!object.Equals(CtlDlTmms, other.CtlDlTmms)) return false;
-      if (!object.Equals(LDCR, other.LDCR)) return false;
-      if (!object.Equals(LDCX, other.LDCX)) return false;
+      if (!object.Equals(DirFwd, other.DirFwd)) return false;
+      if (!object.Equals(DirMode, other.DirMode)) return false;
+      if (!object.Equals(DirRev, other.DirRev)) return false;
+      if (!object.Equals(DirThd, other.DirThd)) return false;
       if (!object.Equals(ParOp, other.ParOp)) return false;
       if (!object.Equals(RampRates, other.RampRates)) return false;
       if (!object.Equals(State, other.State)) return false;
-      if (!object.Equals(TapPos, other.TapPos)) return false;
-      if (!object.Equals(VolSpt, other.VolSpt)) return false;
-      if (!object.Equals(VoltageSetPointEnabled, other.VoltageSetPointEnabled)) return false;
+      if (!object.Equals(TapOpL, other.TapOpL)) return false;
+      if (!object.Equals(TapOpR, other.TapOpR)) return false;
+      if (!object.Equals(VolLmtHi, other.VolLmtHi)) return false;
+      if (!object.Equals(VolLmtLo, other.VolLmtLo)) return false;
+      if (!object.Equals(VolLmtMode, other.VolLmtMode)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -400,17 +861,18 @@ namespace openfmb.regulatormodule {
     public override int GetHashCode() {
       int hash = 1;
       if (logicalNodeForControl_ != null) hash ^= LogicalNodeForControl.GetHashCode();
-      if (bndCtr_ != null) hash ^= BndCtr.GetHashCode();
-      if (bndWid_ != null) hash ^= BndWid.GetHashCode();
-      if (ctlDlTmms_ != null) hash ^= CtlDlTmms.GetHashCode();
-      if (lDCR_ != null) hash ^= LDCR.GetHashCode();
-      if (lDCX_ != null) hash ^= LDCX.GetHashCode();
+      if (dirFwd_ != null) hash ^= DirFwd.GetHashCode();
+      if (dirMode_ != null) hash ^= DirMode.GetHashCode();
+      if (dirRev_ != null) hash ^= DirRev.GetHashCode();
+      if (dirThd_ != null) hash ^= DirThd.GetHashCode();
       if (parOp_ != null) hash ^= ParOp.GetHashCode();
       if (rampRates_ != null) hash ^= RampRates.GetHashCode();
       if (state_ != null) hash ^= State.GetHashCode();
-      if (tapPos_ != null) hash ^= TapPos.GetHashCode();
-      if (volSpt_ != null) hash ^= VolSpt.GetHashCode();
-      if (voltageSetPointEnabled_ != null) hash ^= VoltageSetPointEnabled.GetHashCode();
+      if (tapOpL_ != null) hash ^= TapOpL.GetHashCode();
+      if (tapOpR_ != null) hash ^= TapOpR.GetHashCode();
+      if (volLmtHi_ != null) hash ^= VolLmtHi.GetHashCode();
+      if (volLmtLo_ != null) hash ^= VolLmtLo.GetHashCode();
+      if (volLmtMode_ != null) hash ^= VolLmtMode.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -431,49 +893,53 @@ namespace openfmb.regulatormodule {
         output.WriteRawTag(10);
         output.WriteMessage(LogicalNodeForControl);
       }
-      if (bndCtr_ != null) {
+      if (dirFwd_ != null) {
         output.WriteRawTag(18);
-        output.WriteMessage(BndCtr);
+        output.WriteMessage(DirFwd);
       }
-      if (bndWid_ != null) {
+      if (dirMode_ != null) {
         output.WriteRawTag(26);
-        output.WriteMessage(BndWid);
+        output.WriteMessage(DirMode);
       }
-      if (ctlDlTmms_ != null) {
+      if (dirRev_ != null) {
         output.WriteRawTag(34);
-        output.WriteMessage(CtlDlTmms);
+        output.WriteMessage(DirRev);
       }
-      if (lDCR_ != null) {
+      if (dirThd_ != null) {
         output.WriteRawTag(42);
-        output.WriteMessage(LDCR);
-      }
-      if (lDCX_ != null) {
-        output.WriteRawTag(50);
-        output.WriteMessage(LDCX);
+        output.WriteMessage(DirThd);
       }
       if (parOp_ != null) {
-        output.WriteRawTag(58);
+        output.WriteRawTag(50);
         output.WriteMessage(ParOp);
       }
       if (rampRates_ != null) {
-        output.WriteRawTag(66);
+        output.WriteRawTag(58);
         output.WriteMessage(RampRates);
       }
       if (state_ != null) {
-        output.WriteRawTag(74);
+        output.WriteRawTag(66);
         output.WriteMessage(State);
       }
-      if (tapPos_ != null) {
+      if (tapOpL_ != null) {
+        output.WriteRawTag(74);
+        output.WriteMessage(TapOpL);
+      }
+      if (tapOpR_ != null) {
         output.WriteRawTag(82);
-        output.WriteMessage(TapPos);
+        output.WriteMessage(TapOpR);
       }
-      if (volSpt_ != null) {
+      if (volLmtHi_ != null) {
         output.WriteRawTag(90);
-        output.WriteMessage(VolSpt);
+        output.WriteMessage(VolLmtHi);
       }
-      if (voltageSetPointEnabled_ != null) {
+      if (volLmtLo_ != null) {
         output.WriteRawTag(98);
-        output.WriteMessage(VoltageSetPointEnabled);
+        output.WriteMessage(VolLmtLo);
+      }
+      if (volLmtMode_ != null) {
+        output.WriteRawTag(106);
+        output.WriteMessage(VolLmtMode);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -488,49 +954,53 @@ namespace openfmb.regulatormodule {
         output.WriteRawTag(10);
         output.WriteMessage(LogicalNodeForControl);
       }
-      if (bndCtr_ != null) {
+      if (dirFwd_ != null) {
         output.WriteRawTag(18);
-        output.WriteMessage(BndCtr);
+        output.WriteMessage(DirFwd);
       }
-      if (bndWid_ != null) {
+      if (dirMode_ != null) {
         output.WriteRawTag(26);
-        output.WriteMessage(BndWid);
+        output.WriteMessage(DirMode);
       }
-      if (ctlDlTmms_ != null) {
+      if (dirRev_ != null) {
         output.WriteRawTag(34);
-        output.WriteMessage(CtlDlTmms);
+        output.WriteMessage(DirRev);
       }
-      if (lDCR_ != null) {
+      if (dirThd_ != null) {
         output.WriteRawTag(42);
-        output.WriteMessage(LDCR);
-      }
-      if (lDCX_ != null) {
-        output.WriteRawTag(50);
-        output.WriteMessage(LDCX);
+        output.WriteMessage(DirThd);
       }
       if (parOp_ != null) {
-        output.WriteRawTag(58);
+        output.WriteRawTag(50);
         output.WriteMessage(ParOp);
       }
       if (rampRates_ != null) {
-        output.WriteRawTag(66);
+        output.WriteRawTag(58);
         output.WriteMessage(RampRates);
       }
       if (state_ != null) {
-        output.WriteRawTag(74);
+        output.WriteRawTag(66);
         output.WriteMessage(State);
       }
-      if (tapPos_ != null) {
+      if (tapOpL_ != null) {
+        output.WriteRawTag(74);
+        output.WriteMessage(TapOpL);
+      }
+      if (tapOpR_ != null) {
         output.WriteRawTag(82);
-        output.WriteMessage(TapPos);
+        output.WriteMessage(TapOpR);
       }
-      if (volSpt_ != null) {
+      if (volLmtHi_ != null) {
         output.WriteRawTag(90);
-        output.WriteMessage(VolSpt);
+        output.WriteMessage(VolLmtHi);
       }
-      if (voltageSetPointEnabled_ != null) {
+      if (volLmtLo_ != null) {
         output.WriteRawTag(98);
-        output.WriteMessage(VoltageSetPointEnabled);
+        output.WriteMessage(VolLmtLo);
+      }
+      if (volLmtMode_ != null) {
+        output.WriteRawTag(106);
+        output.WriteMessage(VolLmtMode);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -544,20 +1014,17 @@ namespace openfmb.regulatormodule {
       if (logicalNodeForControl_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(LogicalNodeForControl);
       }
-      if (bndCtr_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(BndCtr);
+      if (dirFwd_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(DirFwd);
       }
-      if (bndWid_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(BndWid);
+      if (dirMode_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(DirMode);
       }
-      if (ctlDlTmms_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CtlDlTmms);
+      if (dirRev_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(DirRev);
       }
-      if (lDCR_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LDCR);
-      }
-      if (lDCX_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LDCX);
+      if (dirThd_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(DirThd);
       }
       if (parOp_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ParOp);
@@ -568,14 +1035,20 @@ namespace openfmb.regulatormodule {
       if (state_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(State);
       }
-      if (tapPos_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(TapPos);
+      if (tapOpL_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(TapOpL);
       }
-      if (volSpt_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(VolSpt);
+      if (tapOpR_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(TapOpR);
       }
-      if (voltageSetPointEnabled_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(VoltageSetPointEnabled);
+      if (volLmtHi_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(VolLmtHi);
+      }
+      if (volLmtLo_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(VolLmtLo);
+      }
+      if (volLmtMode_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(VolLmtMode);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -594,39 +1067,33 @@ namespace openfmb.regulatormodule {
         }
         LogicalNodeForControl.MergeFrom(other.LogicalNodeForControl);
       }
-      if (other.bndCtr_ != null) {
-        if (bndCtr_ == null) {
-          BndCtr = new global::openfmb.commonmodule.ASG();
+      if (other.dirFwd_ != null) {
+        if (dirFwd_ == null) {
+          DirFwd = new global::openfmb.regulatormodule.DirectionalATCC();
         }
-        BndCtr.MergeFrom(other.BndCtr);
+        DirFwd.MergeFrom(other.DirFwd);
       }
-      if (other.bndWid_ != null) {
-        if (bndWid_ == null) {
-          BndWid = new global::openfmb.commonmodule.ASG();
+      if (other.dirMode_ != null) {
+        if (dirMode_ == null) {
+          DirMode = new global::openfmb.commonmodule.Optional_DirectionModeKind();
         }
-        BndWid.MergeFrom(other.BndWid);
+        DirMode.MergeFrom(other.DirMode);
       }
-      if (other.ctlDlTmms_ != null) {
-        if (ctlDlTmms_ == null) {
-          CtlDlTmms = new global::openfmb.commonmodule.ControlING();
+      if (other.dirRev_ != null) {
+        if (dirRev_ == null) {
+          DirRev = new global::openfmb.regulatormodule.DirectionalATCC();
         }
-        CtlDlTmms.MergeFrom(other.CtlDlTmms);
+        DirRev.MergeFrom(other.DirRev);
       }
-      if (other.lDCR_ != null) {
-        if (lDCR_ == null) {
-          LDCR = new global::openfmb.commonmodule.ASG();
+      if (other.dirThd_ != null) {
+        if (dirThd_ == null) {
+          DirThd = new global::openfmb.commonmodule.PhaseAPC();
         }
-        LDCR.MergeFrom(other.LDCR);
-      }
-      if (other.lDCX_ != null) {
-        if (lDCX_ == null) {
-          LDCX = new global::openfmb.commonmodule.ASG();
-        }
-        LDCX.MergeFrom(other.LDCX);
+        DirThd.MergeFrom(other.DirThd);
       }
       if (other.parOp_ != null) {
         if (parOp_ == null) {
-          ParOp = new global::openfmb.commonmodule.ControlSPC();
+          ParOp = new global::openfmb.commonmodule.PhaseSPC();
         }
         ParOp.MergeFrom(other.ParOp);
       }
@@ -642,23 +1109,35 @@ namespace openfmb.regulatormodule {
         }
         State.MergeFrom(other.State);
       }
-      if (other.tapPos_ != null) {
-        if (tapPos_ == null) {
-          TapPos = new global::openfmb.commonmodule.PhaseISC();
+      if (other.tapOpL_ != null) {
+        if (tapOpL_ == null) {
+          TapOpL = new global::openfmb.commonmodule.PhaseSPC();
         }
-        TapPos.MergeFrom(other.TapPos);
+        TapOpL.MergeFrom(other.TapOpL);
       }
-      if (other.volSpt_ != null) {
-        if (volSpt_ == null) {
-          VolSpt = new global::openfmb.commonmodule.PhaseAPC();
+      if (other.tapOpR_ != null) {
+        if (tapOpR_ == null) {
+          TapOpR = new global::openfmb.commonmodule.PhaseSPC();
         }
-        VolSpt.MergeFrom(other.VolSpt);
+        TapOpR.MergeFrom(other.TapOpR);
       }
-      if (other.voltageSetPointEnabled_ != null) {
-        if (voltageSetPointEnabled_ == null) {
-          VoltageSetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+      if (other.volLmtHi_ != null) {
+        if (volLmtHi_ == null) {
+          VolLmtHi = new global::openfmb.commonmodule.PhaseAPC();
         }
-        VoltageSetPointEnabled.MergeFrom(other.VoltageSetPointEnabled);
+        VolLmtHi.MergeFrom(other.VolLmtHi);
+      }
+      if (other.volLmtLo_ != null) {
+        if (volLmtLo_ == null) {
+          VolLmtLo = new global::openfmb.commonmodule.PhaseAPC();
+        }
+        VolLmtLo.MergeFrom(other.VolLmtLo);
+      }
+      if (other.volLmtMode_ != null) {
+        if (volLmtMode_ == null) {
+          VolLmtMode = new global::openfmb.commonmodule.Optional_VoltLimitModeKind();
+        }
+        VolLmtMode.MergeFrom(other.VolLmtMode);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -682,80 +1161,87 @@ namespace openfmb.regulatormodule {
             break;
           }
           case 18: {
-            if (bndCtr_ == null) {
-              BndCtr = new global::openfmb.commonmodule.ASG();
+            if (dirFwd_ == null) {
+              DirFwd = new global::openfmb.regulatormodule.DirectionalATCC();
             }
-            input.ReadMessage(BndCtr);
+            input.ReadMessage(DirFwd);
             break;
           }
           case 26: {
-            if (bndWid_ == null) {
-              BndWid = new global::openfmb.commonmodule.ASG();
+            if (dirMode_ == null) {
+              DirMode = new global::openfmb.commonmodule.Optional_DirectionModeKind();
             }
-            input.ReadMessage(BndWid);
+            input.ReadMessage(DirMode);
             break;
           }
           case 34: {
-            if (ctlDlTmms_ == null) {
-              CtlDlTmms = new global::openfmb.commonmodule.ControlING();
+            if (dirRev_ == null) {
+              DirRev = new global::openfmb.regulatormodule.DirectionalATCC();
             }
-            input.ReadMessage(CtlDlTmms);
+            input.ReadMessage(DirRev);
             break;
           }
           case 42: {
-            if (lDCR_ == null) {
-              LDCR = new global::openfmb.commonmodule.ASG();
+            if (dirThd_ == null) {
+              DirThd = new global::openfmb.commonmodule.PhaseAPC();
             }
-            input.ReadMessage(LDCR);
+            input.ReadMessage(DirThd);
             break;
           }
           case 50: {
-            if (lDCX_ == null) {
-              LDCX = new global::openfmb.commonmodule.ASG();
-            }
-            input.ReadMessage(LDCX);
-            break;
-          }
-          case 58: {
             if (parOp_ == null) {
-              ParOp = new global::openfmb.commonmodule.ControlSPC();
+              ParOp = new global::openfmb.commonmodule.PhaseSPC();
             }
             input.ReadMessage(ParOp);
             break;
           }
-          case 66: {
+          case 58: {
             if (rampRates_ == null) {
               RampRates = new global::openfmb.commonmodule.RampRate();
             }
             input.ReadMessage(RampRates);
             break;
           }
-          case 74: {
+          case 66: {
             if (state_ == null) {
               State = new global::openfmb.commonmodule.Optional_StateKind();
             }
             input.ReadMessage(State);
             break;
           }
-          case 82: {
-            if (tapPos_ == null) {
-              TapPos = new global::openfmb.commonmodule.PhaseISC();
+          case 74: {
+            if (tapOpL_ == null) {
+              TapOpL = new global::openfmb.commonmodule.PhaseSPC();
             }
-            input.ReadMessage(TapPos);
+            input.ReadMessage(TapOpL);
+            break;
+          }
+          case 82: {
+            if (tapOpR_ == null) {
+              TapOpR = new global::openfmb.commonmodule.PhaseSPC();
+            }
+            input.ReadMessage(TapOpR);
             break;
           }
           case 90: {
-            if (volSpt_ == null) {
-              VolSpt = new global::openfmb.commonmodule.PhaseAPC();
+            if (volLmtHi_ == null) {
+              VolLmtHi = new global::openfmb.commonmodule.PhaseAPC();
             }
-            input.ReadMessage(VolSpt);
+            input.ReadMessage(VolLmtHi);
             break;
           }
           case 98: {
-            if (voltageSetPointEnabled_ == null) {
-              VoltageSetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+            if (volLmtLo_ == null) {
+              VolLmtLo = new global::openfmb.commonmodule.PhaseAPC();
             }
-            input.ReadMessage(VoltageSetPointEnabled);
+            input.ReadMessage(VolLmtLo);
+            break;
+          }
+          case 106: {
+            if (volLmtMode_ == null) {
+              VolLmtMode = new global::openfmb.commonmodule.Optional_VoltLimitModeKind();
+            }
+            input.ReadMessage(VolLmtMode);
             break;
           }
         }
@@ -780,80 +1266,87 @@ namespace openfmb.regulatormodule {
             break;
           }
           case 18: {
-            if (bndCtr_ == null) {
-              BndCtr = new global::openfmb.commonmodule.ASG();
+            if (dirFwd_ == null) {
+              DirFwd = new global::openfmb.regulatormodule.DirectionalATCC();
             }
-            input.ReadMessage(BndCtr);
+            input.ReadMessage(DirFwd);
             break;
           }
           case 26: {
-            if (bndWid_ == null) {
-              BndWid = new global::openfmb.commonmodule.ASG();
+            if (dirMode_ == null) {
+              DirMode = new global::openfmb.commonmodule.Optional_DirectionModeKind();
             }
-            input.ReadMessage(BndWid);
+            input.ReadMessage(DirMode);
             break;
           }
           case 34: {
-            if (ctlDlTmms_ == null) {
-              CtlDlTmms = new global::openfmb.commonmodule.ControlING();
+            if (dirRev_ == null) {
+              DirRev = new global::openfmb.regulatormodule.DirectionalATCC();
             }
-            input.ReadMessage(CtlDlTmms);
+            input.ReadMessage(DirRev);
             break;
           }
           case 42: {
-            if (lDCR_ == null) {
-              LDCR = new global::openfmb.commonmodule.ASG();
+            if (dirThd_ == null) {
+              DirThd = new global::openfmb.commonmodule.PhaseAPC();
             }
-            input.ReadMessage(LDCR);
+            input.ReadMessage(DirThd);
             break;
           }
           case 50: {
-            if (lDCX_ == null) {
-              LDCX = new global::openfmb.commonmodule.ASG();
-            }
-            input.ReadMessage(LDCX);
-            break;
-          }
-          case 58: {
             if (parOp_ == null) {
-              ParOp = new global::openfmb.commonmodule.ControlSPC();
+              ParOp = new global::openfmb.commonmodule.PhaseSPC();
             }
             input.ReadMessage(ParOp);
             break;
           }
-          case 66: {
+          case 58: {
             if (rampRates_ == null) {
               RampRates = new global::openfmb.commonmodule.RampRate();
             }
             input.ReadMessage(RampRates);
             break;
           }
-          case 74: {
+          case 66: {
             if (state_ == null) {
               State = new global::openfmb.commonmodule.Optional_StateKind();
             }
             input.ReadMessage(State);
             break;
           }
-          case 82: {
-            if (tapPos_ == null) {
-              TapPos = new global::openfmb.commonmodule.PhaseISC();
+          case 74: {
+            if (tapOpL_ == null) {
+              TapOpL = new global::openfmb.commonmodule.PhaseSPC();
             }
-            input.ReadMessage(TapPos);
+            input.ReadMessage(TapOpL);
+            break;
+          }
+          case 82: {
+            if (tapOpR_ == null) {
+              TapOpR = new global::openfmb.commonmodule.PhaseSPC();
+            }
+            input.ReadMessage(TapOpR);
             break;
           }
           case 90: {
-            if (volSpt_ == null) {
-              VolSpt = new global::openfmb.commonmodule.PhaseAPC();
+            if (volLmtHi_ == null) {
+              VolLmtHi = new global::openfmb.commonmodule.PhaseAPC();
             }
-            input.ReadMessage(VolSpt);
+            input.ReadMessage(VolLmtHi);
             break;
           }
           case 98: {
-            if (voltageSetPointEnabled_ == null) {
-              VoltageSetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+            if (volLmtLo_ == null) {
+              VolLmtLo = new global::openfmb.commonmodule.PhaseAPC();
             }
-            input.ReadMessage(VoltageSetPointEnabled);
+            input.ReadMessage(VolLmtLo);
+            break;
+          }
+          case 106: {
+            if (volLmtMode_ == null) {
+              VolLmtMode = new global::openfmb.commonmodule.Optional_VoltLimitModeKind();
+            }
+            input.ReadMessage(VolLmtMode);
             break;
           }
         }
@@ -878,7 +1371,7 @@ namespace openfmb.regulatormodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.regulatormodule.RegulatormoduleReflection.Descriptor.MessageTypes[1]; }
+      get { return global::openfmb.regulatormodule.RegulatormoduleReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1113,7 +1606,7 @@ namespace openfmb.regulatormodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.regulatormodule.RegulatormoduleReflection.Descriptor.MessageTypes[2]; }
+      get { return global::openfmb.regulatormodule.RegulatormoduleReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1280,7 +1773,7 @@ namespace openfmb.regulatormodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.regulatormodule.RegulatormoduleReflection.Descriptor.MessageTypes[3]; }
+      get { return global::openfmb.regulatormodule.RegulatormoduleReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1467,7 +1960,7 @@ namespace openfmb.regulatormodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.regulatormodule.RegulatormoduleReflection.Descriptor.MessageTypes[4]; }
+      get { return global::openfmb.regulatormodule.RegulatormoduleReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1702,7 +2195,7 @@ namespace openfmb.regulatormodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.regulatormodule.RegulatormoduleReflection.Descriptor.MessageTypes[5]; }
+      get { return global::openfmb.regulatormodule.RegulatormoduleReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1986,7 +2479,7 @@ namespace openfmb.regulatormodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.regulatormodule.RegulatormoduleReflection.Descriptor.MessageTypes[6]; }
+      get { return global::openfmb.regulatormodule.RegulatormoduleReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2174,7 +2667,7 @@ namespace openfmb.regulatormodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.regulatormodule.RegulatormoduleReflection.Descriptor.MessageTypes[7]; }
+      get { return global::openfmb.regulatormodule.RegulatormoduleReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2457,7 +2950,7 @@ namespace openfmb.regulatormodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.regulatormodule.RegulatormoduleReflection.Descriptor.MessageTypes[8]; }
+      get { return global::openfmb.regulatormodule.RegulatormoduleReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2741,7 +3234,7 @@ namespace openfmb.regulatormodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.regulatormodule.RegulatormoduleReflection.Descriptor.MessageTypes[9]; }
+      get { return global::openfmb.regulatormodule.RegulatormoduleReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3024,7 +3517,7 @@ namespace openfmb.regulatormodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.regulatormodule.RegulatormoduleReflection.Descriptor.MessageTypes[10]; }
+      get { return global::openfmb.regulatormodule.RegulatormoduleReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3043,6 +3536,11 @@ namespace openfmb.regulatormodule {
     public RegulatorEventAndStatusATCC(RegulatorEventAndStatusATCC other) : this() {
       bndCtr_ = other.bndCtr_ != null ? other.bndCtr_.Clone() : null;
       bndWid_ = other.bndWid_ != null ? other.bndWid_.Clone() : null;
+      bndWidHi_ = other.bndWidHi_ != null ? other.bndWidHi_.Clone() : null;
+      bndWidLo_ = other.bndWidLo_ != null ? other.bndWidLo_.Clone() : null;
+      dirCtlRev_ = other.dirCtlRev_ != null ? other.dirCtlRev_.Clone() : null;
+      dirIndt_ = other.dirIndt_ != null ? other.dirIndt_.Clone() : null;
+      dirRev_ = other.dirRev_ != null ? other.dirRev_.Clone() : null;
       lDCR_ = other.lDCR_ != null ? other.lDCR_.Clone() : null;
       lDCX_ = other.lDCX_ != null ? other.lDCX_.Clone() : null;
       parOp_ = other.parOp_ != null ? other.parOp_.Clone() : null;
@@ -3051,6 +3549,8 @@ namespace openfmb.regulatormodule {
       stDlTmms_ = other.stDlTmms_ != null ? other.stDlTmms_.Clone() : null;
       tapOpErr_ = other.tapOpErr_ != null ? other.tapOpErr_.Clone() : null;
       tapPos_ = other.tapPos_ != null ? other.tapPos_.Clone() : null;
+      volLmtHi_ = other.volLmtHi_ != null ? other.volLmtHi_.Clone() : null;
+      volLmtLo_ = other.volLmtLo_ != null ? other.volLmtLo_.Clone() : null;
       volSpt_ = other.volSpt_ != null ? other.volSpt_.Clone() : null;
       voltageSetPointEnabled_ = other.voltageSetPointEnabled_ != null ? other.voltageSetPointEnabled_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -3090,8 +3590,78 @@ namespace openfmb.regulatormodule {
       }
     }
 
+    /// <summary>Field number for the "BndWidHi" field.</summary>
+    public const int BndWidHiFieldNumber = 3;
+    private global::openfmb.commonmodule.PhaseSPS bndWidHi_;
+    /// <summary>
+    /// Compensated Voltage Secondary compared with set point plus or minus Bandwidth
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.PhaseSPS BndWidHi {
+      get { return bndWidHi_; }
+      set {
+        bndWidHi_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "BndWidLo" field.</summary>
+    public const int BndWidLoFieldNumber = 4;
+    private global::openfmb.commonmodule.PhaseSPS bndWidLo_;
+    /// <summary>
+    /// Compensated Voltage Secondary compared with set point plus or minus Bandwidth
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.PhaseSPS BndWidLo {
+      get { return bndWidLo_; }
+      set {
+        bndWidLo_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "DirCtlRev" field.</summary>
+    public const int DirCtlRevFieldNumber = 5;
+    private global::openfmb.commonmodule.PhaseSPS dirCtlRev_;
+    /// <summary>
+    /// Current Power Direction is the direction that regulator is regulating.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.PhaseSPS DirCtlRev {
+      get { return dirCtlRev_; }
+      set {
+        dirCtlRev_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "DirIndt" field.</summary>
+    public const int DirIndtFieldNumber = 6;
+    private global::openfmb.commonmodule.PhaseSPS dirIndt_;
+    /// <summary>
+    /// True if direction is indeterminate.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.PhaseSPS DirIndt {
+      get { return dirIndt_; }
+      set {
+        dirIndt_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "DirRev" field.</summary>
+    public const int DirRevFieldNumber = 7;
+    private global::openfmb.commonmodule.PhaseSPS dirRev_;
+    /// <summary>
+    /// True if the current direction is the same as the System Direction
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.PhaseSPS DirRev {
+      get { return dirRev_; }
+      set {
+        dirRev_ = value;
+      }
+    }
+
     /// <summary>Field number for the "LDCR" field.</summary>
-    public const int LDCRFieldNumber = 3;
+    public const int LDCRFieldNumber = 8;
     private global::openfmb.commonmodule.ASG lDCR_;
     /// <summary>
     /// Line drop voltage due to line resistance component (forward power flow presumed) at rated current.
@@ -3105,7 +3675,7 @@ namespace openfmb.regulatormodule {
     }
 
     /// <summary>Field number for the "LDCX" field.</summary>
-    public const int LDCXFieldNumber = 4;
+    public const int LDCXFieldNumber = 9;
     private global::openfmb.commonmodule.ASG lDCX_;
     /// <summary>
     /// Line drop voltage due to line reactance component (forward power flow presumed) at rated current.
@@ -3119,7 +3689,7 @@ namespace openfmb.regulatormodule {
     }
 
     /// <summary>Field number for the "ParOp" field.</summary>
-    public const int ParOpFieldNumber = 5;
+    public const int ParOpFieldNumber = 10;
     private global::openfmb.commonmodule.StatusSPS parOp_;
     /// <summary>
     /// (controllable) If true, transformers operate in parallel, otherwise they operate independently.
@@ -3133,7 +3703,7 @@ namespace openfmb.regulatormodule {
     }
 
     /// <summary>Field number for the "rampRates" field.</summary>
-    public const int RampRatesFieldNumber = 6;
+    public const int RampRatesFieldNumber = 11;
     private global::openfmb.commonmodule.RampRate rampRates_;
     /// <summary>
     /// Ramp rates
@@ -3147,7 +3717,7 @@ namespace openfmb.regulatormodule {
     }
 
     /// <summary>Field number for the "state" field.</summary>
-    public const int StateFieldNumber = 7;
+    public const int StateFieldNumber = 12;
     private global::openfmb.commonmodule.Optional_StateKind state_;
     /// <summary>
     /// State
@@ -3161,7 +3731,7 @@ namespace openfmb.regulatormodule {
     }
 
     /// <summary>Field number for the "StDlTmms" field.</summary>
-    public const int StDlTmmsFieldNumber = 8;
+    public const int StDlTmmsFieldNumber = 13;
     private global::openfmb.commonmodule.StatusINC stDlTmms_;
     /// <summary>
     /// OpenFMB extension:  Status for the time to wait before operating (CtrlDlTmms)
@@ -3175,7 +3745,7 @@ namespace openfmb.regulatormodule {
     }
 
     /// <summary>Field number for the "TapOpErr" field.</summary>
-    public const int TapOpErrFieldNumber = 9;
+    public const int TapOpErrFieldNumber = 14;
     private global::openfmb.commonmodule.StatusSPS tapOpErr_;
     /// <summary>
     /// If true, there was an error in tap position change, or in tap indication (for instance, wrong
@@ -3190,7 +3760,7 @@ namespace openfmb.regulatormodule {
     }
 
     /// <summary>Field number for the "TapPos" field.</summary>
-    public const int TapPosFieldNumber = 10;
+    public const int TapPosFieldNumber = 15;
     private global::openfmb.commonmodule.PhaseINS tapPos_;
     /// <summary>
     /// (controllable) Tap position change to the specified value.
@@ -3203,8 +3773,36 @@ namespace openfmb.regulatormodule {
       }
     }
 
+    /// <summary>Field number for the "VolLmtHi" field.</summary>
+    public const int VolLmtHiFieldNumber = 16;
+    private global::openfmb.commonmodule.PhaseSPS volLmtHi_;
+    /// <summary>
+    /// Load Voltage Secondary compared with VolLmtHi
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.PhaseSPS VolLmtHi {
+      get { return volLmtHi_; }
+      set {
+        volLmtHi_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "VolLmtLo" field.</summary>
+    public const int VolLmtLoFieldNumber = 17;
+    private global::openfmb.commonmodule.PhaseSPS volLmtLo_;
+    /// <summary>
+    /// Load Voltage Secondary compared with VolLmtLo
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.PhaseSPS VolLmtLo {
+      get { return volLmtLo_; }
+      set {
+        volLmtLo_ = value;
+      }
+    }
+
     /// <summary>Field number for the "VolSpt" field.</summary>
-    public const int VolSptFieldNumber = 11;
+    public const int VolSptFieldNumber = 18;
     private global::openfmb.commonmodule.PhaseAPC volSpt_;
     /// <summary>
     /// (controllable) Voltage setpoint. Analog value (MX) feeds back the setpoint of the controller.
@@ -3218,13 +3816,13 @@ namespace openfmb.regulatormodule {
     }
 
     /// <summary>Field number for the "voltageSetPointEnabled" field.</summary>
-    public const int VoltageSetPointEnabledFieldNumber = 12;
-    private global::openfmb.commonmodule.StatusSPC voltageSetPointEnabled_;
+    public const int VoltageSetPointEnabledFieldNumber = 19;
+    private global::openfmb.commonmodule.StatusSPS voltageSetPointEnabled_;
     /// <summary>
     /// Voltage set point status
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.StatusSPC VoltageSetPointEnabled {
+    public global::openfmb.commonmodule.StatusSPS VoltageSetPointEnabled {
       get { return voltageSetPointEnabled_; }
       set {
         voltageSetPointEnabled_ = value;
@@ -3246,6 +3844,11 @@ namespace openfmb.regulatormodule {
       }
       if (!object.Equals(BndCtr, other.BndCtr)) return false;
       if (!object.Equals(BndWid, other.BndWid)) return false;
+      if (!object.Equals(BndWidHi, other.BndWidHi)) return false;
+      if (!object.Equals(BndWidLo, other.BndWidLo)) return false;
+      if (!object.Equals(DirCtlRev, other.DirCtlRev)) return false;
+      if (!object.Equals(DirIndt, other.DirIndt)) return false;
+      if (!object.Equals(DirRev, other.DirRev)) return false;
       if (!object.Equals(LDCR, other.LDCR)) return false;
       if (!object.Equals(LDCX, other.LDCX)) return false;
       if (!object.Equals(ParOp, other.ParOp)) return false;
@@ -3254,6 +3857,8 @@ namespace openfmb.regulatormodule {
       if (!object.Equals(StDlTmms, other.StDlTmms)) return false;
       if (!object.Equals(TapOpErr, other.TapOpErr)) return false;
       if (!object.Equals(TapPos, other.TapPos)) return false;
+      if (!object.Equals(VolLmtHi, other.VolLmtHi)) return false;
+      if (!object.Equals(VolLmtLo, other.VolLmtLo)) return false;
       if (!object.Equals(VolSpt, other.VolSpt)) return false;
       if (!object.Equals(VoltageSetPointEnabled, other.VoltageSetPointEnabled)) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -3264,6 +3869,11 @@ namespace openfmb.regulatormodule {
       int hash = 1;
       if (bndCtr_ != null) hash ^= BndCtr.GetHashCode();
       if (bndWid_ != null) hash ^= BndWid.GetHashCode();
+      if (bndWidHi_ != null) hash ^= BndWidHi.GetHashCode();
+      if (bndWidLo_ != null) hash ^= BndWidLo.GetHashCode();
+      if (dirCtlRev_ != null) hash ^= DirCtlRev.GetHashCode();
+      if (dirIndt_ != null) hash ^= DirIndt.GetHashCode();
+      if (dirRev_ != null) hash ^= DirRev.GetHashCode();
       if (lDCR_ != null) hash ^= LDCR.GetHashCode();
       if (lDCX_ != null) hash ^= LDCX.GetHashCode();
       if (parOp_ != null) hash ^= ParOp.GetHashCode();
@@ -3272,6 +3882,8 @@ namespace openfmb.regulatormodule {
       if (stDlTmms_ != null) hash ^= StDlTmms.GetHashCode();
       if (tapOpErr_ != null) hash ^= TapOpErr.GetHashCode();
       if (tapPos_ != null) hash ^= TapPos.GetHashCode();
+      if (volLmtHi_ != null) hash ^= VolLmtHi.GetHashCode();
+      if (volLmtLo_ != null) hash ^= VolLmtLo.GetHashCode();
       if (volSpt_ != null) hash ^= VolSpt.GetHashCode();
       if (voltageSetPointEnabled_ != null) hash ^= VoltageSetPointEnabled.GetHashCode();
       if (_unknownFields != null) {
@@ -3298,44 +3910,72 @@ namespace openfmb.regulatormodule {
         output.WriteRawTag(18);
         output.WriteMessage(BndWid);
       }
-      if (lDCR_ != null) {
+      if (bndWidHi_ != null) {
         output.WriteRawTag(26);
+        output.WriteMessage(BndWidHi);
+      }
+      if (bndWidLo_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(BndWidLo);
+      }
+      if (dirCtlRev_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(DirCtlRev);
+      }
+      if (dirIndt_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(DirIndt);
+      }
+      if (dirRev_ != null) {
+        output.WriteRawTag(58);
+        output.WriteMessage(DirRev);
+      }
+      if (lDCR_ != null) {
+        output.WriteRawTag(66);
         output.WriteMessage(LDCR);
       }
       if (lDCX_ != null) {
-        output.WriteRawTag(34);
+        output.WriteRawTag(74);
         output.WriteMessage(LDCX);
       }
       if (parOp_ != null) {
-        output.WriteRawTag(42);
+        output.WriteRawTag(82);
         output.WriteMessage(ParOp);
       }
       if (rampRates_ != null) {
-        output.WriteRawTag(50);
+        output.WriteRawTag(90);
         output.WriteMessage(RampRates);
       }
       if (state_ != null) {
-        output.WriteRawTag(58);
+        output.WriteRawTag(98);
         output.WriteMessage(State);
       }
       if (stDlTmms_ != null) {
-        output.WriteRawTag(66);
+        output.WriteRawTag(106);
         output.WriteMessage(StDlTmms);
       }
       if (tapOpErr_ != null) {
-        output.WriteRawTag(74);
+        output.WriteRawTag(114);
         output.WriteMessage(TapOpErr);
       }
       if (tapPos_ != null) {
-        output.WriteRawTag(82);
+        output.WriteRawTag(122);
         output.WriteMessage(TapPos);
       }
+      if (volLmtHi_ != null) {
+        output.WriteRawTag(130, 1);
+        output.WriteMessage(VolLmtHi);
+      }
+      if (volLmtLo_ != null) {
+        output.WriteRawTag(138, 1);
+        output.WriteMessage(VolLmtLo);
+      }
       if (volSpt_ != null) {
-        output.WriteRawTag(90);
+        output.WriteRawTag(146, 1);
         output.WriteMessage(VolSpt);
       }
       if (voltageSetPointEnabled_ != null) {
-        output.WriteRawTag(98);
+        output.WriteRawTag(154, 1);
         output.WriteMessage(VoltageSetPointEnabled);
       }
       if (_unknownFields != null) {
@@ -3355,44 +3995,72 @@ namespace openfmb.regulatormodule {
         output.WriteRawTag(18);
         output.WriteMessage(BndWid);
       }
-      if (lDCR_ != null) {
+      if (bndWidHi_ != null) {
         output.WriteRawTag(26);
+        output.WriteMessage(BndWidHi);
+      }
+      if (bndWidLo_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(BndWidLo);
+      }
+      if (dirCtlRev_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(DirCtlRev);
+      }
+      if (dirIndt_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(DirIndt);
+      }
+      if (dirRev_ != null) {
+        output.WriteRawTag(58);
+        output.WriteMessage(DirRev);
+      }
+      if (lDCR_ != null) {
+        output.WriteRawTag(66);
         output.WriteMessage(LDCR);
       }
       if (lDCX_ != null) {
-        output.WriteRawTag(34);
+        output.WriteRawTag(74);
         output.WriteMessage(LDCX);
       }
       if (parOp_ != null) {
-        output.WriteRawTag(42);
+        output.WriteRawTag(82);
         output.WriteMessage(ParOp);
       }
       if (rampRates_ != null) {
-        output.WriteRawTag(50);
+        output.WriteRawTag(90);
         output.WriteMessage(RampRates);
       }
       if (state_ != null) {
-        output.WriteRawTag(58);
+        output.WriteRawTag(98);
         output.WriteMessage(State);
       }
       if (stDlTmms_ != null) {
-        output.WriteRawTag(66);
+        output.WriteRawTag(106);
         output.WriteMessage(StDlTmms);
       }
       if (tapOpErr_ != null) {
-        output.WriteRawTag(74);
+        output.WriteRawTag(114);
         output.WriteMessage(TapOpErr);
       }
       if (tapPos_ != null) {
-        output.WriteRawTag(82);
+        output.WriteRawTag(122);
         output.WriteMessage(TapPos);
       }
+      if (volLmtHi_ != null) {
+        output.WriteRawTag(130, 1);
+        output.WriteMessage(VolLmtHi);
+      }
+      if (volLmtLo_ != null) {
+        output.WriteRawTag(138, 1);
+        output.WriteMessage(VolLmtLo);
+      }
       if (volSpt_ != null) {
-        output.WriteRawTag(90);
+        output.WriteRawTag(146, 1);
         output.WriteMessage(VolSpt);
       }
       if (voltageSetPointEnabled_ != null) {
-        output.WriteRawTag(98);
+        output.WriteRawTag(154, 1);
         output.WriteMessage(VoltageSetPointEnabled);
       }
       if (_unknownFields != null) {
@@ -3409,6 +4077,21 @@ namespace openfmb.regulatormodule {
       }
       if (bndWid_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(BndWid);
+      }
+      if (bndWidHi_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(BndWidHi);
+      }
+      if (bndWidLo_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(BndWidLo);
+      }
+      if (dirCtlRev_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(DirCtlRev);
+      }
+      if (dirIndt_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(DirIndt);
+      }
+      if (dirRev_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(DirRev);
       }
       if (lDCR_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(LDCR);
@@ -3434,11 +4117,17 @@ namespace openfmb.regulatormodule {
       if (tapPos_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(TapPos);
       }
+      if (volLmtHi_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(VolLmtHi);
+      }
+      if (volLmtLo_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(VolLmtLo);
+      }
       if (volSpt_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(VolSpt);
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(VolSpt);
       }
       if (voltageSetPointEnabled_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(VoltageSetPointEnabled);
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(VoltageSetPointEnabled);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -3462,6 +4151,36 @@ namespace openfmb.regulatormodule {
           BndWid = new global::openfmb.commonmodule.ASG();
         }
         BndWid.MergeFrom(other.BndWid);
+      }
+      if (other.bndWidHi_ != null) {
+        if (bndWidHi_ == null) {
+          BndWidHi = new global::openfmb.commonmodule.PhaseSPS();
+        }
+        BndWidHi.MergeFrom(other.BndWidHi);
+      }
+      if (other.bndWidLo_ != null) {
+        if (bndWidLo_ == null) {
+          BndWidLo = new global::openfmb.commonmodule.PhaseSPS();
+        }
+        BndWidLo.MergeFrom(other.BndWidLo);
+      }
+      if (other.dirCtlRev_ != null) {
+        if (dirCtlRev_ == null) {
+          DirCtlRev = new global::openfmb.commonmodule.PhaseSPS();
+        }
+        DirCtlRev.MergeFrom(other.DirCtlRev);
+      }
+      if (other.dirIndt_ != null) {
+        if (dirIndt_ == null) {
+          DirIndt = new global::openfmb.commonmodule.PhaseSPS();
+        }
+        DirIndt.MergeFrom(other.DirIndt);
+      }
+      if (other.dirRev_ != null) {
+        if (dirRev_ == null) {
+          DirRev = new global::openfmb.commonmodule.PhaseSPS();
+        }
+        DirRev.MergeFrom(other.DirRev);
       }
       if (other.lDCR_ != null) {
         if (lDCR_ == null) {
@@ -3511,6 +4230,18 @@ namespace openfmb.regulatormodule {
         }
         TapPos.MergeFrom(other.TapPos);
       }
+      if (other.volLmtHi_ != null) {
+        if (volLmtHi_ == null) {
+          VolLmtHi = new global::openfmb.commonmodule.PhaseSPS();
+        }
+        VolLmtHi.MergeFrom(other.VolLmtHi);
+      }
+      if (other.volLmtLo_ != null) {
+        if (volLmtLo_ == null) {
+          VolLmtLo = new global::openfmb.commonmodule.PhaseSPS();
+        }
+        VolLmtLo.MergeFrom(other.VolLmtLo);
+      }
       if (other.volSpt_ != null) {
         if (volSpt_ == null) {
           VolSpt = new global::openfmb.commonmodule.PhaseAPC();
@@ -3519,7 +4250,7 @@ namespace openfmb.regulatormodule {
       }
       if (other.voltageSetPointEnabled_ != null) {
         if (voltageSetPointEnabled_ == null) {
-          VoltageSetPointEnabled = new global::openfmb.commonmodule.StatusSPC();
+          VoltageSetPointEnabled = new global::openfmb.commonmodule.StatusSPS();
         }
         VoltageSetPointEnabled.MergeFrom(other.VoltageSetPointEnabled);
       }
@@ -3552,71 +4283,120 @@ namespace openfmb.regulatormodule {
             break;
           }
           case 26: {
+            if (bndWidHi_ == null) {
+              BndWidHi = new global::openfmb.commonmodule.PhaseSPS();
+            }
+            input.ReadMessage(BndWidHi);
+            break;
+          }
+          case 34: {
+            if (bndWidLo_ == null) {
+              BndWidLo = new global::openfmb.commonmodule.PhaseSPS();
+            }
+            input.ReadMessage(BndWidLo);
+            break;
+          }
+          case 42: {
+            if (dirCtlRev_ == null) {
+              DirCtlRev = new global::openfmb.commonmodule.PhaseSPS();
+            }
+            input.ReadMessage(DirCtlRev);
+            break;
+          }
+          case 50: {
+            if (dirIndt_ == null) {
+              DirIndt = new global::openfmb.commonmodule.PhaseSPS();
+            }
+            input.ReadMessage(DirIndt);
+            break;
+          }
+          case 58: {
+            if (dirRev_ == null) {
+              DirRev = new global::openfmb.commonmodule.PhaseSPS();
+            }
+            input.ReadMessage(DirRev);
+            break;
+          }
+          case 66: {
             if (lDCR_ == null) {
               LDCR = new global::openfmb.commonmodule.ASG();
             }
             input.ReadMessage(LDCR);
             break;
           }
-          case 34: {
+          case 74: {
             if (lDCX_ == null) {
               LDCX = new global::openfmb.commonmodule.ASG();
             }
             input.ReadMessage(LDCX);
             break;
           }
-          case 42: {
+          case 82: {
             if (parOp_ == null) {
               ParOp = new global::openfmb.commonmodule.StatusSPS();
             }
             input.ReadMessage(ParOp);
             break;
           }
-          case 50: {
+          case 90: {
             if (rampRates_ == null) {
               RampRates = new global::openfmb.commonmodule.RampRate();
             }
             input.ReadMessage(RampRates);
             break;
           }
-          case 58: {
+          case 98: {
             if (state_ == null) {
               State = new global::openfmb.commonmodule.Optional_StateKind();
             }
             input.ReadMessage(State);
             break;
           }
-          case 66: {
+          case 106: {
             if (stDlTmms_ == null) {
               StDlTmms = new global::openfmb.commonmodule.StatusINC();
             }
             input.ReadMessage(StDlTmms);
             break;
           }
-          case 74: {
+          case 114: {
             if (tapOpErr_ == null) {
               TapOpErr = new global::openfmb.commonmodule.StatusSPS();
             }
             input.ReadMessage(TapOpErr);
             break;
           }
-          case 82: {
+          case 122: {
             if (tapPos_ == null) {
               TapPos = new global::openfmb.commonmodule.PhaseINS();
             }
             input.ReadMessage(TapPos);
             break;
           }
-          case 90: {
+          case 130: {
+            if (volLmtHi_ == null) {
+              VolLmtHi = new global::openfmb.commonmodule.PhaseSPS();
+            }
+            input.ReadMessage(VolLmtHi);
+            break;
+          }
+          case 138: {
+            if (volLmtLo_ == null) {
+              VolLmtLo = new global::openfmb.commonmodule.PhaseSPS();
+            }
+            input.ReadMessage(VolLmtLo);
+            break;
+          }
+          case 146: {
             if (volSpt_ == null) {
               VolSpt = new global::openfmb.commonmodule.PhaseAPC();
             }
             input.ReadMessage(VolSpt);
             break;
           }
-          case 98: {
+          case 154: {
             if (voltageSetPointEnabled_ == null) {
-              VoltageSetPointEnabled = new global::openfmb.commonmodule.StatusSPC();
+              VoltageSetPointEnabled = new global::openfmb.commonmodule.StatusSPS();
             }
             input.ReadMessage(VoltageSetPointEnabled);
             break;
@@ -3650,71 +4430,120 @@ namespace openfmb.regulatormodule {
             break;
           }
           case 26: {
+            if (bndWidHi_ == null) {
+              BndWidHi = new global::openfmb.commonmodule.PhaseSPS();
+            }
+            input.ReadMessage(BndWidHi);
+            break;
+          }
+          case 34: {
+            if (bndWidLo_ == null) {
+              BndWidLo = new global::openfmb.commonmodule.PhaseSPS();
+            }
+            input.ReadMessage(BndWidLo);
+            break;
+          }
+          case 42: {
+            if (dirCtlRev_ == null) {
+              DirCtlRev = new global::openfmb.commonmodule.PhaseSPS();
+            }
+            input.ReadMessage(DirCtlRev);
+            break;
+          }
+          case 50: {
+            if (dirIndt_ == null) {
+              DirIndt = new global::openfmb.commonmodule.PhaseSPS();
+            }
+            input.ReadMessage(DirIndt);
+            break;
+          }
+          case 58: {
+            if (dirRev_ == null) {
+              DirRev = new global::openfmb.commonmodule.PhaseSPS();
+            }
+            input.ReadMessage(DirRev);
+            break;
+          }
+          case 66: {
             if (lDCR_ == null) {
               LDCR = new global::openfmb.commonmodule.ASG();
             }
             input.ReadMessage(LDCR);
             break;
           }
-          case 34: {
+          case 74: {
             if (lDCX_ == null) {
               LDCX = new global::openfmb.commonmodule.ASG();
             }
             input.ReadMessage(LDCX);
             break;
           }
-          case 42: {
+          case 82: {
             if (parOp_ == null) {
               ParOp = new global::openfmb.commonmodule.StatusSPS();
             }
             input.ReadMessage(ParOp);
             break;
           }
-          case 50: {
+          case 90: {
             if (rampRates_ == null) {
               RampRates = new global::openfmb.commonmodule.RampRate();
             }
             input.ReadMessage(RampRates);
             break;
           }
-          case 58: {
+          case 98: {
             if (state_ == null) {
               State = new global::openfmb.commonmodule.Optional_StateKind();
             }
             input.ReadMessage(State);
             break;
           }
-          case 66: {
+          case 106: {
             if (stDlTmms_ == null) {
               StDlTmms = new global::openfmb.commonmodule.StatusINC();
             }
             input.ReadMessage(StDlTmms);
             break;
           }
-          case 74: {
+          case 114: {
             if (tapOpErr_ == null) {
               TapOpErr = new global::openfmb.commonmodule.StatusSPS();
             }
             input.ReadMessage(TapOpErr);
             break;
           }
-          case 82: {
+          case 122: {
             if (tapPos_ == null) {
               TapPos = new global::openfmb.commonmodule.PhaseINS();
             }
             input.ReadMessage(TapPos);
             break;
           }
-          case 90: {
+          case 130: {
+            if (volLmtHi_ == null) {
+              VolLmtHi = new global::openfmb.commonmodule.PhaseSPS();
+            }
+            input.ReadMessage(VolLmtHi);
+            break;
+          }
+          case 138: {
+            if (volLmtLo_ == null) {
+              VolLmtLo = new global::openfmb.commonmodule.PhaseSPS();
+            }
+            input.ReadMessage(VolLmtLo);
+            break;
+          }
+          case 146: {
             if (volSpt_ == null) {
               VolSpt = new global::openfmb.commonmodule.PhaseAPC();
             }
             input.ReadMessage(VolSpt);
             break;
           }
-          case 98: {
+          case 154: {
             if (voltageSetPointEnabled_ == null) {
-              VoltageSetPointEnabled = new global::openfmb.commonmodule.StatusSPC();
+              VoltageSetPointEnabled = new global::openfmb.commonmodule.StatusSPS();
             }
             input.ReadMessage(VoltageSetPointEnabled);
             break;
@@ -3741,7 +4570,7 @@ namespace openfmb.regulatormodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.regulatormodule.RegulatormoduleReflection.Descriptor.MessageTypes[11]; }
+      get { return global::openfmb.regulatormodule.RegulatormoduleReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4024,7 +4853,7 @@ namespace openfmb.regulatormodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.regulatormodule.RegulatormoduleReflection.Descriptor.MessageTypes[12]; }
+      get { return global::openfmb.regulatormodule.RegulatormoduleReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4259,7 +5088,7 @@ namespace openfmb.regulatormodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.regulatormodule.RegulatormoduleReflection.Descriptor.MessageTypes[13]; }
+      get { return global::openfmb.regulatormodule.RegulatormoduleReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4542,7 +5371,7 @@ namespace openfmb.regulatormodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.regulatormodule.RegulatormoduleReflection.Descriptor.MessageTypes[14]; }
+      get { return global::openfmb.regulatormodule.RegulatormoduleReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4563,6 +5392,7 @@ namespace openfmb.regulatormodule {
       phaseMMTN_ = other.phaseMMTN_ != null ? other.phaseMMTN_.Clone() : null;
       readingMMTR_ = other.readingMMTR_ != null ? other.readingMMTR_.Clone() : null;
       readingMMXU_ = other.readingMMXU_ != null ? other.readingMMXU_.Clone() : null;
+      secondaryReadingMMXU_ = other.secondaryReadingMMXU_ != null ? other.secondaryReadingMMXU_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -4627,6 +5457,20 @@ namespace openfmb.regulatormodule {
       }
     }
 
+    /// <summary>Field number for the "secondaryReadingMMXU" field.</summary>
+    public const int SecondaryReadingMMXUFieldNumber = 5;
+    private global::openfmb.commonmodule.ReadingMMXU secondaryReadingMMXU_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::openfmb.commonmodule.ReadingMMXU SecondaryReadingMMXU {
+      get { return secondaryReadingMMXU_; }
+      set {
+        secondaryReadingMMXU_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as RegulatorReading);
@@ -4644,6 +5488,7 @@ namespace openfmb.regulatormodule {
       if (!object.Equals(PhaseMMTN, other.PhaseMMTN)) return false;
       if (!object.Equals(ReadingMMTR, other.ReadingMMTR)) return false;
       if (!object.Equals(ReadingMMXU, other.ReadingMMXU)) return false;
+      if (!object.Equals(SecondaryReadingMMXU, other.SecondaryReadingMMXU)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -4654,6 +5499,7 @@ namespace openfmb.regulatormodule {
       if (phaseMMTN_ != null) hash ^= PhaseMMTN.GetHashCode();
       if (readingMMTR_ != null) hash ^= ReadingMMTR.GetHashCode();
       if (readingMMXU_ != null) hash ^= ReadingMMXU.GetHashCode();
+      if (secondaryReadingMMXU_ != null) hash ^= SecondaryReadingMMXU.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -4686,6 +5532,10 @@ namespace openfmb.regulatormodule {
         output.WriteRawTag(34);
         output.WriteMessage(ReadingMMXU);
       }
+      if (secondaryReadingMMXU_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(SecondaryReadingMMXU);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -4711,6 +5561,10 @@ namespace openfmb.regulatormodule {
         output.WriteRawTag(34);
         output.WriteMessage(ReadingMMXU);
       }
+      if (secondaryReadingMMXU_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(SecondaryReadingMMXU);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -4731,6 +5585,9 @@ namespace openfmb.regulatormodule {
       }
       if (readingMMXU_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(ReadingMMXU);
+      }
+      if (secondaryReadingMMXU_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SecondaryReadingMMXU);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -4766,6 +5623,12 @@ namespace openfmb.regulatormodule {
           ReadingMMXU = new global::openfmb.commonmodule.ReadingMMXU();
         }
         ReadingMMXU.MergeFrom(other.ReadingMMXU);
+      }
+      if (other.secondaryReadingMMXU_ != null) {
+        if (secondaryReadingMMXU_ == null) {
+          SecondaryReadingMMXU = new global::openfmb.commonmodule.ReadingMMXU();
+        }
+        SecondaryReadingMMXU.MergeFrom(other.SecondaryReadingMMXU);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -4807,6 +5670,13 @@ namespace openfmb.regulatormodule {
               ReadingMMXU = new global::openfmb.commonmodule.ReadingMMXU();
             }
             input.ReadMessage(ReadingMMXU);
+            break;
+          }
+          case 42: {
+            if (secondaryReadingMMXU_ == null) {
+              SecondaryReadingMMXU = new global::openfmb.commonmodule.ReadingMMXU();
+            }
+            input.ReadMessage(SecondaryReadingMMXU);
             break;
           }
         }
@@ -4851,6 +5721,13 @@ namespace openfmb.regulatormodule {
             input.ReadMessage(ReadingMMXU);
             break;
           }
+          case 42: {
+            if (secondaryReadingMMXU_ == null) {
+              SecondaryReadingMMXU = new global::openfmb.commonmodule.ReadingMMXU();
+            }
+            input.ReadMessage(SecondaryReadingMMXU);
+            break;
+          }
         }
       }
     }
@@ -4873,7 +5750,7 @@ namespace openfmb.regulatormodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.regulatormodule.RegulatormoduleReflection.Descriptor.MessageTypes[15]; }
+      get { return global::openfmb.regulatormodule.RegulatormoduleReflection.Descriptor.MessageTypes[16]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5136,7 +6013,7 @@ namespace openfmb.regulatormodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.regulatormodule.RegulatormoduleReflection.Descriptor.MessageTypes[16]; }
+      get { return global::openfmb.regulatormodule.RegulatormoduleReflection.Descriptor.MessageTypes[17]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5371,7 +6248,7 @@ namespace openfmb.regulatormodule {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.regulatormodule.RegulatormoduleReflection.Descriptor.MessageTypes[17]; }
+      get { return global::openfmb.regulatormodule.RegulatormoduleReflection.Descriptor.MessageTypes[18]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

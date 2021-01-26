@@ -28,17 +28,17 @@ namespace openfmb.solarmodule {
             "CXVtbC5wcm90bxoeZ29vZ2xlL3Byb3RvYnVmL3dyYXBwZXJzLnByb3RvGh9j",
             "b21tb25tb2R1bGUvY29tbW9ubW9kdWxlLnByb3RvItIECgpTb2xhclBvaW50",
             "EjoKGGZyZXF1ZW5jeVNldFBvaW50RW5hYmxlZBgBIAEoCzIYLmNvbW1vbm1v",
-            "ZHVsZS5Db250cm9sRFBDEjMKBG1vZGUYAiABKAsyJS5jb21tb25tb2R1bGUu",
+            "ZHVsZS5Db250cm9sU1BDEjMKBG1vZGUYAiABKAsyJS5jb21tb25tb2R1bGUu",
             "RU5HX0dyaWRDb25uZWN0TW9kZUtpbmQSLwoKcGN0SHpEcm9vcBgDIAEoCzIb",
             "Lmdvb2dsZS5wcm90b2J1Zi5GbG9hdFZhbHVlEi4KCXBjdFZEcm9vcBgEIAEo",
             "CzIbLmdvb2dsZS5wcm90b2J1Zi5GbG9hdFZhbHVlEikKCXJhbXBSYXRlcxgF",
             "IAEoCzIWLmNvbW1vbm1vZHVsZS5SYW1wUmF0ZRI8ChpyZWFjdGl2ZVB3clNl",
-            "dFBvaW50RW5hYmxlZBgGIAEoCzIYLmNvbW1vbm1vZHVsZS5Db250cm9sRFBD",
+            "dFBvaW50RW5hYmxlZBgGIAEoCzIYLmNvbW1vbm1vZHVsZS5Db250cm9sU1BD",
             "EjgKFnJlYWxQd3JTZXRQb2ludEVuYWJsZWQYByABKAsyGC5jb21tb25tb2R1",
-            "bGUuQ29udHJvbERQQxInCgVyZXNldBgIIAEoCzIYLmNvbW1vbm1vZHVsZS5D",
-            "b250cm9sRFBDEi8KBXN0YXRlGAkgASgLMiAuY29tbW9ubW9kdWxlLk9wdGlv",
+            "bGUuQ29udHJvbFNQQxInCgVyZXNldBgIIAEoCzIYLmNvbW1vbm1vZHVsZS5D",
+            "b250cm9sU1BDEi8KBXN0YXRlGAkgASgLMiAuY29tbW9ubW9kdWxlLk9wdGlv",
             "bmFsX1N0YXRlS2luZBI4ChZ2b2x0YWdlU2V0UG9pbnRFbmFibGVkGAogASgL",
-            "MhguY29tbW9ubW9kdWxlLkNvbnRyb2xEUEMSOwoJc3RhcnRUaW1lGAsgASgL",
+            "MhguY29tbW9ubW9kdWxlLkNvbnRyb2xTUEMSOwoJc3RhcnRUaW1lGAsgASgL",
             "Mh4uY29tbW9ubW9kdWxlLkNvbnRyb2xUaW1lc3RhbXBCCIi1GAGQtRgBIj0K",
             "CFNvbGFyQ1NHEjEKBmNydlB0cxgBIAMoCzIXLnNvbGFybW9kdWxlLlNvbGFy",
             "UG9pbnRCCIi1GAGQtRgBIkwKGFNvbGFyQ29udHJvbFNjaGVkdWxlRlNDSBIw",
@@ -58,17 +58,17 @@ namespace openfmb.solarmodule {
             "bGUuU29sYXJDb250cm9sQgiItRgBkLUYARI7Cg1zb2xhckludmVydGVyGAMg",
             "ASgLMhouc29sYXJtb2R1bGUuU29sYXJJbnZlcnRlckIIiLUYAZC1GAE6BMDz",
             "GAEi7gMKEFNvbGFyUG9pbnRTdGF0dXMSOQoYZnJlcXVlbmN5U2V0UG9pbnRF",
-            "bmFibGVkGAEgASgLMhcuY29tbW9ubW9kdWxlLlN0YXR1c0RQUxIzCgRtb2Rl",
+            "bmFibGVkGAEgASgLMhcuY29tbW9ubW9kdWxlLlN0YXR1c1NQUxIzCgRtb2Rl",
             "GAIgASgLMiUuY29tbW9ubW9kdWxlLkVOR19HcmlkQ29ubmVjdE1vZGVLaW5k",
             "Ei8KCnBjdEh6RHJvb3AYAyABKAsyGy5nb29nbGUucHJvdG9idWYuRmxvYXRW",
             "YWx1ZRIuCglwY3RWRHJvb3AYBCABKAsyGy5nb29nbGUucHJvdG9idWYuRmxv",
             "YXRWYWx1ZRIpCglyYW1wUmF0ZXMYBSABKAsyFi5jb21tb25tb2R1bGUuUmFt",
             "cFJhdGUSOwoacmVhY3RpdmVQd3JTZXRQb2ludEVuYWJsZWQYBiABKAsyFy5j",
-            "b21tb25tb2R1bGUuU3RhdHVzRFBTEjcKFnJlYWxQd3JTZXRQb2ludEVuYWJs",
-            "ZWQYByABKAsyFy5jb21tb25tb2R1bGUuU3RhdHVzRFBTEi8KBXN0YXRlGAgg",
+            "b21tb25tb2R1bGUuU3RhdHVzU1BTEjcKFnJlYWxQd3JTZXRQb2ludEVuYWJs",
+            "ZWQYByABKAsyFy5jb21tb25tb2R1bGUuU3RhdHVzU1BTEi8KBXN0YXRlGAgg",
             "ASgLMiAuY29tbW9ubW9kdWxlLk9wdGlvbmFsX1N0YXRlS2luZBI3ChZ2b2x0",
             "YWdlU2V0UG9pbnRFbmFibGVkGAkgASgLMhcuY29tbW9ubW9kdWxlLlN0YXR1",
-            "c0RQUyKyAgoXU29sYXJFdmVudEFuZFN0YXR1c1pHRU4SVgocbG9naWNhbE5v",
+            "c1NQUyKyAgoXU29sYXJFdmVudEFuZFN0YXR1c1pHRU4SVgocbG9naWNhbE5v",
             "ZGVGb3JFdmVudEFuZFN0YXR1cxgBIAEoCzIqLmNvbW1vbm1vZHVsZS5Mb2dp",
             "Y2FsTm9kZUZvckV2ZW50QW5kU3RhdHVzQgSAtRgBEikKCEF1eFB3clN0GAIg",
             "ASgLMhcuY29tbW9ubW9kdWxlLlN0YXR1c1NQUxI2CgtEeW5hbWljVGVzdBgD",
@@ -190,12 +190,12 @@ namespace openfmb.solarmodule {
 
     /// <summary>Field number for the "frequencySetPointEnabled" field.</summary>
     public const int FrequencySetPointEnabledFieldNumber = 1;
-    private global::openfmb.commonmodule.ControlDPC frequencySetPointEnabled_;
+    private global::openfmb.commonmodule.ControlSPC frequencySetPointEnabled_;
     /// <summary>
     /// Enable frequency set point
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.ControlDPC FrequencySetPointEnabled {
+    public global::openfmb.commonmodule.ControlSPC FrequencySetPointEnabled {
       get { return frequencySetPointEnabled_; }
       set {
         frequencySetPointEnabled_ = value;
@@ -264,12 +264,12 @@ namespace openfmb.solarmodule {
 
     /// <summary>Field number for the "reactivePwrSetPointEnabled" field.</summary>
     public const int ReactivePwrSetPointEnabledFieldNumber = 6;
-    private global::openfmb.commonmodule.ControlDPC reactivePwrSetPointEnabled_;
+    private global::openfmb.commonmodule.ControlSPC reactivePwrSetPointEnabled_;
     /// <summary>
     /// Enable reactive power set point
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.ControlDPC ReactivePwrSetPointEnabled {
+    public global::openfmb.commonmodule.ControlSPC ReactivePwrSetPointEnabled {
       get { return reactivePwrSetPointEnabled_; }
       set {
         reactivePwrSetPointEnabled_ = value;
@@ -278,12 +278,12 @@ namespace openfmb.solarmodule {
 
     /// <summary>Field number for the "realPwrSetPointEnabled" field.</summary>
     public const int RealPwrSetPointEnabledFieldNumber = 7;
-    private global::openfmb.commonmodule.ControlDPC realPwrSetPointEnabled_;
+    private global::openfmb.commonmodule.ControlSPC realPwrSetPointEnabled_;
     /// <summary>
     /// Enable real power set point
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.ControlDPC RealPwrSetPointEnabled {
+    public global::openfmb.commonmodule.ControlSPC RealPwrSetPointEnabled {
       get { return realPwrSetPointEnabled_; }
       set {
         realPwrSetPointEnabled_ = value;
@@ -292,12 +292,12 @@ namespace openfmb.solarmodule {
 
     /// <summary>Field number for the "reset" field.</summary>
     public const int ResetFieldNumber = 8;
-    private global::openfmb.commonmodule.ControlDPC reset_;
+    private global::openfmb.commonmodule.ControlSPC reset_;
     /// <summary>
     /// Reset device
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.ControlDPC Reset {
+    public global::openfmb.commonmodule.ControlSPC Reset {
       get { return reset_; }
       set {
         reset_ = value;
@@ -320,12 +320,12 @@ namespace openfmb.solarmodule {
 
     /// <summary>Field number for the "voltageSetPointEnabled" field.</summary>
     public const int VoltageSetPointEnabledFieldNumber = 10;
-    private global::openfmb.commonmodule.ControlDPC voltageSetPointEnabled_;
+    private global::openfmb.commonmodule.ControlSPC voltageSetPointEnabled_;
     /// <summary>
     /// Enable voltage set point
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.ControlDPC VoltageSetPointEnabled {
+    public global::openfmb.commonmodule.ControlSPC VoltageSetPointEnabled {
       get { return voltageSetPointEnabled_; }
       set {
         voltageSetPointEnabled_ = value;
@@ -551,7 +551,7 @@ namespace openfmb.solarmodule {
       }
       if (other.frequencySetPointEnabled_ != null) {
         if (frequencySetPointEnabled_ == null) {
-          FrequencySetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+          FrequencySetPointEnabled = new global::openfmb.commonmodule.ControlSPC();
         }
         FrequencySetPointEnabled.MergeFrom(other.FrequencySetPointEnabled);
       }
@@ -579,19 +579,19 @@ namespace openfmb.solarmodule {
       }
       if (other.reactivePwrSetPointEnabled_ != null) {
         if (reactivePwrSetPointEnabled_ == null) {
-          ReactivePwrSetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+          ReactivePwrSetPointEnabled = new global::openfmb.commonmodule.ControlSPC();
         }
         ReactivePwrSetPointEnabled.MergeFrom(other.ReactivePwrSetPointEnabled);
       }
       if (other.realPwrSetPointEnabled_ != null) {
         if (realPwrSetPointEnabled_ == null) {
-          RealPwrSetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+          RealPwrSetPointEnabled = new global::openfmb.commonmodule.ControlSPC();
         }
         RealPwrSetPointEnabled.MergeFrom(other.RealPwrSetPointEnabled);
       }
       if (other.reset_ != null) {
         if (reset_ == null) {
-          Reset = new global::openfmb.commonmodule.ControlDPC();
+          Reset = new global::openfmb.commonmodule.ControlSPC();
         }
         Reset.MergeFrom(other.Reset);
       }
@@ -603,7 +603,7 @@ namespace openfmb.solarmodule {
       }
       if (other.voltageSetPointEnabled_ != null) {
         if (voltageSetPointEnabled_ == null) {
-          VoltageSetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+          VoltageSetPointEnabled = new global::openfmb.commonmodule.ControlSPC();
         }
         VoltageSetPointEnabled.MergeFrom(other.VoltageSetPointEnabled);
       }
@@ -629,7 +629,7 @@ namespace openfmb.solarmodule {
             break;
           case 10: {
             if (frequencySetPointEnabled_ == null) {
-              FrequencySetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+              FrequencySetPointEnabled = new global::openfmb.commonmodule.ControlSPC();
             }
             input.ReadMessage(FrequencySetPointEnabled);
             break;
@@ -664,21 +664,21 @@ namespace openfmb.solarmodule {
           }
           case 50: {
             if (reactivePwrSetPointEnabled_ == null) {
-              ReactivePwrSetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+              ReactivePwrSetPointEnabled = new global::openfmb.commonmodule.ControlSPC();
             }
             input.ReadMessage(ReactivePwrSetPointEnabled);
             break;
           }
           case 58: {
             if (realPwrSetPointEnabled_ == null) {
-              RealPwrSetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+              RealPwrSetPointEnabled = new global::openfmb.commonmodule.ControlSPC();
             }
             input.ReadMessage(RealPwrSetPointEnabled);
             break;
           }
           case 66: {
             if (reset_ == null) {
-              Reset = new global::openfmb.commonmodule.ControlDPC();
+              Reset = new global::openfmb.commonmodule.ControlSPC();
             }
             input.ReadMessage(Reset);
             break;
@@ -692,7 +692,7 @@ namespace openfmb.solarmodule {
           }
           case 82: {
             if (voltageSetPointEnabled_ == null) {
-              VoltageSetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+              VoltageSetPointEnabled = new global::openfmb.commonmodule.ControlSPC();
             }
             input.ReadMessage(VoltageSetPointEnabled);
             break;
@@ -720,7 +720,7 @@ namespace openfmb.solarmodule {
             break;
           case 10: {
             if (frequencySetPointEnabled_ == null) {
-              FrequencySetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+              FrequencySetPointEnabled = new global::openfmb.commonmodule.ControlSPC();
             }
             input.ReadMessage(FrequencySetPointEnabled);
             break;
@@ -755,21 +755,21 @@ namespace openfmb.solarmodule {
           }
           case 50: {
             if (reactivePwrSetPointEnabled_ == null) {
-              ReactivePwrSetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+              ReactivePwrSetPointEnabled = new global::openfmb.commonmodule.ControlSPC();
             }
             input.ReadMessage(ReactivePwrSetPointEnabled);
             break;
           }
           case 58: {
             if (realPwrSetPointEnabled_ == null) {
-              RealPwrSetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+              RealPwrSetPointEnabled = new global::openfmb.commonmodule.ControlSPC();
             }
             input.ReadMessage(RealPwrSetPointEnabled);
             break;
           }
           case 66: {
             if (reset_ == null) {
-              Reset = new global::openfmb.commonmodule.ControlDPC();
+              Reset = new global::openfmb.commonmodule.ControlSPC();
             }
             input.ReadMessage(Reset);
             break;
@@ -783,7 +783,7 @@ namespace openfmb.solarmodule {
           }
           case 82: {
             if (voltageSetPointEnabled_ == null) {
-              VoltageSetPointEnabled = new global::openfmb.commonmodule.ControlDPC();
+              VoltageSetPointEnabled = new global::openfmb.commonmodule.ControlSPC();
             }
             input.ReadMessage(VoltageSetPointEnabled);
             break;
@@ -2195,12 +2195,12 @@ namespace openfmb.solarmodule {
 
     /// <summary>Field number for the "frequencySetPointEnabled" field.</summary>
     public const int FrequencySetPointEnabledFieldNumber = 1;
-    private global::openfmb.commonmodule.StatusDPS frequencySetPointEnabled_;
+    private global::openfmb.commonmodule.StatusSPS frequencySetPointEnabled_;
     /// <summary>
     /// Enable frequency set point
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.StatusDPS FrequencySetPointEnabled {
+    public global::openfmb.commonmodule.StatusSPS FrequencySetPointEnabled {
       get { return frequencySetPointEnabled_; }
       set {
         frequencySetPointEnabled_ = value;
@@ -2269,12 +2269,12 @@ namespace openfmb.solarmodule {
 
     /// <summary>Field number for the "reactivePwrSetPointEnabled" field.</summary>
     public const int ReactivePwrSetPointEnabledFieldNumber = 6;
-    private global::openfmb.commonmodule.StatusDPS reactivePwrSetPointEnabled_;
+    private global::openfmb.commonmodule.StatusSPS reactivePwrSetPointEnabled_;
     /// <summary>
     /// Enable reactive power set point
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.StatusDPS ReactivePwrSetPointEnabled {
+    public global::openfmb.commonmodule.StatusSPS ReactivePwrSetPointEnabled {
       get { return reactivePwrSetPointEnabled_; }
       set {
         reactivePwrSetPointEnabled_ = value;
@@ -2283,12 +2283,12 @@ namespace openfmb.solarmodule {
 
     /// <summary>Field number for the "realPwrSetPointEnabled" field.</summary>
     public const int RealPwrSetPointEnabledFieldNumber = 7;
-    private global::openfmb.commonmodule.StatusDPS realPwrSetPointEnabled_;
+    private global::openfmb.commonmodule.StatusSPS realPwrSetPointEnabled_;
     /// <summary>
     /// Enable real power set point
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.StatusDPS RealPwrSetPointEnabled {
+    public global::openfmb.commonmodule.StatusSPS RealPwrSetPointEnabled {
       get { return realPwrSetPointEnabled_; }
       set {
         realPwrSetPointEnabled_ = value;
@@ -2311,12 +2311,12 @@ namespace openfmb.solarmodule {
 
     /// <summary>Field number for the "voltageSetPointEnabled" field.</summary>
     public const int VoltageSetPointEnabledFieldNumber = 9;
-    private global::openfmb.commonmodule.StatusDPS voltageSetPointEnabled_;
+    private global::openfmb.commonmodule.StatusSPS voltageSetPointEnabled_;
     /// <summary>
     /// Enable voltage set point
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.StatusDPS VoltageSetPointEnabled {
+    public global::openfmb.commonmodule.StatusSPS VoltageSetPointEnabled {
       get { return voltageSetPointEnabled_; }
       set {
         voltageSetPointEnabled_ = value;
@@ -2502,7 +2502,7 @@ namespace openfmb.solarmodule {
       }
       if (other.frequencySetPointEnabled_ != null) {
         if (frequencySetPointEnabled_ == null) {
-          FrequencySetPointEnabled = new global::openfmb.commonmodule.StatusDPS();
+          FrequencySetPointEnabled = new global::openfmb.commonmodule.StatusSPS();
         }
         FrequencySetPointEnabled.MergeFrom(other.FrequencySetPointEnabled);
       }
@@ -2530,13 +2530,13 @@ namespace openfmb.solarmodule {
       }
       if (other.reactivePwrSetPointEnabled_ != null) {
         if (reactivePwrSetPointEnabled_ == null) {
-          ReactivePwrSetPointEnabled = new global::openfmb.commonmodule.StatusDPS();
+          ReactivePwrSetPointEnabled = new global::openfmb.commonmodule.StatusSPS();
         }
         ReactivePwrSetPointEnabled.MergeFrom(other.ReactivePwrSetPointEnabled);
       }
       if (other.realPwrSetPointEnabled_ != null) {
         if (realPwrSetPointEnabled_ == null) {
-          RealPwrSetPointEnabled = new global::openfmb.commonmodule.StatusDPS();
+          RealPwrSetPointEnabled = new global::openfmb.commonmodule.StatusSPS();
         }
         RealPwrSetPointEnabled.MergeFrom(other.RealPwrSetPointEnabled);
       }
@@ -2548,7 +2548,7 @@ namespace openfmb.solarmodule {
       }
       if (other.voltageSetPointEnabled_ != null) {
         if (voltageSetPointEnabled_ == null) {
-          VoltageSetPointEnabled = new global::openfmb.commonmodule.StatusDPS();
+          VoltageSetPointEnabled = new global::openfmb.commonmodule.StatusSPS();
         }
         VoltageSetPointEnabled.MergeFrom(other.VoltageSetPointEnabled);
       }
@@ -2568,7 +2568,7 @@ namespace openfmb.solarmodule {
             break;
           case 10: {
             if (frequencySetPointEnabled_ == null) {
-              FrequencySetPointEnabled = new global::openfmb.commonmodule.StatusDPS();
+              FrequencySetPointEnabled = new global::openfmb.commonmodule.StatusSPS();
             }
             input.ReadMessage(FrequencySetPointEnabled);
             break;
@@ -2603,14 +2603,14 @@ namespace openfmb.solarmodule {
           }
           case 50: {
             if (reactivePwrSetPointEnabled_ == null) {
-              ReactivePwrSetPointEnabled = new global::openfmb.commonmodule.StatusDPS();
+              ReactivePwrSetPointEnabled = new global::openfmb.commonmodule.StatusSPS();
             }
             input.ReadMessage(ReactivePwrSetPointEnabled);
             break;
           }
           case 58: {
             if (realPwrSetPointEnabled_ == null) {
-              RealPwrSetPointEnabled = new global::openfmb.commonmodule.StatusDPS();
+              RealPwrSetPointEnabled = new global::openfmb.commonmodule.StatusSPS();
             }
             input.ReadMessage(RealPwrSetPointEnabled);
             break;
@@ -2624,7 +2624,7 @@ namespace openfmb.solarmodule {
           }
           case 74: {
             if (voltageSetPointEnabled_ == null) {
-              VoltageSetPointEnabled = new global::openfmb.commonmodule.StatusDPS();
+              VoltageSetPointEnabled = new global::openfmb.commonmodule.StatusSPS();
             }
             input.ReadMessage(VoltageSetPointEnabled);
             break;
@@ -2645,7 +2645,7 @@ namespace openfmb.solarmodule {
             break;
           case 10: {
             if (frequencySetPointEnabled_ == null) {
-              FrequencySetPointEnabled = new global::openfmb.commonmodule.StatusDPS();
+              FrequencySetPointEnabled = new global::openfmb.commonmodule.StatusSPS();
             }
             input.ReadMessage(FrequencySetPointEnabled);
             break;
@@ -2680,14 +2680,14 @@ namespace openfmb.solarmodule {
           }
           case 50: {
             if (reactivePwrSetPointEnabled_ == null) {
-              ReactivePwrSetPointEnabled = new global::openfmb.commonmodule.StatusDPS();
+              ReactivePwrSetPointEnabled = new global::openfmb.commonmodule.StatusSPS();
             }
             input.ReadMessage(ReactivePwrSetPointEnabled);
             break;
           }
           case 58: {
             if (realPwrSetPointEnabled_ == null) {
-              RealPwrSetPointEnabled = new global::openfmb.commonmodule.StatusDPS();
+              RealPwrSetPointEnabled = new global::openfmb.commonmodule.StatusSPS();
             }
             input.ReadMessage(RealPwrSetPointEnabled);
             break;
@@ -2701,7 +2701,7 @@ namespace openfmb.solarmodule {
           }
           case 74: {
             if (voltageSetPointEnabled_ == null) {
-              VoltageSetPointEnabled = new global::openfmb.commonmodule.StatusDPS();
+              VoltageSetPointEnabled = new global::openfmb.commonmodule.StatusSPS();
             }
             input.ReadMessage(VoltageSetPointEnabled);
             break;
