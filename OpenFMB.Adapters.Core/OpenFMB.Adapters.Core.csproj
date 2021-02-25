@@ -14,6 +14,8 @@
     <None Remove="Models\Schemas\dnp3-outstation.json" />
     <None Remove="Models\Schemas\goose-pub.json" />
     <None Remove="Models\Schemas\goose-sub.json" />
+    <None Remove="Models\Schemas\iccp-client.json" />
+    <None Remove="Models\Schemas\iccp-server.json" />
     <None Remove="Models\Schemas\modbus-master.json" />
     <None Remove="Models\Schemas\modbus-outstation.json" />
   </ItemGroup>
@@ -24,6 +26,8 @@
     <EmbeddedResource Include="Models\Schemas\dnp3-outstation.json" />
     <EmbeddedResource Include="Models\Schemas\goose-pub.json" />
     <EmbeddedResource Include="Models\Schemas\goose-sub.json" />
+    <EmbeddedResource Include="Models\Schemas\iccp-client.json" />
+    <EmbeddedResource Include="Models\Schemas\iccp-server.json" />
     <EmbeddedResource Include="Models\Schemas\modbus-master.json" />
     <EmbeddedResource Include="Models\Schemas\modbus-outstation.json" />
   </ItemGroup>

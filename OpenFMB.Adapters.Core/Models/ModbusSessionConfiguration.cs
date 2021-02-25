@@ -59,131 +59,145 @@ namespace OpenFMB.Adapters.Core.Models
 
         protected override void LoadSessionConfigurationFromJson(string json)
         {
-            try
+            if (PluginName == PluginsSection.ModbusMaster)
             {
-                _sessionSpecific = JsonConvert.DeserializeObject<ModbusMasterSpecificConfig>(json);
-            }
-            catch (Exception ex)
-            {
-                _logger.Log(Level.Error, ex.Message, ex);
-                _logger.Log(Level.Info, "Unable to parse session configuration.  Will try to parse manually.");
-
-                ModbusMasterSpecificConfig config = new ModbusMasterSpecificConfig();
-
-                var jsonObject = JsonConvert.DeserializeObject(json) as JObject;                
-
-                if (jsonObject.ContainsKey("name"))
+                try
                 {
-                    config.Name = jsonObject["name"].ToString();
+                    _sessionSpecific = JsonConvert.DeserializeObject<ModbusMasterSpecificConfig>(json);
                 }
-                if (jsonObject.ContainsKey("log-level"))
+                catch (Exception ex)
                 {
-                    LogLevel level;
-                    if (Enum.TryParse(jsonObject["log-level"].ToString(), out level))
+                    _logger.Log(Level.Error, ex.Message, ex);
+                    _logger.Log(Level.Info, "Unable to parse session configuration.  Will try to parse manually.");
+
+                    ModbusMasterSpecificConfig config = new ModbusMasterSpecificConfig();
+
+                    var jsonObject = JsonConvert.DeserializeObject(json) as JObject;
+
+                    if (jsonObject.ContainsKey("name"))
                     {
-                        config.LogLevel = level;
+                        config.Name = jsonObject["name"].ToString();
                     }
-                }
-                if (jsonObject.ContainsKey("remote-ip"))
-                {
-                    config.Name = jsonObject["remote-ip"].ToString();
-                }
-                if (jsonObject.ContainsKey("port"))
-                {
-                    int port;
-                    if (int.TryParse(jsonObject["name"].ToString(), out port))
+                    if (jsonObject.ContainsKey("log-level"))
                     {
-                        config.Port = port;
-                    }
-                }
-                if (jsonObject.ContainsKey("adapter"))
-                {
-                    config.Name = jsonObject["adapter"].ToString();
-                }
-
-                if (jsonObject.ContainsKey("unit-identifier"))
-                {
-                    int id;
-                    if (int.TryParse(jsonObject["unit-identifier"].ToString(), out id))
-                    {
-                        config.UnitIdentifier = id;
-                    }
-                }
-
-                if (jsonObject.ContainsKey("response_timeout_ms"))
-                {
-                    int id;
-                    if (int.TryParse(jsonObject["response_timeout_ms"].ToString(), out id))
-                    {
-                        config.ResponseTimeout = id;
-                    }
-                }
-
-                if (jsonObject.ContainsKey("always-write-multiple-registers"))
-                {
-                    config.AlwaysWriteMultipleRegisters = jsonObject["always-write-multiple-registers"].ToString().ToLower() == "true" ? true : false;
-                }
-
-                if (jsonObject.ContainsKey("auto_polling"))
-                {
-                    var autoPolling = jsonObject["auto_polling"] as JObject;
-                    if (autoPolling != null)
-                    {
-                        if (autoPolling.ContainsKey("max_register_gaps"))
+                        LogLevel level;
+                        if (Enum.TryParse(jsonObject["log-level"].ToString(), out level))
                         {
-                            int id;
-                            if (int.TryParse(autoPolling["max_register_gaps"].ToString(), out id))
-                            {
-                                config.AutoPollingMaxRegisterGaps = id;
-                            }
-                        }
-                        if (autoPolling.ContainsKey("max_bit_gaps"))
-                        {
-                            int id;
-                            if (int.TryParse(autoPolling["max_bit_gaps"].ToString(), out id))
-                            {
-                                config.AutoPollingMaxBitGaps = id;
-                            }
+                            config.LogLevel = level;
                         }
                     }
-                }
-
-                if (jsonObject.ContainsKey("heartbeats"))
-                {
-                    var heartbeats = jsonObject["heartbeats"] as JArray;
-                    if (heartbeats != null)
+                    if (jsonObject.ContainsKey("remote-ip"))
                     {
-                        foreach (JObject h in heartbeats)
+                        config.Name = jsonObject["remote-ip"].ToString();
+                    }
+                    if (jsonObject.ContainsKey("port"))
+                    {
+                        int port;
+                        if (int.TryParse(jsonObject["name"].ToString(), out port))
                         {
-                            var hb = new HeartBeat();
-                            if (h.ContainsKey("index"))
+                            config.Port = port;
+                        }
+                    }
+                    if (jsonObject.ContainsKey("adapter"))
+                    {
+                        config.Name = jsonObject["adapter"].ToString();
+                    }
+
+                    if (jsonObject.ContainsKey("unit-identifier"))
+                    {
+                        int id;
+                        if (int.TryParse(jsonObject["unit-identifier"].ToString(), out id))
+                        {
+                            config.UnitIdentifier = id;
+                        }
+                    }
+
+                    if (jsonObject.ContainsKey("response_timeout_ms"))
+                    {
+                        int id;
+                        if (int.TryParse(jsonObject["response_timeout_ms"].ToString(), out id))
+                        {
+                            config.ResponseTimeout = id;
+                        }
+                    }
+
+                    if (jsonObject.ContainsKey("always-write-multiple-registers"))
+                    {
+                        config.AlwaysWriteMultipleRegisters = jsonObject["always-write-multiple-registers"].ToString().ToLower() == "true" ? true : false;
+                    }
+
+                    if (jsonObject.ContainsKey("auto_polling"))
+                    {
+                        var autoPolling = jsonObject["auto_polling"] as JObject;
+                        if (autoPolling != null)
+                        {
+                            if (autoPolling.ContainsKey("max_register_gaps"))
                             {
                                 int id;
-                                if (int.TryParse(h["index"].ToString(), out id))
+                                if (int.TryParse(autoPolling["max_register_gaps"].ToString(), out id))
                                 {
-                                    hb.Index = id;
+                                    config.AutoPollingMaxRegisterGaps = id;
                                 }
                             }
-                            if (h.ContainsKey("period_ms"))
+                            if (autoPolling.ContainsKey("max_bit_gaps"))
                             {
                                 int id;
-                                if (int.TryParse(h["period_ms"].ToString(), out id))
+                                if (int.TryParse(autoPolling["max_bit_gaps"].ToString(), out id))
                                 {
-                                    hb.PeriodMs = id;
+                                    config.AutoPollingMaxBitGaps = id;
                                 }
                             }
-                            if (h.ContainsKey("mask"))
-                            {
-                                var value = h["mask"].ToString();                                
-                                hb.Mask = NumberConverter.ToInteger(value);
-                            }
-                            config.HeartBeats.Add(hb);
                         }
                     }
-                }
 
-                _sessionSpecific = config;
+                    if (jsonObject.ContainsKey("heartbeats"))
+                    {
+                        var heartbeats = jsonObject["heartbeats"] as JArray;
+                        if (heartbeats != null)
+                        {
+                            foreach (JObject h in heartbeats)
+                            {
+                                var hb = new HeartBeat();
+                                if (h.ContainsKey("index"))
+                                {
+                                    int id;
+                                    if (int.TryParse(h["index"].ToString(), out id))
+                                    {
+                                        hb.Index = id;
+                                    }
+                                }
+                                if (h.ContainsKey("period_ms"))
+                                {
+                                    int id;
+                                    if (int.TryParse(h["period_ms"].ToString(), out id))
+                                    {
+                                        hb.PeriodMs = id;
+                                    }
+                                }
+                                if (h.ContainsKey("mask"))
+                                {
+                                    var value = h["mask"].ToString();
+                                    hb.Mask = NumberConverter.ToInteger(value);
+                                }
+                                config.HeartBeats.Add(hb);
+                            }
+                        }
+                    }
+
+                    _sessionSpecific = config;
+                }
             }
+            else
+            {
+                try
+                {
+                    _sessionSpecific = JsonConvert.DeserializeObject<ModbusOutstationSpecificConfig>(json);
+                }
+                catch (Exception ex)
+                {
+                    _logger.Log(Level.Error, ex.Message, ex);
+                }
+            }            
         }
 
         protected override void InitDefaultProfileSettings(Profile profile)

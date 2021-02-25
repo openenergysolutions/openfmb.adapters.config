@@ -172,7 +172,11 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
                 case PluginsSection.GoosePub:
                 case PluginsSection.GooseSub:
                     config = new GooseSessionConfiguration(plugin);
-                    break;                
+                    break;
+                case PluginsSection.IccpClient:
+                case PluginsSection.IccpServer:
+                    config = new IccpSessionConfiguration(plugin);
+                    break;
                 default:
                     throw new InvalidOperationException($"Plugin is not supported to have session configuration. [{plugin}]");                    
             }

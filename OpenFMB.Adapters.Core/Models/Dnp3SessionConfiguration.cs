@@ -67,42 +67,57 @@ namespace OpenFMB.Adapters.Core.Models
 
         protected override void LoadSessionConfigurationFromJson(string json)
         {
-            try
+            if (PluginName == PluginsSection.Dnp3Master)
             {
-                _sessionSpecific = JsonConvert.DeserializeObject<Dnp3MasterSpecificConfig>(json);
-            }
-            catch (Exception ex)
-            {
-                // older version
-                _logger.Log(Level.Error, ex.Message, ex);
-                _logger.Log(Level.Info, "Unable to parse session configuration.  Will try to parse manually.");
-
-                var jsonObject = JsonConvert.DeserializeObject(json) as JObject;
-
-                if (jsonObject.ContainsKey("channel"))
-                {
-                    var channel = jsonObject["channel"] as JObject;
-                    if (channel != null)
-                    {
-                        if (channel.ContainsKey("port"))
-                        {
-                            var port = channel["port"].ToString();
-                            int temp;
-                            if (!int.TryParse(port, out temp))
-                            {
-                                channel["port"] = new JValue(20000);
-                            }
-                        }
-                    }
-                }
-
-                json = JsonConvert.SerializeObject(jsonObject);
                 try
                 {
                     _sessionSpecific = JsonConvert.DeserializeObject<Dnp3MasterSpecificConfig>(json);
                 }
-                catch { }
+                catch (Exception ex)
+                {
+                    // older version
+                    _logger.Log(Level.Error, ex.Message, ex);
+                    _logger.Log(Level.Info, "Unable to parse session configuration.  Will try to parse manually.");
+
+                    var jsonObject = JsonConvert.DeserializeObject(json) as JObject;
+
+                    if (jsonObject.ContainsKey("channel"))
+                    {
+                        var channel = jsonObject["channel"] as JObject;
+                        if (channel != null)
+                        {
+                            if (channel.ContainsKey("port"))
+                            {
+                                var port = channel["port"].ToString();
+                                int temp;
+                                if (!int.TryParse(port, out temp))
+                                {
+                                    channel["port"] = new JValue(20000);
+                                }
+                            }
+                        }
+                    }
+
+                    json = JsonConvert.SerializeObject(jsonObject);
+                    try
+                    {
+                        _sessionSpecific = JsonConvert.DeserializeObject<Dnp3MasterSpecificConfig>(json);
+                    }
+                    catch { }
+                }
             }
+            else
+            {
+                try
+                {
+                    _sessionSpecific = JsonConvert.DeserializeObject<Dnp3OutstationSpecificConfig>(json);
+                }
+                catch (Exception ex)
+                {
+                    _logger.Log(Level.Error, ex.Message, ex);
+                }
+            }
+           
         }
 
         protected override void InitDefaultProfileSettings(Profile profile)

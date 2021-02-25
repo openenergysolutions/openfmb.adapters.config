@@ -59,7 +59,8 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
         MODBUS,
         DNP3,
         GOOSEPUB,
-        GOOSESUB
+        GOOSESUB,
+        ICCP
     }
 
     public enum TransportPluginType

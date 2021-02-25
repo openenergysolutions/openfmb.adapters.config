@@ -266,7 +266,7 @@ namespace OpenFMB.Adapters.Configuration
                                             mapping.PropertyChanged += NavigatorNode_PropertyChanged;
                                             flowLayoutPanel.Controls.Add(mapping);
                                         }
-                                        else if (node.HasEnums || node.Parent.HasOptionsForKey(node.Name))
+                                        else if (node.HasEnums || (node.Name != "name" && node.Parent.HasOptionsForKey(node.Name)))
                                         {
                                             var mapping = new NavigatorStringSelectionNode(node);
                                             mapping.PropertyChanged += NavigatorNode_PropertyChanged;

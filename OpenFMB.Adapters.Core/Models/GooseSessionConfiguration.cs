@@ -56,7 +56,14 @@ namespace OpenFMB.Adapters.Core.Models
 
         protected override void LoadSessionConfigurationFromJson(string json)
         {
-            _sessionSpecific = JsonConvert.DeserializeObject<GooseSubSpecificConfig>(json);
+            if (PluginName == PluginsSection.GoosePub)
+            {
+                _sessionSpecific = JsonConvert.DeserializeObject<GooseSubSpecificConfig>(json);
+            }
+            else
+            {
+                _sessionSpecific = JsonConvert.DeserializeObject<GoosePubSpecificConfig>(json);
+            }
         }
     }
 

@@ -33,6 +33,8 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
         public const string Log = "log";
         public const string GoosePub = "goose-pub";
         public const string GooseSub = "goose-sub";
+        public const string IccpClient = "iccp-client";
+        public const string IccpServer = "iccp-server";
         public const string Mqtt = "mqtt";
         public const string Nats = "nats";
         public const string TimescaleDB = "timescaledb";
@@ -53,6 +55,10 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
         public GoosePubPlugin GoosePubPlugin { get; } = new GoosePubPlugin();
 
         public GooseSubPlugin GooseSubPlugin { get; } = new GooseSubPlugin();
+
+        public IccpClientPlugin IccpClientPlugin { get; } = new IccpClientPlugin();
+
+        public IccpServerPlugin IccpServerPlugin { get; } = new IccpServerPlugin();
 
         public NatsPlugin NatsPlugin { get; } = new NatsPlugin();
 
@@ -77,6 +83,8 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
             //Plugins.Add(LogPlugin);
             Plugins.Add(GoosePubPlugin);
             Plugins.Add(GooseSubPlugin);
+            Plugins.Add(IccpClientPlugin);
+            Plugins.Add(IccpServerPlugin);
             Plugins.Add(MqttPlugin);
             Plugins.Add(NatsPlugin);
             Plugins.Add(TimescaleDBPlugin);

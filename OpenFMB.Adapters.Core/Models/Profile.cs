@@ -235,7 +235,13 @@ namespace OpenFMB.Adapters.Core.Models
                             var parentNode = parentNodes.FirstOrDefault();
                             if (parentNode != null)
                             {
-                                var child = parentNode.Nodes.FirstOrDefault(x => x.Schema.Const?.ToString() == targetNode.Value);
+                                Node child = null;
+
+                                if (!string.IsNullOrEmpty(targetNode.Value))
+                                {
+                                    child = parentNode.Nodes.FirstOrDefault(x => x.Schema.Const?.ToString() == targetNode.Value);
+                                }
+
                                 if (child != null)
                                 {
                                     return child;
@@ -251,7 +257,8 @@ namespace OpenFMB.Adapters.Core.Models
                                             {
                                                 var index = parentNode.Nodes.IndexOf(temp);
                                                 var subList = parentNode.Nodes.GetRange(index, parentNode.Nodes.Count - index);
-                                                return subList.FirstOrDefault(x => x.Name == targetNode.Name);
+                                                //return subList.FirstOrDefault(x => x.Name == targetNode.Name);
+                                                return subList.FirstOrDefault(x => x.Path == path);
                                             }
                                         }
                                     }
