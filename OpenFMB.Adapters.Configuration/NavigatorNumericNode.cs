@@ -77,7 +77,7 @@ namespace OpenFMB.Adapters.Configuration
             }
             else
             {
-                (Data.Tag as JProperty).Value = new JValue((double)valueControl.Value);
+                (Data.Tag as JProperty).Value = new JValue(((double)valueControl.Value));
             }
 
             ValidateData();

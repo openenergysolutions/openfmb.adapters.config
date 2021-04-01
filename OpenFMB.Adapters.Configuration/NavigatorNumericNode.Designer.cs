@@ -56,7 +56,7 @@
             // 
             // valueControl
             // 
-            this.valueControl.DecimalPlaces = 4;
+            this.valueControl.DecimalPlaces = 3;
             this.valueControl.Location = new System.Drawing.Point(6, 58);
             this.valueControl.Maximum = new decimal(new int[] {
             1000000,
