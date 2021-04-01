@@ -263,13 +263,13 @@ namespace OpenFMB.Adapters.Core.Models
                                         }
                                     }
 
-                                    return nodes.FirstOrDefault();
+                                    return nodes.FirstOrDefault(x => x.Schema.Type == schemaType);
                                 }
                             }
                         }
                         else
                         {
-                            return nodes.FirstOrDefault();
+                            return nodes.FirstOrDefault(x => x.Schema.Type == schemaType);
                         }
                     }                    
                 }

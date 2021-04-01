@@ -50,9 +50,12 @@ namespace OpenFMB.Adapters.Configuration
             if (node.Schema?.Type == Newtonsoft.Json.Schema.JSchemaType.Integer)
             {
                 valueControl.DecimalPlaces = 0;
+                valueControl.Value = NumberConverter.ToInteger(val.Value);
             }
-            
-            valueControl.Value = NumberConverter.ToInteger(val.Value);
+            else
+            {
+                valueControl.Value = NumberConverter.ToDecimal(val.Value);
+            }
 
             valueControl.ValueChanged += ValueControl_ValueChanged;
 

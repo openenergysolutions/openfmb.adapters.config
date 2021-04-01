@@ -29,5 +29,12 @@ namespace OpenFMB.Adapters.Core.Utility
                 return 0;
             }
         }
+
+        public static decimal ToDecimal(object val)
+        {
+            decimal d;
+            decimal.TryParse(val.ToString(), out d);
+            return d;
+        }
     }
 }
