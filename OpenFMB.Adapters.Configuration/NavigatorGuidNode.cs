@@ -1,10 +1,12 @@
-﻿using Newtonsoft.Json.Linq;
+﻿// SPDX-FileCopyrightText: 2021 Open Energy Solutions Inc
+//
+// SPDX-License-Identifier: Apache-2.0
+
+using Newtonsoft.Json.Linq;
 using OpenFMB.Adapters.Core.Models;
 using OpenFMB.Adapters.Core.Models.Schemas;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
 using System.Windows.Forms;
 
 namespace OpenFMB.Adapters.Configuration

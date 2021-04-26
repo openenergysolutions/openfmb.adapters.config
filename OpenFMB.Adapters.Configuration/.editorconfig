@@ -1,0 +1,14 @@
+# To learn more about .editorconfig see https://aka.ms/editorconfigdocs
+root = true
+
+# All files
+[*]
+indent_style = space
+
+# Xml files
+[*.xml]
+indent_size = 2
+
+[*.cs]
+file_header_template = SPDX-FileCopyrightText: 2021 Open Energy Solutions Inc\n\nSPDX-License-Identifier: Apache-2.0
+

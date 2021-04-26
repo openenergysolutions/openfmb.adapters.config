@@ -1,9 +1,9 @@
-﻿using OpenFMB.Adapters.Core;
-using System;
+﻿// SPDX-FileCopyrightText: 2021 Open Energy Solutions Inc
+//
+// SPDX-License-Identifier: Apache-2.0
+
+using OpenFMB.Adapters.Core;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OpenFMB.Adapters.Configuration
 {

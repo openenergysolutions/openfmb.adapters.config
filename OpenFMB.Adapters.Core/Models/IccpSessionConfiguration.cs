@@ -1,11 +1,13 @@
-﻿using Newtonsoft.Json;
+﻿// SPDX-FileCopyrightText: 2021 Open Energy Solutions Inc
+//
+// SPDX-License-Identifier: Apache-2.0
+
+using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using OpenFMB.Adapters.Core.Models.Plugins;
 using OpenFMB.Adapters.Core.Utility.Logs;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Text;
 
 namespace OpenFMB.Adapters.Core.Models
 {

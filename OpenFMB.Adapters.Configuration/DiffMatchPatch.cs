@@ -1,4 +1,8 @@
-﻿/*
+﻿// SPDX-FileCopyrightText: 2021 Open Energy Solutions Inc
+//
+// SPDX-License-Identifier: Apache-2.0
+
+/*
  * Diff Match and Patch
  * Copyright 2018 The diff-match-patch Authors.
  * https://github.com/google/diff-match-patch

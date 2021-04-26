@@ -1,18 +1,21 @@
-﻿using System;
+﻿// SPDX-FileCopyrightText: 2021 Open Energy Solutions Inc
+//
+// SPDX-License-Identifier: Apache-2.0
+
+using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Xml.Serialization;
 
 namespace OpenFMB.Adapters.Core.Models.ICCP
 {
-	// using System.Xml.Serialization;
-	// XmlSerializer serializer = new XmlSerializer(typeof(TASE2));
-	// using (StringReader reader = new StringReader(xml))
-	// {
-	//    var test = (TASE2)serializer.Deserialize(reader);
-	// }
+    // using System.Xml.Serialization;
+    // XmlSerializer serializer = new XmlSerializer(typeof(TASE2));
+    // using (StringReader reader = new StringReader(xml))
+    // {
+    //    var test = (TASE2)serializer.Deserialize(reader);
+    // }
 
-	[XmlRoot(ElementName = "Tase2DataAttribute")]
+    [XmlRoot(ElementName = "Tase2DataAttribute")]
 	public class Tase2DataAttribute
 	{
 

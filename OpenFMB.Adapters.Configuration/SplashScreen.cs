@@ -1,8 +1,10 @@
-﻿using System;
+﻿// SPDX-FileCopyrightText: 2021 Open Energy Solutions Inc
+//
+// SPDX-License-Identifier: Apache-2.0
+
+using System;
 using System.ComponentModel;
 using System.Windows.Forms;
-using System.Threading;
-using System.Reflection;
 using OpenFMB.Adapters.Core.Utility.Logs;
 using OpenFMB.Adapters.Core.Models.Schemas;
 

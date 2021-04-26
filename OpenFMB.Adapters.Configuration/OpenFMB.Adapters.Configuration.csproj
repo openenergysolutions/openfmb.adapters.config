@@ -702,6 +702,7 @@
     <EmbeddedResource Include="ViewSchemaForm.resx">
       <DependentUpon>ViewSchemaForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include=".editorconfig" />
     <None Include="packages.config" />
     <None Include="Properties\DataSources\Data.datasource" />
     <None Include="Properties\DataSources\DataRow.datasource" />
@@ -758,6 +759,7 @@
     <None Include="Resources\folder_arrow.png" />
     <None Include="Resources\new_config.png" />
     <None Include="Resources\new_template.png" />
+    <Content Include="Resources\logo.png" />
     <Content Include="Resources\template_icon.png" />
     <Content Include="Resources\warning.png" />
     <None Include="Resources\edit.png" />
