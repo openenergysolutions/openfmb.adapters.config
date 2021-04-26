@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenFMB.Models", "OpenFMB.M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenFMB.Adapters.Configuration", "OpenFMB.Adapters.Configuration\OpenFMB.Adapters.Configuration.csproj", "{6163C9A8-9481-46DB-90A8-FEAC0A0A1FD9}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{1F5227B9-DD15-43A5-BDAE-A7B2735E0D97}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,8 @@ Global
 		{6163C9A8-9481-46DB-90A8-FEAC0A0A1FD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6163C9A8-9481-46DB-90A8-FEAC0A0A1FD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6163C9A8-9481-46DB-90A8-FEAC0A0A1FD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F5227B9-DD15-43A5-BDAE-A7B2735E0D97}.Debug|Any CPU.ActiveCfg = Debug
+		{1F5227B9-DD15-43A5-BDAE-A7B2735E0D97}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

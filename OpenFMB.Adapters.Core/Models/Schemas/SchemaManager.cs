@@ -15,8 +15,10 @@ using System.Xml.Linq;
 namespace OpenFMB.Adapters.Core.Models.Schemas
 {
     public static class SchemaManager
-    {        
-        private static readonly string DefaultSchemaDirectory = "schemas";
+    {
+        private static readonly string AppName = "OpenFMB Adapter Configuration";
+        private static readonly string SchemaDirectory = "schemas";
+        private static string DefaultSchemaDirectory;
 
         private static readonly ILogger _logger = MasterLogger.Instance;    
 
@@ -28,7 +30,14 @@ namespace OpenFMB.Adapters.Core.Models.Schemas
 
         public static void Init(string version = null)
         {
-            _logger.Log(Level.Info, "Initialize schema manager...");            
+            _logger.Log(Level.Info, "Initialize schema manager...");
+
+            var roaming = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+
+            Directory.CreateDirectory(Path.Combine(roaming, AppName));
+            Directory.CreateDirectory(Path.Combine(roaming, AppName, SchemaDirectory));
+
+            DefaultSchemaDirectory = Path.Combine(roaming, AppName, SchemaDirectory);
 
             if (!string.IsNullOrWhiteSpace(version))
             {
