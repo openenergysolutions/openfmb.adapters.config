@@ -4,6 +4,7 @@
 
 using Newtonsoft.Json.Schema;
 using OpenFMB.Adapters.Core.Json;
+using OpenFMB.Adapters.Core.Utility;
 using OpenFMB.Adapters.Core.Utility.Logs;
 using System;
 using System.Collections.Generic;
@@ -31,13 +32,11 @@ namespace OpenFMB.Adapters.Core.Models.Schemas
         public static void Init(string version = null)
         {
             _logger.Log(Level.Info, "Initialize schema manager...");
+            var appDataDir = FileHelper.GetAppDataFolder();
 
-            var roaming = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+            Directory.CreateDirectory(Path.Combine(appDataDir, SchemaDirectory));
 
-            Directory.CreateDirectory(Path.Combine(roaming, AppName));
-            Directory.CreateDirectory(Path.Combine(roaming, AppName, SchemaDirectory));
-
-            DefaultSchemaDirectory = Path.Combine(roaming, AppName, SchemaDirectory);
+            DefaultSchemaDirectory = Path.Combine(appDataDir, SchemaDirectory);
 
             if (!string.IsNullOrWhiteSpace(version))
             {

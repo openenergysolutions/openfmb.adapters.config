@@ -4,6 +4,7 @@
 
 using Newtonsoft.Json;
 using OpenFMB.Adapters.Core;
+using OpenFMB.Adapters.Core.Utility;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -14,7 +15,8 @@ namespace OpenFMB.Adapters.Configuration
 {
     public class TagsManager
     {
-        public static string MasterModelFile = "master-model.json";
+        private static string MasterModelFileName = "master-model.json";        
+
         private static TagsManager _instance;
 
         public static TagsManager Instance
@@ -38,7 +40,9 @@ namespace OpenFMB.Adapters.Configuration
 
         private void Init()
         {
-            if (!File.Exists(MasterModelFile))
+            var appDataDir = FileHelper.GetAppDataFolder();
+            var masterModelFile = Path.Combine(appDataDir, MasterModelFileName);
+            if (!File.Exists(masterModelFile))
             {
                 var assembly = Assembly.GetExecutingAssembly();
                 var resourceName = "OpenFMB.Adapters.Configuration.master-model.json";
@@ -48,18 +52,20 @@ namespace OpenFMB.Adapters.Configuration
                     using (StreamReader reader = new StreamReader(stream))
                     {
                         string content = reader.ReadToEnd();
-                        File.WriteAllText(MasterModelFile, content);
+                        File.WriteAllText(masterModelFile, content);
                     }
                 }
             }
 
-            Model = JsonConvert.DeserializeObject<Model>(File.ReadAllText(MasterModelFile));
+            Model = JsonConvert.DeserializeObject<Model>(File.ReadAllText(masterModelFile));
         }
 
         public void Save()
         {
             var json = JsonConvert.SerializeObject(Model);
-            File.WriteAllText(MasterModelFile, json);
+            var appDataDir = FileHelper.GetAppDataFolder();
+            var masterModelFile = Path.Combine(appDataDir, MasterModelFileName);
+            File.WriteAllText(masterModelFile, json);
         }
 
         public List<Topic> Search(string profileName, string searchString)

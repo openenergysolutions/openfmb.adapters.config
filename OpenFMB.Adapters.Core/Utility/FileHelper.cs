@@ -9,6 +9,8 @@ namespace OpenFMB.Adapters.Core.Utility
 {
     public static class FileHelper
     {
+        private static readonly string AppName = "OpenFMB Adapter Configuration";
+
         public static string GetNextConfigFileName(this string folder, string fileBaseName)
         {            
             int i = 1;
@@ -205,6 +207,15 @@ namespace OpenFMB.Adapters.Core.Utility
                     DirectoryCopy(subdir.FullName, tempPath, copySubDirs);
                 }
             }
+        }
+
+        public static string GetAppDataFolder()
+        {
+            var roaming = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+
+            Directory.CreateDirectory(Path.Combine(roaming, AppName));
+
+            return Path.Combine(roaming, AppName);
         }
 
     }
