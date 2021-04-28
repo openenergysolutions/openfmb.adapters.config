@@ -211,18 +211,11 @@ namespace OpenFMB.Adapters.Configuration
                             if (!string.IsNullOrEmpty(option.LoadFromFile))
                             {
                                 // base folder: where the main adapter is
-                                var folder = Path.GetDirectoryName(configPath);
+                                var folder = Path.GetDirectoryName(configPath);                               
 
-                                // plugin folder: base + plugin-name
-                                var pluginFolder = Path.Combine(folder, p.Name);
-
-                                // the default template file:  search in plugin folder
-                                var filePath = FileHelper.ConvertToForwardSlash(pluginFolder.GetNextConfigFileName(p.Name + "-template"));
-
-                                // relative path to base folder
-                                filePath = Path.Combine(p.Name, Path.GetFileName(filePath));
-
-                                // local path of the session file: base + relative path
+                                // the default template file
+                                var filePath = FileHelper.ConvertToForwardSlash(folder.GetNextConfigFileName("template"));                                
+                               
                                 var fullPath = Path.Combine(folder, filePath);
 
                                 Session session = new Session(p.Name, filePath);
@@ -254,16 +247,10 @@ namespace OpenFMB.Adapters.Configuration
                             if (option.SelectedProfiles.Count > 0)
                             {
                                 // base folder: where the main adapter is
-                                var folder = Path.GetDirectoryName(configPath);
+                                var folder = Path.GetDirectoryName(configPath);                                
 
-                                // plugin folder: base + plugin-name
-                                var pluginFolder = Path.Combine(folder, p.Name);
-
-                                // the default template file:  search in plugin folder
-                                var filePath = FileHelper.ConvertToForwardSlash(pluginFolder.GetNextConfigFileName(p.Name + "-template"));
-
-                                // relative path to base folder
-                                filePath = Path.Combine(p.Name, Path.GetFileName(filePath));
+                                // the default template file
+                                var filePath = FileHelper.ConvertToForwardSlash(folder.GetNextConfigFileName("template"));                                
 
                                 // local path of the session file: base + relative path
                                 var fullPath = Path.Combine(folder, filePath);

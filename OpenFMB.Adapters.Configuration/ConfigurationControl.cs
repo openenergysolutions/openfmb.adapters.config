@@ -1091,12 +1091,12 @@ namespace OpenFMB.Adapters.Configuration
                 if (form.ShowDialog() == DialogResult.OK)
                 {
                     Editable editable = form.Output;
-                    HandleFileAddedToWorkspace(selectedNode, editable);
+                    HandleFileAddedToWorkspace(selectedNode, editable);                   
                 }
             }
             finally
             {
-                Thread.Sleep(1000);
+                Thread.Sleep(100);
                 _configurationManager.ResumeFileWatcher();
             }
         }
@@ -1111,34 +1111,34 @@ namespace OpenFMB.Adapters.Configuration
                 if (form.ShowDialog() == DialogResult.OK)
                 {
                     Editable editable = form.Output;
-                    HandleFileAddedToWorkspace(selectedNode, editable);
+                    HandleFileAddedToWorkspace(selectedNode, editable);                    
                 }
             }
             finally
             {
-                Thread.Sleep(1000);
+                Thread.Sleep(100);
                 _configurationManager.ResumeFileWatcher();
             }
         }
 
         private void HandleFileAddedToWorkspace(TreeNode selectedNode, Editable editable)
-        {
-            var treeNode = new TreeNode(Path.GetFileName(editable.FullPath))
+        {            
+            var directory = Path.GetDirectoryName(editable.FullPath);
+            try
             {
-                Name = editable.FullPath
-            };
-            var fileType = ConfigurationManager.GetFileInformation(editable.FullPath);
-            treeNode.Tag = new FileNode
+                workspaceTree.BeginUpdate();
+                var parent = selectedNode.Parent;
+                selectedNode.Remove();               
+                var rootDirectoryInfo = new DirectoryInfo(directory);
+                var node = CreateDirectoryNode(rootDirectoryInfo);
+                parent.Nodes.Add(node);
+                workspaceTree.SelectedNode = node;
+                node.ExpandAll();
+            }
+            finally
             {
-                Path = editable.FullPath,
-                FileInformation = fileType
-            };
-            var text = fileType.Id == ConfigFileType.MainAdapter ? "Adapter Configuration" : fileType.Id == ConfigFileType.Template ? "Template file" : "Not an OpenFMB config file";
-            treeNode.ToolTipText = $"{editable.FullPath} ({text})";
-            treeNode.ImageIndex = treeNode.SelectedImageIndex = (int)fileType.Id;
-            selectedNode.Nodes.Add(treeNode);
-
-            workspaceTree.SelectedNode = treeNode;
+                workspaceTree.EndUpdate();
+            }
         }
 
         private void HandleOnEditFileRequested(FileNode fileNode)
