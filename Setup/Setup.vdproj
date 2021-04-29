@@ -220,12 +220,6 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_7A25FCF99A727FC73C7452E6D72178A2"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_76489E22E09B4CC0B4791ED058985F1D"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -313,6 +307,12 @@
         "OwnerKey" = "8:_56A2E408D7C78116E484F6A6E8FDFFE6"
         "MsmSig" = "8:_UNDEFINED"
         }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_7A25FCF99A727FC73C7452E6D72178A2"
+        "MsmSig" = "8:_UNDEFINED"
+        }
     }
     "Configurations"
     {
@@ -370,6 +370,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.8"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.8 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.8"
+                    }
+                }
             }
         }
     }
@@ -1026,7 +1034,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:OpenFMB Adapter Configuration"
         "ProductCode" = "8:{E028B2C1-ACBC-4929-AC64-2967B686F8C6}"
-        "PackageCode" = "8:{B3F5E7BC-6382-4014-90F5-1358DFAAB58D}"
+        "PackageCode" = "8:{209AB876-2E3F-4A44-9220-D37AE0243ADD}"
         "UpgradeCode" = "8:{F8112F8B-3FB5-408F-9259-ED2CBB1AAE1B}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
