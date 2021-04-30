@@ -1127,11 +1127,20 @@ namespace OpenFMB.Adapters.Configuration
             try
             {
                 workspaceTree.BeginUpdate();
-                var parent = selectedNode.Parent;
-                selectedNode.Remove();               
+                var parent = selectedNode.Parent;               
+                              
                 var rootDirectoryInfo = new DirectoryInfo(directory);
                 var node = CreateDirectoryNode(rootDirectoryInfo);
-                parent.Nodes.Add(node);
+                if (parent != null)
+                {
+                    selectedNode.Remove();
+                    parent.Nodes.Add(node);
+                }
+                else
+                {
+                    selectedNode.Remove();
+                    workspaceTree.Nodes.Add(node);
+                }
                 workspaceTree.SelectedNode = node;
                 node.ExpandAll();
             }

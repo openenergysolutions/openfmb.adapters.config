@@ -37,11 +37,9 @@
             this.openSource = new System.Windows.Forms.RichTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel
@@ -49,23 +47,21 @@
             this.tableLayoutPanel.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel.ColumnCount = 1;
             this.tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel.Controls.Add(this.labelProductName, 0, 0);
             this.tableLayoutPanel.Controls.Add(this.labelVersion, 0, 1);
             this.tableLayoutPanel.Controls.Add(this.labelCopyright, 0, 2);
             this.tableLayoutPanel.Controls.Add(this.labelOpenSource, 0, 3);
-            this.tableLayoutPanel.Controls.Add(this.okButton, 0, 5);
             this.tableLayoutPanel.Controls.Add(this.openSource, 0, 4);
+            this.tableLayoutPanel.Controls.Add(this.okButton, 0, 5);
             this.tableLayoutPanel.Location = new System.Drawing.Point(161, 9);
             this.tableLayoutPanel.Name = "tableLayoutPanel";
             this.tableLayoutPanel.RowCount = 6;
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel.Size = new System.Drawing.Size(462, 278);
             this.tableLayoutPanel.TabIndex = 0;
             // 
@@ -137,10 +133,10 @@
             // 
             this.openSource.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.openSource.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.openSource.Location = new System.Drawing.Point(9, 111);
+            this.openSource.Location = new System.Drawing.Point(9, 125);
             this.openSource.Margin = new System.Windows.Forms.Padding(9, 3, 9, 3);
             this.openSource.Name = "openSource";
-            this.openSource.Size = new System.Drawing.Size(444, 133);
+            this.openSource.Size = new System.Drawing.Size(444, 105);
             this.openSource.TabIndex = 25;
             this.openSource.Text = "";
             // 
@@ -148,7 +144,6 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(12, 9);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(143, 275);
@@ -157,22 +152,12 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(0, 59);
+            this.pictureBox2.Location = new System.Drawing.Point(0, 3);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(140, 43);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(137, 43);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // AboutForm
             // 
@@ -195,7 +180,6 @@
             this.tableLayoutPanel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -209,7 +193,6 @@
         private System.Windows.Forms.Label labelOpenSource;
         private System.Windows.Forms.Button okButton;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.RichTextBox openSource;
     }
