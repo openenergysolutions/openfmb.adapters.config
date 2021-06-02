@@ -622,7 +622,7 @@ namespace OpenFMB.Adapters.Configuration
                                 plugin.Enabled = true;
                             }
 
-                            Profile profile = Profile.Create(p, session.PluginName);
+                            Profile profile = Profile.Create(p, session.PluginName);                            
                             session.SessionConfiguration.AddProfile(profile);                                                        
 
                             TreeNode pNode = new TreeNode(profile.ProfileName)

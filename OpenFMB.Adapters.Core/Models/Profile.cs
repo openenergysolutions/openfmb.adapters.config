@@ -131,6 +131,16 @@ namespace OpenFMB.Adapters.Core.Models
             return mrid;
         }
 
+        public void SetDeviceMRID(string mrid)
+        {
+            var mridNode = GetDeviceMRIDNode();
+
+            if (mridNode != null)
+            {
+                
+            }
+        }
+
         public Node GetDeviceMRIDNode()
         {
             return GetAllNavigatorNodes().FirstOrDefault(x => x.Path.EndsWith(".conductingEquipment.mRID.value"));

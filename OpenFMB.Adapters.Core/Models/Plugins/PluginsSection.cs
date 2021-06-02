@@ -24,6 +24,9 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
         public const string Nats = "nats";
         public const string TimescaleDB = "timescaledb";
 
+        public static readonly List<string> ClientPlugins = new List<string>() { Dnp3Master, ModbusMaster, IccpClient };
+        public static readonly List<string> ServerPlugins = new List<string>() { Dnp3Outstation, ModbusOutstation, IccpServer };
+
         public CapturePlugin CapturePlugin { get; } = new CapturePlugin();
 
         public ReplayPlugin ReplayPlugin { get; } = new ReplayPlugin();
@@ -124,6 +127,16 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
                     }
                 }
             }                         
+        }
+
+        public static bool IsClientPlugin(string pluginName)
+        {
+            return ClientPlugins.Contains(pluginName);
+        }
+
+        public static bool IsServerPlugin(string pluginName)
+        {
+            return ServerPlugins.Contains(pluginName);
         }
     }
 }

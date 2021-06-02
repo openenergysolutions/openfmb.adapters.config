@@ -281,11 +281,16 @@ namespace OpenFMB.Adapters.Core
                         foreach (var session in sessionable.Sessions)
                         {
                             var profiles = session.SessionConfiguration.GetProfiles();
-
+                            var isClient = PluginsSection.IsClientPlugin(session.PluginName);
                             foreach (var p in profiles)
-                            {
-                                var pub = ProfileRegistry.IsReadingProfile(p.ProfileName) || ProfileRegistry.IsStatusProfile(p.ProfileName) || ProfileRegistry.IsEventProfile(p.ProfileName);
-                                if (pub)
+                            {                                
+                                var isReading = ProfileRegistry.IsReadingProfile(p.ProfileName) || ProfileRegistry.IsStatusProfile(p.ProfileName) || ProfileRegistry.IsEventProfile(p.ProfileName);
+                                if (!isClient)
+                                {
+                                    isReading = !isReading;
+                                }
+
+                                if (isReading)
                                 {
                                     if (!type.HasValue)
                                     {
@@ -301,7 +306,7 @@ namespace OpenFMB.Adapters.Core
                                         UpdateTopics(session, p, plugins.MqttPlugin.Publishes, true);
                                     }
                                 }
-                                else if (ProfileRegistry.IsControlProfile(p.ProfileName))
+                                else // if (ProfileRegistry.IsControlProfile(p.ProfileName))
                                 {
                                     if (!type.HasValue)
                                     {
