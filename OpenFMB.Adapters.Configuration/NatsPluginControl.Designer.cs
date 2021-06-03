@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.enableCheckBox = new System.Windows.Forms.CheckBox();
-            this.natsPluginBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
@@ -41,7 +40,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.clientCertFile = new System.Windows.Forms.TextBox();
-            this.natsSecurityBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label8 = new System.Windows.Forms.Label();
             this.clientKeyFile = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -59,17 +57,21 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.addSubscribeProfileButton = new System.Windows.Forms.Button();
             this.resetPubSub = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.natsPluginBindingSource)).BeginInit();
+            this.jwtCredsFile = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.natsSecurityBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.natsPluginBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.natsSecurityBindingSource)).BeginInit();
             this.tabControl.SuspendLayout();
             this.publishTab.SuspendLayout();
             this.panel2.SuspendLayout();
             this.subscribeTab.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.natsSecurityBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.natsPluginBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // enableCheckBox
@@ -81,10 +83,6 @@
             this.enableCheckBox.Size = new System.Drawing.Size(15, 14);
             this.enableCheckBox.TabIndex = 11;
             this.enableCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // natsPluginBindingSource
-            // 
-            this.natsPluginBindingSource.DataSource = typeof(OpenFMB.Adapters.Core.Models.Plugins.NatsPlugin);
             // 
             // label1
             // 
@@ -169,6 +167,8 @@
             // 
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.Controls.Add(this.jwtCredsFile);
+            this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.clientCertFile);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.clientKeyFile);
@@ -179,7 +179,7 @@
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Location = new System.Drawing.Point(14, 174);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(598, 127);
+            this.groupBox2.Size = new System.Drawing.Size(598, 153);
             this.groupBox2.TabIndex = 19;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Security";
@@ -191,10 +191,6 @@
             this.clientCertFile.Name = "clientCertFile";
             this.clientCertFile.Size = new System.Drawing.Size(269, 20);
             this.clientCertFile.TabIndex = 20;
-            // 
-            // natsSecurityBindingSource
-            // 
-            this.natsSecurityBindingSource.DataSource = typeof(OpenFMB.Adapters.Core.Models.Plugins.NatsSecurity);
             // 
             // label8
             // 
@@ -270,10 +266,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl.Controls.Add(this.publishTab);
             this.tabControl.Controls.Add(this.subscribeTab);
-            this.tabControl.Location = new System.Drawing.Point(14, 339);
+            this.tabControl.Location = new System.Drawing.Point(14, 371);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(598, 247);
+            this.tabControl.Size = new System.Drawing.Size(598, 274);
             this.tabControl.TabIndex = 20;
             // 
             // publishTab
@@ -283,7 +279,7 @@
             this.publishTab.Location = new System.Drawing.Point(4, 22);
             this.publishTab.Name = "publishTab";
             this.publishTab.Padding = new System.Windows.Forms.Padding(3);
-            this.publishTab.Size = new System.Drawing.Size(590, 221);
+            this.publishTab.Size = new System.Drawing.Size(590, 248);
             this.publishTab.TabIndex = 0;
             this.publishTab.Text = "Publish";
             this.publishTab.UseVisualStyleBackColor = true;
@@ -295,7 +291,7 @@
             this.publishPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.publishPanel.Location = new System.Drawing.Point(3, 35);
             this.publishPanel.Name = "publishPanel";
-            this.publishPanel.Size = new System.Drawing.Size(584, 183);
+            this.publishPanel.Size = new System.Drawing.Size(584, 210);
             this.publishPanel.TabIndex = 1;
             // 
             // panel2
@@ -324,7 +320,7 @@
             this.subscribeTab.Location = new System.Drawing.Point(4, 22);
             this.subscribeTab.Name = "subscribeTab";
             this.subscribeTab.Padding = new System.Windows.Forms.Padding(3);
-            this.subscribeTab.Size = new System.Drawing.Size(590, 221);
+            this.subscribeTab.Size = new System.Drawing.Size(590, 248);
             this.subscribeTab.TabIndex = 1;
             this.subscribeTab.Text = "Subscribe";
             this.subscribeTab.UseVisualStyleBackColor = true;
@@ -336,7 +332,7 @@
             this.subscribePanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.subscribePanel.Location = new System.Drawing.Point(3, 35);
             this.subscribePanel.Name = "subscribePanel";
-            this.subscribePanel.Size = new System.Drawing.Size(584, 183);
+            this.subscribePanel.Size = new System.Drawing.Size(584, 210);
             this.subscribePanel.TabIndex = 3;
             // 
             // panel3
@@ -360,13 +356,38 @@
             // 
             // resetPubSub
             // 
-            this.resetPubSub.Location = new System.Drawing.Point(14, 310);
+            this.resetPubSub.Location = new System.Drawing.Point(14, 342);
             this.resetPubSub.Name = "resetPubSub";
             this.resetPubSub.Size = new System.Drawing.Size(107, 23);
             this.resetPubSub.TabIndex = 21;
             this.resetPubSub.Text = "Reset Subjects";
             this.resetPubSub.UseVisualStyleBackColor = true;
             this.resetPubSub.Click += new System.EventHandler(this.ResetPubSub_Click);
+            // 
+            // jwtCredsFile
+            // 
+            this.jwtCredsFile.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.natsSecurityBindingSource, "JwtCredsFile", true));
+            this.jwtCredsFile.Location = new System.Drawing.Point(156, 120);
+            this.jwtCredsFile.Name = "jwtCredsFile";
+            this.jwtCredsFile.Size = new System.Drawing.Size(269, 20);
+            this.jwtCredsFile.TabIndex = 22;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(55, 123);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(82, 13);
+            this.label9.TabIndex = 21;
+            this.label9.Text = "JWT Creds File:";
+            // 
+            // natsSecurityBindingSource
+            // 
+            this.natsSecurityBindingSource.DataSource = typeof(OpenFMB.Adapters.Core.Models.Plugins.NatsSecurity);
+            // 
+            // natsPluginBindingSource
+            // 
+            this.natsPluginBindingSource.DataSource = typeof(OpenFMB.Adapters.Core.Models.Plugins.NatsPlugin);
             // 
             // NatsPluginControl
             // 
@@ -377,23 +398,24 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "NatsPluginControl";
+            this.Size = new System.Drawing.Size(628, 659);
             this.Controls.SetChildIndex(this.groupBox1, 0);
             this.Controls.SetChildIndex(this.groupBox2, 0);
             this.Controls.SetChildIndex(this.tabControl, 0);
             this.Controls.SetChildIndex(this.resetPubSub, 0);
-            ((System.ComponentModel.ISupportInitialize)(this.natsPluginBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.natsSecurityBindingSource)).EndInit();
             this.tabControl.ResumeLayout(false);
             this.publishTab.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.subscribeTab.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.natsSecurityBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.natsPluginBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -430,5 +452,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button addSubscribeProfileButton;
         private System.Windows.Forms.Button resetPubSub;
+        private System.Windows.Forms.TextBox jwtCredsFile;
+        private System.Windows.Forms.Label label9;
     }
 }

@@ -38,7 +38,8 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
                 new YamlScalarNode("security-type"), new YamlScalarNode(Security.SecurityType.ToString().ToLower()),
                 new YamlScalarNode("ca-trusted-cert-file"), new YamlScalarNode(Security.CertFile),
                 new YamlScalarNode("client-private-key-file"), new YamlScalarNode(Security.ClientKey),
-                new YamlScalarNode("client-cert-chain-file"), new YamlScalarNode(Security.ClientCert)));
+                new YamlScalarNode("client-cert-chain-file"), new YamlScalarNode(Security.ClientCert),
+                new YamlScalarNode("jwt-creds-file"), new YamlScalarNode(Security.JwtCredsFile)));
 
             var publish = new YamlSequenceNode();
             node.Add("publish", publish);
@@ -76,10 +77,11 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
             { 
                 try
                 {
-                    Security.SecurityType = (SecurityType)Enum.Parse(typeof(SecurityType), (security["security-type"] as YamlScalarNode).Value);
-                    Security.CertFile = (security["ca-trusted-cert-file"] as YamlScalarNode).Value;
-                    Security.ClientKey = (security["client-private-key-file"] as YamlScalarNode).Value;
-                    Security.ClientCert = (security["client-cert-chain-file"] as YamlScalarNode).Value;
+                    Security.SecurityType = (SecurityType)Enum.Parse(typeof(SecurityType), (security["security-type"] as YamlScalarNode)?.Value);
+                    Security.CertFile = (security["ca-trusted-cert-file"] as YamlScalarNode)?.Value;
+                    Security.ClientKey = (security["client-private-key-file"] as YamlScalarNode)?.Value;
+                    Security.ClientCert = (security["client-cert-chain-file"] as YamlScalarNode)?.Value;
+                    Security.JwtCredsFile = (security["jwt-creds-file"] as YamlScalarNode)?.Value;
                 }
                 catch { }
             }
@@ -119,5 +121,7 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
         public string ClientKey { get; set; } = "client_key.pem";
 
         public string ClientCert { get; set; } = "client_cert.pem";
+
+        public string JwtCredsFile { get; set; } = "";
     }    
 }
