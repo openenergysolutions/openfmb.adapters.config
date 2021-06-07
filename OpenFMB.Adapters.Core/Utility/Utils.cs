@@ -22,9 +22,11 @@ namespace OpenFMB.Adapters.Core.Utility
         private static readonly string BadCharsRegex = "[" + Regex.Escape(new string(Path.GetInvalidFileNameChars())) + "]";
 
         private static readonly Regex ContainsABadCharacter = new Regex(BadCharsRegex);
-        private static readonly Regex EndArrayRegex = new Regex("\\[\\d+\\]$");
+        private static readonly Regex EndArrayRegex = new Regex("\\[\\d+\\]$");        
         private static readonly Regex PathWithArrayNoDot = new Regex("\\w\\[\\d+\\]");
         private static readonly Regex PathWithArray = new Regex("\\.\\[\\d+\\]");
+
+        public static readonly Regex ArrayNode = new Regex("\\.\\[\\d+\\]$");
 
         private static readonly char[] Slashes = { '/', '\\' };
 

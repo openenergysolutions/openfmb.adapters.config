@@ -3,6 +3,7 @@
 // SPDX-License-Identifier: Apache-2.0
 
 using OpenFMB.Adapters.Core.Models;
+using OpenFMB.Adapters.Core.Utility;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
@@ -23,6 +24,18 @@ namespace OpenFMB.Adapters.Configuration
                 Update();
                 data.OnValueChanged -= Data_OnValueChanged;
                 data.OnValueChanged += Data_OnValueChanged;
+            }
+        }
+
+        public bool IsArrayNode
+        {
+            get
+            {
+                if (!string.IsNullOrEmpty(Data?.Path))
+                {
+                    return Utils.ArrayNode.IsMatch(Data.Path);
+                }
+                return false;
             }
         }
 

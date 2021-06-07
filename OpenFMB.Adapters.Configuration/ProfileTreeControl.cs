@@ -1013,9 +1013,19 @@ namespace OpenFMB.Adapters.Configuration
                     }
 
                     ++i;
+
+                    bool cloning = false;
+                    if (array.Count > 0)
+                    {
+                        var result = MessageBox.Show("Copy from previous element?", Program.AppName, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (result == DialogResult.Yes)
+                        {
+                            cloning = true;
+                        }
+                    }
                     
                     JToken token = null;
-                    if (array.Count > 0)
+                    if (cloning == true)
                     {
                         token = array[0].DeepClone();
                     }
@@ -1041,6 +1051,7 @@ namespace OpenFMB.Adapters.Configuration
                         AddNode(token, childNode, treeNode);
                         ShowMappingNodes(_selectedNode);
                         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(""));
+                        UpdateProfileDetails();
                     }
                 }
             }
@@ -1218,7 +1229,7 @@ namespace OpenFMB.Adapters.Configuration
                 }
 
                 resetToolStripMenuItem.Enabled = viewSchemaToolStripMenuItem.Enabled = selectedNode.Data.Schema != null;
-                resetToolStripMenuItem.Enabled = selectedNode.Data.Schema != null && selectedNode.Parent != null;
+                resetToolStripMenuItem.Enabled = selectedNode.Data.Schema != null && selectedNode.Parent != null && !selectedNode.IsArrayNode;
                 viewErrorToolStripMenuItem.Enabled = !selectedNode.Data.IsValid;
             }
         }
