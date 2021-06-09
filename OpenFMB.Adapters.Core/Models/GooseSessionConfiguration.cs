@@ -77,6 +77,26 @@ namespace OpenFMB.Adapters.Core.Models
         [JsonProperty("gooseStructure")]
         [Description("GOOSE structures used to map to OpenFMB profile"), DisplayName("GOOSE Structures")]
         public List<GooseStructure> GooseStructures { get; set; } = new List<GooseStructure>();
+
+        [Browsable(false)]
+        [JsonProperty("control-settings")]
+        public ControlSettings ControlSettings { get; set; } = new ControlSettings();
+
+        [JsonIgnore]        
+        [Category("Control Settings"), Description("Origin Category for control"), DisplayName("Origin Category")]
+        public OriginCategory ControlSettingsOrCat
+        {
+            get { return ControlSettings.OrCat; }
+            set { ControlSettings.OrCat = value; }
+        }
+
+        [JsonIgnore]
+        [Category("Control Settings"), Description("Bit String of the control Origin Identification"), DisplayName("Origin Identification")]
+        public string ControlSettingsOrIdent
+        {
+            get { return ControlSettings.OrIdent; }
+            set { ControlSettings.OrIdent = value; }
+        }
     }
 
     public class GoosePubSpecificConfig : BaseSessionSpecifiConfig, ISessionSpecificConfig
