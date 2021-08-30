@@ -53,30 +53,27 @@ namespace OpenFMB.Adapters.Core.Models
     }
 
     public class GooseSubSpecificConfig : BaseSessionSpecifiConfig, ISessionSpecificConfig
-    {
+    {               
         private string networkAdapter = "wlp2s0";
-        private int appId = 12290;
-        private string goCbRef = "AA1D/LLN0$GO$gcb_XCBRMeas";
+        private string serverIp = "0.0.0.0";
+        private int serverPort = 102;
 
         public GooseSubSpecificConfig()
         {
             PlugIn = PluginsSection.GooseSub;
         }
 
-        [Description("Name of network adapter"), DisplayName("Network Adapter")]
+        [Category("General"), Description("Name of network adapter"), DisplayName("Network Adapter")]
         [JsonProperty("networkAdapter")]
         public string NetworkAdapter { get => networkAdapter; set { networkAdapter = value; NotifyPropertyChanged(); } }
-        [Description("Application ID"), DisplayName("App ID")]
 
-        [JsonProperty("appId")]
-        public int AppId { get => appId; set { appId = value; NotifyPropertyChanged(); } }
-        [Description("GOOSE control block reference"), DisplayName("GOOSE Cb Ref")]
+        [Category("General"), DisplayName("Server IP Address")]
+        [JsonProperty("server-ip")]
+        public string ServerIp { get => serverIp; set { serverIp = value; NotifyPropertyChanged(); } }
 
-        [JsonProperty("goCbRef")]
-        public string GoCbRef { get => goCbRef; set { goCbRef = value; NotifyPropertyChanged(); } }
-        [JsonProperty("gooseStructure")]
-        [Description("GOOSE structures used to map to OpenFMB profile"), DisplayName("GOOSE Structures")]
-        public List<GooseStructure> GooseStructures { get; set; } = new List<GooseStructure>();
+        [Category("General"), DisplayName("Server TCP Port"), Description("The TCP port number.  Default port is 102")]
+        [JsonProperty("server-port")]
+        public int ServerPort { get => serverPort; set { serverPort = value; NotifyPropertyChanged(); } }
 
         [Browsable(false)]
         [JsonProperty("control-settings")]
@@ -102,50 +99,29 @@ namespace OpenFMB.Adapters.Core.Models
     public class GoosePubSpecificConfig : BaseSessionSpecifiConfig, ISessionSpecificConfig
     {
         private string networkAdapter = "wlp2s0";
-        private string sourceMacAddress = "a8:6b:00:2a:09:a3";
-        private string destinationMacAddress = "01:0C:CD:01:00:00";
-        private int appId = 1;
-        private string goCbRef = "AA1D/LLN0$GO$gcb_XCBRMeas";
-        private string dataSet = "AA1D/LLN0$dsXCBRMeas";
-        private string goId = "AA1D/LLN0.gcb_XCBRMeas";
-        private string confRev = "100";
-        private int tTL = 1000;
+        private string serverFilePath = "server-model.cid";
+        private string serverIp = "127.0.0.1";
+        private int serverPort = 102;
 
         public GoosePubSpecificConfig()
         {
             PlugIn = PluginsSection.GoosePub;
         }
 
-        [Description("Name of network adapter"), DisplayName("Network Adapter")]
+        [Category("General"), Description("Name of network adapter"), DisplayName("Network Adapter")]
         [JsonProperty("networkAdapter")]
         public string NetworkAdapter { get => networkAdapter; set { networkAdapter = value; NotifyPropertyChanged(); } }
-        [JsonProperty("src-mac")]
-        [Description("Source MAC address"), DisplayName("Source MAC Address")]
-        public string SourceMacAddress { get => sourceMacAddress; set { sourceMacAddress = value; NotifyPropertyChanged(); } }
-        [JsonProperty("dest-mac")]
-        [Description("Destination MAC address"), DisplayName("Destination MAC Address")]
-        public string DestinationMacAddress { get => destinationMacAddress; set { destinationMacAddress = value; NotifyPropertyChanged(); } }
-        [JsonProperty("appId")]
-        [Description("Application ID"), DisplayName("App ID")]
-        public int AppId { get => appId; set { appId = value; NotifyPropertyChanged(); } }
-        [Description("GOOSE control block reference"), DisplayName("GOOSE Cb Ref")]
 
-        [JsonProperty("goCbRef")]
-        public string GoCbRef { get => goCbRef; set { goCbRef = value; NotifyPropertyChanged(); } }
-        [JsonProperty("datSet")]
-        [Description("Name of the data set"), DisplayName("Data Set")]
-        public string DataSet { get => dataSet; set { dataSet = value; NotifyPropertyChanged(); } }
-        [JsonProperty("goID")]
-        [Description("GOOSE ID"), DisplayName("GOOSE ID")]
-        public string GoId { get => goId; set { goId = value; NotifyPropertyChanged(); } }
-        [JsonProperty("confRev")]
-        [Description("Configuration revision number"), DisplayName("Configuration Rev.")]
-        public string ConfRev { get => confRev; set { confRev = value; NotifyPropertyChanged(); } }
-        [JsonProperty("ttl")]
-        [Description("Retransmission interval in milliseconds"), DisplayName("TTL")]
-        public int TTL { get => tTL; set { tTL = value; NotifyPropertyChanged(); } }
+        [Category("General"), DisplayName("Server IP Address")]
+        [JsonProperty("server-ip")]
+        public string ServerIp { get => serverIp; set { serverIp = value; NotifyPropertyChanged(); } }
 
-        [Description("GOOSE structures used to map to OpenFMB profile"), DisplayName("GOOSE Structures")]
-        public List<GooseStructure> GooseStructures { get; set; } = new List<GooseStructure>();
+        [Category("General"), DisplayName("Server TCP Port"), Description("The TCP port number.  Default port is 102")]
+        [JsonProperty("server-port")]
+        public int ServerPort { get => serverPort; set { serverPort = value; NotifyPropertyChanged(); } }
+
+        [JsonProperty("server-file-path")]
+        [Category("General"), Description("Path to file described server's model"), DisplayName("Server Model File")]
+        public string ServerFilePath { get => serverFilePath; set { serverFilePath = value; NotifyPropertyChanged(); } }
     }
 }

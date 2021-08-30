@@ -888,6 +888,404 @@
             MISSING DOCUMENTATION!!!
             </summary>
         </member>
+        <member name="T:openfmb.circuitsegmentservicemodule.CircuitsegmentservicemoduleReflection">
+            <summary>Holder for reflection information generated from circuitsegmentservicemodule/circuitsegmentservicemodule.proto</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitsegmentservicemoduleReflection.Descriptor">
+            <summary>File descriptor for circuitsegmentservicemodule/circuitsegmentservicemodule.proto</summary>
+        </member>
+        <member name="T:openfmb.circuitsegmentservicemodule.CircuitSegmentServiceModeKind">
+            <summary>
+            State kind
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentServiceModeKind.Undefined">
+            <summary>
+            Undefined
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentServiceModeKind.None">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentServiceModeKind.Auto">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentServiceModeKind.Manual">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentServiceModeKind.Netzero">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentServiceModeKind.Start">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentServiceModeKind.Stop">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.Optional_CircuitSegmentServiceModeKind.ValueFieldNumber">
+            <summary>Field number for the "value" field.</summary>
+        </member>
+        <member name="T:openfmb.circuitsegmentservicemodule.ENG_CircuitSegmentServiceModeKind">
+            <summary>
+            Circuit Segment service mode kind
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.ENG_CircuitSegmentServiceModeKind.SetValFieldNumber">
+            <summary>Field number for the "setVal" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.ENG_CircuitSegmentServiceModeKind.SetVal">
+            <summary>
+            The value of the coordination service mode.
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.ENG_CircuitSegmentServiceModeKind.SetValExtensionFieldNumber">
+            <summary>Field number for the "setValExtension" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.ENG_CircuitSegmentServiceModeKind.SetValExtension">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.circuitsegmentservicemodule.CircuitSegmentControlDCSC">
+            <summary>
+            OpenFMB specialization for circuit segment service control, DCSC (Distributed Coordination
+            Service Control), following 61850 naming convention.
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentControlDCSC.LogicalNodeForControlFieldNumber">
+            <summary>Field number for the "logicalNodeForControl" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentControlDCSC.LogicalNodeForControl">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentControlDCSC.CircuitSegmentServiceModeFieldNumber">
+            <summary>Field number for the "CircuitSegmentServiceMode" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentControlDCSC.CircuitSegmentServiceMode">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentControlDCSC.IslandFieldNumber">
+            <summary>Field number for the "Island" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentControlDCSC.Island">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.circuitsegmentservicemodule.CircuitSegmentControl">
+            <summary>
+            Switch discrete control
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentControl.IdentifiedObjectFieldNumber">
+            <summary>Field number for the "identifiedObject" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentControl.IdentifiedObject">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentControl.CheckFieldNumber">
+            <summary>Field number for the "check" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentControl.Check">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentControl.CircuitSegmentControlDCSCFieldNumber">
+            <summary>Field number for the "circuitSegmentControlDCSC" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentControl.CircuitSegmentControlDCSC">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.circuitsegmentservicemodule.CircuitSegmentControlProfile">
+            <summary>
+            Switch control profile
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentControlProfile.ControlMessageInfoFieldNumber">
+            <summary>Field number for the "controlMessageInfo" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentControlProfile.ControlMessageInfo">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentControlProfile.ApplicationSystemFieldNumber">
+            <summary>Field number for the "applicationSystem" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentControlProfile.ApplicationSystem">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentControlProfile.CircuitSegmentControlFieldNumber">
+            <summary>Field number for the "circuitSegmentControl" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentControlProfile.CircuitSegmentControl">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.circuitsegmentservicemodule.CircuitSegmentEventDCSC">
+            <summary>
+            OpenFMB specialization for circuit segment service control, DCSC (Distributed Coordination
+            Service Control), following 61850 naming convention.
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentEventDCSC.LogicalNodeFieldNumber">
+            <summary>Field number for the "logicalNode" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentEventDCSC.LogicalNode">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentEventDCSC.CircuitSegmentServiceModeFieldNumber">
+            <summary>Field number for the "CircuitSegmentServiceMode" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentEventDCSC.CircuitSegmentServiceMode">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentEventDCSC.IslandFieldNumber">
+            <summary>Field number for the "Island" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentEventDCSC.Island">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentEventDCSC.PermissibleAutoFieldNumber">
+            <summary>Field number for the "PermissibleAuto" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentEventDCSC.PermissibleAuto">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentEventDCSC.PermissibleManualFieldNumber">
+            <summary>Field number for the "PermissibleManual" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentEventDCSC.PermissibleManual">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentEventDCSC.PermissibleNetzeroFieldNumber">
+            <summary>Field number for the "PermissibleNetzero" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentEventDCSC.PermissibleNetzero">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentEventDCSC.PermissibleStartFieldNumber">
+            <summary>Field number for the "PermissibleStart" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentEventDCSC.PermissibleStart">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentEventDCSC.PermissibleStopFieldNumber">
+            <summary>Field number for the "PermissibleStop" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentEventDCSC.PermissibleStop">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.circuitsegmentservicemodule.CircuitSegmentEvent">
+            <summary>
+            Switch event
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentEvent.IdentifiedObjectFieldNumber">
+            <summary>Field number for the "identifiedObject" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentEvent.IdentifiedObject">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentEvent.CircuitSegmentEventDCSCFieldNumber">
+            <summary>Field number for the "circuitSegmentEventDCSC" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentEvent.CircuitSegmentEventDCSC">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.circuitsegmentservicemodule.CircuitSegmentEventProfile">
+            <summary>
+            Switch event profile
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentEventProfile.EventMessageInfoFieldNumber">
+            <summary>Field number for the "eventMessageInfo" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentEventProfile.EventMessageInfo">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentEventProfile.ApplicationSystemFieldNumber">
+            <summary>Field number for the "applicationSystem" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentEventProfile.ApplicationSystem">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentEventProfile.CircuitSegmentEventFieldNumber">
+            <summary>Field number for the "circuitSegmentEvent" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentEventProfile.CircuitSegmentEvent">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusDCSC">
+            <summary>
+            OpenFMB specialization for coordination service control, DCSC (Distributed Coordination Service
+            Control), following 61850 naming convention.
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusDCSC.LogicalNodeFieldNumber">
+            <summary>Field number for the "logicalNode" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusDCSC.LogicalNode">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusDCSC.CircuitSegmentServiceModeFieldNumber">
+            <summary>Field number for the "CircuitSegmentServiceMode" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusDCSC.CircuitSegmentServiceMode">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusDCSC.IslandFieldNumber">
+            <summary>Field number for the "Island" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusDCSC.Island">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusDCSC.PermissibleAutoFieldNumber">
+            <summary>Field number for the "PermissibleAuto" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusDCSC.PermissibleAuto">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusDCSC.PermissibleManualFieldNumber">
+            <summary>Field number for the "PermissibleManual" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusDCSC.PermissibleManual">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusDCSC.PermissibleNetzeroFieldNumber">
+            <summary>Field number for the "PermissibleNetzero" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusDCSC.PermissibleNetzero">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusDCSC.PermissibleStartFieldNumber">
+            <summary>Field number for the "PermissibleStart" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusDCSC.PermissibleStart">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusDCSC.PermissibleStopFieldNumber">
+            <summary>Field number for the "PermissibleStop" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusDCSC.PermissibleStop">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.circuitsegmentservicemodule.CircuitSegmentStatus">
+            <summary>
+            Switch event
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentStatus.IdentifiedObjectFieldNumber">
+            <summary>Field number for the "identifiedObject" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentStatus.IdentifiedObject">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentStatus.CircuitSegmentStatusDCSCFieldNumber">
+            <summary>Field number for the "circuitSegmentStatusDCSC" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentStatus.CircuitSegmentStatusDCSC">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusProfile">
+            <summary>
+            Switch event profile
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusProfile.EventMessageInfoFieldNumber">
+            <summary>Field number for the "eventMessageInfo" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusProfile.EventMessageInfo">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusProfile.ApplicationSystemFieldNumber">
+            <summary>Field number for the "applicationSystem" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusProfile.ApplicationSystem">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusProfile.CircuitSegmentStatusFieldNumber">
+            <summary>Field number for the "circuitSegmentStatus" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusProfile.CircuitSegmentStatus">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
         <member name="T:openfmb.commonmodule.CommonmoduleReflection">
             <summary>Holder for reflection information generated from commonmodule/commonmodule.proto</summary>
         </member>
@@ -5022,404 +5420,6 @@
         </member>
         <member name="F:openfmb.commonmodule.Optional_VoltLimitModeKind.ValueFieldNumber">
             <summary>Field number for the "value" field.</summary>
-        </member>
-        <member name="T:openfmb.coordinationservicemodule.CoordinationservicemoduleReflection">
-            <summary>Holder for reflection information generated from coordinationservicemodule/coordinationservicemodule.proto</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationservicemoduleReflection.Descriptor">
-            <summary>File descriptor for coordinationservicemodule/coordinationservicemodule.proto</summary>
-        </member>
-        <member name="T:openfmb.coordinationservicemodule.CoordinationServiceModeKind">
-            <summary>
-            State kind
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationServiceModeKind.Undefined">
-            <summary>
-            Undefined
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationServiceModeKind.None">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationServiceModeKind.Auto">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationServiceModeKind.Manual">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationServiceModeKind.Netzero">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationServiceModeKind.Start">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationServiceModeKind.Stop">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.Optional_CoordinationServiceModeKind.ValueFieldNumber">
-            <summary>Field number for the "value" field.</summary>
-        </member>
-        <member name="T:openfmb.coordinationservicemodule.ENG_CoordinationServiceModeKind">
-            <summary>
-            Coordination service mode kind
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.ENG_CoordinationServiceModeKind.SetValFieldNumber">
-            <summary>Field number for the "setVal" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.ENG_CoordinationServiceModeKind.SetVal">
-            <summary>
-            The value of the coordination service mode.
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.ENG_CoordinationServiceModeKind.SetValExtensionFieldNumber">
-            <summary>Field number for the "setValExtension" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.ENG_CoordinationServiceModeKind.SetValExtension">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="T:openfmb.coordinationservicemodule.CoordinationControlDCSC">
-            <summary>
-            OpenFMB specialization for coordination service control, DCSC (Distributed Coordination Service
-            Control), following 61850 naming convention.
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationControlDCSC.LogicalNodeForControlFieldNumber">
-            <summary>Field number for the "logicalNodeForControl" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationControlDCSC.LogicalNodeForControl">
-            <summary>
-            UML inherited base object
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationControlDCSC.CoordinationServiceModeFieldNumber">
-            <summary>Field number for the "CoordinationServiceMode" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationControlDCSC.CoordinationServiceMode">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationControlDCSC.IslandFieldNumber">
-            <summary>Field number for the "Island" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationControlDCSC.Island">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="T:openfmb.coordinationservicemodule.CoordinationControl">
-            <summary>
-            Switch discrete control
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationControl.IdentifiedObjectFieldNumber">
-            <summary>Field number for the "identifiedObject" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationControl.IdentifiedObject">
-            <summary>
-            UML inherited base object
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationControl.CheckFieldNumber">
-            <summary>Field number for the "check" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationControl.Check">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationControl.CoordinationControlDCSCFieldNumber">
-            <summary>Field number for the "coordinationControlDCSC" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationControl.CoordinationControlDCSC">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="T:openfmb.coordinationservicemodule.CoordinationControlProfile">
-            <summary>
-            Switch control profile
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationControlProfile.ControlMessageInfoFieldNumber">
-            <summary>Field number for the "controlMessageInfo" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationControlProfile.ControlMessageInfo">
-            <summary>
-            UML inherited base object
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationControlProfile.ApplicationSystemFieldNumber">
-            <summary>Field number for the "applicationSystem" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationControlProfile.ApplicationSystem">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationControlProfile.CoordinationControlFieldNumber">
-            <summary>Field number for the "coordinationControl" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationControlProfile.CoordinationControl">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="T:openfmb.coordinationservicemodule.CoordinationEventDCSC">
-            <summary>
-            OpenFMB specialization for coordination service control, DCSC (Distributed Coordination Service
-            Control), following 61850 naming convention.
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationEventDCSC.LogicalNodeFieldNumber">
-            <summary>Field number for the "logicalNode" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationEventDCSC.LogicalNode">
-            <summary>
-            UML inherited base object
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationEventDCSC.CoordinationServiceModeFieldNumber">
-            <summary>Field number for the "CoordinationServiceMode" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationEventDCSC.CoordinationServiceMode">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationEventDCSC.IslandFieldNumber">
-            <summary>Field number for the "Island" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationEventDCSC.Island">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationEventDCSC.PermissibleAutoFieldNumber">
-            <summary>Field number for the "PermissibleAuto" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationEventDCSC.PermissibleAuto">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationEventDCSC.PermissibleManualFieldNumber">
-            <summary>Field number for the "PermissibleManual" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationEventDCSC.PermissibleManual">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationEventDCSC.PermissibleNetzeroFieldNumber">
-            <summary>Field number for the "PermissibleNetzero" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationEventDCSC.PermissibleNetzero">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationEventDCSC.PermissibleStartFieldNumber">
-            <summary>Field number for the "PermissibleStart" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationEventDCSC.PermissibleStart">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationEventDCSC.PermissibleStopFieldNumber">
-            <summary>Field number for the "PermissibleStop" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationEventDCSC.PermissibleStop">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="T:openfmb.coordinationservicemodule.CoordinationEvent">
-            <summary>
-            Switch event
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationEvent.IdentifiedObjectFieldNumber">
-            <summary>Field number for the "identifiedObject" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationEvent.IdentifiedObject">
-            <summary>
-            UML inherited base object
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationEvent.CoordinationEventDCSCFieldNumber">
-            <summary>Field number for the "coordinationEventDCSC" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationEvent.CoordinationEventDCSC">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="T:openfmb.coordinationservicemodule.CoordinationEventProfile">
-            <summary>
-            Switch event profile
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationEventProfile.EventMessageInfoFieldNumber">
-            <summary>Field number for the "eventMessageInfo" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationEventProfile.EventMessageInfo">
-            <summary>
-            UML inherited base object
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationEventProfile.ApplicationSystemFieldNumber">
-            <summary>Field number for the "applicationSystem" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationEventProfile.ApplicationSystem">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationEventProfile.CoordinationEventFieldNumber">
-            <summary>Field number for the "coordinationEvent" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationEventProfile.CoordinationEvent">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="T:openfmb.coordinationservicemodule.CoordinationStatusDCSC">
-            <summary>
-            OpenFMB specialization for coordination service control, DCSC (Distributed Coordination Service
-            Control), following 61850 naming convention.
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationStatusDCSC.LogicalNodeFieldNumber">
-            <summary>Field number for the "logicalNode" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationStatusDCSC.LogicalNode">
-            <summary>
-            UML inherited base object
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationStatusDCSC.CoordinationServiceModeFieldNumber">
-            <summary>Field number for the "CoordinationServiceMode" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationStatusDCSC.CoordinationServiceMode">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationStatusDCSC.IslandFieldNumber">
-            <summary>Field number for the "Island" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationStatusDCSC.Island">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationStatusDCSC.PermissibleAutoFieldNumber">
-            <summary>Field number for the "PermissibleAuto" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationStatusDCSC.PermissibleAuto">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationStatusDCSC.PermissibleManualFieldNumber">
-            <summary>Field number for the "PermissibleManual" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationStatusDCSC.PermissibleManual">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationStatusDCSC.PermissibleNetzeroFieldNumber">
-            <summary>Field number for the "PermissibleNetzero" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationStatusDCSC.PermissibleNetzero">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationStatusDCSC.PermissibleStartFieldNumber">
-            <summary>Field number for the "PermissibleStart" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationStatusDCSC.PermissibleStart">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationStatusDCSC.PermissibleStopFieldNumber">
-            <summary>Field number for the "PermissibleStop" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationStatusDCSC.PermissibleStop">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="T:openfmb.coordinationservicemodule.CoordinationStatus">
-            <summary>
-            Switch event
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationStatus.IdentifiedObjectFieldNumber">
-            <summary>Field number for the "identifiedObject" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationStatus.IdentifiedObject">
-            <summary>
-            UML inherited base object
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationStatus.CoordinationStatusDCSCFieldNumber">
-            <summary>Field number for the "coordinationStatusDCSC" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationStatus.CoordinationStatusDCSC">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="T:openfmb.coordinationservicemodule.CoordinationStatusProfile">
-            <summary>
-            Switch event profile
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationStatusProfile.EventMessageInfoFieldNumber">
-            <summary>Field number for the "eventMessageInfo" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationStatusProfile.EventMessageInfo">
-            <summary>
-            UML inherited base object
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationStatusProfile.ApplicationSystemFieldNumber">
-            <summary>Field number for the "applicationSystem" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationStatusProfile.ApplicationSystem">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationStatusProfile.CoordinationStatusFieldNumber">
-            <summary>Field number for the "coordinationStatus" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationStatusProfile.CoordinationStatus">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
         </member>
         <member name="T:openfmb.essmodule.EssmoduleReflection">
             <summary>Holder for reflection information generated from essmodule/essmodule.proto</summary>

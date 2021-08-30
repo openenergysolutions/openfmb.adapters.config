@@ -369,6 +369,7 @@ namespace OpenFMB.Adapters.Core.Models
         private string name = "service1";
         private string serverIp = "127.0.0.1";
         private int serverPort = 102;
+        private string serverFilePath = "server-model.csv";
 
         public IccpServerSpecificConfig()
         {
@@ -391,6 +392,10 @@ namespace OpenFMB.Adapters.Core.Models
         [Category("Basic"), DisplayName("Server TCP Port"), Description("The TCP port number.  Default port is 102")]
         [JsonProperty("server-port")]
         public int ServerPort { get => serverPort; set { serverPort = value; NotifyPropertyChanged(); } }
+
+        [Category("Basic"), DisplayName("Server Model File"), Description("Path to file described server's model")]
+        [JsonProperty("server-file-path")]
+        public string ServerFilePath { get => serverFilePath; set { serverFilePath = value; NotifyPropertyChanged(); } }
 
         // server specific
 
