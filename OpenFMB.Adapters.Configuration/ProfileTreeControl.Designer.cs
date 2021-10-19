@@ -43,6 +43,8 @@
             this.rightButton = new System.Windows.Forms.Button();
             this.navTreeView = new System.Windows.Forms.TreeView();
             this.navTreeContextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.copyMappedItemsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.expandToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.expandAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -57,6 +59,7 @@
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.viewErrorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.suggestedCorrectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.quickFixToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.resetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.viewSchemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -73,7 +76,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.deviceMridLabel = new System.Windows.Forms.Label();
             this.headerLabel = new System.Windows.Forms.Label();
-            this.quickFixToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -247,6 +249,7 @@
             // navTreeContextMenu
             // 
             this.navTreeContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripSeparator6,
             this.expandToolStripMenuItem,
             this.expandAllToolStripMenuItem,
             this.toolStripSeparator1,
@@ -256,6 +259,7 @@
             this.showAllMappedNodesToolStripMenuItem,
             this.showAllErrorNodesToolStripMenuItem,
             this.toolStripSeparator3,
+            this.copyMappedItemsToolStripMenuItem,
             this.copyPathToolStripMenuItem,
             this.copyToolStripMenuItem,
             this.toolStripSeparator4,
@@ -266,8 +270,20 @@
             this.toolStripSeparator5,
             this.viewSchemaToolStripMenuItem});
             this.navTreeContextMenu.Name = "navTreeContextMenu";
-            this.navTreeContextMenu.Size = new System.Drawing.Size(205, 342);
+            this.navTreeContextMenu.Size = new System.Drawing.Size(205, 370);
             this.navTreeContextMenu.Opening += new System.ComponentModel.CancelEventHandler(this.NavTreeContextMenu_Opening);
+            // 
+            // copyMappedItemsToolStripMenuItem
+            // 
+            this.copyMappedItemsToolStripMenuItem.Name = "copyMappedItemsToolStripMenuItem";
+            this.copyMappedItemsToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.copyMappedItemsToolStripMenuItem.Text = "Copy All Mapped Path";
+            this.copyMappedItemsToolStripMenuItem.Click += new System.EventHandler(this.CopyMappedItemsToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator6
+            // 
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            this.toolStripSeparator6.Size = new System.Drawing.Size(201, 6);
             // 
             // expandToolStripMenuItem
             // 
@@ -360,6 +376,13 @@
             this.suggestedCorrectionToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
             this.suggestedCorrectionToolStripMenuItem.Text = "Suggested Correction...";
             this.suggestedCorrectionToolStripMenuItem.Click += new System.EventHandler(this.SuggestedCorrectionToolStripMenuItem_Click);
+            // 
+            // quickFixToolStripMenuItem
+            // 
+            this.quickFixToolStripMenuItem.Name = "quickFixToolStripMenuItem";
+            this.quickFixToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.quickFixToolStripMenuItem.Text = "Quick Fix All Errors";
+            this.quickFixToolStripMenuItem.Click += new System.EventHandler(this.QuickFixToolStripMenuItem_Click);
             // 
             // resetToolStripMenuItem
             // 
@@ -514,13 +537,6 @@
             this.headerLabel.TabIndex = 0;
             this.headerLabel.Text = "SECTION HEADER";
             // 
-            // quickFixToolStripMenuItem
-            // 
-            this.quickFixToolStripMenuItem.Name = "quickFixToolStripMenuItem";
-            this.quickFixToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
-            this.quickFixToolStripMenuItem.Text = "Quick Fix All Errors";
-            this.quickFixToolStripMenuItem.Click += new System.EventHandler(this.QuickFixToolStripMenuItem_Click);
-            // 
             // ProfileTreeControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -591,5 +607,7 @@
         private System.Windows.Forms.ToolStripMenuItem viewErrorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem copyToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem quickFixToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem copyMappedItemsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
     }
 }

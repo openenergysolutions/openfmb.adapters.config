@@ -17,6 +17,7 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Text;
 using System.Windows.Forms;
 
 namespace OpenFMB.Adapters.Configuration
@@ -873,7 +874,7 @@ namespace OpenFMB.Adapters.Configuration
         {
             if (navTreeView.Nodes.Count > 0)
             {
-                var allNodes = (navTreeView.Nodes[0] as DataTreeNode).GetAllNodes();
+                var allNodes = (navTreeView.Nodes[0] as DataTreeNode).GetAllNodes();                
                 var mapped = allNodes.Where(x => x.Data.Value == "mapped").Count();
                 var errors = allNodes.Where(x => x.Data.IsValid == false).Count();
 
@@ -1369,6 +1370,26 @@ namespace OpenFMB.Adapters.Configuration
                 _logger.Log(Level.Debug, ex.Message, ex);
             }
                  
-        }        
+        }
+
+        private void CopyMappedItemsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (navTreeView.Nodes.Count > 0)
+            {
+                var allNodes = (navTreeView.Nodes[0] as DataTreeNode).GetAllNodes();
+                var mappedNode = allNodes.Where(x => x.Data.Value == "mapped").ToList();
+                StringBuilder sb = new StringBuilder();
+                foreach (var node in mappedNode)
+                {
+                    // Go up to parent
+                    var parent = node.Parent as DataTreeNode;
+                    if (parent != null)
+                    {
+                        sb.AppendLine(parent.FullPath);
+                    }
+                }
+                Clipboard.SetText(sb.ToString());
+            }
+        }
     }
 }
