@@ -271,6 +271,11 @@ namespace OpenFMB.Adapters.Core
                         plugins.MqttPlugin.Subscribes.Clear();
                         plugins.MqttPlugin.Publishes.Clear();
                     }
+                    else if (type == TransportPluginType.ZENOH)
+                    {
+                        plugins.ZenohPlugin.Subscribes.Clear();
+                        plugins.ZenohPlugin.Publishes.Clear();
+                    }
                 }
 
                 foreach (var plugin in plugins.Plugins)
@@ -305,6 +310,10 @@ namespace OpenFMB.Adapters.Core
                                     {
                                         UpdateTopics(session, p, plugins.MqttPlugin.Publishes, true);
                                     }
+                                    else if (type == TransportPluginType.ZENOH)
+                                    {
+                                        UpdateTopics(session, p, plugins.ZenohPlugin.Publishes, true);
+                                    }
                                 }
                                 else // if (ProfileRegistry.IsControlProfile(p.ProfileName))
                                 {
@@ -320,6 +329,10 @@ namespace OpenFMB.Adapters.Core
                                     else if (type == TransportPluginType.MQTT)
                                     {
                                         UpdateTopics(session, p, plugins.MqttPlugin.Subscribes, false);
+                                    }
+                                    else if (type == TransportPluginType.ZENOH)
+                                    {
+                                        UpdateTopics(session, p, plugins.ZenohPlugin.Subscribes, false);
                                     }
                                 }
                             }

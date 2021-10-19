@@ -116,6 +116,12 @@
     <Compile Include="CreateMappingTemplateStep1.Designer.cs">
       <DependentUpon>CreateMappingTemplateStep1.cs</DependentUpon>
     </Compile>
+    <Compile Include="ZenohPluginControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ZenohPluginControl.Designer.cs">
+      <DependentUpon>ZenohPluginControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="RecentFolderControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -516,6 +522,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CreateMappingTemplateStep1.resx">
       <DependentUpon>CreateMappingTemplateStep1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZenohPluginControl.resx">
+      <DependentUpon>ZenohPluginControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RecentFolderControl.resx">
       <DependentUpon>RecentFolderControl.cs</DependentUpon>

@@ -54,6 +54,7 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
     public enum TransportPluginType
     {
         NATS,
-        MQTT
+        MQTT,
+        ZENOH
     }
 }

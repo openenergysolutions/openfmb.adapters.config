@@ -22,6 +22,7 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
         public const string IccpServer = "iccp-server";
         public const string Mqtt = "mqtt";
         public const string Nats = "nats";
+        public const string Zenoh = "zenoh";
         public const string TimescaleDB = "timescaledb";
 
         public static readonly List<string> ClientPlugins = new List<string>() { Dnp3Master, ModbusMaster, IccpClient };
@@ -52,6 +53,8 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
 
         public MqttPlugin MqttPlugin { get; } = new MqttPlugin();
 
+        public ZenohPlugin ZenohPlugin { get; } = new ZenohPlugin();
+
         public TimescaleDBPlugin TimescaleDBPlugin { get; } = new TimescaleDBPlugin();
 
         public string Name => "plugins";
@@ -75,6 +78,7 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
             Plugins.Add(IccpServerPlugin);
             Plugins.Add(MqttPlugin);
             Plugins.Add(NatsPlugin);
+            Plugins.Add(ZenohPlugin);
             Plugins.Add(TimescaleDBPlugin);
         }
 
