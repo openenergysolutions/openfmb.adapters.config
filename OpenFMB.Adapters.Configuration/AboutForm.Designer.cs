@@ -33,8 +33,8 @@
             this.labelVersion = new System.Windows.Forms.Label();
             this.labelCopyright = new System.Windows.Forms.Label();
             this.labelOpenSource = new System.Windows.Forms.Label();
-            this.okButton = new System.Windows.Forms.Button();
             this.openSource = new System.Windows.Forms.RichTextBox();
+            this.okButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel.SuspendLayout();
@@ -119,16 +119,6 @@
             this.labelOpenSource.Text = "Open source components";
             this.labelOpenSource.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
-            // okButton
-            // 
-            this.okButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.okButton.Location = new System.Drawing.Point(384, 253);
-            this.okButton.Name = "okButton";
-            this.okButton.Size = new System.Drawing.Size(75, 22);
-            this.okButton.TabIndex = 24;
-            this.okButton.Text = "&OK";
-            // 
             // openSource
             // 
             this.openSource.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -139,6 +129,16 @@
             this.openSource.Size = new System.Drawing.Size(444, 105);
             this.openSource.TabIndex = 25;
             this.openSource.Text = "";
+            // 
+            // okButton
+            // 
+            this.okButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.okButton.Location = new System.Drawing.Point(384, 253);
+            this.okButton.Name = "okButton";
+            this.okButton.Size = new System.Drawing.Size(75, 22);
+            this.okButton.TabIndex = 24;
+            this.okButton.Text = "&OK";
             // 
             // panel1
             // 
@@ -154,7 +154,7 @@
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(0, 3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(140, 43);
+            this.pictureBox2.Size = new System.Drawing.Size(140, 39);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
