@@ -157,9 +157,9 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
                 case PluginsSection.ModbusOutstation:
                     config = new ModbusSessionConfiguration(plugin);
                     break;                
-                case PluginsSection.GoosePub:
-                case PluginsSection.GooseSub:
-                    config = new GooseSessionConfiguration(plugin);
+                case PluginsSection.IEC61850Client:
+                case PluginsSection.IEC61850Server:
+                    config = new IEC61850SessionConfiguration(plugin);
                     break;
                 case PluginsSection.IccpClient:
                 case PluginsSection.IccpServer:

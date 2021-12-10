@@ -221,6 +221,7 @@ namespace OpenFMB.Adapters.Configuration
                                 Session session = new Session(p.Name, filePath);
                                 session.FullPath = fullPath;
                                 p.Sessions.Add(session);
+                                p.Enabled = true;
 
                                 try
                                 {
@@ -258,6 +259,7 @@ namespace OpenFMB.Adapters.Configuration
                                 Session session = new Session(p.Name, filePath);
                                 session.FullPath = fullPath;
                                 p.Sessions.Add(session);
+                                p.Enabled = true;
 
                                 try
                                 {

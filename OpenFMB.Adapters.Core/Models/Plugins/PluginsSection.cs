@@ -16,8 +16,8 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
         public const string ModbusMaster = "modbus-master";
         public const string ModbusOutstation = "modbus-outstation";
         public const string Log = "log";
-        public const string GoosePub = "goose-pub";
-        public const string GooseSub = "goose-sub";
+        public const string IEC61850Client = "IEC61850-client";
+        public const string IEC61850Server = "IEC61850-server";
         public const string IccpClient = "iccp-client";
         public const string IccpServer = "iccp-server";
         public const string Mqtt = "mqtt";
@@ -41,9 +41,9 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
 
         //public LogPlugin LogPlugin { get; } = new LogPlugin();
 
-        public GoosePubPlugin GoosePubPlugin { get; } = new GoosePubPlugin();
+        public IEC61850ClientPlugin GoosePubPlugin { get; } = new IEC61850ClientPlugin();
 
-        public GooseSubPlugin GooseSubPlugin { get; } = new GooseSubPlugin();
+        public IEC61850ServerPlugin GooseSubPlugin { get; } = new IEC61850ServerPlugin();
 
         public IccpClientPlugin IccpClientPlugin { get; } = new IccpClientPlugin();
 
