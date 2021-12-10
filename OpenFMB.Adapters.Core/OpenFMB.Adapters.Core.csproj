@@ -21,15 +21,33 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Models\Schemas\config.json" />
-    <EmbeddedResource Include="Models\Schemas\dnp3-master.json" />
-    <EmbeddedResource Include="Models\Schemas\dnp3-outstation.json" />
-    <EmbeddedResource Include="Models\Schemas\iccp-client.json" />
-    <EmbeddedResource Include="Models\Schemas\iccp-server.json" />
-    <EmbeddedResource Include="Models\Schemas\IEC61850-client.json" />
-    <EmbeddedResource Include="Models\Schemas\IEC61850-server.json" />
-    <EmbeddedResource Include="Models\Schemas\modbus-master.json" />
-    <EmbeddedResource Include="Models\Schemas\modbus-outstation.json" />
+    <EmbeddedResource Include="Models\Schemas\v2_0\config.json">
+      <CustomToolNamespace></CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\Schemas\v2_0\dnp3-master.json">
+      <CustomToolNamespace></CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\Schemas\v2_0\dnp3-outstation.json">
+      <CustomToolNamespace></CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\Schemas\v2_0\iccp-client.json">
+      <CustomToolNamespace></CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\Schemas\v2_0\iccp-server.json">
+      <CustomToolNamespace></CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\Schemas\v2_0\IEC61850-client.json">
+      <CustomToolNamespace></CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\Schemas\v2_0\IEC61850-server.json">
+      <CustomToolNamespace></CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\Schemas\v2_0\modbus-master.json">
+      <CustomToolNamespace></CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\Schemas\v2_0\modbus-outstation.json">
+      <CustomToolNamespace></CustomToolNamespace>
+    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>

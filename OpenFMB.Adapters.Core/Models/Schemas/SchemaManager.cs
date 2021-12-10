@@ -58,7 +58,8 @@ namespace OpenFMB.Adapters.Core.Models.Schemas
 
                 foreach (var p in adapterConfig.Plugins.Plugins)
                 {
-                    var resourceName = $"{typeof(SchemaManager).Namespace}.{p.Name}.json";
+                    // version 2.0 -> v2_0
+                    var resourceName = $"{typeof(SchemaManager).Namespace}.v{Path.GetFileName(v).Replace('.', '_')}.{p.Name}.json";
 
                     var local = Path.Combine(v, $"{p.Name}.json");
 
