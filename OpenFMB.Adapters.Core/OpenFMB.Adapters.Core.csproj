@@ -18,6 +18,15 @@
     <None Remove="Models\Schemas\IEC61850-server.json" />
     <None Remove="Models\Schemas\modbus-master.json" />
     <None Remove="Models\Schemas\modbus-outstation.json" />
+    <None Remove="Models\Schemas\v2_1\config.json" />
+    <None Remove="Models\Schemas\v2_1\dnp3-master.json" />
+    <None Remove="Models\Schemas\v2_1\dnp3-outstation.json" />
+    <None Remove="Models\Schemas\v2_1\iccp-client.json" />
+    <None Remove="Models\Schemas\v2_1\iccp-server.json" />
+    <None Remove="Models\Schemas\v2_1\IEC61850-client.json" />
+    <None Remove="Models\Schemas\v2_1\IEC61850-server.json" />
+    <None Remove="Models\Schemas\v2_1\modbus-master.json" />
+    <None Remove="Models\Schemas\v2_1\modbus-outstation.json" />
   </ItemGroup>
 
   <ItemGroup>
@@ -48,6 +57,15 @@
     <EmbeddedResource Include="Models\Schemas\v2_0\modbus-outstation.json">
       <CustomToolNamespace></CustomToolNamespace>
     </EmbeddedResource>
+    <EmbeddedResource Include="Models\Schemas\v2_1\config.json" />
+    <EmbeddedResource Include="Models\Schemas\v2_1\dnp3-master.json" />
+    <EmbeddedResource Include="Models\Schemas\v2_1\dnp3-outstation.json" />
+    <EmbeddedResource Include="Models\Schemas\v2_1\iccp-client.json" />
+    <EmbeddedResource Include="Models\Schemas\v2_1\iccp-server.json" />
+    <EmbeddedResource Include="Models\Schemas\v2_1\IEC61850-client.json" />
+    <EmbeddedResource Include="Models\Schemas\v2_1\IEC61850-server.json" />
+    <EmbeddedResource Include="Models\Schemas\v2_1\modbus-master.json" />
+    <EmbeddedResource Include="Models\Schemas\v2_1\modbus-outstation.json" />
   </ItemGroup>
 
   <ItemGroup>

@@ -23,12 +23,12 @@ namespace OpenFMB.Adapters.Core.Models
                 {
                     if (PluginName == PluginsSection.IccpClient)
                     {
-                        _sessionSpecific = new IccpClientSpecificConfig();
+                        _sessionSpecific = new IccpClientSpecificConfig(Edition);
                         _sessionSpecific.PropertyChanged += OnPropertyChanged;
                     }
                     else
                     {
-                        _sessionSpecific = new IccpServerSpecificConfig();
+                        _sessionSpecific = new IccpServerSpecificConfig(Edition);
                         _sessionSpecific.PropertyChanged += OnPropertyChanged;
                     }
                 }
@@ -36,9 +36,10 @@ namespace OpenFMB.Adapters.Core.Models
             }
         }
 
-        public IccpSessionConfiguration(string pluginName)
+        public IccpSessionConfiguration(string pluginName, string edition)
         {
             PluginName = pluginName;
+            Edition = edition;
         }
 
         protected override void LoadSessionConfigurationFromJson(string json)
@@ -123,7 +124,7 @@ namespace OpenFMB.Adapters.Core.Models
         private int autoReconnectTries = 0;
         private int autoReconnectWaitTimeMs = 1000;
 
-        public IccpClientSpecificConfig()
+        public IccpClientSpecificConfig(string edition) : base(edition)
         {
             PlugIn = PluginsSection.IccpClient;
         }
@@ -371,7 +372,7 @@ namespace OpenFMB.Adapters.Core.Models
         private int serverPort = 102;
         private string serverFilePath = "server-model.csv";
 
-        public IccpServerSpecificConfig()
+        public IccpServerSpecificConfig(string edition) : base(edition)
         {
             PlugIn = PluginsSection.IccpServer;
         }

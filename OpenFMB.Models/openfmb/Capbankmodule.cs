@@ -158,19 +158,23 @@ namespace openfmb.capbankmodule {
     private static readonly pb::MessageParser<CapBankSystem> _parser = new pb::MessageParser<CapBankSystem>(() => new CapBankSystem());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<CapBankSystem> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::openfmb.capbankmodule.CapbankmoduleReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankSystem() {
       OnConstruction();
     }
@@ -178,12 +182,14 @@ namespace openfmb.capbankmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankSystem(CapBankSystem other) : this() {
       conductingEquipment_ = other.conductingEquipment_ != null ? other.conductingEquipment_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankSystem Clone() {
       return new CapBankSystem(this);
     }
@@ -195,6 +201,7 @@ namespace openfmb.capbankmodule {
     /// UML inherited base object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ConductingEquipment ConductingEquipment {
       get { return conductingEquipment_; }
       set {
@@ -203,11 +210,13 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as CapBankSystem);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(CapBankSystem other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -220,6 +229,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (conductingEquipment_ != null) hash ^= ConductingEquipment.GetHashCode();
@@ -230,11 +240,13 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -251,6 +263,7 @@ namespace openfmb.capbankmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (conductingEquipment_ != null) {
         output.WriteRawTag(10);
@@ -263,6 +276,7 @@ namespace openfmb.capbankmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (conductingEquipment_ != null) {
@@ -275,6 +289,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(CapBankSystem other) {
       if (other == null) {
         return;
@@ -289,6 +304,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -313,6 +329,7 @@ namespace openfmb.capbankmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -345,19 +362,23 @@ namespace openfmb.capbankmodule {
     private static readonly pb::MessageParser<CapBankControlYPSH> _parser = new pb::MessageParser<CapBankControlYPSH>(() => new CapBankControlYPSH());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<CapBankControlYPSH> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::openfmb.capbankmodule.CapbankmoduleReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankControlYPSH() {
       OnConstruction();
     }
@@ -365,6 +386,7 @@ namespace openfmb.capbankmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankControlYPSH(CapBankControlYPSH other) : this() {
       ampLmt_ = other.ampLmt_ != null ? other.ampLmt_.Clone() : null;
       ampThdHi_ = other.ampThdHi_ != null ? other.ampThdHi_.Clone() : null;
@@ -387,6 +409,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankControlYPSH Clone() {
       return new CapBankControlYPSH(this);
     }
@@ -398,6 +421,7 @@ namespace openfmb.capbankmodule {
     /// Current limit (boolean field)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.PhaseSPC AmpLmt {
       get { return ampLmt_; }
       set {
@@ -412,6 +436,7 @@ namespace openfmb.capbankmodule {
     /// High current  threshold
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.PhaseAPC AmpThdHi {
       get { return ampThdHi_; }
       set {
@@ -426,6 +451,7 @@ namespace openfmb.capbankmodule {
     /// Low current threshold
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.PhaseAPC AmpThdLo {
       get { return ampThdLo_; }
       set {
@@ -440,6 +466,7 @@ namespace openfmb.capbankmodule {
     /// Control mode auto
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ControlSPC CtlModeAuto {
       get { return ctlModeAuto_; }
       set {
@@ -454,6 +481,7 @@ namespace openfmb.capbankmodule {
     /// Control mode override
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ControlSPC CtlModeOvrRd {
       get { return ctlModeOvrRd_; }
       set {
@@ -468,6 +496,7 @@ namespace openfmb.capbankmodule {
     /// Control mode remote
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ControlSPC CtlModeRem {
       get { return ctlModeRem_; }
       set {
@@ -482,6 +511,7 @@ namespace openfmb.capbankmodule {
     /// The control characteristics for power flow operation
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.Optional_DirectionModeKind DirMode {
       get { return dirMode_; }
       set {
@@ -496,6 +526,7 @@ namespace openfmb.capbankmodule {
     /// (controllable) Position of the switch of power shunt.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.PhaseSPC Pos {
       get { return pos_; }
       set {
@@ -510,6 +541,7 @@ namespace openfmb.capbankmodule {
     /// Temperature limit (boolean field)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ControlSPC TempLmt {
       get { return tempLmt_; }
       set {
@@ -524,6 +556,7 @@ namespace openfmb.capbankmodule {
     /// High temperature threshold
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ControlAPC TempThdHi {
       get { return tempThdHi_; }
       set {
@@ -538,6 +571,7 @@ namespace openfmb.capbankmodule {
     /// Low temperature threshold
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ControlAPC TempThdLo {
       get { return tempThdLo_; }
       set {
@@ -552,6 +586,7 @@ namespace openfmb.capbankmodule {
     /// VAr limit (boolean field)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.PhaseSPC VArLmt {
       get { return vArLmt_; }
       set {
@@ -566,6 +601,7 @@ namespace openfmb.capbankmodule {
     /// High VAr threshold
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.PhaseAPC VArThdHi {
       get { return vArThdHi_; }
       set {
@@ -580,6 +616,7 @@ namespace openfmb.capbankmodule {
     /// Low VAr threshold
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.PhaseAPC VArThdLo {
       get { return vArThdLo_; }
       set {
@@ -594,6 +631,7 @@ namespace openfmb.capbankmodule {
     /// Voltage limit (boolean field)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.PhaseSPC VolLmt {
       get { return volLmt_; }
       set {
@@ -608,6 +646,7 @@ namespace openfmb.capbankmodule {
     /// High voltage threshold
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.PhaseAPC VolThdHi {
       get { return volThdHi_; }
       set {
@@ -622,6 +661,7 @@ namespace openfmb.capbankmodule {
     /// Low voltage threshold
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.PhaseAPC VolThdLo {
       get { return volThdLo_; }
       set {
@@ -630,11 +670,13 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as CapBankControlYPSH);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(CapBankControlYPSH other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -663,6 +705,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (ampLmt_ != null) hash ^= AmpLmt.GetHashCode();
@@ -689,11 +732,13 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -774,6 +819,7 @@ namespace openfmb.capbankmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (ampLmt_ != null) {
         output.WriteRawTag(10);
@@ -850,6 +896,7 @@ namespace openfmb.capbankmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (ampLmt_ != null) {
@@ -910,6 +957,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(CapBankControlYPSH other) {
       if (other == null) {
         return;
@@ -1020,6 +1068,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1156,6 +1205,7 @@ namespace openfmb.capbankmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -1300,19 +1350,23 @@ namespace openfmb.capbankmodule {
     private static readonly pb::MessageParser<CapBankPoint> _parser = new pb::MessageParser<CapBankPoint>(() => new CapBankPoint());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<CapBankPoint> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::openfmb.capbankmodule.CapbankmoduleReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankPoint() {
       OnConstruction();
     }
@@ -1320,6 +1374,7 @@ namespace openfmb.capbankmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankPoint(CapBankPoint other) : this() {
       control_ = other.control_ != null ? other.control_.Clone() : null;
       startTime_ = other.startTime_ != null ? other.startTime_.Clone() : null;
@@ -1327,6 +1382,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankPoint Clone() {
       return new CapBankPoint(this);
     }
@@ -1338,6 +1394,7 @@ namespace openfmb.capbankmodule {
     /// Regulator control
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.capbankmodule.CapBankControlYPSH Control {
       get { return control_; }
       set {
@@ -1352,6 +1409,7 @@ namespace openfmb.capbankmodule {
     /// Start time
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.Timestamp StartTime {
       get { return startTime_; }
       set {
@@ -1360,11 +1418,13 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as CapBankPoint);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(CapBankPoint other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1378,6 +1438,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (control_ != null) hash ^= Control.GetHashCode();
@@ -1389,11 +1450,13 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -1414,6 +1477,7 @@ namespace openfmb.capbankmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (control_ != null) {
         output.WriteRawTag(10);
@@ -1430,6 +1494,7 @@ namespace openfmb.capbankmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (control_ != null) {
@@ -1445,6 +1510,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(CapBankPoint other) {
       if (other == null) {
         return;
@@ -1465,6 +1531,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1496,6 +1563,7 @@ namespace openfmb.capbankmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -1535,19 +1603,23 @@ namespace openfmb.capbankmodule {
     private static readonly pb::MessageParser<CapBankCSG> _parser = new pb::MessageParser<CapBankCSG>(() => new CapBankCSG());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<CapBankCSG> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::openfmb.capbankmodule.CapbankmoduleReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankCSG() {
       OnConstruction();
     }
@@ -1555,12 +1627,14 @@ namespace openfmb.capbankmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankCSG(CapBankCSG other) : this() {
       crvPts_ = other.crvPts_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankCSG Clone() {
       return new CapBankCSG(this);
     }
@@ -1574,16 +1648,19 @@ namespace openfmb.capbankmodule {
     /// The array with the points specifying a curve shape.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::openfmb.capbankmodule.CapBankPoint> CrvPts {
       get { return crvPts_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as CapBankCSG);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(CapBankCSG other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1596,6 +1673,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= crvPts_.GetHashCode();
@@ -1606,11 +1684,13 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -1624,6 +1704,7 @@ namespace openfmb.capbankmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       crvPts_.WriteTo(ref output, _repeated_crvPts_codec);
       if (_unknownFields != null) {
@@ -1633,6 +1714,7 @@ namespace openfmb.capbankmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += crvPts_.CalculateSize(_repeated_crvPts_codec);
@@ -1643,6 +1725,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(CapBankCSG other) {
       if (other == null) {
         return;
@@ -1652,6 +1735,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1673,6 +1757,7 @@ namespace openfmb.capbankmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -1702,19 +1787,23 @@ namespace openfmb.capbankmodule {
     private static readonly pb::MessageParser<CapBankControlScheduleFSCH> _parser = new pb::MessageParser<CapBankControlScheduleFSCH>(() => new CapBankControlScheduleFSCH());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<CapBankControlScheduleFSCH> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::openfmb.capbankmodule.CapbankmoduleReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankControlScheduleFSCH() {
       OnConstruction();
     }
@@ -1722,12 +1811,14 @@ namespace openfmb.capbankmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankControlScheduleFSCH(CapBankControlScheduleFSCH other) : this() {
       valCSG_ = other.valCSG_ != null ? other.valCSG_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankControlScheduleFSCH Clone() {
       return new CapBankControlScheduleFSCH(this);
     }
@@ -1739,6 +1830,7 @@ namespace openfmb.capbankmodule {
     /// Control value in CSG type
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.capbankmodule.CapBankCSG ValCSG {
       get { return valCSG_; }
       set {
@@ -1747,11 +1839,13 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as CapBankControlScheduleFSCH);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(CapBankControlScheduleFSCH other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1764,6 +1858,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (valCSG_ != null) hash ^= ValCSG.GetHashCode();
@@ -1774,11 +1869,13 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -1795,6 +1892,7 @@ namespace openfmb.capbankmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (valCSG_ != null) {
         output.WriteRawTag(10);
@@ -1807,6 +1905,7 @@ namespace openfmb.capbankmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (valCSG_ != null) {
@@ -1819,6 +1918,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(CapBankControlScheduleFSCH other) {
       if (other == null) {
         return;
@@ -1833,6 +1933,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1857,6 +1958,7 @@ namespace openfmb.capbankmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -1889,19 +1991,23 @@ namespace openfmb.capbankmodule {
     private static readonly pb::MessageParser<CapBankControlFSCC> _parser = new pb::MessageParser<CapBankControlFSCC>(() => new CapBankControlFSCC());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<CapBankControlFSCC> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::openfmb.capbankmodule.CapbankmoduleReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankControlFSCC() {
       OnConstruction();
     }
@@ -1909,6 +2015,7 @@ namespace openfmb.capbankmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankControlFSCC(CapBankControlFSCC other) : this() {
       controlFSCC_ = other.controlFSCC_ != null ? other.controlFSCC_.Clone() : null;
       capBankControlScheduleFSCH_ = other.capBankControlScheduleFSCH_ != null ? other.capBankControlScheduleFSCH_.Clone() : null;
@@ -1916,6 +2023,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankControlFSCC Clone() {
       return new CapBankControlFSCC(this);
     }
@@ -1927,6 +2035,7 @@ namespace openfmb.capbankmodule {
     /// UML inherited base object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ControlFSCC ControlFSCC {
       get { return controlFSCC_; }
       set {
@@ -1941,6 +2050,7 @@ namespace openfmb.capbankmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.capbankmodule.CapBankControlScheduleFSCH CapBankControlScheduleFSCH {
       get { return capBankControlScheduleFSCH_; }
       set {
@@ -1949,11 +2059,13 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as CapBankControlFSCC);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(CapBankControlFSCC other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1967,6 +2079,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (controlFSCC_ != null) hash ^= ControlFSCC.GetHashCode();
@@ -1978,11 +2091,13 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -2003,6 +2118,7 @@ namespace openfmb.capbankmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (controlFSCC_ != null) {
         output.WriteRawTag(10);
@@ -2019,6 +2135,7 @@ namespace openfmb.capbankmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (controlFSCC_ != null) {
@@ -2034,6 +2151,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(CapBankControlFSCC other) {
       if (other == null) {
         return;
@@ -2054,6 +2172,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -2085,6 +2204,7 @@ namespace openfmb.capbankmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -2124,19 +2244,23 @@ namespace openfmb.capbankmodule {
     private static readonly pb::MessageParser<CapBankControl> _parser = new pb::MessageParser<CapBankControl>(() => new CapBankControl());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<CapBankControl> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::openfmb.capbankmodule.CapbankmoduleReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankControl() {
       OnConstruction();
     }
@@ -2144,6 +2268,7 @@ namespace openfmb.capbankmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankControl(CapBankControl other) : this() {
       controlValue_ = other.controlValue_ != null ? other.controlValue_.Clone() : null;
       check_ = other.check_ != null ? other.check_.Clone() : null;
@@ -2152,6 +2277,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankControl Clone() {
       return new CapBankControl(this);
     }
@@ -2163,6 +2289,7 @@ namespace openfmb.capbankmodule {
     /// UML inherited base object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ControlValue ControlValue {
       get { return controlValue_; }
       set {
@@ -2177,6 +2304,7 @@ namespace openfmb.capbankmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.CheckConditions Check {
       get { return check_; }
       set {
@@ -2191,6 +2319,7 @@ namespace openfmb.capbankmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.capbankmodule.CapBankControlFSCC CapBankControlFSCC {
       get { return capBankControlFSCC_; }
       set {
@@ -2199,11 +2328,13 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as CapBankControl);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(CapBankControl other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2218,6 +2349,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (controlValue_ != null) hash ^= ControlValue.GetHashCode();
@@ -2230,11 +2362,13 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -2259,6 +2393,7 @@ namespace openfmb.capbankmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (controlValue_ != null) {
         output.WriteRawTag(10);
@@ -2279,6 +2414,7 @@ namespace openfmb.capbankmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (controlValue_ != null) {
@@ -2297,6 +2433,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(CapBankControl other) {
       if (other == null) {
         return;
@@ -2323,6 +2460,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -2361,6 +2499,7 @@ namespace openfmb.capbankmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -2408,19 +2547,23 @@ namespace openfmb.capbankmodule {
     private static readonly pb::MessageParser<CapBankControlProfile> _parser = new pb::MessageParser<CapBankControlProfile>(() => new CapBankControlProfile());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<CapBankControlProfile> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::openfmb.capbankmodule.CapbankmoduleReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankControlProfile() {
       OnConstruction();
     }
@@ -2428,6 +2571,7 @@ namespace openfmb.capbankmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankControlProfile(CapBankControlProfile other) : this() {
       controlMessageInfo_ = other.controlMessageInfo_ != null ? other.controlMessageInfo_.Clone() : null;
       capBankControl_ = other.capBankControl_ != null ? other.capBankControl_.Clone() : null;
@@ -2436,6 +2580,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankControlProfile Clone() {
       return new CapBankControlProfile(this);
     }
@@ -2447,6 +2592,7 @@ namespace openfmb.capbankmodule {
     /// UML inherited base object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ControlMessageInfo ControlMessageInfo {
       get { return controlMessageInfo_; }
       set {
@@ -2461,6 +2607,7 @@ namespace openfmb.capbankmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.capbankmodule.CapBankControl CapBankControl {
       get { return capBankControl_; }
       set {
@@ -2475,6 +2622,7 @@ namespace openfmb.capbankmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.capbankmodule.CapBankSystem CapBankSystem {
       get { return capBankSystem_; }
       set {
@@ -2483,11 +2631,13 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as CapBankControlProfile);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(CapBankControlProfile other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2502,6 +2652,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (controlMessageInfo_ != null) hash ^= ControlMessageInfo.GetHashCode();
@@ -2514,11 +2665,13 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -2543,6 +2696,7 @@ namespace openfmb.capbankmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (controlMessageInfo_ != null) {
         output.WriteRawTag(10);
@@ -2563,6 +2717,7 @@ namespace openfmb.capbankmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (controlMessageInfo_ != null) {
@@ -2581,6 +2736,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(CapBankControlProfile other) {
       if (other == null) {
         return;
@@ -2607,6 +2763,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -2645,6 +2802,7 @@ namespace openfmb.capbankmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -2691,19 +2849,23 @@ namespace openfmb.capbankmodule {
     private static readonly pb::MessageParser<CapBankDiscreteControlYPSH> _parser = new pb::MessageParser<CapBankDiscreteControlYPSH>(() => new CapBankDiscreteControlYPSH());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<CapBankDiscreteControlYPSH> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::openfmb.capbankmodule.CapbankmoduleReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankDiscreteControlYPSH() {
       OnConstruction();
     }
@@ -2711,6 +2873,7 @@ namespace openfmb.capbankmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankDiscreteControlYPSH(CapBankDiscreteControlYPSH other) : this() {
       logicalNodeForControl_ = other.logicalNodeForControl_ != null ? other.logicalNodeForControl_.Clone() : null;
       control_ = other.control_ != null ? other.control_.Clone() : null;
@@ -2718,6 +2881,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankDiscreteControlYPSH Clone() {
       return new CapBankDiscreteControlYPSH(this);
     }
@@ -2729,6 +2893,7 @@ namespace openfmb.capbankmodule {
     /// UML inherited base object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.LogicalNodeForControl LogicalNodeForControl {
       get { return logicalNodeForControl_; }
       set {
@@ -2743,6 +2908,7 @@ namespace openfmb.capbankmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.capbankmodule.CapBankControlYPSH Control {
       get { return control_; }
       set {
@@ -2751,11 +2917,13 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as CapBankDiscreteControlYPSH);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(CapBankDiscreteControlYPSH other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2769,6 +2937,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (logicalNodeForControl_ != null) hash ^= LogicalNodeForControl.GetHashCode();
@@ -2780,11 +2949,13 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -2805,6 +2976,7 @@ namespace openfmb.capbankmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (logicalNodeForControl_ != null) {
         output.WriteRawTag(10);
@@ -2821,6 +2993,7 @@ namespace openfmb.capbankmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (logicalNodeForControl_ != null) {
@@ -2836,6 +3009,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(CapBankDiscreteControlYPSH other) {
       if (other == null) {
         return;
@@ -2856,6 +3030,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -2887,6 +3062,7 @@ namespace openfmb.capbankmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -2926,19 +3102,23 @@ namespace openfmb.capbankmodule {
     private static readonly pb::MessageParser<CapBankDiscreteControl> _parser = new pb::MessageParser<CapBankDiscreteControl>(() => new CapBankDiscreteControl());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<CapBankDiscreteControl> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::openfmb.capbankmodule.CapbankmoduleReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankDiscreteControl() {
       OnConstruction();
     }
@@ -2946,6 +3126,7 @@ namespace openfmb.capbankmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankDiscreteControl(CapBankDiscreteControl other) : this() {
       controlValue_ = other.controlValue_ != null ? other.controlValue_.Clone() : null;
       check_ = other.check_ != null ? other.check_.Clone() : null;
@@ -2954,6 +3135,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankDiscreteControl Clone() {
       return new CapBankDiscreteControl(this);
     }
@@ -2965,6 +3147,7 @@ namespace openfmb.capbankmodule {
     /// UML inherited base object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ControlValue ControlValue {
       get { return controlValue_; }
       set {
@@ -2979,6 +3162,7 @@ namespace openfmb.capbankmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.CheckConditions Check {
       get { return check_; }
       set {
@@ -2993,6 +3177,7 @@ namespace openfmb.capbankmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.capbankmodule.CapBankDiscreteControlYPSH CapBankDiscreteControlYPSH {
       get { return capBankDiscreteControlYPSH_; }
       set {
@@ -3001,11 +3186,13 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as CapBankDiscreteControl);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(CapBankDiscreteControl other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3020,6 +3207,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (controlValue_ != null) hash ^= ControlValue.GetHashCode();
@@ -3032,11 +3220,13 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -3061,6 +3251,7 @@ namespace openfmb.capbankmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (controlValue_ != null) {
         output.WriteRawTag(10);
@@ -3081,6 +3272,7 @@ namespace openfmb.capbankmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (controlValue_ != null) {
@@ -3099,6 +3291,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(CapBankDiscreteControl other) {
       if (other == null) {
         return;
@@ -3125,6 +3318,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -3163,6 +3357,7 @@ namespace openfmb.capbankmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -3210,19 +3405,23 @@ namespace openfmb.capbankmodule {
     private static readonly pb::MessageParser<CapBankDiscreteControlProfile> _parser = new pb::MessageParser<CapBankDiscreteControlProfile>(() => new CapBankDiscreteControlProfile());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<CapBankDiscreteControlProfile> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::openfmb.capbankmodule.CapbankmoduleReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankDiscreteControlProfile() {
       OnConstruction();
     }
@@ -3230,6 +3429,7 @@ namespace openfmb.capbankmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankDiscreteControlProfile(CapBankDiscreteControlProfile other) : this() {
       controlMessageInfo_ = other.controlMessageInfo_ != null ? other.controlMessageInfo_.Clone() : null;
       capBankControl_ = other.capBankControl_ != null ? other.capBankControl_.Clone() : null;
@@ -3238,6 +3438,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankDiscreteControlProfile Clone() {
       return new CapBankDiscreteControlProfile(this);
     }
@@ -3249,6 +3450,7 @@ namespace openfmb.capbankmodule {
     /// UML inherited base object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ControlMessageInfo ControlMessageInfo {
       get { return controlMessageInfo_; }
       set {
@@ -3263,6 +3465,7 @@ namespace openfmb.capbankmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.capbankmodule.CapBankDiscreteControl CapBankControl {
       get { return capBankControl_; }
       set {
@@ -3277,6 +3480,7 @@ namespace openfmb.capbankmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.capbankmodule.CapBankSystem CapBankSystem {
       get { return capBankSystem_; }
       set {
@@ -3285,11 +3489,13 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as CapBankDiscreteControlProfile);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(CapBankDiscreteControlProfile other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3304,6 +3510,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (controlMessageInfo_ != null) hash ^= ControlMessageInfo.GetHashCode();
@@ -3316,11 +3523,13 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -3345,6 +3554,7 @@ namespace openfmb.capbankmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (controlMessageInfo_ != null) {
         output.WriteRawTag(10);
@@ -3365,6 +3575,7 @@ namespace openfmb.capbankmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (controlMessageInfo_ != null) {
@@ -3383,6 +3594,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(CapBankDiscreteControlProfile other) {
       if (other == null) {
         return;
@@ -3409,6 +3621,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -3447,6 +3660,7 @@ namespace openfmb.capbankmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -3493,19 +3707,23 @@ namespace openfmb.capbankmodule {
     private static readonly pb::MessageParser<CapBankEventAndStatusYPSH> _parser = new pb::MessageParser<CapBankEventAndStatusYPSH>(() => new CapBankEventAndStatusYPSH());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<CapBankEventAndStatusYPSH> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::openfmb.capbankmodule.CapbankmoduleReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankEventAndStatusYPSH() {
       OnConstruction();
     }
@@ -3513,6 +3731,7 @@ namespace openfmb.capbankmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankEventAndStatusYPSH(CapBankEventAndStatusYPSH other) : this() {
       logicalNodeForEventAndStatus_ = other.logicalNodeForEventAndStatus_ != null ? other.logicalNodeForEventAndStatus_.Clone() : null;
       ampLmt_ = other.ampLmt_ != null ? other.ampLmt_.Clone() : null;
@@ -3527,6 +3746,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankEventAndStatusYPSH Clone() {
       return new CapBankEventAndStatusYPSH(this);
     }
@@ -3538,6 +3758,7 @@ namespace openfmb.capbankmodule {
     /// UML inherited base object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.LogicalNodeForEventAndStatus LogicalNodeForEventAndStatus {
       get { return logicalNodeForEventAndStatus_; }
       set {
@@ -3552,6 +3773,7 @@ namespace openfmb.capbankmodule {
     /// True if current limit (high, low, or both) are set
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.PhaseSPS AmpLmt {
       get { return ampLmt_; }
       set {
@@ -3566,6 +3788,7 @@ namespace openfmb.capbankmodule {
     /// Control mode
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.Optional_ControlModeKind CtlMode {
       get { return ctlMode_; }
       set {
@@ -3580,6 +3803,7 @@ namespace openfmb.capbankmodule {
     /// True if power flow is reversed
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.PhaseSPS DirRev {
       get { return dirRev_; }
       set {
@@ -3594,6 +3818,7 @@ namespace openfmb.capbankmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ENS_DynamicTestKind DynamicTest {
       get { return dynamicTest_; }
       set {
@@ -3608,6 +3833,7 @@ namespace openfmb.capbankmodule {
     /// (controllable) Position of the switch of power shunt.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.PhaseDPS Pos {
       get { return pos_; }
       set {
@@ -3622,6 +3848,7 @@ namespace openfmb.capbankmodule {
     /// True if temperature limit (high, low, or both) are set
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.PhaseSPS TempLmt {
       get { return tempLmt_; }
       set {
@@ -3636,6 +3863,7 @@ namespace openfmb.capbankmodule {
     /// True if VAr limit (high, low, or both) are set
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.PhaseSPS VArLmt {
       get { return vArLmt_; }
       set {
@@ -3650,6 +3878,7 @@ namespace openfmb.capbankmodule {
     /// True if voltage limit (high, low, or both) are set
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.PhaseSPS VolLmt {
       get { return volLmt_; }
       set {
@@ -3658,11 +3887,13 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as CapBankEventAndStatusYPSH);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(CapBankEventAndStatusYPSH other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3683,6 +3914,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (logicalNodeForEventAndStatus_ != null) hash ^= LogicalNodeForEventAndStatus.GetHashCode();
@@ -3701,11 +3933,13 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -3754,6 +3988,7 @@ namespace openfmb.capbankmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (logicalNodeForEventAndStatus_ != null) {
         output.WriteRawTag(10);
@@ -3798,6 +4033,7 @@ namespace openfmb.capbankmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (logicalNodeForEventAndStatus_ != null) {
@@ -3834,6 +4070,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(CapBankEventAndStatusYPSH other) {
       if (other == null) {
         return;
@@ -3896,6 +4133,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -3976,6 +4214,7 @@ namespace openfmb.capbankmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -4064,19 +4303,23 @@ namespace openfmb.capbankmodule {
     private static readonly pb::MessageParser<CapBankEvent> _parser = new pb::MessageParser<CapBankEvent>(() => new CapBankEvent());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<CapBankEvent> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::openfmb.capbankmodule.CapbankmoduleReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankEvent() {
       OnConstruction();
     }
@@ -4084,6 +4327,7 @@ namespace openfmb.capbankmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankEvent(CapBankEvent other) : this() {
       eventValue_ = other.eventValue_ != null ? other.eventValue_.Clone() : null;
       capBankEventAndStatusYPSH_ = other.capBankEventAndStatusYPSH_ != null ? other.capBankEventAndStatusYPSH_.Clone() : null;
@@ -4091,6 +4335,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankEvent Clone() {
       return new CapBankEvent(this);
     }
@@ -4102,6 +4347,7 @@ namespace openfmb.capbankmodule {
     /// UML inherited base object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.EventValue EventValue {
       get { return eventValue_; }
       set {
@@ -4116,6 +4362,7 @@ namespace openfmb.capbankmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.capbankmodule.CapBankEventAndStatusYPSH CapBankEventAndStatusYPSH {
       get { return capBankEventAndStatusYPSH_; }
       set {
@@ -4124,11 +4371,13 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as CapBankEvent);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(CapBankEvent other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -4142,6 +4391,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (eventValue_ != null) hash ^= EventValue.GetHashCode();
@@ -4153,11 +4403,13 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -4178,6 +4430,7 @@ namespace openfmb.capbankmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (eventValue_ != null) {
         output.WriteRawTag(10);
@@ -4194,6 +4447,7 @@ namespace openfmb.capbankmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (eventValue_ != null) {
@@ -4209,6 +4463,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(CapBankEvent other) {
       if (other == null) {
         return;
@@ -4229,6 +4484,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -4260,6 +4516,7 @@ namespace openfmb.capbankmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -4299,19 +4556,23 @@ namespace openfmb.capbankmodule {
     private static readonly pb::MessageParser<CapBankEventProfile> _parser = new pb::MessageParser<CapBankEventProfile>(() => new CapBankEventProfile());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<CapBankEventProfile> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::openfmb.capbankmodule.CapbankmoduleReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankEventProfile() {
       OnConstruction();
     }
@@ -4319,6 +4580,7 @@ namespace openfmb.capbankmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankEventProfile(CapBankEventProfile other) : this() {
       eventMessageInfo_ = other.eventMessageInfo_ != null ? other.eventMessageInfo_.Clone() : null;
       capBankEvent_ = other.capBankEvent_ != null ? other.capBankEvent_.Clone() : null;
@@ -4327,6 +4589,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankEventProfile Clone() {
       return new CapBankEventProfile(this);
     }
@@ -4338,6 +4601,7 @@ namespace openfmb.capbankmodule {
     /// UML inherited base object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.EventMessageInfo EventMessageInfo {
       get { return eventMessageInfo_; }
       set {
@@ -4352,6 +4616,7 @@ namespace openfmb.capbankmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.capbankmodule.CapBankEvent CapBankEvent {
       get { return capBankEvent_; }
       set {
@@ -4366,6 +4631,7 @@ namespace openfmb.capbankmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.capbankmodule.CapBankSystem CapBankSystem {
       get { return capBankSystem_; }
       set {
@@ -4374,11 +4640,13 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as CapBankEventProfile);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(CapBankEventProfile other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -4393,6 +4661,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (eventMessageInfo_ != null) hash ^= EventMessageInfo.GetHashCode();
@@ -4405,11 +4674,13 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -4434,6 +4705,7 @@ namespace openfmb.capbankmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (eventMessageInfo_ != null) {
         output.WriteRawTag(10);
@@ -4454,6 +4726,7 @@ namespace openfmb.capbankmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (eventMessageInfo_ != null) {
@@ -4472,6 +4745,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(CapBankEventProfile other) {
       if (other == null) {
         return;
@@ -4498,6 +4772,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -4536,6 +4811,7 @@ namespace openfmb.capbankmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -4582,19 +4858,23 @@ namespace openfmb.capbankmodule {
     private static readonly pb::MessageParser<CapBankReading> _parser = new pb::MessageParser<CapBankReading>(() => new CapBankReading());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<CapBankReading> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::openfmb.capbankmodule.CapbankmoduleReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankReading() {
       OnConstruction();
     }
@@ -4602,6 +4882,7 @@ namespace openfmb.capbankmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankReading(CapBankReading other) : this() {
       conductingEquipmentTerminalReading_ = other.conductingEquipmentTerminalReading_ != null ? other.conductingEquipmentTerminalReading_.Clone() : null;
       phaseMMTN_ = other.phaseMMTN_ != null ? other.phaseMMTN_.Clone() : null;
@@ -4612,6 +4893,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankReading Clone() {
       return new CapBankReading(this);
     }
@@ -4623,6 +4905,7 @@ namespace openfmb.capbankmodule {
     /// UML inherited base object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ConductingEquipmentTerminalReading ConductingEquipmentTerminalReading {
       get { return conductingEquipmentTerminalReading_; }
       set {
@@ -4637,6 +4920,7 @@ namespace openfmb.capbankmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.PhaseMMTN PhaseMMTN {
       get { return phaseMMTN_; }
       set {
@@ -4651,6 +4935,7 @@ namespace openfmb.capbankmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ReadingMMTR ReadingMMTR {
       get { return readingMMTR_; }
       set {
@@ -4665,6 +4950,7 @@ namespace openfmb.capbankmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ReadingMMXU ReadingMMXU {
       get { return readingMMXU_; }
       set {
@@ -4679,6 +4965,7 @@ namespace openfmb.capbankmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ReadingMMXU SecondaryReadingMMXU {
       get { return secondaryReadingMMXU_; }
       set {
@@ -4687,11 +4974,13 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as CapBankReading);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(CapBankReading other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -4708,6 +4997,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (conductingEquipmentTerminalReading_ != null) hash ^= ConductingEquipmentTerminalReading.GetHashCode();
@@ -4722,11 +5012,13 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -4759,6 +5051,7 @@ namespace openfmb.capbankmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (conductingEquipmentTerminalReading_ != null) {
         output.WriteRawTag(10);
@@ -4787,6 +5080,7 @@ namespace openfmb.capbankmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (conductingEquipmentTerminalReading_ != null) {
@@ -4811,6 +5105,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(CapBankReading other) {
       if (other == null) {
         return;
@@ -4849,6 +5144,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -4901,6 +5197,7 @@ namespace openfmb.capbankmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -4961,19 +5258,23 @@ namespace openfmb.capbankmodule {
     private static readonly pb::MessageParser<CapBankReadingProfile> _parser = new pb::MessageParser<CapBankReadingProfile>(() => new CapBankReadingProfile());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<CapBankReadingProfile> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::openfmb.capbankmodule.CapbankmoduleReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankReadingProfile() {
       OnConstruction();
     }
@@ -4981,6 +5282,7 @@ namespace openfmb.capbankmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankReadingProfile(CapBankReadingProfile other) : this() {
       readingMessageInfo_ = other.readingMessageInfo_ != null ? other.readingMessageInfo_.Clone() : null;
       capBankReading_ = other.capBankReading_ != null ? other.capBankReading_.Clone() : null;
@@ -4989,6 +5291,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankReadingProfile Clone() {
       return new CapBankReadingProfile(this);
     }
@@ -5000,6 +5303,7 @@ namespace openfmb.capbankmodule {
     /// UML inherited base object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ReadingMessageInfo ReadingMessageInfo {
       get { return readingMessageInfo_; }
       set {
@@ -5014,6 +5318,7 @@ namespace openfmb.capbankmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.capbankmodule.CapBankReading CapBankReading {
       get { return capBankReading_; }
       set {
@@ -5028,6 +5333,7 @@ namespace openfmb.capbankmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.capbankmodule.CapBankSystem CapBankSystem {
       get { return capBankSystem_; }
       set {
@@ -5036,11 +5342,13 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as CapBankReadingProfile);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(CapBankReadingProfile other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -5055,6 +5363,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (readingMessageInfo_ != null) hash ^= ReadingMessageInfo.GetHashCode();
@@ -5067,11 +5376,13 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -5096,6 +5407,7 @@ namespace openfmb.capbankmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (readingMessageInfo_ != null) {
         output.WriteRawTag(10);
@@ -5116,6 +5428,7 @@ namespace openfmb.capbankmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (readingMessageInfo_ != null) {
@@ -5134,6 +5447,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(CapBankReadingProfile other) {
       if (other == null) {
         return;
@@ -5160,6 +5474,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -5198,6 +5513,7 @@ namespace openfmb.capbankmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -5244,19 +5560,23 @@ namespace openfmb.capbankmodule {
     private static readonly pb::MessageParser<CapBankStatus> _parser = new pb::MessageParser<CapBankStatus>(() => new CapBankStatus());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<CapBankStatus> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::openfmb.capbankmodule.CapbankmoduleReflection.Descriptor.MessageTypes[16]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankStatus() {
       OnConstruction();
     }
@@ -5264,6 +5584,7 @@ namespace openfmb.capbankmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankStatus(CapBankStatus other) : this() {
       statusValue_ = other.statusValue_ != null ? other.statusValue_.Clone() : null;
       capBankEventAndStatusYPSH_ = other.capBankEventAndStatusYPSH_ != null ? other.capBankEventAndStatusYPSH_.Clone() : null;
@@ -5271,6 +5592,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankStatus Clone() {
       return new CapBankStatus(this);
     }
@@ -5282,6 +5604,7 @@ namespace openfmb.capbankmodule {
     /// UML inherited base object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.StatusValue StatusValue {
       get { return statusValue_; }
       set {
@@ -5296,6 +5619,7 @@ namespace openfmb.capbankmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.capbankmodule.CapBankEventAndStatusYPSH CapBankEventAndStatusYPSH {
       get { return capBankEventAndStatusYPSH_; }
       set {
@@ -5304,11 +5628,13 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as CapBankStatus);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(CapBankStatus other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -5322,6 +5648,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (statusValue_ != null) hash ^= StatusValue.GetHashCode();
@@ -5333,11 +5660,13 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -5358,6 +5687,7 @@ namespace openfmb.capbankmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (statusValue_ != null) {
         output.WriteRawTag(10);
@@ -5374,6 +5704,7 @@ namespace openfmb.capbankmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (statusValue_ != null) {
@@ -5389,6 +5720,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(CapBankStatus other) {
       if (other == null) {
         return;
@@ -5409,6 +5741,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -5440,6 +5773,7 @@ namespace openfmb.capbankmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -5479,19 +5813,23 @@ namespace openfmb.capbankmodule {
     private static readonly pb::MessageParser<CapBankStatusProfile> _parser = new pb::MessageParser<CapBankStatusProfile>(() => new CapBankStatusProfile());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<CapBankStatusProfile> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::openfmb.capbankmodule.CapbankmoduleReflection.Descriptor.MessageTypes[17]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankStatusProfile() {
       OnConstruction();
     }
@@ -5499,6 +5837,7 @@ namespace openfmb.capbankmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankStatusProfile(CapBankStatusProfile other) : this() {
       statusMessageInfo_ = other.statusMessageInfo_ != null ? other.statusMessageInfo_.Clone() : null;
       capBankStatus_ = other.capBankStatus_ != null ? other.capBankStatus_.Clone() : null;
@@ -5507,6 +5846,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CapBankStatusProfile Clone() {
       return new CapBankStatusProfile(this);
     }
@@ -5518,6 +5858,7 @@ namespace openfmb.capbankmodule {
     /// UML inherited base object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.StatusMessageInfo StatusMessageInfo {
       get { return statusMessageInfo_; }
       set {
@@ -5532,6 +5873,7 @@ namespace openfmb.capbankmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.capbankmodule.CapBankStatus CapBankStatus {
       get { return capBankStatus_; }
       set {
@@ -5546,6 +5888,7 @@ namespace openfmb.capbankmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.capbankmodule.CapBankSystem CapBankSystem {
       get { return capBankSystem_; }
       set {
@@ -5554,11 +5897,13 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as CapBankStatusProfile);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(CapBankStatusProfile other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -5573,6 +5918,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (statusMessageInfo_ != null) hash ^= StatusMessageInfo.GetHashCode();
@@ -5585,11 +5931,13 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -5614,6 +5962,7 @@ namespace openfmb.capbankmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (statusMessageInfo_ != null) {
         output.WriteRawTag(10);
@@ -5634,6 +5983,7 @@ namespace openfmb.capbankmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (statusMessageInfo_ != null) {
@@ -5652,6 +6002,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(CapBankStatusProfile other) {
       if (other == null) {
         return;
@@ -5678,6 +6029,7 @@ namespace openfmb.capbankmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -5716,6 +6068,7 @@ namespace openfmb.capbankmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {

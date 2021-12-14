@@ -61,7 +61,7 @@ namespace OpenFMB.Adapters.Core
 
             node.Add("id", ConfigFileTypeString.ToString(Id));
 
-            var edition = string.IsNullOrWhiteSpace(Edition) ? SchemaManager.DefaultVersion : Edition;
+            var edition = string.IsNullOrWhiteSpace(Edition) ? SchemaManager.DefaultEdition : Edition;
             var version = string.IsNullOrWhiteSpace(Version) ? ConfigurationManager.Version : Version;
 
             node.Add("edition", edition);

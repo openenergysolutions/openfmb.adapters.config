@@ -34,7 +34,9 @@ namespace OpenFMB.Adapters.Core
                         || t.Name.EndsWith("ControlProfile")
                         || t.Name.EndsWith("ScheduleProfile")
                         || t.Name.EndsWith("AvailabilityProfile")
-                        || t.Name.EndsWith("RequestProfile"))
+                        || t.Name.EndsWith("RequestProfile")
+                        || t.Name.EndsWith("CapabilityProfile")
+                        || t.Name.EndsWith("CapabilityOverrideProfile"))
                     {
                         var prop = t.GetProperty("Descriptor");
                         if (prop != null)

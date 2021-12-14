@@ -74,7 +74,18 @@ namespace OpenFMB.Adapters.Configuration
                 splitContainer1.Panel1.Controls.Clear();
 
                 if (_session.IsStandAlone)
-                {                   
+                {
+                    // session general settings (session name, path)
+                    SessionSettingsItemControl sessionNode = new SessionSettingsItemControl("File Information")
+                    {
+                        Tag = new { Version = _session.Edition },
+                        Dock = DockStyle.Top,
+                        Editable = false
+                    };
+                    sessionNode.OnEditRequested += SessionNode_OnEditRequested;
+                    sessionNode.OnSelected += SessionNode_OnSelected;
+                    splitContainer1.Panel1.Controls.Add(sessionNode);
+
                     // protocol session specific settings
                     SessionSettingsItemControl settingsNode = new SessionSettingsItemControl("Network and Protocol Settings")
                     {
@@ -93,7 +104,7 @@ namespace OpenFMB.Adapters.Configuration
                 else
                 {
                     // session general settings (session name, path)
-                    SessionSettingsItemControl sessionNode = new SessionSettingsItemControl("Session Name and File Path")
+                    SessionSettingsItemControl sessionNode = new SessionSettingsItemControl("Session Name and File Information")
                     {
                         Tag = _session,
                         Dock = DockStyle.Top,

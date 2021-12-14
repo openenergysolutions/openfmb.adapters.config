@@ -103,15 +103,21 @@ namespace OpenFMB.Adapters.Configuration
         public List<string> GetTagsByProfileName(string profileName)
         {
             var model = Model.ProfileModels.FirstOrDefault(x => x.Name == profileName);
-
-            return model.Topics.Select(x => x.Attributes.Name).ToList();
+            if (model != null)
+            {
+                return model.Topics.Select(x => x.Attributes.Name).ToList();
+            }
+            return new List<string>();
         }
 
         public List<string> GetLabelsByProfileName(string profileName)
         {
             var model = Model.ProfileModels.FirstOrDefault(x => x.Name == profileName);
-
-            return model.Topics.Select(x => x.Attributes.Label).ToList();
+            if (model != null)
+            {
+                return model.Topics.Select(x => x.Attributes.Label).ToList();
+            }
+            return new List<string>();
         }
     }
 }

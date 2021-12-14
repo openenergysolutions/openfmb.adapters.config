@@ -116,7 +116,7 @@ namespace OpenFMB.Adapters.Configuration
 
                     var option = new PluginOptions();
 
-                    if (p.Name.StartsWith("goose"))
+                    if (p.Name.StartsWith("IEC61850"))
                     {
                         option.ModeSelectionEnabled = false;
                     }
@@ -218,7 +218,7 @@ namespace OpenFMB.Adapters.Configuration
                                
                                 var fullPath = Path.Combine(folder, filePath);
 
-                                Session session = new Session(p.Name, filePath);
+                                Session session = new Session(p.Name, filePath, null);
                                 session.FullPath = fullPath;
                                 p.Sessions.Add(session);
                                 p.Enabled = true;
@@ -256,7 +256,7 @@ namespace OpenFMB.Adapters.Configuration
                                 // local path of the session file: base + relative path
                                 var fullPath = Path.Combine(folder, filePath);
 
-                                Session session = new Session(p.Name, filePath);
+                                Session session = new Session(p.Name, filePath, option.Edition);
                                 session.FullPath = fullPath;
                                 p.Sessions.Add(session);
                                 p.Enabled = true;
@@ -265,7 +265,7 @@ namespace OpenFMB.Adapters.Configuration
                                 {
                                     foreach (var selected in option.SelectedProfiles)
                                     {
-                                        Profile profile = Profile.Create(selected, p.Name);
+                                        Profile profile = Profile.Create(selected, p.Name, pluginOptionControl.SelectedVersion);
                                         session.SessionConfiguration.AddProfile(profile);
                                     }
                                 }
@@ -316,7 +316,7 @@ namespace OpenFMB.Adapters.Configuration
     public class PluginOptions
     {
         public bool ModeSelectionEnabled { get; set; } = true;
-
+        public string Edition { get; set; }
         public ProfileCreateMode Mode { get; set; }
         public List<string> SelectedProfiles { get; } = new List<string>();
         public string LoadFromFile { get; set; }

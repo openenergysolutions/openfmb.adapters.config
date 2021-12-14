@@ -11,13 +11,13 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Threading.Tasks;
 using System.Xml.Linq;
 
 namespace OpenFMB.Adapters.Core.Models.Schemas
 {
     public static class SchemaManager
-    {
-        private static readonly string AppName = "OpenFMB Adapter Configuration";
+    {        
         private static readonly string SchemaDirectory = "schemas";
         private static string DefaultSchemaDirectory;
 
@@ -27,9 +27,10 @@ namespace OpenFMB.Adapters.Core.Models.Schemas
 
         private static readonly Dictionary<string, string> _resources = new Dictionary<string, string>();
 
-        public static string DefaultVersion { get; private set; } = "2.0";
+        public static string DefaultEdition { get; set; } = "2.0";
+        public static string[] SupportEditions { get; } = new string[] { "2.0", "2.1" };
 
-        public static void Init(string version = null)
+        public static void Init(string defaultEdition)
         {
             _logger.Log(Level.Info, "Initialize schema manager...");
             var appDataDir = FileHelper.GetAppDataFolder();
@@ -38,23 +39,21 @@ namespace OpenFMB.Adapters.Core.Models.Schemas
 
             DefaultSchemaDirectory = Path.Combine(appDataDir, SchemaDirectory);
 
-            if (!string.IsNullOrWhiteSpace(version))
+            if (!string.IsNullOrWhiteSpace(defaultEdition))
             {
-                DefaultVersion = version;
-            }
-
-            Directory.CreateDirectory(Path.Combine(DefaultSchemaDirectory, DefaultVersion));
-
-            var versions = Directory.GetDirectories(DefaultSchemaDirectory);
+                DefaultEdition = defaultEdition;
+            }            
 
             var assembly = Assembly.GetAssembly(typeof(SchemaManager));
             var adapterConfig = new AdapterConfiguration();
-
-            foreach(var v in versions)
+                        
+            Parallel.ForEach(SupportEditions, ver =>
             {
+                Directory.CreateDirectory(Path.Combine(DefaultSchemaDirectory, ver));
+                var v = Path.Combine(DefaultSchemaDirectory, ver);
                 Schema sm = new Schema(v);
 
-                _schema[sm.Version] = sm;
+                _schema[sm.Edition] = sm;
 
                 foreach (var p in adapterConfig.Plugins.Plugins)
                 {
@@ -67,26 +66,22 @@ namespace OpenFMB.Adapters.Core.Models.Schemas
                     {
                         if (!File.Exists(local))
                         {
-                            if (sm.Version.Equals(DefaultVersion, StringComparison.InvariantCultureIgnoreCase))
+                            using (Stream stream = assembly.GetManifestResourceStream(resourceName))
                             {
-                                using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+                                if (stream != null)
                                 {
-                                    if (stream != null)
-                                    {                                        
-                                        using (StreamReader reader = new StreamReader(stream))
-                                        {
-                                            var template = reader.ReadToEnd();
-                                            File.WriteAllText(local, template);
-                                        }
+                                    using (StreamReader reader = new StreamReader(stream))
+                                    {
+                                        var template = reader.ReadToEnd();
+                                        File.WriteAllText(local, template);
                                     }
                                 }
                             }
-                            
                         }
 
                         if (File.Exists(local))
                         {
-                            _logger.Log(Level.Info, $"Loading schema for {p.Name}");
+                            _logger.Log(Level.Info, $"Loading schema for {p.Name} (v{ver})");
 
                             using (StreamReader reader = new StreamReader(local))
                             {
@@ -103,50 +98,50 @@ namespace OpenFMB.Adapters.Core.Models.Schemas
                         _logger.Log(Level.Error, ex.Message, ex);
                     }
                 }
-            }
+            });
 
             ParseOpenFMBDocument("OpenFMB.Models.xml");
         }
 
-        public static JSchema GetSchemaForPlugin(string pluginName, string version = null)
+        public static JSchema GetSchemaForPlugin(string pluginName, string edition)
         {
             Schema schema;
-            if (string.IsNullOrWhiteSpace(version))
+            if (string.IsNullOrWhiteSpace(edition))
             {
-                version = DefaultVersion;
+                edition = DefaultEdition;
             }
 
-            if (_schema.TryGetValue(version, out schema))
+            if (_schema.TryGetValue(edition, out schema))
             {
                 return schema.GetSchemaForPlugin(pluginName);
             }
             return null;
         }
 
-        public static JSchema GetSchemaForProfile(string pluginName, string profileName, string version = null)
+        public static JSchema GetSchemaForProfile(string pluginName, string profileName, string edition)
         {
             Schema schema;
-            if (string.IsNullOrWhiteSpace(version))
+            if (string.IsNullOrWhiteSpace(edition))
             {
-                version = DefaultVersion;
+                edition = DefaultEdition;
             }
 
-            if (_schema.TryGetValue(version, out schema))
+            if (_schema.TryGetValue(edition, out schema))
             {
                 return schema.GetSchemaForProfile(pluginName, profileName);
             }
             return null;
         }
 
-        public static Dictionary<string, List<Node>> GetSchemaDictionary(string plugInName, string profileName, string version = null)
+        public static Dictionary<string, List<Node>> GetSchemaDictionary(string plugInName, string profileName, string edition)
         {
             Schema schema;
-            if (string.IsNullOrWhiteSpace(version))
+            if (string.IsNullOrWhiteSpace(edition))
             {
-                version = DefaultVersion;
+                edition = DefaultEdition;
             }
 
-            if (_schema.TryGetValue(version, out schema))
+            if (_schema.TryGetValue(edition, out schema))
             {
                 return schema.GetSchemaDictionary(plugInName, profileName);
             }
@@ -204,7 +199,7 @@ namespace OpenFMB.Adapters.Core.Models.Schemas
 
     public class Schema
     {
-        public string Version { get; private set; }
+        public string Edition { get; private set; }
 
         public string Directory { get; private set; }
 
@@ -215,7 +210,7 @@ namespace OpenFMB.Adapters.Core.Models.Schemas
         public Schema(string directory)
         {
             Directory = directory;
-            Version = Path.GetFileName(directory);
+            Edition = Path.GetFileName(directory);
         }
 
         internal void AddSchema(string pluginName, JSchema schema)

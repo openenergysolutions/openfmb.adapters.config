@@ -3,6 +3,7 @@
 // SPDX-License-Identifier: Apache-2.0
 
 using Newtonsoft.Json;
+using OpenFMB.Adapters.Core.Models.Schemas;
 using OpenFMB.Adapters.Core.Utility;
 using OpenFMB.Adapters.Core.Utility.Logs;
 using System;
@@ -31,6 +32,28 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
         private string _localFilePath;
         private string _fullPath;
         private string _sessionName = "Session";
+        private string _edition;
+
+        [Category("[General]"), DisplayName("Version"), Description("OpenFMB UML version"), ReadOnly(true)]
+        public string Edition 
+        { 
+            get
+            {
+                if (!string.IsNullOrWhiteSpace(_edition))
+                {
+                    return _edition;
+                }
+                if (_sessionConfiguration != null)
+                {
+                    return _sessionConfiguration.Edition;
+                }
+                return SchemaManager.DefaultEdition;
+            }
+            set
+            {
+                _edition = value ?? value;
+            }
+        }
 
         private static readonly ILogger _logger = MasterLogger.Instance;       
 
@@ -138,9 +161,10 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
             PluginName = plugin;            
         }       
 
-        public Session(string plugin, string localFilePath) : this(plugin)
+        public Session(string plugin, string localFilePath, string edition) : this(plugin)
         {            
-            _localFilePath = localFilePath;
+            _localFilePath = localFilePath;            
+            _edition = edition;
         }
         
         private SessionConfiguration Create(string plugin)
@@ -151,19 +175,19 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
             {
                 case PluginsSection.Dnp3Master:
                 case PluginsSection.Dnp3Outstation:
-                    config = new Dnp3SessionConfiguration(plugin);
+                    config = new Dnp3SessionConfiguration(plugin, Edition);
                     break;                
                 case PluginsSection.ModbusMaster:
                 case PluginsSection.ModbusOutstation:
-                    config = new ModbusSessionConfiguration(plugin);
+                    config = new ModbusSessionConfiguration(plugin, Edition);
                     break;                
                 case PluginsSection.IEC61850Client:
                 case PluginsSection.IEC61850Server:
-                    config = new IEC61850SessionConfiguration(plugin);
+                    config = new IEC61850SessionConfiguration(plugin, Edition);
                     break;
                 case PluginsSection.IccpClient:
                 case PluginsSection.IccpServer:
-                    config = new IccpSessionConfiguration(plugin);
+                    config = new IccpSessionConfiguration(plugin, Edition);
                     break;
                 default:
                     throw new InvalidOperationException($"Plugin is not supported to have session configuration. [{plugin}]");                    
@@ -253,6 +277,7 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
         public static Session FromFile(string baseDirectory, string localFilePath)
         {
             string plugin = null;
+            string edition = null;
 
             var stream = new YamlStream();
 
@@ -271,6 +296,10 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
                     if (fileInfo.ContainsKey("plugin"))
                     {
                         plugin = (fileInfo["plugin"] as YamlScalarNode)?.Value;
+                    }
+                    if (fileInfo.ContainsKey("edition"))
+                    {
+                        edition = (fileInfo["edition"] as YamlScalarNode)?.Value;
                     }
                 }                
             }
@@ -292,7 +321,7 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
                 }
             }
 
-            Session session = new Session(plugin, localFilePath);
+            Session session = new Session(plugin, localFilePath, edition);
             session.SessionConfiguration.Load(filePath);
 
             return session;

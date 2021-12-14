@@ -29,6 +29,10 @@ namespace OpenFMB.Adapters.Core.Models
 
         public string PluginName { get; protected set; }
 
+        public string Edition { get; protected set; }
+
+        public int ProfileCount { get { return Profiles.Count; } }
+
         private List<Profile> Profiles { get; } = new List<Profile>();
 
         protected static ILogger _logger = MasterLogger.Instance;        
@@ -154,7 +158,22 @@ namespace OpenFMB.Adapters.Core.Models
                     reader.BaseStream.Seek(0, SeekOrigin.Begin);
                     CheckSum = Utils.ChecksumForString(reader.ReadToEnd());
 
-                    var profiles = dic["profiles"] as List<object>;
+                    string edition = SchemaManager.DefaultEdition;
+
+                    var file = dic["file"] as Dictionary<object, object>;
+                    
+                    if (file != null)
+                    {
+                        var temp = file["edition"];
+                        if (temp != null)
+                        {
+                            edition = Convert.ToDouble(temp).ToString("0.0");
+                        }
+                    }
+
+                    Edition = edition;
+
+                    var profiles = dic["profiles"] as List<object>;                    
 
                     foreach(Dictionary<object, object> p in profiles)
                     {
@@ -170,7 +189,7 @@ namespace OpenFMB.Adapters.Core.Models
 
                             try
                             {
-                                Profile profile = new Profile(p["name"].ToString(), PluginName, token);
+                                Profile profile = Profile.CreateWithToken(p["name"].ToString(), PluginName, token, edition);
                                 AddProfile(profile);
                             }
                             catch (NoSchemaFoundException)
@@ -194,7 +213,7 @@ namespace OpenFMB.Adapters.Core.Models
 
                                 (token as JObject)["name"] = new JValue(profileName);
 
-                                Profile profile = new Profile(profileName, PluginName, token);
+                                Profile profile = Profile.CreateWithToken(profileName, PluginName, token, edition);
                                 AddProfile(profile);
                             }
                         }

@@ -21,12 +21,12 @@ namespace OpenFMB.Adapters.Core.Models
                 {
                     if (PluginName == PluginsSection.IEC61850Server)
                     {
-                        _sessionSpecific = new IEC61850ServerSpecificConfig();
+                        _sessionSpecific = new IEC61850ServerSpecificConfig(Edition);
                         _sessionSpecific.PropertyChanged += OnPropertyChanged;
                     }
                     else
                     {
-                        _sessionSpecific = new IEC61850ClientSpecificConfig();
+                        _sessionSpecific = new IEC61850ClientSpecificConfig(Edition);
                         _sessionSpecific.PropertyChanged += OnPropertyChanged;
                     }
                 }
@@ -34,9 +34,10 @@ namespace OpenFMB.Adapters.Core.Models
             }
         }
 
-        public IEC61850SessionConfiguration(string pluginName)
+        public IEC61850SessionConfiguration(string pluginName, string edition)
         {
             PluginName = pluginName;
+            Edition = edition;
         }        
 
         protected override void LoadSessionConfigurationFromJson(string json)
@@ -65,7 +66,7 @@ namespace OpenFMB.Adapters.Core.Models
         private string serverIp = "0.0.0.0";
         private int serverPort = 102;
 
-        public IEC61850ClientSpecificConfig()
+        public IEC61850ClientSpecificConfig(string edition) : base(edition)
         {
             PlugIn = PluginsSection.IEC61850Client;
         }
@@ -115,7 +116,7 @@ namespace OpenFMB.Adapters.Core.Models
         private string serverIp = "127.0.0.1";
         private int serverPort = 102;
 
-        public IEC61850ServerSpecificConfig()
+        public IEC61850ServerSpecificConfig(string edition) : base(edition)
         {
             PlugIn = PluginsSection.IEC61850Server;
         }

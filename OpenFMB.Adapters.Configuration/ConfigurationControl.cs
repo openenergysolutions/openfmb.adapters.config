@@ -604,7 +604,7 @@ namespace OpenFMB.Adapters.Configuration
             Session session = adapterTreeView.SelectedNode?.Tag as Session;
             if (session != null)
             {
-                ProfileSelectionForm form = new ProfileSelectionForm();
+                ProfileSelectionForm form = new ProfileSelectionForm(session.Edition, false);
                 if (form.ShowDialog() == DialogResult.OK)
                 {
                     try
@@ -622,7 +622,7 @@ namespace OpenFMB.Adapters.Configuration
                                 plugin.Enabled = true;
                             }
 
-                            Profile profile = Profile.Create(p, session.PluginName);                            
+                            Profile profile = Profile.Create(p, session.PluginName, null);                            
                             session.SessionConfiguration.AddProfile(profile);                                                        
 
                             TreeNode pNode = new TreeNode(profile.ProfileName)

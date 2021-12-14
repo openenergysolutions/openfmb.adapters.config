@@ -168,14 +168,14 @@ namespace OpenFMB.Adapters.Configuration
                         var option = _sessionFiles[p];
 
                         
-                        Session session = new Session(p.Name, templateName);
+                        Session session = new Session(p.Name, templateName, pluginOptionControl.SelectedVersion);
                         session.FullPath = configPath;
 
                         if (option.SelectedProfiles.Count > 0)
                         {                                                        
                             foreach (var selected in option.SelectedProfiles)
                             {
-                                Profile profile = Profile.Create(selected, p.Name);
+                                Profile profile = Profile.Create(selected, p.Name, pluginOptionControl.SelectedVersion);
                                 session.SessionConfiguration.AddProfile(profile);
                             }                            
                         }

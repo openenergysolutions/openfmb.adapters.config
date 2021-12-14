@@ -34,7 +34,7 @@
             // 
             // okButton
             // 
-            this.okButton.Location = new System.Drawing.Point(287, 366);
+            this.okButton.Location = new System.Drawing.Point(287, 420);
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size(75, 23);
             this.okButton.TabIndex = 1;
@@ -48,7 +48,7 @@
             this.profileSelectionControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.profileSelectionControl.Location = new System.Drawing.Point(0, 0);
             this.profileSelectionControl.Name = "profileSelectionControl";
-            this.profileSelectionControl.Size = new System.Drawing.Size(374, 401);
+            this.profileSelectionControl.Size = new System.Drawing.Size(374, 460);
             this.profileSelectionControl.TabIndex = 2;
             // 
             // ProfileSelectionForm
@@ -56,7 +56,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(374, 401);
+            this.ClientSize = new System.Drawing.Size(374, 460);
             this.Controls.Add(this.okButton);
             this.Controls.Add(this.profileSelectionControl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

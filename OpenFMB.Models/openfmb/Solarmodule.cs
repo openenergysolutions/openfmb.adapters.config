@@ -26,103 +26,167 @@ namespace openfmb.solarmodule {
           string.Concat(
             "Ch1zb2xhcm1vZHVsZS9zb2xhcm1vZHVsZS5wcm90bxILc29sYXJtb2R1bGUa",
             "CXVtbC5wcm90bxoeZ29vZ2xlL3Byb3RvYnVmL3dyYXBwZXJzLnByb3RvGh9j",
-            "b21tb25tb2R1bGUvY29tbW9ubW9kdWxlLnByb3RvItIECgpTb2xhclBvaW50",
-            "EjoKGGZyZXF1ZW5jeVNldFBvaW50RW5hYmxlZBgBIAEoCzIYLmNvbW1vbm1v",
-            "ZHVsZS5Db250cm9sU1BDEjMKBG1vZGUYAiABKAsyJS5jb21tb25tb2R1bGUu",
-            "RU5HX0dyaWRDb25uZWN0TW9kZUtpbmQSLwoKcGN0SHpEcm9vcBgDIAEoCzIb",
-            "Lmdvb2dsZS5wcm90b2J1Zi5GbG9hdFZhbHVlEi4KCXBjdFZEcm9vcBgEIAEo",
-            "CzIbLmdvb2dsZS5wcm90b2J1Zi5GbG9hdFZhbHVlEikKCXJhbXBSYXRlcxgF",
-            "IAEoCzIWLmNvbW1vbm1vZHVsZS5SYW1wUmF0ZRI8ChpyZWFjdGl2ZVB3clNl",
-            "dFBvaW50RW5hYmxlZBgGIAEoCzIYLmNvbW1vbm1vZHVsZS5Db250cm9sU1BD",
-            "EjgKFnJlYWxQd3JTZXRQb2ludEVuYWJsZWQYByABKAsyGC5jb21tb25tb2R1",
-            "bGUuQ29udHJvbFNQQxInCgVyZXNldBgIIAEoCzIYLmNvbW1vbm1vZHVsZS5D",
-            "b250cm9sU1BDEi8KBXN0YXRlGAkgASgLMiAuY29tbW9ubW9kdWxlLk9wdGlv",
-            "bmFsX1N0YXRlS2luZBI4ChZ2b2x0YWdlU2V0UG9pbnRFbmFibGVkGAogASgL",
-            "MhguY29tbW9ubW9kdWxlLkNvbnRyb2xTUEMSOwoJc3RhcnRUaW1lGAsgASgL",
-            "Mh4uY29tbW9ubW9kdWxlLkNvbnRyb2xUaW1lc3RhbXBCCIi1GAGQtRgBIj0K",
-            "CFNvbGFyQ1NHEjEKBmNydlB0cxgBIAMoCzIXLnNvbGFybW9kdWxlLlNvbGFy",
-            "UG9pbnRCCIi1GAGQtRgBIkwKGFNvbGFyQ29udHJvbFNjaGVkdWxlRlNDSBIw",
-            "CgdWYWxEQ1NHGAEgASgLMhUuc29sYXJtb2R1bGUuU29sYXJDU0dCCIi1GAGQ",
-            "tRgBIpEBChBTb2xhckNvbnRyb2xGU0NDEjQKC2NvbnRyb2xGU0NDGAEgASgL",
-            "MhkuY29tbW9ubW9kdWxlLkNvbnRyb2xGU0NDQgSAtRgBEkcKGFNvbGFyQ29u",
-            "dHJvbFNjaGVkdWxlRlNDSBgCIAEoCzIlLnNvbGFybW9kdWxlLlNvbGFyQ29u",
-            "dHJvbFNjaGVkdWxlRlNDSCKtAQoMU29sYXJDb250cm9sEjYKDGNvbnRyb2xW",
-            "YWx1ZRgBIAEoCzIaLmNvbW1vbm1vZHVsZS5Db250cm9sVmFsdWVCBIC1GAES",
-            "LAoFY2hlY2sYAiABKAsyHS5jb21tb25tb2R1bGUuQ2hlY2tDb25kaXRpb25z",
-            "EjcKEHNvbGFyQ29udHJvbEZTQ0MYAyABKAsyHS5zb2xhcm1vZHVsZS5Tb2xh",
-            "ckNvbnRyb2xGU0NDIlUKDVNvbGFySW52ZXJ0ZXISRAoTY29uZHVjdGluZ0Vx",
-            "dWlwbWVudBgBIAEoCzIhLmNvbW1vbm1vZHVsZS5Db25kdWN0aW5nRXF1aXBt",
-            "ZW50QgSAtRgBItcBChNTb2xhckNvbnRyb2xQcm9maWxlEkIKEmNvbnRyb2xN",
-            "ZXNzYWdlSW5mbxgBIAEoCzIgLmNvbW1vbm1vZHVsZS5Db250cm9sTWVzc2Fn",
-            "ZUluZm9CBIC1GAESOQoMc29sYXJDb250cm9sGAIgASgLMhkuc29sYXJtb2R1",
-            "bGUuU29sYXJDb250cm9sQgiItRgBkLUYARI7Cg1zb2xhckludmVydGVyGAMg",
+            "b21tb25tb2R1bGUvY29tbW9ubW9kdWxlLnByb3RvIlUKDVNvbGFySW52ZXJ0",
+            "ZXISRAoTY29uZHVjdGluZ0VxdWlwbWVudBgBIAEoCzIhLmNvbW1vbm1vZHVs",
+            "ZS5Db25kdWN0aW5nRXF1aXBtZW50QgSAtRgBIngKHFNvbGFyQ2FwYWJpbGl0",
+            "eUNvbmZpZ3VyYXRpb24SWAodc291cmNlQ2FwYWJpbGl0eUNvbmZpZ3VyYXRp",
+            "b24YASABKAsyKy5jb21tb25tb2R1bGUuU291cmNlQ2FwYWJpbGl0eUNvbmZp",
+            "Z3VyYXRpb25CBIC1GAEitAEKF1NvbGFyQ2FwYWJpbGl0eU92ZXJyaWRlEj4K",
+            "EGlkZW50aWZpZWRPYmplY3QYASABKAsyHi5jb21tb25tb2R1bGUuSWRlbnRp",
+            "ZmllZE9iamVjdEIEgLUYARJZChxzb2xhckNhcGFiaWxpdHlDb25maWd1cmF0",
+            "aW9uGAIgASgLMikuc29sYXJtb2R1bGUuU29sYXJDYXBhYmlsaXR5Q29uZmln",
+            "dXJhdGlvbkIIiLUYAZC1GAEijgIKHlNvbGFyQ2FwYWJpbGl0eU92ZXJyaWRl",
+            "UHJvZmlsZRJYCh1jYXBhYmlsaXR5T3ZlcnJpZGVNZXNzYWdlSW5mbxgBIAEo",
+            "CzIrLmNvbW1vbm1vZHVsZS5DYXBhYmlsaXR5T3ZlcnJpZGVNZXNzYWdlSW5m",
+            "b0IEgLUYARJPChdzb2xhckNhcGFiaWxpdHlPdmVycmlkZRgCIAEoCzIkLnNv",
+            "bGFybW9kdWxlLlNvbGFyQ2FwYWJpbGl0eU92ZXJyaWRlQgiItRgBkLUYARI7",
+            "Cg1zb2xhckludmVydGVyGAMgASgLMhouc29sYXJtb2R1bGUuU29sYXJJbnZl",
+            "cnRlckIIiLUYAZC1GAE6BMDzGAEiZgoWU29sYXJDYXBhYmlsaXR5UmF0aW5n",
+            "cxJMChdzb3VyY2VDYXBhYmlsaXR5UmF0aW5ncxgBIAEoCzIlLmNvbW1vbm1v",
+            "ZHVsZS5Tb3VyY2VDYXBhYmlsaXR5UmF0aW5nc0IEgLUYASLtAQoPU29sYXJD",
+            "YXBhYmlsaXR5EjoKDm5hbWVwbGF0ZVZhbHVlGAEgASgLMhwuY29tbW9ubW9k",
+            "dWxlLk5hbWVwbGF0ZVZhbHVlQgSAtRgBEk8KHHNvbGFyQ2FwYWJpbGl0eUNv",
+            "bmZpZ3VyYXRpb24YAiABKAsyKS5zb2xhcm1vZHVsZS5Tb2xhckNhcGFiaWxp",
+            "dHlDb25maWd1cmF0aW9uEk0KFnNvbGFyQ2FwYWJpbGl0eVJhdGluZ3MYAyAB",
+            "KAsyIy5zb2xhcm1vZHVsZS5Tb2xhckNhcGFiaWxpdHlSYXRpbmdzQgiItRgB",
+            "kLUYASLmAQoWU29sYXJDYXBhYmlsaXR5UHJvZmlsZRJIChVjYXBhYmlsaXR5",
+            "TWVzc2FnZUluZm8YASABKAsyIy5jb21tb25tb2R1bGUuQ2FwYWJpbGl0eU1l",
+            "c3NhZ2VJbmZvQgSAtRgBEj8KD3NvbGFyQ2FwYWJpbGl0eRgCIAEoCzIcLnNv",
+            "bGFybW9kdWxlLlNvbGFyQ2FwYWJpbGl0eUIIiLUYAZC1GAESOwoNc29sYXJJ",
+            "bnZlcnRlchgDIAEoCzIaLnNvbGFybW9kdWxlLlNvbGFySW52ZXJ0ZXJCCIi1",
+            "GAGQtRgBOgTA8xgBIqUJCgpTb2xhclBvaW50EjoKGGZyZXF1ZW5jeVNldFBv",
+            "aW50RW5hYmxlZBgBIAEoCzIYLmNvbW1vbm1vZHVsZS5Db250cm9sU1BDEjMK",
+            "BG1vZGUYAiABKAsyJS5jb21tb25tb2R1bGUuRU5HX0dyaWRDb25uZWN0TW9k",
+            "ZUtpbmQSLwoKcGN0SHpEcm9vcBgDIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5G",
+            "bG9hdFZhbHVlEi4KCXBjdFZEcm9vcBgEIAEoCzIbLmdvb2dsZS5wcm90b2J1",
+            "Zi5GbG9hdFZhbHVlEikKCXJhbXBSYXRlcxgFIAEoCzIWLmNvbW1vbm1vZHVs",
+            "ZS5SYW1wUmF0ZRI8ChpyZWFjdGl2ZVB3clNldFBvaW50RW5hYmxlZBgGIAEo",
+            "CzIYLmNvbW1vbm1vZHVsZS5Db250cm9sU1BDEjgKFnJlYWxQd3JTZXRQb2lu",
+            "dEVuYWJsZWQYByABKAsyGC5jb21tb25tb2R1bGUuQ29udHJvbFNQQxInCgVy",
+            "ZXNldBgIIAEoCzIYLmNvbW1vbm1vZHVsZS5Db250cm9sU1BDEi8KBXN0YXRl",
+            "GAkgASgLMiAuY29tbW9ubW9kdWxlLk9wdGlvbmFsX1N0YXRlS2luZBI4ChZ2",
+            "b2x0YWdlU2V0UG9pbnRFbmFibGVkGAogASgLMhguY29tbW9ubW9kdWxlLkNv",
+            "bnRyb2xTUEMSOwoJc3RhcnRUaW1lGAsgASgLMh4uY29tbW9ubW9kdWxlLkNv",
+            "bnRyb2xUaW1lc3RhbXBCCIi1GAGQtRgBEjwKFWVudGVyU2VydmljZU9wZXJh",
+            "dGlvbhgMIAEoCzIdLmNvbW1vbm1vZHVsZS5FbnRlclNlcnZpY2VBUEMSKgoM",
+            "aHpXT3BlcmF0aW9uGA0gASgLMhQuY29tbW9ubW9kdWxlLkh6V0FQQxIwCg9s",
+            "aW1pdFdPcGVyYXRpb24YDiABKAsyFy5jb21tb25tb2R1bGUuTGltaXRXQVBD",
+            "EigKC3BGT3BlcmF0aW9uGA8gASgLMhMuY29tbW9ubW9kdWxlLlBGU1BDEjAK",
+            "EXRtSHpUcmlwT3BlcmF0aW9uGBAgASgLMhUuY29tbW9ubW9kdWxlLlRtSHpD",
+            "U0cSNAoTdG1Wb2x0VHJpcE9wZXJhdGlvbhgRIAEoCzIXLmNvbW1vbm1vZHVs",
+            "ZS5UbVZvbHRDU0cSKgoMdkFyT3BlcmF0aW9uGBIgASgLMhQuY29tbW9ubW9k",
+            "dWxlLlZhclNQQxIyChB2b2x0VmFyT3BlcmF0aW9uGBMgASgLMhguY29tbW9u",
+            "bW9kdWxlLlZvbHRWYXJDU0cSLgoOdm9sdFdPcGVyYXRpb24YFCABKAsyFi5j",
+            "b21tb25tb2R1bGUuVm9sdFdDU0cSLAoNd1Zhck9wZXJhdGlvbhgVIAEoCzIV",
+            "LmNvbW1vbm1vZHVsZS5XVmFyQ1NHEjMKEWJsYWNrU3RhcnRFbmFibGVkGBYg",
+            "ASgLMhguY29tbW9ubW9kdWxlLkNvbnRyb2xTUEMSMAoOc3luY0JhY2tUb0dy",
+            "aWQYFyABKAsyGC5jb21tb25tb2R1bGUuQ29udHJvbFNQQyI9CghTb2xhckNT",
+            "RxIxCgZjcnZQdHMYASADKAsyFy5zb2xhcm1vZHVsZS5Tb2xhclBvaW50QgiI",
+            "tRgBkLUYASJMChhTb2xhckNvbnRyb2xTY2hlZHVsZUZTQ0gSMAoHVmFsRENT",
+            "RxgBIAEoCzIVLnNvbGFybW9kdWxlLlNvbGFyQ1NHQgiItRgBkLUYASKRAQoQ",
+            "U29sYXJDb250cm9sRlNDQxI0Cgtjb250cm9sRlNDQxgBIAEoCzIZLmNvbW1v",
+            "bm1vZHVsZS5Db250cm9sRlNDQ0IEgLUYARJHChhTb2xhckNvbnRyb2xTY2hl",
+            "ZHVsZUZTQ0gYAiABKAsyJS5zb2xhcm1vZHVsZS5Tb2xhckNvbnRyb2xTY2hl",
+            "ZHVsZUZTQ0girQEKDFNvbGFyQ29udHJvbBI2Cgxjb250cm9sVmFsdWUYASAB",
+            "KAsyGi5jb21tb25tb2R1bGUuQ29udHJvbFZhbHVlQgSAtRgBEiwKBWNoZWNr",
+            "GAIgASgLMh0uY29tbW9ubW9kdWxlLkNoZWNrQ29uZGl0aW9ucxI3ChBzb2xh",
+            "ckNvbnRyb2xGU0NDGAMgASgLMh0uc29sYXJtb2R1bGUuU29sYXJDb250cm9s",
+            "RlNDQyLXAQoTU29sYXJDb250cm9sUHJvZmlsZRJCChJjb250cm9sTWVzc2Fn",
+            "ZUluZm8YASABKAsyIC5jb21tb25tb2R1bGUuQ29udHJvbE1lc3NhZ2VJbmZv",
+            "QgSAtRgBEjkKDHNvbGFyQ29udHJvbBgCIAEoCzIZLnNvbGFybW9kdWxlLlNv",
+            "bGFyQ29udHJvbEIIiLUYAZC1GAESOwoNc29sYXJJbnZlcnRlchgDIAEoCzIa",
+            "LnNvbGFybW9kdWxlLlNvbGFySW52ZXJ0ZXJCCIi1GAGQtRgBOgTA8xgBIsMI",
+            "ChBTb2xhclBvaW50U3RhdHVzEjkKGGZyZXF1ZW5jeVNldFBvaW50RW5hYmxl",
+            "ZBgBIAEoCzIXLmNvbW1vbm1vZHVsZS5TdGF0dXNTUFMSMwoEbW9kZRgCIAEo",
+            "CzIlLmNvbW1vbm1vZHVsZS5FTkdfR3JpZENvbm5lY3RNb2RlS2luZBIvCgpw",
+            "Y3RIekRyb29wGAMgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUS",
+            "LgoJcGN0VkRyb29wGAQgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFs",
+            "dWUSKQoJcmFtcFJhdGVzGAUgASgLMhYuY29tbW9ubW9kdWxlLlJhbXBSYXRl",
+            "EjsKGnJlYWN0aXZlUHdyU2V0UG9pbnRFbmFibGVkGAYgASgLMhcuY29tbW9u",
+            "bW9kdWxlLlN0YXR1c1NQUxI3ChZyZWFsUHdyU2V0UG9pbnRFbmFibGVkGAcg",
+            "ASgLMhcuY29tbW9ubW9kdWxlLlN0YXR1c1NQUxIvCgVzdGF0ZRgIIAEoCzIg",
+            "LmNvbW1vbm1vZHVsZS5PcHRpb25hbF9TdGF0ZUtpbmQSNwoWdm9sdGFnZVNl",
+            "dFBvaW50RW5hYmxlZBgJIAEoCzIXLmNvbW1vbm1vZHVsZS5TdGF0dXNTUFMS",
+            "MwoRYmxhY2tTdGFydEVuYWJsZWQYCiABKAsyGC5jb21tb25tb2R1bGUuQ29u",
+            "dHJvbFNQQxI8ChVlbnRlclNlcnZpY2VPcGVyYXRpb24YCyABKAsyHS5jb21t",
+            "b25tb2R1bGUuRW50ZXJTZXJ2aWNlQVBDEiwKDGh6V09wZXJhdGlvbhgMIAEo",
+            "CzIWLmNvbW1vbm1vZHVsZS5IeldQb2ludBIwCg9saW1pdFdPcGVyYXRpb24Y",
+            "DSABKAsyFy5jb21tb25tb2R1bGUuTGltaXRXQVBDEigKC3BGT3BlcmF0aW9u",
+            "GA4gASgLMhMuY29tbW9ubW9kdWxlLlBGU1BDEjAKDnN5bmNCYWNrVG9Hcmlk",
+            "GA8gASgLMhguY29tbW9ubW9kdWxlLkNvbnRyb2xTUEMSMAoRdG1IelRyaXBP",
+            "cGVyYXRpb24YECABKAsyFS5jb21tb25tb2R1bGUuVG1IekNTRxI0ChN0bVZv",
+            "bHRUcmlwT3BlcmF0aW9uGBEgASgLMhcuY29tbW9ubW9kdWxlLlRtVm9sdENT",
+            "RxIqCgx2QXJPcGVyYXRpb24YEiABKAsyFC5jb21tb25tb2R1bGUuVmFyU1BD",
+            "EjIKEHZvbHRWYXJPcGVyYXRpb24YEyABKAsyGC5jb21tb25tb2R1bGUuVm9s",
+            "dFZhckNTRxIuCg52b2x0V09wZXJhdGlvbhgUIAEoCzIWLmNvbW1vbm1vZHVs",
+            "ZS5Wb2x0V0NTRxIsCg13VmFyT3BlcmF0aW9uGBUgASgLMhUuY29tbW9ubW9k",
+            "dWxlLldWYXJDU0cizgQKF1NvbGFyRXZlbnRBbmRTdGF0dXNaR0VOElYKHGxv",
+            "Z2ljYWxOb2RlRm9yRXZlbnRBbmRTdGF0dXMYASABKAsyKi5jb21tb25tb2R1",
+            "bGUuTG9naWNhbE5vZGVGb3JFdmVudEFuZFN0YXR1c0IEgLUYARIpCghBdXhQ",
+            "d3JTdBgCIAEoCzIXLmNvbW1vbm1vZHVsZS5TdGF0dXNTUFMSNgoLRHluYW1p",
+            "Y1Rlc3QYAyABKAsyIS5jb21tb25tb2R1bGUuRU5TX0R5bmFtaWNUZXN0S2lu",
+            "ZBIoCgdFbWdTdG9wGAQgASgLMhcuY29tbW9ubW9kdWxlLlN0YXR1c1NQUxIy",
+            "CgtQb2ludFN0YXR1cxgFIAEoCzIdLnNvbGFybW9kdWxlLlNvbGFyUG9pbnRT",
+            "dGF0dXMSLQoEQWxybRgGIAEoCzIfLmNvbW1vbm1vZHVsZS5PcHRpb25hbF9B",
+            "bHJtS2luZBIoCgdHblN5blN0GAcgASgLMhcuY29tbW9ubW9kdWxlLlN0YXR1",
+            "c1NQUxJLChNHcmlkQ29ubmVjdGlvblN0YXRlGAggASgLMi4uY29tbW9ubW9k",
+            "dWxlLk9wdGlvbmFsX0dyaWRDb25uZWN0aW9uU3RhdGVLaW5kEjEKC01hbkFs",
+            "cm1JbmZvGAkgASgLMhwuZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEkEK",
+            "Dk9wZXJhdGluZ1N0YXRlGAogASgLMikuY29tbW9ubW9kdWxlLk9wdGlvbmFs",
+            "X09wZXJhdGluZ1N0YXRlS2luZCKUAQoOU29sYXJFdmVudFpHRU4SSwoXc29s",
+            "YXJFdmVudEFuZFN0YXR1c1pHRU4YASABKAsyJC5zb2xhcm1vZHVsZS5Tb2xh",
+            "ckV2ZW50QW5kU3RhdHVzWkdFTkIEgLUYARI1CgZHcmlNb2QYAiABKAsyJS5j",
+            "b21tb25tb2R1bGUuRU5HX0dyaWRDb25uZWN0TW9kZUtpbmQidQoKU29sYXJF",
+            "dmVudBIyCgpldmVudFZhbHVlGAEgASgLMhguY29tbW9ubW9kdWxlLkV2ZW50",
+            "VmFsdWVCBIC1GAESMwoOc29sYXJFdmVudFpHRU4YAiABKAsyGy5zb2xhcm1v",
+            "ZHVsZS5Tb2xhckV2ZW50WkdFTiLNAQoRU29sYXJFdmVudFByb2ZpbGUSPgoQ",
+            "ZXZlbnRNZXNzYWdlSW5mbxgBIAEoCzIeLmNvbW1vbm1vZHVsZS5FdmVudE1l",
+            "c3NhZ2VJbmZvQgSAtRgBEjUKCnNvbGFyRXZlbnQYAiABKAsyFy5zb2xhcm1v",
+            "ZHVsZS5Tb2xhckV2ZW50QgiItRgBkLUYARI7Cg1zb2xhckludmVydGVyGAMg",
             "ASgLMhouc29sYXJtb2R1bGUuU29sYXJJbnZlcnRlckIIiLUYAZC1GAE6BMDz",
-            "GAEi7gMKEFNvbGFyUG9pbnRTdGF0dXMSOQoYZnJlcXVlbmN5U2V0UG9pbnRF",
-            "bmFibGVkGAEgASgLMhcuY29tbW9ubW9kdWxlLlN0YXR1c1NQUxIzCgRtb2Rl",
-            "GAIgASgLMiUuY29tbW9ubW9kdWxlLkVOR19HcmlkQ29ubmVjdE1vZGVLaW5k",
-            "Ei8KCnBjdEh6RHJvb3AYAyABKAsyGy5nb29nbGUucHJvdG9idWYuRmxvYXRW",
-            "YWx1ZRIuCglwY3RWRHJvb3AYBCABKAsyGy5nb29nbGUucHJvdG9idWYuRmxv",
-            "YXRWYWx1ZRIpCglyYW1wUmF0ZXMYBSABKAsyFi5jb21tb25tb2R1bGUuUmFt",
-            "cFJhdGUSOwoacmVhY3RpdmVQd3JTZXRQb2ludEVuYWJsZWQYBiABKAsyFy5j",
-            "b21tb25tb2R1bGUuU3RhdHVzU1BTEjcKFnJlYWxQd3JTZXRQb2ludEVuYWJs",
-            "ZWQYByABKAsyFy5jb21tb25tb2R1bGUuU3RhdHVzU1BTEi8KBXN0YXRlGAgg",
-            "ASgLMiAuY29tbW9ubW9kdWxlLk9wdGlvbmFsX1N0YXRlS2luZBI3ChZ2b2x0",
-            "YWdlU2V0UG9pbnRFbmFibGVkGAkgASgLMhcuY29tbW9ubW9kdWxlLlN0YXR1",
-            "c1NQUyKyAgoXU29sYXJFdmVudEFuZFN0YXR1c1pHRU4SVgocbG9naWNhbE5v",
-            "ZGVGb3JFdmVudEFuZFN0YXR1cxgBIAEoCzIqLmNvbW1vbm1vZHVsZS5Mb2dp",
-            "Y2FsTm9kZUZvckV2ZW50QW5kU3RhdHVzQgSAtRgBEikKCEF1eFB3clN0GAIg",
-            "ASgLMhcuY29tbW9ubW9kdWxlLlN0YXR1c1NQUxI2CgtEeW5hbWljVGVzdBgD",
-            "IAEoCzIhLmNvbW1vbm1vZHVsZS5FTlNfRHluYW1pY1Rlc3RLaW5kEigKB0Vt",
-            "Z1N0b3AYBCABKAsyFy5jb21tb25tb2R1bGUuU3RhdHVzU1BTEjIKC1BvaW50",
-            "U3RhdHVzGAUgASgLMh0uc29sYXJtb2R1bGUuU29sYXJQb2ludFN0YXR1cyKU",
-            "AQoOU29sYXJFdmVudFpHRU4SSwoXc29sYXJFdmVudEFuZFN0YXR1c1pHRU4Y",
-            "ASABKAsyJC5zb2xhcm1vZHVsZS5Tb2xhckV2ZW50QW5kU3RhdHVzWkdFTkIE",
-            "gLUYARI1CgZHcmlNb2QYAiABKAsyJS5jb21tb25tb2R1bGUuRU5HX0dyaWRD",
-            "b25uZWN0TW9kZUtpbmQidQoKU29sYXJFdmVudBIyCgpldmVudFZhbHVlGAEg",
-            "ASgLMhguY29tbW9ubW9kdWxlLkV2ZW50VmFsdWVCBIC1GAESMwoOc29sYXJF",
-            "dmVudFpHRU4YAiABKAsyGy5zb2xhcm1vZHVsZS5Tb2xhckV2ZW50WkdFTiLN",
-            "AQoRU29sYXJFdmVudFByb2ZpbGUSPgoQZXZlbnRNZXNzYWdlSW5mbxgBIAEo",
-            "CzIeLmNvbW1vbm1vZHVsZS5FdmVudE1lc3NhZ2VJbmZvQgSAtRgBEjUKCnNv",
-            "bGFyRXZlbnQYAiABKAsyFy5zb2xhcm1vZHVsZS5Tb2xhckV2ZW50QgiItRgB",
-            "kLUYARI7Cg1zb2xhckludmVydGVyGAMgASgLMhouc29sYXJtb2R1bGUuU29s",
-            "YXJJbnZlcnRlckIIiLUYAZC1GAE6BMDzGAEi/gEKDFNvbGFyUmVhZGluZxJi",
-            "CiJjb25kdWN0aW5nRXF1aXBtZW50VGVybWluYWxSZWFkaW5nGAEgASgLMjAu",
-            "Y29tbW9ubW9kdWxlLkNvbmR1Y3RpbmdFcXVpcG1lbnRUZXJtaW5hbFJlYWRp",
-            "bmdCBIC1GAESKgoJcGhhc2VNTVROGAIgASgLMhcuY29tbW9ubW9kdWxlLlBo",
-            "YXNlTU1UThIuCgtyZWFkaW5nTU1UUhgDIAEoCzIZLmNvbW1vbm1vZHVsZS5S",
-            "ZWFkaW5nTU1UUhIuCgtyZWFkaW5nTU1YVRgEIAEoCzIZLmNvbW1vbm1vZHVs",
-            "ZS5SZWFkaW5nTU1YVSLXAQoTU29sYXJSZWFkaW5nUHJvZmlsZRJCChJyZWFk",
-            "aW5nTWVzc2FnZUluZm8YASABKAsyIC5jb21tb25tb2R1bGUuUmVhZGluZ01l",
-            "c3NhZ2VJbmZvQgSAtRgBEjsKDXNvbGFySW52ZXJ0ZXIYAiABKAsyGi5zb2xh",
-            "cm1vZHVsZS5Tb2xhckludmVydGVyQgiItRgBkLUYARI5Cgxzb2xhclJlYWRp",
-            "bmcYAyABKAsyGS5zb2xhcm1vZHVsZS5Tb2xhclJlYWRpbmdCCIi1GAGQtRgB",
-            "OgTA8xgBIpUBCg9Tb2xhclN0YXR1c1pHRU4SSwoXc29sYXJFdmVudEFuZFN0",
-            "YXR1c1pHRU4YASABKAsyJC5zb2xhcm1vZHVsZS5Tb2xhckV2ZW50QW5kU3Rh",
-            "dHVzWkdFTkIEgLUYARI1CgZHcmlNb2QYAiABKAsyJS5jb21tb25tb2R1bGUu",
-            "RU5HX0dyaWRDb25uZWN0TW9kZUtpbmQiegoLU29sYXJTdGF0dXMSNAoLc3Rh",
-            "dHVzVmFsdWUYASABKAsyGS5jb21tb25tb2R1bGUuU3RhdHVzVmFsdWVCBIC1",
-            "GAESNQoPc29sYXJTdGF0dXNaR0VOGAIgASgLMhwuc29sYXJtb2R1bGUuU29s",
-            "YXJTdGF0dXNaR0VOItIBChJTb2xhclN0YXR1c1Byb2ZpbGUSQAoRc3RhdHVz",
-            "TWVzc2FnZUluZm8YASABKAsyHy5jb21tb25tb2R1bGUuU3RhdHVzTWVzc2Fn",
-            "ZUluZm9CBIC1GAESOwoNc29sYXJJbnZlcnRlchgCIAEoCzIaLnNvbGFybW9k",
-            "dWxlLlNvbGFySW52ZXJ0ZXJCCIi1GAGQtRgBEjcKC3NvbGFyU3RhdHVzGAMg",
-            "ASgLMhguc29sYXJtb2R1bGUuU29sYXJTdGF0dXNCCIi1GAGQtRgBOgTA8xgB",
-            "QoEBChNvcGVuZm1iLnNvbGFybW9kdWxlUAFaUmdpdGxhYi5jb20vb3BlbmZt",
-            "Yi9wc20vb3BzL3Byb3RvYnVmL2dvLW9wZW5mbWItb3BzLXByb3RvYnVmL3Yy",
-            "L29wZW5mbWIvc29sYXJtb2R1bGWqAhNvcGVuZm1iLnNvbGFybW9kdWxlYgZw",
-            "cm90bzM="));
+            "GAEi/gEKDFNvbGFyUmVhZGluZxJiCiJjb25kdWN0aW5nRXF1aXBtZW50VGVy",
+            "bWluYWxSZWFkaW5nGAEgASgLMjAuY29tbW9ubW9kdWxlLkNvbmR1Y3RpbmdF",
+            "cXVpcG1lbnRUZXJtaW5hbFJlYWRpbmdCBIC1GAESKgoJcGhhc2VNTVROGAIg",
+            "ASgLMhcuY29tbW9ubW9kdWxlLlBoYXNlTU1UThIuCgtyZWFkaW5nTU1UUhgD",
+            "IAEoCzIZLmNvbW1vbm1vZHVsZS5SZWFkaW5nTU1UUhIuCgtyZWFkaW5nTU1Y",
+            "VRgEIAEoCzIZLmNvbW1vbm1vZHVsZS5SZWFkaW5nTU1YVSLXAQoTU29sYXJS",
+            "ZWFkaW5nUHJvZmlsZRJCChJyZWFkaW5nTWVzc2FnZUluZm8YASABKAsyIC5j",
+            "b21tb25tb2R1bGUuUmVhZGluZ01lc3NhZ2VJbmZvQgSAtRgBEjsKDXNvbGFy",
+            "SW52ZXJ0ZXIYAiABKAsyGi5zb2xhcm1vZHVsZS5Tb2xhckludmVydGVyQgiI",
+            "tRgBkLUYARI5Cgxzb2xhclJlYWRpbmcYAyABKAsyGS5zb2xhcm1vZHVsZS5T",
+            "b2xhclJlYWRpbmdCCIi1GAGQtRgBOgTA8xgBIpUBCg9Tb2xhclN0YXR1c1pH",
+            "RU4SSwoXc29sYXJFdmVudEFuZFN0YXR1c1pHRU4YASABKAsyJC5zb2xhcm1v",
+            "ZHVsZS5Tb2xhckV2ZW50QW5kU3RhdHVzWkdFTkIEgLUYARI1CgZHcmlNb2QY",
+            "AiABKAsyJS5jb21tb25tb2R1bGUuRU5HX0dyaWRDb25uZWN0TW9kZUtpbmQi",
+            "egoLU29sYXJTdGF0dXMSNAoLc3RhdHVzVmFsdWUYASABKAsyGS5jb21tb25t",
+            "b2R1bGUuU3RhdHVzVmFsdWVCBIC1GAESNQoPc29sYXJTdGF0dXNaR0VOGAIg",
+            "ASgLMhwuc29sYXJtb2R1bGUuU29sYXJTdGF0dXNaR0VOItIBChJTb2xhclN0",
+            "YXR1c1Byb2ZpbGUSQAoRc3RhdHVzTWVzc2FnZUluZm8YASABKAsyHy5jb21t",
+            "b25tb2R1bGUuU3RhdHVzTWVzc2FnZUluZm9CBIC1GAESOwoNc29sYXJJbnZl",
+            "cnRlchgCIAEoCzIaLnNvbGFybW9kdWxlLlNvbGFySW52ZXJ0ZXJCCIi1GAGQ",
+            "tRgBEjcKC3NvbGFyU3RhdHVzGAMgASgLMhguc29sYXJtb2R1bGUuU29sYXJT",
+            "dGF0dXNCCIi1GAGQtRgBOgTA8xgBQoEBChNvcGVuZm1iLnNvbGFybW9kdWxl",
+            "UAFaUmdpdGxhYi5jb20vb3BlbmZtYi9wc20vb3BzL3Byb3RvYnVmL2dvLW9w",
+            "ZW5mbWItb3BzLXByb3RvYnVmL3YyL29wZW5mbWIvc29sYXJtb2R1bGWqAhNv",
+            "cGVuZm1iLnNvbGFybW9kdWxlYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::openfmb.UmlReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::openfmb.commonmodule.CommonmoduleReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.solarmodule.SolarPoint), global::openfmb.solarmodule.SolarPoint.Parser, new[]{ "FrequencySetPointEnabled", "Mode", "PctHzDroop", "PctVDroop", "RampRates", "ReactivePwrSetPointEnabled", "RealPwrSetPointEnabled", "Reset", "State", "VoltageSetPointEnabled", "StartTime" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.solarmodule.SolarInverter), global::openfmb.solarmodule.SolarInverter.Parser, new[]{ "ConductingEquipment" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.solarmodule.SolarCapabilityConfiguration), global::openfmb.solarmodule.SolarCapabilityConfiguration.Parser, new[]{ "SourceCapabilityConfiguration" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.solarmodule.SolarCapabilityOverride), global::openfmb.solarmodule.SolarCapabilityOverride.Parser, new[]{ "IdentifiedObject", "SolarCapabilityConfiguration" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.solarmodule.SolarCapabilityOverrideProfile), global::openfmb.solarmodule.SolarCapabilityOverrideProfile.Parser, new[]{ "CapabilityOverrideMessageInfo", "SolarCapabilityOverride", "SolarInverter" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.solarmodule.SolarCapabilityRatings), global::openfmb.solarmodule.SolarCapabilityRatings.Parser, new[]{ "SourceCapabilityRatings" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.solarmodule.SolarCapability), global::openfmb.solarmodule.SolarCapability.Parser, new[]{ "NameplateValue", "SolarCapabilityConfiguration", "SolarCapabilityRatings" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.solarmodule.SolarCapabilityProfile), global::openfmb.solarmodule.SolarCapabilityProfile.Parser, new[]{ "CapabilityMessageInfo", "SolarCapability", "SolarInverter" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.solarmodule.SolarPoint), global::openfmb.solarmodule.SolarPoint.Parser, new[]{ "FrequencySetPointEnabled", "Mode", "PctHzDroop", "PctVDroop", "RampRates", "ReactivePwrSetPointEnabled", "RealPwrSetPointEnabled", "Reset", "State", "VoltageSetPointEnabled", "StartTime", "EnterServiceOperation", "HzWOperation", "LimitWOperation", "PFOperation", "TmHzTripOperation", "TmVoltTripOperation", "VArOperation", "VoltVarOperation", "VoltWOperation", "WVarOperation", "BlackStartEnabled", "SyncBackToGrid" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.solarmodule.SolarCSG), global::openfmb.solarmodule.SolarCSG.Parser, new[]{ "CrvPts" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.solarmodule.SolarControlScheduleFSCH), global::openfmb.solarmodule.SolarControlScheduleFSCH.Parser, new[]{ "ValDCSG" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.solarmodule.SolarControlFSCC), global::openfmb.solarmodule.SolarControlFSCC.Parser, new[]{ "ControlFSCC", "SolarControlScheduleFSCH" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.solarmodule.SolarControl), global::openfmb.solarmodule.SolarControl.Parser, new[]{ "ControlValue", "Check", "SolarControlFSCC" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.solarmodule.SolarInverter), global::openfmb.solarmodule.SolarInverter.Parser, new[]{ "ConductingEquipment" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.solarmodule.SolarControlProfile), global::openfmb.solarmodule.SolarControlProfile.Parser, new[]{ "ControlMessageInfo", "SolarControl", "SolarInverter" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.solarmodule.SolarPointStatus), global::openfmb.solarmodule.SolarPointStatus.Parser, new[]{ "FrequencySetPointEnabled", "Mode", "PctHzDroop", "PctVDroop", "RampRates", "ReactivePwrSetPointEnabled", "RealPwrSetPointEnabled", "State", "VoltageSetPointEnabled" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.solarmodule.SolarEventAndStatusZGEN), global::openfmb.solarmodule.SolarEventAndStatusZGEN.Parser, new[]{ "LogicalNodeForEventAndStatus", "AuxPwrSt", "DynamicTest", "EmgStop", "PointStatus" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.solarmodule.SolarPointStatus), global::openfmb.solarmodule.SolarPointStatus.Parser, new[]{ "FrequencySetPointEnabled", "Mode", "PctHzDroop", "PctVDroop", "RampRates", "ReactivePwrSetPointEnabled", "RealPwrSetPointEnabled", "State", "VoltageSetPointEnabled", "BlackStartEnabled", "EnterServiceOperation", "HzWOperation", "LimitWOperation", "PFOperation", "SyncBackToGrid", "TmHzTripOperation", "TmVoltTripOperation", "VArOperation", "VoltVarOperation", "VoltWOperation", "WVarOperation" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.solarmodule.SolarEventAndStatusZGEN), global::openfmb.solarmodule.SolarEventAndStatusZGEN.Parser, new[]{ "LogicalNodeForEventAndStatus", "AuxPwrSt", "DynamicTest", "EmgStop", "PointStatus", "Alrm", "GnSynSt", "GridConnectionState", "ManAlrmInfo", "OperatingState" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.solarmodule.SolarEventZGEN), global::openfmb.solarmodule.SolarEventZGEN.Parser, new[]{ "SolarEventAndStatusZGEN", "GriMod" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.solarmodule.SolarEvent), global::openfmb.solarmodule.SolarEvent.Parser, new[]{ "EventValue", "SolarEventZGEN" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.solarmodule.SolarEventProfile), global::openfmb.solarmodule.SolarEventProfile.Parser, new[]{ "EventMessageInfo", "SolarEvent", "SolarInverter" }, null, null, null, null),
@@ -138,6 +202,1777 @@ namespace openfmb.solarmodule {
   }
   #region Messages
   /// <summary>
+  /// MISSING DOCUMENTATION!!!
+  /// </summary>
+  public sealed partial class SolarInverter : pb::IMessage<SolarInverter>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<SolarInverter> _parser = new pb::MessageParser<SolarInverter>(() => new SolarInverter());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<SolarInverter> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::openfmb.solarmodule.SolarmoduleReflection.Descriptor.MessageTypes[0]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SolarInverter() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SolarInverter(SolarInverter other) : this() {
+      conductingEquipment_ = other.conductingEquipment_ != null ? other.conductingEquipment_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SolarInverter Clone() {
+      return new SolarInverter(this);
+    }
+
+    /// <summary>Field number for the "conductingEquipment" field.</summary>
+    public const int ConductingEquipmentFieldNumber = 1;
+    private global::openfmb.commonmodule.ConductingEquipment conductingEquipment_;
+    /// <summary>
+    /// UML inherited base object
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.ConductingEquipment ConductingEquipment {
+      get { return conductingEquipment_; }
+      set {
+        conductingEquipment_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as SolarInverter);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(SolarInverter other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(ConductingEquipment, other.ConductingEquipment)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (conductingEquipment_ != null) hash ^= ConductingEquipment.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (conductingEquipment_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(ConductingEquipment);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (conductingEquipment_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(ConductingEquipment);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (conductingEquipment_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ConductingEquipment);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(SolarInverter other) {
+      if (other == null) {
+        return;
+      }
+      if (other.conductingEquipment_ != null) {
+        if (conductingEquipment_ == null) {
+          ConductingEquipment = new global::openfmb.commonmodule.ConductingEquipment();
+        }
+        ConductingEquipment.MergeFrom(other.ConductingEquipment);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (conductingEquipment_ == null) {
+              ConductingEquipment = new global::openfmb.commonmodule.ConductingEquipment();
+            }
+            input.ReadMessage(ConductingEquipment);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (conductingEquipment_ == null) {
+              ConductingEquipment = new global::openfmb.commonmodule.ConductingEquipment();
+            }
+            input.ReadMessage(ConductingEquipment);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// MISSING DOCUMENTATION!!!
+  /// </summary>
+  public sealed partial class SolarCapabilityConfiguration : pb::IMessage<SolarCapabilityConfiguration>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<SolarCapabilityConfiguration> _parser = new pb::MessageParser<SolarCapabilityConfiguration>(() => new SolarCapabilityConfiguration());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<SolarCapabilityConfiguration> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::openfmb.solarmodule.SolarmoduleReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SolarCapabilityConfiguration() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SolarCapabilityConfiguration(SolarCapabilityConfiguration other) : this() {
+      sourceCapabilityConfiguration_ = other.sourceCapabilityConfiguration_ != null ? other.sourceCapabilityConfiguration_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SolarCapabilityConfiguration Clone() {
+      return new SolarCapabilityConfiguration(this);
+    }
+
+    /// <summary>Field number for the "sourceCapabilityConfiguration" field.</summary>
+    public const int SourceCapabilityConfigurationFieldNumber = 1;
+    private global::openfmb.commonmodule.SourceCapabilityConfiguration sourceCapabilityConfiguration_;
+    /// <summary>
+    /// UML inherited base object
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.SourceCapabilityConfiguration SourceCapabilityConfiguration {
+      get { return sourceCapabilityConfiguration_; }
+      set {
+        sourceCapabilityConfiguration_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as SolarCapabilityConfiguration);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(SolarCapabilityConfiguration other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(SourceCapabilityConfiguration, other.SourceCapabilityConfiguration)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (sourceCapabilityConfiguration_ != null) hash ^= SourceCapabilityConfiguration.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (sourceCapabilityConfiguration_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(SourceCapabilityConfiguration);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (sourceCapabilityConfiguration_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(SourceCapabilityConfiguration);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (sourceCapabilityConfiguration_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SourceCapabilityConfiguration);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(SolarCapabilityConfiguration other) {
+      if (other == null) {
+        return;
+      }
+      if (other.sourceCapabilityConfiguration_ != null) {
+        if (sourceCapabilityConfiguration_ == null) {
+          SourceCapabilityConfiguration = new global::openfmb.commonmodule.SourceCapabilityConfiguration();
+        }
+        SourceCapabilityConfiguration.MergeFrom(other.SourceCapabilityConfiguration);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (sourceCapabilityConfiguration_ == null) {
+              SourceCapabilityConfiguration = new global::openfmb.commonmodule.SourceCapabilityConfiguration();
+            }
+            input.ReadMessage(SourceCapabilityConfiguration);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (sourceCapabilityConfiguration_ == null) {
+              SourceCapabilityConfiguration = new global::openfmb.commonmodule.SourceCapabilityConfiguration();
+            }
+            input.ReadMessage(SourceCapabilityConfiguration);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// Generation capability
+  /// </summary>
+  public sealed partial class SolarCapabilityOverride : pb::IMessage<SolarCapabilityOverride>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<SolarCapabilityOverride> _parser = new pb::MessageParser<SolarCapabilityOverride>(() => new SolarCapabilityOverride());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<SolarCapabilityOverride> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::openfmb.solarmodule.SolarmoduleReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SolarCapabilityOverride() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SolarCapabilityOverride(SolarCapabilityOverride other) : this() {
+      identifiedObject_ = other.identifiedObject_ != null ? other.identifiedObject_.Clone() : null;
+      solarCapabilityConfiguration_ = other.solarCapabilityConfiguration_ != null ? other.solarCapabilityConfiguration_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SolarCapabilityOverride Clone() {
+      return new SolarCapabilityOverride(this);
+    }
+
+    /// <summary>Field number for the "identifiedObject" field.</summary>
+    public const int IdentifiedObjectFieldNumber = 1;
+    private global::openfmb.commonmodule.IdentifiedObject identifiedObject_;
+    /// <summary>
+    /// UML inherited base object
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.IdentifiedObject IdentifiedObject {
+      get { return identifiedObject_; }
+      set {
+        identifiedObject_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "solarCapabilityConfiguration" field.</summary>
+    public const int SolarCapabilityConfigurationFieldNumber = 2;
+    private global::openfmb.solarmodule.SolarCapabilityConfiguration solarCapabilityConfiguration_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.solarmodule.SolarCapabilityConfiguration SolarCapabilityConfiguration {
+      get { return solarCapabilityConfiguration_; }
+      set {
+        solarCapabilityConfiguration_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as SolarCapabilityOverride);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(SolarCapabilityOverride other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(IdentifiedObject, other.IdentifiedObject)) return false;
+      if (!object.Equals(SolarCapabilityConfiguration, other.SolarCapabilityConfiguration)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (identifiedObject_ != null) hash ^= IdentifiedObject.GetHashCode();
+      if (solarCapabilityConfiguration_ != null) hash ^= SolarCapabilityConfiguration.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (identifiedObject_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(IdentifiedObject);
+      }
+      if (solarCapabilityConfiguration_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(SolarCapabilityConfiguration);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (identifiedObject_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(IdentifiedObject);
+      }
+      if (solarCapabilityConfiguration_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(SolarCapabilityConfiguration);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (identifiedObject_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(IdentifiedObject);
+      }
+      if (solarCapabilityConfiguration_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SolarCapabilityConfiguration);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(SolarCapabilityOverride other) {
+      if (other == null) {
+        return;
+      }
+      if (other.identifiedObject_ != null) {
+        if (identifiedObject_ == null) {
+          IdentifiedObject = new global::openfmb.commonmodule.IdentifiedObject();
+        }
+        IdentifiedObject.MergeFrom(other.IdentifiedObject);
+      }
+      if (other.solarCapabilityConfiguration_ != null) {
+        if (solarCapabilityConfiguration_ == null) {
+          SolarCapabilityConfiguration = new global::openfmb.solarmodule.SolarCapabilityConfiguration();
+        }
+        SolarCapabilityConfiguration.MergeFrom(other.SolarCapabilityConfiguration);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (identifiedObject_ == null) {
+              IdentifiedObject = new global::openfmb.commonmodule.IdentifiedObject();
+            }
+            input.ReadMessage(IdentifiedObject);
+            break;
+          }
+          case 18: {
+            if (solarCapabilityConfiguration_ == null) {
+              SolarCapabilityConfiguration = new global::openfmb.solarmodule.SolarCapabilityConfiguration();
+            }
+            input.ReadMessage(SolarCapabilityConfiguration);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (identifiedObject_ == null) {
+              IdentifiedObject = new global::openfmb.commonmodule.IdentifiedObject();
+            }
+            input.ReadMessage(IdentifiedObject);
+            break;
+          }
+          case 18: {
+            if (solarCapabilityConfiguration_ == null) {
+              SolarCapabilityConfiguration = new global::openfmb.solarmodule.SolarCapabilityConfiguration();
+            }
+            input.ReadMessage(SolarCapabilityConfiguration);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// Generation capability profile
+  /// </summary>
+  public sealed partial class SolarCapabilityOverrideProfile : pb::IMessage<SolarCapabilityOverrideProfile>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<SolarCapabilityOverrideProfile> _parser = new pb::MessageParser<SolarCapabilityOverrideProfile>(() => new SolarCapabilityOverrideProfile());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<SolarCapabilityOverrideProfile> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::openfmb.solarmodule.SolarmoduleReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SolarCapabilityOverrideProfile() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SolarCapabilityOverrideProfile(SolarCapabilityOverrideProfile other) : this() {
+      capabilityOverrideMessageInfo_ = other.capabilityOverrideMessageInfo_ != null ? other.capabilityOverrideMessageInfo_.Clone() : null;
+      solarCapabilityOverride_ = other.solarCapabilityOverride_ != null ? other.solarCapabilityOverride_.Clone() : null;
+      solarInverter_ = other.solarInverter_ != null ? other.solarInverter_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SolarCapabilityOverrideProfile Clone() {
+      return new SolarCapabilityOverrideProfile(this);
+    }
+
+    /// <summary>Field number for the "capabilityOverrideMessageInfo" field.</summary>
+    public const int CapabilityOverrideMessageInfoFieldNumber = 1;
+    private global::openfmb.commonmodule.CapabilityOverrideMessageInfo capabilityOverrideMessageInfo_;
+    /// <summary>
+    /// UML inherited base object
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.CapabilityOverrideMessageInfo CapabilityOverrideMessageInfo {
+      get { return capabilityOverrideMessageInfo_; }
+      set {
+        capabilityOverrideMessageInfo_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "solarCapabilityOverride" field.</summary>
+    public const int SolarCapabilityOverrideFieldNumber = 2;
+    private global::openfmb.solarmodule.SolarCapabilityOverride solarCapabilityOverride_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.solarmodule.SolarCapabilityOverride SolarCapabilityOverride {
+      get { return solarCapabilityOverride_; }
+      set {
+        solarCapabilityOverride_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "solarInverter" field.</summary>
+    public const int SolarInverterFieldNumber = 3;
+    private global::openfmb.solarmodule.SolarInverter solarInverter_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.solarmodule.SolarInverter SolarInverter {
+      get { return solarInverter_; }
+      set {
+        solarInverter_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as SolarCapabilityOverrideProfile);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(SolarCapabilityOverrideProfile other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(CapabilityOverrideMessageInfo, other.CapabilityOverrideMessageInfo)) return false;
+      if (!object.Equals(SolarCapabilityOverride, other.SolarCapabilityOverride)) return false;
+      if (!object.Equals(SolarInverter, other.SolarInverter)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (capabilityOverrideMessageInfo_ != null) hash ^= CapabilityOverrideMessageInfo.GetHashCode();
+      if (solarCapabilityOverride_ != null) hash ^= SolarCapabilityOverride.GetHashCode();
+      if (solarInverter_ != null) hash ^= SolarInverter.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (capabilityOverrideMessageInfo_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(CapabilityOverrideMessageInfo);
+      }
+      if (solarCapabilityOverride_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(SolarCapabilityOverride);
+      }
+      if (solarInverter_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(SolarInverter);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (capabilityOverrideMessageInfo_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(CapabilityOverrideMessageInfo);
+      }
+      if (solarCapabilityOverride_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(SolarCapabilityOverride);
+      }
+      if (solarInverter_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(SolarInverter);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (capabilityOverrideMessageInfo_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CapabilityOverrideMessageInfo);
+      }
+      if (solarCapabilityOverride_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SolarCapabilityOverride);
+      }
+      if (solarInverter_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SolarInverter);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(SolarCapabilityOverrideProfile other) {
+      if (other == null) {
+        return;
+      }
+      if (other.capabilityOverrideMessageInfo_ != null) {
+        if (capabilityOverrideMessageInfo_ == null) {
+          CapabilityOverrideMessageInfo = new global::openfmb.commonmodule.CapabilityOverrideMessageInfo();
+        }
+        CapabilityOverrideMessageInfo.MergeFrom(other.CapabilityOverrideMessageInfo);
+      }
+      if (other.solarCapabilityOverride_ != null) {
+        if (solarCapabilityOverride_ == null) {
+          SolarCapabilityOverride = new global::openfmb.solarmodule.SolarCapabilityOverride();
+        }
+        SolarCapabilityOverride.MergeFrom(other.SolarCapabilityOverride);
+      }
+      if (other.solarInverter_ != null) {
+        if (solarInverter_ == null) {
+          SolarInverter = new global::openfmb.solarmodule.SolarInverter();
+        }
+        SolarInverter.MergeFrom(other.SolarInverter);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (capabilityOverrideMessageInfo_ == null) {
+              CapabilityOverrideMessageInfo = new global::openfmb.commonmodule.CapabilityOverrideMessageInfo();
+            }
+            input.ReadMessage(CapabilityOverrideMessageInfo);
+            break;
+          }
+          case 18: {
+            if (solarCapabilityOverride_ == null) {
+              SolarCapabilityOverride = new global::openfmb.solarmodule.SolarCapabilityOverride();
+            }
+            input.ReadMessage(SolarCapabilityOverride);
+            break;
+          }
+          case 26: {
+            if (solarInverter_ == null) {
+              SolarInverter = new global::openfmb.solarmodule.SolarInverter();
+            }
+            input.ReadMessage(SolarInverter);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (capabilityOverrideMessageInfo_ == null) {
+              CapabilityOverrideMessageInfo = new global::openfmb.commonmodule.CapabilityOverrideMessageInfo();
+            }
+            input.ReadMessage(CapabilityOverrideMessageInfo);
+            break;
+          }
+          case 18: {
+            if (solarCapabilityOverride_ == null) {
+              SolarCapabilityOverride = new global::openfmb.solarmodule.SolarCapabilityOverride();
+            }
+            input.ReadMessage(SolarCapabilityOverride);
+            break;
+          }
+          case 26: {
+            if (solarInverter_ == null) {
+              SolarInverter = new global::openfmb.solarmodule.SolarInverter();
+            }
+            input.ReadMessage(SolarInverter);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// MISSING DOCUMENTATION!!!
+  /// </summary>
+  public sealed partial class SolarCapabilityRatings : pb::IMessage<SolarCapabilityRatings>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<SolarCapabilityRatings> _parser = new pb::MessageParser<SolarCapabilityRatings>(() => new SolarCapabilityRatings());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<SolarCapabilityRatings> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::openfmb.solarmodule.SolarmoduleReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SolarCapabilityRatings() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SolarCapabilityRatings(SolarCapabilityRatings other) : this() {
+      sourceCapabilityRatings_ = other.sourceCapabilityRatings_ != null ? other.sourceCapabilityRatings_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SolarCapabilityRatings Clone() {
+      return new SolarCapabilityRatings(this);
+    }
+
+    /// <summary>Field number for the "sourceCapabilityRatings" field.</summary>
+    public const int SourceCapabilityRatingsFieldNumber = 1;
+    private global::openfmb.commonmodule.SourceCapabilityRatings sourceCapabilityRatings_;
+    /// <summary>
+    /// UML inherited base object
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.SourceCapabilityRatings SourceCapabilityRatings {
+      get { return sourceCapabilityRatings_; }
+      set {
+        sourceCapabilityRatings_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as SolarCapabilityRatings);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(SolarCapabilityRatings other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(SourceCapabilityRatings, other.SourceCapabilityRatings)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (sourceCapabilityRatings_ != null) hash ^= SourceCapabilityRatings.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (sourceCapabilityRatings_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(SourceCapabilityRatings);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (sourceCapabilityRatings_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(SourceCapabilityRatings);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (sourceCapabilityRatings_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SourceCapabilityRatings);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(SolarCapabilityRatings other) {
+      if (other == null) {
+        return;
+      }
+      if (other.sourceCapabilityRatings_ != null) {
+        if (sourceCapabilityRatings_ == null) {
+          SourceCapabilityRatings = new global::openfmb.commonmodule.SourceCapabilityRatings();
+        }
+        SourceCapabilityRatings.MergeFrom(other.SourceCapabilityRatings);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (sourceCapabilityRatings_ == null) {
+              SourceCapabilityRatings = new global::openfmb.commonmodule.SourceCapabilityRatings();
+            }
+            input.ReadMessage(SourceCapabilityRatings);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (sourceCapabilityRatings_ == null) {
+              SourceCapabilityRatings = new global::openfmb.commonmodule.SourceCapabilityRatings();
+            }
+            input.ReadMessage(SourceCapabilityRatings);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// Generation capability
+  /// </summary>
+  public sealed partial class SolarCapability : pb::IMessage<SolarCapability>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<SolarCapability> _parser = new pb::MessageParser<SolarCapability>(() => new SolarCapability());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<SolarCapability> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::openfmb.solarmodule.SolarmoduleReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SolarCapability() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SolarCapability(SolarCapability other) : this() {
+      nameplateValue_ = other.nameplateValue_ != null ? other.nameplateValue_.Clone() : null;
+      solarCapabilityConfiguration_ = other.solarCapabilityConfiguration_ != null ? other.solarCapabilityConfiguration_.Clone() : null;
+      solarCapabilityRatings_ = other.solarCapabilityRatings_ != null ? other.solarCapabilityRatings_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SolarCapability Clone() {
+      return new SolarCapability(this);
+    }
+
+    /// <summary>Field number for the "nameplateValue" field.</summary>
+    public const int NameplateValueFieldNumber = 1;
+    private global::openfmb.commonmodule.NameplateValue nameplateValue_;
+    /// <summary>
+    /// UML inherited base object
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.NameplateValue NameplateValue {
+      get { return nameplateValue_; }
+      set {
+        nameplateValue_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "solarCapabilityConfiguration" field.</summary>
+    public const int SolarCapabilityConfigurationFieldNumber = 2;
+    private global::openfmb.solarmodule.SolarCapabilityConfiguration solarCapabilityConfiguration_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.solarmodule.SolarCapabilityConfiguration SolarCapabilityConfiguration {
+      get { return solarCapabilityConfiguration_; }
+      set {
+        solarCapabilityConfiguration_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "solarCapabilityRatings" field.</summary>
+    public const int SolarCapabilityRatingsFieldNumber = 3;
+    private global::openfmb.solarmodule.SolarCapabilityRatings solarCapabilityRatings_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.solarmodule.SolarCapabilityRatings SolarCapabilityRatings {
+      get { return solarCapabilityRatings_; }
+      set {
+        solarCapabilityRatings_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as SolarCapability);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(SolarCapability other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(NameplateValue, other.NameplateValue)) return false;
+      if (!object.Equals(SolarCapabilityConfiguration, other.SolarCapabilityConfiguration)) return false;
+      if (!object.Equals(SolarCapabilityRatings, other.SolarCapabilityRatings)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (nameplateValue_ != null) hash ^= NameplateValue.GetHashCode();
+      if (solarCapabilityConfiguration_ != null) hash ^= SolarCapabilityConfiguration.GetHashCode();
+      if (solarCapabilityRatings_ != null) hash ^= SolarCapabilityRatings.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (nameplateValue_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(NameplateValue);
+      }
+      if (solarCapabilityConfiguration_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(SolarCapabilityConfiguration);
+      }
+      if (solarCapabilityRatings_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(SolarCapabilityRatings);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (nameplateValue_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(NameplateValue);
+      }
+      if (solarCapabilityConfiguration_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(SolarCapabilityConfiguration);
+      }
+      if (solarCapabilityRatings_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(SolarCapabilityRatings);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (nameplateValue_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(NameplateValue);
+      }
+      if (solarCapabilityConfiguration_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SolarCapabilityConfiguration);
+      }
+      if (solarCapabilityRatings_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SolarCapabilityRatings);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(SolarCapability other) {
+      if (other == null) {
+        return;
+      }
+      if (other.nameplateValue_ != null) {
+        if (nameplateValue_ == null) {
+          NameplateValue = new global::openfmb.commonmodule.NameplateValue();
+        }
+        NameplateValue.MergeFrom(other.NameplateValue);
+      }
+      if (other.solarCapabilityConfiguration_ != null) {
+        if (solarCapabilityConfiguration_ == null) {
+          SolarCapabilityConfiguration = new global::openfmb.solarmodule.SolarCapabilityConfiguration();
+        }
+        SolarCapabilityConfiguration.MergeFrom(other.SolarCapabilityConfiguration);
+      }
+      if (other.solarCapabilityRatings_ != null) {
+        if (solarCapabilityRatings_ == null) {
+          SolarCapabilityRatings = new global::openfmb.solarmodule.SolarCapabilityRatings();
+        }
+        SolarCapabilityRatings.MergeFrom(other.SolarCapabilityRatings);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (nameplateValue_ == null) {
+              NameplateValue = new global::openfmb.commonmodule.NameplateValue();
+            }
+            input.ReadMessage(NameplateValue);
+            break;
+          }
+          case 18: {
+            if (solarCapabilityConfiguration_ == null) {
+              SolarCapabilityConfiguration = new global::openfmb.solarmodule.SolarCapabilityConfiguration();
+            }
+            input.ReadMessage(SolarCapabilityConfiguration);
+            break;
+          }
+          case 26: {
+            if (solarCapabilityRatings_ == null) {
+              SolarCapabilityRatings = new global::openfmb.solarmodule.SolarCapabilityRatings();
+            }
+            input.ReadMessage(SolarCapabilityRatings);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (nameplateValue_ == null) {
+              NameplateValue = new global::openfmb.commonmodule.NameplateValue();
+            }
+            input.ReadMessage(NameplateValue);
+            break;
+          }
+          case 18: {
+            if (solarCapabilityConfiguration_ == null) {
+              SolarCapabilityConfiguration = new global::openfmb.solarmodule.SolarCapabilityConfiguration();
+            }
+            input.ReadMessage(SolarCapabilityConfiguration);
+            break;
+          }
+          case 26: {
+            if (solarCapabilityRatings_ == null) {
+              SolarCapabilityRatings = new global::openfmb.solarmodule.SolarCapabilityRatings();
+            }
+            input.ReadMessage(SolarCapabilityRatings);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// Generation capability profile
+  /// </summary>
+  public sealed partial class SolarCapabilityProfile : pb::IMessage<SolarCapabilityProfile>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<SolarCapabilityProfile> _parser = new pb::MessageParser<SolarCapabilityProfile>(() => new SolarCapabilityProfile());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<SolarCapabilityProfile> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::openfmb.solarmodule.SolarmoduleReflection.Descriptor.MessageTypes[6]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SolarCapabilityProfile() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SolarCapabilityProfile(SolarCapabilityProfile other) : this() {
+      capabilityMessageInfo_ = other.capabilityMessageInfo_ != null ? other.capabilityMessageInfo_.Clone() : null;
+      solarCapability_ = other.solarCapability_ != null ? other.solarCapability_.Clone() : null;
+      solarInverter_ = other.solarInverter_ != null ? other.solarInverter_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SolarCapabilityProfile Clone() {
+      return new SolarCapabilityProfile(this);
+    }
+
+    /// <summary>Field number for the "capabilityMessageInfo" field.</summary>
+    public const int CapabilityMessageInfoFieldNumber = 1;
+    private global::openfmb.commonmodule.CapabilityMessageInfo capabilityMessageInfo_;
+    /// <summary>
+    /// UML inherited base object
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.CapabilityMessageInfo CapabilityMessageInfo {
+      get { return capabilityMessageInfo_; }
+      set {
+        capabilityMessageInfo_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "solarCapability" field.</summary>
+    public const int SolarCapabilityFieldNumber = 2;
+    private global::openfmb.solarmodule.SolarCapability solarCapability_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.solarmodule.SolarCapability SolarCapability {
+      get { return solarCapability_; }
+      set {
+        solarCapability_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "solarInverter" field.</summary>
+    public const int SolarInverterFieldNumber = 3;
+    private global::openfmb.solarmodule.SolarInverter solarInverter_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.solarmodule.SolarInverter SolarInverter {
+      get { return solarInverter_; }
+      set {
+        solarInverter_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as SolarCapabilityProfile);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(SolarCapabilityProfile other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(CapabilityMessageInfo, other.CapabilityMessageInfo)) return false;
+      if (!object.Equals(SolarCapability, other.SolarCapability)) return false;
+      if (!object.Equals(SolarInverter, other.SolarInverter)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (capabilityMessageInfo_ != null) hash ^= CapabilityMessageInfo.GetHashCode();
+      if (solarCapability_ != null) hash ^= SolarCapability.GetHashCode();
+      if (solarInverter_ != null) hash ^= SolarInverter.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (capabilityMessageInfo_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(CapabilityMessageInfo);
+      }
+      if (solarCapability_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(SolarCapability);
+      }
+      if (solarInverter_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(SolarInverter);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (capabilityMessageInfo_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(CapabilityMessageInfo);
+      }
+      if (solarCapability_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(SolarCapability);
+      }
+      if (solarInverter_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(SolarInverter);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (capabilityMessageInfo_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CapabilityMessageInfo);
+      }
+      if (solarCapability_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SolarCapability);
+      }
+      if (solarInverter_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SolarInverter);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(SolarCapabilityProfile other) {
+      if (other == null) {
+        return;
+      }
+      if (other.capabilityMessageInfo_ != null) {
+        if (capabilityMessageInfo_ == null) {
+          CapabilityMessageInfo = new global::openfmb.commonmodule.CapabilityMessageInfo();
+        }
+        CapabilityMessageInfo.MergeFrom(other.CapabilityMessageInfo);
+      }
+      if (other.solarCapability_ != null) {
+        if (solarCapability_ == null) {
+          SolarCapability = new global::openfmb.solarmodule.SolarCapability();
+        }
+        SolarCapability.MergeFrom(other.SolarCapability);
+      }
+      if (other.solarInverter_ != null) {
+        if (solarInverter_ == null) {
+          SolarInverter = new global::openfmb.solarmodule.SolarInverter();
+        }
+        SolarInverter.MergeFrom(other.SolarInverter);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (capabilityMessageInfo_ == null) {
+              CapabilityMessageInfo = new global::openfmb.commonmodule.CapabilityMessageInfo();
+            }
+            input.ReadMessage(CapabilityMessageInfo);
+            break;
+          }
+          case 18: {
+            if (solarCapability_ == null) {
+              SolarCapability = new global::openfmb.solarmodule.SolarCapability();
+            }
+            input.ReadMessage(SolarCapability);
+            break;
+          }
+          case 26: {
+            if (solarInverter_ == null) {
+              SolarInverter = new global::openfmb.solarmodule.SolarInverter();
+            }
+            input.ReadMessage(SolarInverter);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (capabilityMessageInfo_ == null) {
+              CapabilityMessageInfo = new global::openfmb.commonmodule.CapabilityMessageInfo();
+            }
+            input.ReadMessage(CapabilityMessageInfo);
+            break;
+          }
+          case 18: {
+            if (solarCapability_ == null) {
+              SolarCapability = new global::openfmb.solarmodule.SolarCapability();
+            }
+            input.ReadMessage(SolarCapability);
+            break;
+          }
+          case 26: {
+            if (solarInverter_ == null) {
+              SolarInverter = new global::openfmb.solarmodule.SolarInverter();
+            }
+            input.ReadMessage(SolarInverter);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
   /// Point definition (Point)
   /// </summary>
   public sealed partial class SolarPoint : pb::IMessage<SolarPoint>
@@ -148,19 +1983,23 @@ namespace openfmb.solarmodule {
     private static readonly pb::MessageParser<SolarPoint> _parser = new pb::MessageParser<SolarPoint>(() => new SolarPoint());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SolarPoint> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.solarmodule.SolarmoduleReflection.Descriptor.MessageTypes[0]; }
+      get { return global::openfmb.solarmodule.SolarmoduleReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarPoint() {
       OnConstruction();
     }
@@ -168,6 +2007,7 @@ namespace openfmb.solarmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarPoint(SolarPoint other) : this() {
       frequencySetPointEnabled_ = other.frequencySetPointEnabled_ != null ? other.frequencySetPointEnabled_.Clone() : null;
       mode_ = other.mode_ != null ? other.mode_.Clone() : null;
@@ -180,10 +2020,23 @@ namespace openfmb.solarmodule {
       state_ = other.state_ != null ? other.state_.Clone() : null;
       voltageSetPointEnabled_ = other.voltageSetPointEnabled_ != null ? other.voltageSetPointEnabled_.Clone() : null;
       startTime_ = other.startTime_ != null ? other.startTime_.Clone() : null;
+      enterServiceOperation_ = other.enterServiceOperation_ != null ? other.enterServiceOperation_.Clone() : null;
+      hzWOperation_ = other.hzWOperation_ != null ? other.hzWOperation_.Clone() : null;
+      limitWOperation_ = other.limitWOperation_ != null ? other.limitWOperation_.Clone() : null;
+      pFOperation_ = other.pFOperation_ != null ? other.pFOperation_.Clone() : null;
+      tmHzTripOperation_ = other.tmHzTripOperation_ != null ? other.tmHzTripOperation_.Clone() : null;
+      tmVoltTripOperation_ = other.tmVoltTripOperation_ != null ? other.tmVoltTripOperation_.Clone() : null;
+      vArOperation_ = other.vArOperation_ != null ? other.vArOperation_.Clone() : null;
+      voltVarOperation_ = other.voltVarOperation_ != null ? other.voltVarOperation_.Clone() : null;
+      voltWOperation_ = other.voltWOperation_ != null ? other.voltWOperation_.Clone() : null;
+      wVarOperation_ = other.wVarOperation_ != null ? other.wVarOperation_.Clone() : null;
+      blackStartEnabled_ = other.blackStartEnabled_ != null ? other.blackStartEnabled_.Clone() : null;
+      syncBackToGrid_ = other.syncBackToGrid_ != null ? other.syncBackToGrid_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarPoint Clone() {
       return new SolarPoint(this);
     }
@@ -195,6 +2048,7 @@ namespace openfmb.solarmodule {
     /// Enable frequency set point
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ControlSPC FrequencySetPointEnabled {
       get { return frequencySetPointEnabled_; }
       set {
@@ -209,6 +2063,7 @@ namespace openfmb.solarmodule {
     /// Grid connect mode
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ENG_GridConnectModeKind Mode {
       get { return mode_; }
       set {
@@ -221,9 +2076,10 @@ namespace openfmb.solarmodule {
     private static readonly pb::FieldCodec<float?> _single_pctHzDroop_codec = pb::FieldCodec.ForStructWrapper<float>(26);
     private float? pctHzDroop_;
     /// <summary>
-    /// Black start enable
+    /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public float? PctHzDroop {
       get { return pctHzDroop_; }
       set {
@@ -237,9 +2093,10 @@ namespace openfmb.solarmodule {
     private static readonly pb::FieldCodec<float?> _single_pctVDroop_codec = pb::FieldCodec.ForStructWrapper<float>(34);
     private float? pctVDroop_;
     /// <summary>
-    /// Black start enable
+    /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public float? PctVDroop {
       get { return pctVDroop_; }
       set {
@@ -255,6 +2112,7 @@ namespace openfmb.solarmodule {
     /// Ramp rates
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.RampRate RampRates {
       get { return rampRates_; }
       set {
@@ -269,6 +2127,7 @@ namespace openfmb.solarmodule {
     /// Enable reactive power set point
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ControlSPC ReactivePwrSetPointEnabled {
       get { return reactivePwrSetPointEnabled_; }
       set {
@@ -283,6 +2142,7 @@ namespace openfmb.solarmodule {
     /// Enable real power set point
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ControlSPC RealPwrSetPointEnabled {
       get { return realPwrSetPointEnabled_; }
       set {
@@ -297,6 +2157,7 @@ namespace openfmb.solarmodule {
     /// Reset device
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ControlSPC Reset {
       get { return reset_; }
       set {
@@ -308,9 +2169,10 @@ namespace openfmb.solarmodule {
     public const int StateFieldNumber = 9;
     private global::openfmb.commonmodule.Optional_StateKind state_;
     /// <summary>
-    /// ESS state
+    /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.Optional_StateKind State {
       get { return state_; }
       set {
@@ -322,9 +2184,10 @@ namespace openfmb.solarmodule {
     public const int VoltageSetPointEnabledFieldNumber = 10;
     private global::openfmb.commonmodule.ControlSPC voltageSetPointEnabled_;
     /// <summary>
-    /// Enable voltage set point
+    /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ControlSPC VoltageSetPointEnabled {
       get { return voltageSetPointEnabled_; }
       set {
@@ -339,6 +2202,7 @@ namespace openfmb.solarmodule {
     /// X-axis value (Unix time).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ControlTimestamp StartTime {
       get { return startTime_; }
       set {
@@ -346,12 +2210,194 @@ namespace openfmb.solarmodule {
       }
     }
 
+    /// <summary>Field number for the "enterServiceOperation" field.</summary>
+    public const int EnterServiceOperationFieldNumber = 12;
+    private global::openfmb.commonmodule.EnterServiceAPC enterServiceOperation_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.EnterServiceAPC EnterServiceOperation {
+      get { return enterServiceOperation_; }
+      set {
+        enterServiceOperation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "hzWOperation" field.</summary>
+    public const int HzWOperationFieldNumber = 13;
+    private global::openfmb.commonmodule.HzWAPC hzWOperation_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.HzWAPC HzWOperation {
+      get { return hzWOperation_; }
+      set {
+        hzWOperation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "limitWOperation" field.</summary>
+    public const int LimitWOperationFieldNumber = 14;
+    private global::openfmb.commonmodule.LimitWAPC limitWOperation_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.LimitWAPC LimitWOperation {
+      get { return limitWOperation_; }
+      set {
+        limitWOperation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "pFOperation" field.</summary>
+    public const int PFOperationFieldNumber = 15;
+    private global::openfmb.commonmodule.PFSPC pFOperation_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.PFSPC PFOperation {
+      get { return pFOperation_; }
+      set {
+        pFOperation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "tmHzTripOperation" field.</summary>
+    public const int TmHzTripOperationFieldNumber = 16;
+    private global::openfmb.commonmodule.TmHzCSG tmHzTripOperation_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.TmHzCSG TmHzTripOperation {
+      get { return tmHzTripOperation_; }
+      set {
+        tmHzTripOperation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "tmVoltTripOperation" field.</summary>
+    public const int TmVoltTripOperationFieldNumber = 17;
+    private global::openfmb.commonmodule.TmVoltCSG tmVoltTripOperation_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.TmVoltCSG TmVoltTripOperation {
+      get { return tmVoltTripOperation_; }
+      set {
+        tmVoltTripOperation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "vArOperation" field.</summary>
+    public const int VArOperationFieldNumber = 18;
+    private global::openfmb.commonmodule.VarSPC vArOperation_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.VarSPC VArOperation {
+      get { return vArOperation_; }
+      set {
+        vArOperation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "voltVarOperation" field.</summary>
+    public const int VoltVarOperationFieldNumber = 19;
+    private global::openfmb.commonmodule.VoltVarCSG voltVarOperation_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.VoltVarCSG VoltVarOperation {
+      get { return voltVarOperation_; }
+      set {
+        voltVarOperation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "voltWOperation" field.</summary>
+    public const int VoltWOperationFieldNumber = 20;
+    private global::openfmb.commonmodule.VoltWCSG voltWOperation_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.VoltWCSG VoltWOperation {
+      get { return voltWOperation_; }
+      set {
+        voltWOperation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "wVarOperation" field.</summary>
+    public const int WVarOperationFieldNumber = 21;
+    private global::openfmb.commonmodule.WVarCSG wVarOperation_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.WVarCSG WVarOperation {
+      get { return wVarOperation_; }
+      set {
+        wVarOperation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "blackStartEnabled" field.</summary>
+    public const int BlackStartEnabledFieldNumber = 22;
+    private global::openfmb.commonmodule.ControlSPC blackStartEnabled_;
+    /// <summary>
+    /// Black start enable
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.ControlSPC BlackStartEnabled {
+      get { return blackStartEnabled_; }
+      set {
+        blackStartEnabled_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "syncBackToGrid" field.</summary>
+    public const int SyncBackToGridFieldNumber = 23;
+    private global::openfmb.commonmodule.ControlSPC syncBackToGrid_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.ControlSPC SyncBackToGrid {
+      get { return syncBackToGrid_; }
+      set {
+        syncBackToGrid_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SolarPoint);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SolarPoint other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -370,10 +2416,23 @@ namespace openfmb.solarmodule {
       if (!object.Equals(State, other.State)) return false;
       if (!object.Equals(VoltageSetPointEnabled, other.VoltageSetPointEnabled)) return false;
       if (!object.Equals(StartTime, other.StartTime)) return false;
+      if (!object.Equals(EnterServiceOperation, other.EnterServiceOperation)) return false;
+      if (!object.Equals(HzWOperation, other.HzWOperation)) return false;
+      if (!object.Equals(LimitWOperation, other.LimitWOperation)) return false;
+      if (!object.Equals(PFOperation, other.PFOperation)) return false;
+      if (!object.Equals(TmHzTripOperation, other.TmHzTripOperation)) return false;
+      if (!object.Equals(TmVoltTripOperation, other.TmVoltTripOperation)) return false;
+      if (!object.Equals(VArOperation, other.VArOperation)) return false;
+      if (!object.Equals(VoltVarOperation, other.VoltVarOperation)) return false;
+      if (!object.Equals(VoltWOperation, other.VoltWOperation)) return false;
+      if (!object.Equals(WVarOperation, other.WVarOperation)) return false;
+      if (!object.Equals(BlackStartEnabled, other.BlackStartEnabled)) return false;
+      if (!object.Equals(SyncBackToGrid, other.SyncBackToGrid)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (frequencySetPointEnabled_ != null) hash ^= FrequencySetPointEnabled.GetHashCode();
@@ -387,6 +2446,18 @@ namespace openfmb.solarmodule {
       if (state_ != null) hash ^= State.GetHashCode();
       if (voltageSetPointEnabled_ != null) hash ^= VoltageSetPointEnabled.GetHashCode();
       if (startTime_ != null) hash ^= StartTime.GetHashCode();
+      if (enterServiceOperation_ != null) hash ^= EnterServiceOperation.GetHashCode();
+      if (hzWOperation_ != null) hash ^= HzWOperation.GetHashCode();
+      if (limitWOperation_ != null) hash ^= LimitWOperation.GetHashCode();
+      if (pFOperation_ != null) hash ^= PFOperation.GetHashCode();
+      if (tmHzTripOperation_ != null) hash ^= TmHzTripOperation.GetHashCode();
+      if (tmVoltTripOperation_ != null) hash ^= TmVoltTripOperation.GetHashCode();
+      if (vArOperation_ != null) hash ^= VArOperation.GetHashCode();
+      if (voltVarOperation_ != null) hash ^= VoltVarOperation.GetHashCode();
+      if (voltWOperation_ != null) hash ^= VoltWOperation.GetHashCode();
+      if (wVarOperation_ != null) hash ^= WVarOperation.GetHashCode();
+      if (blackStartEnabled_ != null) hash ^= BlackStartEnabled.GetHashCode();
+      if (syncBackToGrid_ != null) hash ^= SyncBackToGrid.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -394,11 +2465,13 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -445,6 +2518,54 @@ namespace openfmb.solarmodule {
         output.WriteRawTag(90);
         output.WriteMessage(StartTime);
       }
+      if (enterServiceOperation_ != null) {
+        output.WriteRawTag(98);
+        output.WriteMessage(EnterServiceOperation);
+      }
+      if (hzWOperation_ != null) {
+        output.WriteRawTag(106);
+        output.WriteMessage(HzWOperation);
+      }
+      if (limitWOperation_ != null) {
+        output.WriteRawTag(114);
+        output.WriteMessage(LimitWOperation);
+      }
+      if (pFOperation_ != null) {
+        output.WriteRawTag(122);
+        output.WriteMessage(PFOperation);
+      }
+      if (tmHzTripOperation_ != null) {
+        output.WriteRawTag(130, 1);
+        output.WriteMessage(TmHzTripOperation);
+      }
+      if (tmVoltTripOperation_ != null) {
+        output.WriteRawTag(138, 1);
+        output.WriteMessage(TmVoltTripOperation);
+      }
+      if (vArOperation_ != null) {
+        output.WriteRawTag(146, 1);
+        output.WriteMessage(VArOperation);
+      }
+      if (voltVarOperation_ != null) {
+        output.WriteRawTag(154, 1);
+        output.WriteMessage(VoltVarOperation);
+      }
+      if (voltWOperation_ != null) {
+        output.WriteRawTag(162, 1);
+        output.WriteMessage(VoltWOperation);
+      }
+      if (wVarOperation_ != null) {
+        output.WriteRawTag(170, 1);
+        output.WriteMessage(WVarOperation);
+      }
+      if (blackStartEnabled_ != null) {
+        output.WriteRawTag(178, 1);
+        output.WriteMessage(BlackStartEnabled);
+      }
+      if (syncBackToGrid_ != null) {
+        output.WriteRawTag(186, 1);
+        output.WriteMessage(SyncBackToGrid);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -453,6 +2574,7 @@ namespace openfmb.solarmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (frequencySetPointEnabled_ != null) {
         output.WriteRawTag(10);
@@ -496,6 +2618,54 @@ namespace openfmb.solarmodule {
         output.WriteRawTag(90);
         output.WriteMessage(StartTime);
       }
+      if (enterServiceOperation_ != null) {
+        output.WriteRawTag(98);
+        output.WriteMessage(EnterServiceOperation);
+      }
+      if (hzWOperation_ != null) {
+        output.WriteRawTag(106);
+        output.WriteMessage(HzWOperation);
+      }
+      if (limitWOperation_ != null) {
+        output.WriteRawTag(114);
+        output.WriteMessage(LimitWOperation);
+      }
+      if (pFOperation_ != null) {
+        output.WriteRawTag(122);
+        output.WriteMessage(PFOperation);
+      }
+      if (tmHzTripOperation_ != null) {
+        output.WriteRawTag(130, 1);
+        output.WriteMessage(TmHzTripOperation);
+      }
+      if (tmVoltTripOperation_ != null) {
+        output.WriteRawTag(138, 1);
+        output.WriteMessage(TmVoltTripOperation);
+      }
+      if (vArOperation_ != null) {
+        output.WriteRawTag(146, 1);
+        output.WriteMessage(VArOperation);
+      }
+      if (voltVarOperation_ != null) {
+        output.WriteRawTag(154, 1);
+        output.WriteMessage(VoltVarOperation);
+      }
+      if (voltWOperation_ != null) {
+        output.WriteRawTag(162, 1);
+        output.WriteMessage(VoltWOperation);
+      }
+      if (wVarOperation_ != null) {
+        output.WriteRawTag(170, 1);
+        output.WriteMessage(WVarOperation);
+      }
+      if (blackStartEnabled_ != null) {
+        output.WriteRawTag(178, 1);
+        output.WriteMessage(BlackStartEnabled);
+      }
+      if (syncBackToGrid_ != null) {
+        output.WriteRawTag(186, 1);
+        output.WriteMessage(SyncBackToGrid);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -503,6 +2673,7 @@ namespace openfmb.solarmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (frequencySetPointEnabled_ != null) {
@@ -538,6 +2709,42 @@ namespace openfmb.solarmodule {
       if (startTime_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(StartTime);
       }
+      if (enterServiceOperation_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(EnterServiceOperation);
+      }
+      if (hzWOperation_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(HzWOperation);
+      }
+      if (limitWOperation_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LimitWOperation);
+      }
+      if (pFOperation_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PFOperation);
+      }
+      if (tmHzTripOperation_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(TmHzTripOperation);
+      }
+      if (tmVoltTripOperation_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(TmVoltTripOperation);
+      }
+      if (vArOperation_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(VArOperation);
+      }
+      if (voltVarOperation_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(VoltVarOperation);
+      }
+      if (voltWOperation_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(VoltWOperation);
+      }
+      if (wVarOperation_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(WVarOperation);
+      }
+      if (blackStartEnabled_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(BlackStartEnabled);
+      }
+      if (syncBackToGrid_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(SyncBackToGrid);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -545,6 +2752,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SolarPoint other) {
       if (other == null) {
         return;
@@ -613,10 +2821,83 @@ namespace openfmb.solarmodule {
         }
         StartTime.MergeFrom(other.StartTime);
       }
+      if (other.enterServiceOperation_ != null) {
+        if (enterServiceOperation_ == null) {
+          EnterServiceOperation = new global::openfmb.commonmodule.EnterServiceAPC();
+        }
+        EnterServiceOperation.MergeFrom(other.EnterServiceOperation);
+      }
+      if (other.hzWOperation_ != null) {
+        if (hzWOperation_ == null) {
+          HzWOperation = new global::openfmb.commonmodule.HzWAPC();
+        }
+        HzWOperation.MergeFrom(other.HzWOperation);
+      }
+      if (other.limitWOperation_ != null) {
+        if (limitWOperation_ == null) {
+          LimitWOperation = new global::openfmb.commonmodule.LimitWAPC();
+        }
+        LimitWOperation.MergeFrom(other.LimitWOperation);
+      }
+      if (other.pFOperation_ != null) {
+        if (pFOperation_ == null) {
+          PFOperation = new global::openfmb.commonmodule.PFSPC();
+        }
+        PFOperation.MergeFrom(other.PFOperation);
+      }
+      if (other.tmHzTripOperation_ != null) {
+        if (tmHzTripOperation_ == null) {
+          TmHzTripOperation = new global::openfmb.commonmodule.TmHzCSG();
+        }
+        TmHzTripOperation.MergeFrom(other.TmHzTripOperation);
+      }
+      if (other.tmVoltTripOperation_ != null) {
+        if (tmVoltTripOperation_ == null) {
+          TmVoltTripOperation = new global::openfmb.commonmodule.TmVoltCSG();
+        }
+        TmVoltTripOperation.MergeFrom(other.TmVoltTripOperation);
+      }
+      if (other.vArOperation_ != null) {
+        if (vArOperation_ == null) {
+          VArOperation = new global::openfmb.commonmodule.VarSPC();
+        }
+        VArOperation.MergeFrom(other.VArOperation);
+      }
+      if (other.voltVarOperation_ != null) {
+        if (voltVarOperation_ == null) {
+          VoltVarOperation = new global::openfmb.commonmodule.VoltVarCSG();
+        }
+        VoltVarOperation.MergeFrom(other.VoltVarOperation);
+      }
+      if (other.voltWOperation_ != null) {
+        if (voltWOperation_ == null) {
+          VoltWOperation = new global::openfmb.commonmodule.VoltWCSG();
+        }
+        VoltWOperation.MergeFrom(other.VoltWOperation);
+      }
+      if (other.wVarOperation_ != null) {
+        if (wVarOperation_ == null) {
+          WVarOperation = new global::openfmb.commonmodule.WVarCSG();
+        }
+        WVarOperation.MergeFrom(other.WVarOperation);
+      }
+      if (other.blackStartEnabled_ != null) {
+        if (blackStartEnabled_ == null) {
+          BlackStartEnabled = new global::openfmb.commonmodule.ControlSPC();
+        }
+        BlackStartEnabled.MergeFrom(other.BlackStartEnabled);
+      }
+      if (other.syncBackToGrid_ != null) {
+        if (syncBackToGrid_ == null) {
+          SyncBackToGrid = new global::openfmb.commonmodule.ControlSPC();
+        }
+        SyncBackToGrid.MergeFrom(other.SyncBackToGrid);
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -704,6 +2985,90 @@ namespace openfmb.solarmodule {
             input.ReadMessage(StartTime);
             break;
           }
+          case 98: {
+            if (enterServiceOperation_ == null) {
+              EnterServiceOperation = new global::openfmb.commonmodule.EnterServiceAPC();
+            }
+            input.ReadMessage(EnterServiceOperation);
+            break;
+          }
+          case 106: {
+            if (hzWOperation_ == null) {
+              HzWOperation = new global::openfmb.commonmodule.HzWAPC();
+            }
+            input.ReadMessage(HzWOperation);
+            break;
+          }
+          case 114: {
+            if (limitWOperation_ == null) {
+              LimitWOperation = new global::openfmb.commonmodule.LimitWAPC();
+            }
+            input.ReadMessage(LimitWOperation);
+            break;
+          }
+          case 122: {
+            if (pFOperation_ == null) {
+              PFOperation = new global::openfmb.commonmodule.PFSPC();
+            }
+            input.ReadMessage(PFOperation);
+            break;
+          }
+          case 130: {
+            if (tmHzTripOperation_ == null) {
+              TmHzTripOperation = new global::openfmb.commonmodule.TmHzCSG();
+            }
+            input.ReadMessage(TmHzTripOperation);
+            break;
+          }
+          case 138: {
+            if (tmVoltTripOperation_ == null) {
+              TmVoltTripOperation = new global::openfmb.commonmodule.TmVoltCSG();
+            }
+            input.ReadMessage(TmVoltTripOperation);
+            break;
+          }
+          case 146: {
+            if (vArOperation_ == null) {
+              VArOperation = new global::openfmb.commonmodule.VarSPC();
+            }
+            input.ReadMessage(VArOperation);
+            break;
+          }
+          case 154: {
+            if (voltVarOperation_ == null) {
+              VoltVarOperation = new global::openfmb.commonmodule.VoltVarCSG();
+            }
+            input.ReadMessage(VoltVarOperation);
+            break;
+          }
+          case 162: {
+            if (voltWOperation_ == null) {
+              VoltWOperation = new global::openfmb.commonmodule.VoltWCSG();
+            }
+            input.ReadMessage(VoltWOperation);
+            break;
+          }
+          case 170: {
+            if (wVarOperation_ == null) {
+              WVarOperation = new global::openfmb.commonmodule.WVarCSG();
+            }
+            input.ReadMessage(WVarOperation);
+            break;
+          }
+          case 178: {
+            if (blackStartEnabled_ == null) {
+              BlackStartEnabled = new global::openfmb.commonmodule.ControlSPC();
+            }
+            input.ReadMessage(BlackStartEnabled);
+            break;
+          }
+          case 186: {
+            if (syncBackToGrid_ == null) {
+              SyncBackToGrid = new global::openfmb.commonmodule.ControlSPC();
+            }
+            input.ReadMessage(SyncBackToGrid);
+            break;
+          }
         }
       }
     #endif
@@ -711,6 +3076,7 @@ namespace openfmb.solarmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -795,6 +3161,90 @@ namespace openfmb.solarmodule {
             input.ReadMessage(StartTime);
             break;
           }
+          case 98: {
+            if (enterServiceOperation_ == null) {
+              EnterServiceOperation = new global::openfmb.commonmodule.EnterServiceAPC();
+            }
+            input.ReadMessage(EnterServiceOperation);
+            break;
+          }
+          case 106: {
+            if (hzWOperation_ == null) {
+              HzWOperation = new global::openfmb.commonmodule.HzWAPC();
+            }
+            input.ReadMessage(HzWOperation);
+            break;
+          }
+          case 114: {
+            if (limitWOperation_ == null) {
+              LimitWOperation = new global::openfmb.commonmodule.LimitWAPC();
+            }
+            input.ReadMessage(LimitWOperation);
+            break;
+          }
+          case 122: {
+            if (pFOperation_ == null) {
+              PFOperation = new global::openfmb.commonmodule.PFSPC();
+            }
+            input.ReadMessage(PFOperation);
+            break;
+          }
+          case 130: {
+            if (tmHzTripOperation_ == null) {
+              TmHzTripOperation = new global::openfmb.commonmodule.TmHzCSG();
+            }
+            input.ReadMessage(TmHzTripOperation);
+            break;
+          }
+          case 138: {
+            if (tmVoltTripOperation_ == null) {
+              TmVoltTripOperation = new global::openfmb.commonmodule.TmVoltCSG();
+            }
+            input.ReadMessage(TmVoltTripOperation);
+            break;
+          }
+          case 146: {
+            if (vArOperation_ == null) {
+              VArOperation = new global::openfmb.commonmodule.VarSPC();
+            }
+            input.ReadMessage(VArOperation);
+            break;
+          }
+          case 154: {
+            if (voltVarOperation_ == null) {
+              VoltVarOperation = new global::openfmb.commonmodule.VoltVarCSG();
+            }
+            input.ReadMessage(VoltVarOperation);
+            break;
+          }
+          case 162: {
+            if (voltWOperation_ == null) {
+              VoltWOperation = new global::openfmb.commonmodule.VoltWCSG();
+            }
+            input.ReadMessage(VoltWOperation);
+            break;
+          }
+          case 170: {
+            if (wVarOperation_ == null) {
+              WVarOperation = new global::openfmb.commonmodule.WVarCSG();
+            }
+            input.ReadMessage(WVarOperation);
+            break;
+          }
+          case 178: {
+            if (blackStartEnabled_ == null) {
+              BlackStartEnabled = new global::openfmb.commonmodule.ControlSPC();
+            }
+            input.ReadMessage(BlackStartEnabled);
+            break;
+          }
+          case 186: {
+            if (syncBackToGrid_ == null) {
+              SyncBackToGrid = new global::openfmb.commonmodule.ControlSPC();
+            }
+            input.ReadMessage(SyncBackToGrid);
+            break;
+          }
         }
       }
     }
@@ -813,19 +3263,23 @@ namespace openfmb.solarmodule {
     private static readonly pb::MessageParser<SolarCSG> _parser = new pb::MessageParser<SolarCSG>(() => new SolarCSG());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SolarCSG> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.solarmodule.SolarmoduleReflection.Descriptor.MessageTypes[1]; }
+      get { return global::openfmb.solarmodule.SolarmoduleReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarCSG() {
       OnConstruction();
     }
@@ -833,12 +3287,14 @@ namespace openfmb.solarmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarCSG(SolarCSG other) : this() {
       crvPts_ = other.crvPts_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarCSG Clone() {
       return new SolarCSG(this);
     }
@@ -852,16 +3308,19 @@ namespace openfmb.solarmodule {
     /// The array with the points specifying a curve shape.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::openfmb.solarmodule.SolarPoint> CrvPts {
       get { return crvPts_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SolarCSG);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SolarCSG other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -874,6 +3333,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= crvPts_.GetHashCode();
@@ -884,11 +3344,13 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -902,6 +3364,7 @@ namespace openfmb.solarmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       crvPts_.WriteTo(ref output, _repeated_crvPts_codec);
       if (_unknownFields != null) {
@@ -911,6 +3374,7 @@ namespace openfmb.solarmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += crvPts_.CalculateSize(_repeated_crvPts_codec);
@@ -921,6 +3385,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SolarCSG other) {
       if (other == null) {
         return;
@@ -930,6 +3395,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -951,6 +3417,7 @@ namespace openfmb.solarmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -980,19 +3447,23 @@ namespace openfmb.solarmodule {
     private static readonly pb::MessageParser<SolarControlScheduleFSCH> _parser = new pb::MessageParser<SolarControlScheduleFSCH>(() => new SolarControlScheduleFSCH());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SolarControlScheduleFSCH> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.solarmodule.SolarmoduleReflection.Descriptor.MessageTypes[2]; }
+      get { return global::openfmb.solarmodule.SolarmoduleReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarControlScheduleFSCH() {
       OnConstruction();
     }
@@ -1000,12 +3471,14 @@ namespace openfmb.solarmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarControlScheduleFSCH(SolarControlScheduleFSCH other) : this() {
       valDCSG_ = other.valDCSG_ != null ? other.valDCSG_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarControlScheduleFSCH Clone() {
       return new SolarControlScheduleFSCH(this);
     }
@@ -1017,6 +3490,7 @@ namespace openfmb.solarmodule {
     /// Discrete value in SolarCSG type
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.solarmodule.SolarCSG ValDCSG {
       get { return valDCSG_; }
       set {
@@ -1025,11 +3499,13 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SolarControlScheduleFSCH);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SolarControlScheduleFSCH other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1042,6 +3518,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (valDCSG_ != null) hash ^= ValDCSG.GetHashCode();
@@ -1052,11 +3529,13 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -1073,6 +3552,7 @@ namespace openfmb.solarmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (valDCSG_ != null) {
         output.WriteRawTag(10);
@@ -1085,6 +3565,7 @@ namespace openfmb.solarmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (valDCSG_ != null) {
@@ -1097,6 +3578,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SolarControlScheduleFSCH other) {
       if (other == null) {
         return;
@@ -1111,6 +3593,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1135,6 +3618,7 @@ namespace openfmb.solarmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -1167,19 +3651,23 @@ namespace openfmb.solarmodule {
     private static readonly pb::MessageParser<SolarControlFSCC> _parser = new pb::MessageParser<SolarControlFSCC>(() => new SolarControlFSCC());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SolarControlFSCC> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.solarmodule.SolarmoduleReflection.Descriptor.MessageTypes[3]; }
+      get { return global::openfmb.solarmodule.SolarmoduleReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarControlFSCC() {
       OnConstruction();
     }
@@ -1187,6 +3675,7 @@ namespace openfmb.solarmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarControlFSCC(SolarControlFSCC other) : this() {
       controlFSCC_ = other.controlFSCC_ != null ? other.controlFSCC_.Clone() : null;
       solarControlScheduleFSCH_ = other.solarControlScheduleFSCH_ != null ? other.solarControlScheduleFSCH_.Clone() : null;
@@ -1194,6 +3683,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarControlFSCC Clone() {
       return new SolarControlFSCC(this);
     }
@@ -1205,6 +3695,7 @@ namespace openfmb.solarmodule {
     /// UML inherited base object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ControlFSCC ControlFSCC {
       get { return controlFSCC_; }
       set {
@@ -1219,6 +3710,7 @@ namespace openfmb.solarmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.solarmodule.SolarControlScheduleFSCH SolarControlScheduleFSCH {
       get { return solarControlScheduleFSCH_; }
       set {
@@ -1227,11 +3719,13 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SolarControlFSCC);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SolarControlFSCC other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1245,6 +3739,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (controlFSCC_ != null) hash ^= ControlFSCC.GetHashCode();
@@ -1256,11 +3751,13 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -1281,6 +3778,7 @@ namespace openfmb.solarmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (controlFSCC_ != null) {
         output.WriteRawTag(10);
@@ -1297,6 +3795,7 @@ namespace openfmb.solarmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (controlFSCC_ != null) {
@@ -1312,6 +3811,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SolarControlFSCC other) {
       if (other == null) {
         return;
@@ -1332,6 +3832,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1363,6 +3864,7 @@ namespace openfmb.solarmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -1402,19 +3904,23 @@ namespace openfmb.solarmodule {
     private static readonly pb::MessageParser<SolarControl> _parser = new pb::MessageParser<SolarControl>(() => new SolarControl());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SolarControl> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.solarmodule.SolarmoduleReflection.Descriptor.MessageTypes[4]; }
+      get { return global::openfmb.solarmodule.SolarmoduleReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarControl() {
       OnConstruction();
     }
@@ -1422,6 +3928,7 @@ namespace openfmb.solarmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarControl(SolarControl other) : this() {
       controlValue_ = other.controlValue_ != null ? other.controlValue_.Clone() : null;
       check_ = other.check_ != null ? other.check_.Clone() : null;
@@ -1430,6 +3937,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarControl Clone() {
       return new SolarControl(this);
     }
@@ -1441,6 +3949,7 @@ namespace openfmb.solarmodule {
     /// UML inherited base object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ControlValue ControlValue {
       get { return controlValue_; }
       set {
@@ -1455,6 +3964,7 @@ namespace openfmb.solarmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.CheckConditions Check {
       get { return check_; }
       set {
@@ -1469,6 +3979,7 @@ namespace openfmb.solarmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.solarmodule.SolarControlFSCC SolarControlFSCC {
       get { return solarControlFSCC_; }
       set {
@@ -1477,11 +3988,13 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SolarControl);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SolarControl other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1496,6 +4009,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (controlValue_ != null) hash ^= ControlValue.GetHashCode();
@@ -1508,11 +4022,13 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -1537,6 +4053,7 @@ namespace openfmb.solarmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (controlValue_ != null) {
         output.WriteRawTag(10);
@@ -1557,6 +4074,7 @@ namespace openfmb.solarmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (controlValue_ != null) {
@@ -1575,6 +4093,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SolarControl other) {
       if (other == null) {
         return;
@@ -1601,6 +4120,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1639,6 +4159,7 @@ namespace openfmb.solarmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -1665,193 +4186,6 @@ namespace openfmb.solarmodule {
               SolarControlFSCC = new global::openfmb.solarmodule.SolarControlFSCC();
             }
             input.ReadMessage(SolarControlFSCC);
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  /// <summary>
-  /// MISSING DOCUMENTATION!!!
-  /// </summary>
-  public sealed partial class SolarInverter : pb::IMessage<SolarInverter>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<SolarInverter> _parser = new pb::MessageParser<SolarInverter>(() => new SolarInverter());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<SolarInverter> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.solarmodule.SolarmoduleReflection.Descriptor.MessageTypes[5]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public SolarInverter() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public SolarInverter(SolarInverter other) : this() {
-      conductingEquipment_ = other.conductingEquipment_ != null ? other.conductingEquipment_.Clone() : null;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public SolarInverter Clone() {
-      return new SolarInverter(this);
-    }
-
-    /// <summary>Field number for the "conductingEquipment" field.</summary>
-    public const int ConductingEquipmentFieldNumber = 1;
-    private global::openfmb.commonmodule.ConductingEquipment conductingEquipment_;
-    /// <summary>
-    /// UML inherited base object
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.ConductingEquipment ConductingEquipment {
-      get { return conductingEquipment_; }
-      set {
-        conductingEquipment_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as SolarInverter);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(SolarInverter other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (!object.Equals(ConductingEquipment, other.ConductingEquipment)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (conductingEquipment_ != null) hash ^= ConductingEquipment.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (conductingEquipment_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(ConductingEquipment);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (conductingEquipment_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(ConductingEquipment);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (conductingEquipment_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ConductingEquipment);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(SolarInverter other) {
-      if (other == null) {
-        return;
-      }
-      if (other.conductingEquipment_ != null) {
-        if (conductingEquipment_ == null) {
-          ConductingEquipment = new global::openfmb.commonmodule.ConductingEquipment();
-        }
-        ConductingEquipment.MergeFrom(other.ConductingEquipment);
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            if (conductingEquipment_ == null) {
-              ConductingEquipment = new global::openfmb.commonmodule.ConductingEquipment();
-            }
-            input.ReadMessage(ConductingEquipment);
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            if (conductingEquipment_ == null) {
-              ConductingEquipment = new global::openfmb.commonmodule.ConductingEquipment();
-            }
-            input.ReadMessage(ConductingEquipment);
             break;
           }
         }
@@ -1872,19 +4206,23 @@ namespace openfmb.solarmodule {
     private static readonly pb::MessageParser<SolarControlProfile> _parser = new pb::MessageParser<SolarControlProfile>(() => new SolarControlProfile());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SolarControlProfile> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.solarmodule.SolarmoduleReflection.Descriptor.MessageTypes[6]; }
+      get { return global::openfmb.solarmodule.SolarmoduleReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarControlProfile() {
       OnConstruction();
     }
@@ -1892,6 +4230,7 @@ namespace openfmb.solarmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarControlProfile(SolarControlProfile other) : this() {
       controlMessageInfo_ = other.controlMessageInfo_ != null ? other.controlMessageInfo_.Clone() : null;
       solarControl_ = other.solarControl_ != null ? other.solarControl_.Clone() : null;
@@ -1900,6 +4239,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarControlProfile Clone() {
       return new SolarControlProfile(this);
     }
@@ -1911,6 +4251,7 @@ namespace openfmb.solarmodule {
     /// UML inherited base object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ControlMessageInfo ControlMessageInfo {
       get { return controlMessageInfo_; }
       set {
@@ -1925,6 +4266,7 @@ namespace openfmb.solarmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.solarmodule.SolarControl SolarControl {
       get { return solarControl_; }
       set {
@@ -1939,6 +4281,7 @@ namespace openfmb.solarmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.solarmodule.SolarInverter SolarInverter {
       get { return solarInverter_; }
       set {
@@ -1947,11 +4290,13 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SolarControlProfile);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SolarControlProfile other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1966,6 +4311,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (controlMessageInfo_ != null) hash ^= ControlMessageInfo.GetHashCode();
@@ -1978,11 +4324,13 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -2007,6 +4355,7 @@ namespace openfmb.solarmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (controlMessageInfo_ != null) {
         output.WriteRawTag(10);
@@ -2027,6 +4376,7 @@ namespace openfmb.solarmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (controlMessageInfo_ != null) {
@@ -2045,6 +4395,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SolarControlProfile other) {
       if (other == null) {
         return;
@@ -2071,6 +4422,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -2109,6 +4461,7 @@ namespace openfmb.solarmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -2155,19 +4508,23 @@ namespace openfmb.solarmodule {
     private static readonly pb::MessageParser<SolarPointStatus> _parser = new pb::MessageParser<SolarPointStatus>(() => new SolarPointStatus());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SolarPointStatus> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.solarmodule.SolarmoduleReflection.Descriptor.MessageTypes[7]; }
+      get { return global::openfmb.solarmodule.SolarmoduleReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarPointStatus() {
       OnConstruction();
     }
@@ -2175,6 +4532,7 @@ namespace openfmb.solarmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarPointStatus(SolarPointStatus other) : this() {
       frequencySetPointEnabled_ = other.frequencySetPointEnabled_ != null ? other.frequencySetPointEnabled_.Clone() : null;
       mode_ = other.mode_ != null ? other.mode_.Clone() : null;
@@ -2185,10 +4543,23 @@ namespace openfmb.solarmodule {
       realPwrSetPointEnabled_ = other.realPwrSetPointEnabled_ != null ? other.realPwrSetPointEnabled_.Clone() : null;
       state_ = other.state_ != null ? other.state_.Clone() : null;
       voltageSetPointEnabled_ = other.voltageSetPointEnabled_ != null ? other.voltageSetPointEnabled_.Clone() : null;
+      blackStartEnabled_ = other.blackStartEnabled_ != null ? other.blackStartEnabled_.Clone() : null;
+      enterServiceOperation_ = other.enterServiceOperation_ != null ? other.enterServiceOperation_.Clone() : null;
+      hzWOperation_ = other.hzWOperation_ != null ? other.hzWOperation_.Clone() : null;
+      limitWOperation_ = other.limitWOperation_ != null ? other.limitWOperation_.Clone() : null;
+      pFOperation_ = other.pFOperation_ != null ? other.pFOperation_.Clone() : null;
+      syncBackToGrid_ = other.syncBackToGrid_ != null ? other.syncBackToGrid_.Clone() : null;
+      tmHzTripOperation_ = other.tmHzTripOperation_ != null ? other.tmHzTripOperation_.Clone() : null;
+      tmVoltTripOperation_ = other.tmVoltTripOperation_ != null ? other.tmVoltTripOperation_.Clone() : null;
+      vArOperation_ = other.vArOperation_ != null ? other.vArOperation_.Clone() : null;
+      voltVarOperation_ = other.voltVarOperation_ != null ? other.voltVarOperation_.Clone() : null;
+      voltWOperation_ = other.voltWOperation_ != null ? other.voltWOperation_.Clone() : null;
+      wVarOperation_ = other.wVarOperation_ != null ? other.wVarOperation_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarPointStatus Clone() {
       return new SolarPointStatus(this);
     }
@@ -2200,6 +4571,7 @@ namespace openfmb.solarmodule {
     /// Enable frequency set point
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.StatusSPS FrequencySetPointEnabled {
       get { return frequencySetPointEnabled_; }
       set {
@@ -2214,6 +4586,7 @@ namespace openfmb.solarmodule {
     /// Grid connect mode
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ENG_GridConnectModeKind Mode {
       get { return mode_; }
       set {
@@ -2226,9 +4599,10 @@ namespace openfmb.solarmodule {
     private static readonly pb::FieldCodec<float?> _single_pctHzDroop_codec = pb::FieldCodec.ForStructWrapper<float>(26);
     private float? pctHzDroop_;
     /// <summary>
-    /// Black start enable
+    /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public float? PctHzDroop {
       get { return pctHzDroop_; }
       set {
@@ -2242,9 +4616,10 @@ namespace openfmb.solarmodule {
     private static readonly pb::FieldCodec<float?> _single_pctVDroop_codec = pb::FieldCodec.ForStructWrapper<float>(34);
     private float? pctVDroop_;
     /// <summary>
-    /// Black start enable
+    /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public float? PctVDroop {
       get { return pctVDroop_; }
       set {
@@ -2260,6 +4635,7 @@ namespace openfmb.solarmodule {
     /// Ramp rates
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.RampRate RampRates {
       get { return rampRates_; }
       set {
@@ -2274,6 +4650,7 @@ namespace openfmb.solarmodule {
     /// Enable reactive power set point
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.StatusSPS ReactivePwrSetPointEnabled {
       get { return reactivePwrSetPointEnabled_; }
       set {
@@ -2288,6 +4665,7 @@ namespace openfmb.solarmodule {
     /// Enable real power set point
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.StatusSPS RealPwrSetPointEnabled {
       get { return realPwrSetPointEnabled_; }
       set {
@@ -2299,9 +4677,10 @@ namespace openfmb.solarmodule {
     public const int StateFieldNumber = 8;
     private global::openfmb.commonmodule.Optional_StateKind state_;
     /// <summary>
-    /// ESS state
+    /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.Optional_StateKind State {
       get { return state_; }
       set {
@@ -2316,6 +4695,7 @@ namespace openfmb.solarmodule {
     /// Enable voltage set point
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.StatusSPS VoltageSetPointEnabled {
       get { return voltageSetPointEnabled_; }
       set {
@@ -2323,12 +4703,194 @@ namespace openfmb.solarmodule {
       }
     }
 
+    /// <summary>Field number for the "blackStartEnabled" field.</summary>
+    public const int BlackStartEnabledFieldNumber = 10;
+    private global::openfmb.commonmodule.ControlSPC blackStartEnabled_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.ControlSPC BlackStartEnabled {
+      get { return blackStartEnabled_; }
+      set {
+        blackStartEnabled_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "enterServiceOperation" field.</summary>
+    public const int EnterServiceOperationFieldNumber = 11;
+    private global::openfmb.commonmodule.EnterServiceAPC enterServiceOperation_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.EnterServiceAPC EnterServiceOperation {
+      get { return enterServiceOperation_; }
+      set {
+        enterServiceOperation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "hzWOperation" field.</summary>
+    public const int HzWOperationFieldNumber = 12;
+    private global::openfmb.commonmodule.HzWPoint hzWOperation_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.HzWPoint HzWOperation {
+      get { return hzWOperation_; }
+      set {
+        hzWOperation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "limitWOperation" field.</summary>
+    public const int LimitWOperationFieldNumber = 13;
+    private global::openfmb.commonmodule.LimitWAPC limitWOperation_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.LimitWAPC LimitWOperation {
+      get { return limitWOperation_; }
+      set {
+        limitWOperation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "pFOperation" field.</summary>
+    public const int PFOperationFieldNumber = 14;
+    private global::openfmb.commonmodule.PFSPC pFOperation_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.PFSPC PFOperation {
+      get { return pFOperation_; }
+      set {
+        pFOperation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "syncBackToGrid" field.</summary>
+    public const int SyncBackToGridFieldNumber = 15;
+    private global::openfmb.commonmodule.ControlSPC syncBackToGrid_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.ControlSPC SyncBackToGrid {
+      get { return syncBackToGrid_; }
+      set {
+        syncBackToGrid_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "tmHzTripOperation" field.</summary>
+    public const int TmHzTripOperationFieldNumber = 16;
+    private global::openfmb.commonmodule.TmHzCSG tmHzTripOperation_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.TmHzCSG TmHzTripOperation {
+      get { return tmHzTripOperation_; }
+      set {
+        tmHzTripOperation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "tmVoltTripOperation" field.</summary>
+    public const int TmVoltTripOperationFieldNumber = 17;
+    private global::openfmb.commonmodule.TmVoltCSG tmVoltTripOperation_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.TmVoltCSG TmVoltTripOperation {
+      get { return tmVoltTripOperation_; }
+      set {
+        tmVoltTripOperation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "vArOperation" field.</summary>
+    public const int VArOperationFieldNumber = 18;
+    private global::openfmb.commonmodule.VarSPC vArOperation_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.VarSPC VArOperation {
+      get { return vArOperation_; }
+      set {
+        vArOperation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "voltVarOperation" field.</summary>
+    public const int VoltVarOperationFieldNumber = 19;
+    private global::openfmb.commonmodule.VoltVarCSG voltVarOperation_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.VoltVarCSG VoltVarOperation {
+      get { return voltVarOperation_; }
+      set {
+        voltVarOperation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "voltWOperation" field.</summary>
+    public const int VoltWOperationFieldNumber = 20;
+    private global::openfmb.commonmodule.VoltWCSG voltWOperation_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.VoltWCSG VoltWOperation {
+      get { return voltWOperation_; }
+      set {
+        voltWOperation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "wVarOperation" field.</summary>
+    public const int WVarOperationFieldNumber = 21;
+    private global::openfmb.commonmodule.WVarCSG wVarOperation_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.WVarCSG WVarOperation {
+      get { return wVarOperation_; }
+      set {
+        wVarOperation_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SolarPointStatus);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SolarPointStatus other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2345,10 +4907,23 @@ namespace openfmb.solarmodule {
       if (!object.Equals(RealPwrSetPointEnabled, other.RealPwrSetPointEnabled)) return false;
       if (!object.Equals(State, other.State)) return false;
       if (!object.Equals(VoltageSetPointEnabled, other.VoltageSetPointEnabled)) return false;
+      if (!object.Equals(BlackStartEnabled, other.BlackStartEnabled)) return false;
+      if (!object.Equals(EnterServiceOperation, other.EnterServiceOperation)) return false;
+      if (!object.Equals(HzWOperation, other.HzWOperation)) return false;
+      if (!object.Equals(LimitWOperation, other.LimitWOperation)) return false;
+      if (!object.Equals(PFOperation, other.PFOperation)) return false;
+      if (!object.Equals(SyncBackToGrid, other.SyncBackToGrid)) return false;
+      if (!object.Equals(TmHzTripOperation, other.TmHzTripOperation)) return false;
+      if (!object.Equals(TmVoltTripOperation, other.TmVoltTripOperation)) return false;
+      if (!object.Equals(VArOperation, other.VArOperation)) return false;
+      if (!object.Equals(VoltVarOperation, other.VoltVarOperation)) return false;
+      if (!object.Equals(VoltWOperation, other.VoltWOperation)) return false;
+      if (!object.Equals(WVarOperation, other.WVarOperation)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (frequencySetPointEnabled_ != null) hash ^= FrequencySetPointEnabled.GetHashCode();
@@ -2360,6 +4935,18 @@ namespace openfmb.solarmodule {
       if (realPwrSetPointEnabled_ != null) hash ^= RealPwrSetPointEnabled.GetHashCode();
       if (state_ != null) hash ^= State.GetHashCode();
       if (voltageSetPointEnabled_ != null) hash ^= VoltageSetPointEnabled.GetHashCode();
+      if (blackStartEnabled_ != null) hash ^= BlackStartEnabled.GetHashCode();
+      if (enterServiceOperation_ != null) hash ^= EnterServiceOperation.GetHashCode();
+      if (hzWOperation_ != null) hash ^= HzWOperation.GetHashCode();
+      if (limitWOperation_ != null) hash ^= LimitWOperation.GetHashCode();
+      if (pFOperation_ != null) hash ^= PFOperation.GetHashCode();
+      if (syncBackToGrid_ != null) hash ^= SyncBackToGrid.GetHashCode();
+      if (tmHzTripOperation_ != null) hash ^= TmHzTripOperation.GetHashCode();
+      if (tmVoltTripOperation_ != null) hash ^= TmVoltTripOperation.GetHashCode();
+      if (vArOperation_ != null) hash ^= VArOperation.GetHashCode();
+      if (voltVarOperation_ != null) hash ^= VoltVarOperation.GetHashCode();
+      if (voltWOperation_ != null) hash ^= VoltWOperation.GetHashCode();
+      if (wVarOperation_ != null) hash ^= WVarOperation.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2367,11 +4954,13 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -2410,6 +4999,54 @@ namespace openfmb.solarmodule {
         output.WriteRawTag(74);
         output.WriteMessage(VoltageSetPointEnabled);
       }
+      if (blackStartEnabled_ != null) {
+        output.WriteRawTag(82);
+        output.WriteMessage(BlackStartEnabled);
+      }
+      if (enterServiceOperation_ != null) {
+        output.WriteRawTag(90);
+        output.WriteMessage(EnterServiceOperation);
+      }
+      if (hzWOperation_ != null) {
+        output.WriteRawTag(98);
+        output.WriteMessage(HzWOperation);
+      }
+      if (limitWOperation_ != null) {
+        output.WriteRawTag(106);
+        output.WriteMessage(LimitWOperation);
+      }
+      if (pFOperation_ != null) {
+        output.WriteRawTag(114);
+        output.WriteMessage(PFOperation);
+      }
+      if (syncBackToGrid_ != null) {
+        output.WriteRawTag(122);
+        output.WriteMessage(SyncBackToGrid);
+      }
+      if (tmHzTripOperation_ != null) {
+        output.WriteRawTag(130, 1);
+        output.WriteMessage(TmHzTripOperation);
+      }
+      if (tmVoltTripOperation_ != null) {
+        output.WriteRawTag(138, 1);
+        output.WriteMessage(TmVoltTripOperation);
+      }
+      if (vArOperation_ != null) {
+        output.WriteRawTag(146, 1);
+        output.WriteMessage(VArOperation);
+      }
+      if (voltVarOperation_ != null) {
+        output.WriteRawTag(154, 1);
+        output.WriteMessage(VoltVarOperation);
+      }
+      if (voltWOperation_ != null) {
+        output.WriteRawTag(162, 1);
+        output.WriteMessage(VoltWOperation);
+      }
+      if (wVarOperation_ != null) {
+        output.WriteRawTag(170, 1);
+        output.WriteMessage(WVarOperation);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2418,6 +5055,7 @@ namespace openfmb.solarmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (frequencySetPointEnabled_ != null) {
         output.WriteRawTag(10);
@@ -2453,6 +5091,54 @@ namespace openfmb.solarmodule {
         output.WriteRawTag(74);
         output.WriteMessage(VoltageSetPointEnabled);
       }
+      if (blackStartEnabled_ != null) {
+        output.WriteRawTag(82);
+        output.WriteMessage(BlackStartEnabled);
+      }
+      if (enterServiceOperation_ != null) {
+        output.WriteRawTag(90);
+        output.WriteMessage(EnterServiceOperation);
+      }
+      if (hzWOperation_ != null) {
+        output.WriteRawTag(98);
+        output.WriteMessage(HzWOperation);
+      }
+      if (limitWOperation_ != null) {
+        output.WriteRawTag(106);
+        output.WriteMessage(LimitWOperation);
+      }
+      if (pFOperation_ != null) {
+        output.WriteRawTag(114);
+        output.WriteMessage(PFOperation);
+      }
+      if (syncBackToGrid_ != null) {
+        output.WriteRawTag(122);
+        output.WriteMessage(SyncBackToGrid);
+      }
+      if (tmHzTripOperation_ != null) {
+        output.WriteRawTag(130, 1);
+        output.WriteMessage(TmHzTripOperation);
+      }
+      if (tmVoltTripOperation_ != null) {
+        output.WriteRawTag(138, 1);
+        output.WriteMessage(TmVoltTripOperation);
+      }
+      if (vArOperation_ != null) {
+        output.WriteRawTag(146, 1);
+        output.WriteMessage(VArOperation);
+      }
+      if (voltVarOperation_ != null) {
+        output.WriteRawTag(154, 1);
+        output.WriteMessage(VoltVarOperation);
+      }
+      if (voltWOperation_ != null) {
+        output.WriteRawTag(162, 1);
+        output.WriteMessage(VoltWOperation);
+      }
+      if (wVarOperation_ != null) {
+        output.WriteRawTag(170, 1);
+        output.WriteMessage(WVarOperation);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2460,6 +5146,7 @@ namespace openfmb.solarmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (frequencySetPointEnabled_ != null) {
@@ -2489,6 +5176,42 @@ namespace openfmb.solarmodule {
       if (voltageSetPointEnabled_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(VoltageSetPointEnabled);
       }
+      if (blackStartEnabled_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(BlackStartEnabled);
+      }
+      if (enterServiceOperation_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(EnterServiceOperation);
+      }
+      if (hzWOperation_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(HzWOperation);
+      }
+      if (limitWOperation_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LimitWOperation);
+      }
+      if (pFOperation_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PFOperation);
+      }
+      if (syncBackToGrid_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SyncBackToGrid);
+      }
+      if (tmHzTripOperation_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(TmHzTripOperation);
+      }
+      if (tmVoltTripOperation_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(TmVoltTripOperation);
+      }
+      if (vArOperation_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(VArOperation);
+      }
+      if (voltVarOperation_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(VoltVarOperation);
+      }
+      if (voltWOperation_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(VoltWOperation);
+      }
+      if (wVarOperation_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(WVarOperation);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -2496,6 +5219,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SolarPointStatus other) {
       if (other == null) {
         return;
@@ -2552,10 +5276,83 @@ namespace openfmb.solarmodule {
         }
         VoltageSetPointEnabled.MergeFrom(other.VoltageSetPointEnabled);
       }
+      if (other.blackStartEnabled_ != null) {
+        if (blackStartEnabled_ == null) {
+          BlackStartEnabled = new global::openfmb.commonmodule.ControlSPC();
+        }
+        BlackStartEnabled.MergeFrom(other.BlackStartEnabled);
+      }
+      if (other.enterServiceOperation_ != null) {
+        if (enterServiceOperation_ == null) {
+          EnterServiceOperation = new global::openfmb.commonmodule.EnterServiceAPC();
+        }
+        EnterServiceOperation.MergeFrom(other.EnterServiceOperation);
+      }
+      if (other.hzWOperation_ != null) {
+        if (hzWOperation_ == null) {
+          HzWOperation = new global::openfmb.commonmodule.HzWPoint();
+        }
+        HzWOperation.MergeFrom(other.HzWOperation);
+      }
+      if (other.limitWOperation_ != null) {
+        if (limitWOperation_ == null) {
+          LimitWOperation = new global::openfmb.commonmodule.LimitWAPC();
+        }
+        LimitWOperation.MergeFrom(other.LimitWOperation);
+      }
+      if (other.pFOperation_ != null) {
+        if (pFOperation_ == null) {
+          PFOperation = new global::openfmb.commonmodule.PFSPC();
+        }
+        PFOperation.MergeFrom(other.PFOperation);
+      }
+      if (other.syncBackToGrid_ != null) {
+        if (syncBackToGrid_ == null) {
+          SyncBackToGrid = new global::openfmb.commonmodule.ControlSPC();
+        }
+        SyncBackToGrid.MergeFrom(other.SyncBackToGrid);
+      }
+      if (other.tmHzTripOperation_ != null) {
+        if (tmHzTripOperation_ == null) {
+          TmHzTripOperation = new global::openfmb.commonmodule.TmHzCSG();
+        }
+        TmHzTripOperation.MergeFrom(other.TmHzTripOperation);
+      }
+      if (other.tmVoltTripOperation_ != null) {
+        if (tmVoltTripOperation_ == null) {
+          TmVoltTripOperation = new global::openfmb.commonmodule.TmVoltCSG();
+        }
+        TmVoltTripOperation.MergeFrom(other.TmVoltTripOperation);
+      }
+      if (other.vArOperation_ != null) {
+        if (vArOperation_ == null) {
+          VArOperation = new global::openfmb.commonmodule.VarSPC();
+        }
+        VArOperation.MergeFrom(other.VArOperation);
+      }
+      if (other.voltVarOperation_ != null) {
+        if (voltVarOperation_ == null) {
+          VoltVarOperation = new global::openfmb.commonmodule.VoltVarCSG();
+        }
+        VoltVarOperation.MergeFrom(other.VoltVarOperation);
+      }
+      if (other.voltWOperation_ != null) {
+        if (voltWOperation_ == null) {
+          VoltWOperation = new global::openfmb.commonmodule.VoltWCSG();
+        }
+        VoltWOperation.MergeFrom(other.VoltWOperation);
+      }
+      if (other.wVarOperation_ != null) {
+        if (wVarOperation_ == null) {
+          WVarOperation = new global::openfmb.commonmodule.WVarCSG();
+        }
+        WVarOperation.MergeFrom(other.WVarOperation);
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -2629,6 +5426,90 @@ namespace openfmb.solarmodule {
             input.ReadMessage(VoltageSetPointEnabled);
             break;
           }
+          case 82: {
+            if (blackStartEnabled_ == null) {
+              BlackStartEnabled = new global::openfmb.commonmodule.ControlSPC();
+            }
+            input.ReadMessage(BlackStartEnabled);
+            break;
+          }
+          case 90: {
+            if (enterServiceOperation_ == null) {
+              EnterServiceOperation = new global::openfmb.commonmodule.EnterServiceAPC();
+            }
+            input.ReadMessage(EnterServiceOperation);
+            break;
+          }
+          case 98: {
+            if (hzWOperation_ == null) {
+              HzWOperation = new global::openfmb.commonmodule.HzWPoint();
+            }
+            input.ReadMessage(HzWOperation);
+            break;
+          }
+          case 106: {
+            if (limitWOperation_ == null) {
+              LimitWOperation = new global::openfmb.commonmodule.LimitWAPC();
+            }
+            input.ReadMessage(LimitWOperation);
+            break;
+          }
+          case 114: {
+            if (pFOperation_ == null) {
+              PFOperation = new global::openfmb.commonmodule.PFSPC();
+            }
+            input.ReadMessage(PFOperation);
+            break;
+          }
+          case 122: {
+            if (syncBackToGrid_ == null) {
+              SyncBackToGrid = new global::openfmb.commonmodule.ControlSPC();
+            }
+            input.ReadMessage(SyncBackToGrid);
+            break;
+          }
+          case 130: {
+            if (tmHzTripOperation_ == null) {
+              TmHzTripOperation = new global::openfmb.commonmodule.TmHzCSG();
+            }
+            input.ReadMessage(TmHzTripOperation);
+            break;
+          }
+          case 138: {
+            if (tmVoltTripOperation_ == null) {
+              TmVoltTripOperation = new global::openfmb.commonmodule.TmVoltCSG();
+            }
+            input.ReadMessage(TmVoltTripOperation);
+            break;
+          }
+          case 146: {
+            if (vArOperation_ == null) {
+              VArOperation = new global::openfmb.commonmodule.VarSPC();
+            }
+            input.ReadMessage(VArOperation);
+            break;
+          }
+          case 154: {
+            if (voltVarOperation_ == null) {
+              VoltVarOperation = new global::openfmb.commonmodule.VoltVarCSG();
+            }
+            input.ReadMessage(VoltVarOperation);
+            break;
+          }
+          case 162: {
+            if (voltWOperation_ == null) {
+              VoltWOperation = new global::openfmb.commonmodule.VoltWCSG();
+            }
+            input.ReadMessage(VoltWOperation);
+            break;
+          }
+          case 170: {
+            if (wVarOperation_ == null) {
+              WVarOperation = new global::openfmb.commonmodule.WVarCSG();
+            }
+            input.ReadMessage(WVarOperation);
+            break;
+          }
         }
       }
     #endif
@@ -2636,6 +5517,7 @@ namespace openfmb.solarmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -2706,6 +5588,90 @@ namespace openfmb.solarmodule {
             input.ReadMessage(VoltageSetPointEnabled);
             break;
           }
+          case 82: {
+            if (blackStartEnabled_ == null) {
+              BlackStartEnabled = new global::openfmb.commonmodule.ControlSPC();
+            }
+            input.ReadMessage(BlackStartEnabled);
+            break;
+          }
+          case 90: {
+            if (enterServiceOperation_ == null) {
+              EnterServiceOperation = new global::openfmb.commonmodule.EnterServiceAPC();
+            }
+            input.ReadMessage(EnterServiceOperation);
+            break;
+          }
+          case 98: {
+            if (hzWOperation_ == null) {
+              HzWOperation = new global::openfmb.commonmodule.HzWPoint();
+            }
+            input.ReadMessage(HzWOperation);
+            break;
+          }
+          case 106: {
+            if (limitWOperation_ == null) {
+              LimitWOperation = new global::openfmb.commonmodule.LimitWAPC();
+            }
+            input.ReadMessage(LimitWOperation);
+            break;
+          }
+          case 114: {
+            if (pFOperation_ == null) {
+              PFOperation = new global::openfmb.commonmodule.PFSPC();
+            }
+            input.ReadMessage(PFOperation);
+            break;
+          }
+          case 122: {
+            if (syncBackToGrid_ == null) {
+              SyncBackToGrid = new global::openfmb.commonmodule.ControlSPC();
+            }
+            input.ReadMessage(SyncBackToGrid);
+            break;
+          }
+          case 130: {
+            if (tmHzTripOperation_ == null) {
+              TmHzTripOperation = new global::openfmb.commonmodule.TmHzCSG();
+            }
+            input.ReadMessage(TmHzTripOperation);
+            break;
+          }
+          case 138: {
+            if (tmVoltTripOperation_ == null) {
+              TmVoltTripOperation = new global::openfmb.commonmodule.TmVoltCSG();
+            }
+            input.ReadMessage(TmVoltTripOperation);
+            break;
+          }
+          case 146: {
+            if (vArOperation_ == null) {
+              VArOperation = new global::openfmb.commonmodule.VarSPC();
+            }
+            input.ReadMessage(VArOperation);
+            break;
+          }
+          case 154: {
+            if (voltVarOperation_ == null) {
+              VoltVarOperation = new global::openfmb.commonmodule.VoltVarCSG();
+            }
+            input.ReadMessage(VoltVarOperation);
+            break;
+          }
+          case 162: {
+            if (voltWOperation_ == null) {
+              VoltWOperation = new global::openfmb.commonmodule.VoltWCSG();
+            }
+            input.ReadMessage(VoltWOperation);
+            break;
+          }
+          case 170: {
+            if (wVarOperation_ == null) {
+              WVarOperation = new global::openfmb.commonmodule.WVarCSG();
+            }
+            input.ReadMessage(WVarOperation);
+            break;
+          }
         }
       }
     }
@@ -2724,19 +5690,23 @@ namespace openfmb.solarmodule {
     private static readonly pb::MessageParser<SolarEventAndStatusZGEN> _parser = new pb::MessageParser<SolarEventAndStatusZGEN>(() => new SolarEventAndStatusZGEN());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SolarEventAndStatusZGEN> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.solarmodule.SolarmoduleReflection.Descriptor.MessageTypes[8]; }
+      get { return global::openfmb.solarmodule.SolarmoduleReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarEventAndStatusZGEN() {
       OnConstruction();
     }
@@ -2744,16 +5714,23 @@ namespace openfmb.solarmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarEventAndStatusZGEN(SolarEventAndStatusZGEN other) : this() {
       logicalNodeForEventAndStatus_ = other.logicalNodeForEventAndStatus_ != null ? other.logicalNodeForEventAndStatus_.Clone() : null;
       auxPwrSt_ = other.auxPwrSt_ != null ? other.auxPwrSt_.Clone() : null;
       dynamicTest_ = other.dynamicTest_ != null ? other.dynamicTest_.Clone() : null;
       emgStop_ = other.emgStop_ != null ? other.emgStop_.Clone() : null;
       pointStatus_ = other.pointStatus_ != null ? other.pointStatus_.Clone() : null;
+      alrm_ = other.alrm_ != null ? other.alrm_.Clone() : null;
+      gnSynSt_ = other.gnSynSt_ != null ? other.gnSynSt_.Clone() : null;
+      gridConnectionState_ = other.gridConnectionState_ != null ? other.gridConnectionState_.Clone() : null;
+      ManAlrmInfo = other.ManAlrmInfo;
+      operatingState_ = other.operatingState_ != null ? other.operatingState_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarEventAndStatusZGEN Clone() {
       return new SolarEventAndStatusZGEN(this);
     }
@@ -2765,6 +5742,7 @@ namespace openfmb.solarmodule {
     /// UML inherited base object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.LogicalNodeForEventAndStatus LogicalNodeForEventAndStatus {
       get { return logicalNodeForEventAndStatus_; }
       set {
@@ -2779,6 +5757,7 @@ namespace openfmb.solarmodule {
     /// DC Power On/Off Status; True = DC power on
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.StatusSPS AuxPwrSt {
       get { return auxPwrSt_; }
       set {
@@ -2793,6 +5772,7 @@ namespace openfmb.solarmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ENS_DynamicTestKind DynamicTest {
       get { return dynamicTest_; }
       set {
@@ -2807,6 +5787,7 @@ namespace openfmb.solarmodule {
     /// Emergency stop
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.StatusSPS EmgStop {
       get { return emgStop_; }
       set {
@@ -2821,6 +5802,7 @@ namespace openfmb.solarmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.solarmodule.SolarPointStatus PointStatus {
       get { return pointStatus_; }
       set {
@@ -2828,12 +5810,91 @@ namespace openfmb.solarmodule {
       }
     }
 
+    /// <summary>Field number for the "Alrm" field.</summary>
+    public const int AlrmFieldNumber = 6;
+    private global::openfmb.commonmodule.Optional_AlrmKind alrm_;
+    /// <summary>
+    /// DC Power On/Off Status; True = DC power on
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.Optional_AlrmKind Alrm {
+      get { return alrm_; }
+      set {
+        alrm_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "GnSynSt" field.</summary>
+    public const int GnSynStFieldNumber = 7;
+    private global::openfmb.commonmodule.StatusSPS gnSynSt_;
+    /// <summary>
+    /// Emergency stop
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.StatusSPS GnSynSt {
+      get { return gnSynSt_; }
+      set {
+        gnSynSt_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "GridConnectionState" field.</summary>
+    public const int GridConnectionStateFieldNumber = 8;
+    private global::openfmb.commonmodule.Optional_GridConnectionStateKind gridConnectionState_;
+    /// <summary>
+    /// DC Power On/Off Status; True = DC power on
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.Optional_GridConnectionStateKind GridConnectionState {
+      get { return gridConnectionState_; }
+      set {
+        gridConnectionState_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "ManAlrmInfo" field.</summary>
+    public const int ManAlrmInfoFieldNumber = 9;
+    private static readonly pb::FieldCodec<string> _single_manAlrmInfo_codec = pb::FieldCodec.ForClassWrapper<string>(74);
+    private string manAlrmInfo_;
+    /// <summary>
+    /// DC Power On/Off Status; True = DC power on
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ManAlrmInfo {
+      get { return manAlrmInfo_; }
+      set {
+        manAlrmInfo_ = value;
+      }
+    }
+
+
+    /// <summary>Field number for the "OperatingState" field.</summary>
+    public const int OperatingStateFieldNumber = 10;
+    private global::openfmb.commonmodule.Optional_OperatingStateKind operatingState_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.Optional_OperatingStateKind OperatingState {
+      get { return operatingState_; }
+      set {
+        operatingState_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SolarEventAndStatusZGEN);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SolarEventAndStatusZGEN other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2846,10 +5907,16 @@ namespace openfmb.solarmodule {
       if (!object.Equals(DynamicTest, other.DynamicTest)) return false;
       if (!object.Equals(EmgStop, other.EmgStop)) return false;
       if (!object.Equals(PointStatus, other.PointStatus)) return false;
+      if (!object.Equals(Alrm, other.Alrm)) return false;
+      if (!object.Equals(GnSynSt, other.GnSynSt)) return false;
+      if (!object.Equals(GridConnectionState, other.GridConnectionState)) return false;
+      if (ManAlrmInfo != other.ManAlrmInfo) return false;
+      if (!object.Equals(OperatingState, other.OperatingState)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (logicalNodeForEventAndStatus_ != null) hash ^= LogicalNodeForEventAndStatus.GetHashCode();
@@ -2857,6 +5924,11 @@ namespace openfmb.solarmodule {
       if (dynamicTest_ != null) hash ^= DynamicTest.GetHashCode();
       if (emgStop_ != null) hash ^= EmgStop.GetHashCode();
       if (pointStatus_ != null) hash ^= PointStatus.GetHashCode();
+      if (alrm_ != null) hash ^= Alrm.GetHashCode();
+      if (gnSynSt_ != null) hash ^= GnSynSt.GetHashCode();
+      if (gridConnectionState_ != null) hash ^= GridConnectionState.GetHashCode();
+      if (manAlrmInfo_ != null) hash ^= ManAlrmInfo.GetHashCode();
+      if (operatingState_ != null) hash ^= OperatingState.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2864,11 +5936,13 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -2893,6 +5967,25 @@ namespace openfmb.solarmodule {
         output.WriteRawTag(42);
         output.WriteMessage(PointStatus);
       }
+      if (alrm_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(Alrm);
+      }
+      if (gnSynSt_ != null) {
+        output.WriteRawTag(58);
+        output.WriteMessage(GnSynSt);
+      }
+      if (gridConnectionState_ != null) {
+        output.WriteRawTag(66);
+        output.WriteMessage(GridConnectionState);
+      }
+      if (manAlrmInfo_ != null) {
+        _single_manAlrmInfo_codec.WriteTagAndValue(output, ManAlrmInfo);
+      }
+      if (operatingState_ != null) {
+        output.WriteRawTag(82);
+        output.WriteMessage(OperatingState);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2901,6 +5994,7 @@ namespace openfmb.solarmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (logicalNodeForEventAndStatus_ != null) {
         output.WriteRawTag(10);
@@ -2922,6 +6016,25 @@ namespace openfmb.solarmodule {
         output.WriteRawTag(42);
         output.WriteMessage(PointStatus);
       }
+      if (alrm_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(Alrm);
+      }
+      if (gnSynSt_ != null) {
+        output.WriteRawTag(58);
+        output.WriteMessage(GnSynSt);
+      }
+      if (gridConnectionState_ != null) {
+        output.WriteRawTag(66);
+        output.WriteMessage(GridConnectionState);
+      }
+      if (manAlrmInfo_ != null) {
+        _single_manAlrmInfo_codec.WriteTagAndValue(ref output, ManAlrmInfo);
+      }
+      if (operatingState_ != null) {
+        output.WriteRawTag(82);
+        output.WriteMessage(OperatingState);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2929,6 +6042,7 @@ namespace openfmb.solarmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (logicalNodeForEventAndStatus_ != null) {
@@ -2946,6 +6060,21 @@ namespace openfmb.solarmodule {
       if (pointStatus_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(PointStatus);
       }
+      if (alrm_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Alrm);
+      }
+      if (gnSynSt_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(GnSynSt);
+      }
+      if (gridConnectionState_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(GridConnectionState);
+      }
+      if (manAlrmInfo_ != null) {
+        size += _single_manAlrmInfo_codec.CalculateSizeWithTag(ManAlrmInfo);
+      }
+      if (operatingState_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(OperatingState);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -2953,6 +6082,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SolarEventAndStatusZGEN other) {
       if (other == null) {
         return;
@@ -2987,10 +6117,40 @@ namespace openfmb.solarmodule {
         }
         PointStatus.MergeFrom(other.PointStatus);
       }
+      if (other.alrm_ != null) {
+        if (alrm_ == null) {
+          Alrm = new global::openfmb.commonmodule.Optional_AlrmKind();
+        }
+        Alrm.MergeFrom(other.Alrm);
+      }
+      if (other.gnSynSt_ != null) {
+        if (gnSynSt_ == null) {
+          GnSynSt = new global::openfmb.commonmodule.StatusSPS();
+        }
+        GnSynSt.MergeFrom(other.GnSynSt);
+      }
+      if (other.gridConnectionState_ != null) {
+        if (gridConnectionState_ == null) {
+          GridConnectionState = new global::openfmb.commonmodule.Optional_GridConnectionStateKind();
+        }
+        GridConnectionState.MergeFrom(other.GridConnectionState);
+      }
+      if (other.manAlrmInfo_ != null) {
+        if (manAlrmInfo_ == null || other.ManAlrmInfo != "") {
+          ManAlrmInfo = other.ManAlrmInfo;
+        }
+      }
+      if (other.operatingState_ != null) {
+        if (operatingState_ == null) {
+          OperatingState = new global::openfmb.commonmodule.Optional_OperatingStateKind();
+        }
+        OperatingState.MergeFrom(other.OperatingState);
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -3036,6 +6196,41 @@ namespace openfmb.solarmodule {
             input.ReadMessage(PointStatus);
             break;
           }
+          case 50: {
+            if (alrm_ == null) {
+              Alrm = new global::openfmb.commonmodule.Optional_AlrmKind();
+            }
+            input.ReadMessage(Alrm);
+            break;
+          }
+          case 58: {
+            if (gnSynSt_ == null) {
+              GnSynSt = new global::openfmb.commonmodule.StatusSPS();
+            }
+            input.ReadMessage(GnSynSt);
+            break;
+          }
+          case 66: {
+            if (gridConnectionState_ == null) {
+              GridConnectionState = new global::openfmb.commonmodule.Optional_GridConnectionStateKind();
+            }
+            input.ReadMessage(GridConnectionState);
+            break;
+          }
+          case 74: {
+            string value = _single_manAlrmInfo_codec.Read(input);
+            if (manAlrmInfo_ == null || value != "") {
+              ManAlrmInfo = value;
+            }
+            break;
+          }
+          case 82: {
+            if (operatingState_ == null) {
+              OperatingState = new global::openfmb.commonmodule.Optional_OperatingStateKind();
+            }
+            input.ReadMessage(OperatingState);
+            break;
+          }
         }
       }
     #endif
@@ -3043,6 +6238,7 @@ namespace openfmb.solarmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -3085,6 +6281,41 @@ namespace openfmb.solarmodule {
             input.ReadMessage(PointStatus);
             break;
           }
+          case 50: {
+            if (alrm_ == null) {
+              Alrm = new global::openfmb.commonmodule.Optional_AlrmKind();
+            }
+            input.ReadMessage(Alrm);
+            break;
+          }
+          case 58: {
+            if (gnSynSt_ == null) {
+              GnSynSt = new global::openfmb.commonmodule.StatusSPS();
+            }
+            input.ReadMessage(GnSynSt);
+            break;
+          }
+          case 66: {
+            if (gridConnectionState_ == null) {
+              GridConnectionState = new global::openfmb.commonmodule.Optional_GridConnectionStateKind();
+            }
+            input.ReadMessage(GridConnectionState);
+            break;
+          }
+          case 74: {
+            string value = _single_manAlrmInfo_codec.Read(ref input);
+            if (manAlrmInfo_ == null || value != "") {
+              ManAlrmInfo = value;
+            }
+            break;
+          }
+          case 82: {
+            if (operatingState_ == null) {
+              OperatingState = new global::openfmb.commonmodule.Optional_OperatingStateKind();
+            }
+            input.ReadMessage(OperatingState);
+            break;
+          }
         }
       }
     }
@@ -3103,19 +6334,23 @@ namespace openfmb.solarmodule {
     private static readonly pb::MessageParser<SolarEventZGEN> _parser = new pb::MessageParser<SolarEventZGEN>(() => new SolarEventZGEN());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SolarEventZGEN> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.solarmodule.SolarmoduleReflection.Descriptor.MessageTypes[9]; }
+      get { return global::openfmb.solarmodule.SolarmoduleReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarEventZGEN() {
       OnConstruction();
     }
@@ -3123,6 +6358,7 @@ namespace openfmb.solarmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarEventZGEN(SolarEventZGEN other) : this() {
       solarEventAndStatusZGEN_ = other.solarEventAndStatusZGEN_ != null ? other.solarEventAndStatusZGEN_.Clone() : null;
       griMod_ = other.griMod_ != null ? other.griMod_.Clone() : null;
@@ -3130,6 +6366,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarEventZGEN Clone() {
       return new SolarEventZGEN(this);
     }
@@ -3141,6 +6378,7 @@ namespace openfmb.solarmodule {
     /// UML inherited base object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.solarmodule.SolarEventAndStatusZGEN SolarEventAndStatusZGEN {
       get { return solarEventAndStatusZGEN_; }
       set {
@@ -3155,6 +6393,7 @@ namespace openfmb.solarmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ENG_GridConnectModeKind GriMod {
       get { return griMod_; }
       set {
@@ -3163,11 +6402,13 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SolarEventZGEN);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SolarEventZGEN other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3181,6 +6422,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (solarEventAndStatusZGEN_ != null) hash ^= SolarEventAndStatusZGEN.GetHashCode();
@@ -3192,11 +6434,13 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -3217,6 +6461,7 @@ namespace openfmb.solarmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (solarEventAndStatusZGEN_ != null) {
         output.WriteRawTag(10);
@@ -3233,6 +6478,7 @@ namespace openfmb.solarmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (solarEventAndStatusZGEN_ != null) {
@@ -3248,6 +6494,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SolarEventZGEN other) {
       if (other == null) {
         return;
@@ -3268,6 +6515,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -3299,6 +6547,7 @@ namespace openfmb.solarmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -3338,19 +6587,23 @@ namespace openfmb.solarmodule {
     private static readonly pb::MessageParser<SolarEvent> _parser = new pb::MessageParser<SolarEvent>(() => new SolarEvent());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SolarEvent> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.solarmodule.SolarmoduleReflection.Descriptor.MessageTypes[10]; }
+      get { return global::openfmb.solarmodule.SolarmoduleReflection.Descriptor.MessageTypes[16]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarEvent() {
       OnConstruction();
     }
@@ -3358,6 +6611,7 @@ namespace openfmb.solarmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarEvent(SolarEvent other) : this() {
       eventValue_ = other.eventValue_ != null ? other.eventValue_.Clone() : null;
       solarEventZGEN_ = other.solarEventZGEN_ != null ? other.solarEventZGEN_.Clone() : null;
@@ -3365,6 +6619,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarEvent Clone() {
       return new SolarEvent(this);
     }
@@ -3376,6 +6631,7 @@ namespace openfmb.solarmodule {
     /// UML inherited base object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.EventValue EventValue {
       get { return eventValue_; }
       set {
@@ -3390,6 +6646,7 @@ namespace openfmb.solarmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.solarmodule.SolarEventZGEN SolarEventZGEN {
       get { return solarEventZGEN_; }
       set {
@@ -3398,11 +6655,13 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SolarEvent);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SolarEvent other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3416,6 +6675,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (eventValue_ != null) hash ^= EventValue.GetHashCode();
@@ -3427,11 +6687,13 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -3452,6 +6714,7 @@ namespace openfmb.solarmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (eventValue_ != null) {
         output.WriteRawTag(10);
@@ -3468,6 +6731,7 @@ namespace openfmb.solarmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (eventValue_ != null) {
@@ -3483,6 +6747,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SolarEvent other) {
       if (other == null) {
         return;
@@ -3503,6 +6768,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -3534,6 +6800,7 @@ namespace openfmb.solarmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -3573,19 +6840,23 @@ namespace openfmb.solarmodule {
     private static readonly pb::MessageParser<SolarEventProfile> _parser = new pb::MessageParser<SolarEventProfile>(() => new SolarEventProfile());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SolarEventProfile> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.solarmodule.SolarmoduleReflection.Descriptor.MessageTypes[11]; }
+      get { return global::openfmb.solarmodule.SolarmoduleReflection.Descriptor.MessageTypes[17]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarEventProfile() {
       OnConstruction();
     }
@@ -3593,6 +6864,7 @@ namespace openfmb.solarmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarEventProfile(SolarEventProfile other) : this() {
       eventMessageInfo_ = other.eventMessageInfo_ != null ? other.eventMessageInfo_.Clone() : null;
       solarEvent_ = other.solarEvent_ != null ? other.solarEvent_.Clone() : null;
@@ -3601,6 +6873,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarEventProfile Clone() {
       return new SolarEventProfile(this);
     }
@@ -3612,6 +6885,7 @@ namespace openfmb.solarmodule {
     /// UML inherited base object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.EventMessageInfo EventMessageInfo {
       get { return eventMessageInfo_; }
       set {
@@ -3626,6 +6900,7 @@ namespace openfmb.solarmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.solarmodule.SolarEvent SolarEvent {
       get { return solarEvent_; }
       set {
@@ -3640,6 +6915,7 @@ namespace openfmb.solarmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.solarmodule.SolarInverter SolarInverter {
       get { return solarInverter_; }
       set {
@@ -3648,11 +6924,13 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SolarEventProfile);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SolarEventProfile other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3667,6 +6945,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (eventMessageInfo_ != null) hash ^= EventMessageInfo.GetHashCode();
@@ -3679,11 +6958,13 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -3708,6 +6989,7 @@ namespace openfmb.solarmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (eventMessageInfo_ != null) {
         output.WriteRawTag(10);
@@ -3728,6 +7010,7 @@ namespace openfmb.solarmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (eventMessageInfo_ != null) {
@@ -3746,6 +7029,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SolarEventProfile other) {
       if (other == null) {
         return;
@@ -3772,6 +7056,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -3810,6 +7095,7 @@ namespace openfmb.solarmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -3856,19 +7142,23 @@ namespace openfmb.solarmodule {
     private static readonly pb::MessageParser<SolarReading> _parser = new pb::MessageParser<SolarReading>(() => new SolarReading());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SolarReading> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.solarmodule.SolarmoduleReflection.Descriptor.MessageTypes[12]; }
+      get { return global::openfmb.solarmodule.SolarmoduleReflection.Descriptor.MessageTypes[18]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarReading() {
       OnConstruction();
     }
@@ -3876,6 +7166,7 @@ namespace openfmb.solarmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarReading(SolarReading other) : this() {
       conductingEquipmentTerminalReading_ = other.conductingEquipmentTerminalReading_ != null ? other.conductingEquipmentTerminalReading_.Clone() : null;
       phaseMMTN_ = other.phaseMMTN_ != null ? other.phaseMMTN_.Clone() : null;
@@ -3885,6 +7176,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarReading Clone() {
       return new SolarReading(this);
     }
@@ -3896,6 +7188,7 @@ namespace openfmb.solarmodule {
     /// UML inherited base object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ConductingEquipmentTerminalReading ConductingEquipmentTerminalReading {
       get { return conductingEquipmentTerminalReading_; }
       set {
@@ -3910,6 +7203,7 @@ namespace openfmb.solarmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.PhaseMMTN PhaseMMTN {
       get { return phaseMMTN_; }
       set {
@@ -3924,6 +7218,7 @@ namespace openfmb.solarmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ReadingMMTR ReadingMMTR {
       get { return readingMMTR_; }
       set {
@@ -3938,6 +7233,7 @@ namespace openfmb.solarmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ReadingMMXU ReadingMMXU {
       get { return readingMMXU_; }
       set {
@@ -3946,11 +7242,13 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SolarReading);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SolarReading other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3966,6 +7264,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (conductingEquipmentTerminalReading_ != null) hash ^= ConductingEquipmentTerminalReading.GetHashCode();
@@ -3979,11 +7278,13 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -4012,6 +7313,7 @@ namespace openfmb.solarmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (conductingEquipmentTerminalReading_ != null) {
         output.WriteRawTag(10);
@@ -4036,6 +7338,7 @@ namespace openfmb.solarmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (conductingEquipmentTerminalReading_ != null) {
@@ -4057,6 +7360,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SolarReading other) {
       if (other == null) {
         return;
@@ -4089,6 +7393,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -4134,6 +7439,7 @@ namespace openfmb.solarmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -4187,19 +7493,23 @@ namespace openfmb.solarmodule {
     private static readonly pb::MessageParser<SolarReadingProfile> _parser = new pb::MessageParser<SolarReadingProfile>(() => new SolarReadingProfile());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SolarReadingProfile> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.solarmodule.SolarmoduleReflection.Descriptor.MessageTypes[13]; }
+      get { return global::openfmb.solarmodule.SolarmoduleReflection.Descriptor.MessageTypes[19]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarReadingProfile() {
       OnConstruction();
     }
@@ -4207,6 +7517,7 @@ namespace openfmb.solarmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarReadingProfile(SolarReadingProfile other) : this() {
       readingMessageInfo_ = other.readingMessageInfo_ != null ? other.readingMessageInfo_.Clone() : null;
       solarInverter_ = other.solarInverter_ != null ? other.solarInverter_.Clone() : null;
@@ -4215,6 +7526,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarReadingProfile Clone() {
       return new SolarReadingProfile(this);
     }
@@ -4226,6 +7538,7 @@ namespace openfmb.solarmodule {
     /// UML inherited base object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ReadingMessageInfo ReadingMessageInfo {
       get { return readingMessageInfo_; }
       set {
@@ -4240,6 +7553,7 @@ namespace openfmb.solarmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.solarmodule.SolarInverter SolarInverter {
       get { return solarInverter_; }
       set {
@@ -4254,6 +7568,7 @@ namespace openfmb.solarmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.solarmodule.SolarReading SolarReading {
       get { return solarReading_; }
       set {
@@ -4262,11 +7577,13 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SolarReadingProfile);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SolarReadingProfile other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -4281,6 +7598,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (readingMessageInfo_ != null) hash ^= ReadingMessageInfo.GetHashCode();
@@ -4293,11 +7611,13 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -4322,6 +7642,7 @@ namespace openfmb.solarmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (readingMessageInfo_ != null) {
         output.WriteRawTag(10);
@@ -4342,6 +7663,7 @@ namespace openfmb.solarmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (readingMessageInfo_ != null) {
@@ -4360,6 +7682,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SolarReadingProfile other) {
       if (other == null) {
         return;
@@ -4386,6 +7709,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -4424,6 +7748,7 @@ namespace openfmb.solarmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -4470,19 +7795,23 @@ namespace openfmb.solarmodule {
     private static readonly pb::MessageParser<SolarStatusZGEN> _parser = new pb::MessageParser<SolarStatusZGEN>(() => new SolarStatusZGEN());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SolarStatusZGEN> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.solarmodule.SolarmoduleReflection.Descriptor.MessageTypes[14]; }
+      get { return global::openfmb.solarmodule.SolarmoduleReflection.Descriptor.MessageTypes[20]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarStatusZGEN() {
       OnConstruction();
     }
@@ -4490,6 +7819,7 @@ namespace openfmb.solarmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarStatusZGEN(SolarStatusZGEN other) : this() {
       solarEventAndStatusZGEN_ = other.solarEventAndStatusZGEN_ != null ? other.solarEventAndStatusZGEN_.Clone() : null;
       griMod_ = other.griMod_ != null ? other.griMod_.Clone() : null;
@@ -4497,6 +7827,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarStatusZGEN Clone() {
       return new SolarStatusZGEN(this);
     }
@@ -4508,6 +7839,7 @@ namespace openfmb.solarmodule {
     /// UML inherited base object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.solarmodule.SolarEventAndStatusZGEN SolarEventAndStatusZGEN {
       get { return solarEventAndStatusZGEN_; }
       set {
@@ -4522,6 +7854,7 @@ namespace openfmb.solarmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ENG_GridConnectModeKind GriMod {
       get { return griMod_; }
       set {
@@ -4530,11 +7863,13 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SolarStatusZGEN);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SolarStatusZGEN other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -4548,6 +7883,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (solarEventAndStatusZGEN_ != null) hash ^= SolarEventAndStatusZGEN.GetHashCode();
@@ -4559,11 +7895,13 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -4584,6 +7922,7 @@ namespace openfmb.solarmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (solarEventAndStatusZGEN_ != null) {
         output.WriteRawTag(10);
@@ -4600,6 +7939,7 @@ namespace openfmb.solarmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (solarEventAndStatusZGEN_ != null) {
@@ -4615,6 +7955,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SolarStatusZGEN other) {
       if (other == null) {
         return;
@@ -4635,6 +7976,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -4666,6 +8008,7 @@ namespace openfmb.solarmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -4705,19 +8048,23 @@ namespace openfmb.solarmodule {
     private static readonly pb::MessageParser<SolarStatus> _parser = new pb::MessageParser<SolarStatus>(() => new SolarStatus());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SolarStatus> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.solarmodule.SolarmoduleReflection.Descriptor.MessageTypes[15]; }
+      get { return global::openfmb.solarmodule.SolarmoduleReflection.Descriptor.MessageTypes[21]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarStatus() {
       OnConstruction();
     }
@@ -4725,6 +8072,7 @@ namespace openfmb.solarmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarStatus(SolarStatus other) : this() {
       statusValue_ = other.statusValue_ != null ? other.statusValue_.Clone() : null;
       solarStatusZGEN_ = other.solarStatusZGEN_ != null ? other.solarStatusZGEN_.Clone() : null;
@@ -4732,6 +8080,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarStatus Clone() {
       return new SolarStatus(this);
     }
@@ -4743,6 +8092,7 @@ namespace openfmb.solarmodule {
     /// UML inherited base object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.StatusValue StatusValue {
       get { return statusValue_; }
       set {
@@ -4757,6 +8107,7 @@ namespace openfmb.solarmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.solarmodule.SolarStatusZGEN SolarStatusZGEN {
       get { return solarStatusZGEN_; }
       set {
@@ -4765,11 +8116,13 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SolarStatus);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SolarStatus other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -4783,6 +8136,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (statusValue_ != null) hash ^= StatusValue.GetHashCode();
@@ -4794,11 +8148,13 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -4819,6 +8175,7 @@ namespace openfmb.solarmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (statusValue_ != null) {
         output.WriteRawTag(10);
@@ -4835,6 +8192,7 @@ namespace openfmb.solarmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (statusValue_ != null) {
@@ -4850,6 +8208,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SolarStatus other) {
       if (other == null) {
         return;
@@ -4870,6 +8229,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -4901,6 +8261,7 @@ namespace openfmb.solarmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -4940,19 +8301,23 @@ namespace openfmb.solarmodule {
     private static readonly pb::MessageParser<SolarStatusProfile> _parser = new pb::MessageParser<SolarStatusProfile>(() => new SolarStatusProfile());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<SolarStatusProfile> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.solarmodule.SolarmoduleReflection.Descriptor.MessageTypes[16]; }
+      get { return global::openfmb.solarmodule.SolarmoduleReflection.Descriptor.MessageTypes[22]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarStatusProfile() {
       OnConstruction();
     }
@@ -4960,6 +8325,7 @@ namespace openfmb.solarmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarStatusProfile(SolarStatusProfile other) : this() {
       statusMessageInfo_ = other.statusMessageInfo_ != null ? other.statusMessageInfo_.Clone() : null;
       solarInverter_ = other.solarInverter_ != null ? other.solarInverter_.Clone() : null;
@@ -4968,6 +8334,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public SolarStatusProfile Clone() {
       return new SolarStatusProfile(this);
     }
@@ -4979,6 +8346,7 @@ namespace openfmb.solarmodule {
     /// UML inherited base object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.StatusMessageInfo StatusMessageInfo {
       get { return statusMessageInfo_; }
       set {
@@ -4993,6 +8361,7 @@ namespace openfmb.solarmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.solarmodule.SolarInverter SolarInverter {
       get { return solarInverter_; }
       set {
@@ -5007,6 +8376,7 @@ namespace openfmb.solarmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.solarmodule.SolarStatus SolarStatus {
       get { return solarStatus_; }
       set {
@@ -5015,11 +8385,13 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as SolarStatusProfile);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(SolarStatusProfile other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -5034,6 +8406,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (statusMessageInfo_ != null) hash ^= StatusMessageInfo.GetHashCode();
@@ -5046,11 +8419,13 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -5075,6 +8450,7 @@ namespace openfmb.solarmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (statusMessageInfo_ != null) {
         output.WriteRawTag(10);
@@ -5095,6 +8471,7 @@ namespace openfmb.solarmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (statusMessageInfo_ != null) {
@@ -5113,6 +8490,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(SolarStatusProfile other) {
       if (other == null) {
         return;
@@ -5139,6 +8517,7 @@ namespace openfmb.solarmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -5177,6 +8556,7 @@ namespace openfmb.solarmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {

@@ -888,6 +888,404 @@
             MISSING DOCUMENTATION!!!
             </summary>
         </member>
+        <member name="T:openfmb.circuitsegmentservicemodule.CircuitsegmentservicemoduleReflection">
+            <summary>Holder for reflection information generated from circuitsegmentservicemodule/circuitsegmentservicemodule.proto</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitsegmentservicemoduleReflection.Descriptor">
+            <summary>File descriptor for circuitsegmentservicemodule/circuitsegmentservicemodule.proto</summary>
+        </member>
+        <member name="T:openfmb.circuitsegmentservicemodule.CircuitSegmentServiceModeKind">
+            <summary>
+            State kind
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentServiceModeKind.Undefined">
+            <summary>
+            Undefined
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentServiceModeKind.None">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentServiceModeKind.Auto">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentServiceModeKind.Manual">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentServiceModeKind.Netzero">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentServiceModeKind.Start">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentServiceModeKind.Stop">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.Optional_CircuitSegmentServiceModeKind.ValueFieldNumber">
+            <summary>Field number for the "value" field.</summary>
+        </member>
+        <member name="T:openfmb.circuitsegmentservicemodule.ENG_CircuitSegmentServiceModeKind">
+            <summary>
+            Circuit Segment service mode kind
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.ENG_CircuitSegmentServiceModeKind.SetValFieldNumber">
+            <summary>Field number for the "setVal" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.ENG_CircuitSegmentServiceModeKind.SetVal">
+            <summary>
+            The value of the coordination service mode.
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.ENG_CircuitSegmentServiceModeKind.SetValExtensionFieldNumber">
+            <summary>Field number for the "setValExtension" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.ENG_CircuitSegmentServiceModeKind.SetValExtension">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.circuitsegmentservicemodule.CircuitSegmentControlDCSC">
+            <summary>
+            OpenFMB specialization for circuit segment service control, DCSC (Distributed Coordination
+            Service Control), following 61850 naming convention.
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentControlDCSC.LogicalNodeForControlFieldNumber">
+            <summary>Field number for the "logicalNodeForControl" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentControlDCSC.LogicalNodeForControl">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentControlDCSC.CircuitSegmentServiceModeFieldNumber">
+            <summary>Field number for the "CircuitSegmentServiceMode" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentControlDCSC.CircuitSegmentServiceMode">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentControlDCSC.IslandFieldNumber">
+            <summary>Field number for the "Island" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentControlDCSC.Island">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.circuitsegmentservicemodule.CircuitSegmentControl">
+            <summary>
+            Switch discrete control
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentControl.IdentifiedObjectFieldNumber">
+            <summary>Field number for the "identifiedObject" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentControl.IdentifiedObject">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentControl.CheckFieldNumber">
+            <summary>Field number for the "check" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentControl.Check">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentControl.CircuitSegmentControlDCSCFieldNumber">
+            <summary>Field number for the "circuitSegmentControlDCSC" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentControl.CircuitSegmentControlDCSC">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.circuitsegmentservicemodule.CircuitSegmentControlProfile">
+            <summary>
+            Switch control profile
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentControlProfile.ControlMessageInfoFieldNumber">
+            <summary>Field number for the "controlMessageInfo" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentControlProfile.ControlMessageInfo">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentControlProfile.ApplicationSystemFieldNumber">
+            <summary>Field number for the "applicationSystem" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentControlProfile.ApplicationSystem">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentControlProfile.CircuitSegmentControlFieldNumber">
+            <summary>Field number for the "circuitSegmentControl" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentControlProfile.CircuitSegmentControl">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.circuitsegmentservicemodule.CircuitSegmentEventDCSC">
+            <summary>
+            OpenFMB specialization for circuit segment service control, DCSC (Distributed Coordination
+            Service Control), following 61850 naming convention.
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentEventDCSC.LogicalNodeFieldNumber">
+            <summary>Field number for the "logicalNode" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentEventDCSC.LogicalNode">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentEventDCSC.CircuitSegmentServiceModeFieldNumber">
+            <summary>Field number for the "CircuitSegmentServiceMode" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentEventDCSC.CircuitSegmentServiceMode">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentEventDCSC.IslandFieldNumber">
+            <summary>Field number for the "Island" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentEventDCSC.Island">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentEventDCSC.PermissibleAutoFieldNumber">
+            <summary>Field number for the "PermissibleAuto" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentEventDCSC.PermissibleAuto">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentEventDCSC.PermissibleManualFieldNumber">
+            <summary>Field number for the "PermissibleManual" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentEventDCSC.PermissibleManual">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentEventDCSC.PermissibleNetzeroFieldNumber">
+            <summary>Field number for the "PermissibleNetzero" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentEventDCSC.PermissibleNetzero">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentEventDCSC.PermissibleStartFieldNumber">
+            <summary>Field number for the "PermissibleStart" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentEventDCSC.PermissibleStart">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentEventDCSC.PermissibleStopFieldNumber">
+            <summary>Field number for the "PermissibleStop" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentEventDCSC.PermissibleStop">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.circuitsegmentservicemodule.CircuitSegmentEvent">
+            <summary>
+            Switch event
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentEvent.IdentifiedObjectFieldNumber">
+            <summary>Field number for the "identifiedObject" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentEvent.IdentifiedObject">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentEvent.CircuitSegmentEventDCSCFieldNumber">
+            <summary>Field number for the "circuitSegmentEventDCSC" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentEvent.CircuitSegmentEventDCSC">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.circuitsegmentservicemodule.CircuitSegmentEventProfile">
+            <summary>
+            Switch event profile
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentEventProfile.EventMessageInfoFieldNumber">
+            <summary>Field number for the "eventMessageInfo" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentEventProfile.EventMessageInfo">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentEventProfile.ApplicationSystemFieldNumber">
+            <summary>Field number for the "applicationSystem" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentEventProfile.ApplicationSystem">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentEventProfile.CircuitSegmentEventFieldNumber">
+            <summary>Field number for the "circuitSegmentEvent" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentEventProfile.CircuitSegmentEvent">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusDCSC">
+            <summary>
+            OpenFMB specialization for coordination service control, DCSC (Distributed Coordination Service
+            Control), following 61850 naming convention.
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusDCSC.LogicalNodeFieldNumber">
+            <summary>Field number for the "logicalNode" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusDCSC.LogicalNode">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusDCSC.CircuitSegmentServiceModeFieldNumber">
+            <summary>Field number for the "CircuitSegmentServiceMode" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusDCSC.CircuitSegmentServiceMode">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusDCSC.IslandFieldNumber">
+            <summary>Field number for the "Island" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusDCSC.Island">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusDCSC.PermissibleAutoFieldNumber">
+            <summary>Field number for the "PermissibleAuto" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusDCSC.PermissibleAuto">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusDCSC.PermissibleManualFieldNumber">
+            <summary>Field number for the "PermissibleManual" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusDCSC.PermissibleManual">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusDCSC.PermissibleNetzeroFieldNumber">
+            <summary>Field number for the "PermissibleNetzero" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusDCSC.PermissibleNetzero">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusDCSC.PermissibleStartFieldNumber">
+            <summary>Field number for the "PermissibleStart" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusDCSC.PermissibleStart">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusDCSC.PermissibleStopFieldNumber">
+            <summary>Field number for the "PermissibleStop" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusDCSC.PermissibleStop">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.circuitsegmentservicemodule.CircuitSegmentStatus">
+            <summary>
+            Switch event
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentStatus.IdentifiedObjectFieldNumber">
+            <summary>Field number for the "identifiedObject" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentStatus.IdentifiedObject">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentStatus.CircuitSegmentStatusDCSCFieldNumber">
+            <summary>Field number for the "circuitSegmentStatusDCSC" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentStatus.CircuitSegmentStatusDCSC">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusProfile">
+            <summary>
+            Switch event profile
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusProfile.EventMessageInfoFieldNumber">
+            <summary>Field number for the "eventMessageInfo" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusProfile.EventMessageInfo">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusProfile.ApplicationSystemFieldNumber">
+            <summary>Field number for the "applicationSystem" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusProfile.ApplicationSystem">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusProfile.CircuitSegmentStatusFieldNumber">
+            <summary>Field number for the "circuitSegmentStatus" field.</summary>
+        </member>
+        <member name="P:openfmb.circuitsegmentservicemodule.CircuitSegmentStatusProfile.CircuitSegmentStatus">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
         <member name="T:openfmb.commonmodule.CommonmoduleReflection">
             <summary>Holder for reflection information generated from commonmodule/commonmodule.proto</summary>
         </member>
@@ -1437,7 +1835,7 @@
         </member>
         <member name="T:openfmb.commonmodule.ScheduleParameterKind">
             <summary>
-            ESS function kind
+            Schedule parameter kind
             </summary>
         </member>
         <member name="F:openfmb.commonmodule.ScheduleParameterKind.Undefined">
@@ -2012,6 +2410,141 @@
             Lockout state
             </summary>
         </member>
+        <member name="T:openfmb.commonmodule.NorOpCatKind">
+            <summary>
+            Abnormal Operating Performance Category
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.NorOpCatKind.Undefined">
+            <summary>
+            Undefined
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.NorOpCatKind.A">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.NorOpCatKind.B">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.commonmodule.AbnOpCatKind">
+            <summary>
+            Normal Operating Performance Category
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.AbnOpCatKind.Undefined">
+            <summary>
+            Undefined
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.AbnOpCatKind.I">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.AbnOpCatKind.Ii">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.AbnOpCatKind.Iii">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.commonmodule.AlrmKind">
+            <summary>
+            State kind
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.AlrmKind.GroundFault">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.AlrmKind.DcOverVoltage">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.AlrmKind.AcDisconnectOpen">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.AlrmKind.DcDisconnectOpen">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.AlrmKind.GridDisconnect">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.AlrmKind.CabinetOpen">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.AlrmKind.ManualShutdown">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.AlrmKind.OverTemperature">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.AlrmKind.FrequencyAboveLimit">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.AlrmKind.FrequencyUnderLimit">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.AlrmKind.AcVoltageAboveLimit">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.AlrmKind.AcVoltageUnderLimit">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.AlrmKind.BlownStringFuseOnInput">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.AlrmKind.UnderTemperature">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.AlrmKind.GenericMemoryOrCommunicationError">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.AlrmKind.HardwareTestFailure">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.AlrmKind.ManufacturerAlarm">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
         <member name="T:openfmb.commonmodule.ControlModeKind">
             <summary>
             Dynamic test status (see IEC61850-7-2 section 20.2.1 Direct control with normal security, state
@@ -2099,6 +2632,96 @@
             </summary>
         </member>
         <member name="F:openfmb.commonmodule.DirectionModeKind.ReverseCogeneration">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.commonmodule.GridConnectionStateKind">
+            <summary>
+            State kind
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.GridConnectionStateKind.Disconnected">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.GridConnectionStateKind.Connected">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.commonmodule.OperatingStateKind">
+            <summary>
+            State kind
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.OperatingStateKind.Undefined">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.OperatingStateKind.Off">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.OperatingStateKind.DisconnectedAndStandby">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.OperatingStateKind.DisconnectedAndAvailable">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.OperatingStateKind.DisconnectedAndAuthorized">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.OperatingStateKind.StartingAndSynchronizing">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.OperatingStateKind.ConnectedAndIdle">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.OperatingStateKind.ConnectedAndGenerating">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.OperatingStateKind.ConnectedAndConsuming">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.OperatingStateKind.Stopping">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.OperatingStateKind.DisconnectedAndBlocked">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.OperatingStateKind.DisconnectedAndInMaintenance">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.OperatingStateKind.CeasedToEnergize">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.OperatingStateKind.Failed">
             <summary>
             MISSING DOCUMENTATION!!!
             </summary>
@@ -2927,6 +3550,53 @@
             Phase code
             </summary>
         </member>
+        <member name="T:openfmb.commonmodule.MessageInfo">
+            <summary>
+            Generic control message info.
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.MessageInfo.IdentifiedObjectFieldNumber">
+            <summary>Field number for the "identifiedObject" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.MessageInfo.IdentifiedObject">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.MessageInfo.MessageTimeStampFieldNumber">
+            <summary>Field number for the "messageTimeStamp" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.MessageInfo.MessageTimeStamp">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.commonmodule.CapabilityMessageInfo">
+            <summary>
+            Generic capability message info.
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.CapabilityMessageInfo.MessageInfoFieldNumber">
+            <summary>Field number for the "messageInfo" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.CapabilityMessageInfo.MessageInfo">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="T:openfmb.commonmodule.CapabilityOverrideMessageInfo">
+            <summary>
+            Generic capability message info.
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.CapabilityOverrideMessageInfo.MessageInfoFieldNumber">
+            <summary>Field number for the "messageInfo" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.CapabilityOverrideMessageInfo.MessageInfo">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
         <member name="T:openfmb.commonmodule.CheckConditions">
             <summary>
             IEC61850-7-2 Service parameter for conditions checking
@@ -2948,6 +3618,27 @@
         <member name="P:openfmb.commonmodule.CheckConditions.SynchroCheck">
             <summary>
             To check if a device is synchrous to the system.
+            </summary>
+        </member>
+        <member name="T:openfmb.commonmodule.ClearingTime">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.ClearingTime.SecondsFieldNumber">
+            <summary>Field number for the "seconds" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.ClearingTime.Seconds">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.ClearingTime.NanosecondsFieldNumber">
+            <summary>Field number for the "nanoseconds" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.ClearingTime.Nanoseconds">
+            <summary>
+            Partial (sub) second expressed in nanoseconds (10&lt;sup>-9&lt;/sup> second).
             </summary>
         </member>
         <member name="T:openfmb.commonmodule.Vector">
@@ -3274,27 +3965,6 @@
             Service parameter that determines the control activity.
             </summary>
         </member>
-        <member name="T:openfmb.commonmodule.MessageInfo">
-            <summary>
-            Generic control message info.
-            </summary>
-        </member>
-        <member name="F:openfmb.commonmodule.MessageInfo.IdentifiedObjectFieldNumber">
-            <summary>Field number for the "identifiedObject" field.</summary>
-        </member>
-        <member name="P:openfmb.commonmodule.MessageInfo.IdentifiedObject">
-            <summary>
-            UML inherited base object
-            </summary>
-        </member>
-        <member name="F:openfmb.commonmodule.MessageInfo.MessageTimeStampFieldNumber">
-            <summary>Field number for the "messageTimeStamp" field.</summary>
-        </member>
-        <member name="P:openfmb.commonmodule.MessageInfo.MessageTimeStamp">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
         <member name="T:openfmb.commonmodule.ControlMessageInfo">
             <summary>
             Generic control message info.
@@ -3354,6 +4024,27 @@
         <member name="P:openfmb.commonmodule.ControlValue.Reset">
             <summary>
             If true, reset the device before executing any other controls.
+            </summary>
+        </member>
+        <member name="T:openfmb.commonmodule.CumulativeTime">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.CumulativeTime.SecondsFieldNumber">
+            <summary>Field number for the "seconds" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.CumulativeTime.Seconds">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.CumulativeTime.NanosecondsFieldNumber">
+            <summary>Field number for the "nanoseconds" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.CumulativeTime.Nanoseconds">
+            <summary>
+            Partial (sub) second expressed in nanoseconds (10&lt;sup>-9&lt;/sup> second).
             </summary>
         </member>
         <member name="T:openfmb.commonmodule.DateTimeInterval">
@@ -3732,6 +4423,90 @@
             Value of the data.
             </summary>
         </member>
+        <member name="T:openfmb.commonmodule.OperationDCTE">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.OperationDCTE.RndDlTmmsFieldNumber">
+            <summary>Field number for the "rndDlTmms" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.OperationDCTE.RndDlTmms">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.OperationDCTE.RtnDlTmmsFieldNumber">
+            <summary>Field number for the "rtnDlTmms" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.OperationDCTE.RtnDlTmms">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.OperationDCTE.RtnRmpTmmsFieldNumber">
+            <summary>Field number for the "rtnRmpTmms" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.OperationDCTE.RtnRmpTmms">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.commonmodule.EnterServiceAPC">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.EnterServiceAPC.EnterServiceParameterFieldNumber">
+            <summary>Field number for the "enterServiceParameter" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.EnterServiceAPC.EnterServiceParameter">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.EnterServiceAPC.HzHiLimFieldNumber">
+            <summary>Field number for the "hzHiLim" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.EnterServiceAPC.HzHiLim">
+            <summary>
+            This field is for an absolute value. ES Frequency High
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.EnterServiceAPC.HzLoLimFieldNumber">
+            <summary>Field number for the "hzLoLim" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.EnterServiceAPC.HzLoLim">
+            <summary>
+            This field is for an absolute value. ES Frequency Low
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.EnterServiceAPC.RtnSrvAutoFieldNumber">
+            <summary>Field number for the "rtnSrvAuto" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.EnterServiceAPC.RtnSrvAuto">
+            <summary>
+            Permit service. If (RtnSrvAuto) true, the DER is authorized to automatically return to service;
+            if false, the DER must wait until an external RtnSrvAuth is received to allow it to return to
+            service.
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.EnterServiceAPC.VHiLimFieldNumber">
+            <summary>Field number for the "vHiLim" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.EnterServiceAPC.VHiLim">
+            <summary>
+            This is an absolute value field.  ES Voltage High
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.EnterServiceAPC.VLoLimFieldNumber">
+            <summary>Field number for the "vLoLim" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.EnterServiceAPC.VLoLim">
+            <summary>
+            This is an absolute value field.  ES Voltage Low
+            </summary>
+        </member>
         <member name="T:openfmb.commonmodule.ESS">
             <summary>
             MISSING DOCUMENTATION!!!
@@ -3842,6 +4617,108 @@
             UML inherited base object
             </summary>
         </member>
+        <member name="T:openfmb.commonmodule.OperationDHFW">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.OperationDHFW.ModEnaFieldNumber">
+            <summary>Field number for the "modEna" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.OperationDHFW.ModEna">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.OperationDHFW.OplTmmsMaxFieldNumber">
+            <summary>Field number for the "OplTmmsMax" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.OperationDHFW.OplTmmsMax">
+            <summary>
+            Open Loop Response Time
+            </summary>
+        </member>
+        <member name="T:openfmb.commonmodule.OperationDLFW">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.OperationDLFW.ModEnaFieldNumber">
+            <summary>Field number for the "modEna" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.OperationDLFW.ModEna">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.OperationDLFW.OplTmmsMaxFieldNumber">
+            <summary>Field number for the "OplTmmsMax" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.OperationDLFW.OplTmmsMax">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.commonmodule.HzWPoint">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.HzWPoint.DeadbandHzValFieldNumber">
+            <summary>Field number for the "deadbandHzVal" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.HzWPoint.DeadbandHzVal">
+            <summary>
+            This is an absolute value field
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.HzWPoint.SlopeValFieldNumber">
+            <summary>Field number for the "slopeVal" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.HzWPoint.SlopeVal">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.commonmodule.HzWAPC">
+            <summary>
+            Frequency Droop Function
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.HzWAPC.OverHzWPtFieldNumber">
+            <summary>Field number for the "overHzWPt" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.HzWAPC.OverHzWPt">
+            <summary>
+            Overfrequency Droop &lt;i>db&lt;/i>OF  The frequency which must be higher than the reference frequency
+            at which to start reducing power output.
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.HzWAPC.OverHzWParameterFieldNumber">
+            <summary>Field number for the "overHzWParameter" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.HzWAPC.OverHzWParameter">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.HzWAPC.UnderHzWPtFieldNumber">
+            <summary>Field number for the "underHzWPt" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.HzWAPC.UnderHzWPt">
+            <summary>
+            Underfrequency Droop &lt;i>db&lt;/i>UF  The frequency which must be lower than the reference frequency
+            at which to start increasing power output.
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.HzWAPC.UnderHzWParameterFieldNumber">
+            <summary>Field number for the "underHzWParameter" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.HzWAPC.UnderHzWParameter">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
         <member name="T:openfmb.commonmodule.StatusINS">
             <summary>
             &lt;&lt;statistics>> Integer status (INS)
@@ -3898,6 +4775,69 @@
         <member name="P:openfmb.commonmodule.IntegerEventAndStatusGGIO.Phase">
             <summary>
             Phase code
+            </summary>
+        </member>
+        <member name="T:openfmb.commonmodule.OperationDWMX">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.OperationDWMX.ModEnaFieldNumber">
+            <summary>Field number for the "modEna" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.OperationDWMX.ModEna">
+            <summary>
+            Limit Active Power Enable
+            </summary>
+        </member>
+        <member name="T:openfmb.commonmodule.OperationDWMN">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.OperationDWMN.ModEnaFieldNumber">
+            <summary>Field number for the "modEna" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.OperationDWMN.ModEna">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.commonmodule.LimitWAPC">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.LimitWAPC.MaxLimParameterFieldNumber">
+            <summary>Field number for the "maxLimParameter" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.LimitWAPC.MaxLimParameter">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.LimitWAPC.MinLimParameterFieldNumber">
+            <summary>Field number for the "minLimParameter" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.LimitWAPC.MinLimParameter">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.LimitWAPC.WMaxSptValFieldNumber">
+            <summary>Field number for the "wMaxSptVal" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.LimitWAPC.WMaxSptVal">
+            <summary>
+            This is an absolute value field.  Maximum Active Power
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.LimitWAPC.WMinSptValFieldNumber">
+            <summary>Field number for the "wMinSptVal" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.LimitWAPC.WMinSptVal">
+            <summary>
+            This is an absolute value field.  Minimum Active Power
             </summary>
         </member>
         <member name="T:openfmb.commonmodule.LogicalNodeForEventAndStatus">
@@ -3974,6 +4914,196 @@
             UML inherited base object
             </summary>
         </member>
+        <member name="T:openfmb.commonmodule.NameplateValue">
+            <summary>
+            Generic nameplate value such as name and description.
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.NameplateValue.IdentifiedObjectFieldNumber">
+            <summary>Field number for the "identifiedObject" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.NameplateValue.IdentifiedObject">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.NameplateValue.ModelFieldNumber">
+            <summary>Field number for the "model" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.NameplateValue.Model">
+            <summary>
+            Model
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.NameplateValue.SernumFieldNumber">
+            <summary>Field number for the "sernum" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.NameplateValue.Sernum">
+            <summary>
+            Serial Number
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.NameplateValue.SwRevFieldNumber">
+            <summary>Field number for the "swRev" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.NameplateValue.SwRev">
+            <summary>
+            Version
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.NameplateValue.VendorFieldNumber">
+            <summary>Field number for the "vendor" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.NameplateValue.Vendor">
+            <summary>
+            Manufacturer
+            </summary>
+        </member>
+        <member name="T:openfmb.commonmodule.OperationDFPF">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.OperationDFPF.ModEnaFieldNumber">
+            <summary>Field number for the "modEna" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.OperationDFPF.ModEna">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.OperationDFPF.PFExtSetFieldNumber">
+            <summary>Field number for the "pFExtSet" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.OperationDFPF.PFExtSet">
+            <summary>
+            Constant power factor excitation setting  PFExtSet: PFExtSet set to true = overexcited; PFExtSet
+            set to false = underexcited
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.OperationDFPF.PFGnTgtMxValFieldNumber">
+            <summary>Field number for the "pFGnTgtMxVal" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.OperationDFPF.PFGnTgtMxVal">
+            <summary>
+            Applies when generating.  Target power factor setting when generating.  The power factor target
+            is a number between -1 and 1, and is used in conjunction with PFExtSet to indicate whether it to
+            make it over or under excited.
+            </summary>
+        </member>
+        <member name="T:openfmb.commonmodule.OperationDVAR">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.OperationDVAR.VarTgtSptFieldNumber">
+            <summary>Field number for the "varTgtSpt" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.OperationDVAR.VarTgtSpt">
+            <summary>
+            This is an absolute value field.  Constant Reactive Power
+            </summary>
+        </member>
+        <member name="T:openfmb.commonmodule.OperationDVVR">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.OperationDVVR.ModEnaFieldNumber">
+            <summary>Field number for the "modEna" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.OperationDVVR.ModEna">
+            <summary>
+            Voltage-Reactive Power Mode Enable
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.OperationDVVR.OplTmmsMaxFieldNumber">
+            <summary>Field number for the "OplTmmsMax" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.OperationDVVR.OplTmmsMax">
+            <summary>
+            Open Loop Response Time
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.OperationDVVR.VRefFieldNumber">
+            <summary>Field number for the "VRef" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.OperationDVVR.VRef">
+            <summary>
+            V&lt;sub>Ref&lt;/sub> Reference voltage
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.OperationDVVR.VRefAdjEnaFieldNumber">
+            <summary>Field number for the "VRefAdjEna" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.OperationDVVR.VRefAdjEna">
+            <summary>
+            Autonomous &lt;i>V&lt;/i>&lt;i>&lt;sub>Ref&lt;/sub>&lt;/i>&lt;i>  &lt;/i>adjustment enable
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.OperationDVVR.VRefTmmsFieldNumber">
+            <summary>Field number for the "VRefTmms" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.OperationDVVR.VRefTmms">
+            <summary>
+            &lt;i>V&lt;/i>&lt;i>&lt;sub>Ref&lt;/sub>&lt;/i>&lt;i>  &lt;/i>adjustment time constant
+            </summary>
+        </member>
+        <member name="T:openfmb.commonmodule.OperationDVWC">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.OperationDVWC.ModEnaFieldNumber">
+            <summary>Field number for the "modEna" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.OperationDVWC.ModEna">
+            <summary>
+            Voltage-Active Power Mode Enable
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.OperationDVWC.OplTmmsMaxFieldNumber">
+            <summary>Field number for the "OplTmmsMax" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.OperationDVWC.OplTmmsMax">
+            <summary>
+            Open Loop Response Time
+            </summary>
+        </member>
+        <member name="T:openfmb.commonmodule.OperationDWVR">
+            <summary>
+            Curve shape setting (FC=SP) (CSG_SP)
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.OperationDWVR.ModEnaFieldNumber">
+            <summary>Field number for the "modEna" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.OperationDWVR.ModEna">
+            <summary>
+            Active-Reactive Power Mode Enable
+            </summary>
+        </member>
+        <member name="T:openfmb.commonmodule.OperationStorageDFPF">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.OperationStorageDFPF.OperationDFPFFieldNumber">
+            <summary>Field number for the "operationDFPF" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.OperationStorageDFPF.OperationDFPF">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.OperationStorageDFPF.PFLodTgtMxValFieldNumber">
+            <summary>Field number for the "pFLodTgtMxVal" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.OperationStorageDFPF.PFLodTgtMxVal">
+            <summary>
+            Applies when charging and need not be supported for generating-only DER.
+            </summary>
+        </member>
         <member name="T:openfmb.commonmodule.OptimizationMessageInfo">
             <summary>
             Generic event message information
@@ -3985,6 +5115,48 @@
         <member name="P:openfmb.commonmodule.OptimizationMessageInfo.MessageInfo">
             <summary>
             UML inherited base object
+            </summary>
+        </member>
+        <member name="T:openfmb.commonmodule.PFSPC">
+            <summary>
+            Constant power factor control function
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.PFSPC.CtlValFieldNumber">
+            <summary>Field number for the "ctlVal" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.PFSPC.CtlVal">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.PFSPC.PFParameterFieldNumber">
+            <summary>Field number for the "pFParameter" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.PFSPC.PFParameter">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.commonmodule.PFStorageSPC">
+            <summary>
+            Constant power factor control function
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.PFStorageSPC.CtlValFieldNumber">
+            <summary>Field number for the "ctlVal" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.PFStorageSPC.CtlVal">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.PFStorageSPC.PFStorageParameterFieldNumber">
+            <summary>Field number for the "pFStorageParameter" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.PFStorageSPC.PFStorageParameter">
+            <summary>
+            MISSING DOCUMENTATION!!!
             </summary>
         </member>
         <member name="T:openfmb.commonmodule.PhaseAPC">
@@ -4745,6 +5917,263 @@
             Phase to ground/phase to neutral real powers P.
             </summary>
         </member>
+        <member name="T:openfmb.commonmodule.SourceCapabilityConfiguration">
+            <summary>
+            Source configured setting
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.SourceCapabilityConfiguration.LogicalNodeFieldNumber">
+            <summary>Field number for the "logicalNode" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.SourceCapabilityConfiguration.LogicalNode">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.SourceCapabilityConfiguration.AMaxFieldNumber">
+            <summary>Field number for the "AMax" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.SourceCapabilityConfiguration.AMax">
+            <summary>
+            Amp Maximum configured value
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.SourceCapabilityConfiguration.VAMaxFieldNumber">
+            <summary>Field number for the "VAMax" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.SourceCapabilityConfiguration.VAMax">
+            <summary>
+            Apparent Power Maximum configured value
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.SourceCapabilityConfiguration.VarMaxAbsFieldNumber">
+            <summary>Field number for the "VarMaxAbs" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.SourceCapabilityConfiguration.VarMaxAbs">
+            <summary>
+            Reactive Power Absorbed Maximum configured value
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.SourceCapabilityConfiguration.VarMaxInjFieldNumber">
+            <summary>Field number for the "VarMaxInj" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.SourceCapabilityConfiguration.VarMaxInj">
+            <summary>
+            Reactive Power Injected Maximum configured value
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.SourceCapabilityConfiguration.VMaxFieldNumber">
+            <summary>Field number for the "VMax" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.SourceCapabilityConfiguration.VMax">
+            <summary>
+            AC voltage maximum configured value
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.SourceCapabilityConfiguration.VMinFieldNumber">
+            <summary>Field number for the "VMin" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.SourceCapabilityConfiguration.VMin">
+            <summary>
+            AC voltage minimum configured value
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.SourceCapabilityConfiguration.VNomFieldNumber">
+            <summary>Field number for the "VNom" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.SourceCapabilityConfiguration.VNom">
+            <summary>
+            AC voltage nominal configured value
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.SourceCapabilityConfiguration.WMaxFieldNumber">
+            <summary>Field number for the "WMax" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.SourceCapabilityConfiguration.WMax">
+            <summary>
+            Active Power Max configured value
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.SourceCapabilityConfiguration.WOvrExtFieldNumber">
+            <summary>Field number for the "WOvrExt" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.SourceCapabilityConfiguration.WOvrExt">
+            <summary>
+            Active Power (Over-Excited) configured value
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.SourceCapabilityConfiguration.WOvrExtPFFieldNumber">
+            <summary>Field number for the "WOvrExtPF" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.SourceCapabilityConfiguration.WOvrExtPF">
+            <summary>
+            Active power configured value at specified over-excited power factor
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.SourceCapabilityConfiguration.WUndExtFieldNumber">
+            <summary>Field number for the "WUndExt" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.SourceCapabilityConfiguration.WUndExt">
+            <summary>
+            Active Power (Under-Excited) configured value
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.SourceCapabilityConfiguration.WUndExtPFFieldNumber">
+            <summary>Field number for the "WUndExtPF" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.SourceCapabilityConfiguration.WUndExtPF">
+            <summary>
+            Active power configured value at specified under-excited power factor
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.Optional_NorOpCatKind.ValueFieldNumber">
+            <summary>Field number for the "value" field.</summary>
+        </member>
+        <member name="F:openfmb.commonmodule.Optional_AbnOpCatKind.ValueFieldNumber">
+            <summary>Field number for the "value" field.</summary>
+        </member>
+        <member name="T:openfmb.commonmodule.SourceCapabilityRatings">
+            <summary>
+            Source capability ratings
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.SourceCapabilityRatings.LogicalNodeFieldNumber">
+            <summary>Field number for the "logicalNode" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.SourceCapabilityRatings.LogicalNode">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.SourceCapabilityRatings.AbnOpCatRtgFieldNumber">
+            <summary>Field number for the "AbnOpCatRtg" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.SourceCapabilityRatings.AbnOpCatRtg">
+            <summary>
+            Abnormal Operating Performance Category  Text stating: “IEEE 1547:2018 Either “I”, “II”, or
+            “III” is stated for the Abnormal Category
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.SourceCapabilityRatings.AMaxRtgFieldNumber">
+            <summary>Field number for the "AMaxRtg" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.SourceCapabilityRatings.AMaxRtg">
+            <summary>
+            Amp Maximum Rating  SunSpec has this field but not in IEEE1547
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.SourceCapabilityRatings.FreqNomRtgFieldNumber">
+            <summary>Field number for the "FreqNomRtg" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.SourceCapabilityRatings.FreqNomRtg">
+            <summary>
+            Frequency nominal rating, default to 60 hz if not provide and cannot be configured.
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.SourceCapabilityRatings.NorOpCatRtgFieldNumber">
+            <summary>Field number for the "NorOpCatRtg" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.SourceCapabilityRatings.NorOpCatRtg">
+            <summary>
+            Normal operating performance category
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.SourceCapabilityRatings.ReactSusceptRtgFieldNumber">
+            <summary>Field number for the "ReactSusceptRtg" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.SourceCapabilityRatings.ReactSusceptRtg">
+            <summary>
+            Reactive susceptance that remains connected to the Area EPS in the cease to energize and trip state
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.SourceCapabilityRatings.VAMaxRtgFieldNumber">
+            <summary>Field number for the "VAMaxRtg" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.SourceCapabilityRatings.VAMaxRtg">
+            <summary>
+            Apparent Power Maximum Rating
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.SourceCapabilityRatings.VarMaxAbsRtgFieldNumber">
+            <summary>Field number for the "VarMaxAbsRtg" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.SourceCapabilityRatings.VarMaxAbsRtg">
+            <summary>
+            Reactive Power Absorbed Maximum Rating
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.SourceCapabilityRatings.VarMaxInjRtgFieldNumber">
+            <summary>Field number for the "VarMaxInjRtg" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.SourceCapabilityRatings.VarMaxInjRtg">
+            <summary>
+            Reactive Power Injected Maximum Rating
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.SourceCapabilityRatings.VMaxRtgFieldNumber">
+            <summary>Field number for the "VMaxRtg" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.SourceCapabilityRatings.VMaxRtg">
+            <summary>
+            AC voltage maximum rating
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.SourceCapabilityRatings.VMinRtgFieldNumber">
+            <summary>Field number for the "VMinRtg" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.SourceCapabilityRatings.VMinRtg">
+            <summary>
+            AC voltage minimum rating
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.SourceCapabilityRatings.VNomRtgFieldNumber">
+            <summary>Field number for the "VNomRtg" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.SourceCapabilityRatings.VNomRtg">
+            <summary>
+            AC voltage nominal rating
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.SourceCapabilityRatings.WMaxRtgFieldNumber">
+            <summary>Field number for the "WMaxRtg" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.SourceCapabilityRatings.WMaxRtg">
+            <summary>
+            Active Power Max Rating
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.SourceCapabilityRatings.WOvrExtRtgFieldNumber">
+            <summary>Field number for the "WOvrExtRtg" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.SourceCapabilityRatings.WOvrExtRtg">
+            <summary>
+            Active Power (Over-Excited) Rating
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.SourceCapabilityRatings.WOvrExtRtgPFFieldNumber">
+            <summary>Field number for the "WOvrExtRtgPF" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.SourceCapabilityRatings.WOvrExtRtgPF">
+            <summary>
+            Active power rating at specified over-excited power factor
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.SourceCapabilityRatings.WUndExtRtgFieldNumber">
+            <summary>Field number for the "WUndExtRtg" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.SourceCapabilityRatings.WUndExtRtg">
+            <summary>
+            Active Power (Under-Excited) Rating
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.SourceCapabilityRatings.WUndExtRtgPFFieldNumber">
+            <summary>Field number for the "WUndExtRtgPF" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.SourceCapabilityRatings.WUndExtRtgPF">
+            <summary>
+            Active power rating at specified under-excited power factor
+            </summary>
+        </member>
         <member name="T:openfmb.commonmodule.StatusAndEventXCBR">
             <summary>
             OpenFMB specialization for breaker, recloser and switch status and event profiles:  LN: Circuit
@@ -4992,6 +6421,195 @@
             The array with the points specifying a curve shape.
             </summary>
         </member>
+        <member name="T:openfmb.commonmodule.TmHzPoint">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.TmHzPoint.HzValFieldNumber">
+            <summary>Field number for the "hzVal" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.TmHzPoint.HzVal">
+            <summary>
+            This is an absolute value field.
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.TmHzPoint.TmValFieldNumber">
+            <summary>Field number for the "tmVal" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.TmHzPoint.TmVal">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.commonmodule.TmHzCSG">
+            <summary>
+            Frequency-Trip Function
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.TmHzCSG.OverCrvPtsFieldNumber">
+            <summary>Field number for the "overCrvPts" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.TmHzCSG.OverCrvPts">
+            <summary>
+            HF Trip Curve Points
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.TmHzCSG.UnderCrvPtsFieldNumber">
+            <summary>Field number for the "underCrvPts" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.TmHzCSG.UnderCrvPts">
+            <summary>
+            LF Trip Curve Points
+            </summary>
+        </member>
+        <member name="T:openfmb.commonmodule.TmVoltPoint">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.TmVoltPoint.TmValFieldNumber">
+            <summary>Field number for the "tmVal" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.TmVoltPoint.TmVal">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.TmVoltPoint.VoltValFieldNumber">
+            <summary>Field number for the "voltVal" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.TmVoltPoint.VoltVal">
+            <summary>
+            This is an absolute value field.
+            </summary>
+        </member>
+        <member name="T:openfmb.commonmodule.TmVoltCSG">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.TmVoltCSG.OverCrvPtsFieldNumber">
+            <summary>Field number for the "overCrvPts" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.TmVoltCSG.OverCrvPts">
+            <summary>
+            HV Trip Curve Points
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.TmVoltCSG.UnderCrvPtsFieldNumber">
+            <summary>Field number for the "underCrvPts" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.TmVoltCSG.UnderCrvPts">
+            <summary>
+            LV Trip Curve Points
+            </summary>
+        </member>
+        <member name="T:openfmb.commonmodule.VarSPC">
+            <summary>
+            Constant Reactive Power (Fixed VAr) Function
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.VarSPC.ModEnaFieldNumber">
+            <summary>Field number for the "modEna" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.VarSPC.ModEna">
+            <summary>
+            Constant Reactive Power Mode Enable
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.VarSPC.VarParameterFieldNumber">
+            <summary>Field number for the "varParameter" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.VarSPC.VarParameter">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.commonmodule.VoltVarPoint">
+            <summary>
+            Point definition (Point)
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.VoltVarPoint.VarValFieldNumber">
+            <summary>Field number for the "varVal" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.VoltVarPoint.VarVal">
+            <summary>
+            This is an absolute value field.
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.VoltVarPoint.VoltValFieldNumber">
+            <summary>Field number for the "voltVal" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.VoltVarPoint.VoltVal">
+            <summary>
+            This is an absolute value field.
+            </summary>
+        </member>
+        <member name="T:openfmb.commonmodule.VoltVarCSG">
+            <summary>
+            Voltage-Reactive Power (Volt-VAr) Function
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.VoltVarCSG.CrvPtsFieldNumber">
+            <summary>Field number for the "crvPts" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.VoltVarCSG.CrvPts">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.VoltVarCSG.VVarParameterFieldNumber">
+            <summary>Field number for the "vVarParameter" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.VoltVarCSG.VVarParameter">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.commonmodule.VoltWPoint">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.VoltWPoint.VoltValFieldNumber">
+            <summary>Field number for the "voltVal" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.VoltWPoint.VoltVal">
+            <summary>
+            This is an absolute value field.
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.VoltWPoint.WValFieldNumber">
+            <summary>Field number for the "wVal" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.VoltWPoint.WVal">
+            <summary>
+            This is an absolute value field.
+            </summary>
+        </member>
+        <member name="T:openfmb.commonmodule.VoltWCSG">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.VoltWCSG.CrvPtsFieldNumber">
+            <summary>Field number for the "crvPts" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.VoltWCSG.CrvPts">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.VoltWCSG.VoltWParameterFieldNumber">
+            <summary>Field number for the "voltWParameter" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.VoltWCSG.VoltWParameter">
+            <summary>
+            Voltage-Active Power (Volt-Watt) Function
+            </summary>
+        </member>
         <member name="T:openfmb.commonmodule.VSC">
             <summary>
             Visible string status (VSS)
@@ -5005,10 +6623,61 @@
             [OpenFMB Extension]  String control value.
             </summary>
         </member>
+        <member name="T:openfmb.commonmodule.WVarPoint">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.WVarPoint.VarValFieldNumber">
+            <summary>Field number for the "varVal" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.WVarPoint.VarVal">
+            <summary>
+            This is an absolute value field.
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.WVarPoint.WValFieldNumber">
+            <summary>Field number for the "wVal" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.WVarPoint.WVal">
+            <summary>
+            This is an absolute value field.
+            </summary>
+        </member>
+        <member name="T:openfmb.commonmodule.WVarCSG">
+            <summary>
+            Active Power-Reactive Power (Watt-VAr) Function
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.WVarCSG.CrvPtsFieldNumber">
+            <summary>Field number for the "crvPts" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.WVarCSG.CrvPts">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.WVarCSG.WVarParameterFieldNumber">
+            <summary>Field number for the "wVarParameter" field.</summary>
+        </member>
+        <member name="P:openfmb.commonmodule.WVarCSG.WVarParameter">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.commonmodule.Optional_AlrmKind.ValueFieldNumber">
+            <summary>Field number for the "value" field.</summary>
+        </member>
         <member name="F:openfmb.commonmodule.Optional_ControlModeKind.ValueFieldNumber">
             <summary>Field number for the "value" field.</summary>
         </member>
         <member name="F:openfmb.commonmodule.Optional_DirectionModeKind.ValueFieldNumber">
+            <summary>Field number for the "value" field.</summary>
+        </member>
+        <member name="F:openfmb.commonmodule.Optional_GridConnectionStateKind.ValueFieldNumber">
+            <summary>Field number for the "value" field.</summary>
+        </member>
+        <member name="F:openfmb.commonmodule.Optional_OperatingStateKind.ValueFieldNumber">
             <summary>Field number for the "value" field.</summary>
         </member>
         <member name="F:openfmb.commonmodule.Optional_ReactivePowerControlKind.ValueFieldNumber">
@@ -5023,461 +6692,216 @@
         <member name="F:openfmb.commonmodule.Optional_VoltLimitModeKind.ValueFieldNumber">
             <summary>Field number for the "value" field.</summary>
         </member>
-        <member name="T:openfmb.coordinationservicemodule.CoordinationservicemoduleReflection">
-            <summary>Holder for reflection information generated from coordinationservicemodule/coordinationservicemodule.proto</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationservicemoduleReflection.Descriptor">
-            <summary>File descriptor for coordinationservicemodule/coordinationservicemodule.proto</summary>
-        </member>
-        <member name="T:openfmb.coordinationservicemodule.CoordinationServiceModeKind">
-            <summary>
-            State kind
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationServiceModeKind.Undefined">
-            <summary>
-            Undefined
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationServiceModeKind.None">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationServiceModeKind.Auto">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationServiceModeKind.Manual">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationServiceModeKind.Netzero">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationServiceModeKind.Start">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationServiceModeKind.Stop">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.Optional_CoordinationServiceModeKind.ValueFieldNumber">
-            <summary>Field number for the "value" field.</summary>
-        </member>
-        <member name="T:openfmb.coordinationservicemodule.ENG_CoordinationServiceModeKind">
-            <summary>
-            Coordination service mode kind
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.ENG_CoordinationServiceModeKind.SetValFieldNumber">
-            <summary>Field number for the "setVal" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.ENG_CoordinationServiceModeKind.SetVal">
-            <summary>
-            The value of the coordination service mode.
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.ENG_CoordinationServiceModeKind.SetValExtensionFieldNumber">
-            <summary>Field number for the "setValExtension" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.ENG_CoordinationServiceModeKind.SetValExtension">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="T:openfmb.coordinationservicemodule.CoordinationControlDCSC">
-            <summary>
-            OpenFMB specialization for coordination service control, DCSC (Distributed Coordination Service
-            Control), following 61850 naming convention.
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationControlDCSC.LogicalNodeForControlFieldNumber">
-            <summary>Field number for the "logicalNodeForControl" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationControlDCSC.LogicalNodeForControl">
-            <summary>
-            UML inherited base object
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationControlDCSC.CoordinationServiceModeFieldNumber">
-            <summary>Field number for the "CoordinationServiceMode" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationControlDCSC.CoordinationServiceMode">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationControlDCSC.IslandFieldNumber">
-            <summary>Field number for the "Island" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationControlDCSC.Island">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="T:openfmb.coordinationservicemodule.CoordinationControl">
-            <summary>
-            Switch discrete control
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationControl.IdentifiedObjectFieldNumber">
-            <summary>Field number for the "identifiedObject" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationControl.IdentifiedObject">
-            <summary>
-            UML inherited base object
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationControl.CheckFieldNumber">
-            <summary>Field number for the "check" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationControl.Check">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationControl.CoordinationControlDCSCFieldNumber">
-            <summary>Field number for the "coordinationControlDCSC" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationControl.CoordinationControlDCSC">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="T:openfmb.coordinationservicemodule.CoordinationControlProfile">
-            <summary>
-            Switch control profile
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationControlProfile.ControlMessageInfoFieldNumber">
-            <summary>Field number for the "controlMessageInfo" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationControlProfile.ControlMessageInfo">
-            <summary>
-            UML inherited base object
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationControlProfile.ApplicationSystemFieldNumber">
-            <summary>Field number for the "applicationSystem" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationControlProfile.ApplicationSystem">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationControlProfile.CoordinationControlFieldNumber">
-            <summary>Field number for the "coordinationControl" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationControlProfile.CoordinationControl">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="T:openfmb.coordinationservicemodule.CoordinationEventDCSC">
-            <summary>
-            OpenFMB specialization for coordination service control, DCSC (Distributed Coordination Service
-            Control), following 61850 naming convention.
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationEventDCSC.LogicalNodeFieldNumber">
-            <summary>Field number for the "logicalNode" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationEventDCSC.LogicalNode">
-            <summary>
-            UML inherited base object
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationEventDCSC.CoordinationServiceModeFieldNumber">
-            <summary>Field number for the "CoordinationServiceMode" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationEventDCSC.CoordinationServiceMode">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationEventDCSC.IslandFieldNumber">
-            <summary>Field number for the "Island" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationEventDCSC.Island">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationEventDCSC.PermissibleAutoFieldNumber">
-            <summary>Field number for the "PermissibleAuto" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationEventDCSC.PermissibleAuto">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationEventDCSC.PermissibleManualFieldNumber">
-            <summary>Field number for the "PermissibleManual" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationEventDCSC.PermissibleManual">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationEventDCSC.PermissibleNetzeroFieldNumber">
-            <summary>Field number for the "PermissibleNetzero" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationEventDCSC.PermissibleNetzero">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationEventDCSC.PermissibleStartFieldNumber">
-            <summary>Field number for the "PermissibleStart" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationEventDCSC.PermissibleStart">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationEventDCSC.PermissibleStopFieldNumber">
-            <summary>Field number for the "PermissibleStop" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationEventDCSC.PermissibleStop">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="T:openfmb.coordinationservicemodule.CoordinationEvent">
-            <summary>
-            Switch event
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationEvent.IdentifiedObjectFieldNumber">
-            <summary>Field number for the "identifiedObject" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationEvent.IdentifiedObject">
-            <summary>
-            UML inherited base object
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationEvent.CoordinationEventDCSCFieldNumber">
-            <summary>Field number for the "coordinationEventDCSC" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationEvent.CoordinationEventDCSC">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="T:openfmb.coordinationservicemodule.CoordinationEventProfile">
-            <summary>
-            Switch event profile
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationEventProfile.EventMessageInfoFieldNumber">
-            <summary>Field number for the "eventMessageInfo" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationEventProfile.EventMessageInfo">
-            <summary>
-            UML inherited base object
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationEventProfile.ApplicationSystemFieldNumber">
-            <summary>Field number for the "applicationSystem" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationEventProfile.ApplicationSystem">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationEventProfile.CoordinationEventFieldNumber">
-            <summary>Field number for the "coordinationEvent" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationEventProfile.CoordinationEvent">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="T:openfmb.coordinationservicemodule.CoordinationStatusDCSC">
-            <summary>
-            OpenFMB specialization for coordination service control, DCSC (Distributed Coordination Service
-            Control), following 61850 naming convention.
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationStatusDCSC.LogicalNodeFieldNumber">
-            <summary>Field number for the "logicalNode" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationStatusDCSC.LogicalNode">
-            <summary>
-            UML inherited base object
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationStatusDCSC.CoordinationServiceModeFieldNumber">
-            <summary>Field number for the "CoordinationServiceMode" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationStatusDCSC.CoordinationServiceMode">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationStatusDCSC.IslandFieldNumber">
-            <summary>Field number for the "Island" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationStatusDCSC.Island">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationStatusDCSC.PermissibleAutoFieldNumber">
-            <summary>Field number for the "PermissibleAuto" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationStatusDCSC.PermissibleAuto">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationStatusDCSC.PermissibleManualFieldNumber">
-            <summary>Field number for the "PermissibleManual" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationStatusDCSC.PermissibleManual">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationStatusDCSC.PermissibleNetzeroFieldNumber">
-            <summary>Field number for the "PermissibleNetzero" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationStatusDCSC.PermissibleNetzero">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationStatusDCSC.PermissibleStartFieldNumber">
-            <summary>Field number for the "PermissibleStart" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationStatusDCSC.PermissibleStart">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationStatusDCSC.PermissibleStopFieldNumber">
-            <summary>Field number for the "PermissibleStop" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationStatusDCSC.PermissibleStop">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="T:openfmb.coordinationservicemodule.CoordinationStatus">
-            <summary>
-            Switch event
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationStatus.IdentifiedObjectFieldNumber">
-            <summary>Field number for the "identifiedObject" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationStatus.IdentifiedObject">
-            <summary>
-            UML inherited base object
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationStatus.CoordinationStatusDCSCFieldNumber">
-            <summary>Field number for the "coordinationStatusDCSC" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationStatus.CoordinationStatusDCSC">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="T:openfmb.coordinationservicemodule.CoordinationStatusProfile">
-            <summary>
-            Switch event profile
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationStatusProfile.EventMessageInfoFieldNumber">
-            <summary>Field number for the "eventMessageInfo" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationStatusProfile.EventMessageInfo">
-            <summary>
-            UML inherited base object
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationStatusProfile.ApplicationSystemFieldNumber">
-            <summary>Field number for the "applicationSystem" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationStatusProfile.ApplicationSystem">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.coordinationservicemodule.CoordinationStatusProfile.CoordinationStatusFieldNumber">
-            <summary>Field number for the "coordinationStatus" field.</summary>
-        </member>
-        <member name="P:openfmb.coordinationservicemodule.CoordinationStatusProfile.CoordinationStatus">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
         <member name="T:openfmb.essmodule.EssmoduleReflection">
             <summary>Holder for reflection information generated from essmodule/essmodule.proto</summary>
         </member>
         <member name="P:openfmb.essmodule.EssmoduleReflection.Descriptor">
             <summary>File descriptor for essmodule/essmodule.proto</summary>
         </member>
-        <member name="T:openfmb.essmodule.EssEventZBAT">
-            <summary>
-            Specialized 61850 ZBAT class  LN: Battery   Name: ZBAT
-            </summary>
-        </member>
-        <member name="F:openfmb.essmodule.EssEventZBAT.LogicalNodeForEventAndStatusFieldNumber">
-            <summary>Field number for the "logicalNodeForEventAndStatus" field.</summary>
-        </member>
-        <member name="P:openfmb.essmodule.EssEventZBAT.LogicalNodeForEventAndStatus">
-            <summary>
-            UML inherited base object
-            </summary>
-        </member>
-        <member name="F:openfmb.essmodule.EssEventZBAT.BatHiFieldNumber">
-            <summary>Field number for the "BatHi" field.</summary>
-        </member>
-        <member name="P:openfmb.essmodule.EssEventZBAT.BatHi">
-            <summary>
-            If true, the battery is in overcharge (voltage or current) condition.
-            </summary>
-        </member>
-        <member name="F:openfmb.essmodule.EssEventZBAT.BatLoFieldNumber">
-            <summary>Field number for the "BatLo" field.</summary>
-        </member>
-        <member name="P:openfmb.essmodule.EssEventZBAT.BatLo">
-            <summary>
-            If true, the battery voltage or charge has dropped below a pre-set level.
-            </summary>
-        </member>
-        <member name="F:openfmb.essmodule.EssEventZBAT.BatStFieldNumber">
-            <summary>Field number for the "BatSt" field.</summary>
-        </member>
-        <member name="P:openfmb.essmodule.EssEventZBAT.BatSt">
+        <member name="T:openfmb.essmodule.ESSCapabilityConfiguration">
             <summary>
             MISSING DOCUMENTATION!!!
             </summary>
         </member>
-        <member name="F:openfmb.essmodule.EssEventZBAT.SocFieldNumber">
-            <summary>Field number for the "Soc" field.</summary>
+        <member name="F:openfmb.essmodule.ESSCapabilityConfiguration.SourceCapabilityConfigurationFieldNumber">
+            <summary>Field number for the "sourceCapabilityConfiguration" field.</summary>
         </member>
-        <member name="P:openfmb.essmodule.EssEventZBAT.Soc">
+        <member name="P:openfmb.essmodule.ESSCapabilityConfiguration.SourceCapabilityConfiguration">
             <summary>
-            State of charge (in percentage)
+            UML inherited base object
             </summary>
         </member>
-        <member name="F:openfmb.essmodule.EssEventZBAT.StdbyFieldNumber">
-            <summary>Field number for the "Stdby" field.</summary>
+        <member name="F:openfmb.essmodule.ESSCapabilityConfiguration.VAChaRteMaxFieldNumber">
+            <summary>Field number for the "VAChaRteMax" field.</summary>
         </member>
-        <member name="P:openfmb.essmodule.EssEventZBAT.Stdby">
+        <member name="P:openfmb.essmodule.ESSCapabilityConfiguration.VAChaRteMax">
             <summary>
-            If stVal TRUE, the device is in standby.
+            Apparent Power Charge Maximum
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSCapabilityConfiguration.VADisChaRteMaxFieldNumber">
+            <summary>Field number for the "VADisChaRteMax" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSCapabilityConfiguration.VADisChaRteMax">
+            <summary>
+            Apparent Power Discharge Maximum
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSCapabilityConfiguration.WChaRteMaxFieldNumber">
+            <summary>Field number for the "WChaRteMax" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSCapabilityConfiguration.WChaRteMax">
+            <summary>
+            Active Power Charge Maximum
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSCapabilityConfiguration.WDisChaRteMaxFieldNumber">
+            <summary>Field number for the "WDisChaRteMax" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSCapabilityConfiguration.WDisChaRteMax">
+            <summary>
+            Active Power Discharge Maximum
+            </summary>
+        </member>
+        <member name="T:openfmb.essmodule.ESSCapabilityOverride">
+            <summary>
+            Generation capability
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSCapabilityOverride.NameplateValueFieldNumber">
+            <summary>Field number for the "nameplateValue" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSCapabilityOverride.NameplateValue">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSCapabilityOverride.EssCapabilityConfigurationFieldNumber">
+            <summary>Field number for the "essCapabilityConfiguration" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSCapabilityOverride.EssCapabilityConfiguration">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.essmodule.ESSCapabilityOverrideProfile">
+            <summary>
+            ESS control profile
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSCapabilityOverrideProfile.CapabilityMessageInfoFieldNumber">
+            <summary>Field number for the "capabilityMessageInfo" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSCapabilityOverrideProfile.CapabilityMessageInfo">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSCapabilityOverrideProfile.EssFieldNumber">
+            <summary>Field number for the "ess" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSCapabilityOverrideProfile.Ess">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSCapabilityOverrideProfile.EssCapabilityOverrideFieldNumber">
+            <summary>Field number for the "essCapabilityOverride" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSCapabilityOverrideProfile.EssCapabilityOverride">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.essmodule.ESSCapabilityRatings">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSCapabilityRatings.SourceCapabilityRatingsFieldNumber">
+            <summary>Field number for the "sourceCapabilityRatings" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSCapabilityRatings.SourceCapabilityRatings">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSCapabilityRatings.VAChaRteMaxRtgFieldNumber">
+            <summary>Field number for the "VAChaRteMaxRtg" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSCapabilityRatings.VAChaRteMaxRtg">
+            <summary>
+            Apparent Power Charge Maximum Rating
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSCapabilityRatings.VADisChaRteMaxRtgFieldNumber">
+            <summary>Field number for the "VADisChaRteMaxRtg" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSCapabilityRatings.VADisChaRteMaxRtg">
+            <summary>
+            Apparent Power Discharge Maximum Rating
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSCapabilityRatings.WChaRteMaxRtgFieldNumber">
+            <summary>Field number for the "WChaRteMaxRtg" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSCapabilityRatings.WChaRteMaxRtg">
+            <summary>
+            Active Power Charge Maximum Rating
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSCapabilityRatings.WDisChaRteMaxRtgFieldNumber">
+            <summary>Field number for the "WDisChaRteMaxRtg" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSCapabilityRatings.WDisChaRteMaxRtg">
+            <summary>
+            Active Power Discharge Maximum Rating
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSCapabilityRatings.WHRtgFieldNumber">
+            <summary>Field number for the "WHRtg" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSCapabilityRatings.WHRtg">
+            <summary>
+            Energy rating of the DER storage.
+            </summary>
+        </member>
+        <member name="T:openfmb.essmodule.ESSCapability">
+            <summary>
+            Generation capability
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSCapability.NameplateValueFieldNumber">
+            <summary>Field number for the "nameplateValue" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSCapability.NameplateValue">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSCapability.EssCapabilityRatingsFieldNumber">
+            <summary>Field number for the "essCapabilityRatings" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSCapability.EssCapabilityRatings">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSCapability.EssCapabilityConfigurationFieldNumber">
+            <summary>Field number for the "essCapabilityConfiguration" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSCapability.EssCapabilityConfiguration">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.essmodule.ESSCapabilityProfile">
+            <summary>
+            ESS control profile
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSCapabilityProfile.CapabilityMessageInfoFieldNumber">
+            <summary>Field number for the "capabilityMessageInfo" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSCapabilityProfile.CapabilityMessageInfo">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSCapabilityProfile.EssFieldNumber">
+            <summary>Field number for the "ess" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSCapabilityProfile.Ess">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSCapabilityProfile.EssCapabilityFieldNumber">
+            <summary>Field number for the "essCapability" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSCapabilityProfile.EssCapability">
+            <summary>
+            MISSING DOCUMENTATION!!!
             </summary>
         </member>
         <member name="T:openfmb.essmodule.FrequencyRegulation">
@@ -5906,6 +7330,385 @@
             ESS inverter high level function to maintain voltage within dead bands.
             </summary>
         </member>
+        <member name="T:openfmb.essmodule.ESSPoint">
+            <summary>
+            Point definition (Point)
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSPoint.BlackStartEnabledFieldNumber">
+            <summary>Field number for the "blackStartEnabled" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSPoint.BlackStartEnabled">
+            <summary>
+            Black start enable
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSPoint.FrequencySetPointEnabledFieldNumber">
+            <summary>Field number for the "frequencySetPointEnabled" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSPoint.FrequencySetPointEnabled">
+            <summary>
+            Enable frequency set point
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSPoint.FunctionFieldNumber">
+            <summary>Field number for the "function" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSPoint.Function">
+            <summary>
+            ESS function parameter
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSPoint.ModeFieldNumber">
+            <summary>Field number for the "mode" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSPoint.Mode">
+            <summary>
+            Grid connect mode
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSPoint.PctHzDroopFieldNumber">
+            <summary>Field number for the "pctHzDroop" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSPoint.PctHzDroop">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSPoint.PctVDroopFieldNumber">
+            <summary>Field number for the "pctVDroop" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSPoint.PctVDroop">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSPoint.RampRatesFieldNumber">
+            <summary>Field number for the "rampRates" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSPoint.RampRates">
+            <summary>
+            Ramp rates
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSPoint.ReactivePwrSetPointEnabledFieldNumber">
+            <summary>Field number for the "reactivePwrSetPointEnabled" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSPoint.ReactivePwrSetPointEnabled">
+            <summary>
+            Enable reactive power set point
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSPoint.RealPwrSetPointEnabledFieldNumber">
+            <summary>Field number for the "realPwrSetPointEnabled" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSPoint.RealPwrSetPointEnabled">
+            <summary>
+            Enable real power set point
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSPoint.ResetFieldNumber">
+            <summary>Field number for the "reset" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSPoint.Reset">
+            <summary>
+            Reset device
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSPoint.StateFieldNumber">
+            <summary>Field number for the "state" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSPoint.State">
+            <summary>
+            ESS state
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSPoint.SyncBackToGridFieldNumber">
+            <summary>Field number for the "syncBackToGrid" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSPoint.SyncBackToGrid">
+            <summary>
+            Synchronize back to grid
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSPoint.TransToIslndOnGridLossEnabledFieldNumber">
+            <summary>Field number for the "transToIslndOnGridLossEnabled" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSPoint.TransToIslndOnGridLossEnabled">
+            <summary>
+            Transition to island on grid loss enable
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSPoint.VoltageSetPointEnabledFieldNumber">
+            <summary>Field number for the "voltageSetPointEnabled" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSPoint.VoltageSetPointEnabled">
+            <summary>
+            Enable voltage set point
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSPoint.StartTimeFieldNumber">
+            <summary>Field number for the "startTime" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSPoint.StartTime">
+            <summary>
+            Start time
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSPoint.EnterServiceOperationFieldNumber">
+            <summary>Field number for the "enterServiceOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSPoint.EnterServiceOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSPoint.HzWOperationFieldNumber">
+            <summary>Field number for the "hzWOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSPoint.HzWOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSPoint.LimitWOperationFieldNumber">
+            <summary>Field number for the "limitWOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSPoint.LimitWOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSPoint.PFStorageOperationFieldNumber">
+            <summary>Field number for the "pFStorageOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSPoint.PFStorageOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSPoint.TmHzTripOperationFieldNumber">
+            <summary>Field number for the "tmHzTripOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSPoint.TmHzTripOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSPoint.TmVoltTripOperationFieldNumber">
+            <summary>Field number for the "tmVoltTripOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSPoint.TmVoltTripOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSPoint.VArOperationFieldNumber">
+            <summary>Field number for the "vArOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSPoint.VArOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSPoint.VoltVarOperationFieldNumber">
+            <summary>Field number for the "voltVarOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSPoint.VoltVarOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSPoint.VoltWOperationFieldNumber">
+            <summary>Field number for the "voltWOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSPoint.VoltWOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSPoint.WVarOperationFieldNumber">
+            <summary>Field number for the "wVarOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSPoint.WVarOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.essmodule.ESSCSG">
+            <summary>
+            Curve shape setting (FC=SP) (CSG_SP)
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSCSG.CrvPtsFieldNumber">
+            <summary>Field number for the "crvPts" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSCSG.CrvPts">
+            <summary>
+            The array with the points specifying a curve shape.
+            </summary>
+        </member>
+        <member name="T:openfmb.essmodule.ESSControlScheduleFSCH">
+            <summary>
+            OpenFMB specialization for control schedule using:  LN: Schedule   Name: FSCH
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSControlScheduleFSCH.ValDCSGFieldNumber">
+            <summary>Field number for the "ValDCSG" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSControlScheduleFSCH.ValDCSG">
+            <summary>
+            Discrete value in ESSCSG type
+            </summary>
+        </member>
+        <member name="T:openfmb.essmodule.EssControlFSCC">
+            <summary>
+            Specialized 61850 FSCC class.  LN: Schedule controller   Name: FSCC
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.EssControlFSCC.ControlFSCCFieldNumber">
+            <summary>Field number for the "controlFSCC" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.EssControlFSCC.ControlFSCC">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.EssControlFSCC.EssControlScheduleFSCHFieldNumber">
+            <summary>Field number for the "essControlScheduleFSCH" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.EssControlFSCC.EssControlScheduleFSCH">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.essmodule.ESSControl">
+            <summary>
+            ESS control class
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSControl.ControlValueFieldNumber">
+            <summary>Field number for the "controlValue" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSControl.ControlValue">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSControl.CheckFieldNumber">
+            <summary>Field number for the "check" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSControl.Check">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSControl.EssControlFSCCFieldNumber">
+            <summary>Field number for the "essControlFSCC" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSControl.EssControlFSCC">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.essmodule.ESSControlProfile">
+            <summary>
+            ESS control profile
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSControlProfile.ControlMessageInfoFieldNumber">
+            <summary>Field number for the "controlMessageInfo" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSControlProfile.ControlMessageInfo">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSControlProfile.EssFieldNumber">
+            <summary>Field number for the "ess" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSControlProfile.Ess">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSControlProfile.EssControlFieldNumber">
+            <summary>Field number for the "essControl" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSControlProfile.EssControl">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.essmodule.EssEventZBAT">
+            <summary>
+            Specialized 61850 ZBAT class  LN: Battery   Name: ZBAT
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.EssEventZBAT.LogicalNodeForEventAndStatusFieldNumber">
+            <summary>Field number for the "logicalNodeForEventAndStatus" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.EssEventZBAT.LogicalNodeForEventAndStatus">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.EssEventZBAT.BatHiFieldNumber">
+            <summary>Field number for the "BatHi" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.EssEventZBAT.BatHi">
+            <summary>
+            If true, the battery is in overcharge (voltage or current) condition.
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.EssEventZBAT.BatLoFieldNumber">
+            <summary>Field number for the "BatLo" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.EssEventZBAT.BatLo">
+            <summary>
+            If true, the battery voltage or charge has dropped below a pre-set level.
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.EssEventZBAT.BatStFieldNumber">
+            <summary>Field number for the "BatSt" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.EssEventZBAT.BatSt">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.EssEventZBAT.SocFieldNumber">
+            <summary>Field number for the "Soc" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.EssEventZBAT.Soc">
+            <summary>
+            State of charge (in percentage)
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.EssEventZBAT.StdbyFieldNumber">
+            <summary>Field number for the "Stdby" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.EssEventZBAT.Stdby">
+            <summary>
+            If stVal TRUE, the device is in standby.
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.EssEventZBAT.SoHFieldNumber">
+            <summary>Field number for the "SoH" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.EssEventZBAT.SoH">
+            <summary>
+            State of health of the DER storage.
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.EssEventZBAT.WHAvailFieldNumber">
+            <summary>Field number for the "WHAvail" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.EssEventZBAT.WHAvail">
+            <summary>
+            Energy available of the DER storage (WHAvail = WHRtg * SoC * SoH)
+            </summary>
+        </member>
         <member name="T:openfmb.essmodule.ESSPointStatus">
             <summary>
             Point definition (Point)
@@ -5948,7 +7751,7 @@
         </member>
         <member name="P:openfmb.essmodule.ESSPointStatus.PctHzDroop">
             <summary>
-            Black start enable
+            MISSING DOCUMENTATION!!!
             </summary>
         </member>
         <member name="F:openfmb.essmodule.ESSPointStatus.PctVDroopFieldNumber">
@@ -5956,7 +7759,7 @@
         </member>
         <member name="P:openfmb.essmodule.ESSPointStatus.PctVDroop">
             <summary>
-            Black start enable
+            MISSING DOCUMENTATION!!!
             </summary>
         </member>
         <member name="F:openfmb.essmodule.ESSPointStatus.RampRatesFieldNumber">
@@ -6013,6 +7816,86 @@
         <member name="P:openfmb.essmodule.ESSPointStatus.VoltageSetPointEnabled">
             <summary>
             Enable voltage set point
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSPointStatus.EnterServiceOperationFieldNumber">
+            <summary>Field number for the "enterServiceOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSPointStatus.EnterServiceOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSPointStatus.HzWOperationFieldNumber">
+            <summary>Field number for the "hzWOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSPointStatus.HzWOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSPointStatus.LimitWOperationFieldNumber">
+            <summary>Field number for the "limitWOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSPointStatus.LimitWOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSPointStatus.PFStorageOperationFieldNumber">
+            <summary>Field number for the "pFStorageOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSPointStatus.PFStorageOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSPointStatus.TmHzTripOperationFieldNumber">
+            <summary>Field number for the "tmHzTripOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSPointStatus.TmHzTripOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSPointStatus.TmVoltTripOperationFieldNumber">
+            <summary>Field number for the "tmVoltTripOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSPointStatus.TmVoltTripOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSPointStatus.VArOperationFieldNumber">
+            <summary>Field number for the "vArOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSPointStatus.VArOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSPointStatus.VoltVarOperationFieldNumber">
+            <summary>Field number for the "voltVarOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSPointStatus.VoltVarOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSPointStatus.VoltWOperationFieldNumber">
+            <summary>Field number for the "voltWOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSPointStatus.VoltWOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.ESSPointStatus.WVarOperationFieldNumber">
+            <summary>Field number for the "wVarOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.ESSPointStatus.WVarOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
             </summary>
         </member>
         <member name="T:openfmb.essmodule.ESSEventAndStatusZGEN">
@@ -6250,6 +8133,22 @@
             MISSING DOCUMENTATION!!!
             </summary>
         </member>
+        <member name="F:openfmb.essmodule.EssStatusZBAT.SoHFieldNumber">
+            <summary>Field number for the "SoH" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.EssStatusZBAT.SoH">
+            <summary>
+            State of health of the DER storage.
+            </summary>
+        </member>
+        <member name="F:openfmb.essmodule.EssStatusZBAT.WHAvailFieldNumber">
+            <summary>Field number for the "WHAvail" field.</summary>
+        </member>
+        <member name="P:openfmb.essmodule.EssStatusZBAT.WHAvail">
+            <summary>
+            Energy available of the DER storage (WHAvail = WHRtg * SoC * SoH)
+            </summary>
+        </member>
         <member name="T:openfmb.essmodule.ESSStatusZGEN">
             <summary>
             Specialized 61850 ZGEN class
@@ -6321,241 +8220,169 @@
             MISSING DOCUMENTATION!!!
             </summary>
         </member>
-        <member name="T:openfmb.essmodule.ESSPoint">
-            <summary>
-            Point definition (Point)
-            </summary>
-        </member>
-        <member name="F:openfmb.essmodule.ESSPoint.BlackStartEnabledFieldNumber">
-            <summary>Field number for the "blackStartEnabled" field.</summary>
-        </member>
-        <member name="P:openfmb.essmodule.ESSPoint.BlackStartEnabled">
-            <summary>
-            Black start enable
-            </summary>
-        </member>
-        <member name="F:openfmb.essmodule.ESSPoint.FrequencySetPointEnabledFieldNumber">
-            <summary>Field number for the "frequencySetPointEnabled" field.</summary>
-        </member>
-        <member name="P:openfmb.essmodule.ESSPoint.FrequencySetPointEnabled">
-            <summary>
-            Enable frequency set point
-            </summary>
-        </member>
-        <member name="F:openfmb.essmodule.ESSPoint.FunctionFieldNumber">
-            <summary>Field number for the "function" field.</summary>
-        </member>
-        <member name="P:openfmb.essmodule.ESSPoint.Function">
-            <summary>
-            ESS function parameter
-            </summary>
-        </member>
-        <member name="F:openfmb.essmodule.ESSPoint.ModeFieldNumber">
-            <summary>Field number for the "mode" field.</summary>
-        </member>
-        <member name="P:openfmb.essmodule.ESSPoint.Mode">
-            <summary>
-            Grid connect mode
-            </summary>
-        </member>
-        <member name="F:openfmb.essmodule.ESSPoint.PctHzDroopFieldNumber">
-            <summary>Field number for the "pctHzDroop" field.</summary>
-        </member>
-        <member name="P:openfmb.essmodule.ESSPoint.PctHzDroop">
-            <summary>
-            Black start enable
-            </summary>
-        </member>
-        <member name="F:openfmb.essmodule.ESSPoint.PctVDroopFieldNumber">
-            <summary>Field number for the "pctVDroop" field.</summary>
-        </member>
-        <member name="P:openfmb.essmodule.ESSPoint.PctVDroop">
-            <summary>
-            Black start enable
-            </summary>
-        </member>
-        <member name="F:openfmb.essmodule.ESSPoint.RampRatesFieldNumber">
-            <summary>Field number for the "rampRates" field.</summary>
-        </member>
-        <member name="P:openfmb.essmodule.ESSPoint.RampRates">
-            <summary>
-            Ramp rates
-            </summary>
-        </member>
-        <member name="F:openfmb.essmodule.ESSPoint.ReactivePwrSetPointEnabledFieldNumber">
-            <summary>Field number for the "reactivePwrSetPointEnabled" field.</summary>
-        </member>
-        <member name="P:openfmb.essmodule.ESSPoint.ReactivePwrSetPointEnabled">
-            <summary>
-            Enable reactive power set point
-            </summary>
-        </member>
-        <member name="F:openfmb.essmodule.ESSPoint.RealPwrSetPointEnabledFieldNumber">
-            <summary>Field number for the "realPwrSetPointEnabled" field.</summary>
-        </member>
-        <member name="P:openfmb.essmodule.ESSPoint.RealPwrSetPointEnabled">
-            <summary>
-            Enable real power set point
-            </summary>
-        </member>
-        <member name="F:openfmb.essmodule.ESSPoint.ResetFieldNumber">
-            <summary>Field number for the "reset" field.</summary>
-        </member>
-        <member name="P:openfmb.essmodule.ESSPoint.Reset">
-            <summary>
-            Reset device
-            </summary>
-        </member>
-        <member name="F:openfmb.essmodule.ESSPoint.StateFieldNumber">
-            <summary>Field number for the "state" field.</summary>
-        </member>
-        <member name="P:openfmb.essmodule.ESSPoint.State">
-            <summary>
-            ESS state
-            </summary>
-        </member>
-        <member name="F:openfmb.essmodule.ESSPoint.SyncBackToGridFieldNumber">
-            <summary>Field number for the "syncBackToGrid" field.</summary>
-        </member>
-        <member name="P:openfmb.essmodule.ESSPoint.SyncBackToGrid">
-            <summary>
-            Synchronize back to grid
-            </summary>
-        </member>
-        <member name="F:openfmb.essmodule.ESSPoint.TransToIslndOnGridLossEnabledFieldNumber">
-            <summary>Field number for the "transToIslndOnGridLossEnabled" field.</summary>
-        </member>
-        <member name="P:openfmb.essmodule.ESSPoint.TransToIslndOnGridLossEnabled">
-            <summary>
-            Transition to island on grid loss enable
-            </summary>
-        </member>
-        <member name="F:openfmb.essmodule.ESSPoint.VoltageSetPointEnabledFieldNumber">
-            <summary>Field number for the "voltageSetPointEnabled" field.</summary>
-        </member>
-        <member name="P:openfmb.essmodule.ESSPoint.VoltageSetPointEnabled">
-            <summary>
-            Enable voltage set point
-            </summary>
-        </member>
-        <member name="F:openfmb.essmodule.ESSPoint.StartTimeFieldNumber">
-            <summary>Field number for the "startTime" field.</summary>
-        </member>
-        <member name="P:openfmb.essmodule.ESSPoint.StartTime">
-            <summary>
-            Start time
-            </summary>
-        </member>
-        <member name="T:openfmb.essmodule.ESSCSG">
-            <summary>
-            Curve shape setting (FC=SP) (CSG_SP)
-            </summary>
-        </member>
-        <member name="F:openfmb.essmodule.ESSCSG.CrvPtsFieldNumber">
-            <summary>Field number for the "crvPts" field.</summary>
-        </member>
-        <member name="P:openfmb.essmodule.ESSCSG.CrvPts">
-            <summary>
-            The array with the points specifying a curve shape.
-            </summary>
-        </member>
-        <member name="T:openfmb.essmodule.ESSControlScheduleFSCH">
-            <summary>
-            OpenFMB specialization for control schedule using:  LN: Schedule   Name: FSCH
-            </summary>
-        </member>
-        <member name="F:openfmb.essmodule.ESSControlScheduleFSCH.ValDCSGFieldNumber">
-            <summary>Field number for the "ValDCSG" field.</summary>
-        </member>
-        <member name="P:openfmb.essmodule.ESSControlScheduleFSCH.ValDCSG">
-            <summary>
-            Discrete value in ESSCSG type
-            </summary>
-        </member>
-        <member name="T:openfmb.essmodule.EssControlFSCC">
-            <summary>
-            Specialized 61850 FSCC class.  LN: Schedule controller   Name: FSCC
-            </summary>
-        </member>
-        <member name="F:openfmb.essmodule.EssControlFSCC.ControlFSCCFieldNumber">
-            <summary>Field number for the "controlFSCC" field.</summary>
-        </member>
-        <member name="P:openfmb.essmodule.EssControlFSCC.ControlFSCC">
-            <summary>
-            UML inherited base object
-            </summary>
-        </member>
-        <member name="F:openfmb.essmodule.EssControlFSCC.EssControlScheduleFSCHFieldNumber">
-            <summary>Field number for the "essControlScheduleFSCH" field.</summary>
-        </member>
-        <member name="P:openfmb.essmodule.EssControlFSCC.EssControlScheduleFSCH">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="T:openfmb.essmodule.ESSControl">
-            <summary>
-            ESS control class
-            </summary>
-        </member>
-        <member name="F:openfmb.essmodule.ESSControl.ControlValueFieldNumber">
-            <summary>Field number for the "controlValue" field.</summary>
-        </member>
-        <member name="P:openfmb.essmodule.ESSControl.ControlValue">
-            <summary>
-            UML inherited base object
-            </summary>
-        </member>
-        <member name="F:openfmb.essmodule.ESSControl.CheckFieldNumber">
-            <summary>Field number for the "check" field.</summary>
-        </member>
-        <member name="P:openfmb.essmodule.ESSControl.Check">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.essmodule.ESSControl.EssControlFSCCFieldNumber">
-            <summary>Field number for the "essControlFSCC" field.</summary>
-        </member>
-        <member name="P:openfmb.essmodule.ESSControl.EssControlFSCC">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="T:openfmb.essmodule.ESSControlProfile">
-            <summary>
-            ESS control profile
-            </summary>
-        </member>
-        <member name="F:openfmb.essmodule.ESSControlProfile.ControlMessageInfoFieldNumber">
-            <summary>Field number for the "controlMessageInfo" field.</summary>
-        </member>
-        <member name="P:openfmb.essmodule.ESSControlProfile.ControlMessageInfo">
-            <summary>
-            UML inherited base object
-            </summary>
-        </member>
-        <member name="F:openfmb.essmodule.ESSControlProfile.EssFieldNumber">
-            <summary>Field number for the "ess" field.</summary>
-        </member>
-        <member name="P:openfmb.essmodule.ESSControlProfile.Ess">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.essmodule.ESSControlProfile.EssControlFieldNumber">
-            <summary>Field number for the "essControl" field.</summary>
-        </member>
-        <member name="P:openfmb.essmodule.ESSControlProfile.EssControl">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
         <member name="T:openfmb.generationmodule.GenerationmoduleReflection">
             <summary>Holder for reflection information generated from generationmodule/generationmodule.proto</summary>
         </member>
         <member name="P:openfmb.generationmodule.GenerationmoduleReflection.Descriptor">
             <summary>File descriptor for generationmodule/generationmodule.proto</summary>
+        </member>
+        <member name="T:openfmb.generationmodule.GeneratingUnit">
+            <summary>
+            A single or set of synchronous machines for converting mechanical power into alternating-current
+            power. For example, individual machines within a set may be defined for scheduling purposes while a
+            single control signal is derived for the set. In this case there would be a GeneratingUnit for each
+            member of the set and an additional GeneratingUnit corresponding to the set.
+            </summary>
+        </member>
+        <member name="F:openfmb.generationmodule.GeneratingUnit.ConductingEquipmentFieldNumber">
+            <summary>Field number for the "conductingEquipment" field.</summary>
+        </member>
+        <member name="P:openfmb.generationmodule.GeneratingUnit.ConductingEquipment">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="F:openfmb.generationmodule.GeneratingUnit.MaxOperatingPFieldNumber">
+            <summary>Field number for the "maxOperatingP" field.</summary>
+        </member>
+        <member name="P:openfmb.generationmodule.GeneratingUnit.MaxOperatingP">
+            <summary>
+            This is the maximum operating active power limit the dispatcher can enter for this unit.
+            </summary>
+        </member>
+        <member name="T:openfmb.generationmodule.GenerationCapabilityConfiguration">
+            <summary>
+            Configured setting
+            </summary>
+        </member>
+        <member name="F:openfmb.generationmodule.GenerationCapabilityConfiguration.SourceCapabilityConfigurationFieldNumber">
+            <summary>Field number for the "sourceCapabilityConfiguration" field.</summary>
+        </member>
+        <member name="P:openfmb.generationmodule.GenerationCapabilityConfiguration.SourceCapabilityConfiguration">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="T:openfmb.generationmodule.GenerationCapabilityOverride">
+            <summary>
+            Generation capability
+            </summary>
+        </member>
+        <member name="F:openfmb.generationmodule.GenerationCapabilityOverride.IdentifiedObjectFieldNumber">
+            <summary>Field number for the "identifiedObject" field.</summary>
+        </member>
+        <member name="P:openfmb.generationmodule.GenerationCapabilityOverride.IdentifiedObject">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="F:openfmb.generationmodule.GenerationCapabilityOverride.GenerationCapabilityConfigurationFieldNumber">
+            <summary>Field number for the "generationCapabilityConfiguration" field.</summary>
+        </member>
+        <member name="P:openfmb.generationmodule.GenerationCapabilityOverride.GenerationCapabilityConfiguration">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.generationmodule.GenerationCapabilityOverrideProfile">
+            <summary>
+            Generation capability profile
+            </summary>
+        </member>
+        <member name="F:openfmb.generationmodule.GenerationCapabilityOverrideProfile.CapabilityOverrideMessageInfoFieldNumber">
+            <summary>Field number for the "capabilityOverrideMessageInfo" field.</summary>
+        </member>
+        <member name="P:openfmb.generationmodule.GenerationCapabilityOverrideProfile.CapabilityOverrideMessageInfo">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="F:openfmb.generationmodule.GenerationCapabilityOverrideProfile.GenerationCapabilityOverrideFieldNumber">
+            <summary>Field number for the "generationCapabilityOverride" field.</summary>
+        </member>
+        <member name="P:openfmb.generationmodule.GenerationCapabilityOverrideProfile.GenerationCapabilityOverride">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.generationmodule.GenerationCapabilityOverrideProfile.GeneratingUnitFieldNumber">
+            <summary>Field number for the "generatingUnit" field.</summary>
+        </member>
+        <member name="P:openfmb.generationmodule.GenerationCapabilityOverrideProfile.GeneratingUnit">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.generationmodule.GenerationCapabilityRatings">
+            <summary>
+            Capability ratings
+            </summary>
+        </member>
+        <member name="F:openfmb.generationmodule.GenerationCapabilityRatings.SourceCapabilityRatingsFieldNumber">
+            <summary>Field number for the "sourceCapabilityRatings" field.</summary>
+        </member>
+        <member name="P:openfmb.generationmodule.GenerationCapabilityRatings.SourceCapabilityRatings">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="T:openfmb.generationmodule.GenerationCapability">
+            <summary>
+            Generation capability
+            </summary>
+        </member>
+        <member name="F:openfmb.generationmodule.GenerationCapability.NameplateValueFieldNumber">
+            <summary>Field number for the "nameplateValue" field.</summary>
+        </member>
+        <member name="P:openfmb.generationmodule.GenerationCapability.NameplateValue">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="F:openfmb.generationmodule.GenerationCapability.GenerationCapabilityRatingsFieldNumber">
+            <summary>Field number for the "generationCapabilityRatings" field.</summary>
+        </member>
+        <member name="P:openfmb.generationmodule.GenerationCapability.GenerationCapabilityRatings">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.generationmodule.GenerationCapability.GenerationCapabilityConfigurationFieldNumber">
+            <summary>Field number for the "generationCapabilityConfiguration" field.</summary>
+        </member>
+        <member name="P:openfmb.generationmodule.GenerationCapability.GenerationCapabilityConfiguration">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.generationmodule.GenerationCapabilityProfile">
+            <summary>
+            Generation capability profile
+            </summary>
+        </member>
+        <member name="F:openfmb.generationmodule.GenerationCapabilityProfile.CapabilityMessageInfoFieldNumber">
+            <summary>Field number for the "capabilityMessageInfo" field.</summary>
+        </member>
+        <member name="P:openfmb.generationmodule.GenerationCapabilityProfile.CapabilityMessageInfo">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="F:openfmb.generationmodule.GenerationCapabilityProfile.GenerationCapabilityFieldNumber">
+            <summary>Field number for the "generationCapability" field.</summary>
+        </member>
+        <member name="P:openfmb.generationmodule.GenerationCapabilityProfile.GenerationCapability">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.generationmodule.GenerationCapabilityProfile.GeneratingUnitFieldNumber">
+            <summary>Field number for the "generatingUnit" field.</summary>
+        </member>
+        <member name="P:openfmb.generationmodule.GenerationCapabilityProfile.GeneratingUnit">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
         </member>
         <member name="T:openfmb.generationmodule.GenerationPoint">
             <summary>
@@ -6583,7 +8410,7 @@
         </member>
         <member name="P:openfmb.generationmodule.GenerationPoint.PctHzDroop">
             <summary>
-            Black start enable
+            MISSING DOCUMENTATION!!!
             </summary>
         </member>
         <member name="F:openfmb.generationmodule.GenerationPoint.PctVDroopFieldNumber">
@@ -6591,7 +8418,7 @@
         </member>
         <member name="P:openfmb.generationmodule.GenerationPoint.PctVDroop">
             <summary>
-            Black start enable
+            MISSING DOCUMENTATION!!!
             </summary>
         </member>
         <member name="F:openfmb.generationmodule.GenerationPoint.RampRatesFieldNumber">
@@ -6631,7 +8458,7 @@
         </member>
         <member name="P:openfmb.generationmodule.GenerationPoint.State">
             <summary>
-            ESS state
+            MISSING DOCUMENTATION!!!
             </summary>
         </member>
         <member name="F:openfmb.generationmodule.GenerationPoint.SyncBackToGridFieldNumber">
@@ -6666,6 +8493,86 @@
             Start time
             </summary>
         </member>
+        <member name="F:openfmb.generationmodule.GenerationPoint.EnterServiceOperationFieldNumber">
+            <summary>Field number for the "enterServiceOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.generationmodule.GenerationPoint.EnterServiceOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.generationmodule.GenerationPoint.HzWOperationFieldNumber">
+            <summary>Field number for the "hzWOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.generationmodule.GenerationPoint.HzWOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.generationmodule.GenerationPoint.LimitWOperationFieldNumber">
+            <summary>Field number for the "limitWOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.generationmodule.GenerationPoint.LimitWOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.generationmodule.GenerationPoint.PFOperationFieldNumber">
+            <summary>Field number for the "pFOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.generationmodule.GenerationPoint.PFOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.generationmodule.GenerationPoint.TmHzTripOperationFieldNumber">
+            <summary>Field number for the "tmHzTripOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.generationmodule.GenerationPoint.TmHzTripOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.generationmodule.GenerationPoint.TmVoltTripOperationFieldNumber">
+            <summary>Field number for the "tmVoltTripOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.generationmodule.GenerationPoint.TmVoltTripOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.generationmodule.GenerationPoint.VArOperationFieldNumber">
+            <summary>Field number for the "vArOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.generationmodule.GenerationPoint.VArOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.generationmodule.GenerationPoint.VoltVarOperationFieldNumber">
+            <summary>Field number for the "voltVarOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.generationmodule.GenerationPoint.VoltVarOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.generationmodule.GenerationPoint.VoltWOperationFieldNumber">
+            <summary>Field number for the "voltWOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.generationmodule.GenerationPoint.VoltWOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.generationmodule.GenerationPoint.WVarOperationFieldNumber">
+            <summary>Field number for the "wVarOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.generationmodule.GenerationPoint.WVarOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
         <member name="T:openfmb.generationmodule.GenerationCSG">
             <summary>
             Curve shape setting (FC=SP) (CSG_SP)
@@ -6694,7 +8601,7 @@
         </member>
         <member name="T:openfmb.generationmodule.GenerationControlFSCC">
             <summary>
-            LN: Schedule controller   Name: FSCC
+            LN: Schedule controller   Name: FSCC
             </summary>
         </member>
         <member name="F:openfmb.generationmodule.GenerationControlFSCC.ControlFSCCFieldNumber">
@@ -6740,30 +8647,6 @@
         <member name="P:openfmb.generationmodule.GenerationControl.GenerationControlFSCC">
             <summary>
             MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="T:openfmb.generationmodule.GeneratingUnit">
-            <summary>
-            A single or set of synchronous machines for converting mechanical power into alternating-current
-            power. For example, individual machines within a set may be defined for scheduling purposes while a
-            single control signal is derived for the set. In this case there would be a GeneratingUnit for each
-            member of the set and an additional GeneratingUnit corresponding to the set.
-            </summary>
-        </member>
-        <member name="F:openfmb.generationmodule.GeneratingUnit.ConductingEquipmentFieldNumber">
-            <summary>Field number for the "conductingEquipment" field.</summary>
-        </member>
-        <member name="P:openfmb.generationmodule.GeneratingUnit.ConductingEquipment">
-            <summary>
-            UML inherited base object
-            </summary>
-        </member>
-        <member name="F:openfmb.generationmodule.GeneratingUnit.MaxOperatingPFieldNumber">
-            <summary>Field number for the "maxOperatingP" field.</summary>
-        </member>
-        <member name="P:openfmb.generationmodule.GeneratingUnit.MaxOperatingP">
-            <summary>
-            This is the maximum operating active power limit the dispatcher can enter for this unit.
             </summary>
         </member>
         <member name="T:openfmb.generationmodule.GenerationControlProfile">
@@ -7056,7 +8939,7 @@
         </member>
         <member name="P:openfmb.generationmodule.GenerationPointStatus.PctHzDroop">
             <summary>
-            Black start enable
+            MISSING DOCUMENTATION!!!
             </summary>
         </member>
         <member name="F:openfmb.generationmodule.GenerationPointStatus.PctVDroopFieldNumber">
@@ -7064,7 +8947,7 @@
         </member>
         <member name="P:openfmb.generationmodule.GenerationPointStatus.PctVDroop">
             <summary>
-            Black start enable
+            MISSING DOCUMENTATION!!!
             </summary>
         </member>
         <member name="F:openfmb.generationmodule.GenerationPointStatus.RampRatesFieldNumber">
@@ -7096,7 +8979,7 @@
         </member>
         <member name="P:openfmb.generationmodule.GenerationPointStatus.State">
             <summary>
-            ESS state
+            MISSING DOCUMENTATION!!!
             </summary>
         </member>
         <member name="F:openfmb.generationmodule.GenerationPointStatus.SyncBackToGridFieldNumber">
@@ -7121,6 +9004,86 @@
         <member name="P:openfmb.generationmodule.GenerationPointStatus.VoltageSetPointEnabled">
             <summary>
             Enable voltage set point
+            </summary>
+        </member>
+        <member name="F:openfmb.generationmodule.GenerationPointStatus.EnterServiceOperationFieldNumber">
+            <summary>Field number for the "enterServiceOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.generationmodule.GenerationPointStatus.EnterServiceOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.generationmodule.GenerationPointStatus.HzWOperationFieldNumber">
+            <summary>Field number for the "hzWOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.generationmodule.GenerationPointStatus.HzWOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.generationmodule.GenerationPointStatus.LimitWOperationFieldNumber">
+            <summary>Field number for the "limitWOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.generationmodule.GenerationPointStatus.LimitWOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.generationmodule.GenerationPointStatus.PFOperationFieldNumber">
+            <summary>Field number for the "pFOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.generationmodule.GenerationPointStatus.PFOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.generationmodule.GenerationPointStatus.TmHzTripOperationFieldNumber">
+            <summary>Field number for the "tmHzTripOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.generationmodule.GenerationPointStatus.TmHzTripOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.generationmodule.GenerationPointStatus.TmVoltTripOperationFieldNumber">
+            <summary>Field number for the "tmVoltTripOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.generationmodule.GenerationPointStatus.TmVoltTripOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.generationmodule.GenerationPointStatus.VArOperationFieldNumber">
+            <summary>Field number for the "vArOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.generationmodule.GenerationPointStatus.VArOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.generationmodule.GenerationPointStatus.VoltVarOperationFieldNumber">
+            <summary>Field number for the "voltVarOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.generationmodule.GenerationPointStatus.VoltVarOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.generationmodule.GenerationPointStatus.VoltWOperationFieldNumber">
+            <summary>Field number for the "voltWOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.generationmodule.GenerationPointStatus.VoltWOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.generationmodule.GenerationPointStatus.WVarOperationFieldNumber">
+            <summary>Field number for the "wVarOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.generationmodule.GenerationPointStatus.WVarOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
             </summary>
         </member>
         <member name="T:openfmb.generationmodule.GenerationEventAndStatusZGEN">
@@ -7174,6 +9137,38 @@
         <member name="P:openfmb.generationmodule.GenerationEventAndStatusZGEN.PointStatus">
             <summary>
             Point status
+            </summary>
+        </member>
+        <member name="F:openfmb.generationmodule.GenerationEventAndStatusZGEN.AlrmFieldNumber">
+            <summary>Field number for the "Alrm" field.</summary>
+        </member>
+        <member name="P:openfmb.generationmodule.GenerationEventAndStatusZGEN.Alrm">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.generationmodule.GenerationEventAndStatusZGEN.GridConnectionStateFieldNumber">
+            <summary>Field number for the "GridConnectionState" field.</summary>
+        </member>
+        <member name="P:openfmb.generationmodule.GenerationEventAndStatusZGEN.GridConnectionState">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.generationmodule.GenerationEventAndStatusZGEN.ManAlrmInfoFieldNumber">
+            <summary>Field number for the "ManAlrmInfo" field.</summary>
+        </member>
+        <member name="P:openfmb.generationmodule.GenerationEventAndStatusZGEN.ManAlrmInfo">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.generationmodule.GenerationEventAndStatusZGEN.OperatingStateFieldNumber">
+            <summary>Field number for the "OperatingState" field.</summary>
+        </member>
+        <member name="P:openfmb.generationmodule.GenerationEventAndStatusZGEN.OperatingState">
+            <summary>
+            MISSING DOCUMENTATION!!!
             </summary>
         </member>
         <member name="T:openfmb.generationmodule.GenerationEventZGEN">
@@ -9746,6 +11741,153 @@
         <member name="P:openfmb.solarmodule.SolarmoduleReflection.Descriptor">
             <summary>File descriptor for solarmodule/solarmodule.proto</summary>
         </member>
+        <member name="T:openfmb.solarmodule.SolarInverter">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.solarmodule.SolarInverter.ConductingEquipmentFieldNumber">
+            <summary>Field number for the "conductingEquipment" field.</summary>
+        </member>
+        <member name="P:openfmb.solarmodule.SolarInverter.ConductingEquipment">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="T:openfmb.solarmodule.SolarCapabilityConfiguration">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.solarmodule.SolarCapabilityConfiguration.SourceCapabilityConfigurationFieldNumber">
+            <summary>Field number for the "sourceCapabilityConfiguration" field.</summary>
+        </member>
+        <member name="P:openfmb.solarmodule.SolarCapabilityConfiguration.SourceCapabilityConfiguration">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="T:openfmb.solarmodule.SolarCapabilityOverride">
+            <summary>
+            Generation capability
+            </summary>
+        </member>
+        <member name="F:openfmb.solarmodule.SolarCapabilityOverride.IdentifiedObjectFieldNumber">
+            <summary>Field number for the "identifiedObject" field.</summary>
+        </member>
+        <member name="P:openfmb.solarmodule.SolarCapabilityOverride.IdentifiedObject">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="F:openfmb.solarmodule.SolarCapabilityOverride.SolarCapabilityConfigurationFieldNumber">
+            <summary>Field number for the "solarCapabilityConfiguration" field.</summary>
+        </member>
+        <member name="P:openfmb.solarmodule.SolarCapabilityOverride.SolarCapabilityConfiguration">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.solarmodule.SolarCapabilityOverrideProfile">
+            <summary>
+            Generation capability profile
+            </summary>
+        </member>
+        <member name="F:openfmb.solarmodule.SolarCapabilityOverrideProfile.CapabilityOverrideMessageInfoFieldNumber">
+            <summary>Field number for the "capabilityOverrideMessageInfo" field.</summary>
+        </member>
+        <member name="P:openfmb.solarmodule.SolarCapabilityOverrideProfile.CapabilityOverrideMessageInfo">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="F:openfmb.solarmodule.SolarCapabilityOverrideProfile.SolarCapabilityOverrideFieldNumber">
+            <summary>Field number for the "solarCapabilityOverride" field.</summary>
+        </member>
+        <member name="P:openfmb.solarmodule.SolarCapabilityOverrideProfile.SolarCapabilityOverride">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.solarmodule.SolarCapabilityOverrideProfile.SolarInverterFieldNumber">
+            <summary>Field number for the "solarInverter" field.</summary>
+        </member>
+        <member name="P:openfmb.solarmodule.SolarCapabilityOverrideProfile.SolarInverter">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.solarmodule.SolarCapabilityRatings">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.solarmodule.SolarCapabilityRatings.SourceCapabilityRatingsFieldNumber">
+            <summary>Field number for the "sourceCapabilityRatings" field.</summary>
+        </member>
+        <member name="P:openfmb.solarmodule.SolarCapabilityRatings.SourceCapabilityRatings">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="T:openfmb.solarmodule.SolarCapability">
+            <summary>
+            Generation capability
+            </summary>
+        </member>
+        <member name="F:openfmb.solarmodule.SolarCapability.NameplateValueFieldNumber">
+            <summary>Field number for the "nameplateValue" field.</summary>
+        </member>
+        <member name="P:openfmb.solarmodule.SolarCapability.NameplateValue">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="F:openfmb.solarmodule.SolarCapability.SolarCapabilityConfigurationFieldNumber">
+            <summary>Field number for the "solarCapabilityConfiguration" field.</summary>
+        </member>
+        <member name="P:openfmb.solarmodule.SolarCapability.SolarCapabilityConfiguration">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.solarmodule.SolarCapability.SolarCapabilityRatingsFieldNumber">
+            <summary>Field number for the "solarCapabilityRatings" field.</summary>
+        </member>
+        <member name="P:openfmb.solarmodule.SolarCapability.SolarCapabilityRatings">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="T:openfmb.solarmodule.SolarCapabilityProfile">
+            <summary>
+            Generation capability profile
+            </summary>
+        </member>
+        <member name="F:openfmb.solarmodule.SolarCapabilityProfile.CapabilityMessageInfoFieldNumber">
+            <summary>Field number for the "capabilityMessageInfo" field.</summary>
+        </member>
+        <member name="P:openfmb.solarmodule.SolarCapabilityProfile.CapabilityMessageInfo">
+            <summary>
+            UML inherited base object
+            </summary>
+        </member>
+        <member name="F:openfmb.solarmodule.SolarCapabilityProfile.SolarCapabilityFieldNumber">
+            <summary>Field number for the "solarCapability" field.</summary>
+        </member>
+        <member name="P:openfmb.solarmodule.SolarCapabilityProfile.SolarCapability">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.solarmodule.SolarCapabilityProfile.SolarInverterFieldNumber">
+            <summary>Field number for the "solarInverter" field.</summary>
+        </member>
+        <member name="P:openfmb.solarmodule.SolarCapabilityProfile.SolarInverter">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
         <member name="T:openfmb.solarmodule.SolarPoint">
             <summary>
             Point definition (Point)
@@ -9772,7 +11914,7 @@
         </member>
         <member name="P:openfmb.solarmodule.SolarPoint.PctHzDroop">
             <summary>
-            Black start enable
+            MISSING DOCUMENTATION!!!
             </summary>
         </member>
         <member name="F:openfmb.solarmodule.SolarPoint.PctVDroopFieldNumber">
@@ -9780,7 +11922,7 @@
         </member>
         <member name="P:openfmb.solarmodule.SolarPoint.PctVDroop">
             <summary>
-            Black start enable
+            MISSING DOCUMENTATION!!!
             </summary>
         </member>
         <member name="F:openfmb.solarmodule.SolarPoint.RampRatesFieldNumber">
@@ -9820,7 +11962,7 @@
         </member>
         <member name="P:openfmb.solarmodule.SolarPoint.State">
             <summary>
-            ESS state
+            MISSING DOCUMENTATION!!!
             </summary>
         </member>
         <member name="F:openfmb.solarmodule.SolarPoint.VoltageSetPointEnabledFieldNumber">
@@ -9828,7 +11970,7 @@
         </member>
         <member name="P:openfmb.solarmodule.SolarPoint.VoltageSetPointEnabled">
             <summary>
-            Enable voltage set point
+            MISSING DOCUMENTATION!!!
             </summary>
         </member>
         <member name="F:openfmb.solarmodule.SolarPoint.StartTimeFieldNumber">
@@ -9837,6 +11979,102 @@
         <member name="P:openfmb.solarmodule.SolarPoint.StartTime">
             <summary>
             X-axis value (Unix time).
+            </summary>
+        </member>
+        <member name="F:openfmb.solarmodule.SolarPoint.EnterServiceOperationFieldNumber">
+            <summary>Field number for the "enterServiceOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.solarmodule.SolarPoint.EnterServiceOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.solarmodule.SolarPoint.HzWOperationFieldNumber">
+            <summary>Field number for the "hzWOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.solarmodule.SolarPoint.HzWOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.solarmodule.SolarPoint.LimitWOperationFieldNumber">
+            <summary>Field number for the "limitWOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.solarmodule.SolarPoint.LimitWOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.solarmodule.SolarPoint.PFOperationFieldNumber">
+            <summary>Field number for the "pFOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.solarmodule.SolarPoint.PFOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.solarmodule.SolarPoint.TmHzTripOperationFieldNumber">
+            <summary>Field number for the "tmHzTripOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.solarmodule.SolarPoint.TmHzTripOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.solarmodule.SolarPoint.TmVoltTripOperationFieldNumber">
+            <summary>Field number for the "tmVoltTripOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.solarmodule.SolarPoint.TmVoltTripOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.solarmodule.SolarPoint.VArOperationFieldNumber">
+            <summary>Field number for the "vArOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.solarmodule.SolarPoint.VArOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.solarmodule.SolarPoint.VoltVarOperationFieldNumber">
+            <summary>Field number for the "voltVarOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.solarmodule.SolarPoint.VoltVarOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.solarmodule.SolarPoint.VoltWOperationFieldNumber">
+            <summary>Field number for the "voltWOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.solarmodule.SolarPoint.VoltWOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.solarmodule.SolarPoint.WVarOperationFieldNumber">
+            <summary>Field number for the "wVarOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.solarmodule.SolarPoint.WVarOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.solarmodule.SolarPoint.BlackStartEnabledFieldNumber">
+            <summary>Field number for the "blackStartEnabled" field.</summary>
+        </member>
+        <member name="P:openfmb.solarmodule.SolarPoint.BlackStartEnabled">
+            <summary>
+            Black start enable
+            </summary>
+        </member>
+        <member name="F:openfmb.solarmodule.SolarPoint.SyncBackToGridFieldNumber">
+            <summary>Field number for the "syncBackToGrid" field.</summary>
+        </member>
+        <member name="P:openfmb.solarmodule.SolarPoint.SyncBackToGrid">
+            <summary>
+            MISSING DOCUMENTATION!!!
             </summary>
         </member>
         <member name="T:openfmb.solarmodule.SolarCSG">
@@ -9915,19 +12153,6 @@
             MISSING DOCUMENTATION!!!
             </summary>
         </member>
-        <member name="T:openfmb.solarmodule.SolarInverter">
-            <summary>
-            MISSING DOCUMENTATION!!!
-            </summary>
-        </member>
-        <member name="F:openfmb.solarmodule.SolarInverter.ConductingEquipmentFieldNumber">
-            <summary>Field number for the "conductingEquipment" field.</summary>
-        </member>
-        <member name="P:openfmb.solarmodule.SolarInverter.ConductingEquipment">
-            <summary>
-            UML inherited base object
-            </summary>
-        </member>
         <member name="T:openfmb.solarmodule.SolarControlProfile">
             <summary>
             Solar control profile
@@ -9983,7 +12208,7 @@
         </member>
         <member name="P:openfmb.solarmodule.SolarPointStatus.PctHzDroop">
             <summary>
-            Black start enable
+            MISSING DOCUMENTATION!!!
             </summary>
         </member>
         <member name="F:openfmb.solarmodule.SolarPointStatus.PctVDroopFieldNumber">
@@ -9991,7 +12216,7 @@
         </member>
         <member name="P:openfmb.solarmodule.SolarPointStatus.PctVDroop">
             <summary>
-            Black start enable
+            MISSING DOCUMENTATION!!!
             </summary>
         </member>
         <member name="F:openfmb.solarmodule.SolarPointStatus.RampRatesFieldNumber">
@@ -10023,7 +12248,7 @@
         </member>
         <member name="P:openfmb.solarmodule.SolarPointStatus.State">
             <summary>
-            ESS state
+            MISSING DOCUMENTATION!!!
             </summary>
         </member>
         <member name="F:openfmb.solarmodule.SolarPointStatus.VoltageSetPointEnabledFieldNumber">
@@ -10032,6 +12257,102 @@
         <member name="P:openfmb.solarmodule.SolarPointStatus.VoltageSetPointEnabled">
             <summary>
             Enable voltage set point
+            </summary>
+        </member>
+        <member name="F:openfmb.solarmodule.SolarPointStatus.BlackStartEnabledFieldNumber">
+            <summary>Field number for the "blackStartEnabled" field.</summary>
+        </member>
+        <member name="P:openfmb.solarmodule.SolarPointStatus.BlackStartEnabled">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.solarmodule.SolarPointStatus.EnterServiceOperationFieldNumber">
+            <summary>Field number for the "enterServiceOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.solarmodule.SolarPointStatus.EnterServiceOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.solarmodule.SolarPointStatus.HzWOperationFieldNumber">
+            <summary>Field number for the "hzWOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.solarmodule.SolarPointStatus.HzWOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.solarmodule.SolarPointStatus.LimitWOperationFieldNumber">
+            <summary>Field number for the "limitWOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.solarmodule.SolarPointStatus.LimitWOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.solarmodule.SolarPointStatus.PFOperationFieldNumber">
+            <summary>Field number for the "pFOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.solarmodule.SolarPointStatus.PFOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.solarmodule.SolarPointStatus.SyncBackToGridFieldNumber">
+            <summary>Field number for the "syncBackToGrid" field.</summary>
+        </member>
+        <member name="P:openfmb.solarmodule.SolarPointStatus.SyncBackToGrid">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.solarmodule.SolarPointStatus.TmHzTripOperationFieldNumber">
+            <summary>Field number for the "tmHzTripOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.solarmodule.SolarPointStatus.TmHzTripOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.solarmodule.SolarPointStatus.TmVoltTripOperationFieldNumber">
+            <summary>Field number for the "tmVoltTripOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.solarmodule.SolarPointStatus.TmVoltTripOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.solarmodule.SolarPointStatus.VArOperationFieldNumber">
+            <summary>Field number for the "vArOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.solarmodule.SolarPointStatus.VArOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.solarmodule.SolarPointStatus.VoltVarOperationFieldNumber">
+            <summary>Field number for the "voltVarOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.solarmodule.SolarPointStatus.VoltVarOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.solarmodule.SolarPointStatus.VoltWOperationFieldNumber">
+            <summary>Field number for the "voltWOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.solarmodule.SolarPointStatus.VoltWOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.solarmodule.SolarPointStatus.WVarOperationFieldNumber">
+            <summary>Field number for the "wVarOperation" field.</summary>
+        </member>
+        <member name="P:openfmb.solarmodule.SolarPointStatus.WVarOperation">
+            <summary>
+            MISSING DOCUMENTATION!!!
             </summary>
         </member>
         <member name="T:openfmb.solarmodule.SolarEventAndStatusZGEN">
@@ -10075,6 +12396,46 @@
             <summary>Field number for the "PointStatus" field.</summary>
         </member>
         <member name="P:openfmb.solarmodule.SolarEventAndStatusZGEN.PointStatus">
+            <summary>
+            MISSING DOCUMENTATION!!!
+            </summary>
+        </member>
+        <member name="F:openfmb.solarmodule.SolarEventAndStatusZGEN.AlrmFieldNumber">
+            <summary>Field number for the "Alrm" field.</summary>
+        </member>
+        <member name="P:openfmb.solarmodule.SolarEventAndStatusZGEN.Alrm">
+            <summary>
+            DC Power On/Off Status; True = DC power on
+            </summary>
+        </member>
+        <member name="F:openfmb.solarmodule.SolarEventAndStatusZGEN.GnSynStFieldNumber">
+            <summary>Field number for the "GnSynSt" field.</summary>
+        </member>
+        <member name="P:openfmb.solarmodule.SolarEventAndStatusZGEN.GnSynSt">
+            <summary>
+            Emergency stop
+            </summary>
+        </member>
+        <member name="F:openfmb.solarmodule.SolarEventAndStatusZGEN.GridConnectionStateFieldNumber">
+            <summary>Field number for the "GridConnectionState" field.</summary>
+        </member>
+        <member name="P:openfmb.solarmodule.SolarEventAndStatusZGEN.GridConnectionState">
+            <summary>
+            DC Power On/Off Status; True = DC power on
+            </summary>
+        </member>
+        <member name="F:openfmb.solarmodule.SolarEventAndStatusZGEN.ManAlrmInfoFieldNumber">
+            <summary>Field number for the "ManAlrmInfo" field.</summary>
+        </member>
+        <member name="P:openfmb.solarmodule.SolarEventAndStatusZGEN.ManAlrmInfo">
+            <summary>
+            DC Power On/Off Status; True = DC power on
+            </summary>
+        </member>
+        <member name="F:openfmb.solarmodule.SolarEventAndStatusZGEN.OperatingStateFieldNumber">
+            <summary>Field number for the "OperatingState" field.</summary>
+        </member>
+        <member name="P:openfmb.solarmodule.SolarEventAndStatusZGEN.OperatingState">
             <summary>
             MISSING DOCUMENTATION!!!
             </summary>

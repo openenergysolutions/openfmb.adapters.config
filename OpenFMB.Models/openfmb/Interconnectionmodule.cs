@@ -104,19 +104,23 @@ namespace openfmb.interconnectionmodule {
     private static readonly pb::MessageParser<InterconnectionPoint> _parser = new pb::MessageParser<InterconnectionPoint>(() => new InterconnectionPoint());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<InterconnectionPoint> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::openfmb.interconnectionmodule.InterconnectionmoduleReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public InterconnectionPoint() {
       OnConstruction();
     }
@@ -124,6 +128,7 @@ namespace openfmb.interconnectionmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public InterconnectionPoint(InterconnectionPoint other) : this() {
       blackStartEnabled_ = other.blackStartEnabled_ != null ? other.blackStartEnabled_.Clone() : null;
       frequencySetPointEnabled_ = other.frequencySetPointEnabled_ != null ? other.frequencySetPointEnabled_.Clone() : null;
@@ -139,6 +144,7 @@ namespace openfmb.interconnectionmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public InterconnectionPoint Clone() {
       return new InterconnectionPoint(this);
     }
@@ -150,6 +156,7 @@ namespace openfmb.interconnectionmodule {
     /// Black start enable
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ControlSPC BlackStartEnabled {
       get { return blackStartEnabled_; }
       set {
@@ -164,6 +171,7 @@ namespace openfmb.interconnectionmodule {
     /// Enable frequency set point
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ControlSPC FrequencySetPointEnabled {
       get { return frequencySetPointEnabled_; }
       set {
@@ -178,6 +186,7 @@ namespace openfmb.interconnectionmodule {
     /// Island control
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ControlSPC Island {
       get { return island_; }
       set {
@@ -193,6 +202,7 @@ namespace openfmb.interconnectionmodule {
     /// Black start enable
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public float? PctHzDroop {
       get { return pctHzDroop_; }
       set {
@@ -209,6 +219,7 @@ namespace openfmb.interconnectionmodule {
     /// Black start enable
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public float? PctVDroop {
       get { return pctVDroop_; }
       set {
@@ -224,6 +235,7 @@ namespace openfmb.interconnectionmodule {
     /// Ramp rates
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.RampRate RampRates {
       get { return rampRates_; }
       set {
@@ -238,6 +250,7 @@ namespace openfmb.interconnectionmodule {
     /// Enable reactive power set point
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ControlSPC ReactivePwrSetPointEnabled {
       get { return reactivePwrSetPointEnabled_; }
       set {
@@ -252,6 +265,7 @@ namespace openfmb.interconnectionmodule {
     /// Enable real power set point
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ControlSPC RealPwrSetPointEnabled {
       get { return realPwrSetPointEnabled_; }
       set {
@@ -266,6 +280,7 @@ namespace openfmb.interconnectionmodule {
     /// Enable voltage set point
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ControlSPC VoltageSetPointEnabled {
       get { return voltageSetPointEnabled_; }
       set {
@@ -280,6 +295,7 @@ namespace openfmb.interconnectionmodule {
     /// Start time
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.Timestamp StartTime {
       get { return startTime_; }
       set {
@@ -288,11 +304,13 @@ namespace openfmb.interconnectionmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as InterconnectionPoint);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(InterconnectionPoint other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -314,6 +332,7 @@ namespace openfmb.interconnectionmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (blackStartEnabled_ != null) hash ^= BlackStartEnabled.GetHashCode();
@@ -333,11 +352,13 @@ namespace openfmb.interconnectionmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -388,6 +409,7 @@ namespace openfmb.interconnectionmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (blackStartEnabled_ != null) {
         output.WriteRawTag(10);
@@ -434,6 +456,7 @@ namespace openfmb.interconnectionmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (blackStartEnabled_ != null) {
@@ -473,6 +496,7 @@ namespace openfmb.interconnectionmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(InterconnectionPoint other) {
       if (other == null) {
         return;
@@ -539,6 +563,7 @@ namespace openfmb.interconnectionmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -626,6 +651,7 @@ namespace openfmb.interconnectionmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -721,19 +747,23 @@ namespace openfmb.interconnectionmodule {
     private static readonly pb::MessageParser<InterconnectionCSG> _parser = new pb::MessageParser<InterconnectionCSG>(() => new InterconnectionCSG());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<InterconnectionCSG> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::openfmb.interconnectionmodule.InterconnectionmoduleReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public InterconnectionCSG() {
       OnConstruction();
     }
@@ -741,12 +771,14 @@ namespace openfmb.interconnectionmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public InterconnectionCSG(InterconnectionCSG other) : this() {
       crvPts_ = other.crvPts_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public InterconnectionCSG Clone() {
       return new InterconnectionCSG(this);
     }
@@ -760,16 +792,19 @@ namespace openfmb.interconnectionmodule {
     /// The array with the points specifying a curve shape.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::openfmb.interconnectionmodule.InterconnectionPoint> CrvPts {
       get { return crvPts_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as InterconnectionCSG);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(InterconnectionCSG other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -782,6 +817,7 @@ namespace openfmb.interconnectionmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= crvPts_.GetHashCode();
@@ -792,11 +828,13 @@ namespace openfmb.interconnectionmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -810,6 +848,7 @@ namespace openfmb.interconnectionmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       crvPts_.WriteTo(ref output, _repeated_crvPts_codec);
       if (_unknownFields != null) {
@@ -819,6 +858,7 @@ namespace openfmb.interconnectionmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += crvPts_.CalculateSize(_repeated_crvPts_codec);
@@ -829,6 +869,7 @@ namespace openfmb.interconnectionmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(InterconnectionCSG other) {
       if (other == null) {
         return;
@@ -838,6 +879,7 @@ namespace openfmb.interconnectionmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -859,6 +901,7 @@ namespace openfmb.interconnectionmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -888,19 +931,23 @@ namespace openfmb.interconnectionmodule {
     private static readonly pb::MessageParser<InterconnectionControlScheduleFSCH> _parser = new pb::MessageParser<InterconnectionControlScheduleFSCH>(() => new InterconnectionControlScheduleFSCH());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<InterconnectionControlScheduleFSCH> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::openfmb.interconnectionmodule.InterconnectionmoduleReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public InterconnectionControlScheduleFSCH() {
       OnConstruction();
     }
@@ -908,12 +955,14 @@ namespace openfmb.interconnectionmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public InterconnectionControlScheduleFSCH(InterconnectionControlScheduleFSCH other) : this() {
       valDCSG_ = other.valDCSG_ != null ? other.valDCSG_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public InterconnectionControlScheduleFSCH Clone() {
       return new InterconnectionControlScheduleFSCH(this);
     }
@@ -925,6 +974,7 @@ namespace openfmb.interconnectionmodule {
     /// Discrete value in InterconnectionCSG type
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.interconnectionmodule.InterconnectionCSG ValDCSG {
       get { return valDCSG_; }
       set {
@@ -933,11 +983,13 @@ namespace openfmb.interconnectionmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as InterconnectionControlScheduleFSCH);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(InterconnectionControlScheduleFSCH other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -950,6 +1002,7 @@ namespace openfmb.interconnectionmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (valDCSG_ != null) hash ^= ValDCSG.GetHashCode();
@@ -960,11 +1013,13 @@ namespace openfmb.interconnectionmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -981,6 +1036,7 @@ namespace openfmb.interconnectionmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (valDCSG_ != null) {
         output.WriteRawTag(10);
@@ -993,6 +1049,7 @@ namespace openfmb.interconnectionmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (valDCSG_ != null) {
@@ -1005,6 +1062,7 @@ namespace openfmb.interconnectionmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(InterconnectionControlScheduleFSCH other) {
       if (other == null) {
         return;
@@ -1019,6 +1077,7 @@ namespace openfmb.interconnectionmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1043,6 +1102,7 @@ namespace openfmb.interconnectionmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -1075,19 +1135,23 @@ namespace openfmb.interconnectionmodule {
     private static readonly pb::MessageParser<InterconnectionScheduleFSCC> _parser = new pb::MessageParser<InterconnectionScheduleFSCC>(() => new InterconnectionScheduleFSCC());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<InterconnectionScheduleFSCC> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::openfmb.interconnectionmodule.InterconnectionmoduleReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public InterconnectionScheduleFSCC() {
       OnConstruction();
     }
@@ -1095,6 +1159,7 @@ namespace openfmb.interconnectionmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public InterconnectionScheduleFSCC(InterconnectionScheduleFSCC other) : this() {
       controlFSCC_ = other.controlFSCC_ != null ? other.controlFSCC_.Clone() : null;
       interconnectionControlScheduleFSCH_ = other.interconnectionControlScheduleFSCH_.Clone();
@@ -1102,6 +1167,7 @@ namespace openfmb.interconnectionmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public InterconnectionScheduleFSCC Clone() {
       return new InterconnectionScheduleFSCC(this);
     }
@@ -1113,6 +1179,7 @@ namespace openfmb.interconnectionmodule {
     /// UML inherited base object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ControlFSCC ControlFSCC {
       get { return controlFSCC_; }
       set {
@@ -1129,16 +1196,19 @@ namespace openfmb.interconnectionmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::openfmb.interconnectionmodule.InterconnectionControlScheduleFSCH> InterconnectionControlScheduleFSCH {
       get { return interconnectionControlScheduleFSCH_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as InterconnectionScheduleFSCC);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(InterconnectionScheduleFSCC other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1152,6 +1222,7 @@ namespace openfmb.interconnectionmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (controlFSCC_ != null) hash ^= ControlFSCC.GetHashCode();
@@ -1163,11 +1234,13 @@ namespace openfmb.interconnectionmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -1185,6 +1258,7 @@ namespace openfmb.interconnectionmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (controlFSCC_ != null) {
         output.WriteRawTag(10);
@@ -1198,6 +1272,7 @@ namespace openfmb.interconnectionmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (controlFSCC_ != null) {
@@ -1211,6 +1286,7 @@ namespace openfmb.interconnectionmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(InterconnectionScheduleFSCC other) {
       if (other == null) {
         return;
@@ -1226,6 +1302,7 @@ namespace openfmb.interconnectionmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1254,6 +1331,7 @@ namespace openfmb.interconnectionmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -1290,19 +1368,23 @@ namespace openfmb.interconnectionmodule {
     private static readonly pb::MessageParser<InterconnectionSchedule> _parser = new pb::MessageParser<InterconnectionSchedule>(() => new InterconnectionSchedule());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<InterconnectionSchedule> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::openfmb.interconnectionmodule.InterconnectionmoduleReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public InterconnectionSchedule() {
       OnConstruction();
     }
@@ -1310,6 +1392,7 @@ namespace openfmb.interconnectionmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public InterconnectionSchedule(InterconnectionSchedule other) : this() {
       identifiedObject_ = other.identifiedObject_ != null ? other.identifiedObject_.Clone() : null;
       check_ = other.check_ != null ? other.check_.Clone() : null;
@@ -1318,6 +1401,7 @@ namespace openfmb.interconnectionmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public InterconnectionSchedule Clone() {
       return new InterconnectionSchedule(this);
     }
@@ -1329,6 +1413,7 @@ namespace openfmb.interconnectionmodule {
     /// UML inherited base object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.IdentifiedObject IdentifiedObject {
       get { return identifiedObject_; }
       set {
@@ -1343,6 +1428,7 @@ namespace openfmb.interconnectionmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.CheckConditions Check {
       get { return check_; }
       set {
@@ -1357,6 +1443,7 @@ namespace openfmb.interconnectionmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.interconnectionmodule.InterconnectionScheduleFSCC InterconnectionScheduleFSCC {
       get { return interconnectionScheduleFSCC_; }
       set {
@@ -1365,11 +1452,13 @@ namespace openfmb.interconnectionmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as InterconnectionSchedule);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(InterconnectionSchedule other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1384,6 +1473,7 @@ namespace openfmb.interconnectionmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (identifiedObject_ != null) hash ^= IdentifiedObject.GetHashCode();
@@ -1396,11 +1486,13 @@ namespace openfmb.interconnectionmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -1425,6 +1517,7 @@ namespace openfmb.interconnectionmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (identifiedObject_ != null) {
         output.WriteRawTag(10);
@@ -1445,6 +1538,7 @@ namespace openfmb.interconnectionmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (identifiedObject_ != null) {
@@ -1463,6 +1557,7 @@ namespace openfmb.interconnectionmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(InterconnectionSchedule other) {
       if (other == null) {
         return;
@@ -1489,6 +1584,7 @@ namespace openfmb.interconnectionmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1527,6 +1623,7 @@ namespace openfmb.interconnectionmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -1573,19 +1670,23 @@ namespace openfmb.interconnectionmodule {
     private static readonly pb::MessageParser<PlannedInterconnectionScheduleProfile> _parser = new pb::MessageParser<PlannedInterconnectionScheduleProfile>(() => new PlannedInterconnectionScheduleProfile());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<PlannedInterconnectionScheduleProfile> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::openfmb.interconnectionmodule.InterconnectionmoduleReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PlannedInterconnectionScheduleProfile() {
       OnConstruction();
     }
@@ -1593,6 +1694,7 @@ namespace openfmb.interconnectionmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PlannedInterconnectionScheduleProfile(PlannedInterconnectionScheduleProfile other) : this() {
       controlMessageInfo_ = other.controlMessageInfo_ != null ? other.controlMessageInfo_.Clone() : null;
       requesterCircuitSegmentService_ = other.requesterCircuitSegmentService_ != null ? other.requesterCircuitSegmentService_.Clone() : null;
@@ -1603,6 +1705,7 @@ namespace openfmb.interconnectionmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PlannedInterconnectionScheduleProfile Clone() {
       return new PlannedInterconnectionScheduleProfile(this);
     }
@@ -1614,6 +1717,7 @@ namespace openfmb.interconnectionmodule {
     /// UML inherited base object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ControlMessageInfo ControlMessageInfo {
       get { return controlMessageInfo_; }
       set {
@@ -1628,6 +1732,7 @@ namespace openfmb.interconnectionmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ApplicationSystem RequesterCircuitSegmentService {
       get { return requesterCircuitSegmentService_; }
       set {
@@ -1642,6 +1747,7 @@ namespace openfmb.interconnectionmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.interconnectionmodule.InterconnectionSchedule InterconnectionSchedule {
       get { return interconnectionSchedule_; }
       set {
@@ -1656,6 +1762,7 @@ namespace openfmb.interconnectionmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ConductingEquipment TiePoint {
       get { return tiePoint_; }
       set {
@@ -1670,6 +1777,7 @@ namespace openfmb.interconnectionmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ApplicationSystem ResponderCircuitSegmentService {
       get { return responderCircuitSegmentService_; }
       set {
@@ -1678,11 +1786,13 @@ namespace openfmb.interconnectionmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as PlannedInterconnectionScheduleProfile);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(PlannedInterconnectionScheduleProfile other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1699,6 +1809,7 @@ namespace openfmb.interconnectionmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (controlMessageInfo_ != null) hash ^= ControlMessageInfo.GetHashCode();
@@ -1713,11 +1824,13 @@ namespace openfmb.interconnectionmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -1750,6 +1863,7 @@ namespace openfmb.interconnectionmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (controlMessageInfo_ != null) {
         output.WriteRawTag(10);
@@ -1778,6 +1892,7 @@ namespace openfmb.interconnectionmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (controlMessageInfo_ != null) {
@@ -1802,6 +1917,7 @@ namespace openfmb.interconnectionmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(PlannedInterconnectionScheduleProfile other) {
       if (other == null) {
         return;
@@ -1840,6 +1956,7 @@ namespace openfmb.interconnectionmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1892,6 +2009,7 @@ namespace openfmb.interconnectionmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -1952,19 +2070,23 @@ namespace openfmb.interconnectionmodule {
     private static readonly pb::MessageParser<RequestedInterconnectionScheduleProfile> _parser = new pb::MessageParser<RequestedInterconnectionScheduleProfile>(() => new RequestedInterconnectionScheduleProfile());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<RequestedInterconnectionScheduleProfile> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::openfmb.interconnectionmodule.InterconnectionmoduleReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RequestedInterconnectionScheduleProfile() {
       OnConstruction();
     }
@@ -1972,6 +2094,7 @@ namespace openfmb.interconnectionmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RequestedInterconnectionScheduleProfile(RequestedInterconnectionScheduleProfile other) : this() {
       controlMessageInfo_ = other.controlMessageInfo_ != null ? other.controlMessageInfo_.Clone() : null;
       requesterCircuitSegmentService_ = other.requesterCircuitSegmentService_ != null ? other.requesterCircuitSegmentService_.Clone() : null;
@@ -1982,6 +2105,7 @@ namespace openfmb.interconnectionmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RequestedInterconnectionScheduleProfile Clone() {
       return new RequestedInterconnectionScheduleProfile(this);
     }
@@ -1993,6 +2117,7 @@ namespace openfmb.interconnectionmodule {
     /// UML inherited base object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ControlMessageInfo ControlMessageInfo {
       get { return controlMessageInfo_; }
       set {
@@ -2007,6 +2132,7 @@ namespace openfmb.interconnectionmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ApplicationSystem RequesterCircuitSegmentService {
       get { return requesterCircuitSegmentService_; }
       set {
@@ -2021,6 +2147,7 @@ namespace openfmb.interconnectionmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.interconnectionmodule.InterconnectionSchedule InterconnectionSchedule {
       get { return interconnectionSchedule_; }
       set {
@@ -2035,6 +2162,7 @@ namespace openfmb.interconnectionmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ConductingEquipment TiePoint {
       get { return tiePoint_; }
       set {
@@ -2049,6 +2177,7 @@ namespace openfmb.interconnectionmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ApplicationSystem ResponderCircuitSegmentService {
       get { return responderCircuitSegmentService_; }
       set {
@@ -2057,11 +2186,13 @@ namespace openfmb.interconnectionmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as RequestedInterconnectionScheduleProfile);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(RequestedInterconnectionScheduleProfile other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2078,6 +2209,7 @@ namespace openfmb.interconnectionmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (controlMessageInfo_ != null) hash ^= ControlMessageInfo.GetHashCode();
@@ -2092,11 +2224,13 @@ namespace openfmb.interconnectionmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -2129,6 +2263,7 @@ namespace openfmb.interconnectionmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (controlMessageInfo_ != null) {
         output.WriteRawTag(10);
@@ -2157,6 +2292,7 @@ namespace openfmb.interconnectionmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (controlMessageInfo_ != null) {
@@ -2181,6 +2317,7 @@ namespace openfmb.interconnectionmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(RequestedInterconnectionScheduleProfile other) {
       if (other == null) {
         return;
@@ -2219,6 +2356,7 @@ namespace openfmb.interconnectionmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -2271,6 +2409,7 @@ namespace openfmb.interconnectionmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {

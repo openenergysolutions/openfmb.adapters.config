@@ -5,6 +5,8 @@
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using OpenFMB.Adapters.Core.Models.Schemas;
+using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Dynamic;
 using System.Runtime.CompilerServices;
@@ -23,7 +25,7 @@ namespace OpenFMB.Adapters.Core.Models
         {
             get { return FileInformation.Plugin; }
             protected set { FileInformation.Plugin = value; }
-        }
+        }        
 
         [Browsable(false)]
         [JsonIgnore]
@@ -33,12 +35,17 @@ namespace OpenFMB.Adapters.Core.Models
         [Browsable(false)]
         public FileInformation FileInformation { get; set; }
 
-        public BaseSessionSpecifiConfig()
+        public BaseSessionSpecifiConfig(string edition)
         {
+            if (string.IsNullOrWhiteSpace(edition))
+            {
+                edition = SchemaManager.DefaultEdition;
+            }
             // TODO:: Inject file information
             FileInformation = new FileInformation()
             {
-                Id = ConfigFileType.Template
+                Id = ConfigFileType.Template,
+                Edition = edition,
             };
         }
 
@@ -46,7 +53,7 @@ namespace OpenFMB.Adapters.Core.Models
         {
             if (string.IsNullOrEmpty(FileInformation.Edition))
             {
-                FileInformation.Edition = SchemaManager.DefaultVersion;
+                FileInformation.Edition = SchemaManager.DefaultEdition;
             }
 
             if (string.IsNullOrEmpty(FileInformation.Version))
@@ -71,6 +78,18 @@ namespace OpenFMB.Adapters.Core.Models
         {
             HasModified = true;
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+    }
+
+    public class EditionStringConverter : StringConverter
+    {
+        public override Boolean GetStandardValuesSupported(ITypeDescriptorContext context) { return true; }
+        public override Boolean GetStandardValuesExclusive(ITypeDescriptorContext context) { return true; }
+        public override TypeConverter.StandardValuesCollection GetStandardValues(ITypeDescriptorContext context)
+        {
+            List<String> list = new List<String>();
+            list.AddRange(SchemaManager.SupportEditions);
+            return new StandardValuesCollection(list);
         }
     }
 }

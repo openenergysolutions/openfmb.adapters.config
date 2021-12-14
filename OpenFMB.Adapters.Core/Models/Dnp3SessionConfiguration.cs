@@ -26,12 +26,12 @@ namespace OpenFMB.Adapters.Core.Models
                 {
                     if (PluginName == PluginsSection.Dnp3Master)
                     {
-                        _sessionSpecific = new Dnp3MasterSpecificConfig();
+                        _sessionSpecific = new Dnp3MasterSpecificConfig(Edition);
                         _sessionSpecific.PropertyChanged += OnPropertyChanged;
                     }
                     else
                     {
-                        _sessionSpecific = new Dnp3OutstationSpecificConfig();
+                        _sessionSpecific = new Dnp3OutstationSpecificConfig(Edition);
                         _sessionSpecific.PropertyChanged += OnPropertyChanged;
                     }
                 }
@@ -39,9 +39,10 @@ namespace OpenFMB.Adapters.Core.Models
             }
         }        
 
-        public Dnp3SessionConfiguration(string pluginName)
+        public Dnp3SessionConfiguration(string pluginName, string edition)
         {
             PluginName = pluginName;
+            Edition = edition;
             PropertyChanged += (sender, e) =>
             {
                 NotifyPropertyChanged(e.PropertyName);
@@ -446,7 +447,7 @@ namespace OpenFMB.Adapters.Core.Models
 
     public class Dnp3MasterSpecificConfig : BaseSessionSpecifiConfig, ISessionSpecificConfig
     {
-        public Dnp3MasterSpecificConfig()
+        public Dnp3MasterSpecificConfig(string edition) : base(edition)
         {
             PlugIn = PluginsSection.Dnp3Master;                        
         }
@@ -586,7 +587,7 @@ namespace OpenFMB.Adapters.Core.Models
 
     public class Dnp3OutstationSpecificConfig : BaseSessionSpecifiConfig, ISessionSpecificConfig
     {
-        public Dnp3OutstationSpecificConfig()
+        public Dnp3OutstationSpecificConfig(string edition) : base(edition)
         {
             PlugIn = PluginsSection.Dnp3Outstation;
         }

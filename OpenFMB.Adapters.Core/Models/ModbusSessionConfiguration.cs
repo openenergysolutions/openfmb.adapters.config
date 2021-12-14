@@ -25,12 +25,12 @@ namespace OpenFMB.Adapters.Core.Models
                 {
                     if (PluginName == PluginsSection.ModbusMaster)
                     {
-                        _sessionSpecific = new ModbusMasterSpecificConfig();
+                        _sessionSpecific = new ModbusMasterSpecificConfig(Edition);
                         _sessionSpecific.PropertyChanged += OnPropertyChanged;
                     }
                     else
                     {
-                        _sessionSpecific = new ModbusOutstationSpecificConfig();
+                        _sessionSpecific = new ModbusOutstationSpecificConfig(Edition);
                         _sessionSpecific.PropertyChanged += OnPropertyChanged;
                     }
                 }
@@ -38,9 +38,10 @@ namespace OpenFMB.Adapters.Core.Models
             }
         }
 
-        public ModbusSessionConfiguration(string pluginName)
+        public ModbusSessionConfiguration(string pluginName, string edition)
         {
             PluginName = pluginName;
+            Edition = edition;
         }        
 
         protected override void LoadSessionConfigurationFromJson(string json)
@@ -56,7 +57,7 @@ namespace OpenFMB.Adapters.Core.Models
                     _logger.Log(Level.Error, ex.Message, ex);
                     _logger.Log(Level.Info, "Unable to parse session configuration.  Will try to parse manually.");
 
-                    ModbusMasterSpecificConfig config = new ModbusMasterSpecificConfig();
+                    ModbusMasterSpecificConfig config = new ModbusMasterSpecificConfig(Edition);
 
                     var jsonObject = JsonConvert.DeserializeObject(json) as JObject;
 
@@ -226,7 +227,7 @@ namespace OpenFMB.Adapters.Core.Models
         private int responseTimeout = 1000;
         private bool alwaysWriteMultipleRegisters;
 
-        public ModbusMasterSpecificConfig()
+        public ModbusMasterSpecificConfig(string edition) : base(edition)
         {
             PlugIn = PluginsSection.ModbusMaster;
         }
@@ -297,7 +298,7 @@ namespace OpenFMB.Adapters.Core.Models
         private int unitIdentifier = 1;
         private int maxNumConnections = 1;
 
-        public ModbusOutstationSpecificConfig()
+        public ModbusOutstationSpecificConfig(string edition) : base(edition)
         {
             PlugIn = PluginsSection.ModbusOutstation;
         }

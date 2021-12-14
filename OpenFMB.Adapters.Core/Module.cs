@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using openfmb.breakermodule;
 using openfmb.capbankmodule;
-using openfmb.coordinationservicemodule;
+using openfmb.circuitsegmentservicemodule;
 using openfmb.essmodule;
 using openfmb.generationmodule;
 using openfmb.interconnectionmodule;
@@ -28,7 +28,7 @@ namespace OpenFMB.Adapters.Core
         {
             BreakermoduleReflection.Descriptor,
             CapbankmoduleReflection.Descriptor,
-            CoordinationservicemoduleReflection.Descriptor,
+            CircuitsegmentservicemoduleReflection.Descriptor,
             EssmoduleReflection.Descriptor,
             GenerationmoduleReflection.Descriptor,
             InterconnectionmoduleReflection.Descriptor,

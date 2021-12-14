@@ -7,6 +7,7 @@ using System.ComponentModel;
 using System.Windows.Forms;
 using OpenFMB.Adapters.Core.Utility.Logs;
 using OpenFMB.Adapters.Core.Models.Schemas;
+using OpenFMB.Adapters.Configuration.Properties;
 
 namespace OpenFMB.Adapters.Configuration
 {
@@ -28,7 +29,15 @@ namespace OpenFMB.Adapters.Configuration
 
         private void BackgroundWorker_DoWork(object sender, DoWorkEventArgs e)
         {
-            var v = System.Configuration.ConfigurationManager.AppSettings[Program.DefaultSchemaVersionKey];
+            var v = Settings.Default.DefaultSchemaVersion;  
+            if (string.IsNullOrWhiteSpace(v))
+            {
+                v = System.Configuration.ConfigurationManager.AppSettings[Program.DefaultSchemaVersionKey];
+                if (string.IsNullOrWhiteSpace(v))
+                {
+                    v = SchemaManager.DefaultEdition;
+                }
+            }
             SchemaManager.Init(v);
             
             status.BeginInvoke(new MethodInvoker(delegate()

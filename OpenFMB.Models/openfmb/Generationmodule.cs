@@ -27,138 +27,200 @@ namespace openfmb.generationmodule {
             "CidnZW5lcmF0aW9ubW9kdWxlL2dlbmVyYXRpb25tb2R1bGUucHJvdG8SEGdl",
             "bmVyYXRpb25tb2R1bGUaCXVtbC5wcm90bxoeZ29vZ2xlL3Byb3RvYnVmL3dy",
             "YXBwZXJzLnByb3RvGh9jb21tb25tb2R1bGUvY29tbW9ubW9kdWxlLnByb3Rv",
-            "IsoFCg9HZW5lcmF0aW9uUG9pbnQSMwoRYmxhY2tTdGFydEVuYWJsZWQYASAB",
-            "KAsyGC5jb21tb25tb2R1bGUuQ29udHJvbFNQQxI6ChhmcmVxdWVuY3lTZXRQ",
-            "b2ludEVuYWJsZWQYAiABKAsyGC5jb21tb25tb2R1bGUuQ29udHJvbFNQQxIv",
-            "CgpwY3RIekRyb29wGAMgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFs",
-            "dWUSLgoJcGN0VkRyb29wGAQgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0",
-            "VmFsdWUSKQoJcmFtcFJhdGVzGAUgASgLMhYuY29tbW9ubW9kdWxlLlJhbXBS",
-            "YXRlEjwKGnJlYWN0aXZlUHdyU2V0UG9pbnRFbmFibGVkGAYgASgLMhguY29t",
-            "bW9ubW9kdWxlLkNvbnRyb2xTUEMSOAoWcmVhbFB3clNldFBvaW50RW5hYmxl",
-            "ZBgHIAEoCzIYLmNvbW1vbm1vZHVsZS5Db250cm9sU1BDEicKBXJlc2V0GAgg",
-            "ASgLMhguY29tbW9ubW9kdWxlLkNvbnRyb2xTUEMSLwoFc3RhdGUYCSABKAsy",
-            "IC5jb21tb25tb2R1bGUuT3B0aW9uYWxfU3RhdGVLaW5kEjAKDnN5bmNCYWNr",
-            "VG9HcmlkGAogASgLMhguY29tbW9ubW9kdWxlLkNvbnRyb2xTUEMSPwoddHJh",
-            "bnNUb0lzbG5kT25HcmlkTG9zc0VuYWJsZWQYCyABKAsyGC5jb21tb25tb2R1",
-            "bGUuQ29udHJvbFNQQxI4ChZ2b2x0YWdlU2V0UG9pbnRFbmFibGVkGAwgASgL",
-            "MhguY29tbW9ubW9kdWxlLkNvbnRyb2xTUEMSOwoJc3RhcnRUaW1lGA0gASgL",
-            "Mh4uY29tbW9ubW9kdWxlLkNvbnRyb2xUaW1lc3RhbXBCCIi1GAGQtRgBIkwK",
-            "DUdlbmVyYXRpb25DU0cSOwoGY3J2UHRzGAEgAygLMiEuZ2VuZXJhdGlvbm1v",
-            "ZHVsZS5HZW5lcmF0aW9uUG9pbnRCCIi1GAGQtRgBIlsKHUdlbmVyYXRpb25D",
-            "b250cm9sU2NoZWR1bGVGU0NIEjoKB1ZhbERDU0cYASABKAsyHy5nZW5lcmF0",
-            "aW9ubW9kdWxlLkdlbmVyYXRpb25DU0dCCIi1GAGQtRgBIqUBChVHZW5lcmF0",
-            "aW9uQ29udHJvbEZTQ0MSNAoLY29udHJvbEZTQ0MYASABKAsyGS5jb21tb25t",
-            "b2R1bGUuQ29udHJvbEZTQ0NCBIC1GAESVgodR2VuZXJhdGlvbkNvbnRyb2xT",
-            "Y2hlZHVsZUZTQ0gYAiABKAsyLy5nZW5lcmF0aW9ubW9kdWxlLkdlbmVyYXRp",
-            "b25Db250cm9sU2NoZWR1bGVGU0NIIsEBChFHZW5lcmF0aW9uQ29udHJvbBI2",
-            "Cgxjb250cm9sVmFsdWUYASABKAsyGi5jb21tb25tb2R1bGUuQ29udHJvbFZh",
-            "bHVlQgSAtRgBEiwKBWNoZWNrGAIgASgLMh0uY29tbW9ubW9kdWxlLkNoZWNr",
-            "Q29uZGl0aW9ucxJGChVnZW5lcmF0aW9uQ29udHJvbEZTQ0MYAyABKAsyJy5n",
-            "ZW5lcmF0aW9ubW9kdWxlLkdlbmVyYXRpb25Db250cm9sRlNDQyKIAQoOR2Vu",
-            "ZXJhdGluZ1VuaXQSRAoTY29uZHVjdGluZ0VxdWlwbWVudBgBIAEoCzIhLmNv",
-            "bW1vbm1vZHVsZS5Db25kdWN0aW5nRXF1aXBtZW50QgSAtRgBEjAKDW1heE9w",
-            "ZXJhdGluZ1AYAiABKAsyGS5jb21tb25tb2R1bGUuQWN0aXZlUG93ZXIi8gEK",
-            "GEdlbmVyYXRpb25Db250cm9sUHJvZmlsZRJCChJjb250cm9sTWVzc2FnZUlu",
-            "Zm8YASABKAsyIC5jb21tb25tb2R1bGUuQ29udHJvbE1lc3NhZ2VJbmZvQgSA",
-            "tRgBEkIKDmdlbmVyYXRpbmdVbml0GAIgASgLMiAuZ2VuZXJhdGlvbm1vZHVs",
-            "ZS5HZW5lcmF0aW5nVW5pdEIIiLUYAZC1GAESSAoRZ2VuZXJhdGlvbkNvbnRy",
-            "b2wYAyABKAsyIy5nZW5lcmF0aW9ubW9kdWxlLkdlbmVyYXRpb25Db250cm9s",
-            "QgiItRgBkLUYAToEwPMYASJxCg5Ecm9vcFBhcmFtZXRlchIqCgVzbG9wZRgB",
-            "IAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5GbG9hdFZhbHVlEjMKDnVubG9hZGVk",
-            "T2Zmc2V0GAIgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUiiAIK",
-            "EFJlYWxQb3dlckNvbnRyb2wSNwoNZHJvb3BTZXRwb2ludBgBIAEoCzIgLmdl",
-            "bmVyYXRpb25tb2R1bGUuRHJvb3BQYXJhbWV0ZXISOAoTaXNvY2hyb25vdXNT",
-            "ZXRwb2ludBgCIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5GbG9hdFZhbHVlEkkK",
-            "FHJlYWxQb3dlckNvbnRyb2xNb2RlGAMgASgLMisuY29tbW9ubW9kdWxlLk9w",
-            "dGlvbmFsX1JlYWxQb3dlckNvbnRyb2xLaW5kEjYKEXJlYWxQb3dlclNldHBv",
-            "aW50GAQgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUizgIKFFJl",
-            "YWN0aXZlUG93ZXJDb250cm9sEjcKDWRyb29wU2V0cG9pbnQYASABKAsyIC5n",
-            "ZW5lcmF0aW9ubW9kdWxlLkRyb29wUGFyYW1ldGVyEjgKE3Bvd2VyRmFjdG9y",
-            "U2V0cG9pbnQYAiABKAsyGy5nb29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZRJR",
-            "ChhyZWFjdGl2ZVBvd2VyQ29udHJvbE1vZGUYAyABKAsyLy5jb21tb25tb2R1",
-            "bGUuT3B0aW9uYWxfUmVhY3RpdmVQb3dlckNvbnRyb2xLaW5kEjoKFXJlYWN0",
-            "aXZlUG93ZXJTZXRwb2ludBgEIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5GbG9h",
-            "dFZhbHVlEjQKD3ZvbHRhZ2VTZXRwb2ludBgFIAEoCzIbLmdvb2dsZS5wcm90",
-            "b2J1Zi5GbG9hdFZhbHVlIoUCChlHZW5lcmF0aW9uRGlzY3JldGVDb250cm9s",
-            "EjYKDGNvbnRyb2xWYWx1ZRgBIAEoCzIaLmNvbW1vbm1vZHVsZS5Db250cm9s",
-            "VmFsdWVCBIC1GAESLAoFY2hlY2sYAiABKAsyHS5jb21tb25tb2R1bGUuQ2hl",
-            "Y2tDb25kaXRpb25zEkQKFFJlYWN0aXZlUG93ZXJDb250cm9sGAMgASgLMiYu",
-            "Z2VuZXJhdGlvbm1vZHVsZS5SZWFjdGl2ZVBvd2VyQ29udHJvbBI8ChBSZWFs",
-            "UG93ZXJDb250cm9sGAQgASgLMiIuZ2VuZXJhdGlvbm1vZHVsZS5SZWFsUG93",
-            "ZXJDb250cm9sIooCCiBHZW5lcmF0aW9uRGlzY3JldGVDb250cm9sUHJvZmls",
-            "ZRJCChJjb250cm9sTWVzc2FnZUluZm8YASABKAsyIC5jb21tb25tb2R1bGUu",
-            "Q29udHJvbE1lc3NhZ2VJbmZvQgSAtRgBEkIKDmdlbmVyYXRpbmdVbml0GAIg",
-            "ASgLMiAuZ2VuZXJhdGlvbm1vZHVsZS5HZW5lcmF0aW5nVW5pdEIIiLUYAZC1",
-            "GAESWAoZZ2VuZXJhdGlvbkRpc2NyZXRlQ29udHJvbBgDIAEoCzIrLmdlbmVy",
-            "YXRpb25tb2R1bGUuR2VuZXJhdGlvbkRpc2NyZXRlQ29udHJvbEIIiLUYAZC1",
-            "GAE6BMDzGAEigwIKEUdlbmVyYXRpb25SZWFkaW5nEmIKImNvbmR1Y3RpbmdF",
-            "cXVpcG1lbnRUZXJtaW5hbFJlYWRpbmcYASABKAsyMC5jb21tb25tb2R1bGUu",
-            "Q29uZHVjdGluZ0VxdWlwbWVudFRlcm1pbmFsUmVhZGluZ0IEgLUYARIqCglw",
-            "aGFzZU1NVE4YAiABKAsyFy5jb21tb25tb2R1bGUuUGhhc2VNTVROEi4KC3Jl",
-            "YWRpbmdNTVRSGAMgASgLMhkuY29tbW9ubW9kdWxlLlJlYWRpbmdNTVRSEi4K",
-            "C3JlYWRpbmdNTVhVGAQgASgLMhkuY29tbW9ubW9kdWxlLlJlYWRpbmdNTVhV",
-            "IvIBChhHZW5lcmF0aW9uUmVhZGluZ1Byb2ZpbGUSQgoScmVhZGluZ01lc3Nh",
-            "Z2VJbmZvGAEgASgLMiAuY29tbW9ubW9kdWxlLlJlYWRpbmdNZXNzYWdlSW5m",
-            "b0IEgLUYARJCCg5nZW5lcmF0aW5nVW5pdBgCIAEoCzIgLmdlbmVyYXRpb25t",
-            "b2R1bGUuR2VuZXJhdGluZ1VuaXRCCIi1GAGQtRgBEkgKEWdlbmVyYXRpb25S",
-            "ZWFkaW5nGAMgASgLMiMuZ2VuZXJhdGlvbm1vZHVsZS5HZW5lcmF0aW9uUmVh",
-            "ZGluZ0IIiLUYAZC1GAE6BMDzGAEi4wQKFUdlbmVyYXRpb25Qb2ludFN0YXR1",
-            "cxIyChFibGFja1N0YXJ0RW5hYmxlZBgBIAEoCzIXLmNvbW1vbm1vZHVsZS5T",
-            "dGF0dXNTUFMSOQoYZnJlcXVlbmN5U2V0UG9pbnRFbmFibGVkGAIgASgLMhcu",
-            "Y29tbW9ubW9kdWxlLlN0YXR1c1NQUxIvCgpwY3RIekRyb29wGAMgASgLMhsu",
-            "Z29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUSLgoJcGN0VkRyb29wGAQgASgL",
-            "MhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUSKQoJcmFtcFJhdGVzGAUg",
-            "ASgLMhYuY29tbW9ubW9kdWxlLlJhbXBSYXRlEjsKGnJlYWN0aXZlUHdyU2V0",
-            "UG9pbnRFbmFibGVkGAYgASgLMhcuY29tbW9ubW9kdWxlLlN0YXR1c1NQUxI3",
-            "ChZyZWFsUHdyU2V0UG9pbnRFbmFibGVkGAcgASgLMhcuY29tbW9ubW9kdWxl",
-            "LlN0YXR1c1NQUxIvCgVzdGF0ZRgIIAEoCzIgLmNvbW1vbm1vZHVsZS5PcHRp",
-            "b25hbF9TdGF0ZUtpbmQSLwoOc3luY0JhY2tUb0dyaWQYCSABKAsyFy5jb21t",
-            "b25tb2R1bGUuU3RhdHVzU1BTEj4KHXRyYW5zVG9Jc2xuZE9uR3JpZExvc3NF",
-            "bmFibGVkGAogASgLMhcuY29tbW9ubW9kdWxlLlN0YXR1c1NQUxI3ChZ2b2x0",
-            "YWdlU2V0UG9pbnRFbmFibGVkGAsgASgLMhcuY29tbW9ubW9kdWxlLlN0YXR1",
-            "c1NQUyLrAgocR2VuZXJhdGlvbkV2ZW50QW5kU3RhdHVzWkdFThJWChxsb2dp",
-            "Y2FsTm9kZUZvckV2ZW50QW5kU3RhdHVzGAEgASgLMiouY29tbW9ubW9kdWxl",
-            "LkxvZ2ljYWxOb2RlRm9yRXZlbnRBbmRTdGF0dXNCBIC1GAESKQoIQXV4UHdy",
-            "U3QYAiABKAsyFy5jb21tb25tb2R1bGUuU3RhdHVzU1BTEjYKC0R5bmFtaWNU",
-            "ZXN0GAMgASgLMiEuY29tbW9ubW9kdWxlLkVOU19EeW5hbWljVGVzdEtpbmQS",
-            "KAoHRW1nU3RvcBgEIAEoCzIXLmNvbW1vbm1vZHVsZS5TdGF0dXNTUFMSKAoH",
-            "R25TeW5TdBgFIAEoCzIXLmNvbW1vbm1vZHVsZS5TdGF0dXNTUFMSPAoLUG9p",
-            "bnRTdGF0dXMYBiABKAsyJy5nZW5lcmF0aW9ubW9kdWxlLkdlbmVyYXRpb25Q",
-            "b2ludFN0YXR1cyJxChNHZW5lcmF0aW9uRXZlbnRaR0VOEloKHGdlbmVyYXRp",
-            "b25FdmVudEFuZFN0YXR1c1pHRU4YASABKAsyLi5nZW5lcmF0aW9ubW9kdWxl",
-            "LkdlbmVyYXRpb25FdmVudEFuZFN0YXR1c1pHRU5CBIC1GAEiiQEKD0dlbmVy",
-            "YXRpb25FdmVudBIyCgpldmVudFZhbHVlGAEgASgLMhguY29tbW9ubW9kdWxl",
-            "LkV2ZW50VmFsdWVCBIC1GAESQgoTZ2VuZXJhdGlvbkV2ZW50WkdFThgCIAEo",
-            "CzIlLmdlbmVyYXRpb25tb2R1bGUuR2VuZXJhdGlvbkV2ZW50WkdFTiLoAQoW",
-            "R2VuZXJhdGlvbkV2ZW50UHJvZmlsZRI+ChBldmVudE1lc3NhZ2VJbmZvGAEg",
-            "ASgLMh4uY29tbW9ubW9kdWxlLkV2ZW50TWVzc2FnZUluZm9CBIC1GAESQgoO",
-            "Z2VuZXJhdGluZ1VuaXQYAiABKAsyIC5nZW5lcmF0aW9ubW9kdWxlLkdlbmVy",
-            "YXRpbmdVbml0QgiItRgBkLUYARJECg9nZW5lcmF0aW9uRXZlbnQYAyABKAsy",
-            "IS5nZW5lcmF0aW9ubW9kdWxlLkdlbmVyYXRpb25FdmVudEIIiLUYAZC1GAE6",
-            "BMDzGAEicgoUR2VuZXJhdGlvblN0YXR1c1pHRU4SWgocZ2VuZXJhdGlvbkV2",
-            "ZW50QW5kU3RhdHVzWkdFThgBIAEoCzIuLmdlbmVyYXRpb25tb2R1bGUuR2Vu",
-            "ZXJhdGlvbkV2ZW50QW5kU3RhdHVzWkdFTkIEgLUYASKOAQoQR2VuZXJhdGlv",
-            "blN0YXR1cxI0CgtzdGF0dXNWYWx1ZRgBIAEoCzIZLmNvbW1vbm1vZHVsZS5T",
-            "dGF0dXNWYWx1ZUIEgLUYARJEChRnZW5lcmF0aW9uU3RhdHVzWkdFThgCIAEo",
-            "CzImLmdlbmVyYXRpb25tb2R1bGUuR2VuZXJhdGlvblN0YXR1c1pHRU4i7QEK",
-            "F0dlbmVyYXRpb25TdGF0dXNQcm9maWxlEkAKEXN0YXR1c01lc3NhZ2VJbmZv",
-            "GAEgASgLMh8uY29tbW9ubW9kdWxlLlN0YXR1c01lc3NhZ2VJbmZvQgSAtRgB",
-            "EkIKDmdlbmVyYXRpbmdVbml0GAIgASgLMiAuZ2VuZXJhdGlvbm1vZHVsZS5H",
-            "ZW5lcmF0aW5nVW5pdEIIiLUYAZC1GAESRgoQZ2VuZXJhdGlvblN0YXR1cxgD",
-            "IAEoCzIiLmdlbmVyYXRpb25tb2R1bGUuR2VuZXJhdGlvblN0YXR1c0IIiLUY",
-            "AZC1GAE6BMDzGAFCkAEKGG9wZW5mbWIuZ2VuZXJhdGlvbm1vZHVsZVABWldn",
-            "aXRsYWIuY29tL29wZW5mbWIvcHNtL29wcy9wcm90b2J1Zi9nby1vcGVuZm1i",
-            "LW9wcy1wcm90b2J1Zi92Mi9vcGVuZm1iL2dlbmVyYXRpb25tb2R1bGWqAhhv",
-            "cGVuZm1iLmdlbmVyYXRpb25tb2R1bGViBnByb3RvMw=="));
+            "IogBCg5HZW5lcmF0aW5nVW5pdBJEChNjb25kdWN0aW5nRXF1aXBtZW50GAEg",
+            "ASgLMiEuY29tbW9ubW9kdWxlLkNvbmR1Y3RpbmdFcXVpcG1lbnRCBIC1GAES",
+            "MAoNbWF4T3BlcmF0aW5nUBgCIAEoCzIZLmNvbW1vbm1vZHVsZS5BY3RpdmVQ",
+            "b3dlciJ9CiFHZW5lcmF0aW9uQ2FwYWJpbGl0eUNvbmZpZ3VyYXRpb24SWAod",
+            "c291cmNlQ2FwYWJpbGl0eUNvbmZpZ3VyYXRpb24YASABKAsyKy5jb21tb25t",
+            "b2R1bGUuU291cmNlQ2FwYWJpbGl0eUNvbmZpZ3VyYXRpb25CBIC1GAEiyAEK",
+            "HEdlbmVyYXRpb25DYXBhYmlsaXR5T3ZlcnJpZGUSPgoQaWRlbnRpZmllZE9i",
+            "amVjdBgBIAEoCzIeLmNvbW1vbm1vZHVsZS5JZGVudGlmaWVkT2JqZWN0QgSA",
+            "tRgBEmgKIWdlbmVyYXRpb25DYXBhYmlsaXR5Q29uZmlndXJhdGlvbhgCIAEo",
+            "CzIzLmdlbmVyYXRpb25tb2R1bGUuR2VuZXJhdGlvbkNhcGFiaWxpdHlDb25m",
+            "aWd1cmF0aW9uQgiItRgBkLUYASKpAgojR2VuZXJhdGlvbkNhcGFiaWxpdHlP",
+            "dmVycmlkZVByb2ZpbGUSWAodY2FwYWJpbGl0eU92ZXJyaWRlTWVzc2FnZUlu",
+            "Zm8YASABKAsyKy5jb21tb25tb2R1bGUuQ2FwYWJpbGl0eU92ZXJyaWRlTWVz",
+            "c2FnZUluZm9CBIC1GAESXgocZ2VuZXJhdGlvbkNhcGFiaWxpdHlPdmVycmlk",
+            "ZRgCIAEoCzIuLmdlbmVyYXRpb25tb2R1bGUuR2VuZXJhdGlvbkNhcGFiaWxp",
+            "dHlPdmVycmlkZUIIiLUYAZC1GAESQgoOZ2VuZXJhdGluZ1VuaXQYAyABKAsy",
+            "IC5nZW5lcmF0aW9ubW9kdWxlLkdlbmVyYXRpbmdVbml0QgiItRgBkLUYAToE",
+            "wPMYASJrChtHZW5lcmF0aW9uQ2FwYWJpbGl0eVJhdGluZ3MSTAoXc291cmNl",
+            "Q2FwYWJpbGl0eVJhdGluZ3MYASABKAsyJS5jb21tb25tb2R1bGUuU291cmNl",
+            "Q2FwYWJpbGl0eVJhdGluZ3NCBIC1GAEikAIKFEdlbmVyYXRpb25DYXBhYmls",
+            "aXR5EjoKDm5hbWVwbGF0ZVZhbHVlGAEgASgLMhwuY29tbW9ubW9kdWxlLk5h",
+            "bWVwbGF0ZVZhbHVlQgSAtRgBElwKG2dlbmVyYXRpb25DYXBhYmlsaXR5UmF0",
+            "aW5ncxgCIAEoCzItLmdlbmVyYXRpb25tb2R1bGUuR2VuZXJhdGlvbkNhcGFi",
+            "aWxpdHlSYXRpbmdzQgiItRgBkLUYARJeCiFnZW5lcmF0aW9uQ2FwYWJpbGl0",
+            "eUNvbmZpZ3VyYXRpb24YAyABKAsyMy5nZW5lcmF0aW9ubW9kdWxlLkdlbmVy",
+            "YXRpb25DYXBhYmlsaXR5Q29uZmlndXJhdGlvbiKBAgobR2VuZXJhdGlvbkNh",
+            "cGFiaWxpdHlQcm9maWxlEkgKFWNhcGFiaWxpdHlNZXNzYWdlSW5mbxgBIAEo",
+            "CzIjLmNvbW1vbm1vZHVsZS5DYXBhYmlsaXR5TWVzc2FnZUluZm9CBIC1GAES",
+            "TgoUZ2VuZXJhdGlvbkNhcGFiaWxpdHkYAiABKAsyJi5nZW5lcmF0aW9ubW9k",
+            "dWxlLkdlbmVyYXRpb25DYXBhYmlsaXR5QgiItRgBkLUYARJCCg5nZW5lcmF0",
+            "aW5nVW5pdBgDIAEoCzIgLmdlbmVyYXRpb25tb2R1bGUuR2VuZXJhdGluZ1Vu",
+            "aXRCCIi1GAGQtRgBOgTA8xgBIrYJCg9HZW5lcmF0aW9uUG9pbnQSMwoRYmxh",
+            "Y2tTdGFydEVuYWJsZWQYASABKAsyGC5jb21tb25tb2R1bGUuQ29udHJvbFNQ",
+            "QxI6ChhmcmVxdWVuY3lTZXRQb2ludEVuYWJsZWQYAiABKAsyGC5jb21tb25t",
+            "b2R1bGUuQ29udHJvbFNQQxIvCgpwY3RIekRyb29wGAMgASgLMhsuZ29vZ2xl",
+            "LnByb3RvYnVmLkZsb2F0VmFsdWUSLgoJcGN0VkRyb29wGAQgASgLMhsuZ29v",
+            "Z2xlLnByb3RvYnVmLkZsb2F0VmFsdWUSKQoJcmFtcFJhdGVzGAUgASgLMhYu",
+            "Y29tbW9ubW9kdWxlLlJhbXBSYXRlEjwKGnJlYWN0aXZlUHdyU2V0UG9pbnRF",
+            "bmFibGVkGAYgASgLMhguY29tbW9ubW9kdWxlLkNvbnRyb2xTUEMSOAoWcmVh",
+            "bFB3clNldFBvaW50RW5hYmxlZBgHIAEoCzIYLmNvbW1vbm1vZHVsZS5Db250",
+            "cm9sU1BDEicKBXJlc2V0GAggASgLMhguY29tbW9ubW9kdWxlLkNvbnRyb2xT",
+            "UEMSLwoFc3RhdGUYCSABKAsyIC5jb21tb25tb2R1bGUuT3B0aW9uYWxfU3Rh",
+            "dGVLaW5kEjAKDnN5bmNCYWNrVG9HcmlkGAogASgLMhguY29tbW9ubW9kdWxl",
+            "LkNvbnRyb2xTUEMSPwoddHJhbnNUb0lzbG5kT25HcmlkTG9zc0VuYWJsZWQY",
+            "CyABKAsyGC5jb21tb25tb2R1bGUuQ29udHJvbFNQQxI4ChZ2b2x0YWdlU2V0",
+            "UG9pbnRFbmFibGVkGAwgASgLMhguY29tbW9ubW9kdWxlLkNvbnRyb2xTUEMS",
+            "OwoJc3RhcnRUaW1lGA0gASgLMh4uY29tbW9ubW9kdWxlLkNvbnRyb2xUaW1l",
+            "c3RhbXBCCIi1GAGQtRgBEjwKFWVudGVyU2VydmljZU9wZXJhdGlvbhgOIAEo",
+            "CzIdLmNvbW1vbm1vZHVsZS5FbnRlclNlcnZpY2VBUEMSKgoMaHpXT3BlcmF0",
+            "aW9uGA8gASgLMhQuY29tbW9ubW9kdWxlLkh6V0FQQxIwCg9saW1pdFdPcGVy",
+            "YXRpb24YECABKAsyFy5jb21tb25tb2R1bGUuTGltaXRXQVBDEigKC3BGT3Bl",
+            "cmF0aW9uGBEgASgLMhMuY29tbW9ubW9kdWxlLlBGU1BDEjAKEXRtSHpUcmlw",
+            "T3BlcmF0aW9uGBIgASgLMhUuY29tbW9ubW9kdWxlLlRtSHpDU0cSNAoTdG1W",
+            "b2x0VHJpcE9wZXJhdGlvbhgTIAEoCzIXLmNvbW1vbm1vZHVsZS5UbVZvbHRD",
+            "U0cSKgoMdkFyT3BlcmF0aW9uGBQgASgLMhQuY29tbW9ubW9kdWxlLlZhclNQ",
+            "QxIyChB2b2x0VmFyT3BlcmF0aW9uGBUgASgLMhguY29tbW9ubW9kdWxlLlZv",
+            "bHRWYXJDU0cSLgoOdm9sdFdPcGVyYXRpb24YFiABKAsyFi5jb21tb25tb2R1",
+            "bGUuVm9sdFdDU0cSLAoNd1Zhck9wZXJhdGlvbhgXIAEoCzIVLmNvbW1vbm1v",
+            "ZHVsZS5XVmFyQ1NHIkwKDUdlbmVyYXRpb25DU0cSOwoGY3J2UHRzGAEgAygL",
+            "MiEuZ2VuZXJhdGlvbm1vZHVsZS5HZW5lcmF0aW9uUG9pbnRCCIi1GAGQtRgB",
+            "IlsKHUdlbmVyYXRpb25Db250cm9sU2NoZWR1bGVGU0NIEjoKB1ZhbERDU0cY",
+            "ASABKAsyHy5nZW5lcmF0aW9ubW9kdWxlLkdlbmVyYXRpb25DU0dCCIi1GAGQ",
+            "tRgBIqUBChVHZW5lcmF0aW9uQ29udHJvbEZTQ0MSNAoLY29udHJvbEZTQ0MY",
+            "ASABKAsyGS5jb21tb25tb2R1bGUuQ29udHJvbEZTQ0NCBIC1GAESVgodR2Vu",
+            "ZXJhdGlvbkNvbnRyb2xTY2hlZHVsZUZTQ0gYAiABKAsyLy5nZW5lcmF0aW9u",
+            "bW9kdWxlLkdlbmVyYXRpb25Db250cm9sU2NoZWR1bGVGU0NIIsEBChFHZW5l",
+            "cmF0aW9uQ29udHJvbBI2Cgxjb250cm9sVmFsdWUYASABKAsyGi5jb21tb25t",
+            "b2R1bGUuQ29udHJvbFZhbHVlQgSAtRgBEiwKBWNoZWNrGAIgASgLMh0uY29t",
+            "bW9ubW9kdWxlLkNoZWNrQ29uZGl0aW9ucxJGChVnZW5lcmF0aW9uQ29udHJv",
+            "bEZTQ0MYAyABKAsyJy5nZW5lcmF0aW9ubW9kdWxlLkdlbmVyYXRpb25Db250",
+            "cm9sRlNDQyLyAQoYR2VuZXJhdGlvbkNvbnRyb2xQcm9maWxlEkIKEmNvbnRy",
+            "b2xNZXNzYWdlSW5mbxgBIAEoCzIgLmNvbW1vbm1vZHVsZS5Db250cm9sTWVz",
+            "c2FnZUluZm9CBIC1GAESQgoOZ2VuZXJhdGluZ1VuaXQYAiABKAsyIC5nZW5l",
+            "cmF0aW9ubW9kdWxlLkdlbmVyYXRpbmdVbml0QgiItRgBkLUYARJIChFnZW5l",
+            "cmF0aW9uQ29udHJvbBgDIAEoCzIjLmdlbmVyYXRpb25tb2R1bGUuR2VuZXJh",
+            "dGlvbkNvbnRyb2xCCIi1GAGQtRgBOgTA8xgBInEKDkRyb29wUGFyYW1ldGVy",
+            "EioKBXNsb3BlGAEgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUS",
+            "MwoOdW5sb2FkZWRPZmZzZXQYAiABKAsyGy5nb29nbGUucHJvdG9idWYuRmxv",
+            "YXRWYWx1ZSKIAgoQUmVhbFBvd2VyQ29udHJvbBI3Cg1kcm9vcFNldHBvaW50",
+            "GAEgASgLMiAuZ2VuZXJhdGlvbm1vZHVsZS5Ecm9vcFBhcmFtZXRlchI4ChNp",
+            "c29jaHJvbm91c1NldHBvaW50GAIgASgLMhsuZ29vZ2xlLnByb3RvYnVmLkZs",
+            "b2F0VmFsdWUSSQoUcmVhbFBvd2VyQ29udHJvbE1vZGUYAyABKAsyKy5jb21t",
+            "b25tb2R1bGUuT3B0aW9uYWxfUmVhbFBvd2VyQ29udHJvbEtpbmQSNgoRcmVh",
+            "bFBvd2VyU2V0cG9pbnQYBCABKAsyGy5nb29nbGUucHJvdG9idWYuRmxvYXRW",
+            "YWx1ZSLOAgoUUmVhY3RpdmVQb3dlckNvbnRyb2wSNwoNZHJvb3BTZXRwb2lu",
+            "dBgBIAEoCzIgLmdlbmVyYXRpb25tb2R1bGUuRHJvb3BQYXJhbWV0ZXISOAoT",
+            "cG93ZXJGYWN0b3JTZXRwb2ludBgCIAEoCzIbLmdvb2dsZS5wcm90b2J1Zi5G",
+            "bG9hdFZhbHVlElEKGHJlYWN0aXZlUG93ZXJDb250cm9sTW9kZRgDIAEoCzIv",
+            "LmNvbW1vbm1vZHVsZS5PcHRpb25hbF9SZWFjdGl2ZVBvd2VyQ29udHJvbEtp",
+            "bmQSOgoVcmVhY3RpdmVQb3dlclNldHBvaW50GAQgASgLMhsuZ29vZ2xlLnBy",
+            "b3RvYnVmLkZsb2F0VmFsdWUSNAoPdm9sdGFnZVNldHBvaW50GAUgASgLMhsu",
+            "Z29vZ2xlLnByb3RvYnVmLkZsb2F0VmFsdWUihQIKGUdlbmVyYXRpb25EaXNj",
+            "cmV0ZUNvbnRyb2wSNgoMY29udHJvbFZhbHVlGAEgASgLMhouY29tbW9ubW9k",
+            "dWxlLkNvbnRyb2xWYWx1ZUIEgLUYARIsCgVjaGVjaxgCIAEoCzIdLmNvbW1v",
+            "bm1vZHVsZS5DaGVja0NvbmRpdGlvbnMSRAoUUmVhY3RpdmVQb3dlckNvbnRy",
+            "b2wYAyABKAsyJi5nZW5lcmF0aW9ubW9kdWxlLlJlYWN0aXZlUG93ZXJDb250",
+            "cm9sEjwKEFJlYWxQb3dlckNvbnRyb2wYBCABKAsyIi5nZW5lcmF0aW9ubW9k",
+            "dWxlLlJlYWxQb3dlckNvbnRyb2wiigIKIEdlbmVyYXRpb25EaXNjcmV0ZUNv",
+            "bnRyb2xQcm9maWxlEkIKEmNvbnRyb2xNZXNzYWdlSW5mbxgBIAEoCzIgLmNv",
+            "bW1vbm1vZHVsZS5Db250cm9sTWVzc2FnZUluZm9CBIC1GAESQgoOZ2VuZXJh",
+            "dGluZ1VuaXQYAiABKAsyIC5nZW5lcmF0aW9ubW9kdWxlLkdlbmVyYXRpbmdV",
+            "bml0QgiItRgBkLUYARJYChlnZW5lcmF0aW9uRGlzY3JldGVDb250cm9sGAMg",
+            "ASgLMisuZ2VuZXJhdGlvbm1vZHVsZS5HZW5lcmF0aW9uRGlzY3JldGVDb250",
+            "cm9sQgiItRgBkLUYAToEwPMYASKDAgoRR2VuZXJhdGlvblJlYWRpbmcSYgoi",
+            "Y29uZHVjdGluZ0VxdWlwbWVudFRlcm1pbmFsUmVhZGluZxgBIAEoCzIwLmNv",
+            "bW1vbm1vZHVsZS5Db25kdWN0aW5nRXF1aXBtZW50VGVybWluYWxSZWFkaW5n",
+            "QgSAtRgBEioKCXBoYXNlTU1UThgCIAEoCzIXLmNvbW1vbm1vZHVsZS5QaGFz",
+            "ZU1NVE4SLgoLcmVhZGluZ01NVFIYAyABKAsyGS5jb21tb25tb2R1bGUuUmVh",
+            "ZGluZ01NVFISLgoLcmVhZGluZ01NWFUYBCABKAsyGS5jb21tb25tb2R1bGUu",
+            "UmVhZGluZ01NWFUi8gEKGEdlbmVyYXRpb25SZWFkaW5nUHJvZmlsZRJCChJy",
+            "ZWFkaW5nTWVzc2FnZUluZm8YASABKAsyIC5jb21tb25tb2R1bGUuUmVhZGlu",
+            "Z01lc3NhZ2VJbmZvQgSAtRgBEkIKDmdlbmVyYXRpbmdVbml0GAIgASgLMiAu",
+            "Z2VuZXJhdGlvbm1vZHVsZS5HZW5lcmF0aW5nVW5pdEIIiLUYAZC1GAESSAoR",
+            "Z2VuZXJhdGlvblJlYWRpbmcYAyABKAsyIy5nZW5lcmF0aW9ubW9kdWxlLkdl",
+            "bmVyYXRpb25SZWFkaW5nQgiItRgBkLUYAToEwPMYASLPCAoVR2VuZXJhdGlv",
+            "blBvaW50U3RhdHVzEjIKEWJsYWNrU3RhcnRFbmFibGVkGAEgASgLMhcuY29t",
+            "bW9ubW9kdWxlLlN0YXR1c1NQUxI5ChhmcmVxdWVuY3lTZXRQb2ludEVuYWJs",
+            "ZWQYAiABKAsyFy5jb21tb25tb2R1bGUuU3RhdHVzU1BTEi8KCnBjdEh6RHJv",
+            "b3AYAyABKAsyGy5nb29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZRIuCglwY3RW",
+            "RHJvb3AYBCABKAsyGy5nb29nbGUucHJvdG9idWYuRmxvYXRWYWx1ZRIpCgly",
+            "YW1wUmF0ZXMYBSABKAsyFi5jb21tb25tb2R1bGUuUmFtcFJhdGUSOwoacmVh",
+            "Y3RpdmVQd3JTZXRQb2ludEVuYWJsZWQYBiABKAsyFy5jb21tb25tb2R1bGUu",
+            "U3RhdHVzU1BTEjcKFnJlYWxQd3JTZXRQb2ludEVuYWJsZWQYByABKAsyFy5j",
+            "b21tb25tb2R1bGUuU3RhdHVzU1BTEi8KBXN0YXRlGAggASgLMiAuY29tbW9u",
+            "bW9kdWxlLk9wdGlvbmFsX1N0YXRlS2luZBIvCg5zeW5jQmFja1RvR3JpZBgJ",
+            "IAEoCzIXLmNvbW1vbm1vZHVsZS5TdGF0dXNTUFMSPgoddHJhbnNUb0lzbG5k",
+            "T25HcmlkTG9zc0VuYWJsZWQYCiABKAsyFy5jb21tb25tb2R1bGUuU3RhdHVz",
+            "U1BTEjcKFnZvbHRhZ2VTZXRQb2ludEVuYWJsZWQYCyABKAsyFy5jb21tb25t",
+            "b2R1bGUuU3RhdHVzU1BTEjwKFWVudGVyU2VydmljZU9wZXJhdGlvbhgMIAEo",
+            "CzIdLmNvbW1vbm1vZHVsZS5FbnRlclNlcnZpY2VBUEMSKgoMaHpXT3BlcmF0",
+            "aW9uGA0gASgLMhQuY29tbW9ubW9kdWxlLkh6V0FQQxIwCg9saW1pdFdPcGVy",
+            "YXRpb24YDiABKAsyFy5jb21tb25tb2R1bGUuTGltaXRXQVBDEigKC3BGT3Bl",
+            "cmF0aW9uGA8gASgLMhMuY29tbW9ubW9kdWxlLlBGU1BDEjAKEXRtSHpUcmlw",
+            "T3BlcmF0aW9uGBAgASgLMhUuY29tbW9ubW9kdWxlLlRtSHpDU0cSNAoTdG1W",
+            "b2x0VHJpcE9wZXJhdGlvbhgRIAEoCzIXLmNvbW1vbm1vZHVsZS5UbVZvbHRD",
+            "U0cSKgoMdkFyT3BlcmF0aW9uGBIgASgLMhQuY29tbW9ubW9kdWxlLlZhclNQ",
+            "QxIyChB2b2x0VmFyT3BlcmF0aW9uGBMgASgLMhguY29tbW9ubW9kdWxlLlZv",
+            "bHRWYXJDU0cSLgoOdm9sdFdPcGVyYXRpb24YFCABKAsyFi5jb21tb25tb2R1",
+            "bGUuVm9sdFdDU0cSLAoNd1Zhck9wZXJhdGlvbhgVIAEoCzIVLmNvbW1vbm1v",
+            "ZHVsZS5XVmFyQ1NHIt0EChxHZW5lcmF0aW9uRXZlbnRBbmRTdGF0dXNaR0VO",
+            "ElYKHGxvZ2ljYWxOb2RlRm9yRXZlbnRBbmRTdGF0dXMYASABKAsyKi5jb21t",
+            "b25tb2R1bGUuTG9naWNhbE5vZGVGb3JFdmVudEFuZFN0YXR1c0IEgLUYARIp",
+            "CghBdXhQd3JTdBgCIAEoCzIXLmNvbW1vbm1vZHVsZS5TdGF0dXNTUFMSNgoL",
+            "RHluYW1pY1Rlc3QYAyABKAsyIS5jb21tb25tb2R1bGUuRU5TX0R5bmFtaWNU",
+            "ZXN0S2luZBIoCgdFbWdTdG9wGAQgASgLMhcuY29tbW9ubW9kdWxlLlN0YXR1",
+            "c1NQUxIoCgdHblN5blN0GAUgASgLMhcuY29tbW9ubW9kdWxlLlN0YXR1c1NQ",
+            "UxI8CgtQb2ludFN0YXR1cxgGIAEoCzInLmdlbmVyYXRpb25tb2R1bGUuR2Vu",
+            "ZXJhdGlvblBvaW50U3RhdHVzEi0KBEFscm0YByABKAsyHy5jb21tb25tb2R1",
+            "bGUuT3B0aW9uYWxfQWxybUtpbmQSSwoTR3JpZENvbm5lY3Rpb25TdGF0ZRgI",
+            "IAEoCzIuLmNvbW1vbm1vZHVsZS5PcHRpb25hbF9HcmlkQ29ubmVjdGlvblN0",
+            "YXRlS2luZBIxCgtNYW5BbHJtSW5mbxgJIAEoCzIcLmdvb2dsZS5wcm90b2J1",
+            "Zi5TdHJpbmdWYWx1ZRJBCg5PcGVyYXRpbmdTdGF0ZRgKIAEoCzIpLmNvbW1v",
+            "bm1vZHVsZS5PcHRpb25hbF9PcGVyYXRpbmdTdGF0ZUtpbmQicQoTR2VuZXJh",
+            "dGlvbkV2ZW50WkdFThJaChxnZW5lcmF0aW9uRXZlbnRBbmRTdGF0dXNaR0VO",
+            "GAEgASgLMi4uZ2VuZXJhdGlvbm1vZHVsZS5HZW5lcmF0aW9uRXZlbnRBbmRT",
+            "dGF0dXNaR0VOQgSAtRgBIokBCg9HZW5lcmF0aW9uRXZlbnQSMgoKZXZlbnRW",
+            "YWx1ZRgBIAEoCzIYLmNvbW1vbm1vZHVsZS5FdmVudFZhbHVlQgSAtRgBEkIK",
+            "E2dlbmVyYXRpb25FdmVudFpHRU4YAiABKAsyJS5nZW5lcmF0aW9ubW9kdWxl",
+            "LkdlbmVyYXRpb25FdmVudFpHRU4i6AEKFkdlbmVyYXRpb25FdmVudFByb2Zp",
+            "bGUSPgoQZXZlbnRNZXNzYWdlSW5mbxgBIAEoCzIeLmNvbW1vbm1vZHVsZS5F",
+            "dmVudE1lc3NhZ2VJbmZvQgSAtRgBEkIKDmdlbmVyYXRpbmdVbml0GAIgASgL",
+            "MiAuZ2VuZXJhdGlvbm1vZHVsZS5HZW5lcmF0aW5nVW5pdEIIiLUYAZC1GAES",
+            "RAoPZ2VuZXJhdGlvbkV2ZW50GAMgASgLMiEuZ2VuZXJhdGlvbm1vZHVsZS5H",
+            "ZW5lcmF0aW9uRXZlbnRCCIi1GAGQtRgBOgTA8xgBInIKFEdlbmVyYXRpb25T",
+            "dGF0dXNaR0VOEloKHGdlbmVyYXRpb25FdmVudEFuZFN0YXR1c1pHRU4YASAB",
+            "KAsyLi5nZW5lcmF0aW9ubW9kdWxlLkdlbmVyYXRpb25FdmVudEFuZFN0YXR1",
+            "c1pHRU5CBIC1GAEijgEKEEdlbmVyYXRpb25TdGF0dXMSNAoLc3RhdHVzVmFs",
+            "dWUYASABKAsyGS5jb21tb25tb2R1bGUuU3RhdHVzVmFsdWVCBIC1GAESRAoU",
+            "Z2VuZXJhdGlvblN0YXR1c1pHRU4YAiABKAsyJi5nZW5lcmF0aW9ubW9kdWxl",
+            "LkdlbmVyYXRpb25TdGF0dXNaR0VOIu0BChdHZW5lcmF0aW9uU3RhdHVzUHJv",
+            "ZmlsZRJAChFzdGF0dXNNZXNzYWdlSW5mbxgBIAEoCzIfLmNvbW1vbm1vZHVs",
+            "ZS5TdGF0dXNNZXNzYWdlSW5mb0IEgLUYARJCCg5nZW5lcmF0aW5nVW5pdBgC",
+            "IAEoCzIgLmdlbmVyYXRpb25tb2R1bGUuR2VuZXJhdGluZ1VuaXRCCIi1GAGQ",
+            "tRgBEkYKEGdlbmVyYXRpb25TdGF0dXMYAyABKAsyIi5nZW5lcmF0aW9ubW9k",
+            "dWxlLkdlbmVyYXRpb25TdGF0dXNCCIi1GAGQtRgBOgTA8xgBQpABChhvcGVu",
+            "Zm1iLmdlbmVyYXRpb25tb2R1bGVQAVpXZ2l0bGFiLmNvbS9vcGVuZm1iL3Bz",
+            "bS9vcHMvcHJvdG9idWYvZ28tb3BlbmZtYi1vcHMtcHJvdG9idWYvdjIvb3Bl",
+            "bmZtYi9nZW5lcmF0aW9ubW9kdWxlqgIYb3BlbmZtYi5nZW5lcmF0aW9ubW9k",
+            "dWxlYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::openfmb.UmlReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::openfmb.commonmodule.CommonmoduleReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.generationmodule.GenerationPoint), global::openfmb.generationmodule.GenerationPoint.Parser, new[]{ "BlackStartEnabled", "FrequencySetPointEnabled", "PctHzDroop", "PctVDroop", "RampRates", "ReactivePwrSetPointEnabled", "RealPwrSetPointEnabled", "Reset", "State", "SyncBackToGrid", "TransToIslndOnGridLossEnabled", "VoltageSetPointEnabled", "StartTime" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.generationmodule.GeneratingUnit), global::openfmb.generationmodule.GeneratingUnit.Parser, new[]{ "ConductingEquipment", "MaxOperatingP" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.generationmodule.GenerationCapabilityConfiguration), global::openfmb.generationmodule.GenerationCapabilityConfiguration.Parser, new[]{ "SourceCapabilityConfiguration" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.generationmodule.GenerationCapabilityOverride), global::openfmb.generationmodule.GenerationCapabilityOverride.Parser, new[]{ "IdentifiedObject", "GenerationCapabilityConfiguration" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.generationmodule.GenerationCapabilityOverrideProfile), global::openfmb.generationmodule.GenerationCapabilityOverrideProfile.Parser, new[]{ "CapabilityOverrideMessageInfo", "GenerationCapabilityOverride", "GeneratingUnit" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.generationmodule.GenerationCapabilityRatings), global::openfmb.generationmodule.GenerationCapabilityRatings.Parser, new[]{ "SourceCapabilityRatings" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.generationmodule.GenerationCapability), global::openfmb.generationmodule.GenerationCapability.Parser, new[]{ "NameplateValue", "GenerationCapabilityRatings", "GenerationCapabilityConfiguration" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.generationmodule.GenerationCapabilityProfile), global::openfmb.generationmodule.GenerationCapabilityProfile.Parser, new[]{ "CapabilityMessageInfo", "GenerationCapability", "GeneratingUnit" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.generationmodule.GenerationPoint), global::openfmb.generationmodule.GenerationPoint.Parser, new[]{ "BlackStartEnabled", "FrequencySetPointEnabled", "PctHzDroop", "PctVDroop", "RampRates", "ReactivePwrSetPointEnabled", "RealPwrSetPointEnabled", "Reset", "State", "SyncBackToGrid", "TransToIslndOnGridLossEnabled", "VoltageSetPointEnabled", "StartTime", "EnterServiceOperation", "HzWOperation", "LimitWOperation", "PFOperation", "TmHzTripOperation", "TmVoltTripOperation", "VArOperation", "VoltVarOperation", "VoltWOperation", "WVarOperation" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.generationmodule.GenerationCSG), global::openfmb.generationmodule.GenerationCSG.Parser, new[]{ "CrvPts" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.generationmodule.GenerationControlScheduleFSCH), global::openfmb.generationmodule.GenerationControlScheduleFSCH.Parser, new[]{ "ValDCSG" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.generationmodule.GenerationControlFSCC), global::openfmb.generationmodule.GenerationControlFSCC.Parser, new[]{ "ControlFSCC", "GenerationControlScheduleFSCH" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.generationmodule.GenerationControl), global::openfmb.generationmodule.GenerationControl.Parser, new[]{ "ControlValue", "Check", "GenerationControlFSCC" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.generationmodule.GeneratingUnit), global::openfmb.generationmodule.GeneratingUnit.Parser, new[]{ "ConductingEquipment", "MaxOperatingP" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.generationmodule.GenerationControlProfile), global::openfmb.generationmodule.GenerationControlProfile.Parser, new[]{ "ControlMessageInfo", "GeneratingUnit", "GenerationControl" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.generationmodule.DroopParameter), global::openfmb.generationmodule.DroopParameter.Parser, new[]{ "Slope", "UnloadedOffset" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.generationmodule.RealPowerControl), global::openfmb.generationmodule.RealPowerControl.Parser, new[]{ "DroopSetpoint", "IsochronousSetpoint", "RealPowerControlMode", "RealPowerSetpoint" }, null, null, null, null),
@@ -167,8 +229,8 @@ namespace openfmb.generationmodule {
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.generationmodule.GenerationDiscreteControlProfile), global::openfmb.generationmodule.GenerationDiscreteControlProfile.Parser, new[]{ "ControlMessageInfo", "GeneratingUnit", "GenerationDiscreteControl" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.generationmodule.GenerationReading), global::openfmb.generationmodule.GenerationReading.Parser, new[]{ "ConductingEquipmentTerminalReading", "PhaseMMTN", "ReadingMMTR", "ReadingMMXU" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.generationmodule.GenerationReadingProfile), global::openfmb.generationmodule.GenerationReadingProfile.Parser, new[]{ "ReadingMessageInfo", "GeneratingUnit", "GenerationReading" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.generationmodule.GenerationPointStatus), global::openfmb.generationmodule.GenerationPointStatus.Parser, new[]{ "BlackStartEnabled", "FrequencySetPointEnabled", "PctHzDroop", "PctVDroop", "RampRates", "ReactivePwrSetPointEnabled", "RealPwrSetPointEnabled", "State", "SyncBackToGrid", "TransToIslndOnGridLossEnabled", "VoltageSetPointEnabled" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.generationmodule.GenerationEventAndStatusZGEN), global::openfmb.generationmodule.GenerationEventAndStatusZGEN.Parser, new[]{ "LogicalNodeForEventAndStatus", "AuxPwrSt", "DynamicTest", "EmgStop", "GnSynSt", "PointStatus" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.generationmodule.GenerationPointStatus), global::openfmb.generationmodule.GenerationPointStatus.Parser, new[]{ "BlackStartEnabled", "FrequencySetPointEnabled", "PctHzDroop", "PctVDroop", "RampRates", "ReactivePwrSetPointEnabled", "RealPwrSetPointEnabled", "State", "SyncBackToGrid", "TransToIslndOnGridLossEnabled", "VoltageSetPointEnabled", "EnterServiceOperation", "HzWOperation", "LimitWOperation", "PFOperation", "TmHzTripOperation", "TmVoltTripOperation", "VArOperation", "VoltVarOperation", "VoltWOperation", "WVarOperation" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.generationmodule.GenerationEventAndStatusZGEN), global::openfmb.generationmodule.GenerationEventAndStatusZGEN.Parser, new[]{ "LogicalNodeForEventAndStatus", "AuxPwrSt", "DynamicTest", "EmgStop", "GnSynSt", "PointStatus", "Alrm", "GridConnectionState", "ManAlrmInfo", "OperatingState" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.generationmodule.GenerationEventZGEN), global::openfmb.generationmodule.GenerationEventZGEN.Parser, new[]{ "GenerationEventAndStatusZGEN" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.generationmodule.GenerationEvent), global::openfmb.generationmodule.GenerationEvent.Parser, new[]{ "EventValue", "GenerationEventZGEN" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::openfmb.generationmodule.GenerationEventProfile), global::openfmb.generationmodule.GenerationEventProfile.Parser, new[]{ "EventMessageInfo", "GeneratingUnit", "GenerationEvent" }, null, null, null, null),
@@ -182,6 +244,1829 @@ namespace openfmb.generationmodule {
   }
   #region Messages
   /// <summary>
+  /// A single or set of synchronous machines for converting mechanical power into alternating-current
+  /// power. For example, individual machines within a set may be defined for scheduling purposes while a
+  /// single control signal is derived for the set. In this case there would be a GeneratingUnit for each
+  /// member of the set and an additional GeneratingUnit corresponding to the set.
+  /// </summary>
+  public sealed partial class GeneratingUnit : pb::IMessage<GeneratingUnit>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<GeneratingUnit> _parser = new pb::MessageParser<GeneratingUnit>(() => new GeneratingUnit());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<GeneratingUnit> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[0]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GeneratingUnit() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GeneratingUnit(GeneratingUnit other) : this() {
+      conductingEquipment_ = other.conductingEquipment_ != null ? other.conductingEquipment_.Clone() : null;
+      maxOperatingP_ = other.maxOperatingP_ != null ? other.maxOperatingP_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GeneratingUnit Clone() {
+      return new GeneratingUnit(this);
+    }
+
+    /// <summary>Field number for the "conductingEquipment" field.</summary>
+    public const int ConductingEquipmentFieldNumber = 1;
+    private global::openfmb.commonmodule.ConductingEquipment conductingEquipment_;
+    /// <summary>
+    /// UML inherited base object
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.ConductingEquipment ConductingEquipment {
+      get { return conductingEquipment_; }
+      set {
+        conductingEquipment_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "maxOperatingP" field.</summary>
+    public const int MaxOperatingPFieldNumber = 2;
+    private global::openfmb.commonmodule.ActivePower maxOperatingP_;
+    /// <summary>
+    /// This is the maximum operating active power limit the dispatcher can enter for this unit.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.ActivePower MaxOperatingP {
+      get { return maxOperatingP_; }
+      set {
+        maxOperatingP_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as GeneratingUnit);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GeneratingUnit other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(ConductingEquipment, other.ConductingEquipment)) return false;
+      if (!object.Equals(MaxOperatingP, other.MaxOperatingP)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (conductingEquipment_ != null) hash ^= ConductingEquipment.GetHashCode();
+      if (maxOperatingP_ != null) hash ^= MaxOperatingP.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (conductingEquipment_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(ConductingEquipment);
+      }
+      if (maxOperatingP_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(MaxOperatingP);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (conductingEquipment_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(ConductingEquipment);
+      }
+      if (maxOperatingP_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(MaxOperatingP);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (conductingEquipment_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ConductingEquipment);
+      }
+      if (maxOperatingP_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(MaxOperatingP);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(GeneratingUnit other) {
+      if (other == null) {
+        return;
+      }
+      if (other.conductingEquipment_ != null) {
+        if (conductingEquipment_ == null) {
+          ConductingEquipment = new global::openfmb.commonmodule.ConductingEquipment();
+        }
+        ConductingEquipment.MergeFrom(other.ConductingEquipment);
+      }
+      if (other.maxOperatingP_ != null) {
+        if (maxOperatingP_ == null) {
+          MaxOperatingP = new global::openfmb.commonmodule.ActivePower();
+        }
+        MaxOperatingP.MergeFrom(other.MaxOperatingP);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (conductingEquipment_ == null) {
+              ConductingEquipment = new global::openfmb.commonmodule.ConductingEquipment();
+            }
+            input.ReadMessage(ConductingEquipment);
+            break;
+          }
+          case 18: {
+            if (maxOperatingP_ == null) {
+              MaxOperatingP = new global::openfmb.commonmodule.ActivePower();
+            }
+            input.ReadMessage(MaxOperatingP);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (conductingEquipment_ == null) {
+              ConductingEquipment = new global::openfmb.commonmodule.ConductingEquipment();
+            }
+            input.ReadMessage(ConductingEquipment);
+            break;
+          }
+          case 18: {
+            if (maxOperatingP_ == null) {
+              MaxOperatingP = new global::openfmb.commonmodule.ActivePower();
+            }
+            input.ReadMessage(MaxOperatingP);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// Configured setting
+  /// </summary>
+  public sealed partial class GenerationCapabilityConfiguration : pb::IMessage<GenerationCapabilityConfiguration>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<GenerationCapabilityConfiguration> _parser = new pb::MessageParser<GenerationCapabilityConfiguration>(() => new GenerationCapabilityConfiguration());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<GenerationCapabilityConfiguration> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GenerationCapabilityConfiguration() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GenerationCapabilityConfiguration(GenerationCapabilityConfiguration other) : this() {
+      sourceCapabilityConfiguration_ = other.sourceCapabilityConfiguration_ != null ? other.sourceCapabilityConfiguration_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GenerationCapabilityConfiguration Clone() {
+      return new GenerationCapabilityConfiguration(this);
+    }
+
+    /// <summary>Field number for the "sourceCapabilityConfiguration" field.</summary>
+    public const int SourceCapabilityConfigurationFieldNumber = 1;
+    private global::openfmb.commonmodule.SourceCapabilityConfiguration sourceCapabilityConfiguration_;
+    /// <summary>
+    /// UML inherited base object
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.SourceCapabilityConfiguration SourceCapabilityConfiguration {
+      get { return sourceCapabilityConfiguration_; }
+      set {
+        sourceCapabilityConfiguration_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as GenerationCapabilityConfiguration);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GenerationCapabilityConfiguration other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(SourceCapabilityConfiguration, other.SourceCapabilityConfiguration)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (sourceCapabilityConfiguration_ != null) hash ^= SourceCapabilityConfiguration.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (sourceCapabilityConfiguration_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(SourceCapabilityConfiguration);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (sourceCapabilityConfiguration_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(SourceCapabilityConfiguration);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (sourceCapabilityConfiguration_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SourceCapabilityConfiguration);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(GenerationCapabilityConfiguration other) {
+      if (other == null) {
+        return;
+      }
+      if (other.sourceCapabilityConfiguration_ != null) {
+        if (sourceCapabilityConfiguration_ == null) {
+          SourceCapabilityConfiguration = new global::openfmb.commonmodule.SourceCapabilityConfiguration();
+        }
+        SourceCapabilityConfiguration.MergeFrom(other.SourceCapabilityConfiguration);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (sourceCapabilityConfiguration_ == null) {
+              SourceCapabilityConfiguration = new global::openfmb.commonmodule.SourceCapabilityConfiguration();
+            }
+            input.ReadMessage(SourceCapabilityConfiguration);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (sourceCapabilityConfiguration_ == null) {
+              SourceCapabilityConfiguration = new global::openfmb.commonmodule.SourceCapabilityConfiguration();
+            }
+            input.ReadMessage(SourceCapabilityConfiguration);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// Generation capability
+  /// </summary>
+  public sealed partial class GenerationCapabilityOverride : pb::IMessage<GenerationCapabilityOverride>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<GenerationCapabilityOverride> _parser = new pb::MessageParser<GenerationCapabilityOverride>(() => new GenerationCapabilityOverride());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<GenerationCapabilityOverride> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GenerationCapabilityOverride() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GenerationCapabilityOverride(GenerationCapabilityOverride other) : this() {
+      identifiedObject_ = other.identifiedObject_ != null ? other.identifiedObject_.Clone() : null;
+      generationCapabilityConfiguration_ = other.generationCapabilityConfiguration_ != null ? other.generationCapabilityConfiguration_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GenerationCapabilityOverride Clone() {
+      return new GenerationCapabilityOverride(this);
+    }
+
+    /// <summary>Field number for the "identifiedObject" field.</summary>
+    public const int IdentifiedObjectFieldNumber = 1;
+    private global::openfmb.commonmodule.IdentifiedObject identifiedObject_;
+    /// <summary>
+    /// UML inherited base object
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.IdentifiedObject IdentifiedObject {
+      get { return identifiedObject_; }
+      set {
+        identifiedObject_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "generationCapabilityConfiguration" field.</summary>
+    public const int GenerationCapabilityConfigurationFieldNumber = 2;
+    private global::openfmb.generationmodule.GenerationCapabilityConfiguration generationCapabilityConfiguration_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.generationmodule.GenerationCapabilityConfiguration GenerationCapabilityConfiguration {
+      get { return generationCapabilityConfiguration_; }
+      set {
+        generationCapabilityConfiguration_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as GenerationCapabilityOverride);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GenerationCapabilityOverride other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(IdentifiedObject, other.IdentifiedObject)) return false;
+      if (!object.Equals(GenerationCapabilityConfiguration, other.GenerationCapabilityConfiguration)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (identifiedObject_ != null) hash ^= IdentifiedObject.GetHashCode();
+      if (generationCapabilityConfiguration_ != null) hash ^= GenerationCapabilityConfiguration.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (identifiedObject_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(IdentifiedObject);
+      }
+      if (generationCapabilityConfiguration_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(GenerationCapabilityConfiguration);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (identifiedObject_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(IdentifiedObject);
+      }
+      if (generationCapabilityConfiguration_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(GenerationCapabilityConfiguration);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (identifiedObject_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(IdentifiedObject);
+      }
+      if (generationCapabilityConfiguration_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(GenerationCapabilityConfiguration);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(GenerationCapabilityOverride other) {
+      if (other == null) {
+        return;
+      }
+      if (other.identifiedObject_ != null) {
+        if (identifiedObject_ == null) {
+          IdentifiedObject = new global::openfmb.commonmodule.IdentifiedObject();
+        }
+        IdentifiedObject.MergeFrom(other.IdentifiedObject);
+      }
+      if (other.generationCapabilityConfiguration_ != null) {
+        if (generationCapabilityConfiguration_ == null) {
+          GenerationCapabilityConfiguration = new global::openfmb.generationmodule.GenerationCapabilityConfiguration();
+        }
+        GenerationCapabilityConfiguration.MergeFrom(other.GenerationCapabilityConfiguration);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (identifiedObject_ == null) {
+              IdentifiedObject = new global::openfmb.commonmodule.IdentifiedObject();
+            }
+            input.ReadMessage(IdentifiedObject);
+            break;
+          }
+          case 18: {
+            if (generationCapabilityConfiguration_ == null) {
+              GenerationCapabilityConfiguration = new global::openfmb.generationmodule.GenerationCapabilityConfiguration();
+            }
+            input.ReadMessage(GenerationCapabilityConfiguration);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (identifiedObject_ == null) {
+              IdentifiedObject = new global::openfmb.commonmodule.IdentifiedObject();
+            }
+            input.ReadMessage(IdentifiedObject);
+            break;
+          }
+          case 18: {
+            if (generationCapabilityConfiguration_ == null) {
+              GenerationCapabilityConfiguration = new global::openfmb.generationmodule.GenerationCapabilityConfiguration();
+            }
+            input.ReadMessage(GenerationCapabilityConfiguration);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// Generation capability profile
+  /// </summary>
+  public sealed partial class GenerationCapabilityOverrideProfile : pb::IMessage<GenerationCapabilityOverrideProfile>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<GenerationCapabilityOverrideProfile> _parser = new pb::MessageParser<GenerationCapabilityOverrideProfile>(() => new GenerationCapabilityOverrideProfile());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<GenerationCapabilityOverrideProfile> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GenerationCapabilityOverrideProfile() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GenerationCapabilityOverrideProfile(GenerationCapabilityOverrideProfile other) : this() {
+      capabilityOverrideMessageInfo_ = other.capabilityOverrideMessageInfo_ != null ? other.capabilityOverrideMessageInfo_.Clone() : null;
+      generationCapabilityOverride_ = other.generationCapabilityOverride_ != null ? other.generationCapabilityOverride_.Clone() : null;
+      generatingUnit_ = other.generatingUnit_ != null ? other.generatingUnit_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GenerationCapabilityOverrideProfile Clone() {
+      return new GenerationCapabilityOverrideProfile(this);
+    }
+
+    /// <summary>Field number for the "capabilityOverrideMessageInfo" field.</summary>
+    public const int CapabilityOverrideMessageInfoFieldNumber = 1;
+    private global::openfmb.commonmodule.CapabilityOverrideMessageInfo capabilityOverrideMessageInfo_;
+    /// <summary>
+    /// UML inherited base object
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.CapabilityOverrideMessageInfo CapabilityOverrideMessageInfo {
+      get { return capabilityOverrideMessageInfo_; }
+      set {
+        capabilityOverrideMessageInfo_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "generationCapabilityOverride" field.</summary>
+    public const int GenerationCapabilityOverrideFieldNumber = 2;
+    private global::openfmb.generationmodule.GenerationCapabilityOverride generationCapabilityOverride_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.generationmodule.GenerationCapabilityOverride GenerationCapabilityOverride {
+      get { return generationCapabilityOverride_; }
+      set {
+        generationCapabilityOverride_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "generatingUnit" field.</summary>
+    public const int GeneratingUnitFieldNumber = 3;
+    private global::openfmb.generationmodule.GeneratingUnit generatingUnit_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.generationmodule.GeneratingUnit GeneratingUnit {
+      get { return generatingUnit_; }
+      set {
+        generatingUnit_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as GenerationCapabilityOverrideProfile);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GenerationCapabilityOverrideProfile other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(CapabilityOverrideMessageInfo, other.CapabilityOverrideMessageInfo)) return false;
+      if (!object.Equals(GenerationCapabilityOverride, other.GenerationCapabilityOverride)) return false;
+      if (!object.Equals(GeneratingUnit, other.GeneratingUnit)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (capabilityOverrideMessageInfo_ != null) hash ^= CapabilityOverrideMessageInfo.GetHashCode();
+      if (generationCapabilityOverride_ != null) hash ^= GenerationCapabilityOverride.GetHashCode();
+      if (generatingUnit_ != null) hash ^= GeneratingUnit.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (capabilityOverrideMessageInfo_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(CapabilityOverrideMessageInfo);
+      }
+      if (generationCapabilityOverride_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(GenerationCapabilityOverride);
+      }
+      if (generatingUnit_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(GeneratingUnit);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (capabilityOverrideMessageInfo_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(CapabilityOverrideMessageInfo);
+      }
+      if (generationCapabilityOverride_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(GenerationCapabilityOverride);
+      }
+      if (generatingUnit_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(GeneratingUnit);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (capabilityOverrideMessageInfo_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CapabilityOverrideMessageInfo);
+      }
+      if (generationCapabilityOverride_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(GenerationCapabilityOverride);
+      }
+      if (generatingUnit_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(GeneratingUnit);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(GenerationCapabilityOverrideProfile other) {
+      if (other == null) {
+        return;
+      }
+      if (other.capabilityOverrideMessageInfo_ != null) {
+        if (capabilityOverrideMessageInfo_ == null) {
+          CapabilityOverrideMessageInfo = new global::openfmb.commonmodule.CapabilityOverrideMessageInfo();
+        }
+        CapabilityOverrideMessageInfo.MergeFrom(other.CapabilityOverrideMessageInfo);
+      }
+      if (other.generationCapabilityOverride_ != null) {
+        if (generationCapabilityOverride_ == null) {
+          GenerationCapabilityOverride = new global::openfmb.generationmodule.GenerationCapabilityOverride();
+        }
+        GenerationCapabilityOverride.MergeFrom(other.GenerationCapabilityOverride);
+      }
+      if (other.generatingUnit_ != null) {
+        if (generatingUnit_ == null) {
+          GeneratingUnit = new global::openfmb.generationmodule.GeneratingUnit();
+        }
+        GeneratingUnit.MergeFrom(other.GeneratingUnit);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (capabilityOverrideMessageInfo_ == null) {
+              CapabilityOverrideMessageInfo = new global::openfmb.commonmodule.CapabilityOverrideMessageInfo();
+            }
+            input.ReadMessage(CapabilityOverrideMessageInfo);
+            break;
+          }
+          case 18: {
+            if (generationCapabilityOverride_ == null) {
+              GenerationCapabilityOverride = new global::openfmb.generationmodule.GenerationCapabilityOverride();
+            }
+            input.ReadMessage(GenerationCapabilityOverride);
+            break;
+          }
+          case 26: {
+            if (generatingUnit_ == null) {
+              GeneratingUnit = new global::openfmb.generationmodule.GeneratingUnit();
+            }
+            input.ReadMessage(GeneratingUnit);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (capabilityOverrideMessageInfo_ == null) {
+              CapabilityOverrideMessageInfo = new global::openfmb.commonmodule.CapabilityOverrideMessageInfo();
+            }
+            input.ReadMessage(CapabilityOverrideMessageInfo);
+            break;
+          }
+          case 18: {
+            if (generationCapabilityOverride_ == null) {
+              GenerationCapabilityOverride = new global::openfmb.generationmodule.GenerationCapabilityOverride();
+            }
+            input.ReadMessage(GenerationCapabilityOverride);
+            break;
+          }
+          case 26: {
+            if (generatingUnit_ == null) {
+              GeneratingUnit = new global::openfmb.generationmodule.GeneratingUnit();
+            }
+            input.ReadMessage(GeneratingUnit);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// Capability ratings
+  /// </summary>
+  public sealed partial class GenerationCapabilityRatings : pb::IMessage<GenerationCapabilityRatings>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<GenerationCapabilityRatings> _parser = new pb::MessageParser<GenerationCapabilityRatings>(() => new GenerationCapabilityRatings());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<GenerationCapabilityRatings> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GenerationCapabilityRatings() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GenerationCapabilityRatings(GenerationCapabilityRatings other) : this() {
+      sourceCapabilityRatings_ = other.sourceCapabilityRatings_ != null ? other.sourceCapabilityRatings_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GenerationCapabilityRatings Clone() {
+      return new GenerationCapabilityRatings(this);
+    }
+
+    /// <summary>Field number for the "sourceCapabilityRatings" field.</summary>
+    public const int SourceCapabilityRatingsFieldNumber = 1;
+    private global::openfmb.commonmodule.SourceCapabilityRatings sourceCapabilityRatings_;
+    /// <summary>
+    /// UML inherited base object
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.SourceCapabilityRatings SourceCapabilityRatings {
+      get { return sourceCapabilityRatings_; }
+      set {
+        sourceCapabilityRatings_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as GenerationCapabilityRatings);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GenerationCapabilityRatings other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(SourceCapabilityRatings, other.SourceCapabilityRatings)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (sourceCapabilityRatings_ != null) hash ^= SourceCapabilityRatings.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (sourceCapabilityRatings_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(SourceCapabilityRatings);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (sourceCapabilityRatings_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(SourceCapabilityRatings);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (sourceCapabilityRatings_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SourceCapabilityRatings);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(GenerationCapabilityRatings other) {
+      if (other == null) {
+        return;
+      }
+      if (other.sourceCapabilityRatings_ != null) {
+        if (sourceCapabilityRatings_ == null) {
+          SourceCapabilityRatings = new global::openfmb.commonmodule.SourceCapabilityRatings();
+        }
+        SourceCapabilityRatings.MergeFrom(other.SourceCapabilityRatings);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (sourceCapabilityRatings_ == null) {
+              SourceCapabilityRatings = new global::openfmb.commonmodule.SourceCapabilityRatings();
+            }
+            input.ReadMessage(SourceCapabilityRatings);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (sourceCapabilityRatings_ == null) {
+              SourceCapabilityRatings = new global::openfmb.commonmodule.SourceCapabilityRatings();
+            }
+            input.ReadMessage(SourceCapabilityRatings);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// Generation capability
+  /// </summary>
+  public sealed partial class GenerationCapability : pb::IMessage<GenerationCapability>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<GenerationCapability> _parser = new pb::MessageParser<GenerationCapability>(() => new GenerationCapability());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<GenerationCapability> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GenerationCapability() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GenerationCapability(GenerationCapability other) : this() {
+      nameplateValue_ = other.nameplateValue_ != null ? other.nameplateValue_.Clone() : null;
+      generationCapabilityRatings_ = other.generationCapabilityRatings_ != null ? other.generationCapabilityRatings_.Clone() : null;
+      generationCapabilityConfiguration_ = other.generationCapabilityConfiguration_ != null ? other.generationCapabilityConfiguration_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GenerationCapability Clone() {
+      return new GenerationCapability(this);
+    }
+
+    /// <summary>Field number for the "nameplateValue" field.</summary>
+    public const int NameplateValueFieldNumber = 1;
+    private global::openfmb.commonmodule.NameplateValue nameplateValue_;
+    /// <summary>
+    /// UML inherited base object
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.NameplateValue NameplateValue {
+      get { return nameplateValue_; }
+      set {
+        nameplateValue_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "generationCapabilityRatings" field.</summary>
+    public const int GenerationCapabilityRatingsFieldNumber = 2;
+    private global::openfmb.generationmodule.GenerationCapabilityRatings generationCapabilityRatings_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.generationmodule.GenerationCapabilityRatings GenerationCapabilityRatings {
+      get { return generationCapabilityRatings_; }
+      set {
+        generationCapabilityRatings_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "generationCapabilityConfiguration" field.</summary>
+    public const int GenerationCapabilityConfigurationFieldNumber = 3;
+    private global::openfmb.generationmodule.GenerationCapabilityConfiguration generationCapabilityConfiguration_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.generationmodule.GenerationCapabilityConfiguration GenerationCapabilityConfiguration {
+      get { return generationCapabilityConfiguration_; }
+      set {
+        generationCapabilityConfiguration_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as GenerationCapability);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GenerationCapability other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(NameplateValue, other.NameplateValue)) return false;
+      if (!object.Equals(GenerationCapabilityRatings, other.GenerationCapabilityRatings)) return false;
+      if (!object.Equals(GenerationCapabilityConfiguration, other.GenerationCapabilityConfiguration)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (nameplateValue_ != null) hash ^= NameplateValue.GetHashCode();
+      if (generationCapabilityRatings_ != null) hash ^= GenerationCapabilityRatings.GetHashCode();
+      if (generationCapabilityConfiguration_ != null) hash ^= GenerationCapabilityConfiguration.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (nameplateValue_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(NameplateValue);
+      }
+      if (generationCapabilityRatings_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(GenerationCapabilityRatings);
+      }
+      if (generationCapabilityConfiguration_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(GenerationCapabilityConfiguration);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (nameplateValue_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(NameplateValue);
+      }
+      if (generationCapabilityRatings_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(GenerationCapabilityRatings);
+      }
+      if (generationCapabilityConfiguration_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(GenerationCapabilityConfiguration);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (nameplateValue_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(NameplateValue);
+      }
+      if (generationCapabilityRatings_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(GenerationCapabilityRatings);
+      }
+      if (generationCapabilityConfiguration_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(GenerationCapabilityConfiguration);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(GenerationCapability other) {
+      if (other == null) {
+        return;
+      }
+      if (other.nameplateValue_ != null) {
+        if (nameplateValue_ == null) {
+          NameplateValue = new global::openfmb.commonmodule.NameplateValue();
+        }
+        NameplateValue.MergeFrom(other.NameplateValue);
+      }
+      if (other.generationCapabilityRatings_ != null) {
+        if (generationCapabilityRatings_ == null) {
+          GenerationCapabilityRatings = new global::openfmb.generationmodule.GenerationCapabilityRatings();
+        }
+        GenerationCapabilityRatings.MergeFrom(other.GenerationCapabilityRatings);
+      }
+      if (other.generationCapabilityConfiguration_ != null) {
+        if (generationCapabilityConfiguration_ == null) {
+          GenerationCapabilityConfiguration = new global::openfmb.generationmodule.GenerationCapabilityConfiguration();
+        }
+        GenerationCapabilityConfiguration.MergeFrom(other.GenerationCapabilityConfiguration);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (nameplateValue_ == null) {
+              NameplateValue = new global::openfmb.commonmodule.NameplateValue();
+            }
+            input.ReadMessage(NameplateValue);
+            break;
+          }
+          case 18: {
+            if (generationCapabilityRatings_ == null) {
+              GenerationCapabilityRatings = new global::openfmb.generationmodule.GenerationCapabilityRatings();
+            }
+            input.ReadMessage(GenerationCapabilityRatings);
+            break;
+          }
+          case 26: {
+            if (generationCapabilityConfiguration_ == null) {
+              GenerationCapabilityConfiguration = new global::openfmb.generationmodule.GenerationCapabilityConfiguration();
+            }
+            input.ReadMessage(GenerationCapabilityConfiguration);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (nameplateValue_ == null) {
+              NameplateValue = new global::openfmb.commonmodule.NameplateValue();
+            }
+            input.ReadMessage(NameplateValue);
+            break;
+          }
+          case 18: {
+            if (generationCapabilityRatings_ == null) {
+              GenerationCapabilityRatings = new global::openfmb.generationmodule.GenerationCapabilityRatings();
+            }
+            input.ReadMessage(GenerationCapabilityRatings);
+            break;
+          }
+          case 26: {
+            if (generationCapabilityConfiguration_ == null) {
+              GenerationCapabilityConfiguration = new global::openfmb.generationmodule.GenerationCapabilityConfiguration();
+            }
+            input.ReadMessage(GenerationCapabilityConfiguration);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// Generation capability profile
+  /// </summary>
+  public sealed partial class GenerationCapabilityProfile : pb::IMessage<GenerationCapabilityProfile>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<GenerationCapabilityProfile> _parser = new pb::MessageParser<GenerationCapabilityProfile>(() => new GenerationCapabilityProfile());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<GenerationCapabilityProfile> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[6]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GenerationCapabilityProfile() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GenerationCapabilityProfile(GenerationCapabilityProfile other) : this() {
+      capabilityMessageInfo_ = other.capabilityMessageInfo_ != null ? other.capabilityMessageInfo_.Clone() : null;
+      generationCapability_ = other.generationCapability_ != null ? other.generationCapability_.Clone() : null;
+      generatingUnit_ = other.generatingUnit_ != null ? other.generatingUnit_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public GenerationCapabilityProfile Clone() {
+      return new GenerationCapabilityProfile(this);
+    }
+
+    /// <summary>Field number for the "capabilityMessageInfo" field.</summary>
+    public const int CapabilityMessageInfoFieldNumber = 1;
+    private global::openfmb.commonmodule.CapabilityMessageInfo capabilityMessageInfo_;
+    /// <summary>
+    /// UML inherited base object
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.CapabilityMessageInfo CapabilityMessageInfo {
+      get { return capabilityMessageInfo_; }
+      set {
+        capabilityMessageInfo_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "generationCapability" field.</summary>
+    public const int GenerationCapabilityFieldNumber = 2;
+    private global::openfmb.generationmodule.GenerationCapability generationCapability_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.generationmodule.GenerationCapability GenerationCapability {
+      get { return generationCapability_; }
+      set {
+        generationCapability_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "generatingUnit" field.</summary>
+    public const int GeneratingUnitFieldNumber = 3;
+    private global::openfmb.generationmodule.GeneratingUnit generatingUnit_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.generationmodule.GeneratingUnit GeneratingUnit {
+      get { return generatingUnit_; }
+      set {
+        generatingUnit_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as GenerationCapabilityProfile);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GenerationCapabilityProfile other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(CapabilityMessageInfo, other.CapabilityMessageInfo)) return false;
+      if (!object.Equals(GenerationCapability, other.GenerationCapability)) return false;
+      if (!object.Equals(GeneratingUnit, other.GeneratingUnit)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (capabilityMessageInfo_ != null) hash ^= CapabilityMessageInfo.GetHashCode();
+      if (generationCapability_ != null) hash ^= GenerationCapability.GetHashCode();
+      if (generatingUnit_ != null) hash ^= GeneratingUnit.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (capabilityMessageInfo_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(CapabilityMessageInfo);
+      }
+      if (generationCapability_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(GenerationCapability);
+      }
+      if (generatingUnit_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(GeneratingUnit);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (capabilityMessageInfo_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(CapabilityMessageInfo);
+      }
+      if (generationCapability_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(GenerationCapability);
+      }
+      if (generatingUnit_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(GeneratingUnit);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (capabilityMessageInfo_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CapabilityMessageInfo);
+      }
+      if (generationCapability_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(GenerationCapability);
+      }
+      if (generatingUnit_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(GeneratingUnit);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(GenerationCapabilityProfile other) {
+      if (other == null) {
+        return;
+      }
+      if (other.capabilityMessageInfo_ != null) {
+        if (capabilityMessageInfo_ == null) {
+          CapabilityMessageInfo = new global::openfmb.commonmodule.CapabilityMessageInfo();
+        }
+        CapabilityMessageInfo.MergeFrom(other.CapabilityMessageInfo);
+      }
+      if (other.generationCapability_ != null) {
+        if (generationCapability_ == null) {
+          GenerationCapability = new global::openfmb.generationmodule.GenerationCapability();
+        }
+        GenerationCapability.MergeFrom(other.GenerationCapability);
+      }
+      if (other.generatingUnit_ != null) {
+        if (generatingUnit_ == null) {
+          GeneratingUnit = new global::openfmb.generationmodule.GeneratingUnit();
+        }
+        GeneratingUnit.MergeFrom(other.GeneratingUnit);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (capabilityMessageInfo_ == null) {
+              CapabilityMessageInfo = new global::openfmb.commonmodule.CapabilityMessageInfo();
+            }
+            input.ReadMessage(CapabilityMessageInfo);
+            break;
+          }
+          case 18: {
+            if (generationCapability_ == null) {
+              GenerationCapability = new global::openfmb.generationmodule.GenerationCapability();
+            }
+            input.ReadMessage(GenerationCapability);
+            break;
+          }
+          case 26: {
+            if (generatingUnit_ == null) {
+              GeneratingUnit = new global::openfmb.generationmodule.GeneratingUnit();
+            }
+            input.ReadMessage(GeneratingUnit);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (capabilityMessageInfo_ == null) {
+              CapabilityMessageInfo = new global::openfmb.commonmodule.CapabilityMessageInfo();
+            }
+            input.ReadMessage(CapabilityMessageInfo);
+            break;
+          }
+          case 18: {
+            if (generationCapability_ == null) {
+              GenerationCapability = new global::openfmb.generationmodule.GenerationCapability();
+            }
+            input.ReadMessage(GenerationCapability);
+            break;
+          }
+          case 26: {
+            if (generatingUnit_ == null) {
+              GeneratingUnit = new global::openfmb.generationmodule.GeneratingUnit();
+            }
+            input.ReadMessage(GeneratingUnit);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
   /// Point definition (Point)
   /// </summary>
   public sealed partial class GenerationPoint : pb::IMessage<GenerationPoint>
@@ -192,19 +2077,23 @@ namespace openfmb.generationmodule {
     private static readonly pb::MessageParser<GenerationPoint> _parser = new pb::MessageParser<GenerationPoint>(() => new GenerationPoint());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<GenerationPoint> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[0]; }
+      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationPoint() {
       OnConstruction();
     }
@@ -212,6 +2101,7 @@ namespace openfmb.generationmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationPoint(GenerationPoint other) : this() {
       blackStartEnabled_ = other.blackStartEnabled_ != null ? other.blackStartEnabled_.Clone() : null;
       frequencySetPointEnabled_ = other.frequencySetPointEnabled_ != null ? other.frequencySetPointEnabled_.Clone() : null;
@@ -226,10 +2116,21 @@ namespace openfmb.generationmodule {
       transToIslndOnGridLossEnabled_ = other.transToIslndOnGridLossEnabled_ != null ? other.transToIslndOnGridLossEnabled_.Clone() : null;
       voltageSetPointEnabled_ = other.voltageSetPointEnabled_ != null ? other.voltageSetPointEnabled_.Clone() : null;
       startTime_ = other.startTime_ != null ? other.startTime_.Clone() : null;
+      enterServiceOperation_ = other.enterServiceOperation_ != null ? other.enterServiceOperation_.Clone() : null;
+      hzWOperation_ = other.hzWOperation_ != null ? other.hzWOperation_.Clone() : null;
+      limitWOperation_ = other.limitWOperation_ != null ? other.limitWOperation_.Clone() : null;
+      pFOperation_ = other.pFOperation_ != null ? other.pFOperation_.Clone() : null;
+      tmHzTripOperation_ = other.tmHzTripOperation_ != null ? other.tmHzTripOperation_.Clone() : null;
+      tmVoltTripOperation_ = other.tmVoltTripOperation_ != null ? other.tmVoltTripOperation_.Clone() : null;
+      vArOperation_ = other.vArOperation_ != null ? other.vArOperation_.Clone() : null;
+      voltVarOperation_ = other.voltVarOperation_ != null ? other.voltVarOperation_.Clone() : null;
+      voltWOperation_ = other.voltWOperation_ != null ? other.voltWOperation_.Clone() : null;
+      wVarOperation_ = other.wVarOperation_ != null ? other.wVarOperation_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationPoint Clone() {
       return new GenerationPoint(this);
     }
@@ -241,6 +2142,7 @@ namespace openfmb.generationmodule {
     /// Black start enable
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ControlSPC BlackStartEnabled {
       get { return blackStartEnabled_; }
       set {
@@ -255,6 +2157,7 @@ namespace openfmb.generationmodule {
     /// Enable frequency set point
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ControlSPC FrequencySetPointEnabled {
       get { return frequencySetPointEnabled_; }
       set {
@@ -267,9 +2170,10 @@ namespace openfmb.generationmodule {
     private static readonly pb::FieldCodec<float?> _single_pctHzDroop_codec = pb::FieldCodec.ForStructWrapper<float>(26);
     private float? pctHzDroop_;
     /// <summary>
-    /// Black start enable
+    /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public float? PctHzDroop {
       get { return pctHzDroop_; }
       set {
@@ -283,9 +2187,10 @@ namespace openfmb.generationmodule {
     private static readonly pb::FieldCodec<float?> _single_pctVDroop_codec = pb::FieldCodec.ForStructWrapper<float>(34);
     private float? pctVDroop_;
     /// <summary>
-    /// Black start enable
+    /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public float? PctVDroop {
       get { return pctVDroop_; }
       set {
@@ -301,6 +2206,7 @@ namespace openfmb.generationmodule {
     /// Ramp rates
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.RampRate RampRates {
       get { return rampRates_; }
       set {
@@ -315,6 +2221,7 @@ namespace openfmb.generationmodule {
     /// Enable reactive power set point
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ControlSPC ReactivePwrSetPointEnabled {
       get { return reactivePwrSetPointEnabled_; }
       set {
@@ -329,6 +2236,7 @@ namespace openfmb.generationmodule {
     /// Enable joint real power set point
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ControlSPC RealPwrSetPointEnabled {
       get { return realPwrSetPointEnabled_; }
       set {
@@ -343,6 +2251,7 @@ namespace openfmb.generationmodule {
     /// Reset device
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ControlSPC Reset {
       get { return reset_; }
       set {
@@ -354,9 +2263,10 @@ namespace openfmb.generationmodule {
     public const int StateFieldNumber = 9;
     private global::openfmb.commonmodule.Optional_StateKind state_;
     /// <summary>
-    /// ESS state
+    /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.Optional_StateKind State {
       get { return state_; }
       set {
@@ -371,6 +2281,7 @@ namespace openfmb.generationmodule {
     /// Synchronize back to grid
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ControlSPC SyncBackToGrid {
       get { return syncBackToGrid_; }
       set {
@@ -385,6 +2296,7 @@ namespace openfmb.generationmodule {
     /// Transition to island on grid loss enable
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ControlSPC TransToIslndOnGridLossEnabled {
       get { return transToIslndOnGridLossEnabled_; }
       set {
@@ -399,6 +2311,7 @@ namespace openfmb.generationmodule {
     /// Enable voltage set point
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ControlSPC VoltageSetPointEnabled {
       get { return voltageSetPointEnabled_; }
       set {
@@ -413,6 +2326,7 @@ namespace openfmb.generationmodule {
     /// Start time
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ControlTimestamp StartTime {
       get { return startTime_; }
       set {
@@ -420,12 +2334,164 @@ namespace openfmb.generationmodule {
       }
     }
 
+    /// <summary>Field number for the "enterServiceOperation" field.</summary>
+    public const int EnterServiceOperationFieldNumber = 14;
+    private global::openfmb.commonmodule.EnterServiceAPC enterServiceOperation_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.EnterServiceAPC EnterServiceOperation {
+      get { return enterServiceOperation_; }
+      set {
+        enterServiceOperation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "hzWOperation" field.</summary>
+    public const int HzWOperationFieldNumber = 15;
+    private global::openfmb.commonmodule.HzWAPC hzWOperation_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.HzWAPC HzWOperation {
+      get { return hzWOperation_; }
+      set {
+        hzWOperation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "limitWOperation" field.</summary>
+    public const int LimitWOperationFieldNumber = 16;
+    private global::openfmb.commonmodule.LimitWAPC limitWOperation_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.LimitWAPC LimitWOperation {
+      get { return limitWOperation_; }
+      set {
+        limitWOperation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "pFOperation" field.</summary>
+    public const int PFOperationFieldNumber = 17;
+    private global::openfmb.commonmodule.PFSPC pFOperation_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.PFSPC PFOperation {
+      get { return pFOperation_; }
+      set {
+        pFOperation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "tmHzTripOperation" field.</summary>
+    public const int TmHzTripOperationFieldNumber = 18;
+    private global::openfmb.commonmodule.TmHzCSG tmHzTripOperation_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.TmHzCSG TmHzTripOperation {
+      get { return tmHzTripOperation_; }
+      set {
+        tmHzTripOperation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "tmVoltTripOperation" field.</summary>
+    public const int TmVoltTripOperationFieldNumber = 19;
+    private global::openfmb.commonmodule.TmVoltCSG tmVoltTripOperation_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.TmVoltCSG TmVoltTripOperation {
+      get { return tmVoltTripOperation_; }
+      set {
+        tmVoltTripOperation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "vArOperation" field.</summary>
+    public const int VArOperationFieldNumber = 20;
+    private global::openfmb.commonmodule.VarSPC vArOperation_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.VarSPC VArOperation {
+      get { return vArOperation_; }
+      set {
+        vArOperation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "voltVarOperation" field.</summary>
+    public const int VoltVarOperationFieldNumber = 21;
+    private global::openfmb.commonmodule.VoltVarCSG voltVarOperation_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.VoltVarCSG VoltVarOperation {
+      get { return voltVarOperation_; }
+      set {
+        voltVarOperation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "voltWOperation" field.</summary>
+    public const int VoltWOperationFieldNumber = 22;
+    private global::openfmb.commonmodule.VoltWCSG voltWOperation_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.VoltWCSG VoltWOperation {
+      get { return voltWOperation_; }
+      set {
+        voltWOperation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "wVarOperation" field.</summary>
+    public const int WVarOperationFieldNumber = 23;
+    private global::openfmb.commonmodule.WVarCSG wVarOperation_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.WVarCSG WVarOperation {
+      get { return wVarOperation_; }
+      set {
+        wVarOperation_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as GenerationPoint);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(GenerationPoint other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -446,10 +2512,21 @@ namespace openfmb.generationmodule {
       if (!object.Equals(TransToIslndOnGridLossEnabled, other.TransToIslndOnGridLossEnabled)) return false;
       if (!object.Equals(VoltageSetPointEnabled, other.VoltageSetPointEnabled)) return false;
       if (!object.Equals(StartTime, other.StartTime)) return false;
+      if (!object.Equals(EnterServiceOperation, other.EnterServiceOperation)) return false;
+      if (!object.Equals(HzWOperation, other.HzWOperation)) return false;
+      if (!object.Equals(LimitWOperation, other.LimitWOperation)) return false;
+      if (!object.Equals(PFOperation, other.PFOperation)) return false;
+      if (!object.Equals(TmHzTripOperation, other.TmHzTripOperation)) return false;
+      if (!object.Equals(TmVoltTripOperation, other.TmVoltTripOperation)) return false;
+      if (!object.Equals(VArOperation, other.VArOperation)) return false;
+      if (!object.Equals(VoltVarOperation, other.VoltVarOperation)) return false;
+      if (!object.Equals(VoltWOperation, other.VoltWOperation)) return false;
+      if (!object.Equals(WVarOperation, other.WVarOperation)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (blackStartEnabled_ != null) hash ^= BlackStartEnabled.GetHashCode();
@@ -465,6 +2542,16 @@ namespace openfmb.generationmodule {
       if (transToIslndOnGridLossEnabled_ != null) hash ^= TransToIslndOnGridLossEnabled.GetHashCode();
       if (voltageSetPointEnabled_ != null) hash ^= VoltageSetPointEnabled.GetHashCode();
       if (startTime_ != null) hash ^= StartTime.GetHashCode();
+      if (enterServiceOperation_ != null) hash ^= EnterServiceOperation.GetHashCode();
+      if (hzWOperation_ != null) hash ^= HzWOperation.GetHashCode();
+      if (limitWOperation_ != null) hash ^= LimitWOperation.GetHashCode();
+      if (pFOperation_ != null) hash ^= PFOperation.GetHashCode();
+      if (tmHzTripOperation_ != null) hash ^= TmHzTripOperation.GetHashCode();
+      if (tmVoltTripOperation_ != null) hash ^= TmVoltTripOperation.GetHashCode();
+      if (vArOperation_ != null) hash ^= VArOperation.GetHashCode();
+      if (voltVarOperation_ != null) hash ^= VoltVarOperation.GetHashCode();
+      if (voltWOperation_ != null) hash ^= VoltWOperation.GetHashCode();
+      if (wVarOperation_ != null) hash ^= WVarOperation.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -472,11 +2559,13 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -531,6 +2620,46 @@ namespace openfmb.generationmodule {
         output.WriteRawTag(106);
         output.WriteMessage(StartTime);
       }
+      if (enterServiceOperation_ != null) {
+        output.WriteRawTag(114);
+        output.WriteMessage(EnterServiceOperation);
+      }
+      if (hzWOperation_ != null) {
+        output.WriteRawTag(122);
+        output.WriteMessage(HzWOperation);
+      }
+      if (limitWOperation_ != null) {
+        output.WriteRawTag(130, 1);
+        output.WriteMessage(LimitWOperation);
+      }
+      if (pFOperation_ != null) {
+        output.WriteRawTag(138, 1);
+        output.WriteMessage(PFOperation);
+      }
+      if (tmHzTripOperation_ != null) {
+        output.WriteRawTag(146, 1);
+        output.WriteMessage(TmHzTripOperation);
+      }
+      if (tmVoltTripOperation_ != null) {
+        output.WriteRawTag(154, 1);
+        output.WriteMessage(TmVoltTripOperation);
+      }
+      if (vArOperation_ != null) {
+        output.WriteRawTag(162, 1);
+        output.WriteMessage(VArOperation);
+      }
+      if (voltVarOperation_ != null) {
+        output.WriteRawTag(170, 1);
+        output.WriteMessage(VoltVarOperation);
+      }
+      if (voltWOperation_ != null) {
+        output.WriteRawTag(178, 1);
+        output.WriteMessage(VoltWOperation);
+      }
+      if (wVarOperation_ != null) {
+        output.WriteRawTag(186, 1);
+        output.WriteMessage(WVarOperation);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -539,6 +2668,7 @@ namespace openfmb.generationmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (blackStartEnabled_ != null) {
         output.WriteRawTag(10);
@@ -590,6 +2720,46 @@ namespace openfmb.generationmodule {
         output.WriteRawTag(106);
         output.WriteMessage(StartTime);
       }
+      if (enterServiceOperation_ != null) {
+        output.WriteRawTag(114);
+        output.WriteMessage(EnterServiceOperation);
+      }
+      if (hzWOperation_ != null) {
+        output.WriteRawTag(122);
+        output.WriteMessage(HzWOperation);
+      }
+      if (limitWOperation_ != null) {
+        output.WriteRawTag(130, 1);
+        output.WriteMessage(LimitWOperation);
+      }
+      if (pFOperation_ != null) {
+        output.WriteRawTag(138, 1);
+        output.WriteMessage(PFOperation);
+      }
+      if (tmHzTripOperation_ != null) {
+        output.WriteRawTag(146, 1);
+        output.WriteMessage(TmHzTripOperation);
+      }
+      if (tmVoltTripOperation_ != null) {
+        output.WriteRawTag(154, 1);
+        output.WriteMessage(TmVoltTripOperation);
+      }
+      if (vArOperation_ != null) {
+        output.WriteRawTag(162, 1);
+        output.WriteMessage(VArOperation);
+      }
+      if (voltVarOperation_ != null) {
+        output.WriteRawTag(170, 1);
+        output.WriteMessage(VoltVarOperation);
+      }
+      if (voltWOperation_ != null) {
+        output.WriteRawTag(178, 1);
+        output.WriteMessage(VoltWOperation);
+      }
+      if (wVarOperation_ != null) {
+        output.WriteRawTag(186, 1);
+        output.WriteMessage(WVarOperation);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -597,6 +2767,7 @@ namespace openfmb.generationmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (blackStartEnabled_ != null) {
@@ -638,6 +2809,36 @@ namespace openfmb.generationmodule {
       if (startTime_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(StartTime);
       }
+      if (enterServiceOperation_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(EnterServiceOperation);
+      }
+      if (hzWOperation_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(HzWOperation);
+      }
+      if (limitWOperation_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(LimitWOperation);
+      }
+      if (pFOperation_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(PFOperation);
+      }
+      if (tmHzTripOperation_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(TmHzTripOperation);
+      }
+      if (tmVoltTripOperation_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(TmVoltTripOperation);
+      }
+      if (vArOperation_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(VArOperation);
+      }
+      if (voltVarOperation_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(VoltVarOperation);
+      }
+      if (voltWOperation_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(VoltWOperation);
+      }
+      if (wVarOperation_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(WVarOperation);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -645,6 +2846,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(GenerationPoint other) {
       if (other == null) {
         return;
@@ -725,10 +2927,71 @@ namespace openfmb.generationmodule {
         }
         StartTime.MergeFrom(other.StartTime);
       }
+      if (other.enterServiceOperation_ != null) {
+        if (enterServiceOperation_ == null) {
+          EnterServiceOperation = new global::openfmb.commonmodule.EnterServiceAPC();
+        }
+        EnterServiceOperation.MergeFrom(other.EnterServiceOperation);
+      }
+      if (other.hzWOperation_ != null) {
+        if (hzWOperation_ == null) {
+          HzWOperation = new global::openfmb.commonmodule.HzWAPC();
+        }
+        HzWOperation.MergeFrom(other.HzWOperation);
+      }
+      if (other.limitWOperation_ != null) {
+        if (limitWOperation_ == null) {
+          LimitWOperation = new global::openfmb.commonmodule.LimitWAPC();
+        }
+        LimitWOperation.MergeFrom(other.LimitWOperation);
+      }
+      if (other.pFOperation_ != null) {
+        if (pFOperation_ == null) {
+          PFOperation = new global::openfmb.commonmodule.PFSPC();
+        }
+        PFOperation.MergeFrom(other.PFOperation);
+      }
+      if (other.tmHzTripOperation_ != null) {
+        if (tmHzTripOperation_ == null) {
+          TmHzTripOperation = new global::openfmb.commonmodule.TmHzCSG();
+        }
+        TmHzTripOperation.MergeFrom(other.TmHzTripOperation);
+      }
+      if (other.tmVoltTripOperation_ != null) {
+        if (tmVoltTripOperation_ == null) {
+          TmVoltTripOperation = new global::openfmb.commonmodule.TmVoltCSG();
+        }
+        TmVoltTripOperation.MergeFrom(other.TmVoltTripOperation);
+      }
+      if (other.vArOperation_ != null) {
+        if (vArOperation_ == null) {
+          VArOperation = new global::openfmb.commonmodule.VarSPC();
+        }
+        VArOperation.MergeFrom(other.VArOperation);
+      }
+      if (other.voltVarOperation_ != null) {
+        if (voltVarOperation_ == null) {
+          VoltVarOperation = new global::openfmb.commonmodule.VoltVarCSG();
+        }
+        VoltVarOperation.MergeFrom(other.VoltVarOperation);
+      }
+      if (other.voltWOperation_ != null) {
+        if (voltWOperation_ == null) {
+          VoltWOperation = new global::openfmb.commonmodule.VoltWCSG();
+        }
+        VoltWOperation.MergeFrom(other.VoltWOperation);
+      }
+      if (other.wVarOperation_ != null) {
+        if (wVarOperation_ == null) {
+          WVarOperation = new global::openfmb.commonmodule.WVarCSG();
+        }
+        WVarOperation.MergeFrom(other.WVarOperation);
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -830,6 +3093,76 @@ namespace openfmb.generationmodule {
             input.ReadMessage(StartTime);
             break;
           }
+          case 114: {
+            if (enterServiceOperation_ == null) {
+              EnterServiceOperation = new global::openfmb.commonmodule.EnterServiceAPC();
+            }
+            input.ReadMessage(EnterServiceOperation);
+            break;
+          }
+          case 122: {
+            if (hzWOperation_ == null) {
+              HzWOperation = new global::openfmb.commonmodule.HzWAPC();
+            }
+            input.ReadMessage(HzWOperation);
+            break;
+          }
+          case 130: {
+            if (limitWOperation_ == null) {
+              LimitWOperation = new global::openfmb.commonmodule.LimitWAPC();
+            }
+            input.ReadMessage(LimitWOperation);
+            break;
+          }
+          case 138: {
+            if (pFOperation_ == null) {
+              PFOperation = new global::openfmb.commonmodule.PFSPC();
+            }
+            input.ReadMessage(PFOperation);
+            break;
+          }
+          case 146: {
+            if (tmHzTripOperation_ == null) {
+              TmHzTripOperation = new global::openfmb.commonmodule.TmHzCSG();
+            }
+            input.ReadMessage(TmHzTripOperation);
+            break;
+          }
+          case 154: {
+            if (tmVoltTripOperation_ == null) {
+              TmVoltTripOperation = new global::openfmb.commonmodule.TmVoltCSG();
+            }
+            input.ReadMessage(TmVoltTripOperation);
+            break;
+          }
+          case 162: {
+            if (vArOperation_ == null) {
+              VArOperation = new global::openfmb.commonmodule.VarSPC();
+            }
+            input.ReadMessage(VArOperation);
+            break;
+          }
+          case 170: {
+            if (voltVarOperation_ == null) {
+              VoltVarOperation = new global::openfmb.commonmodule.VoltVarCSG();
+            }
+            input.ReadMessage(VoltVarOperation);
+            break;
+          }
+          case 178: {
+            if (voltWOperation_ == null) {
+              VoltWOperation = new global::openfmb.commonmodule.VoltWCSG();
+            }
+            input.ReadMessage(VoltWOperation);
+            break;
+          }
+          case 186: {
+            if (wVarOperation_ == null) {
+              WVarOperation = new global::openfmb.commonmodule.WVarCSG();
+            }
+            input.ReadMessage(WVarOperation);
+            break;
+          }
         }
       }
     #endif
@@ -837,6 +3170,7 @@ namespace openfmb.generationmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -935,6 +3269,76 @@ namespace openfmb.generationmodule {
             input.ReadMessage(StartTime);
             break;
           }
+          case 114: {
+            if (enterServiceOperation_ == null) {
+              EnterServiceOperation = new global::openfmb.commonmodule.EnterServiceAPC();
+            }
+            input.ReadMessage(EnterServiceOperation);
+            break;
+          }
+          case 122: {
+            if (hzWOperation_ == null) {
+              HzWOperation = new global::openfmb.commonmodule.HzWAPC();
+            }
+            input.ReadMessage(HzWOperation);
+            break;
+          }
+          case 130: {
+            if (limitWOperation_ == null) {
+              LimitWOperation = new global::openfmb.commonmodule.LimitWAPC();
+            }
+            input.ReadMessage(LimitWOperation);
+            break;
+          }
+          case 138: {
+            if (pFOperation_ == null) {
+              PFOperation = new global::openfmb.commonmodule.PFSPC();
+            }
+            input.ReadMessage(PFOperation);
+            break;
+          }
+          case 146: {
+            if (tmHzTripOperation_ == null) {
+              TmHzTripOperation = new global::openfmb.commonmodule.TmHzCSG();
+            }
+            input.ReadMessage(TmHzTripOperation);
+            break;
+          }
+          case 154: {
+            if (tmVoltTripOperation_ == null) {
+              TmVoltTripOperation = new global::openfmb.commonmodule.TmVoltCSG();
+            }
+            input.ReadMessage(TmVoltTripOperation);
+            break;
+          }
+          case 162: {
+            if (vArOperation_ == null) {
+              VArOperation = new global::openfmb.commonmodule.VarSPC();
+            }
+            input.ReadMessage(VArOperation);
+            break;
+          }
+          case 170: {
+            if (voltVarOperation_ == null) {
+              VoltVarOperation = new global::openfmb.commonmodule.VoltVarCSG();
+            }
+            input.ReadMessage(VoltVarOperation);
+            break;
+          }
+          case 178: {
+            if (voltWOperation_ == null) {
+              VoltWOperation = new global::openfmb.commonmodule.VoltWCSG();
+            }
+            input.ReadMessage(VoltWOperation);
+            break;
+          }
+          case 186: {
+            if (wVarOperation_ == null) {
+              WVarOperation = new global::openfmb.commonmodule.WVarCSG();
+            }
+            input.ReadMessage(WVarOperation);
+            break;
+          }
         }
       }
     }
@@ -953,19 +3357,23 @@ namespace openfmb.generationmodule {
     private static readonly pb::MessageParser<GenerationCSG> _parser = new pb::MessageParser<GenerationCSG>(() => new GenerationCSG());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<GenerationCSG> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[1]; }
+      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationCSG() {
       OnConstruction();
     }
@@ -973,12 +3381,14 @@ namespace openfmb.generationmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationCSG(GenerationCSG other) : this() {
       crvPts_ = other.crvPts_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationCSG Clone() {
       return new GenerationCSG(this);
     }
@@ -992,16 +3402,19 @@ namespace openfmb.generationmodule {
     /// The array with the points specifying a curve shape.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::openfmb.generationmodule.GenerationPoint> CrvPts {
       get { return crvPts_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as GenerationCSG);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(GenerationCSG other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1014,6 +3427,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       hash ^= crvPts_.GetHashCode();
@@ -1024,11 +3438,13 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -1042,6 +3458,7 @@ namespace openfmb.generationmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       crvPts_.WriteTo(ref output, _repeated_crvPts_codec);
       if (_unknownFields != null) {
@@ -1051,6 +3468,7 @@ namespace openfmb.generationmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       size += crvPts_.CalculateSize(_repeated_crvPts_codec);
@@ -1061,6 +3479,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(GenerationCSG other) {
       if (other == null) {
         return;
@@ -1070,6 +3489,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1091,6 +3511,7 @@ namespace openfmb.generationmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -1120,19 +3541,23 @@ namespace openfmb.generationmodule {
     private static readonly pb::MessageParser<GenerationControlScheduleFSCH> _parser = new pb::MessageParser<GenerationControlScheduleFSCH>(() => new GenerationControlScheduleFSCH());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<GenerationControlScheduleFSCH> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[2]; }
+      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationControlScheduleFSCH() {
       OnConstruction();
     }
@@ -1140,12 +3565,14 @@ namespace openfmb.generationmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationControlScheduleFSCH(GenerationControlScheduleFSCH other) : this() {
       valDCSG_ = other.valDCSG_ != null ? other.valDCSG_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationControlScheduleFSCH Clone() {
       return new GenerationControlScheduleFSCH(this);
     }
@@ -1157,6 +3584,7 @@ namespace openfmb.generationmodule {
     /// Discrete value in GenerationCSG type
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.generationmodule.GenerationCSG ValDCSG {
       get { return valDCSG_; }
       set {
@@ -1165,11 +3593,13 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as GenerationControlScheduleFSCH);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(GenerationControlScheduleFSCH other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1182,6 +3612,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (valDCSG_ != null) hash ^= ValDCSG.GetHashCode();
@@ -1192,11 +3623,13 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -1213,6 +3646,7 @@ namespace openfmb.generationmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (valDCSG_ != null) {
         output.WriteRawTag(10);
@@ -1225,6 +3659,7 @@ namespace openfmb.generationmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (valDCSG_ != null) {
@@ -1237,6 +3672,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(GenerationControlScheduleFSCH other) {
       if (other == null) {
         return;
@@ -1251,6 +3687,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1275,6 +3712,7 @@ namespace openfmb.generationmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -1297,7 +3735,7 @@ namespace openfmb.generationmodule {
   }
 
   /// <summary>
-  /// LN: Schedule controller   Name: FSCC
+  /// LN: Schedule controller   Name: FSCC
   /// </summary>
   public sealed partial class GenerationControlFSCC : pb::IMessage<GenerationControlFSCC>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1307,19 +3745,23 @@ namespace openfmb.generationmodule {
     private static readonly pb::MessageParser<GenerationControlFSCC> _parser = new pb::MessageParser<GenerationControlFSCC>(() => new GenerationControlFSCC());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<GenerationControlFSCC> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[3]; }
+      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationControlFSCC() {
       OnConstruction();
     }
@@ -1327,6 +3769,7 @@ namespace openfmb.generationmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationControlFSCC(GenerationControlFSCC other) : this() {
       controlFSCC_ = other.controlFSCC_ != null ? other.controlFSCC_.Clone() : null;
       generationControlScheduleFSCH_ = other.generationControlScheduleFSCH_ != null ? other.generationControlScheduleFSCH_.Clone() : null;
@@ -1334,6 +3777,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationControlFSCC Clone() {
       return new GenerationControlFSCC(this);
     }
@@ -1345,6 +3789,7 @@ namespace openfmb.generationmodule {
     /// UML inherited base object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ControlFSCC ControlFSCC {
       get { return controlFSCC_; }
       set {
@@ -1359,6 +3804,7 @@ namespace openfmb.generationmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.generationmodule.GenerationControlScheduleFSCH GenerationControlScheduleFSCH {
       get { return generationControlScheduleFSCH_; }
       set {
@@ -1367,11 +3813,13 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as GenerationControlFSCC);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(GenerationControlFSCC other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1385,6 +3833,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (controlFSCC_ != null) hash ^= ControlFSCC.GetHashCode();
@@ -1396,11 +3845,13 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -1421,6 +3872,7 @@ namespace openfmb.generationmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (controlFSCC_ != null) {
         output.WriteRawTag(10);
@@ -1437,6 +3889,7 @@ namespace openfmb.generationmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (controlFSCC_ != null) {
@@ -1452,6 +3905,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(GenerationControlFSCC other) {
       if (other == null) {
         return;
@@ -1472,6 +3926,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1503,6 +3958,7 @@ namespace openfmb.generationmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -1542,19 +3998,23 @@ namespace openfmb.generationmodule {
     private static readonly pb::MessageParser<GenerationControl> _parser = new pb::MessageParser<GenerationControl>(() => new GenerationControl());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<GenerationControl> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[4]; }
+      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationControl() {
       OnConstruction();
     }
@@ -1562,6 +4022,7 @@ namespace openfmb.generationmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationControl(GenerationControl other) : this() {
       controlValue_ = other.controlValue_ != null ? other.controlValue_.Clone() : null;
       check_ = other.check_ != null ? other.check_.Clone() : null;
@@ -1570,6 +4031,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationControl Clone() {
       return new GenerationControl(this);
     }
@@ -1581,6 +4043,7 @@ namespace openfmb.generationmodule {
     /// UML inherited base object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ControlValue ControlValue {
       get { return controlValue_; }
       set {
@@ -1595,6 +4058,7 @@ namespace openfmb.generationmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.CheckConditions Check {
       get { return check_; }
       set {
@@ -1609,6 +4073,7 @@ namespace openfmb.generationmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.generationmodule.GenerationControlFSCC GenerationControlFSCC {
       get { return generationControlFSCC_; }
       set {
@@ -1617,11 +4082,13 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as GenerationControl);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(GenerationControl other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -1636,6 +4103,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (controlValue_ != null) hash ^= ControlValue.GetHashCode();
@@ -1648,11 +4116,13 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -1677,6 +4147,7 @@ namespace openfmb.generationmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (controlValue_ != null) {
         output.WriteRawTag(10);
@@ -1697,6 +4168,7 @@ namespace openfmb.generationmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (controlValue_ != null) {
@@ -1715,6 +4187,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(GenerationControl other) {
       if (other == null) {
         return;
@@ -1741,6 +4214,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -1779,6 +4253,7 @@ namespace openfmb.generationmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -1805,244 +4280,6 @@ namespace openfmb.generationmodule {
               GenerationControlFSCC = new global::openfmb.generationmodule.GenerationControlFSCC();
             }
             input.ReadMessage(GenerationControlFSCC);
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  /// <summary>
-  /// A single or set of synchronous machines for converting mechanical power into alternating-current
-  /// power. For example, individual machines within a set may be defined for scheduling purposes while a
-  /// single control signal is derived for the set. In this case there would be a GeneratingUnit for each
-  /// member of the set and an additional GeneratingUnit corresponding to the set.
-  /// </summary>
-  public sealed partial class GeneratingUnit : pb::IMessage<GeneratingUnit>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<GeneratingUnit> _parser = new pb::MessageParser<GeneratingUnit>(() => new GeneratingUnit());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<GeneratingUnit> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[5]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public GeneratingUnit() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public GeneratingUnit(GeneratingUnit other) : this() {
-      conductingEquipment_ = other.conductingEquipment_ != null ? other.conductingEquipment_.Clone() : null;
-      maxOperatingP_ = other.maxOperatingP_ != null ? other.maxOperatingP_.Clone() : null;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public GeneratingUnit Clone() {
-      return new GeneratingUnit(this);
-    }
-
-    /// <summary>Field number for the "conductingEquipment" field.</summary>
-    public const int ConductingEquipmentFieldNumber = 1;
-    private global::openfmb.commonmodule.ConductingEquipment conductingEquipment_;
-    /// <summary>
-    /// UML inherited base object
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.ConductingEquipment ConductingEquipment {
-      get { return conductingEquipment_; }
-      set {
-        conductingEquipment_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "maxOperatingP" field.</summary>
-    public const int MaxOperatingPFieldNumber = 2;
-    private global::openfmb.commonmodule.ActivePower maxOperatingP_;
-    /// <summary>
-    /// This is the maximum operating active power limit the dispatcher can enter for this unit.
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::openfmb.commonmodule.ActivePower MaxOperatingP {
-      get { return maxOperatingP_; }
-      set {
-        maxOperatingP_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as GeneratingUnit);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(GeneratingUnit other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (!object.Equals(ConductingEquipment, other.ConductingEquipment)) return false;
-      if (!object.Equals(MaxOperatingP, other.MaxOperatingP)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (conductingEquipment_ != null) hash ^= ConductingEquipment.GetHashCode();
-      if (maxOperatingP_ != null) hash ^= MaxOperatingP.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (conductingEquipment_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(ConductingEquipment);
-      }
-      if (maxOperatingP_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(MaxOperatingP);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (conductingEquipment_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(ConductingEquipment);
-      }
-      if (maxOperatingP_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(MaxOperatingP);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (conductingEquipment_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ConductingEquipment);
-      }
-      if (maxOperatingP_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(MaxOperatingP);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(GeneratingUnit other) {
-      if (other == null) {
-        return;
-      }
-      if (other.conductingEquipment_ != null) {
-        if (conductingEquipment_ == null) {
-          ConductingEquipment = new global::openfmb.commonmodule.ConductingEquipment();
-        }
-        ConductingEquipment.MergeFrom(other.ConductingEquipment);
-      }
-      if (other.maxOperatingP_ != null) {
-        if (maxOperatingP_ == null) {
-          MaxOperatingP = new global::openfmb.commonmodule.ActivePower();
-        }
-        MaxOperatingP.MergeFrom(other.MaxOperatingP);
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10: {
-            if (conductingEquipment_ == null) {
-              ConductingEquipment = new global::openfmb.commonmodule.ConductingEquipment();
-            }
-            input.ReadMessage(ConductingEquipment);
-            break;
-          }
-          case 18: {
-            if (maxOperatingP_ == null) {
-              MaxOperatingP = new global::openfmb.commonmodule.ActivePower();
-            }
-            input.ReadMessage(MaxOperatingP);
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            if (conductingEquipment_ == null) {
-              ConductingEquipment = new global::openfmb.commonmodule.ConductingEquipment();
-            }
-            input.ReadMessage(ConductingEquipment);
-            break;
-          }
-          case 18: {
-            if (maxOperatingP_ == null) {
-              MaxOperatingP = new global::openfmb.commonmodule.ActivePower();
-            }
-            input.ReadMessage(MaxOperatingP);
             break;
           }
         }
@@ -2063,19 +4300,23 @@ namespace openfmb.generationmodule {
     private static readonly pb::MessageParser<GenerationControlProfile> _parser = new pb::MessageParser<GenerationControlProfile>(() => new GenerationControlProfile());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<GenerationControlProfile> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[6]; }
+      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationControlProfile() {
       OnConstruction();
     }
@@ -2083,6 +4324,7 @@ namespace openfmb.generationmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationControlProfile(GenerationControlProfile other) : this() {
       controlMessageInfo_ = other.controlMessageInfo_ != null ? other.controlMessageInfo_.Clone() : null;
       generatingUnit_ = other.generatingUnit_ != null ? other.generatingUnit_.Clone() : null;
@@ -2091,6 +4333,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationControlProfile Clone() {
       return new GenerationControlProfile(this);
     }
@@ -2102,6 +4345,7 @@ namespace openfmb.generationmodule {
     /// UML inherited base object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ControlMessageInfo ControlMessageInfo {
       get { return controlMessageInfo_; }
       set {
@@ -2116,6 +4360,7 @@ namespace openfmb.generationmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.generationmodule.GeneratingUnit GeneratingUnit {
       get { return generatingUnit_; }
       set {
@@ -2130,6 +4375,7 @@ namespace openfmb.generationmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.generationmodule.GenerationControl GenerationControl {
       get { return generationControl_; }
       set {
@@ -2138,11 +4384,13 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as GenerationControlProfile);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(GenerationControlProfile other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2157,6 +4405,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (controlMessageInfo_ != null) hash ^= ControlMessageInfo.GetHashCode();
@@ -2169,11 +4418,13 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -2198,6 +4449,7 @@ namespace openfmb.generationmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (controlMessageInfo_ != null) {
         output.WriteRawTag(10);
@@ -2218,6 +4470,7 @@ namespace openfmb.generationmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (controlMessageInfo_ != null) {
@@ -2236,6 +4489,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(GenerationControlProfile other) {
       if (other == null) {
         return;
@@ -2262,6 +4516,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -2300,6 +4555,7 @@ namespace openfmb.generationmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -2346,19 +4602,23 @@ namespace openfmb.generationmodule {
     private static readonly pb::MessageParser<DroopParameter> _parser = new pb::MessageParser<DroopParameter>(() => new DroopParameter());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<DroopParameter> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[7]; }
+      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public DroopParameter() {
       OnConstruction();
     }
@@ -2366,6 +4626,7 @@ namespace openfmb.generationmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public DroopParameter(DroopParameter other) : this() {
       Slope = other.Slope;
       UnloadedOffset = other.UnloadedOffset;
@@ -2373,6 +4634,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public DroopParameter Clone() {
       return new DroopParameter(this);
     }
@@ -2385,6 +4647,7 @@ namespace openfmb.generationmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public float? Slope {
       get { return slope_; }
       set {
@@ -2401,6 +4664,7 @@ namespace openfmb.generationmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public float? UnloadedOffset {
       get { return unloadedOffset_; }
       set {
@@ -2410,11 +4674,13 @@ namespace openfmb.generationmodule {
 
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as DroopParameter);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(DroopParameter other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2428,6 +4694,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (slope_ != null) hash ^= pbc::ProtobufEqualityComparers.BitwiseNullableSingleEqualityComparer.GetHashCode(Slope);
@@ -2439,11 +4706,13 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -2462,6 +4731,7 @@ namespace openfmb.generationmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (slope_ != null) {
         _single_slope_codec.WriteTagAndValue(ref output, Slope);
@@ -2476,6 +4746,7 @@ namespace openfmb.generationmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (slope_ != null) {
@@ -2491,6 +4762,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(DroopParameter other) {
       if (other == null) {
         return;
@@ -2509,6 +4781,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -2540,6 +4813,7 @@ namespace openfmb.generationmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -2579,19 +4853,23 @@ namespace openfmb.generationmodule {
     private static readonly pb::MessageParser<RealPowerControl> _parser = new pb::MessageParser<RealPowerControl>(() => new RealPowerControl());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<RealPowerControl> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[8]; }
+      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RealPowerControl() {
       OnConstruction();
     }
@@ -2599,6 +4877,7 @@ namespace openfmb.generationmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RealPowerControl(RealPowerControl other) : this() {
       droopSetpoint_ = other.droopSetpoint_ != null ? other.droopSetpoint_.Clone() : null;
       IsochronousSetpoint = other.IsochronousSetpoint;
@@ -2608,6 +4887,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RealPowerControl Clone() {
       return new RealPowerControl(this);
     }
@@ -2619,6 +4899,7 @@ namespace openfmb.generationmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.generationmodule.DroopParameter DroopSetpoint {
       get { return droopSetpoint_; }
       set {
@@ -2634,6 +4915,7 @@ namespace openfmb.generationmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public float? IsochronousSetpoint {
       get { return isochronousSetpoint_; }
       set {
@@ -2649,6 +4931,7 @@ namespace openfmb.generationmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.Optional_RealPowerControlKind RealPowerControlMode {
       get { return realPowerControlMode_; }
       set {
@@ -2664,6 +4947,7 @@ namespace openfmb.generationmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public float? RealPowerSetpoint {
       get { return realPowerSetpoint_; }
       set {
@@ -2673,11 +4957,13 @@ namespace openfmb.generationmodule {
 
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as RealPowerControl);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(RealPowerControl other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -2693,6 +4979,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (droopSetpoint_ != null) hash ^= DroopSetpoint.GetHashCode();
@@ -2706,11 +4993,13 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -2737,6 +5026,7 @@ namespace openfmb.generationmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (droopSetpoint_ != null) {
         output.WriteRawTag(10);
@@ -2759,6 +5049,7 @@ namespace openfmb.generationmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (droopSetpoint_ != null) {
@@ -2780,6 +5071,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(RealPowerControl other) {
       if (other == null) {
         return;
@@ -2810,6 +5102,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -2855,6 +5148,7 @@ namespace openfmb.generationmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -2908,19 +5202,23 @@ namespace openfmb.generationmodule {
     private static readonly pb::MessageParser<ReactivePowerControl> _parser = new pb::MessageParser<ReactivePowerControl>(() => new ReactivePowerControl());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<ReactivePowerControl> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[9]; }
+      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ReactivePowerControl() {
       OnConstruction();
     }
@@ -2928,6 +5226,7 @@ namespace openfmb.generationmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ReactivePowerControl(ReactivePowerControl other) : this() {
       droopSetpoint_ = other.droopSetpoint_ != null ? other.droopSetpoint_.Clone() : null;
       PowerFactorSetpoint = other.PowerFactorSetpoint;
@@ -2938,6 +5237,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ReactivePowerControl Clone() {
       return new ReactivePowerControl(this);
     }
@@ -2949,6 +5249,7 @@ namespace openfmb.generationmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.generationmodule.DroopParameter DroopSetpoint {
       get { return droopSetpoint_; }
       set {
@@ -2964,6 +5265,7 @@ namespace openfmb.generationmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public float? PowerFactorSetpoint {
       get { return powerFactorSetpoint_; }
       set {
@@ -2979,6 +5281,7 @@ namespace openfmb.generationmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.Optional_ReactivePowerControlKind ReactivePowerControlMode {
       get { return reactivePowerControlMode_; }
       set {
@@ -2994,6 +5297,7 @@ namespace openfmb.generationmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public float? ReactivePowerSetpoint {
       get { return reactivePowerSetpoint_; }
       set {
@@ -3010,6 +5314,7 @@ namespace openfmb.generationmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public float? VoltageSetpoint {
       get { return voltageSetpoint_; }
       set {
@@ -3019,11 +5324,13 @@ namespace openfmb.generationmodule {
 
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as ReactivePowerControl);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(ReactivePowerControl other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3040,6 +5347,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (droopSetpoint_ != null) hash ^= DroopSetpoint.GetHashCode();
@@ -3054,11 +5362,13 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -3088,6 +5398,7 @@ namespace openfmb.generationmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (droopSetpoint_ != null) {
         output.WriteRawTag(10);
@@ -3113,6 +5424,7 @@ namespace openfmb.generationmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (droopSetpoint_ != null) {
@@ -3137,6 +5449,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(ReactivePowerControl other) {
       if (other == null) {
         return;
@@ -3172,6 +5485,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -3224,6 +5538,7 @@ namespace openfmb.generationmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -3284,19 +5599,23 @@ namespace openfmb.generationmodule {
     private static readonly pb::MessageParser<GenerationDiscreteControl> _parser = new pb::MessageParser<GenerationDiscreteControl>(() => new GenerationDiscreteControl());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<GenerationDiscreteControl> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[10]; }
+      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[16]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationDiscreteControl() {
       OnConstruction();
     }
@@ -3304,6 +5623,7 @@ namespace openfmb.generationmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationDiscreteControl(GenerationDiscreteControl other) : this() {
       controlValue_ = other.controlValue_ != null ? other.controlValue_.Clone() : null;
       check_ = other.check_ != null ? other.check_.Clone() : null;
@@ -3313,6 +5633,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationDiscreteControl Clone() {
       return new GenerationDiscreteControl(this);
     }
@@ -3324,6 +5645,7 @@ namespace openfmb.generationmodule {
     /// UML inherited base object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ControlValue ControlValue {
       get { return controlValue_; }
       set {
@@ -3338,6 +5660,7 @@ namespace openfmb.generationmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.CheckConditions Check {
       get { return check_; }
       set {
@@ -3352,6 +5675,7 @@ namespace openfmb.generationmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.generationmodule.ReactivePowerControl ReactivePowerControl {
       get { return reactivePowerControl_; }
       set {
@@ -3366,6 +5690,7 @@ namespace openfmb.generationmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.generationmodule.RealPowerControl RealPowerControl {
       get { return realPowerControl_; }
       set {
@@ -3374,11 +5699,13 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as GenerationDiscreteControl);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(GenerationDiscreteControl other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3394,6 +5721,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (controlValue_ != null) hash ^= ControlValue.GetHashCode();
@@ -3407,11 +5735,13 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -3440,6 +5770,7 @@ namespace openfmb.generationmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (controlValue_ != null) {
         output.WriteRawTag(10);
@@ -3464,6 +5795,7 @@ namespace openfmb.generationmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (controlValue_ != null) {
@@ -3485,6 +5817,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(GenerationDiscreteControl other) {
       if (other == null) {
         return;
@@ -3517,6 +5850,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -3562,6 +5896,7 @@ namespace openfmb.generationmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -3615,19 +5950,23 @@ namespace openfmb.generationmodule {
     private static readonly pb::MessageParser<GenerationDiscreteControlProfile> _parser = new pb::MessageParser<GenerationDiscreteControlProfile>(() => new GenerationDiscreteControlProfile());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<GenerationDiscreteControlProfile> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[11]; }
+      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[17]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationDiscreteControlProfile() {
       OnConstruction();
     }
@@ -3635,6 +5974,7 @@ namespace openfmb.generationmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationDiscreteControlProfile(GenerationDiscreteControlProfile other) : this() {
       controlMessageInfo_ = other.controlMessageInfo_ != null ? other.controlMessageInfo_.Clone() : null;
       generatingUnit_ = other.generatingUnit_ != null ? other.generatingUnit_.Clone() : null;
@@ -3643,6 +5983,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationDiscreteControlProfile Clone() {
       return new GenerationDiscreteControlProfile(this);
     }
@@ -3654,6 +5995,7 @@ namespace openfmb.generationmodule {
     /// UML inherited base object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ControlMessageInfo ControlMessageInfo {
       get { return controlMessageInfo_; }
       set {
@@ -3668,6 +6010,7 @@ namespace openfmb.generationmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.generationmodule.GeneratingUnit GeneratingUnit {
       get { return generatingUnit_; }
       set {
@@ -3682,6 +6025,7 @@ namespace openfmb.generationmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.generationmodule.GenerationDiscreteControl GenerationDiscreteControl {
       get { return generationDiscreteControl_; }
       set {
@@ -3690,11 +6034,13 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as GenerationDiscreteControlProfile);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(GenerationDiscreteControlProfile other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -3709,6 +6055,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (controlMessageInfo_ != null) hash ^= ControlMessageInfo.GetHashCode();
@@ -3721,11 +6068,13 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -3750,6 +6099,7 @@ namespace openfmb.generationmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (controlMessageInfo_ != null) {
         output.WriteRawTag(10);
@@ -3770,6 +6120,7 @@ namespace openfmb.generationmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (controlMessageInfo_ != null) {
@@ -3788,6 +6139,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(GenerationDiscreteControlProfile other) {
       if (other == null) {
         return;
@@ -3814,6 +6166,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -3852,6 +6205,7 @@ namespace openfmb.generationmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -3898,19 +6252,23 @@ namespace openfmb.generationmodule {
     private static readonly pb::MessageParser<GenerationReading> _parser = new pb::MessageParser<GenerationReading>(() => new GenerationReading());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<GenerationReading> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[12]; }
+      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[18]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationReading() {
       OnConstruction();
     }
@@ -3918,6 +6276,7 @@ namespace openfmb.generationmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationReading(GenerationReading other) : this() {
       conductingEquipmentTerminalReading_ = other.conductingEquipmentTerminalReading_ != null ? other.conductingEquipmentTerminalReading_.Clone() : null;
       phaseMMTN_ = other.phaseMMTN_ != null ? other.phaseMMTN_.Clone() : null;
@@ -3927,6 +6286,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationReading Clone() {
       return new GenerationReading(this);
     }
@@ -3938,6 +6298,7 @@ namespace openfmb.generationmodule {
     /// UML inherited base object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ConductingEquipmentTerminalReading ConductingEquipmentTerminalReading {
       get { return conductingEquipmentTerminalReading_; }
       set {
@@ -3952,6 +6313,7 @@ namespace openfmb.generationmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.PhaseMMTN PhaseMMTN {
       get { return phaseMMTN_; }
       set {
@@ -3966,6 +6328,7 @@ namespace openfmb.generationmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ReadingMMTR ReadingMMTR {
       get { return readingMMTR_; }
       set {
@@ -3980,6 +6343,7 @@ namespace openfmb.generationmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ReadingMMXU ReadingMMXU {
       get { return readingMMXU_; }
       set {
@@ -3988,11 +6352,13 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as GenerationReading);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(GenerationReading other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -4008,6 +6374,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (conductingEquipmentTerminalReading_ != null) hash ^= ConductingEquipmentTerminalReading.GetHashCode();
@@ -4021,11 +6388,13 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -4054,6 +6423,7 @@ namespace openfmb.generationmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (conductingEquipmentTerminalReading_ != null) {
         output.WriteRawTag(10);
@@ -4078,6 +6448,7 @@ namespace openfmb.generationmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (conductingEquipmentTerminalReading_ != null) {
@@ -4099,6 +6470,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(GenerationReading other) {
       if (other == null) {
         return;
@@ -4131,6 +6503,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -4176,6 +6549,7 @@ namespace openfmb.generationmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -4229,19 +6603,23 @@ namespace openfmb.generationmodule {
     private static readonly pb::MessageParser<GenerationReadingProfile> _parser = new pb::MessageParser<GenerationReadingProfile>(() => new GenerationReadingProfile());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<GenerationReadingProfile> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[13]; }
+      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[19]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationReadingProfile() {
       OnConstruction();
     }
@@ -4249,6 +6627,7 @@ namespace openfmb.generationmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationReadingProfile(GenerationReadingProfile other) : this() {
       readingMessageInfo_ = other.readingMessageInfo_ != null ? other.readingMessageInfo_.Clone() : null;
       generatingUnit_ = other.generatingUnit_ != null ? other.generatingUnit_.Clone() : null;
@@ -4257,6 +6636,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationReadingProfile Clone() {
       return new GenerationReadingProfile(this);
     }
@@ -4268,6 +6648,7 @@ namespace openfmb.generationmodule {
     /// UML inherited base object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ReadingMessageInfo ReadingMessageInfo {
       get { return readingMessageInfo_; }
       set {
@@ -4282,6 +6663,7 @@ namespace openfmb.generationmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.generationmodule.GeneratingUnit GeneratingUnit {
       get { return generatingUnit_; }
       set {
@@ -4296,6 +6678,7 @@ namespace openfmb.generationmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.generationmodule.GenerationReading GenerationReading {
       get { return generationReading_; }
       set {
@@ -4304,11 +6687,13 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as GenerationReadingProfile);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(GenerationReadingProfile other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -4323,6 +6708,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (readingMessageInfo_ != null) hash ^= ReadingMessageInfo.GetHashCode();
@@ -4335,11 +6721,13 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -4364,6 +6752,7 @@ namespace openfmb.generationmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (readingMessageInfo_ != null) {
         output.WriteRawTag(10);
@@ -4384,6 +6773,7 @@ namespace openfmb.generationmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (readingMessageInfo_ != null) {
@@ -4402,6 +6792,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(GenerationReadingProfile other) {
       if (other == null) {
         return;
@@ -4428,6 +6819,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -4466,6 +6858,7 @@ namespace openfmb.generationmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -4512,19 +6905,23 @@ namespace openfmb.generationmodule {
     private static readonly pb::MessageParser<GenerationPointStatus> _parser = new pb::MessageParser<GenerationPointStatus>(() => new GenerationPointStatus());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<GenerationPointStatus> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[14]; }
+      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[20]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationPointStatus() {
       OnConstruction();
     }
@@ -4532,6 +6929,7 @@ namespace openfmb.generationmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationPointStatus(GenerationPointStatus other) : this() {
       blackStartEnabled_ = other.blackStartEnabled_ != null ? other.blackStartEnabled_.Clone() : null;
       frequencySetPointEnabled_ = other.frequencySetPointEnabled_ != null ? other.frequencySetPointEnabled_.Clone() : null;
@@ -4544,10 +6942,21 @@ namespace openfmb.generationmodule {
       syncBackToGrid_ = other.syncBackToGrid_ != null ? other.syncBackToGrid_.Clone() : null;
       transToIslndOnGridLossEnabled_ = other.transToIslndOnGridLossEnabled_ != null ? other.transToIslndOnGridLossEnabled_.Clone() : null;
       voltageSetPointEnabled_ = other.voltageSetPointEnabled_ != null ? other.voltageSetPointEnabled_.Clone() : null;
+      enterServiceOperation_ = other.enterServiceOperation_ != null ? other.enterServiceOperation_.Clone() : null;
+      hzWOperation_ = other.hzWOperation_ != null ? other.hzWOperation_.Clone() : null;
+      limitWOperation_ = other.limitWOperation_ != null ? other.limitWOperation_.Clone() : null;
+      pFOperation_ = other.pFOperation_ != null ? other.pFOperation_.Clone() : null;
+      tmHzTripOperation_ = other.tmHzTripOperation_ != null ? other.tmHzTripOperation_.Clone() : null;
+      tmVoltTripOperation_ = other.tmVoltTripOperation_ != null ? other.tmVoltTripOperation_.Clone() : null;
+      vArOperation_ = other.vArOperation_ != null ? other.vArOperation_.Clone() : null;
+      voltVarOperation_ = other.voltVarOperation_ != null ? other.voltVarOperation_.Clone() : null;
+      voltWOperation_ = other.voltWOperation_ != null ? other.voltWOperation_.Clone() : null;
+      wVarOperation_ = other.wVarOperation_ != null ? other.wVarOperation_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationPointStatus Clone() {
       return new GenerationPointStatus(this);
     }
@@ -4559,6 +6968,7 @@ namespace openfmb.generationmodule {
     /// Black start enable
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.StatusSPS BlackStartEnabled {
       get { return blackStartEnabled_; }
       set {
@@ -4573,6 +6983,7 @@ namespace openfmb.generationmodule {
     /// Enable frequency set point
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.StatusSPS FrequencySetPointEnabled {
       get { return frequencySetPointEnabled_; }
       set {
@@ -4585,9 +6996,10 @@ namespace openfmb.generationmodule {
     private static readonly pb::FieldCodec<float?> _single_pctHzDroop_codec = pb::FieldCodec.ForStructWrapper<float>(26);
     private float? pctHzDroop_;
     /// <summary>
-    /// Black start enable
+    /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public float? PctHzDroop {
       get { return pctHzDroop_; }
       set {
@@ -4601,9 +7013,10 @@ namespace openfmb.generationmodule {
     private static readonly pb::FieldCodec<float?> _single_pctVDroop_codec = pb::FieldCodec.ForStructWrapper<float>(34);
     private float? pctVDroop_;
     /// <summary>
-    /// Black start enable
+    /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public float? PctVDroop {
       get { return pctVDroop_; }
       set {
@@ -4619,6 +7032,7 @@ namespace openfmb.generationmodule {
     /// Ramp rates
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.RampRate RampRates {
       get { return rampRates_; }
       set {
@@ -4633,6 +7047,7 @@ namespace openfmb.generationmodule {
     /// Enable reactive power set point
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.StatusSPS ReactivePwrSetPointEnabled {
       get { return reactivePwrSetPointEnabled_; }
       set {
@@ -4647,6 +7062,7 @@ namespace openfmb.generationmodule {
     /// Enable real power set point
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.StatusSPS RealPwrSetPointEnabled {
       get { return realPwrSetPointEnabled_; }
       set {
@@ -4658,9 +7074,10 @@ namespace openfmb.generationmodule {
     public const int StateFieldNumber = 8;
     private global::openfmb.commonmodule.Optional_StateKind state_;
     /// <summary>
-    /// ESS state
+    /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.Optional_StateKind State {
       get { return state_; }
       set {
@@ -4675,6 +7092,7 @@ namespace openfmb.generationmodule {
     /// Synchronize back to grid
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.StatusSPS SyncBackToGrid {
       get { return syncBackToGrid_; }
       set {
@@ -4689,6 +7107,7 @@ namespace openfmb.generationmodule {
     /// Transition to island on grid loss enable
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.StatusSPS TransToIslndOnGridLossEnabled {
       get { return transToIslndOnGridLossEnabled_; }
       set {
@@ -4703,6 +7122,7 @@ namespace openfmb.generationmodule {
     /// Enable voltage set point
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.StatusSPS VoltageSetPointEnabled {
       get { return voltageSetPointEnabled_; }
       set {
@@ -4710,12 +7130,164 @@ namespace openfmb.generationmodule {
       }
     }
 
+    /// <summary>Field number for the "enterServiceOperation" field.</summary>
+    public const int EnterServiceOperationFieldNumber = 12;
+    private global::openfmb.commonmodule.EnterServiceAPC enterServiceOperation_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.EnterServiceAPC EnterServiceOperation {
+      get { return enterServiceOperation_; }
+      set {
+        enterServiceOperation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "hzWOperation" field.</summary>
+    public const int HzWOperationFieldNumber = 13;
+    private global::openfmb.commonmodule.HzWAPC hzWOperation_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.HzWAPC HzWOperation {
+      get { return hzWOperation_; }
+      set {
+        hzWOperation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "limitWOperation" field.</summary>
+    public const int LimitWOperationFieldNumber = 14;
+    private global::openfmb.commonmodule.LimitWAPC limitWOperation_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.LimitWAPC LimitWOperation {
+      get { return limitWOperation_; }
+      set {
+        limitWOperation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "pFOperation" field.</summary>
+    public const int PFOperationFieldNumber = 15;
+    private global::openfmb.commonmodule.PFSPC pFOperation_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.PFSPC PFOperation {
+      get { return pFOperation_; }
+      set {
+        pFOperation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "tmHzTripOperation" field.</summary>
+    public const int TmHzTripOperationFieldNumber = 16;
+    private global::openfmb.commonmodule.TmHzCSG tmHzTripOperation_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.TmHzCSG TmHzTripOperation {
+      get { return tmHzTripOperation_; }
+      set {
+        tmHzTripOperation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "tmVoltTripOperation" field.</summary>
+    public const int TmVoltTripOperationFieldNumber = 17;
+    private global::openfmb.commonmodule.TmVoltCSG tmVoltTripOperation_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.TmVoltCSG TmVoltTripOperation {
+      get { return tmVoltTripOperation_; }
+      set {
+        tmVoltTripOperation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "vArOperation" field.</summary>
+    public const int VArOperationFieldNumber = 18;
+    private global::openfmb.commonmodule.VarSPC vArOperation_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.VarSPC VArOperation {
+      get { return vArOperation_; }
+      set {
+        vArOperation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "voltVarOperation" field.</summary>
+    public const int VoltVarOperationFieldNumber = 19;
+    private global::openfmb.commonmodule.VoltVarCSG voltVarOperation_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.VoltVarCSG VoltVarOperation {
+      get { return voltVarOperation_; }
+      set {
+        voltVarOperation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "voltWOperation" field.</summary>
+    public const int VoltWOperationFieldNumber = 20;
+    private global::openfmb.commonmodule.VoltWCSG voltWOperation_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.VoltWCSG VoltWOperation {
+      get { return voltWOperation_; }
+      set {
+        voltWOperation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "wVarOperation" field.</summary>
+    public const int WVarOperationFieldNumber = 21;
+    private global::openfmb.commonmodule.WVarCSG wVarOperation_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.WVarCSG WVarOperation {
+      get { return wVarOperation_; }
+      set {
+        wVarOperation_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as GenerationPointStatus);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(GenerationPointStatus other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -4734,10 +7306,21 @@ namespace openfmb.generationmodule {
       if (!object.Equals(SyncBackToGrid, other.SyncBackToGrid)) return false;
       if (!object.Equals(TransToIslndOnGridLossEnabled, other.TransToIslndOnGridLossEnabled)) return false;
       if (!object.Equals(VoltageSetPointEnabled, other.VoltageSetPointEnabled)) return false;
+      if (!object.Equals(EnterServiceOperation, other.EnterServiceOperation)) return false;
+      if (!object.Equals(HzWOperation, other.HzWOperation)) return false;
+      if (!object.Equals(LimitWOperation, other.LimitWOperation)) return false;
+      if (!object.Equals(PFOperation, other.PFOperation)) return false;
+      if (!object.Equals(TmHzTripOperation, other.TmHzTripOperation)) return false;
+      if (!object.Equals(TmVoltTripOperation, other.TmVoltTripOperation)) return false;
+      if (!object.Equals(VArOperation, other.VArOperation)) return false;
+      if (!object.Equals(VoltVarOperation, other.VoltVarOperation)) return false;
+      if (!object.Equals(VoltWOperation, other.VoltWOperation)) return false;
+      if (!object.Equals(WVarOperation, other.WVarOperation)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (blackStartEnabled_ != null) hash ^= BlackStartEnabled.GetHashCode();
@@ -4751,6 +7334,16 @@ namespace openfmb.generationmodule {
       if (syncBackToGrid_ != null) hash ^= SyncBackToGrid.GetHashCode();
       if (transToIslndOnGridLossEnabled_ != null) hash ^= TransToIslndOnGridLossEnabled.GetHashCode();
       if (voltageSetPointEnabled_ != null) hash ^= VoltageSetPointEnabled.GetHashCode();
+      if (enterServiceOperation_ != null) hash ^= EnterServiceOperation.GetHashCode();
+      if (hzWOperation_ != null) hash ^= HzWOperation.GetHashCode();
+      if (limitWOperation_ != null) hash ^= LimitWOperation.GetHashCode();
+      if (pFOperation_ != null) hash ^= PFOperation.GetHashCode();
+      if (tmHzTripOperation_ != null) hash ^= TmHzTripOperation.GetHashCode();
+      if (tmVoltTripOperation_ != null) hash ^= TmVoltTripOperation.GetHashCode();
+      if (vArOperation_ != null) hash ^= VArOperation.GetHashCode();
+      if (voltVarOperation_ != null) hash ^= VoltVarOperation.GetHashCode();
+      if (voltWOperation_ != null) hash ^= VoltWOperation.GetHashCode();
+      if (wVarOperation_ != null) hash ^= WVarOperation.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -4758,11 +7351,13 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -4809,6 +7404,46 @@ namespace openfmb.generationmodule {
         output.WriteRawTag(90);
         output.WriteMessage(VoltageSetPointEnabled);
       }
+      if (enterServiceOperation_ != null) {
+        output.WriteRawTag(98);
+        output.WriteMessage(EnterServiceOperation);
+      }
+      if (hzWOperation_ != null) {
+        output.WriteRawTag(106);
+        output.WriteMessage(HzWOperation);
+      }
+      if (limitWOperation_ != null) {
+        output.WriteRawTag(114);
+        output.WriteMessage(LimitWOperation);
+      }
+      if (pFOperation_ != null) {
+        output.WriteRawTag(122);
+        output.WriteMessage(PFOperation);
+      }
+      if (tmHzTripOperation_ != null) {
+        output.WriteRawTag(130, 1);
+        output.WriteMessage(TmHzTripOperation);
+      }
+      if (tmVoltTripOperation_ != null) {
+        output.WriteRawTag(138, 1);
+        output.WriteMessage(TmVoltTripOperation);
+      }
+      if (vArOperation_ != null) {
+        output.WriteRawTag(146, 1);
+        output.WriteMessage(VArOperation);
+      }
+      if (voltVarOperation_ != null) {
+        output.WriteRawTag(154, 1);
+        output.WriteMessage(VoltVarOperation);
+      }
+      if (voltWOperation_ != null) {
+        output.WriteRawTag(162, 1);
+        output.WriteMessage(VoltWOperation);
+      }
+      if (wVarOperation_ != null) {
+        output.WriteRawTag(170, 1);
+        output.WriteMessage(WVarOperation);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -4817,6 +7452,7 @@ namespace openfmb.generationmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (blackStartEnabled_ != null) {
         output.WriteRawTag(10);
@@ -4860,6 +7496,46 @@ namespace openfmb.generationmodule {
         output.WriteRawTag(90);
         output.WriteMessage(VoltageSetPointEnabled);
       }
+      if (enterServiceOperation_ != null) {
+        output.WriteRawTag(98);
+        output.WriteMessage(EnterServiceOperation);
+      }
+      if (hzWOperation_ != null) {
+        output.WriteRawTag(106);
+        output.WriteMessage(HzWOperation);
+      }
+      if (limitWOperation_ != null) {
+        output.WriteRawTag(114);
+        output.WriteMessage(LimitWOperation);
+      }
+      if (pFOperation_ != null) {
+        output.WriteRawTag(122);
+        output.WriteMessage(PFOperation);
+      }
+      if (tmHzTripOperation_ != null) {
+        output.WriteRawTag(130, 1);
+        output.WriteMessage(TmHzTripOperation);
+      }
+      if (tmVoltTripOperation_ != null) {
+        output.WriteRawTag(138, 1);
+        output.WriteMessage(TmVoltTripOperation);
+      }
+      if (vArOperation_ != null) {
+        output.WriteRawTag(146, 1);
+        output.WriteMessage(VArOperation);
+      }
+      if (voltVarOperation_ != null) {
+        output.WriteRawTag(154, 1);
+        output.WriteMessage(VoltVarOperation);
+      }
+      if (voltWOperation_ != null) {
+        output.WriteRawTag(162, 1);
+        output.WriteMessage(VoltWOperation);
+      }
+      if (wVarOperation_ != null) {
+        output.WriteRawTag(170, 1);
+        output.WriteMessage(WVarOperation);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -4867,6 +7543,7 @@ namespace openfmb.generationmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (blackStartEnabled_ != null) {
@@ -4902,6 +7579,36 @@ namespace openfmb.generationmodule {
       if (voltageSetPointEnabled_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(VoltageSetPointEnabled);
       }
+      if (enterServiceOperation_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(EnterServiceOperation);
+      }
+      if (hzWOperation_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(HzWOperation);
+      }
+      if (limitWOperation_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LimitWOperation);
+      }
+      if (pFOperation_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PFOperation);
+      }
+      if (tmHzTripOperation_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(TmHzTripOperation);
+      }
+      if (tmVoltTripOperation_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(TmVoltTripOperation);
+      }
+      if (vArOperation_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(VArOperation);
+      }
+      if (voltVarOperation_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(VoltVarOperation);
+      }
+      if (voltWOperation_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(VoltWOperation);
+      }
+      if (wVarOperation_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(WVarOperation);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -4909,6 +7616,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(GenerationPointStatus other) {
       if (other == null) {
         return;
@@ -4977,10 +7685,71 @@ namespace openfmb.generationmodule {
         }
         VoltageSetPointEnabled.MergeFrom(other.VoltageSetPointEnabled);
       }
+      if (other.enterServiceOperation_ != null) {
+        if (enterServiceOperation_ == null) {
+          EnterServiceOperation = new global::openfmb.commonmodule.EnterServiceAPC();
+        }
+        EnterServiceOperation.MergeFrom(other.EnterServiceOperation);
+      }
+      if (other.hzWOperation_ != null) {
+        if (hzWOperation_ == null) {
+          HzWOperation = new global::openfmb.commonmodule.HzWAPC();
+        }
+        HzWOperation.MergeFrom(other.HzWOperation);
+      }
+      if (other.limitWOperation_ != null) {
+        if (limitWOperation_ == null) {
+          LimitWOperation = new global::openfmb.commonmodule.LimitWAPC();
+        }
+        LimitWOperation.MergeFrom(other.LimitWOperation);
+      }
+      if (other.pFOperation_ != null) {
+        if (pFOperation_ == null) {
+          PFOperation = new global::openfmb.commonmodule.PFSPC();
+        }
+        PFOperation.MergeFrom(other.PFOperation);
+      }
+      if (other.tmHzTripOperation_ != null) {
+        if (tmHzTripOperation_ == null) {
+          TmHzTripOperation = new global::openfmb.commonmodule.TmHzCSG();
+        }
+        TmHzTripOperation.MergeFrom(other.TmHzTripOperation);
+      }
+      if (other.tmVoltTripOperation_ != null) {
+        if (tmVoltTripOperation_ == null) {
+          TmVoltTripOperation = new global::openfmb.commonmodule.TmVoltCSG();
+        }
+        TmVoltTripOperation.MergeFrom(other.TmVoltTripOperation);
+      }
+      if (other.vArOperation_ != null) {
+        if (vArOperation_ == null) {
+          VArOperation = new global::openfmb.commonmodule.VarSPC();
+        }
+        VArOperation.MergeFrom(other.VArOperation);
+      }
+      if (other.voltVarOperation_ != null) {
+        if (voltVarOperation_ == null) {
+          VoltVarOperation = new global::openfmb.commonmodule.VoltVarCSG();
+        }
+        VoltVarOperation.MergeFrom(other.VoltVarOperation);
+      }
+      if (other.voltWOperation_ != null) {
+        if (voltWOperation_ == null) {
+          VoltWOperation = new global::openfmb.commonmodule.VoltWCSG();
+        }
+        VoltWOperation.MergeFrom(other.VoltWOperation);
+      }
+      if (other.wVarOperation_ != null) {
+        if (wVarOperation_ == null) {
+          WVarOperation = new global::openfmb.commonmodule.WVarCSG();
+        }
+        WVarOperation.MergeFrom(other.WVarOperation);
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -5068,6 +7837,76 @@ namespace openfmb.generationmodule {
             input.ReadMessage(VoltageSetPointEnabled);
             break;
           }
+          case 98: {
+            if (enterServiceOperation_ == null) {
+              EnterServiceOperation = new global::openfmb.commonmodule.EnterServiceAPC();
+            }
+            input.ReadMessage(EnterServiceOperation);
+            break;
+          }
+          case 106: {
+            if (hzWOperation_ == null) {
+              HzWOperation = new global::openfmb.commonmodule.HzWAPC();
+            }
+            input.ReadMessage(HzWOperation);
+            break;
+          }
+          case 114: {
+            if (limitWOperation_ == null) {
+              LimitWOperation = new global::openfmb.commonmodule.LimitWAPC();
+            }
+            input.ReadMessage(LimitWOperation);
+            break;
+          }
+          case 122: {
+            if (pFOperation_ == null) {
+              PFOperation = new global::openfmb.commonmodule.PFSPC();
+            }
+            input.ReadMessage(PFOperation);
+            break;
+          }
+          case 130: {
+            if (tmHzTripOperation_ == null) {
+              TmHzTripOperation = new global::openfmb.commonmodule.TmHzCSG();
+            }
+            input.ReadMessage(TmHzTripOperation);
+            break;
+          }
+          case 138: {
+            if (tmVoltTripOperation_ == null) {
+              TmVoltTripOperation = new global::openfmb.commonmodule.TmVoltCSG();
+            }
+            input.ReadMessage(TmVoltTripOperation);
+            break;
+          }
+          case 146: {
+            if (vArOperation_ == null) {
+              VArOperation = new global::openfmb.commonmodule.VarSPC();
+            }
+            input.ReadMessage(VArOperation);
+            break;
+          }
+          case 154: {
+            if (voltVarOperation_ == null) {
+              VoltVarOperation = new global::openfmb.commonmodule.VoltVarCSG();
+            }
+            input.ReadMessage(VoltVarOperation);
+            break;
+          }
+          case 162: {
+            if (voltWOperation_ == null) {
+              VoltWOperation = new global::openfmb.commonmodule.VoltWCSG();
+            }
+            input.ReadMessage(VoltWOperation);
+            break;
+          }
+          case 170: {
+            if (wVarOperation_ == null) {
+              WVarOperation = new global::openfmb.commonmodule.WVarCSG();
+            }
+            input.ReadMessage(WVarOperation);
+            break;
+          }
         }
       }
     #endif
@@ -5075,6 +7914,7 @@ namespace openfmb.generationmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -5159,6 +7999,76 @@ namespace openfmb.generationmodule {
             input.ReadMessage(VoltageSetPointEnabled);
             break;
           }
+          case 98: {
+            if (enterServiceOperation_ == null) {
+              EnterServiceOperation = new global::openfmb.commonmodule.EnterServiceAPC();
+            }
+            input.ReadMessage(EnterServiceOperation);
+            break;
+          }
+          case 106: {
+            if (hzWOperation_ == null) {
+              HzWOperation = new global::openfmb.commonmodule.HzWAPC();
+            }
+            input.ReadMessage(HzWOperation);
+            break;
+          }
+          case 114: {
+            if (limitWOperation_ == null) {
+              LimitWOperation = new global::openfmb.commonmodule.LimitWAPC();
+            }
+            input.ReadMessage(LimitWOperation);
+            break;
+          }
+          case 122: {
+            if (pFOperation_ == null) {
+              PFOperation = new global::openfmb.commonmodule.PFSPC();
+            }
+            input.ReadMessage(PFOperation);
+            break;
+          }
+          case 130: {
+            if (tmHzTripOperation_ == null) {
+              TmHzTripOperation = new global::openfmb.commonmodule.TmHzCSG();
+            }
+            input.ReadMessage(TmHzTripOperation);
+            break;
+          }
+          case 138: {
+            if (tmVoltTripOperation_ == null) {
+              TmVoltTripOperation = new global::openfmb.commonmodule.TmVoltCSG();
+            }
+            input.ReadMessage(TmVoltTripOperation);
+            break;
+          }
+          case 146: {
+            if (vArOperation_ == null) {
+              VArOperation = new global::openfmb.commonmodule.VarSPC();
+            }
+            input.ReadMessage(VArOperation);
+            break;
+          }
+          case 154: {
+            if (voltVarOperation_ == null) {
+              VoltVarOperation = new global::openfmb.commonmodule.VoltVarCSG();
+            }
+            input.ReadMessage(VoltVarOperation);
+            break;
+          }
+          case 162: {
+            if (voltWOperation_ == null) {
+              VoltWOperation = new global::openfmb.commonmodule.VoltWCSG();
+            }
+            input.ReadMessage(VoltWOperation);
+            break;
+          }
+          case 170: {
+            if (wVarOperation_ == null) {
+              WVarOperation = new global::openfmb.commonmodule.WVarCSG();
+            }
+            input.ReadMessage(WVarOperation);
+            break;
+          }
         }
       }
     }
@@ -5177,19 +8087,23 @@ namespace openfmb.generationmodule {
     private static readonly pb::MessageParser<GenerationEventAndStatusZGEN> _parser = new pb::MessageParser<GenerationEventAndStatusZGEN>(() => new GenerationEventAndStatusZGEN());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<GenerationEventAndStatusZGEN> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[15]; }
+      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[21]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationEventAndStatusZGEN() {
       OnConstruction();
     }
@@ -5197,6 +8111,7 @@ namespace openfmb.generationmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationEventAndStatusZGEN(GenerationEventAndStatusZGEN other) : this() {
       logicalNodeForEventAndStatus_ = other.logicalNodeForEventAndStatus_ != null ? other.logicalNodeForEventAndStatus_.Clone() : null;
       auxPwrSt_ = other.auxPwrSt_ != null ? other.auxPwrSt_.Clone() : null;
@@ -5204,10 +8119,15 @@ namespace openfmb.generationmodule {
       emgStop_ = other.emgStop_ != null ? other.emgStop_.Clone() : null;
       gnSynSt_ = other.gnSynSt_ != null ? other.gnSynSt_.Clone() : null;
       pointStatus_ = other.pointStatus_ != null ? other.pointStatus_.Clone() : null;
+      alrm_ = other.alrm_ != null ? other.alrm_.Clone() : null;
+      gridConnectionState_ = other.gridConnectionState_ != null ? other.gridConnectionState_.Clone() : null;
+      ManAlrmInfo = other.ManAlrmInfo;
+      operatingState_ = other.operatingState_ != null ? other.operatingState_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationEventAndStatusZGEN Clone() {
       return new GenerationEventAndStatusZGEN(this);
     }
@@ -5219,6 +8139,7 @@ namespace openfmb.generationmodule {
     /// UML inherited base object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.LogicalNodeForEventAndStatus LogicalNodeForEventAndStatus {
       get { return logicalNodeForEventAndStatus_; }
       set {
@@ -5233,6 +8154,7 @@ namespace openfmb.generationmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.StatusSPS AuxPwrSt {
       get { return auxPwrSt_; }
       set {
@@ -5247,6 +8169,7 @@ namespace openfmb.generationmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.ENS_DynamicTestKind DynamicTest {
       get { return dynamicTest_; }
       set {
@@ -5261,6 +8184,7 @@ namespace openfmb.generationmodule {
     /// Emergency stop
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.StatusSPS EmgStop {
       get { return emgStop_; }
       set {
@@ -5275,6 +8199,7 @@ namespace openfmb.generationmodule {
     /// Generator is synchronized to EPS, or not; True = Synchronized
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.StatusSPS GnSynSt {
       get { return gnSynSt_; }
       set {
@@ -5289,6 +8214,7 @@ namespace openfmb.generationmodule {
     /// Point status
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.generationmodule.GenerationPointStatus PointStatus {
       get { return pointStatus_; }
       set {
@@ -5296,12 +8222,76 @@ namespace openfmb.generationmodule {
       }
     }
 
+    /// <summary>Field number for the "Alrm" field.</summary>
+    public const int AlrmFieldNumber = 7;
+    private global::openfmb.commonmodule.Optional_AlrmKind alrm_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.Optional_AlrmKind Alrm {
+      get { return alrm_; }
+      set {
+        alrm_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "GridConnectionState" field.</summary>
+    public const int GridConnectionStateFieldNumber = 8;
+    private global::openfmb.commonmodule.Optional_GridConnectionStateKind gridConnectionState_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.Optional_GridConnectionStateKind GridConnectionState {
+      get { return gridConnectionState_; }
+      set {
+        gridConnectionState_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "ManAlrmInfo" field.</summary>
+    public const int ManAlrmInfoFieldNumber = 9;
+    private static readonly pb::FieldCodec<string> _single_manAlrmInfo_codec = pb::FieldCodec.ForClassWrapper<string>(74);
+    private string manAlrmInfo_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ManAlrmInfo {
+      get { return manAlrmInfo_; }
+      set {
+        manAlrmInfo_ = value;
+      }
+    }
+
+
+    /// <summary>Field number for the "OperatingState" field.</summary>
+    public const int OperatingStateFieldNumber = 10;
+    private global::openfmb.commonmodule.Optional_OperatingStateKind operatingState_;
+    /// <summary>
+    /// MISSING DOCUMENTATION!!!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::openfmb.commonmodule.Optional_OperatingStateKind OperatingState {
+      get { return operatingState_; }
+      set {
+        operatingState_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as GenerationEventAndStatusZGEN);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(GenerationEventAndStatusZGEN other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -5315,10 +8305,15 @@ namespace openfmb.generationmodule {
       if (!object.Equals(EmgStop, other.EmgStop)) return false;
       if (!object.Equals(GnSynSt, other.GnSynSt)) return false;
       if (!object.Equals(PointStatus, other.PointStatus)) return false;
+      if (!object.Equals(Alrm, other.Alrm)) return false;
+      if (!object.Equals(GridConnectionState, other.GridConnectionState)) return false;
+      if (ManAlrmInfo != other.ManAlrmInfo) return false;
+      if (!object.Equals(OperatingState, other.OperatingState)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (logicalNodeForEventAndStatus_ != null) hash ^= LogicalNodeForEventAndStatus.GetHashCode();
@@ -5327,6 +8322,10 @@ namespace openfmb.generationmodule {
       if (emgStop_ != null) hash ^= EmgStop.GetHashCode();
       if (gnSynSt_ != null) hash ^= GnSynSt.GetHashCode();
       if (pointStatus_ != null) hash ^= PointStatus.GetHashCode();
+      if (alrm_ != null) hash ^= Alrm.GetHashCode();
+      if (gridConnectionState_ != null) hash ^= GridConnectionState.GetHashCode();
+      if (manAlrmInfo_ != null) hash ^= ManAlrmInfo.GetHashCode();
+      if (operatingState_ != null) hash ^= OperatingState.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -5334,11 +8333,13 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -5367,6 +8368,21 @@ namespace openfmb.generationmodule {
         output.WriteRawTag(50);
         output.WriteMessage(PointStatus);
       }
+      if (alrm_ != null) {
+        output.WriteRawTag(58);
+        output.WriteMessage(Alrm);
+      }
+      if (gridConnectionState_ != null) {
+        output.WriteRawTag(66);
+        output.WriteMessage(GridConnectionState);
+      }
+      if (manAlrmInfo_ != null) {
+        _single_manAlrmInfo_codec.WriteTagAndValue(output, ManAlrmInfo);
+      }
+      if (operatingState_ != null) {
+        output.WriteRawTag(82);
+        output.WriteMessage(OperatingState);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -5375,6 +8391,7 @@ namespace openfmb.generationmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (logicalNodeForEventAndStatus_ != null) {
         output.WriteRawTag(10);
@@ -5400,6 +8417,21 @@ namespace openfmb.generationmodule {
         output.WriteRawTag(50);
         output.WriteMessage(PointStatus);
       }
+      if (alrm_ != null) {
+        output.WriteRawTag(58);
+        output.WriteMessage(Alrm);
+      }
+      if (gridConnectionState_ != null) {
+        output.WriteRawTag(66);
+        output.WriteMessage(GridConnectionState);
+      }
+      if (manAlrmInfo_ != null) {
+        _single_manAlrmInfo_codec.WriteTagAndValue(ref output, ManAlrmInfo);
+      }
+      if (operatingState_ != null) {
+        output.WriteRawTag(82);
+        output.WriteMessage(OperatingState);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -5407,6 +8439,7 @@ namespace openfmb.generationmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (logicalNodeForEventAndStatus_ != null) {
@@ -5427,6 +8460,18 @@ namespace openfmb.generationmodule {
       if (pointStatus_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(PointStatus);
       }
+      if (alrm_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Alrm);
+      }
+      if (gridConnectionState_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(GridConnectionState);
+      }
+      if (manAlrmInfo_ != null) {
+        size += _single_manAlrmInfo_codec.CalculateSizeWithTag(ManAlrmInfo);
+      }
+      if (operatingState_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(OperatingState);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -5434,6 +8479,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(GenerationEventAndStatusZGEN other) {
       if (other == null) {
         return;
@@ -5474,10 +8520,34 @@ namespace openfmb.generationmodule {
         }
         PointStatus.MergeFrom(other.PointStatus);
       }
+      if (other.alrm_ != null) {
+        if (alrm_ == null) {
+          Alrm = new global::openfmb.commonmodule.Optional_AlrmKind();
+        }
+        Alrm.MergeFrom(other.Alrm);
+      }
+      if (other.gridConnectionState_ != null) {
+        if (gridConnectionState_ == null) {
+          GridConnectionState = new global::openfmb.commonmodule.Optional_GridConnectionStateKind();
+        }
+        GridConnectionState.MergeFrom(other.GridConnectionState);
+      }
+      if (other.manAlrmInfo_ != null) {
+        if (manAlrmInfo_ == null || other.ManAlrmInfo != "") {
+          ManAlrmInfo = other.ManAlrmInfo;
+        }
+      }
+      if (other.operatingState_ != null) {
+        if (operatingState_ == null) {
+          OperatingState = new global::openfmb.commonmodule.Optional_OperatingStateKind();
+        }
+        OperatingState.MergeFrom(other.OperatingState);
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -5530,6 +8600,34 @@ namespace openfmb.generationmodule {
             input.ReadMessage(PointStatus);
             break;
           }
+          case 58: {
+            if (alrm_ == null) {
+              Alrm = new global::openfmb.commonmodule.Optional_AlrmKind();
+            }
+            input.ReadMessage(Alrm);
+            break;
+          }
+          case 66: {
+            if (gridConnectionState_ == null) {
+              GridConnectionState = new global::openfmb.commonmodule.Optional_GridConnectionStateKind();
+            }
+            input.ReadMessage(GridConnectionState);
+            break;
+          }
+          case 74: {
+            string value = _single_manAlrmInfo_codec.Read(input);
+            if (manAlrmInfo_ == null || value != "") {
+              ManAlrmInfo = value;
+            }
+            break;
+          }
+          case 82: {
+            if (operatingState_ == null) {
+              OperatingState = new global::openfmb.commonmodule.Optional_OperatingStateKind();
+            }
+            input.ReadMessage(OperatingState);
+            break;
+          }
         }
       }
     #endif
@@ -5537,6 +8635,7 @@ namespace openfmb.generationmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -5586,6 +8685,34 @@ namespace openfmb.generationmodule {
             input.ReadMessage(PointStatus);
             break;
           }
+          case 58: {
+            if (alrm_ == null) {
+              Alrm = new global::openfmb.commonmodule.Optional_AlrmKind();
+            }
+            input.ReadMessage(Alrm);
+            break;
+          }
+          case 66: {
+            if (gridConnectionState_ == null) {
+              GridConnectionState = new global::openfmb.commonmodule.Optional_GridConnectionStateKind();
+            }
+            input.ReadMessage(GridConnectionState);
+            break;
+          }
+          case 74: {
+            string value = _single_manAlrmInfo_codec.Read(ref input);
+            if (manAlrmInfo_ == null || value != "") {
+              ManAlrmInfo = value;
+            }
+            break;
+          }
+          case 82: {
+            if (operatingState_ == null) {
+              OperatingState = new global::openfmb.commonmodule.Optional_OperatingStateKind();
+            }
+            input.ReadMessage(OperatingState);
+            break;
+          }
         }
       }
     }
@@ -5604,19 +8731,23 @@ namespace openfmb.generationmodule {
     private static readonly pb::MessageParser<GenerationEventZGEN> _parser = new pb::MessageParser<GenerationEventZGEN>(() => new GenerationEventZGEN());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<GenerationEventZGEN> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[16]; }
+      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[22]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationEventZGEN() {
       OnConstruction();
     }
@@ -5624,12 +8755,14 @@ namespace openfmb.generationmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationEventZGEN(GenerationEventZGEN other) : this() {
       generationEventAndStatusZGEN_ = other.generationEventAndStatusZGEN_ != null ? other.generationEventAndStatusZGEN_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationEventZGEN Clone() {
       return new GenerationEventZGEN(this);
     }
@@ -5641,6 +8774,7 @@ namespace openfmb.generationmodule {
     /// UML inherited base object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.generationmodule.GenerationEventAndStatusZGEN GenerationEventAndStatusZGEN {
       get { return generationEventAndStatusZGEN_; }
       set {
@@ -5649,11 +8783,13 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as GenerationEventZGEN);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(GenerationEventZGEN other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -5666,6 +8802,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (generationEventAndStatusZGEN_ != null) hash ^= GenerationEventAndStatusZGEN.GetHashCode();
@@ -5676,11 +8813,13 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -5697,6 +8836,7 @@ namespace openfmb.generationmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (generationEventAndStatusZGEN_ != null) {
         output.WriteRawTag(10);
@@ -5709,6 +8849,7 @@ namespace openfmb.generationmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (generationEventAndStatusZGEN_ != null) {
@@ -5721,6 +8862,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(GenerationEventZGEN other) {
       if (other == null) {
         return;
@@ -5735,6 +8877,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -5759,6 +8902,7 @@ namespace openfmb.generationmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -5791,19 +8935,23 @@ namespace openfmb.generationmodule {
     private static readonly pb::MessageParser<GenerationEvent> _parser = new pb::MessageParser<GenerationEvent>(() => new GenerationEvent());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<GenerationEvent> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[17]; }
+      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[23]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationEvent() {
       OnConstruction();
     }
@@ -5811,6 +8959,7 @@ namespace openfmb.generationmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationEvent(GenerationEvent other) : this() {
       eventValue_ = other.eventValue_ != null ? other.eventValue_.Clone() : null;
       generationEventZGEN_ = other.generationEventZGEN_ != null ? other.generationEventZGEN_.Clone() : null;
@@ -5818,6 +8967,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationEvent Clone() {
       return new GenerationEvent(this);
     }
@@ -5829,6 +8979,7 @@ namespace openfmb.generationmodule {
     /// UML inherited base object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.EventValue EventValue {
       get { return eventValue_; }
       set {
@@ -5843,6 +8994,7 @@ namespace openfmb.generationmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.generationmodule.GenerationEventZGEN GenerationEventZGEN {
       get { return generationEventZGEN_; }
       set {
@@ -5851,11 +9003,13 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as GenerationEvent);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(GenerationEvent other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -5869,6 +9023,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (eventValue_ != null) hash ^= EventValue.GetHashCode();
@@ -5880,11 +9035,13 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -5905,6 +9062,7 @@ namespace openfmb.generationmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (eventValue_ != null) {
         output.WriteRawTag(10);
@@ -5921,6 +9079,7 @@ namespace openfmb.generationmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (eventValue_ != null) {
@@ -5936,6 +9095,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(GenerationEvent other) {
       if (other == null) {
         return;
@@ -5956,6 +9116,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -5987,6 +9148,7 @@ namespace openfmb.generationmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -6026,19 +9188,23 @@ namespace openfmb.generationmodule {
     private static readonly pb::MessageParser<GenerationEventProfile> _parser = new pb::MessageParser<GenerationEventProfile>(() => new GenerationEventProfile());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<GenerationEventProfile> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[18]; }
+      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[24]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationEventProfile() {
       OnConstruction();
     }
@@ -6046,6 +9212,7 @@ namespace openfmb.generationmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationEventProfile(GenerationEventProfile other) : this() {
       eventMessageInfo_ = other.eventMessageInfo_ != null ? other.eventMessageInfo_.Clone() : null;
       generatingUnit_ = other.generatingUnit_ != null ? other.generatingUnit_.Clone() : null;
@@ -6054,6 +9221,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationEventProfile Clone() {
       return new GenerationEventProfile(this);
     }
@@ -6065,6 +9233,7 @@ namespace openfmb.generationmodule {
     /// UML inherited base object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.EventMessageInfo EventMessageInfo {
       get { return eventMessageInfo_; }
       set {
@@ -6079,6 +9248,7 @@ namespace openfmb.generationmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.generationmodule.GeneratingUnit GeneratingUnit {
       get { return generatingUnit_; }
       set {
@@ -6093,6 +9263,7 @@ namespace openfmb.generationmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.generationmodule.GenerationEvent GenerationEvent {
       get { return generationEvent_; }
       set {
@@ -6101,11 +9272,13 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as GenerationEventProfile);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(GenerationEventProfile other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -6120,6 +9293,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (eventMessageInfo_ != null) hash ^= EventMessageInfo.GetHashCode();
@@ -6132,11 +9306,13 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -6161,6 +9337,7 @@ namespace openfmb.generationmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (eventMessageInfo_ != null) {
         output.WriteRawTag(10);
@@ -6181,6 +9358,7 @@ namespace openfmb.generationmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (eventMessageInfo_ != null) {
@@ -6199,6 +9377,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(GenerationEventProfile other) {
       if (other == null) {
         return;
@@ -6225,6 +9404,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -6263,6 +9443,7 @@ namespace openfmb.generationmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -6309,19 +9490,23 @@ namespace openfmb.generationmodule {
     private static readonly pb::MessageParser<GenerationStatusZGEN> _parser = new pb::MessageParser<GenerationStatusZGEN>(() => new GenerationStatusZGEN());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<GenerationStatusZGEN> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[19]; }
+      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[25]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationStatusZGEN() {
       OnConstruction();
     }
@@ -6329,12 +9514,14 @@ namespace openfmb.generationmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationStatusZGEN(GenerationStatusZGEN other) : this() {
       generationEventAndStatusZGEN_ = other.generationEventAndStatusZGEN_ != null ? other.generationEventAndStatusZGEN_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationStatusZGEN Clone() {
       return new GenerationStatusZGEN(this);
     }
@@ -6346,6 +9533,7 @@ namespace openfmb.generationmodule {
     /// UML inherited base object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.generationmodule.GenerationEventAndStatusZGEN GenerationEventAndStatusZGEN {
       get { return generationEventAndStatusZGEN_; }
       set {
@@ -6354,11 +9542,13 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as GenerationStatusZGEN);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(GenerationStatusZGEN other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -6371,6 +9561,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (generationEventAndStatusZGEN_ != null) hash ^= GenerationEventAndStatusZGEN.GetHashCode();
@@ -6381,11 +9572,13 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -6402,6 +9595,7 @@ namespace openfmb.generationmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (generationEventAndStatusZGEN_ != null) {
         output.WriteRawTag(10);
@@ -6414,6 +9608,7 @@ namespace openfmb.generationmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (generationEventAndStatusZGEN_ != null) {
@@ -6426,6 +9621,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(GenerationStatusZGEN other) {
       if (other == null) {
         return;
@@ -6440,6 +9636,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -6464,6 +9661,7 @@ namespace openfmb.generationmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -6496,19 +9694,23 @@ namespace openfmb.generationmodule {
     private static readonly pb::MessageParser<GenerationStatus> _parser = new pb::MessageParser<GenerationStatus>(() => new GenerationStatus());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<GenerationStatus> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[20]; }
+      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[26]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationStatus() {
       OnConstruction();
     }
@@ -6516,6 +9718,7 @@ namespace openfmb.generationmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationStatus(GenerationStatus other) : this() {
       statusValue_ = other.statusValue_ != null ? other.statusValue_.Clone() : null;
       generationStatusZGEN_ = other.generationStatusZGEN_ != null ? other.generationStatusZGEN_.Clone() : null;
@@ -6523,6 +9726,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationStatus Clone() {
       return new GenerationStatus(this);
     }
@@ -6534,6 +9738,7 @@ namespace openfmb.generationmodule {
     /// UML inherited base object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.StatusValue StatusValue {
       get { return statusValue_; }
       set {
@@ -6548,6 +9753,7 @@ namespace openfmb.generationmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.generationmodule.GenerationStatusZGEN GenerationStatusZGEN {
       get { return generationStatusZGEN_; }
       set {
@@ -6556,11 +9762,13 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as GenerationStatus);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(GenerationStatus other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -6574,6 +9782,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (statusValue_ != null) hash ^= StatusValue.GetHashCode();
@@ -6585,11 +9794,13 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -6610,6 +9821,7 @@ namespace openfmb.generationmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (statusValue_ != null) {
         output.WriteRawTag(10);
@@ -6626,6 +9838,7 @@ namespace openfmb.generationmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (statusValue_ != null) {
@@ -6641,6 +9854,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(GenerationStatus other) {
       if (other == null) {
         return;
@@ -6661,6 +9875,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -6692,6 +9907,7 @@ namespace openfmb.generationmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -6731,19 +9947,23 @@ namespace openfmb.generationmodule {
     private static readonly pb::MessageParser<GenerationStatusProfile> _parser = new pb::MessageParser<GenerationStatusProfile>(() => new GenerationStatusProfile());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<GenerationStatusProfile> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[21]; }
+      get { return global::openfmb.generationmodule.GenerationmoduleReflection.Descriptor.MessageTypes[27]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationStatusProfile() {
       OnConstruction();
     }
@@ -6751,6 +9971,7 @@ namespace openfmb.generationmodule {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationStatusProfile(GenerationStatusProfile other) : this() {
       statusMessageInfo_ = other.statusMessageInfo_ != null ? other.statusMessageInfo_.Clone() : null;
       generatingUnit_ = other.generatingUnit_ != null ? other.generatingUnit_.Clone() : null;
@@ -6759,6 +9980,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GenerationStatusProfile Clone() {
       return new GenerationStatusProfile(this);
     }
@@ -6770,6 +9992,7 @@ namespace openfmb.generationmodule {
     /// UML inherited base object
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.commonmodule.StatusMessageInfo StatusMessageInfo {
       get { return statusMessageInfo_; }
       set {
@@ -6784,6 +10007,7 @@ namespace openfmb.generationmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.generationmodule.GeneratingUnit GeneratingUnit {
       get { return generatingUnit_; }
       set {
@@ -6798,6 +10022,7 @@ namespace openfmb.generationmodule {
     /// MISSING DOCUMENTATION!!!
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::openfmb.generationmodule.GenerationStatus GenerationStatus {
       get { return generationStatus_; }
       set {
@@ -6806,11 +10031,13 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as GenerationStatusProfile);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(GenerationStatusProfile other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -6825,6 +10052,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (statusMessageInfo_ != null) hash ^= StatusMessageInfo.GetHashCode();
@@ -6837,11 +10065,13 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -6866,6 +10096,7 @@ namespace openfmb.generationmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (statusMessageInfo_ != null) {
         output.WriteRawTag(10);
@@ -6886,6 +10117,7 @@ namespace openfmb.generationmodule {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (statusMessageInfo_ != null) {
@@ -6904,6 +10136,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(GenerationStatusProfile other) {
       if (other == null) {
         return;
@@ -6930,6 +10163,7 @@ namespace openfmb.generationmodule {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -6968,6 +10202,7 @@ namespace openfmb.generationmodule {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {

@@ -131,7 +131,7 @@ namespace OpenFMB.Adapters.Core.Parsers
             {
                 var profileName = rows[0].Path.Split('.')[0];
 
-                return Profile.Create(profileName, pluginName, rows);
+                return Profile.CreateWithCsv(profileName, pluginName, rows);
             }
 
             throw new Exception("Invalid template file.");

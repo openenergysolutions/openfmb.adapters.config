@@ -22,7 +22,7 @@ namespace OpenFMB.Adapters.Configuration
                 dataGridView.Rows.Add(s);
             }
 
-            schemaVersionCombo.Items.AddRange(SchemaManager.GetSchemaVersions().ToArray());
+            schemaVersionCombo.Items.AddRange(SchemaManager.SupportEditions);
 
             var v = Settings.Default.DefaultSchemaVersion;
             schemaVersionCombo.SelectedItem = v;
@@ -32,7 +32,7 @@ namespace OpenFMB.Adapters.Configuration
         {
             Settings.Default.HideTimeAndQuality = hideTimeQuality.Checked;
 
-            Settings.Default.DefaultSchemaVersion = schemaVersionCombo.SelectedItem as string;
+            Settings.Default.DefaultSchemaVersion = SchemaManager.DefaultEdition = schemaVersionCombo.SelectedItem as string;
 
             List<string> list = new List<string>();
 

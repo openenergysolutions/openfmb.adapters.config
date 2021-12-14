@@ -70,12 +70,12 @@ namespace OpenFMB.Adapters.Core.Models
             get; private set;
         }
 
-        public Profile(string profileName, string plugInName)
+        public Profile(string profileName, string plugInName, string edition)
         {
             ProfileName = profileName;
             PluginName = plugInName;
 
-            Schema = SchemaManager.GetSchemaForProfile(plugInName, profileName);
+            Schema = SchemaManager.GetSchemaForProfile(plugInName, profileName, edition);
 
             if (Schema == null) 
             {
@@ -85,17 +85,17 @@ namespace OpenFMB.Adapters.Core.Models
            
             Token = JsonGenerator.Generate(Schema);
            
-            _schemaLookup = SchemaManager.GetSchemaDictionary(plugInName, profileName);
+            _schemaLookup = SchemaManager.GetSchemaDictionary(plugInName, profileName, edition);
 
             Validate();
         }
 
-        public Profile(string profileName, string plugInName, JToken token)
+        private Profile(string profileName, string plugInName, JToken token, string edition)
         {
             ProfileName = profileName;
             PluginName = plugInName;
 
-            Schema = SchemaManager.GetSchemaForProfile(plugInName, profileName);
+            Schema = SchemaManager.GetSchemaForProfile(plugInName, profileName, edition);
 
             if (Schema == null)
             {
@@ -110,11 +110,58 @@ namespace OpenFMB.Adapters.Core.Models
 
             Token = token;            
 
-            _schemaLookup = SchemaManager.GetSchemaDictionary(plugInName, profileName);
+            _schemaLookup = SchemaManager.GetSchemaDictionary(plugInName, profileName, edition);
 
             Validate();
 
             MitigateErrors();
+        }
+
+        public static Profile CreateWithToken(string profileName, string plugInName, JToken schema, string edition)
+        {
+            return new Profile(profileName, plugInName, schema, edition);
+        }
+
+        public static Profile Create(string profileName, string pluginName, string edition)
+        {
+            return Activator.CreateInstance(typeof(Profile), new object[] { profileName, pluginName, edition }) as Profile;
+        }
+
+        public static Profile CreateWithCsv(string profileName, string pluginName, List<ICsvRow> mappedData)
+        {
+            var profile = Activator.CreateInstance(typeof(Profile), new object[] { profileName, pluginName }) as Profile;
+            profile.AddNode();
+
+            foreach (var row in mappedData)
+            {
+                var node = profile.GetAllNavigatorNodes().FirstOrDefault(x => x.Path.ToLower() == row.FormattedPath.ToLower());
+                if (node != null)
+                {
+                    var schema = node.Schema;
+                    var required = Node.GetRequiredProperties(node);
+
+                    foreach (var name in required)
+                    {
+                        foreach (var oneOf in schema.OneOf)
+                        {
+                            var prop = oneOf.Properties.FirstOrDefault(x => x.Key == name && x.Value.Const?.ToString() == "mapped");
+                            if (prop.Key == name)
+                            {
+                                // Found
+                                var token = JsonGenerator.Generate(oneOf, row) as JObject;
+                                (node.Tag as JProperty).Value = token;
+
+                                node.Nodes.Clear();
+                                profile.AddNode(token, node);
+
+                                break;
+                            }
+                        }
+                    }
+                }
+            }
+
+            return profile;
         }
 
         public string GetDeviceMRID()
@@ -143,7 +190,12 @@ namespace OpenFMB.Adapters.Core.Models
 
         public Node GetDeviceMRIDNode()
         {
-            return GetAllNavigatorNodes().FirstOrDefault(x => x.Path.EndsWith(".conductingEquipment.mRID.value"));
+            var node = GetAllNavigatorNodes().FirstOrDefault(x => x.Path.EndsWith(".conductingEquipment.mRID.value"));
+            if (node == null)
+            {
+                node = GetAllNavigatorNodes().FirstOrDefault(x => x.Path.EndsWith(".applicationSystem.mRID.value"));
+            }
+            return node;
         }
 
         public bool Validate()
@@ -302,49 +354,7 @@ namespace OpenFMB.Adapters.Core.Models
             {
                 return deserializer.Deserialize(reader, typeof(YamlMappingNode)) as YamlMappingNode;                                                
             }
-        }
-
-        public static Profile Create(string profileName, string pluginName)
-        {            
-            return Activator.CreateInstance(typeof(Profile), new object[] { profileName, pluginName }) as Profile;
-        }
-
-        public static Profile Create(string profileName, string pluginName, List<ICsvRow> mappedData)
-        {
-            var profile = Activator.CreateInstance(typeof(Profile), new object[] { profileName, pluginName }) as Profile;
-            profile.AddNode();
-
-            foreach(var row in mappedData)
-            {
-                var node = profile.GetAllNavigatorNodes().FirstOrDefault(x => x.Path.ToLower() == row.FormattedPath.ToLower());
-                if (node != null)
-                {
-                    var schema = node.Schema;
-                    var required = Node.GetRequiredProperties(node);
-
-                    foreach(var name in required)
-                    {                        
-                        foreach(var oneOf in schema.OneOf)
-                        {
-                            var prop = oneOf.Properties.FirstOrDefault(x => x.Key == name && x.Value.Const?.ToString() == "mapped");
-                            if (prop.Key == name)
-                            {
-                                // Found
-                                var token = JsonGenerator.Generate(oneOf, row) as JObject;
-                                (node.Tag as JProperty).Value = token;
-
-                                node.Nodes.Clear();
-                                profile.AddNode(token, node);                                
-
-                                break;
-                            }
-                        }
-                    }
-                }
-            }
-
-            return profile;
-        }
+        }        
                 
         private void AddNode()
         {
