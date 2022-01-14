@@ -145,6 +145,11 @@ namespace OpenFMB.Adapters.Core
             return profileName.EndsWith("EventProfile");
         }
 
+        public static bool IsCapabilityProfile(string profileName)
+        {
+            return profileName.EndsWith("CapabilityProfile") || profileName.EndsWith("CapabilityOverrideProfile");
+        }
+
         public static bool IsControlProfile(string profileName)
         {
             return profileName.EndsWith("ControlProfile");
@@ -164,6 +169,10 @@ namespace OpenFMB.Adapters.Core
             {
                 return ProfileType.Status;
             }
+            if (IsCapabilityProfile(profileName))
+            {
+                return ProfileType.Capability;
+            }
             if (IsReadingProfile(profileName))
             {
                 return ProfileType.Reading;
@@ -178,6 +187,7 @@ namespace OpenFMB.Adapters.Core
         Control,
         Event,
         Reading,
-        Status
+        Status,
+        Capability
     }
 }

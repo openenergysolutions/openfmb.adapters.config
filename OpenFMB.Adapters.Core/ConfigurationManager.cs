@@ -289,7 +289,7 @@ namespace OpenFMB.Adapters.Core
                             var isClient = PluginsSection.IsClientPlugin(session.PluginName);
                             foreach (var p in profiles)
                             {                                
-                                var isReading = ProfileRegistry.IsReadingProfile(p.ProfileName) || ProfileRegistry.IsStatusProfile(p.ProfileName) || ProfileRegistry.IsEventProfile(p.ProfileName);
+                                var isReading = ProfileRegistry.IsReadingProfile(p.ProfileName) || ProfileRegistry.IsStatusProfile(p.ProfileName) || ProfileRegistry.IsEventProfile(p.ProfileName) || ProfileRegistry.IsCapabilityProfile(p.ProfileName);
                                 if (!isClient)
                                 {
                                     isReading = !isReading;
