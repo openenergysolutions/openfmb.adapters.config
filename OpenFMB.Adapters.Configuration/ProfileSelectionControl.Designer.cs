@@ -47,16 +47,19 @@
             this.dataGridView.AllowUserToDeleteRows = false;
             this.dataGridView.AllowUserToResizeColumns = false;
             this.dataGridView.AllowUserToResizeRows = false;
+            this.dataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Selection,
             this.ProfileName});
-            this.dataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.RowHeadersVisible = false;
-            this.dataGridView.Size = new System.Drawing.Size(374, 360);
+            this.dataGridView.Size = new System.Drawing.Size(561, 510);
             this.dataGridView.TabIndex = 0;
             this.dataGridView.CellMouseUp += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DataGridView_CellMouseUp);
             this.dataGridView.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_CellValueChanged);
@@ -84,8 +87,9 @@
             this.modeSelectionPanel.Controls.Add(this.selectProfileRadio);
             this.modeSelectionPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.modeSelectionPanel.Location = new System.Drawing.Point(0, 0);
+            this.modeSelectionPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.modeSelectionPanel.Name = "modeSelectionPanel";
-            this.modeSelectionPanel.Size = new System.Drawing.Size(374, 46);
+            this.modeSelectionPanel.Size = new System.Drawing.Size(561, 71);
             this.modeSelectionPanel.TabIndex = 1;
             // 
             // versionComboBox
@@ -93,19 +97,21 @@
             this.versionComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.versionComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.versionComboBox.FormattingEnabled = true;
-            this.versionComboBox.Location = new System.Drawing.Point(293, 14);
+            this.versionComboBox.Location = new System.Drawing.Point(440, 22);
+            this.versionComboBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.versionComboBox.Name = "versionComboBox";
             this.versionComboBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.versionComboBox.Size = new System.Drawing.Size(68, 21);
+            this.versionComboBox.Size = new System.Drawing.Size(100, 28);
             this.versionComboBox.TabIndex = 3;
             this.versionComboBox.SelectedIndexChanged += new System.EventHandler(this.VersionComboBox_SelectedIndexChanged);
             // 
             // fromFileRadio
             // 
             this.fromFileRadio.AutoSize = true;
-            this.fromFileRadio.Location = new System.Drawing.Point(110, 15);
+            this.fromFileRadio.Location = new System.Drawing.Point(165, 23);
+            this.fromFileRadio.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.fromFileRadio.Name = "fromFileRadio";
-            this.fromFileRadio.Size = new System.Drawing.Size(64, 17);
+            this.fromFileRadio.Size = new System.Drawing.Size(88, 24);
             this.fromFileRadio.TabIndex = 1;
             this.fromFileRadio.Text = "From file";
             this.fromFileRadio.UseVisualStyleBackColor = true;
@@ -115,9 +121,10 @@
             // 
             this.selectProfileRadio.AutoSize = true;
             this.selectProfileRadio.Checked = true;
-            this.selectProfileRadio.Location = new System.Drawing.Point(12, 15);
+            this.selectProfileRadio.Location = new System.Drawing.Point(18, 23);
+            this.selectProfileRadio.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.selectProfileRadio.Name = "selectProfileRadio";
-            this.selectProfileRadio.Size = new System.Drawing.Size(92, 17);
+            this.selectProfileRadio.Size = new System.Drawing.Size(128, 24);
             this.selectProfileRadio.TabIndex = 0;
             this.selectProfileRadio.TabStop = true;
             this.selectProfileRadio.Text = "Select Profiles";
@@ -129,20 +136,22 @@
             // 
             this.placeHolder.Controls.Add(this.dataGridView);
             this.placeHolder.Dock = System.Windows.Forms.DockStyle.Top;
-            this.placeHolder.Location = new System.Drawing.Point(0, 46);
+            this.placeHolder.Location = new System.Drawing.Point(0, 71);
+            this.placeHolder.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.placeHolder.Name = "placeHolder";
-            this.placeHolder.Size = new System.Drawing.Size(374, 360);
+            this.placeHolder.Size = new System.Drawing.Size(561, 515);
             this.placeHolder.TabIndex = 2;
             // 
             // ProfileSelectionControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.placeHolder);
             this.Controls.Add(this.modeSelectionPanel);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "ProfileSelectionControl";
-            this.Size = new System.Drawing.Size(374, 483);
+            this.Size = new System.Drawing.Size(561, 743);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.modeSelectionPanel.ResumeLayout(false);
             this.modeSelectionPanel.PerformLayout();
