@@ -56,9 +56,8 @@ namespace OpenFMB.Adapters.Configuration
         }
 
         private void ValueControl_ValueChanged(object sender, EventArgs e)
-        {
-            var val = (Data.Tag as JProperty).Value as JValue;
-            if (val.Type == JTokenType.Integer)
+        {            
+            if (Data.Schema?.Type == Newtonsoft.Json.Schema.JSchemaType.Integer)
             {
                 (Data.Tag as JProperty).Value = new JValue((int)valueControl.Value);
             }
