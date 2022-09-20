@@ -8,6 +8,7 @@ using System.Windows.Forms;
 using OpenFMB.Adapters.Core.Utility.Logs;
 using OpenFMB.Adapters.Core.Models.Schemas;
 using OpenFMB.Adapters.Configuration.Properties;
+using OpenFMB.Adapters.Core;
 
 namespace OpenFMB.Adapters.Configuration
 {
@@ -18,7 +19,9 @@ namespace OpenFMB.Adapters.Configuration
         public SplashScreen()
         {
             InitializeComponent();
-            MasterLogger.Instance.Subscribe(this);            
+            MasterLogger.Instance.Subscribe(this);
+
+            versionLabel.Text = "Version " + ConfigurationManager.Version;
         }
 
         public SplashScreen(MainForm mainWindow)

@@ -47,7 +47,7 @@ namespace OpenFMB.Adapters.Core.Models.Schemas
             var assembly = Assembly.GetAssembly(typeof(SchemaManager));
             var adapterConfig = new AdapterConfiguration();
                         
-            Parallel.ForEach(SupportEditions, ver =>
+            foreach (var ver in SupportEditions)
             {
                 Directory.CreateDirectory(Path.Combine(DefaultSchemaDirectory, ver));
                 var v = Path.Combine(DefaultSchemaDirectory, ver);
@@ -98,7 +98,7 @@ namespace OpenFMB.Adapters.Core.Models.Schemas
                         _logger.Log(Level.Error, ex.Message, ex);
                     }
                 }
-            });
+            }
 
             ParseOpenFMBDocument("OpenFMB.Models.xml");
         }

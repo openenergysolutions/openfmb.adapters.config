@@ -61,7 +61,6 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
 
         [Newtonsoft.Json.JsonIgnore]
         public readonly IList<IPlugin> Plugins = new List<IPlugin>();
-       
 
         public PluginsSection()
         {
@@ -71,14 +70,23 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
             Plugins.Add(Dnp3SlavePlugin);
             Plugins.Add(ModbusMasterPlugin);
             Plugins.Add(ModbusOutstationPlugin);
-            //Plugins.Add(LogPlugin);
-            Plugins.Add(GoosePubPlugin);
-            Plugins.Add(GooseSubPlugin);
-            Plugins.Add(IccpClientPlugin);
-            Plugins.Add(IccpServerPlugin);
+
+            if (System.Configuration.ConfigurationManager.AppSettings["IEC61850Support"] == "True")
+            {
+                Plugins.Add(GoosePubPlugin);
+                Plugins.Add(GooseSubPlugin);
+            }
+            if (System.Configuration.ConfigurationManager.AppSettings["ICCPSupport"] == "True") { 
+                Plugins.Add(IccpClientPlugin);
+                Plugins.Add(IccpServerPlugin);
+            }
             Plugins.Add(MqttPlugin);
             Plugins.Add(NatsPlugin);
-            Plugins.Add(ZenohPlugin);
+
+            if (System.Configuration.ConfigurationManager.AppSettings["ZenohSupport"] == "True")
+            {
+                Plugins.Add(ZenohPlugin);
+            }
             Plugins.Add(TimescaleDBPlugin);
         }
 
