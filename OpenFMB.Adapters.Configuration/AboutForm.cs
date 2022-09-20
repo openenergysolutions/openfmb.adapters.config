@@ -30,7 +30,7 @@ namespace OpenFMB.Adapters.Configuration
         {
             get
             {
-                return ConfigurationManager.Version;
+                return Assembly.GetExecutingAssembly().GetName().Version.ToString();
             }
         }
     }
