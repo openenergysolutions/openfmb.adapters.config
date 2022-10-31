@@ -35,9 +35,11 @@ namespace OpenFMB.Adapters.Core.Models.Schemas
             _logger.Log(Level.Info, "Initialize schema manager...");
             var appDataDir = FileHelper.GetAppDataFolder();
 
-            Directory.CreateDirectory(Path.Combine(appDataDir, SchemaDirectory));
+            Directory.CreateDirectory(Path.Combine(appDataDir, SchemaDirectory));            
 
             DefaultSchemaDirectory = Path.Combine(appDataDir, SchemaDirectory);
+
+            _logger.Log(Level.Info, $"Checking schema directories '{DefaultSchemaDirectory}'...");
 
             if (!string.IsNullOrWhiteSpace(defaultEdition))
             {
@@ -91,6 +93,10 @@ namespace OpenFMB.Adapters.Core.Models.Schemas
 
                                 sm.AddSchema(p.Name, schema);
                             }
+                        }
+                        else
+                        {
+                            _logger.Log(Level.Info, $"Schema for {p.Name} (v{ver}) not supported");
                         }
                     }
                     catch (Exception ex)

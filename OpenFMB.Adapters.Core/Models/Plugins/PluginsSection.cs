@@ -41,9 +41,9 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
 
         //public LogPlugin LogPlugin { get; } = new LogPlugin();
 
-        public IEC61850ClientPlugin GoosePubPlugin { get; } = new IEC61850ClientPlugin();
+        public IEC61850ClientPlugin IEC61850ClientPlugin { get; } = new IEC61850ClientPlugin();
 
-        public IEC61850ServerPlugin GooseSubPlugin { get; } = new IEC61850ServerPlugin();
+        public IEC61850ServerPlugin IEC61850ServerPlugin { get; } = new IEC61850ServerPlugin();
 
         public IccpClientPlugin IccpClientPlugin { get; } = new IccpClientPlugin();
 
@@ -73,8 +73,8 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
 
             if (System.Configuration.ConfigurationManager.AppSettings["IEC61850Support"] == "True")
             {
-                Plugins.Add(GoosePubPlugin);
-                Plugins.Add(GooseSubPlugin);
+                Plugins.Add(IEC61850ClientPlugin);
+                Plugins.Add(IEC61850ServerPlugin);
             }
             if (System.Configuration.ConfigurationManager.AppSettings["ICCPSupport"] == "True") { 
                 Plugins.Add(IccpClientPlugin);
