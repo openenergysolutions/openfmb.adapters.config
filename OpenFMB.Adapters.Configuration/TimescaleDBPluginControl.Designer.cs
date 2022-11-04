@@ -49,10 +49,13 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.storeDataInterval = new System.Windows.Forms.NumericUpDown();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.timescaleDBPluginBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.storeDataInterval)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -60,6 +63,8 @@
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.storeDataInterval);
+            this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.rawFormatCombo);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.rawMessageTableName);
@@ -91,7 +96,7 @@
             this.rawFormatCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.rawFormatCombo.Enabled = false;
             this.rawFormatCombo.FormattingEnabled = true;
-            this.rawFormatCombo.Location = new System.Drawing.Point(175, 265);
+            this.rawFormatCombo.Location = new System.Drawing.Point(175, 297);
             this.rawFormatCombo.Name = "rawFormatCombo";
             this.rawFormatCombo.Size = new System.Drawing.Size(109, 21);
             this.rawFormatCombo.TabIndex = 27;
@@ -103,7 +108,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(57, 268);
+            this.label9.Location = new System.Drawing.Point(57, 300);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(93, 13);
             this.label9.TabIndex = 26;
@@ -113,7 +118,7 @@
             // 
             this.rawMessageTableName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.timescaleDBPluginBindingSource, "RawTableName", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.rawMessageTableName.Enabled = false;
-            this.rawMessageTableName.Location = new System.Drawing.Point(175, 240);
+            this.rawMessageTableName.Location = new System.Drawing.Point(175, 272);
             this.rawMessageTableName.Name = "rawMessageTableName";
             this.rawMessageTableName.Size = new System.Drawing.Size(109, 20);
             this.rawMessageTableName.TabIndex = 25;
@@ -121,7 +126,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(11, 244);
+            this.label7.Location = new System.Drawing.Point(11, 276);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(139, 13);
             this.label7.TabIndex = 24;
@@ -131,7 +136,7 @@
             // 
             this.storeRawMessageCheckBox.AutoSize = true;
             this.storeRawMessageCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this.timescaleDBPluginBindingSource, "StoreRawMessage", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.storeRawMessageCheckBox.Location = new System.Drawing.Point(175, 220);
+            this.storeRawMessageCheckBox.Location = new System.Drawing.Point(175, 252);
             this.storeRawMessageCheckBox.Name = "storeRawMessageCheckBox";
             this.storeRawMessageCheckBox.Size = new System.Drawing.Size(15, 14);
             this.storeRawMessageCheckBox.TabIndex = 23;
@@ -141,7 +146,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(44, 220);
+            this.label8.Location = new System.Drawing.Point(44, 252);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(106, 13);
             this.label8.TabIndex = 22;
@@ -151,7 +156,7 @@
             // 
             this.measureTableName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.timescaleDBPluginBindingSource, "TableName", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.measureTableName.Enabled = false;
-            this.measureTableName.Location = new System.Drawing.Point(175, 164);
+            this.measureTableName.Location = new System.Drawing.Point(175, 196);
             this.measureTableName.Name = "measureTableName";
             this.measureTableName.Size = new System.Drawing.Size(109, 20);
             this.measureTableName.TabIndex = 21;
@@ -159,7 +164,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(15, 168);
+            this.label6.Location = new System.Drawing.Point(15, 200);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(135, 13);
             this.label6.TabIndex = 20;
@@ -169,7 +174,7 @@
             // 
             this.storeMessageCheckBox.AutoSize = true;
             this.storeMessageCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this.timescaleDBPluginBindingSource, "StoreMeasurement", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.storeMessageCheckBox.Location = new System.Drawing.Point(175, 144);
+            this.storeMessageCheckBox.Location = new System.Drawing.Point(175, 176);
             this.storeMessageCheckBox.Name = "storeMessageCheckBox";
             this.storeMessageCheckBox.Size = new System.Drawing.Size(15, 14);
             this.storeMessageCheckBox.TabIndex = 19;
@@ -179,7 +184,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(22, 144);
+            this.label5.Location = new System.Drawing.Point(22, 176);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(128, 13);
             this.label5.TabIndex = 18;
@@ -255,6 +260,28 @@
             this.label3.TabIndex = 14;
             this.label3.Text = "Database URL:";
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(25, 126);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(125, 13);
+            this.label10.TabIndex = 28;
+            this.label10.Text = "Store Data Interval (sec):";
+            // 
+            // storeDataInterval
+            // 
+            this.storeDataInterval.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.timescaleDBPluginBindingSource, "DataStoreIntervalSeconds", true));
+            this.storeDataInterval.Location = new System.Drawing.Point(175, 125);
+            this.storeDataInterval.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.storeDataInterval.Name = "storeDataInterval";
+            this.storeDataInterval.Size = new System.Drawing.Size(79, 20);
+            this.storeDataInterval.TabIndex = 29;
+            // 
             // TimescaleDBPluginControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -267,6 +294,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.timescaleDBPluginBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.storeDataInterval)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -293,5 +321,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox rawFormatCombo;
         private System.Windows.Forms.BindingSource timescaleDBPluginBindingSource;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.NumericUpDown storeDataInterval;
     }
 }

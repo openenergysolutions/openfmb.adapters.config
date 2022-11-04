@@ -127,6 +127,7 @@ namespace OpenFMB.Adapters.Core
             node.Add("raw-data-format", "0");
             node.Add("max-queued-messages", "100");
             node.Add("connect-retry-seconds", "5");
+            node.Add("data-store-interval-seconds", "0");
 
             return node;
         }

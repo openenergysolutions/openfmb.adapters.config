@@ -29,6 +29,8 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
 
         public RawDataFormat RawDataFormat { get; set; }
 
+        public int DataStoreIntervalSeconds { get; set; }
+
         public YamlNode ToYaml()
         {
             var node = new YamlMappingNode();
@@ -41,6 +43,7 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
             node.Add("raw-data-format", ((int)RawDataFormat).ToString());
             node.Add("max-queued-messages", MaxQueuedMessages.ToString());
             node.Add("connect-retry-seconds", ConnectRetrySeconds.ToString());
+            node.Add("data-store-interval-seconds", DataStoreIntervalSeconds.ToString());
 
             return node;
         }
@@ -57,6 +60,11 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
             TableName = (node["table-name"] as YamlScalarNode).Value;
             RawTableName = (node["raw-table-name"] as YamlScalarNode).Value;
             RawDataFormat = (RawDataFormat)Convert.ToInt32((node["raw-data-format"] as YamlScalarNode).Value);
+
+            if (node.ContainsKey("data-store-interval-seconds"))
+            {
+                DataStoreIntervalSeconds = Convert.ToInt32((node["data-store-interval-seconds"] as YamlScalarNode).Value);
+            }
         }
     }
 
