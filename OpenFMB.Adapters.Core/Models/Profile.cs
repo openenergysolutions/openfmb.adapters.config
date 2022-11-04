@@ -178,22 +178,17 @@ namespace OpenFMB.Adapters.Core.Models
             return mrid;
         }
 
-        public void SetDeviceMRID(string mrid)
-        {
-            var mridNode = GetDeviceMRIDNode();
-
-            if (mridNode != null)
-            {
-                
-            }
-        }
-
         public Node GetDeviceMRIDNode()
         {
             var node = GetAllNavigatorNodes().FirstOrDefault(x => x.Path.EndsWith(".conductingEquipment.mRID.value"));
             if (node == null)
             {
                 node = GetAllNavigatorNodes().FirstOrDefault(x => x.Path.EndsWith(".applicationSystem.mRID.value"));
+
+                if (node == null)
+                {
+                    node = GetAllNavigatorNodes().FirstOrDefault(x => x.Path.EndsWith(".requesterCircuitSegmentService.mRID.value"));
+                }
             }
             return node;
         }
