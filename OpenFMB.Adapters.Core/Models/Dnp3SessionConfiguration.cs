@@ -181,7 +181,7 @@ namespace OpenFMB.Adapters.Core.Models
     public class Unsolicited
     {
         [JsonProperty("class1")]
-        public bool Class1 { get; set; }
+        public bool Class1 { get; set; } = true;
         [JsonProperty("class2")]
         public bool Class2 { get; set; }
         [JsonProperty("class3")]
