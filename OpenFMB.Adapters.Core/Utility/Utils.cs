@@ -239,7 +239,7 @@ namespace OpenFMB.Adapters.Core.Utility
                 input = input.Replace(m.Value, m.Value.Substring(1));
             }
             return input;
-        }
+        }        
 
         public static string AddDotBeforeArray(string input)
         {

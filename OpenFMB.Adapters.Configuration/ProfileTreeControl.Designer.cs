@@ -43,7 +43,6 @@
             this.rightButton = new System.Windows.Forms.Button();
             this.navTreeView = new System.Windows.Forms.TreeView();
             this.navTreeContextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.copyMappedItemsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.expandToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.expandAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,6 +53,7 @@
             this.showAllMappedNodesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showAllErrorNodesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.copyMappedItemsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.copyPathToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
@@ -63,6 +63,8 @@
             this.resetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.viewSchemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
+            this.generateTestFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.mappedLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.mappedValue = new System.Windows.Forms.ToolStripStatusLabel();
@@ -76,6 +78,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.deviceMridLabel = new System.Windows.Forms.Label();
             this.headerLabel = new System.Windows.Forms.Label();
+            this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -268,17 +271,12 @@
             this.quickFixToolStripMenuItem,
             this.resetToolStripMenuItem,
             this.toolStripSeparator5,
-            this.viewSchemaToolStripMenuItem});
+            this.viewSchemaToolStripMenuItem,
+            this.toolStripSeparator7,
+            this.generateTestFileToolStripMenuItem});
             this.navTreeContextMenu.Name = "navTreeContextMenu";
-            this.navTreeContextMenu.Size = new System.Drawing.Size(205, 370);
+            this.navTreeContextMenu.Size = new System.Drawing.Size(205, 376);
             this.navTreeContextMenu.Opening += new System.ComponentModel.CancelEventHandler(this.NavTreeContextMenu_Opening);
-            // 
-            // copyMappedItemsToolStripMenuItem
-            // 
-            this.copyMappedItemsToolStripMenuItem.Name = "copyMappedItemsToolStripMenuItem";
-            this.copyMappedItemsToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
-            this.copyMappedItemsToolStripMenuItem.Text = "Copy All Mapped Path";
-            this.copyMappedItemsToolStripMenuItem.Click += new System.EventHandler(this.CopyMappedItemsToolStripMenuItem_Click);
             // 
             // toolStripSeparator6
             // 
@@ -342,6 +340,13 @@
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(201, 6);
             // 
+            // copyMappedItemsToolStripMenuItem
+            // 
+            this.copyMappedItemsToolStripMenuItem.Name = "copyMappedItemsToolStripMenuItem";
+            this.copyMappedItemsToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.copyMappedItemsToolStripMenuItem.Text = "Copy All Mapped Path";
+            this.copyMappedItemsToolStripMenuItem.Click += new System.EventHandler(this.CopyMappedItemsToolStripMenuItem_Click);
+            // 
             // copyPathToolStripMenuItem
             // 
             this.copyPathToolStripMenuItem.Name = "copyPathToolStripMenuItem";
@@ -403,6 +408,18 @@
             this.viewSchemaToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
             this.viewSchemaToolStripMenuItem.Text = "View Schema...";
             this.viewSchemaToolStripMenuItem.Click += new System.EventHandler(this.ViewSchemaToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator7
+            // 
+            this.toolStripSeparator7.Name = "toolStripSeparator7";
+            this.toolStripSeparator7.Size = new System.Drawing.Size(201, 6);
+            // 
+            // generateTestFileToolStripMenuItem
+            // 
+            this.generateTestFileToolStripMenuItem.Name = "generateTestFileToolStripMenuItem";
+            this.generateTestFileToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.generateTestFileToolStripMenuItem.Text = "Generate Test File...";
+            this.generateTestFileToolStripMenuItem.Click += new System.EventHandler(this.GenerateTestFileToolStripMenuItem_Click);
             // 
             // statusStrip1
             // 
@@ -537,6 +554,11 @@
             this.headerLabel.TabIndex = 0;
             this.headerLabel.Text = "SECTION HEADER";
             // 
+            // saveFileDialog
+            // 
+            this.saveFileDialog.Filter = "CSV files|*.csv";
+            this.saveFileDialog.Title = "Save File";
+            // 
             // ProfileTreeControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -609,5 +631,8 @@
         private System.Windows.Forms.ToolStripMenuItem quickFixToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem copyMappedItemsToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
+        private System.Windows.Forms.ToolStripMenuItem generateTestFileToolStripMenuItem;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog;
     }
 }
