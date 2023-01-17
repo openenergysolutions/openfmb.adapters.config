@@ -1388,7 +1388,10 @@ namespace OpenFMB.Adapters.Configuration
                         sb.AppendLine(parent.FullPath);
                     }
                 }
-                Clipboard.SetText(sb.ToString());
+                if (sb.Length > 0)
+                {
+                    Clipboard.SetText(sb.ToString());
+                }
             }
         }
     }
