@@ -129,7 +129,7 @@ namespace OpenFMB.Adapters.Core.Models
 
         public static Profile CreateWithCsv(string profileName, string pluginName, List<ICsvRow> mappedData)
         {
-            var profile = Activator.CreateInstance(typeof(Profile), new object[] { profileName, pluginName }) as Profile;
+            var profile = Activator.CreateInstance(typeof(Profile), new object[] { profileName, pluginName, null }) as Profile;
             profile.AddNode();
 
             foreach (var row in mappedData)
