@@ -16,8 +16,8 @@ namespace OpenFMB.Adapters.Core
         [JsonProperty("capbankmodule")]
         public List<ProfileModel> capbankmodule { get; set; } = new List<ProfileModel>();
 
-        [JsonProperty("coordinationservicemodule")]
-        public List<ProfileModel> coordinationservicemodule { get; set; } = new List<ProfileModel>();
+        [JsonProperty("circuitsegmentservicemodule")]
+        public List<ProfileModel> circuitsegmentservicemodule { get; set; } = new List<ProfileModel>();
 
         [JsonProperty("essmodule")]
         public List<ProfileModel> essmodule { get; set; } = new List<ProfileModel>();
