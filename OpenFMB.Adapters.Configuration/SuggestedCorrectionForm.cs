@@ -89,7 +89,7 @@ namespace OpenFMB.Adapters.Configuration
                     rightText.Text = "No suggestion";
                 }
             }
-            catch (Exception ex)
+            catch
             {
                 rightText.Text = "No schema found";
 
