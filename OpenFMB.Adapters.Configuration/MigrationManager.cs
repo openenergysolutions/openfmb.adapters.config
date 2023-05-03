@@ -224,28 +224,50 @@ namespace OpenFMB.Adapters.Configuration
                         var oldObj = selectedParentNode.Tag as JObject;
                         oldObj = oldObj.DeepClone() as JObject;
 
-                        foreach (var oneOf in firstElement.OneOf)
+                        if (firstElement.OneOf.Count > 0)
                         {
-                            foreach (var key in oneOf.Required)
+                            foreach (var oneOf in firstElement.OneOf)
                             {
-                                if (oldObj.ContainsKey(key))
+                                foreach (var key in oneOf.Required)
                                 {
-                                    var val = oldObj[key].ToString();
-                                    var s = oneOf.Properties[key].Const?.ToString();
-
-                                    if (val == s)
+                                    if (oldObj.ContainsKey(key))
                                     {
-                                        // found                                        
-                                        var newObj = GenerateToken(oneOf, oldObj) as JObject;
-                                        Merge(oldObj, newObj);
+                                        var val = oldObj[key].ToString();
+                                        var s = oneOf.Properties[key].Const?.ToString();
 
-                                        newToken = newObj;                                        
+                                        if (val == s)
+                                        {
+                                            // found                                        
+                                            var newObj = GenerateToken(oneOf, oldObj) as JObject;
+                                            Merge(oldObj, newObj);
 
-                                        break;
+                                            newToken = newObj;
+
+                                            break;
+                                        }
                                     }
                                 }
                             }
-                        }                       
+                        }
+                        else
+                        {
+                            if (selectedParentNode.Parent?.Name == "crvpts" && firstElement.Properties.Keys.Contains("control"))
+                            {
+                                // This is a special case when migrating from 2.0 to 2.1 for ESS/Solar control profiles
+                                // Add control
+                                var token = JsonGenerator.Generate(schema) as JArray;
+                                if (token != null)
+                                {
+                                    var obj = token.First() as JObject;
+
+                                    if (obj.TryGetValue("control", out JToken newObj))
+                                    {
+                                        Merge(oldObj, newObj as JObject);
+                                        newToken = obj;
+                                    }
+                                }
+                            }
+                        }
                     }
                     else
                     {
