@@ -145,34 +145,41 @@ namespace OpenFMB.Adapters.Configuration
         {
             if (selectedNode.Error != null && selectedNode.Error.StartsWith("Required properties are missing from object"))
             {
-                var missingProps = selectedNode.Error.Replace("Required properties are missing from object:", "");
-                var tokens = missingProps.Trim().TrimEnd('.').Split(',');
-
-                var oldProp = selectedNode.Tag as JProperty;
-
-                var parentProperty = selectedNode.Parent.Tag as JProperty;
-                parentProperty = parentProperty.DeepClone() as JProperty;
-
-                foreach (var v in (parentProperty.Value as JObject))
+                try
                 {
-                    if (v.Key == oldProp.Name)
-                    {
-                        var targetProp = v.Value as JObject;
-                        foreach (var t in tokens)
-                        {
-                            var name = t.Trim();
-                            var kvp = selectedNode.Schema.Properties.FirstOrDefault(x => x.Key == name);
-                            if (kvp.Value != null)
-                            {
-                                var jObject = JsonGenerator.Generate(kvp.Value) as JObject;
-                                targetProp.Add(name, jObject);
-                            }
-                        }
-                        break;
-                    }
-                }                                                                               
+                    var missingProps = selectedNode.Error.Replace("Required properties are missing from object:", "");
+                    var tokens = missingProps.Trim().TrimEnd('.').Split(',');
 
-                return parentProperty;
+                    var oldProp = selectedNode.Tag as JProperty;
+
+                    var parentProperty = selectedNode.Parent.Tag as JProperty;
+                    parentProperty = parentProperty.DeepClone() as JProperty;
+
+                    foreach (var v in (parentProperty.Value as JObject))
+                    {
+                        if (v.Key == oldProp.Name)
+                        {
+                            var targetProp = v.Value as JObject;
+                            foreach (var t in tokens)
+                            {
+                                var name = t.Trim();
+                                var kvp = selectedNode.Schema.Properties.FirstOrDefault(x => x.Key == name);
+                                if (kvp.Value != null)
+                                {
+                                    var jObject = JsonGenerator.Generate(kvp.Value) as JObject;
+                                    targetProp.Add(name, jObject);
+                                }
+                            }
+                            break;
+                        }
+                    }
+
+                    return parentProperty;
+                }
+                catch
+                {
+                    // ignore
+                }
             }
             return null;
         }
