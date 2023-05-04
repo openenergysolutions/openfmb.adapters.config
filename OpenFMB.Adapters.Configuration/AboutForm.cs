@@ -24,7 +24,7 @@ namespace OpenFMB.Adapters.Configuration
             {
                 openSource.LoadFile(stream, RichTextBoxStreamType.PlainText);
             }
-        }       
+        }
 
         public string AssemblyVersion
         {

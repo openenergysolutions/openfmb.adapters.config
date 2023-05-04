@@ -18,10 +18,10 @@ namespace OpenFMB.Adapters.Configuration
     public partial class MainForm : Form
     {
         private readonly ConfigurationManager _configManger = ConfigurationManager.Instance;
-        
-        private StartPageControl _startPage;        
 
-        private readonly static ILogger _logger = MasterLogger.Instance;        
+        private StartPageControl _startPage;
+
+        private readonly static ILogger _logger = MasterLogger.Instance;
 
         internal SplashScreen Splash
         {
@@ -83,7 +83,7 @@ namespace OpenFMB.Adapters.Configuration
         }
 
         public void OpenConfigurationFolder()
-        {            
+        {
             folderBrowserDialog.SelectedPath = Settings.Default.PreviousWorkingFolder;
             if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
             {
@@ -145,7 +145,7 @@ namespace OpenFMB.Adapters.Configuration
             {
                 // Save
 
-                var button = exiting? MessageBoxButtons.YesNo : MessageBoxButtons.YesNoCancel;
+                var button = exiting ? MessageBoxButtons.YesNo : MessageBoxButtons.YesNoCancel;
 
                 if (_configManger.HasChanged())
                 {
@@ -190,7 +190,7 @@ namespace OpenFMB.Adapters.Configuration
         private void FileToolStripMenuItem_DropDownOpening(object sender, EventArgs e)
         {
             newToolStripMenuItem.Visible = openToolStripMenuItem.Enabled = startPageStripMenuItem.Enabled = string.IsNullOrEmpty(_configManger.WorkingDirectory);
-            
+
             var top = FindFrontMost();
 
             if (top is SCLViewerControl)
@@ -199,7 +199,7 @@ namespace OpenFMB.Adapters.Configuration
                 closeToolStripMenuItem.Enabled = true;
             }
             else if (top is ConfigurationControl)
-            {                
+            {
                 closeToolStripMenuItem.Text = $"Close Work Folder";
                 closeToolStripMenuItem.Enabled = true;
             }
@@ -225,8 +225,10 @@ namespace OpenFMB.Adapters.Configuration
 
         private void InitSharedControl()
         {
-            _startPage = new StartPageControl();
-            _startPage.Dock = DockStyle.Fill;
+            _startPage = new StartPageControl
+            {
+                Dock = DockStyle.Fill
+            };
             placeHolder.Controls.Add(_startPage);
         }
 
@@ -238,8 +240,10 @@ namespace OpenFMB.Adapters.Configuration
 
         private void CreateConfigurationControl()
         {
-            ConfigurationControl control = new ConfigurationControl();
-            control.Dock = DockStyle.Fill;
+            ConfigurationControl control = new ConfigurationControl
+            {
+                Dock = DockStyle.Fill
+            };
             placeHolder.Controls.Add(control);
             control.BringToFront();
 
@@ -247,16 +251,18 @@ namespace OpenFMB.Adapters.Configuration
         }
 
         private void LoadIeds(List<IED> ieds, string fileName)
-        {            
-            var sclViewControl = new SCLViewerControl(fileName);
-            sclViewControl.Dock = DockStyle.Fill;
+        {
+            var sclViewControl = new SCLViewerControl(fileName)
+            {
+                Dock = DockStyle.Fill
+            };
             sclViewControl.LoadIeds(ieds);
             placeHolder.Controls.Add(sclViewControl);
 
             sclViewControl.BringToFront();
 
             AddToWindowMenu(sclViewControl);
-           
+
         }
 
         private void AddToWindowMenu(IWindowViewControl control)
@@ -300,7 +306,7 @@ namespace OpenFMB.Adapters.Configuration
         private void OpenSCLFileStripMenuItem_Click(object sender, EventArgs e)
         {
             OpenSCL();
-        }        
+        }
         private void SaveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try
@@ -353,6 +359,6 @@ namespace OpenFMB.Adapters.Configuration
         {
             CreateMappingCSVForm form = new CreateMappingCSVForm();
             form.ShowDialog();
-        }        
+        }
     }
 }

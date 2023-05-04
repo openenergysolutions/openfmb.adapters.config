@@ -2,11 +2,11 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 
+using Newtonsoft.Json.Linq;
+using OpenFMB.Adapters.Core.Models;
+using OpenFMB.Adapters.Core.Models.Schemas;
 using System;
 using System.ComponentModel;
-using OpenFMB.Adapters.Core.Models;
-using Newtonsoft.Json.Linq;
-using OpenFMB.Adapters.Core.Models.Schemas;
 
 namespace OpenFMB.Adapters.Configuration
 {
@@ -19,7 +19,7 @@ namespace OpenFMB.Adapters.Configuration
 
         public NavigatorBooleanNode()
         {
-            InitializeComponent();            
+            InitializeComponent();
         }
 
         public NavigatorBooleanNode(Node node) : this()
@@ -32,7 +32,7 @@ namespace OpenFMB.Adapters.Configuration
             valueControl.SelectedIndex = val.Value.ToString().ToLower() == "false" ? 0 : 1;
 
             valueControl.SelectedIndexChanged += ValueControl_SelectedIndexChanged;
-            
+
             var desc = Data.Schema?.Description;
             if (string.IsNullOrWhiteSpace(desc))
             {
@@ -44,7 +44,7 @@ namespace OpenFMB.Adapters.Configuration
 
         private void ValueControl_SelectedIndexChanged(object sender, EventArgs e)
         {
-            (Data.Tag as JProperty).Value = new JValue(valueControl.SelectedIndex == 0 ? false : true);
+            (Data.Tag as JProperty).Value = new JValue(valueControl.SelectedIndex != 0);
 
             ValidateData();
 

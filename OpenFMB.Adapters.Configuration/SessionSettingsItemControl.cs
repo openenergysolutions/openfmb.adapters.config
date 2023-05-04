@@ -63,7 +63,7 @@ namespace OpenFMB.Adapters.Configuration
 
         private void Label_Click(object sender, EventArgs e)
         {
-            Selected = true;            
+            Selected = true;
         }
 
         private void EditButton_Click(object sender, EventArgs e)

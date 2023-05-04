@@ -26,14 +26,14 @@ namespace OpenFMB.Adapters.Configuration
 
         private static readonly ILogger _logger = MasterLogger.Instance;
 
-        public Editable Output { get; private set; }
+        public IEditable Output { get; private set; }
 
         public CreateTemplateConfigurationForm(string initialDirectory = null, bool canChooseDirectory = true)
         {
             InitializeComponent();
 
             _initialDirectory = initialDirectory;
-            
+
             if (!canChooseDirectory)
             {
                 folderTextBox.ReadOnly = true;
@@ -44,7 +44,7 @@ namespace OpenFMB.Adapters.Configuration
             folderTextBox.Text = Path.GetDirectoryName(adapterFilePath);
             nameTextBox.Text = Path.GetFileNameWithoutExtension(adapterFilePath);
 
-            LoadTree(_config);            
+            LoadTree(_config);
 
             pluginOptionControl.Visible = false;
 
@@ -66,7 +66,7 @@ namespace OpenFMB.Adapters.Configuration
             string adapter = seed;
             int i = 1;
             while (true)
-            {                
+            {
                 if (!File.Exists(Path.Combine(folder, adapter + ".yml")) && !File.Exists(Path.Combine(folder, adapter + ".yaml")))
                 {
                     break;
@@ -94,22 +94,24 @@ namespace OpenFMB.Adapters.Configuration
                         Dock = DockStyle.Top
                     };
                     b.BringToFront();
-                    b.CheckedChanged += OnCheckedChanged;                    
+                    b.CheckedChanged += OnCheckedChanged;
 
                     placeHolder.Controls.Add(b);
                     tempList.Add(b);
 
-                    var option = new PluginOptions();
-                    option.ModeSelectionEnabled = false;
+                    var option = new PluginOptions
+                    {
+                        ModeSelectionEnabled = false
+                    };
 
-                    _sessionFiles[p] = option;                    
-                }                
-            } 
-            
-            foreach(var c in tempList)
+                    _sessionFiles[p] = option;
+                }
+            }
+
+            foreach (var c in tempList)
             {
                 c.BringToFront();
-            }            
+            }
         }
 
         private void Browse_Click(object sender, EventArgs e)
@@ -118,7 +120,7 @@ namespace OpenFMB.Adapters.Configuration
             {
                 folderTextBox.Text = folderBrowserDialog.SelectedPath;
                 Settings.Default.PreviousWorkingFolder = folderBrowserDialog.SelectedPath;
-                Settings.Default.Save();                
+                Settings.Default.Save();
 
                 var adapterFilePath = GetDefaultAdapterFilePath("template", folderBrowserDialog.SelectedPath);
 
@@ -132,7 +134,7 @@ namespace OpenFMB.Adapters.Configuration
             var extension = Path.GetExtension(adapterName).ToLower();
             if (!extension.EndsWith(".yml") && !extension.EndsWith(".yaml"))
             {
-                adapterName = adapterName + ".yaml";
+                adapterName += ".yaml";
             }
             return adapterName;
         }
@@ -167,17 +169,19 @@ namespace OpenFMB.Adapters.Configuration
                         var p = button.Tag as IPlugin;
                         var option = _sessionFiles[p];
 
-                        
-                        Session session = new Session(p.Name, templateName, pluginOptionControl.SelectedVersion);
-                        session.FullPath = configPath;
+
+                        Session session = new Session(p.Name, templateName, pluginOptionControl.SelectedVersion)
+                        {
+                            FullPath = configPath
+                        };
 
                         if (option.SelectedProfiles.Count > 0)
-                        {                                                        
+                        {
                             foreach (var selected in option.SelectedProfiles)
                             {
                                 Profile profile = Profile.Create(selected, p.Name, pluginOptionControl.SelectedVersion);
                                 session.SessionConfiguration.AddProfile(profile);
-                            }                            
+                            }
                         }
 
                         _configManager.Save(session, false);
@@ -201,7 +205,7 @@ namespace OpenFMB.Adapters.Configuration
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, Program.AppName, MessageBoxButtons.OK, MessageBoxIcon.Error);                
+                MessageBox.Show(ex.Message, Program.AppName, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 _logger.Log(Level.Error, "An error occured when creating configurations.", ex);
             }
         }
@@ -216,5 +220,5 @@ namespace OpenFMB.Adapters.Configuration
 
             okButton.Enabled = true;
         }
-    }    
+    }
 }

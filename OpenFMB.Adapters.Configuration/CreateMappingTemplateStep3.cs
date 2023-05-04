@@ -2,22 +2,18 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 
+using OpenFMB.Adapters.Core.Models.Plugins;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
 using System.Text;
 using System.Windows.Forms;
-using OpenFMB.Adapters.Core.Models.Plugins;
-using OpenFMB.Adapters.Core;
-using System.IO;
-using System.Diagnostics;
 
 namespace OpenFMB.Adapters.Configuration
 {
     public partial class CreateMappingTemplateStep3 : UserControl
     {
-        private readonly Model _model;
-        private readonly TagsManager _tagsManager = TagsManager.Instance;
-
         private List<Data> _selectedData;
 
         public string Module
@@ -62,7 +58,6 @@ namespace OpenFMB.Adapters.Configuration
         public CreateMappingTemplateStep3()
         {
             InitializeComponent();
-            _model = _tagsManager.Model;           
         }
 
         public void Generate()
@@ -82,11 +77,11 @@ namespace OpenFMB.Adapters.Configuration
                         {
                             //Path,Description,Index,Point Type
                             sb.AppendLine("Path,Description,Index,Point Type");
-                            foreach(var s in SelectedData)
+                            foreach (var s in SelectedData)
                             {
                                 sb.AppendLine($"{s.Path},{s.Label},,");
                             }
-                            
+
                         }
                         else if (Plugin == PluginsSection.ModbusMaster)
                         {

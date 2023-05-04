@@ -11,7 +11,7 @@ using System.Windows.Forms;
 namespace OpenFMB.Adapters.Configuration
 {
     public class DataTreeNode : TreeNode, IDataNode
-    {        
+    {
         private Node data;
 
         public Node Data
@@ -20,7 +20,7 @@ namespace OpenFMB.Adapters.Configuration
             private set
             {
                 data = value;
-                data.DataNode = this;                
+                data.DataNode = this;
                 Update();
                 data.OnValueChanged -= Data_OnValueChanged;
                 data.OnValueChanged += Data_OnValueChanged;
@@ -64,13 +64,13 @@ namespace OpenFMB.Adapters.Configuration
 
         public bool IsValid
         {
-            get { return Data.IsValid; }            
+            get { return Data.IsValid; }
         }
 
         public DataTreeNode(Node data) : base(data.Name)
-        {            
+        {
             Data = data;
-            ToolTipText = data.Schema?.Description;            
+            ToolTipText = data.Schema?.Description;
         }
 
         public IEnumerable<DataTreeNode> GetAllLeafNodes()

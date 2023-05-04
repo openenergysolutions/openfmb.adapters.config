@@ -10,7 +10,7 @@ namespace OpenFMB.Adapters.Core.Utility.Logs
     public class OutputWriter : IOutput
     {
         private static readonly OutputWriter _instance = new OutputWriter();
-        private List<IOutput> _outputTerminals = new List<IOutput>();
+        private readonly List<IOutput> _outputTerminals = new List<IOutput>();
 
         public static OutputWriter Instance
         {

@@ -28,7 +28,7 @@ namespace OpenFMB.Adapters.Core
 
         public static string ToString(ConfigFileType fileType)
         {
-            switch(fileType)
+            switch (fileType)
             {
                 case ConfigFileType.MainAdapter:
                     return MainAdapter;

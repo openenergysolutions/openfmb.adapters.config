@@ -14,7 +14,7 @@ namespace OpenFMB.Adapters.Configuration
     public partial class ProfileSelectionControl : UserControl
     {
         public EventHandler<EventArgs> SelectionChanged;
-        private CreateAdapterConfigurationSelectFile _selectFileControl;
+        private readonly CreateAdapterConfigurationSelectFile _selectFileControl;
         public ProfileCreateMode Mode { get; set; }
         public string LoadFromFile { get; set; }
 
@@ -24,12 +24,12 @@ namespace OpenFMB.Adapters.Configuration
             {
                 List<string> list = new List<string>();
 
-                foreach(DataGridViewRow row in dataGridView.Rows)
+                foreach (DataGridViewRow row in dataGridView.Rows)
                 {
                     if ((bool)row.Cells[0].Value)
                     {
                         list.Add(row.Cells[1].Value as string);
-                    }                    
+                    }
                 }
 
                 return list;
@@ -62,7 +62,7 @@ namespace OpenFMB.Adapters.Configuration
 
         public bool FromFileRadio
         {
-            get { return fromFileRadio.Checked;  }
+            get { return fromFileRadio.Checked; }
             set { fromFileRadio.Checked = value; }
         }
 
@@ -76,8 +76,10 @@ namespace OpenFMB.Adapters.Configuration
         {
             InitializeComponent();
 
-            _selectFileControl = new CreateAdapterConfigurationSelectFile();
-            _selectFileControl.Dock = DockStyle.Fill;
+            _selectFileControl = new CreateAdapterConfigurationSelectFile
+            {
+                Dock = DockStyle.Fill
+            };
             placeHolder.Controls.Add(_selectFileControl);
 
             _selectFileControl.SelectionChanged += OnFileSelectionChanged;
@@ -99,7 +101,7 @@ namespace OpenFMB.Adapters.Configuration
                 else
                 {
                     row.Cells[0].Value = false;
-                }                
+                }
             }
             dataGridView.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_CellValueChanged);
         }
@@ -113,7 +115,7 @@ namespace OpenFMB.Adapters.Configuration
         {
             dataGridView.Rows.Clear();
             var profiles = ProfileRegistry.Profiles.Keys.ToList();
-            profiles.Sort();           
+            profiles.Sort();
 
             foreach (var p in profiles)
             {
@@ -136,10 +138,7 @@ namespace OpenFMB.Adapters.Configuration
         {
             if (e.ColumnIndex == 0 && e.RowIndex != -1)
             {
-                if (SelectionChanged != null)
-                {
-                    SelectionChanged(this, EventArgs.Empty);
-                }
+                SelectionChanged?.Invoke(this, EventArgs.Empty);
             }
         }
 

@@ -23,7 +23,7 @@ namespace OpenFMB.Adapters.Configuration
                 _section = value as PluginsSection;
                 LoadData(_section);
             }
-        }        
+        }
 
         public PluginsSectionControl()
         {
@@ -37,7 +37,7 @@ namespace OpenFMB.Adapters.Configuration
             {
                 flowLayoutPanel.Controls.Clear();
 
-                foreach(var p in section.Plugins)
+                foreach (var p in section.Plugins)
                 {
                     PluginSimpleControl c = new PluginSimpleControl(p);
                     c.PropertyChanged += (sender, e) =>

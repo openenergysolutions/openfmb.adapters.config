@@ -18,7 +18,7 @@ namespace OpenFMB.Adapters.Configuration
     public static class MigrationManager
     {
         // newname:oldname
-        private static readonly Dictionary<string, string> _nameChanges = new Dictionary<string, string>();        
+        private static readonly Dictionary<string, string> _nameChanges = new Dictionary<string, string>();
         private static readonly ILogger _logger = MasterLogger.Instance;
 
         static MigrationManager()
@@ -31,22 +31,21 @@ namespace OpenFMB.Adapters.Configuration
                 using (StreamReader reader = new StreamReader(stream))
                 {
                     string line;
-                    while((line = reader.ReadLine()) != null)
+                    while ((line = reader.ReadLine()) != null)
                     {
                         var tokens = line.Split(':');
                         if (!line.StartsWith("//") && tokens.Length == 2)
                         {
                             _nameChanges[tokens[0]] = tokens[1];
                         }
-                    }                    
+                    }
                 }
-            }           
+            }
         }
 
         public static string GetOldName(string newName)
         {
-            string oldName;
-            if (_nameChanges.TryGetValue(newName, out oldName))
+            if (_nameChanges.TryGetValue(newName, out string oldName))
             {
                 return oldName;
             }
@@ -55,7 +54,7 @@ namespace OpenFMB.Adapters.Configuration
 
         public static string GetNewName(string oldName)
         {
-            foreach(var key in _nameChanges.Keys)
+            foreach (var key in _nameChanges.Keys)
             {
                 if (_nameChanges[key] == oldName)
                 {
@@ -98,8 +97,8 @@ namespace OpenFMB.Adapters.Configuration
             {
                 // Only handle mapping for modbus-master
                 // Add source-type
-                var oldProp = selectedNode.Tag as JProperty;                             
-               
+                var oldProp = selectedNode.Tag as JProperty;
+
                 var parentProperty = selectedNode.Parent.Tag as JProperty;
                 parentProperty = parentProperty.DeepClone() as JProperty;
 
@@ -185,7 +184,7 @@ namespace OpenFMB.Adapters.Configuration
         }
 
         public static JToken SuggestCorrection(Node selectedNode)
-        {               
+        {
             var selectedParentNode = selectedNode.Parent;
             JToken newToken = null;
 
@@ -211,17 +210,16 @@ namespace OpenFMB.Adapters.Configuration
                         {
                             jObject = JsonGenerator.Generate(schema) as JObject;
                         }
-                        JToken token;
 
-                        if (jObject.TryGetValue(selectedParentNode.Name, out token))
+                        if (jObject.TryGetValue(selectedParentNode.Name, out JToken token))
                         {
                             // !!!! This token.Parent is same level as node.Tag object                                                        
                             var newProp = token.Parent as JProperty;
 
                             Merge(oldProp, newProp);
 
-                            newToken = newProp;                            
-                        }                        
+                            newToken = newProp;
+                        }
 
                     }
                     else if (schema.Type == JSchemaType.Array)
@@ -262,8 +260,7 @@ namespace OpenFMB.Adapters.Configuration
                             {
                                 // This is a special case when migrating from 2.0 to 2.1 for ESS/Solar control profiles
                                 // Add control
-                                var token = JsonGenerator.Generate(schema) as JArray;
-                                if (token != null)
+                                if (JsonGenerator.Generate(schema) is JArray token)
                                 {
                                     var obj = token.First() as JObject;
 
@@ -278,9 +275,9 @@ namespace OpenFMB.Adapters.Configuration
                     }
                     else
                     {
-                        _logger.Log(Level.Debug, "Suggested correction: Schema Type = " + schema.Type);                        
+                        _logger.Log(Level.Debug, "Suggested correction: Schema Type = " + schema.Type);
                     }
-                }                
+                }
             }
             catch (Exception ex)
             {
@@ -303,8 +300,7 @@ namespace OpenFMB.Adapters.Configuration
                         {
                             var prop = newToken as JProperty;
                             var parent = selectedParentNode.Parent;
-                            var tag = parent.Tag as JProperty;
-                            if (tag != null)
+                            if (parent.Tag is JProperty tag)
                             {
                                 var properties = tag.Value as JObject;
 
@@ -336,12 +332,11 @@ namespace OpenFMB.Adapters.Configuration
                             result = true;
                         }
                     }
-                }                
+                }
             }
             catch (Exception ex)
             {
                 _logger.Log(Level.Error, ex.Message, ex);
-                result = false;
                 throw;
             }
 
@@ -462,10 +457,7 @@ namespace OpenFMB.Adapters.Configuration
 
         private static void Merge(JProperty oldProp, JProperty newProp)
         {
-            var newObj = newProp.Value as JObject;
-            var oldObj = oldProp.Value as JObject;
-
-            if (newObj == null || oldObj == null)
+            if (!(newProp.Value is JObject newObj) || !(oldProp.Value is JObject oldObj))
             {
                 return;
             }

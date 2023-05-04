@@ -4,7 +4,7 @@
 
 namespace OpenFMB.Adapters.Core
 {
-    public interface Editable
+    public interface IEditable
     {
         string FullPath { get; }
         void Save();

@@ -2,10 +2,10 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 
+using OpenFMB.Adapters.Core.Models.Plugins;
 using System;
 using System.ComponentModel;
 using System.Windows.Forms;
-using OpenFMB.Adapters.Core.Models.Plugins;
 
 namespace OpenFMB.Adapters.Configuration
 {
@@ -13,9 +13,9 @@ namespace OpenFMB.Adapters.Configuration
     {
         private readonly BindingSource _bindingSource;
 
-        private ITransportPlugin _plugin;
+        private readonly ITransportPlugin _plugin;
 
-        private ToolTip _toolTip;
+        private readonly ToolTip _toolTip;
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -46,15 +46,15 @@ namespace OpenFMB.Adapters.Configuration
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(profileName.Text));
         }
 
-        private void subjectTextBox_Enter(object sender, EventArgs e)
+        private void SubjectTextBox_Enter(object sender, EventArgs e)
         {
-            _toolTip.InitialDelay = 0;           
+            _toolTip.InitialDelay = 0;
             _toolTip.Active = true;
             _toolTip.Show(string.Empty, subjectTextBox);
             _toolTip.Show("\"*\" or MRID", subjectTextBox, 0);
         }
 
-        private void subjectTextBox_Leave(object sender, EventArgs e)
+        private void SubjectTextBox_Leave(object sender, EventArgs e)
         {
             _toolTip.Active = false;
         }

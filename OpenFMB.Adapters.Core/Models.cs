@@ -11,46 +11,46 @@ namespace OpenFMB.Adapters.Core
     public class Model
     {
         [JsonProperty("breakermodule")]
-        public List<ProfileModel> breakermodule { get; set; } = new List<ProfileModel>();
+        public List<ProfileModel> BreakerModule { get; set; } = new List<ProfileModel>();
 
         [JsonProperty("capbankmodule")]
-        public List<ProfileModel> capbankmodule { get; set; } = new List<ProfileModel>();
+        public List<ProfileModel> CapbankModule { get; set; } = new List<ProfileModel>();
 
         [JsonProperty("circuitsegmentservicemodule")]
-        public List<ProfileModel> circuitsegmentservicemodule { get; set; } = new List<ProfileModel>();
+        public List<ProfileModel> CircuitSegmentServiceModule { get; set; } = new List<ProfileModel>();
 
         [JsonProperty("essmodule")]
-        public List<ProfileModel> essmodule { get; set; } = new List<ProfileModel>();
+        public List<ProfileModel> EssModule { get; set; } = new List<ProfileModel>();
 
         [JsonProperty("generationmodule")]
-        public List<ProfileModel> generationmodule { get; set; } = new List<ProfileModel>();
+        public List<ProfileModel> GenerationModule { get; set; } = new List<ProfileModel>();
 
         [JsonProperty("interconnectionmodule")]
-        public List<ProfileModel> interconnectionmodule { get; set; } = new List<ProfileModel>();
+        public List<ProfileModel> InterconnectionModule { get; set; } = new List<ProfileModel>();
 
         [JsonProperty("loadmodule")]
-        public List<ProfileModel> loadmodule { get; set; } = new List<ProfileModel>();
+        public List<ProfileModel> LoadModule { get; set; } = new List<ProfileModel>();
 
         [JsonProperty("metermodule")]
-        public List<ProfileModel> metermodule { get; set; } = new List<ProfileModel>();
+        public List<ProfileModel> MeterModule { get; set; } = new List<ProfileModel>();
 
         [JsonProperty("reclosermodule")]
-        public List<ProfileModel> reclosermodule { get; set; } = new List<ProfileModel>();
+        public List<ProfileModel> RecloserModule { get; set; } = new List<ProfileModel>();
 
         [JsonProperty("regulatormodule")]
-        public List<ProfileModel> regulatormodule { get; set; } = new List<ProfileModel>();
+        public List<ProfileModel> RegulatorModule { get; set; } = new List<ProfileModel>();
 
         [JsonProperty("reservemodule")]
-        public List<ProfileModel> reservemodule { get; set; } = new List<ProfileModel>();
+        public List<ProfileModel> ReserveModule { get; set; } = new List<ProfileModel>();
 
         [JsonProperty("resourcemodule")]
-        public List<ProfileModel> resourcemodule { get; set; } = new List<ProfileModel>();
+        public List<ProfileModel> ResourceModule { get; set; } = new List<ProfileModel>();
 
         [JsonProperty("solarmodule")]
-        public List<ProfileModel> solarmodule { get; set; } = new List<ProfileModel>();
+        public List<ProfileModel> SolarModule { get; set; } = new List<ProfileModel>();
 
         [JsonProperty("switchmodule")]
-        public List<ProfileModel> switchmodule { get; set; } = new List<ProfileModel>();
+        public List<ProfileModel> SwitchModule { get; set; } = new List<ProfileModel>();
 
         private readonly List<ProfileModel> _allProfileModels = new List<ProfileModel>();
 
@@ -63,10 +63,9 @@ namespace OpenFMB.Adapters.Core
                 {
                     var properties = GetType().GetProperties();
 
-                    foreach(var property in properties)
+                    foreach (var property in properties)
                     {
-                        var list = property.GetValue(this) as List<ProfileModel>;
-                        if (list != null)
+                        if (property.GetValue(this) is List<ProfileModel> list)
                         {
                             _allProfileModels.AddRange(list);
                         }
@@ -115,7 +114,7 @@ namespace OpenFMB.Adapters.Core
                 {
                     if (_keywords == null)
                     {
-                        _keywords = Name.Split('|').Select(x => x.Trim().ToLower()).ToArray();                        
+                        _keywords = Name.Split('|').Select(x => x.Trim().ToLower()).ToArray();
                     }
                     return _keywords;
                 }
@@ -161,7 +160,7 @@ namespace OpenFMB.Adapters.Core
         }
 
         [JsonIgnore]
-        public int Matches { get; set; }        
+        public int Matches { get; set; }
 
         public Topic Copy()
         {

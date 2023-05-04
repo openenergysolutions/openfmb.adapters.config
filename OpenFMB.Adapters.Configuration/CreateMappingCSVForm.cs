@@ -19,14 +19,20 @@ namespace OpenFMB.Adapters.Configuration
         {
             InitializeComponent();
 
-            _step1 = new CreateMappingTemplateStep1();
-            _step1.Dock = DockStyle.Fill;
+            _step1 = new CreateMappingTemplateStep1
+            {
+                Dock = DockStyle.Fill
+            };
 
-            _step2 = new CreateMappingTemplateStep2();
-            _step2.Dock = DockStyle.Fill;
+            _step2 = new CreateMappingTemplateStep2
+            {
+                Dock = DockStyle.Fill
+            };
 
-            _step3 = new CreateMappingTemplateStep3();
-            _step3.Dock = DockStyle.Fill;
+            _step3 = new CreateMappingTemplateStep3
+            {
+                Dock = DockStyle.Fill
+            };
 
             placeHolder.Controls.Add(_step1);
             placeHolder.Controls.Add(_step2);

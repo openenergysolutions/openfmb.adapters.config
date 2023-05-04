@@ -10,7 +10,7 @@ using System;
 namespace OpenFMB.Adapters.Configuration
 {
     public partial class NavigatorStringNode : BaseNavigatorNode, IDataNode, INavigatorNode
-    {        
+    {
         public bool ReadOnly
         {
             get { return valueControl.ReadOnly; }
@@ -19,7 +19,7 @@ namespace OpenFMB.Adapters.Configuration
 
         public NavigatorStringNode()
         {
-            InitializeComponent();            
+            InitializeComponent();
         }
 
         public NavigatorStringNode(Node node) : this()

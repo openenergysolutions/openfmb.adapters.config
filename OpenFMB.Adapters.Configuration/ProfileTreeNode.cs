@@ -10,7 +10,7 @@ namespace OpenFMB.Adapters.Configuration
 {
     public class ProfileTreeNode : TreeNode
     {
-        private Profile _profile;
+        private readonly Profile _profile;
 
         public ProfileTreeNode(Profile profile) : base(profile.ProfileName)
         {
@@ -27,7 +27,7 @@ namespace OpenFMB.Adapters.Configuration
 
             _profile.OnValidated -= Profile_OnValidated;
             _profile.OnValidated += Profile_OnValidated;
-        }        
+        }
 
         private void Profile_OnValidated(object sender, EventArgs e)
         {

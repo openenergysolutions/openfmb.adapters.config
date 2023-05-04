@@ -13,7 +13,7 @@ using System.Windows.Forms;
 namespace OpenFMB.Adapters.Configuration
 {
     public partial class TagManagementForm : Form
-    {                
+    {
         private readonly TagsManager _tagsManager = TagsManager.Instance;
 
         private readonly Model _model;
@@ -32,11 +32,11 @@ namespace OpenFMB.Adapters.Configuration
 
             var properties = _model.GetType().GetProperties();
 
-            foreach(var prop in properties)
-            {               
+            foreach (var prop in properties)
+            {
                 var val = prop.GetValue(_model) as List<ProfileModel>;
 
-                moduleCombo.Items.Add(new ModuleValue () { Name = prop.Name, Value = val });
+                moduleCombo.Items.Add(new ModuleValue() { Name = prop.Name, Value = val });
                 moduleCombo.DisplayMember = "Name";
                 moduleCombo.ValueMember = "Topics";
             }
@@ -45,9 +45,8 @@ namespace OpenFMB.Adapters.Configuration
         private void ModuleCombo_SelectedValueChanged(object sender, EventArgs e)
         {
             profileCombo.Items.Clear();
-            var module = moduleCombo.SelectedItem as ModuleValue;
 
-            if (module != null && module.Value != null)
+            if (moduleCombo.SelectedItem is ModuleValue module && module.Value != null)
             {
                 foreach (var p in module.Value)
                 {
@@ -55,13 +54,13 @@ namespace OpenFMB.Adapters.Configuration
                     profileCombo.DisplayMember = "Name";
                     profileCombo.ValueMember = "";
                 }
-            }            
-        }       
+            }
+        }
 
         private void ProfileCombo_SelectedIndexChanged(object sender, EventArgs e)
-        {            
+        {
             var item = profileCombo.SelectedItem as ProfileModel;
-            var list = item.Topics.Select(x => x.Attributes).ToList();            
+            var list = item.Topics.Select(x => x.Attributes).ToList();
 
             attributesBindingSource.DataSource = new BindingList<Attributes>(list.ToList());
         }
@@ -77,15 +76,14 @@ namespace OpenFMB.Adapters.Configuration
             {
                 string search = filterTextBox.Text.Trim();
 
-                var item = profileCombo.SelectedItem as ProfileModel;
-                if (item != null)
+                if (profileCombo.SelectedItem is ProfileModel item)
                 {
                     var list = item.Topics.Where(x => x.Attributes.Name.IndexOf(search, StringComparison.InvariantCultureIgnoreCase) >= 0 || x.Attributes.Path.IndexOf(search, StringComparison.InvariantCultureIgnoreCase) >= 0).Select(a => a.Attributes).ToList();
                     attributesBindingSource.DataSource = new BindingList<Attributes>(list.ToList());
                 }
-                
+
             }
             catch { }
         }
-    }    
+    }
 }

@@ -28,13 +28,11 @@ namespace OpenFMB.Adapters.Core
 
         public static ConfigurationManager Instance { get; } = new ConfigurationManager();
 
-        private string _checkSum;
-
-        private static ILogger _logger = MasterLogger.Instance;
+        private static readonly ILogger _logger = MasterLogger.Instance;
 
         private readonly FileSystemWatcher _fileSystemWatcher;
 
-        public Editable ActiveConfiguration { get; private set; }
+        public IEditable ActiveConfiguration { get; private set; }
 
         public string WorkingDirectory { get; private set; }
 
@@ -46,16 +44,18 @@ namespace OpenFMB.Adapters.Core
         public static string Version
         {
             get
-            {                
+            {
                 return Assembly.GetExecutingAssembly().GetName().Version.ToString();
             }
         }
 
-        private ConfigurationManager() 
+        private ConfigurationManager()
         {
-            _fileSystemWatcher = new FileSystemWatcher();
-            _fileSystemWatcher.NotifyFilter = NotifyFilters.LastWrite | NotifyFilters.FileName | NotifyFilters.DirectoryName;
-            _fileSystemWatcher.IncludeSubdirectories = true;
+            _fileSystemWatcher = new FileSystemWatcher
+            {
+                NotifyFilter = NotifyFilters.LastWrite | NotifyFilters.FileName | NotifyFilters.DirectoryName,
+                IncludeSubdirectories = true
+            };
 
             _fileSystemWatcher.Renamed += FileSystemWatcher_Renamed;
             _fileSystemWatcher.Created += FileSystemWatcher_Created;
@@ -69,7 +69,7 @@ namespace OpenFMB.Adapters.Core
 
             try
             {
-                OnFileSystemChanged?.Invoke(this, e);                
+                OnFileSystemChanged?.Invoke(this, e);
             }
             finally
             {
@@ -113,7 +113,7 @@ namespace OpenFMB.Adapters.Core
         public void OpenWorkspace(string directory)
         {
             CloseWorkspace();
-            WorkingDirectory = directory;            
+            WorkingDirectory = directory;
 
             _fileSystemWatcher.Path = WorkingDirectory;
 
@@ -136,11 +136,10 @@ namespace OpenFMB.Adapters.Core
 
                 foreach (var p in config.Plugins.Plugins)
                 {
-                    ISessionable s = p as ISessionable;
-                    if (s != null)
+                    if (p is ISessionable s)
                     {
                         foreach (var session in s.Sessions)
-                        {                            
+                        {
                             var path = session.LocalFilePath;
                             var temp = Path.Combine(WorkingDirectory, path.TrimStart(new char[] { '\\', '/' }));
                             session.SessionConfiguration.Load(temp);
@@ -156,9 +155,9 @@ namespace OpenFMB.Adapters.Core
                 session.Name = relative;
 
                 ActiveConfiguration = session;
-            }            
-        }    
-        
+            }
+        }
+
         public bool HasChanged()
         {
             return ActiveConfiguration != null && ActiveConfiguration.HasChanged();
@@ -166,10 +165,10 @@ namespace OpenFMB.Adapters.Core
 
         public void Save()
         {
-            Save(ActiveConfiguration);            
+            Save(ActiveConfiguration);
         }
 
-        public void Save(Editable editable, bool suspendFileWatcher = true)
+        public void Save(IEditable editable, bool suspendFileWatcher = true)
         {
             if (editable != null)
             {
@@ -194,7 +193,7 @@ namespace OpenFMB.Adapters.Core
             }
         }
 
-        public void LoadConfiguration(Editable configuration)
+        public void LoadConfiguration(IEditable configuration)
         {
             // open workspace first
             if (string.IsNullOrWhiteSpace(WorkingDirectory))
@@ -208,7 +207,7 @@ namespace OpenFMB.Adapters.Core
 
         public void UnloadConfiguration()
         {
-            ActiveConfiguration = null;            
+            ActiveConfiguration = null;
         }
 
         public void CopyFile(string sourceFileName, string destFileName, bool suspendFileWatcher = true)
@@ -230,7 +229,7 @@ namespace OpenFMB.Adapters.Core
                 if (suspendFileWatcher)
                 {
                     ResumeFileWatcher();
-                }                
+                }
             }
         }
 
@@ -240,8 +239,7 @@ namespace OpenFMB.Adapters.Core
 
             ActiveConfiguration = null;
             WorkingDirectory = string.Empty;
-           
-            _checkSum = string.Empty;
+
             OnConfigurationClosed?.Invoke(this, EventArgs.Empty);
         }
 
@@ -280,15 +278,14 @@ namespace OpenFMB.Adapters.Core
 
                 foreach (var plugin in plugins.Plugins)
                 {
-                    var sessionable = plugin as ISessionable;
-                    if (sessionable != null)
+                    if (plugin is ISessionable sessionable)
                     {
                         foreach (var session in sessionable.Sessions)
                         {
                             var profiles = session.SessionConfiguration.GetProfiles();
                             var isClient = PluginsSection.IsClientPlugin(session.PluginName);
                             foreach (var p in profiles)
-                            {                                
+                            {
                                 var isReading = ProfileRegistry.IsReadingProfile(p.ProfileName) || ProfileRegistry.IsStatusProfile(p.ProfileName) || ProfileRegistry.IsEventProfile(p.ProfileName) || ProfileRegistry.IsCapabilityProfile(p.ProfileName);
                                 if (!isClient)
                                 {
@@ -352,7 +349,7 @@ namespace OpenFMB.Adapters.Core
             {
                 mrid = kvp.Value;
             }
-            
+
             if (topics.FirstOrDefault(x => x.Profile == profile.ProfileName && x.Subject == mrid) == null)
             {
                 if (isPublishing)
@@ -386,15 +383,15 @@ namespace OpenFMB.Adapters.Core
                     {
                         return ConfigFileType.MainAdapter;
                     }
-                    else if (text.IndexOf("profiles:") > 0) 
+                    else if (text.IndexOf("profiles:") > 0)
                     {
                         return ConfigFileType.Template;
                     }
-                }                                
+                }
             }
             catch
             {
-               //
+                //
             }
             return ConfigFileType.Unknown;
         }
@@ -421,7 +418,7 @@ namespace OpenFMB.Adapters.Core
                     var map = doc.RootNode as YamlMappingNode;
 
                     if (map.ContainsKey("file"))
-                    {                       
+                    {
                         fileInformation.FromYaml(doc.RootNode["file"]);
                     }
                     else

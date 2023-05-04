@@ -76,7 +76,8 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
                 Plugins.Add(IEC61850ClientPlugin);
                 Plugins.Add(IEC61850ServerPlugin);
             }
-            if (System.Configuration.ConfigurationManager.AppSettings["ICCPSupport"] == "True") { 
+            if (System.Configuration.ConfigurationManager.AppSettings["ICCPSupport"] == "True")
+            {
                 Plugins.Add(IccpClientPlugin);
                 Plugins.Add(IccpServerPlugin);
             }
@@ -95,19 +96,19 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
         {
             var node = new YamlMappingNode();
 
-            foreach(var p in Plugins)
+            foreach (var p in Plugins)
             {
                 node.Add(p.Name, p.ToYaml());
-            }           
+            }
 
             return node;
-        }       
+        }
 
         public void FromYaml(YamlNode yamlNode)
         {
             YamlMappingNode node = yamlNode as YamlMappingNode;
 
-            foreach(var p in Plugins)
+            foreach (var p in Plugins)
             {
                 if (p.Name == ModbusMaster)
                 {
@@ -138,7 +139,7 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
                         p.FromYaml(node[p.Name]);
                     }
                 }
-            }                         
+            }
         }
 
         public static bool IsClientPlugin(string pluginName)

@@ -141,7 +141,7 @@
             this.storeRawMessageCheckBox.Size = new System.Drawing.Size(15, 14);
             this.storeRawMessageCheckBox.TabIndex = 23;
             this.storeRawMessageCheckBox.UseVisualStyleBackColor = true;
-            this.storeRawMessageCheckBox.CheckedChanged += new System.EventHandler(this.storeRawMessageCheckBox_CheckedChanged);
+            this.storeRawMessageCheckBox.CheckedChanged += new System.EventHandler(this.StoreRawMessageCheckBox_CheckedChanged);
             // 
             // label8
             // 

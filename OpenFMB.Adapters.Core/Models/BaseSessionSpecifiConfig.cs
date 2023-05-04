@@ -25,7 +25,7 @@ namespace OpenFMB.Adapters.Core.Models
         {
             get { return FileInformation.Plugin; }
             protected set { FileInformation.Plugin = value; }
-        }        
+        }
 
         [Browsable(false)]
         [JsonIgnore]
@@ -33,7 +33,7 @@ namespace OpenFMB.Adapters.Core.Models
 
         [JsonProperty("file")]
         [Browsable(false)]
-        public FileInformation FileInformation { get; set; }         
+        public FileInformation FileInformation { get; set; }
 
         public BaseSessionSpecifiConfig(string edition)
         {
@@ -46,7 +46,7 @@ namespace OpenFMB.Adapters.Core.Models
             {
                 Id = ConfigFileType.Template,
                 Edition = edition,
-            };            
+            };
         }
 
         public virtual void ToYaml(YamlMappingNode root)

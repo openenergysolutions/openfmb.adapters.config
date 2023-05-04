@@ -26,7 +26,7 @@ namespace OpenFMB.Adapters.Configuration
         public LoggingSectionControl()
         {
             InitializeComponent();
-            headerLabel.Text = "LOGGING";            
+            headerLabel.Text = "LOGGING";
         }
 
         private void LoggingSectionBindingSource_CurrentItemChanged(object sender, EventArgs e)

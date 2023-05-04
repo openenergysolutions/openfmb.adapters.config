@@ -8,7 +8,7 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
 {
     public interface IPlugin : IYamlNode
     {
-        bool Enabled { get; set; }       
+        bool Enabled { get; set; }
     }
 
     public interface ISessionable : IPlugin

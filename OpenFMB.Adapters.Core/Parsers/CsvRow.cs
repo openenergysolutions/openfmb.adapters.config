@@ -9,7 +9,7 @@ namespace OpenFMB.Adapters.Core.Parsers
     public interface ICsvRow
     {
         string Path { get; }
-        string Description { get;  }
+        string Description { get; }
         string Index { get; }
         string DataType { get; }
         string Value { get; }

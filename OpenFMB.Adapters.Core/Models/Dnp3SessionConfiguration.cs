@@ -17,7 +17,7 @@ namespace OpenFMB.Adapters.Core.Models
     public class Dnp3SessionConfiguration : SessionConfiguration
     {
         private ISessionSpecificConfig _sessionSpecific;
-        
+
         public override ISessionSpecificConfig SessionSpecificConfig
         {
             get
@@ -37,7 +37,7 @@ namespace OpenFMB.Adapters.Core.Models
                 }
                 return _sessionSpecific;
             }
-        }        
+        }
 
         public Dnp3SessionConfiguration(string pluginName, string edition)
         {
@@ -46,8 +46,8 @@ namespace OpenFMB.Adapters.Core.Models
             PropertyChanged += (sender, e) =>
             {
                 NotifyPropertyChanged(e.PropertyName);
-            };            
-        }        
+            };
+        }
 
         protected override void LoadSessionConfigurationFromJson(string json)
         {
@@ -67,14 +67,12 @@ namespace OpenFMB.Adapters.Core.Models
 
                     if (jsonObject.ContainsKey("channel"))
                     {
-                        var channel = jsonObject["channel"] as JObject;
-                        if (channel != null)
+                        if (jsonObject["channel"] is JObject channel)
                         {
                             if (channel.ContainsKey("port"))
                             {
                                 var port = channel["port"].ToString();
-                                int temp;
-                                if (!int.TryParse(port, out temp))
+                                if (!int.TryParse(port, out _))
                                 {
                                     channel["port"] = new JValue(20000);
                                 }
@@ -101,7 +99,7 @@ namespace OpenFMB.Adapters.Core.Models
                     _logger.Log(Level.Error, ex.Message, ex);
                 }
             }
-           
+
         }
 
         protected override void InitDefaultProfileSettings(Profile profile)
@@ -113,13 +111,11 @@ namespace OpenFMB.Adapters.Core.Models
                 var poll = GetPollByType(type);
                 if (poll != null)
                 {
-                    var obj = profile.Token as JObject;
-                    if (obj != null)
+                    if (profile.Token is JObject obj)
                     {
                         if (obj.ContainsKey("poll-name"))
                         {
-                            var val = obj["poll-name"] as JValue;
-                            if (val != null && val.ToString() == "")
+                            if (obj["poll-name"] is JValue val && val.ToString() == "")
                             {
                                 obj["poll-name"] = new JValue(poll.Name);
                             }
@@ -207,7 +203,7 @@ namespace OpenFMB.Adapters.Core.Models
     {
         [Category("Channel"), DisplayName("Network Adapter")]
         [JsonProperty("listen-adapter")]
-        public string Adapter { get; set; } = "127.0.0.1";        
+        public string Adapter { get; set; } = "127.0.0.1";
 
         [Category("Channel"), DisplayName("TCP Port")]
         [JsonProperty("port")]
@@ -243,8 +239,8 @@ namespace OpenFMB.Adapters.Core.Models
 
     public enum BIVariationsEvent
     {
-        Group2Var1, 
-        Group2Var2, 
+        Group2Var1,
+        Group2Var2,
         Group2Var3
     }
 
@@ -298,7 +294,7 @@ namespace OpenFMB.Adapters.Core.Models
         [JsonConverter(typeof(StringEnumConverter))]
         public AIVariationsStatic AnalogInput { get; set; }
 
-        [Description("Counter default static variation")]        
+        [Description("Counter default static variation")]
         [JsonProperty("counter")]
         [JsonConverter(typeof(StringEnumConverter))]
         public CounterVariationsStatic Counter { get; set; }
@@ -323,7 +319,7 @@ namespace OpenFMB.Adapters.Core.Models
     }
 
     public class Dnp3OutstationProtocol
-    {        
+    {
         [Category("Protocol"), DisplayName("Remote Address")]
         [JsonProperty("master-address")]
         public int MasterAddress { get; set; } = 1;
@@ -374,7 +370,7 @@ namespace OpenFMB.Adapters.Core.Models
             {
                 if (value != "")
                 {
-                    name = value;                    
+                    name = value;
                 }
             }
         }
@@ -384,7 +380,7 @@ namespace OpenFMB.Adapters.Core.Models
             get { return intervalMs; }
             set
             {
-                intervalMs = value;                
+                intervalMs = value;
             }
         }
 
@@ -414,8 +410,8 @@ namespace OpenFMB.Adapters.Core.Models
         public bool Class3
         {
             get { return DnpClasses.Class3; }
-            set { DnpClasses.Class3 = value;  }
-        }        
+            set { DnpClasses.Class3 = value; }
+        }
 
         public bool IsStaticScan()
         {
@@ -429,7 +425,7 @@ namespace OpenFMB.Adapters.Core.Models
 
         public static Dnp3Poll CreateStaticScan()
         {
-            return new Dnp3Poll();            
+            return new Dnp3Poll();
         }
 
         public static Dnp3Poll CreateEventScan()
@@ -449,7 +445,7 @@ namespace OpenFMB.Adapters.Core.Models
     {
         public Dnp3MasterSpecificConfig(string edition) : base(edition)
         {
-            PlugIn = PluginsSection.Dnp3Master;                        
+            PlugIn = PluginsSection.Dnp3Master;
         }
 
         private void Item_PropertyChanged(object sender, PropertyChangedEventArgs e)
@@ -475,8 +471,8 @@ namespace OpenFMB.Adapters.Core.Models
         public string ChannelAdapter
         {
             get { return Channel.Adapter; }
-            set 
-            { 
+            set
+            {
                 Channel.Adapter = value;
                 NotifyPropertyChanged();
             }
@@ -582,7 +578,7 @@ namespace OpenFMB.Adapters.Core.Models
 
         [Browsable(false)]
         [JsonProperty("protocol")]
-        public Dnp3MasterProtocol Protocol { get; set; } = new Dnp3MasterProtocol();        
+        public Dnp3MasterProtocol Protocol { get; set; } = new Dnp3MasterProtocol();
     }
 
     public class Dnp3OutstationSpecificConfig : BaseSessionSpecifiConfig, ISessionSpecificConfig

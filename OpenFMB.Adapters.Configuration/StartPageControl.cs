@@ -11,11 +11,11 @@ namespace OpenFMB.Adapters.Configuration
 {
     public partial class StartPageControl : UserControl
     {
-        private Color _linkColor = Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+        private readonly Color _linkColor = Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 
         public StartPageControl()
         {
-            InitializeComponent();            
+            InitializeComponent();
 
             RecentFileManager.OnRecentFileChanged += OnRecentFileChanged;
 
@@ -41,9 +41,11 @@ namespace OpenFMB.Adapters.Configuration
             {
                 if (Directory.Exists(f))
                 {
-                    LinkLabel c = new LinkLabel();
-                    c.Text = Path.GetFileName(f);
-                    c.Tag = f;
+                    LinkLabel c = new LinkLabel
+                    {
+                        Text = Path.GetFileName(f),
+                        Tag = f
+                    };
                     c.LinkColor = c.ActiveLinkColor = c.VisitedLinkColor = _linkColor;
                     c.LinkBehavior = LinkBehavior.HoverUnderline;
                     c.ContextMenuStrip = contextMenuStrip;
@@ -90,13 +92,11 @@ namespace OpenFMB.Adapters.Configuration
         }
 
         private void RemoveFromListToolStripMenuItem_Click(object sender, EventArgs e)
-        {                        
-            ToolStripItem menuItem = sender as ToolStripItem;
-            if (menuItem != null)
+        {
+            if (sender is ToolStripItem menuItem)
             {
                 // Retrieve the ContextMenuStrip that owns this ToolStripItem
-                ContextMenuStrip owner = menuItem.Owner as ContextMenuStrip;
-                if (owner != null)
+                if (menuItem.Owner is ContextMenuStrip owner)
                 {
                     // Get the control that is displaying this context menu
                     LinkLabel c = owner.SourceControl as LinkLabel;
@@ -107,18 +107,16 @@ namespace OpenFMB.Adapters.Configuration
 
         private void CopyPathToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ToolStripItem menuItem = sender as ToolStripItem;
-            if (menuItem != null)
+            if (sender is ToolStripItem menuItem)
             {
                 // Retrieve the ContextMenuStrip that owns this ToolStripItem
-                ContextMenuStrip owner = menuItem.Owner as ContextMenuStrip;
-                if (owner != null)
+                if (menuItem.Owner is ContextMenuStrip owner)
                 {
                     // Get the control that is displaying this context menu
                     LinkLabel c = owner.SourceControl as LinkLabel;
                     Clipboard.SetText(c.Tag as string);
                 }
-            }            
+            }
         }
     }
 }

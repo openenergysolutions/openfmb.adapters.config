@@ -34,8 +34,7 @@ namespace OpenFMB.Adapters.Core.Utility
 
         public static decimal ToDecimal(object val)
         {
-            decimal d;
-            decimal.TryParse(val.ToString(), out d);
+            decimal.TryParse(val.ToString(), out decimal d);
             return d;
         }
     }

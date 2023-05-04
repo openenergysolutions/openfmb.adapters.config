@@ -38,9 +38,9 @@ namespace OpenFMB.Adapters.Configuration
             {
                 headerLabel.Text = plugin.Name.ToUpper();
 
-                pluginBindingSource.CurrentItemChanged -= BindingSource_CurrentItemChanged;                
+                pluginBindingSource.CurrentItemChanged -= BindingSource_CurrentItemChanged;
 
-                pluginBindingSource.DataSource = plugin;               
+                pluginBindingSource.DataSource = plugin;
 
                 publishPanel.Controls.Clear();
 
@@ -60,7 +60,7 @@ namespace OpenFMB.Adapters.Configuration
                     subscribePanel.Controls.Add(c);
                 }
 
-                pluginBindingSource.CurrentItemChanged += BindingSource_CurrentItemChanged;                
+                pluginBindingSource.CurrentItemChanged += BindingSource_CurrentItemChanged;
             }
         }
 
@@ -85,7 +85,7 @@ namespace OpenFMB.Adapters.Configuration
                 {
                     RaisePropertyChangedEvent(new System.ComponentModel.PropertyChangedEventArgs("zenohplugin"));
                 }
-                
+
                 foreach (var p in selectedProfiles)
                 {
                     if (_plugin.Publishes.FirstOrDefault(x => x.Profile == p) == null)
@@ -140,7 +140,7 @@ namespace OpenFMB.Adapters.Configuration
         {
             if (MessageBox.Show("Pub/Sub subjects will be reset and populated.  Proceed?", Program.AppName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                ConfigurationManager.Instance.UpdatePubSubTopics(type:TransportPluginType.ZENOH, reset:true);
+                ConfigurationManager.Instance.UpdatePubSubTopics(type: TransportPluginType.ZENOH, reset: true);
                 LoadData(_plugin);
                 RaisePropertyChangedEvent(new System.ComponentModel.PropertyChangedEventArgs("zenohplugin"));
             }

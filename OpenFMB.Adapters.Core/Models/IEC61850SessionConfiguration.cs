@@ -5,7 +5,6 @@
 using Newtonsoft.Json;
 using OpenFMB.Adapters.Core.Models.Goose;
 using OpenFMB.Adapters.Core.Models.Plugins;
-using System.Collections.Generic;
 using System.ComponentModel;
 
 namespace OpenFMB.Adapters.Core.Models
@@ -38,7 +37,7 @@ namespace OpenFMB.Adapters.Core.Models
         {
             PluginName = pluginName;
             Edition = edition;
-        }        
+        }
 
         protected override void LoadSessionConfigurationFromJson(string json)
         {
@@ -60,7 +59,7 @@ namespace OpenFMB.Adapters.Core.Models
     }
 
     public class IEC61850ClientSpecificConfig : BaseSessionSpecifiConfig, ISessionSpecificConfig
-    {               
+    {
         private string networkAdapter = "wlp2s0";
         private IEC61850ClientType clientType = IEC61850ClientType.GOOSE;
         private string serverIp = "0.0.0.0";
@@ -92,7 +91,7 @@ namespace OpenFMB.Adapters.Core.Models
         [JsonProperty("control-settings")]
         public ControlSettings ControlSettings { get; set; } = new ControlSettings();
 
-        [JsonIgnore]        
+        [JsonIgnore]
         [Category("Control Settings"), Description("Origin Category for control"), DisplayName("Origin Category")]
         public OriginCategory ControlSettingsOrCat
         {

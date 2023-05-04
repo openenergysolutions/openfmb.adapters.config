@@ -12,14 +12,16 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
         public bool Enabled { get; set; }
         public bool LogDebugString { get; set; }
         public List<LogFilter> Filters { get; } = new List<LogFilter>();
-        public string Name => PluginsSection.Log;        
+        public string Name => PluginsSection.Log;
 
         public YamlNode ToYaml()
         {
-            var node = new YamlMappingNode();
-            node.Add("enabled", Enabled.ToString().ToLower());
-            node.Add("log_debug_string", LogDebugString.ToString().ToLower());
-            node.Add("filters", new YamlSequenceNode());
+            var node = new YamlMappingNode
+            {
+                { "enabled", Enabled.ToString().ToLower() },
+                { "log_debug_string", LogDebugString.ToString().ToLower() },
+                { "filters", new YamlSequenceNode() }
+            };
 
             return node;
         }

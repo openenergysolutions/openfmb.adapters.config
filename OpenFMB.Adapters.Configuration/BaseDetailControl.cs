@@ -17,7 +17,7 @@ namespace OpenFMB.Adapters.Configuration
         }
         public BaseDetailControl()
         {
-            InitializeComponent();           
+            InitializeComponent();
         }
 
         public void RaisePropertyChangedEvent(PropertyChangedEventArgs e)

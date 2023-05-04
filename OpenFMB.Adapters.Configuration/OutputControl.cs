@@ -20,7 +20,7 @@ namespace OpenFMB.Adapters.Configuration
             MasterLogger.Instance.Subscribe(this);
             listView.DoubleBuffered(true);
         }
-                
+
         public void Log(Level level, string message, object tag = null)
         {
             Log(level, message, tag);
@@ -34,10 +34,11 @@ namespace OpenFMB.Adapters.Configuration
             {
                 listView.BeginInvoke(new MethodInvoker(delegate ()
                 {
-                    ListViewItem item = new ListViewItem();
-                    item.Tag = tag;
-
-                    item.ImageIndex = GetImageIndex(level);
+                    ListViewItem item = new ListViewItem
+                    {
+                        Tag = tag,
+                        ImageIndex = GetImageIndex(level)
+                    };
 
                     item.SubItems.AddRange(new string[] { level.ToString(), message, exception });
                     listView.Items.Add(item);
@@ -45,10 +46,11 @@ namespace OpenFMB.Adapters.Configuration
             }
             else
             {
-                ListViewItem item = new ListViewItem();
-                item.Tag = tag;
-
-                item.ImageIndex = GetImageIndex(level);
+                ListViewItem item = new ListViewItem
+                {
+                    Tag = tag,
+                    ImageIndex = GetImageIndex(level)
+                };
 
                 item.SubItems.AddRange(new string[] { level.ToString(), message, exception });
                 listView.Items.Add(item);
@@ -126,11 +128,11 @@ namespace OpenFMB.Adapters.Configuration
         }
 
         private void ResizeOutputColumnHeaders()
-        {            
+        {
             listView.Columns[0].Width = 25;
             listView.Columns[1].Width = 70;
             listView.Columns[3].Width = 150;
-            listView.Columns[2].Width = listView.Width - 250;            
+            listView.Columns[2].Width = listView.Width - 250;
         }
 
         private void OutputControl_Resize(object sender, EventArgs e)
@@ -150,12 +152,14 @@ namespace OpenFMB.Adapters.Configuration
                     var ex = item.SubItems[3].Text;
                     if (!string.IsNullOrWhiteSpace(ex))
                     {
-                        StackTraceViewerForm form = new StackTraceViewerForm();
-                        form.Content = ex;
+                        StackTraceViewerForm form = new StackTraceViewerForm
+                        {
+                            Content = ex
+                        };
                         form.ShowDialog();
                     }
                 }
-                
+
             }
             catch { }
         }

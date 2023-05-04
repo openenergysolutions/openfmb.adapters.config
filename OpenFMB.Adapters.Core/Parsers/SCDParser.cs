@@ -207,8 +207,8 @@ namespace OpenFMB.Adapters.Core.Parsers
                             var da = doTypeNode.Elements(ns + "DA").FirstOrDefault(x => x.Attribute("name").Value == daNames[0]);
                             if (da != null)
                             {
-                                var bType = da.Attribute("bType").Value;                                
-                                
+                                var bType = da.Attribute("bType").Value;
+
                                 if (bType == "Struct")
                                 {
                                     var daType = da.Attribute("type").Value;
@@ -233,7 +233,7 @@ namespace OpenFMB.Adapters.Core.Parsers
                                 {
                                     fcda.IEC61850DataType = bType;
                                     fcda.DataType = DataType.utc_time;
-                                }                                
+                                }
                                 else if (bType == "FLOAT32")
                                 {
                                     fcda.IEC61850DataType = bType;
@@ -255,13 +255,13 @@ namespace OpenFMB.Adapters.Core.Parsers
             var daTypeNode = dataTypeTemplate.Elements(ns + "DAType").FirstOrDefault(x => x.Attribute("id")?.Value == daTypeId);
             if (daTypeNode != null)
             {
-                foreach(var daName in daNames)
+                foreach (var daName in daNames)
                 {
                     var bda = daTypeNode.Elements(ns + "BDA")?.FirstOrDefault(x => x.Attribute("name")?.Value == daName);
                     if (bda != null)
                     {
                         var bType = bda.Attribute("bType").Value;
-                        
+
                         if (bType == "Struct")
                         {
                             var daType = bda.Attribute("type").Value;
@@ -297,9 +297,10 @@ namespace OpenFMB.Adapters.Core.Parsers
 
             if (accessPoint == null)
             {
-                foreach(var elem in node.Elements(ns + "AccessPoint"))
+                foreach (var elem in node.Elements(ns + "AccessPoint"))
                 {
-                    if (elem.Element(ns + "Server") != null) {
+                    if (elem.Element(ns + "Server") != null)
+                    {
                         accessPoint = elem;
                         break;
                     }
@@ -313,7 +314,7 @@ namespace OpenFMB.Adapters.Core.Parsers
             var ld0 = server.Elements(ns + "LDevice").FirstOrDefault(x => x.Attribute("inst").Value == "LD0");
             if (ld0 == null)
             {
-                foreach(var ldevice in server.Elements(ns + "LDevice"))
+                foreach (var ldevice in server.Elements(ns + "LDevice"))
                 {
                     var ln0 = ldevice.Element(ns + "LN0");
                     if (ln0 != null)

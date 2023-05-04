@@ -23,14 +23,14 @@ namespace OpenFMB.Adapters.Configuration
             {
                 _data = value;
                 navButton.Visible = !IsLeafNode;
-                pictureBox.Visible = _data.IsValid ? false : true;                
+                pictureBox.Visible = !_data.IsValid;
                 toolTip.SetToolTip(pictureBox, _data.Error);
             }
         }
 
         public virtual bool IsValid
         {
-            get { return Data.IsValid; }            
+            get { return Data.IsValid; }
         }
 
         public virtual bool IsLeafNode
@@ -51,7 +51,7 @@ namespace OpenFMB.Adapters.Configuration
         {
             Data.Validate();
 
-            pictureBox.Visible = Data.IsValid ? false : true;
+            pictureBox.Visible = !Data.IsValid;
             toolTip.SetToolTip(pictureBox, Data.Error);
 
             Data.RaiseOnValueChangedEvent();

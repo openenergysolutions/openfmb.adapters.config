@@ -2,9 +2,9 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 
+using OpenFMB.Adapters.Core.Models.Plugins;
 using System;
 using System.ComponentModel;
-using OpenFMB.Adapters.Core.Models.Plugins;
 
 namespace OpenFMB.Adapters.Configuration
 {
@@ -24,12 +24,12 @@ namespace OpenFMB.Adapters.Configuration
                 _plugin = value as TimescaleDBPlugin;
                 LoadData(_plugin);
             }
-        }        
+        }
 
         public TimescaleDBPluginControl()
         {
             InitializeComponent();
-            rawFormatCombo.DataSource = Enum.GetValues(typeof(RawDataFormat));            
+            rawFormatCombo.DataSource = Enum.GetValues(typeof(RawDataFormat));
         }
 
         private void LoadData(TimescaleDBPlugin plugin)
@@ -51,7 +51,7 @@ namespace OpenFMB.Adapters.Configuration
             measureTableName.Enabled = storeMessageCheckBox.Checked;
         }
 
-        private void storeRawMessageCheckBox_CheckedChanged(object sender, EventArgs e)
+        private void StoreRawMessageCheckBox_CheckedChanged(object sender, EventArgs e)
         {
             rawFormatCombo.Enabled = rawMessageTableName.Enabled = storeRawMessageCheckBox.Checked;
         }

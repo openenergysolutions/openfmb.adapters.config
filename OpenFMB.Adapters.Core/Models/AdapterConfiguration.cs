@@ -12,9 +12,9 @@ using YamlDotNet.RepresentationModel;
 
 namespace OpenFMB.Adapters.Core.Models
 {
-    public class AdapterConfiguration : Editable
+    public class AdapterConfiguration : IEditable
     {
-        private static ILogger _logger = MasterLogger.Instance;
+        private static readonly ILogger _logger = MasterLogger.Instance;
 
         public FileInformation FileInformation { get; set; }
 
@@ -48,7 +48,7 @@ namespace OpenFMB.Adapters.Core.Models
         {
             bool flag = true;
             var stream = GetYamlStream();
-                        
+
             using (StringWriter writer = new StringWriter())
             {
                 stream.Save(writer, assignAnchors: false);
@@ -61,8 +61,7 @@ namespace OpenFMB.Adapters.Core.Models
                     // now check for all session configs
                     foreach (var p in Plugins.Plugins)
                     {
-                        ISessionable s = p as ISessionable;
-                        if (s != null)
+                        if (p is ISessionable s)
                         {
                             foreach (var session in s.Sessions)
                             {
@@ -120,8 +119,7 @@ namespace OpenFMB.Adapters.Core.Models
                 // Save sessions
                 foreach (var p in Plugins.Plugins)
                 {
-                    ISessionable s = p as ISessionable;
-                    if (s != null)
+                    if (p is ISessionable s)
                     {
                         foreach (var session in s.Sessions)
                         {
@@ -154,13 +152,12 @@ namespace OpenFMB.Adapters.Core.Models
             // Save sessions
             foreach (var p in Plugins.Plugins)
             {
-                ISessionable s = p as ISessionable;
-                if (s != null)
+                if (p is ISessionable s)
                 {
                     foreach (var session in s.Sessions)
                     {
                         //if (session.Configuration != null && session.Configuration.HasChanged())
-                        {                            
+                        {
                             session.SessionConfiguration.Save(session.FullPath);
                         }
                     }
@@ -210,14 +207,14 @@ namespace OpenFMB.Adapters.Core.Models
                 if (map.ContainsKey("file"))
                 {
                     FileInformation.FromYaml(doc.RootNode["file"]);
-                }  
+                }
                 else
                 {
                     _logger.Log(Level.Error, "Missing file information section in main adapter file.  Probably older configuration file is being used.");
                 }
 
                 reader.DiscardBufferedData();
-                reader.BaseStream.Seek(0, SeekOrigin.Begin);                
+                reader.BaseStream.Seek(0, SeekOrigin.Begin);
                 CheckSum = Utility.Utils.ChecksumForString(reader.ReadToEnd());
             }
         }

@@ -11,17 +11,16 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using System.Threading.Tasks;
 using System.Xml.Linq;
 
 namespace OpenFMB.Adapters.Core.Models.Schemas
 {
     public static class SchemaManager
-    {        
+    {
         private static readonly string SchemaDirectory = "schemas";
         private static string DefaultSchemaDirectory;
 
-        private static readonly ILogger _logger = MasterLogger.Instance;    
+        private static readonly ILogger _logger = MasterLogger.Instance;
 
         private static readonly Dictionary<string, Schema> _schema = new Dictionary<string, Schema>();
 
@@ -42,7 +41,7 @@ namespace OpenFMB.Adapters.Core.Models.Schemas
             _logger.Log(Level.Info, "Initialize schema manager...");
             var appDataDir = FileHelper.GetAppDataFolder();
 
-            Directory.CreateDirectory(Path.Combine(appDataDir, SchemaDirectory));            
+            Directory.CreateDirectory(Path.Combine(appDataDir, SchemaDirectory));
 
             DefaultSchemaDirectory = Path.Combine(appDataDir, SchemaDirectory);
 
@@ -51,11 +50,11 @@ namespace OpenFMB.Adapters.Core.Models.Schemas
             if (!string.IsNullOrWhiteSpace(defaultEdition))
             {
                 DefaultEdition = defaultEdition;
-            }            
+            }
 
             var assembly = Assembly.GetAssembly(typeof(SchemaManager));
             var adapterConfig = new AdapterConfiguration();
-                        
+
             foreach (var ver in SupportEditions)
             {
                 Directory.CreateDirectory(Path.Combine(DefaultSchemaDirectory, ver));
@@ -133,13 +132,12 @@ namespace OpenFMB.Adapters.Core.Models.Schemas
 
         public static JSchema GetSchemaForPlugin(string pluginName, string edition)
         {
-            Schema schema;
             if (string.IsNullOrWhiteSpace(edition))
             {
                 edition = DefaultEdition;
             }
 
-            if (_schema.TryGetValue(edition, out schema))
+            if (_schema.TryGetValue(edition, out Schema schema))
             {
                 return schema.GetSchemaForPlugin(pluginName);
             }
@@ -148,13 +146,12 @@ namespace OpenFMB.Adapters.Core.Models.Schemas
 
         public static JSchema GetSchemaForProfile(string pluginName, string profileName, string edition)
         {
-            Schema schema;
             if (string.IsNullOrWhiteSpace(edition))
             {
                 edition = DefaultEdition;
             }
 
-            if (_schema.TryGetValue(edition, out schema))
+            if (_schema.TryGetValue(edition, out Schema schema))
             {
                 return schema.GetSchemaForProfile(pluginName, profileName);
             }
@@ -163,13 +160,12 @@ namespace OpenFMB.Adapters.Core.Models.Schemas
 
         public static Dictionary<string, List<Node>> GetSchemaDictionary(string plugInName, string profileName, string edition)
         {
-            Schema schema;
             if (string.IsNullOrWhiteSpace(edition))
             {
                 edition = DefaultEdition;
             }
 
-            if (_schema.TryGetValue(edition, out schema))
+            if (_schema.TryGetValue(edition, out Schema schema))
             {
                 return schema.GetSchemaDictionary(plugInName, profileName);
             }
@@ -206,7 +202,7 @@ namespace OpenFMB.Adapters.Core.Models.Schemas
                     if (!summary.StartsWith("MISSING DOCUMENTATION")) // ignore missing documentation
                     {
                         _resources[tag.ToLower()] = summary;
-                    }                    
+                    }
                 }
             }
             catch (Exception ex)
@@ -217,8 +213,8 @@ namespace OpenFMB.Adapters.Core.Models.Schemas
 
         public static string GetDescription(string tag)
         {
-            string desc;
-            if (_resources.TryGetValue(tag.ToLower(), out desc)) {
+            if (_resources.TryGetValue(tag.ToLower(), out string desc))
+            {
                 return desc;
             }
             return "No description";
@@ -248,8 +244,7 @@ namespace OpenFMB.Adapters.Core.Models.Schemas
 
         public JSchema GetSchemaForPlugin(string pluginName)
         {
-            JSchema schema;
-            if (_schemas.TryGetValue(pluginName, out schema))
+            if (_schemas.TryGetValue(pluginName, out JSchema schema))
             {
                 return schema;
             }
@@ -279,15 +274,16 @@ namespace OpenFMB.Adapters.Core.Models.Schemas
 
         public Dictionary<string, List<Node>> GetSchemaDictionary(string plugInName, string profileName)
         {
-            Dictionary<string, List<Node>> dict;
             string key = $"{plugInName}:{profileName}";
-            if (!_schemaNodesDictionary.TryGetValue(key, out dict))
+            if (!_schemaNodesDictionary.TryGetValue(key, out Dictionary<string, List<Node>> dict))
             {
                 dict = new Dictionary<string, List<Node>>();
                 _schemaNodesDictionary[key] = dict;
 
-                var node = new Node(profileName);
-                node.Schema = GetSchemaForProfile(plugInName, profileName);
+                var node = new Node(profileName)
+                {
+                    Schema = GetSchemaForProfile(plugInName, profileName)
+                };
                 JsonGenerator.LoadSchema(node.Schema, node);
 
                 var allNodes = node.Traverse();

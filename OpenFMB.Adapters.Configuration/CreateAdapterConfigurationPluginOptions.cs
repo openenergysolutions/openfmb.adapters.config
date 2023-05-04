@@ -9,9 +9,9 @@ namespace OpenFMB.Adapters.Configuration
 {
     public partial class CreateAdapterConfigurationPluginOptions : UserControl
     {
-        private CreateAdapterConfigurationSelectFile _selectFileControl;
-        private CreateAdapterConfigurationSelectFolder _selectFolderControl;
-        private ProfileSelectionControl _selectProfilesControl;
+        private readonly CreateAdapterConfigurationSelectFile _selectFileControl;
+        private readonly CreateAdapterConfigurationSelectFolder _selectFolderControl;
+        private readonly ProfileSelectionControl _selectProfilesControl;
 
         private PluginOptions _options;
 
@@ -24,8 +24,8 @@ namespace OpenFMB.Adapters.Configuration
                 if (_options != null)
                     LoadOptions(_options);
             }
-        }    
-        
+        }
+
         public string SelectedVersion
         {
             get { return _selectProfilesControl.SelectedEdition; }
@@ -35,16 +35,22 @@ namespace OpenFMB.Adapters.Configuration
         {
             InitializeComponent();
 
-            _selectFileControl = new CreateAdapterConfigurationSelectFile();
-            _selectFileControl.Dock = DockStyle.Fill;
+            _selectFileControl = new CreateAdapterConfigurationSelectFile
+            {
+                Dock = DockStyle.Fill
+            };
             placeHolder.Controls.Add(_selectFileControl);
 
-            _selectFolderControl = new CreateAdapterConfigurationSelectFolder();
-            _selectFolderControl.Dock = DockStyle.Fill;
+            _selectFolderControl = new CreateAdapterConfigurationSelectFolder
+            {
+                Dock = DockStyle.Fill
+            };
             placeHolder.Controls.Add(_selectFolderControl);
 
-            _selectProfilesControl = new ProfileSelectionControl();
-            _selectProfilesControl.Dock = DockStyle.Fill;
+            _selectProfilesControl = new ProfileSelectionControl
+            {
+                Dock = DockStyle.Fill
+            };
             placeHolder.Controls.Add(_selectProfilesControl);
             _selectProfilesControl.BringToFront();
 
@@ -81,15 +87,15 @@ namespace OpenFMB.Adapters.Configuration
             {
                 _selectFileControl.BringToFront();
                 Options.Mode = ProfileCreateMode.LoadFromFile;
-            }            
+            }
         }
 
         private void LoadOptions(PluginOptions options)
         {
             if (options.ModeSelectionEnabled)
-            {               
-                _selectProfilesControl.SelectProfileRadioVisible = _selectProfilesControl.FromFileRadioVisible = true;               
-               
+            {
+                _selectProfilesControl.SelectProfileRadioVisible = _selectProfilesControl.FromFileRadioVisible = true;
+
                 if (options.Mode == ProfileCreateMode.LoadFromFile)
                 {
                     _selectProfilesControl.FromFileRadio = true;

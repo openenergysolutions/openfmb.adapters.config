@@ -15,7 +15,7 @@ namespace OpenFMB.Adapters.Core
             {
                 obj = node[key];
             }
-            return obj;                
+            return obj;
         }
 
         public static bool ContainsKey(this YamlMappingNode node, string key)

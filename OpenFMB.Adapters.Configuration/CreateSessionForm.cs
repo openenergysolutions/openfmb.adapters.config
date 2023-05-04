@@ -54,10 +54,10 @@ namespace OpenFMB.Adapters.Configuration
         }
 
         private void OkButton_Click(object sender, EventArgs e)
-        {            
+        {
             if (string.IsNullOrEmpty(templateFileName.Text.Trim()))
             {
-                MessageBox.Show("Please specify file name for this session.", Program.AppName, MessageBoxButtons.OK, MessageBoxIcon.Error);               
+                MessageBox.Show("Please specify file name for this session.", Program.AppName, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
@@ -78,8 +78,10 @@ namespace OpenFMB.Adapters.Configuration
                                     }
                                 }
 
-                                Session session = new Session(_plugin.Name, FileHelper.ConvertToForwardSlash(templateFileName.Text.Trim()), editionCombo.SelectedItem as string); // Relative path               
-                                session.Name = string.IsNullOrWhiteSpace(namedTextBox.Text.Trim()) ? "Session" : namedTextBox.Text.Trim();
+                                Session session = new Session(_plugin.Name, FileHelper.ConvertToForwardSlash(templateFileName.Text.Trim()), editionCombo.SelectedItem as string)
+                                {
+                                    Name = string.IsNullOrWhiteSpace(namedTextBox.Text.Trim()) ? "Session" : namedTextBox.Text.Trim()
+                                }; // Relative path               
                                 _plugin.Sessions.Add(session);
                                 session.Index = _plugin.Sessions.Count - 1;
                                 Output = session;
@@ -121,7 +123,7 @@ namespace OpenFMB.Adapters.Configuration
                     MessageBox.Show(this, "An unexpected error occurred when creating session.", Program.AppName, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     _logger.Log(Level.Error, ex.Message, ex);
                     DialogResult = DialogResult.None;
-                }                                
+                }
             }
         }
 
@@ -153,7 +155,7 @@ namespace OpenFMB.Adapters.Configuration
                 {
                     MessageBox.Show($"'{file}' is not a template file for '{_plugin.Name}' plugin", Program.AppName, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
-                }               
+                }
 
                 if (!workingDir.IsInFolder(file))
                 {

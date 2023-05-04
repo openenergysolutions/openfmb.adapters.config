@@ -4,6 +4,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using YamlDotNet.RepresentationModel;
 
 namespace OpenFMB.Adapters.Core.Models.Plugins
@@ -12,7 +13,7 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
     {
         public bool Enabled { get; set; }
 
-        public string Name => PluginsSection.Zenoh;        
+        public string Name => PluginsSection.Zenoh;
 
         public int MaxQueuedMessages { get; set; } = 100;
 
@@ -24,20 +25,22 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
 
         public YamlNode ToYaml()
         {
-            var node = new YamlMappingNode();
-            node.Add("enabled", Enabled.ToString().ToLower());
-            node.Add("max-queued-messages", MaxQueuedMessages.ToString());
-            node.Add("connect-retry-seconds", ConnectRetrySeconds.ToString());
+            var node = new YamlMappingNode
+            {
+                { "enabled", Enabled.ToString().ToLower() },
+                { "max-queued-messages", MaxQueuedMessages.ToString() },
+                { "connect-retry-seconds", ConnectRetrySeconds.ToString() }
+            };
 
             var publish = new YamlSequenceNode();
             node.Add("publish", publish);
 
-            foreach(var p in Publishes)
+            foreach (var p in Publishes)
             {
                 publish.Add(new YamlMappingNode(
                     new YamlScalarNode("profile"), new YamlScalarNode(p.Profile),
                     new YamlScalarNode("subject"), new YamlScalarNode(p.Subject)));
-            }            
+            }
 
             var subscribe = new YamlSequenceNode();
             node.Add("subscribe", subscribe);
@@ -62,7 +65,7 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
             Publishes.Clear();
 
             var publishes = node["publish"] as YamlSequenceNode;
-            foreach(YamlMappingNode p in publishes)
+            foreach (YamlMappingNode p in publishes.Cast<YamlMappingNode>())
             {
                 Publishes.Add(new Publish()
                 {
@@ -74,7 +77,7 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
             Subscribes.Clear();
 
             var subscribes = node["subscribe"] as YamlSequenceNode;
-            foreach (YamlMappingNode p in subscribes)
+            foreach (YamlMappingNode p in subscribes.Cast<YamlMappingNode>())
             {
                 Subscribes.Add(new Subscribe()
                 {
@@ -83,5 +86,5 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
                 });
             }
         }
-    }       
+    }
 }

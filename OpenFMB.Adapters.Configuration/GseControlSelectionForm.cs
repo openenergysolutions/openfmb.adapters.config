@@ -17,7 +17,7 @@ namespace OpenFMB.Adapters.Configuration
     public partial class GseControlSelectionForm : Form
     {
         private readonly IED _ied;
-        
+
         public GseControlSelectionForm()
         {
             InitializeComponent();
@@ -26,8 +26,8 @@ namespace OpenFMB.Adapters.Configuration
         public GseControlSelectionForm(IED ied) : this()
         {
             _ied = ied;
-            
-            LoadGrid(ied);
+
+            LoadGrid(_ied);
 
             AddDescriptions();
         }
@@ -44,13 +44,13 @@ namespace OpenFMB.Adapters.Configuration
             column.Items.AddRange(ProfileRegistry.Profiles.Keys.ToArray());
 
             List<GseControlSelection> ds = new List<GseControlSelection>();
-            foreach(var gse in ied.GseControls)
+            foreach (var gse in ied.GseControls)
             {
                 ds.Add(new GseControlSelection()
                 {
                     Name = gse.Name,
                     GseControl = gse
-                });              
+                });
             }
             dataGridView.DataSource = ds;
         }
@@ -100,7 +100,7 @@ namespace OpenFMB.Adapters.Configuration
             else
             {
                 // selected profile?
-                foreach(var gse in selections)
+                foreach (var gse in selections)
                 {
                     if (string.IsNullOrWhiteSpace(gse.Direction))
                     {
@@ -112,7 +112,7 @@ namespace OpenFMB.Adapters.Configuration
                     {
                         MessageBox.Show($"Please select OpenFMB profile to map. [{gse.Name}]", Program.AppName, MessageBoxButtons.OK, MessageBoxIcon.Information);
                         return files;
-                    }                    
+                    }
                 }
 
                 // Everything is ok

@@ -19,7 +19,6 @@ namespace OpenFMB.Adapters.Configuration
     {
         public event EventHandler OnEditFileRequested;
 
-        private readonly ConfigurationManager _configurationManager = ConfigurationManager.Instance;
         private static readonly ILogger _logger = MasterLogger.Instance;
 
         public DataNode DataNode
@@ -79,7 +78,7 @@ namespace OpenFMB.Adapters.Configuration
 
                 if (fileNode.FileInformation.Id == ConfigFileType.MainAdapter)
                 {
-                    openButton.Text = "Edit";                    
+                    openButton.Text = "Edit";
 
                     versionLabel.Visible = versionTextBox.Visible = true;
                     editionLabel.Visible = editionTextBox.Visible = true;
@@ -93,7 +92,7 @@ namespace OpenFMB.Adapters.Configuration
                 }
                 else if (fileNode.FileInformation.Id == ConfigFileType.Template)
                 {
-                    openButton.Text = "Edit";                    
+                    openButton.Text = "Edit";
 
                     versionLabel.Visible = versionTextBox.Visible = true;
                     editionLabel.Visible = editionTextBox.Visible = true;
@@ -108,7 +107,7 @@ namespace OpenFMB.Adapters.Configuration
                 else
                 {
                     openButton.Text = "Open";
-                    
+
                     versionLabel.Visible = versionTextBox.Visible = false;
                     editionLabel.Visible = editionTextBox.Visible = false;
                     pluginLabel.Visible = plugInTypeTextBox.Visible = false;
@@ -151,8 +150,7 @@ namespace OpenFMB.Adapters.Configuration
 
         private void UpgradeButton_Click(object sender, EventArgs e)
         {
-            var fileNode = DataNode as FileNode;
-            if (fileNode != null && (fileNode.FileInformation.Id == ConfigFileType.Template || fileNode.FileInformation.Id == ConfigFileType.MainAdapter))
+            if (DataNode is FileNode fileNode && (fileNode.FileInformation.Id == ConfigFileType.Template || fileNode.FileInformation.Id == ConfigFileType.MainAdapter))
             {
                 var result = MessageBox.Show($"This would change the current file to OpenFMB Edition {SchemaManager.LatestEdition} and start the migration.  \nDo you want to proceed?", Program.AppName, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (result == DialogResult.Yes)
@@ -163,7 +161,7 @@ namespace OpenFMB.Adapters.Configuration
                         string filePath = DataNode.Path;
                         var relative = FileHelper.MakeRelativePath(baseDirectory, filePath);
                         var session = Session.FromFile(baseDirectory, relative);
-                        session.SessionConfiguration.SessionSpecificConfig.SetEdition(SchemaManager.LatestEdition);                        
+                        session.SessionConfiguration.SessionSpecificConfig.SetEdition(SchemaManager.LatestEdition);
                         session.Name = relative;
                         session.Save();
                         editionTextBox.Text = SchemaManager.LatestEdition;
@@ -181,7 +179,7 @@ namespace OpenFMB.Adapters.Configuration
                         OpenFile();
                     }
                 }
-            }            
+            }
         }
     }
 }

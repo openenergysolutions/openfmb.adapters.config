@@ -11,11 +11,12 @@ using OpenFMB.Adapters.Core.Utility.Logs;
 using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Linq;
 
 namespace OpenFMB.Adapters.Core.Models
 {
     public class ModbusSessionConfiguration : SessionConfiguration
-    {        
+    {
         private ISessionSpecificConfig _sessionSpecific;
         public override ISessionSpecificConfig SessionSpecificConfig
         {
@@ -42,7 +43,7 @@ namespace OpenFMB.Adapters.Core.Models
         {
             PluginName = pluginName;
             Edition = edition;
-        }        
+        }
 
         protected override void LoadSessionConfigurationFromJson(string json)
         {
@@ -67,8 +68,7 @@ namespace OpenFMB.Adapters.Core.Models
                     }
                     if (jsonObject.ContainsKey("log-level"))
                     {
-                        LogLevel level;
-                        if (Enum.TryParse(jsonObject["log-level"].ToString(), out level))
+                        if (Enum.TryParse(jsonObject["log-level"].ToString(), out LogLevel level))
                         {
                             config.LogLevel = level;
                         }
@@ -79,8 +79,7 @@ namespace OpenFMB.Adapters.Core.Models
                     }
                     if (jsonObject.ContainsKey("port"))
                     {
-                        int port;
-                        if (int.TryParse(jsonObject["name"].ToString(), out port))
+                        if (int.TryParse(jsonObject["name"].ToString(), out int port))
                         {
                             config.Port = port;
                         }
@@ -92,8 +91,7 @@ namespace OpenFMB.Adapters.Core.Models
 
                     if (jsonObject.ContainsKey("unit-identifier"))
                     {
-                        int id;
-                        if (int.TryParse(jsonObject["unit-identifier"].ToString(), out id))
+                        if (int.TryParse(jsonObject["unit-identifier"].ToString(), out int id))
                         {
                             config.UnitIdentifier = id;
                         }
@@ -101,8 +99,7 @@ namespace OpenFMB.Adapters.Core.Models
 
                     if (jsonObject.ContainsKey("response_timeout_ms"))
                     {
-                        int id;
-                        if (int.TryParse(jsonObject["response_timeout_ms"].ToString(), out id))
+                        if (int.TryParse(jsonObject["response_timeout_ms"].ToString(), out int id))
                         {
                             config.ResponseTimeout = id;
                         }
@@ -110,26 +107,23 @@ namespace OpenFMB.Adapters.Core.Models
 
                     if (jsonObject.ContainsKey("always-write-multiple-registers"))
                     {
-                        config.AlwaysWriteMultipleRegisters = jsonObject["always-write-multiple-registers"].ToString().ToLower() == "true" ? true : false;
+                        config.AlwaysWriteMultipleRegisters = jsonObject["always-write-multiple-registers"].ToString().ToLower() == "true";
                     }
 
                     if (jsonObject.ContainsKey("auto_polling"))
                     {
-                        var autoPolling = jsonObject["auto_polling"] as JObject;
-                        if (autoPolling != null)
+                        if (jsonObject["auto_polling"] is JObject autoPolling)
                         {
                             if (autoPolling.ContainsKey("max_register_gaps"))
                             {
-                                int id;
-                                if (int.TryParse(autoPolling["max_register_gaps"].ToString(), out id))
+                                if (int.TryParse(autoPolling["max_register_gaps"].ToString(), out int id))
                                 {
                                     config.AutoPollingMaxRegisterGaps = id;
                                 }
                             }
                             if (autoPolling.ContainsKey("max_bit_gaps"))
                             {
-                                int id;
-                                if (int.TryParse(autoPolling["max_bit_gaps"].ToString(), out id))
+                                if (int.TryParse(autoPolling["max_bit_gaps"].ToString(), out int id))
                                 {
                                     config.AutoPollingMaxBitGaps = id;
                                 }
@@ -139,24 +133,21 @@ namespace OpenFMB.Adapters.Core.Models
 
                     if (jsonObject.ContainsKey("heartbeats"))
                     {
-                        var heartbeats = jsonObject["heartbeats"] as JArray;
-                        if (heartbeats != null)
+                        if (jsonObject["heartbeats"] is JArray heartbeats)
                         {
-                            foreach (JObject h in heartbeats)
+                            foreach (JObject h in heartbeats.Cast<JObject>())
                             {
                                 var hb = new HeartBeat();
                                 if (h.ContainsKey("index"))
                                 {
-                                    int id;
-                                    if (int.TryParse(h["index"].ToString(), out id))
+                                    if (int.TryParse(h["index"].ToString(), out int id))
                                     {
                                         hb.Index = id;
                                     }
                                 }
                                 if (h.ContainsKey("period_ms"))
                                 {
-                                    int id;
-                                    if (int.TryParse(h["period_ms"].ToString(), out id))
+                                    if (int.TryParse(h["period_ms"].ToString(), out int id))
                                     {
                                         hb.PeriodMs = id;
                                     }
@@ -184,7 +175,7 @@ namespace OpenFMB.Adapters.Core.Models
                 {
                     _logger.Log(Level.Error, ex.Message, ex);
                 }
-            }            
+            }
         }
 
         protected override void InitDefaultProfileSettings(Profile profile)

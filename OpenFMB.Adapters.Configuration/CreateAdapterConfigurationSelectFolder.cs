@@ -13,7 +13,7 @@ namespace OpenFMB.Adapters.Configuration
 
         public string Path
         {
-            get { return pathTextBox.Text;  }
+            get { return pathTextBox.Text; }
             set { pathTextBox.Text = value; }
         }
 
@@ -28,21 +28,15 @@ namespace OpenFMB.Adapters.Configuration
             {
                 pathTextBox.Text = folderBrowserDialog.SelectedPath;
 
-                if (SelectionChanged != null)
-                {
-                    SelectionChanged(this, EventArgs.Empty);
-                }
+                SelectionChanged?.Invoke(this, EventArgs.Empty);
             }
         }
 
-        private void clearButton_Click(object sender, EventArgs e)
+        private void ClearButton_Click(object sender, EventArgs e)
         {
             pathTextBox.Text = string.Empty;
 
-            if (SelectionChanged != null)
-            {
-                SelectionChanged(this, EventArgs.Empty);
-            }
+            SelectionChanged?.Invoke(this, EventArgs.Empty);
         }
     }
 }

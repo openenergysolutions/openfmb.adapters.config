@@ -2,19 +2,19 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 
+using Newtonsoft.Json.Linq;
+using OpenFMB.Adapters.Core.Models;
+using OpenFMB.Adapters.Core.Models.Schemas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Windows.Forms;
-using OpenFMB.Adapters.Core.Models;
-using Newtonsoft.Json.Linq;
-using OpenFMB.Adapters.Core.Models.Schemas;
 
 namespace OpenFMB.Adapters.Configuration
 {
     public partial class NavigatorCommandIdNode : BaseNavigatorNode, IDataNode, INavigatorNode
-    {       
-        public List<string> CommandIds { get; private set; }            
+    {
+        public List<string> CommandIds { get; private set; }
 
         public string Value
         {
@@ -23,7 +23,7 @@ namespace OpenFMB.Adapters.Configuration
 
         public NavigatorCommandIdNode()
         {
-            InitializeComponent();            
+            InitializeComponent();
         }
 
         public NavigatorCommandIdNode(Node node, List<string> dropdownValues) : this()
@@ -31,7 +31,7 @@ namespace OpenFMB.Adapters.Configuration
             CommandIds = dropdownValues;
 
             nodeText.Text = node.Name;
-            Data = node;                                                      
+            Data = node;
 
             valueControl.Items.AddRange(dropdownValues.ToArray());
             var val = (node.Tag as JProperty).Value as JValue;
@@ -86,7 +86,7 @@ namespace OpenFMB.Adapters.Configuration
                     valueControl.Items.Add(form.CommandId);
                     valueControl.SelectedItem = form.CommandId;
                 }
-                
+
             }
         }
     }

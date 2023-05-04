@@ -162,7 +162,7 @@ namespace OpenFMB.Adapters.Core.Models
 
         [Browsable(false)]
         [JsonProperty("client-specific")]
-        public IcppAddressing ClientAddress { get; set; } = new IcppAddressing();                
+        public IcppAddressing ClientAddress { get; set; } = new IcppAddressing();
 
         [Category("Client Specific"), DisplayName("AE Invoke ID"), Description("ACSE AE Invoke ID")]
         [JsonIgnore]

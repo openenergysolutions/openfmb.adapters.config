@@ -11,8 +11,8 @@ namespace OpenFMB.Adapters.Configuration
 {
     public partial class SCLViewerControl : UserControl, IWindowViewControl
     {
-        private GOOSEListControl _listControl;
-        private GOOSEDetailsControl _detailControl;
+        private readonly GOOSEListControl _listControl;
+        private readonly GOOSEDetailsControl _detailControl;
 
         private readonly string _fileName;
 
@@ -20,11 +20,15 @@ namespace OpenFMB.Adapters.Configuration
         {
             InitializeComponent();
 
-            _listControl = new GOOSEListControl();
-            _listControl.Dock = DockStyle.Fill;
+            _listControl = new GOOSEListControl
+            {
+                Dock = DockStyle.Fill
+            };
 
-            _detailControl = new GOOSEDetailsControl();
-            _detailControl.Dock = DockStyle.Fill;
+            _detailControl = new GOOSEDetailsControl
+            {
+                Dock = DockStyle.Fill
+            };
 
             mainSplitContainer.Panel2.Controls.Add(_listControl);
             mainSplitContainer.Panel2.Controls.Add(_detailControl);
@@ -57,13 +61,17 @@ namespace OpenFMB.Adapters.Configuration
 
             treeView.Nodes.Clear();
 
-            TreeNode node = new TreeNode("GOOSE");
-            node.Tag = ied;
+            TreeNode node = new TreeNode("GOOSE")
+            {
+                Tag = ied
+            };
             treeView.Nodes.Add(node);
             foreach (var gse in ied.GseControls)
             {
-                TreeNode g = new TreeNode(gse.Name);
-                g.Tag = gse;
+                TreeNode g = new TreeNode(gse.Name)
+                {
+                    Tag = gse
+                };
                 node.Nodes.Add(g);
             }
             treeView.ExpandAll();

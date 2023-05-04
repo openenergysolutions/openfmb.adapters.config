@@ -13,7 +13,7 @@ namespace OpenFMB.Adapters.Core.Utility
     public static class JTokenExtensions
     {
         public static string ToYamlString(this JToken token)
-        {            
+        {
             string json = JsonConvert.SerializeObject(token);
 
             if (!json.StartsWith("{"))

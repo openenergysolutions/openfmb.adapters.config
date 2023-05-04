@@ -15,7 +15,7 @@ namespace OpenFMB.Adapters.Configuration
 {
     public class TagsManager
     {
-        private static string MasterModelFileName = "master-model.json";        
+        private static readonly string MasterModelFileName = "master-model.json";
 
         private static TagsManager _instance;
 
@@ -31,9 +31,9 @@ namespace OpenFMB.Adapters.Configuration
             }
         }
 
-        public Model Model { get; private set; }       
+        public Model Model { get; private set; }
 
-        private TagsManager() 
+        private TagsManager()
         {
             Init();
         }

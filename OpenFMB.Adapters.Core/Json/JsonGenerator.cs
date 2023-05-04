@@ -58,9 +58,9 @@ namespace OpenFMB.Adapters.Core.Json
                             var first = Generate(item);
 
                             if (first is JObject)
-                            {                                
+                            {
                                 var firstObj = first as JObject;
-                                foreach(var prop in firstObj)
+                                foreach (var prop in firstObj)
                                 {
                                     jObject.Add(prop.Key, prop.Value);
                                 }
@@ -100,13 +100,13 @@ namespace OpenFMB.Adapters.Core.Json
                     break;
                 case JSchemaType.Number:
                     {
-                        double num = 0.0;                        
+                        double num = 0.0;
                         output = new JValue(num);
                     }
                     break;
                 case JSchemaType.Integer:
                     {
-                        int num = 0;                                                
+                        int num = 0;
                         output = new JValue(num);
                     }
                     break;
@@ -166,7 +166,7 @@ namespace OpenFMB.Adapters.Core.Json
                         jObject = new JObject();
 
                         foreach (var prop in schema.Properties)
-                        {                           
+                        {
                             jObject.Add(prop.Key, Generate(prop, row));
                         }
                         output = jObject;
@@ -180,9 +180,9 @@ namespace OpenFMB.Adapters.Core.Json
 
                         bool found = false;
 
-                        foreach(var oneOf in schema.OneOf)
+                        foreach (var oneOf in schema.OneOf)
                         {
-                            foreach(var prop in oneOf.Properties)
+                            foreach (var prop in oneOf.Properties)
                             {
                                 if (prop.Value.Const?.ToString() == row.DataType)
                                 {
@@ -199,8 +199,8 @@ namespace OpenFMB.Adapters.Core.Json
                                     }
                                 }
                             }
-                        } 
-                        
+                        }
+
                         if (!found)
                         {
                             var item = schema.OneOf.FirstOrDefault();
@@ -253,13 +253,13 @@ namespace OpenFMB.Adapters.Core.Json
                     break;
                 case JSchemaType.Number:
                     {
-                        double num = 0.0;                       
+                        double num = 0.0;
                         output = new JValue(num);
                     }
                     break;
                 case JSchemaType.Integer:
                     {
-                        int num = 0;                        
+                        int num = 0;
                         output = new JValue(num);
                     }
                     break;
@@ -311,9 +311,9 @@ namespace OpenFMB.Adapters.Core.Json
                     schema.Type = JSchemaType.Object;
                 }
             }
-            JToken output = null;
+            JToken output;
             switch (schema.Type)
-            {                
+            {
                 case JSchemaType.String:
                     {
                         string val = "";
@@ -337,7 +337,7 @@ namespace OpenFMB.Adapters.Core.Json
                         {
                             val = DefaultCommandId;
                         }
-                        
+
                         output = new JValue(val);
                     }
                     break;
@@ -347,13 +347,13 @@ namespace OpenFMB.Adapters.Core.Json
                         if (property.Key == "scale")
                         {
                             num = 1.0;
-                        }                       
+                        }
                         output = new JValue(num);
                     }
                     break;
                 case JSchemaType.Integer:
                     {
-                        int num = 0;  
+                        int num = 0;
                         if (property.Key == "tolerance-ms")
                         {
                             num = DefaultToleranceMs;
@@ -499,7 +499,7 @@ namespace OpenFMB.Adapters.Core.Json
                         if (property.Key == "scale")
                         {
                             num = 1;
-                        }                        
+                        }
                         output = new JValue(num);
                     }
                     break;
@@ -512,8 +512,7 @@ namespace OpenFMB.Adapters.Core.Json
                         }
                         else if (property.Key == "upper_index")
                         {
-                            var modbus = row as ModbusCsvRow;
-                            if (modbus != null)
+                            if (row is ModbusCsvRow modbus)
                             {
                                 num = Convert.ToInt32(modbus.UpperIndex);
                             }
@@ -550,36 +549,38 @@ namespace OpenFMB.Adapters.Core.Json
                 if (schema.Const == null)
                 {
                     schema.Type = JSchemaType.Object;
-                }                
+                }
             }
-            
+
             switch (schema.Type)
             {
                 case JSchemaType.Object:
-                    
+
                     if (schema.Properties != null)
                     {
                         foreach (var prop in schema.Properties)
                         {
-                            Node n = new Node(prop.Key);
-                            n.Schema = prop.Value;
+                            Node n = new Node(prop.Key)
+                            {
+                                Schema = prop.Value
+                            };
                             node.AddNode(n);
-                            LoadSchema(prop.Value, n);                            
-                        }                        
+                            LoadSchema(prop.Value, n);
+                        }
                     }
                     if (schema.OneOf.Count > 0)
-                    {                        
+                    {
                         for (int i = 0; i < schema.OneOf.Count; ++i)
                         {
                             var item = schema.OneOf[i];
-                            
-                            LoadSchema(item, node);                            
-                        }                        
+
+                            LoadSchema(item, node);
+                        }
                     }
                     break;
-                case JSchemaType.Array:                    
-                    for(int i = 0; i < schema.Items.Count; ++i)
-                    {                        
+                case JSchemaType.Array:
+                    for (int i = 0; i < schema.Items.Count; ++i)
+                    {
                         var temp = Utils.RemoveEndArray(node.Name);
                         if (node.Path.IndexOf("gooseStructure.[0]") > 0)
                         {
@@ -591,17 +592,17 @@ namespace OpenFMB.Adapters.Core.Json
                     }
                     break;
 
-                case JSchemaType.String:                    
+                case JSchemaType.String:
                     break;
-                case JSchemaType.Number:                    
+                case JSchemaType.Number:
                     break;
-                case JSchemaType.Integer:                   
+                case JSchemaType.Integer:
                     break;
-                case JSchemaType.Boolean:                    
+                case JSchemaType.Boolean:
                     break;
-                case JSchemaType.Null:                    
+                case JSchemaType.Null:
                     break;
-                default:                    
+                default:
                     break;
             }
         }

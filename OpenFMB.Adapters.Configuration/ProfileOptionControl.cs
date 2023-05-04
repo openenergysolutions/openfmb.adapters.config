@@ -17,7 +17,7 @@ namespace OpenFMB.Adapters.Configuration
             hideTimeQuality.Checked = Settings.Default.HideTimeAndQuality;
             var list = Settings.Default.HideTagList.Split(',');
 
-            foreach(var s in list)
+            foreach (var s in list)
             {
                 dataGridView.Rows.Add(s);
             }
@@ -36,7 +36,7 @@ namespace OpenFMB.Adapters.Configuration
 
             List<string> list = new List<string>();
 
-            foreach(DataGridViewRow row in dataGridView.Rows)
+            foreach (DataGridViewRow row in dataGridView.Rows)
             {
                 if (!row.IsNewRow)
                 {

@@ -2,19 +2,19 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 
+using OpenFMB.Adapters.Configuration.Properties;
+using OpenFMB.Adapters.Core;
+using OpenFMB.Adapters.Core.Models.Schemas;
+using OpenFMB.Adapters.Core.Utility.Logs;
 using System;
 using System.ComponentModel;
 using System.Windows.Forms;
-using OpenFMB.Adapters.Core.Utility.Logs;
-using OpenFMB.Adapters.Core.Models.Schemas;
-using OpenFMB.Adapters.Configuration.Properties;
-using OpenFMB.Adapters.Core;
 
 namespace OpenFMB.Adapters.Configuration
 {
     public partial class SplashScreen : Form, ILogger
     {
-        private MainForm _mainWindow;       
+        private MainForm _mainWindow;
 
         public SplashScreen()
         {
@@ -32,7 +32,7 @@ namespace OpenFMB.Adapters.Configuration
 
         private void BackgroundWorker_DoWork(object sender, DoWorkEventArgs e)
         {
-            var v = Settings.Default.DefaultSchemaVersion;  
+            var v = Settings.Default.DefaultSchemaVersion;
             if (string.IsNullOrWhiteSpace(v))
             {
                 v = System.Configuration.ConfigurationManager.AppSettings[Program.DefaultSchemaVersionKey];
@@ -42,15 +42,17 @@ namespace OpenFMB.Adapters.Configuration
                 }
             }
             SchemaManager.Init(v);
-            
-            status.BeginInvoke(new MethodInvoker(delegate()
+
+            status.BeginInvoke(new MethodInvoker(delegate ()
             {
                 timer.Enabled = false;
-                _mainWindow = new MainForm();
-                _mainWindow.Splash = this;
+                _mainWindow = new MainForm
+                {
+                    Splash = this
+                };
                 status.Text = string.Empty;
                 progressBar.Value = progressBar.Maximum;
-                _mainWindow.Show(); 
+                _mainWindow.Show();
             }));
         }
 
@@ -58,11 +60,11 @@ namespace OpenFMB.Adapters.Configuration
         {
             timer.Enabled = true;
             backgroundWorker.RunWorkerAsync();
-        }        
+        }
 
         public void Log(Level level, string message, object tag = null)
         {
-            status.BeginInvoke(new MethodInvoker(delegate()
+            status.BeginInvoke(new MethodInvoker(delegate ()
             {
                 status.Text = message;
             }));
@@ -70,11 +72,11 @@ namespace OpenFMB.Adapters.Configuration
 
         public void Log(Level level, string message, Exception relatedException, object tag = null)
         {
-            status.BeginInvoke(new MethodInvoker(delegate()
+            status.BeginInvoke(new MethodInvoker(delegate ()
             {
                 status.Text = message;
             }));
-        }        
+        }
 
         private void Timer_Tick(object sender, EventArgs e)
         {
