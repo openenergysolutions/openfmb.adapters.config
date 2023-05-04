@@ -72,19 +72,21 @@
             this.adapterExpandAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.adapterCollapseAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.saveAdapterButton = new OpenFMB.Adapters.Configuration.FlatButton();
-            this.closeAdapterButton = new OpenFMB.Adapters.Configuration.FlatButton();
+            this.activeFileTypeLabel = new System.Windows.Forms.Label();
             this.detailSplitContainer = new System.Windows.Forms.SplitContainer();
             this.placeHolder = new System.Windows.Forms.Panel();
-            this.outputControl = new OpenFMB.Adapters.Configuration.OutputControl();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.folderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.saveAdapterButton = new OpenFMB.Adapters.Configuration.FlatButton();
+            this.closeAdapterButton = new OpenFMB.Adapters.Configuration.FlatButton();
+            this.outputControl = new OpenFMB.Adapters.Configuration.OutputControl();
             this.newTemplateButton = new OpenFMB.Adapters.Configuration.FlatButton();
             this.newConfigButton = new OpenFMB.Adapters.Configuration.FlatButton();
             this.logShowHideButton = new OpenFMB.Adapters.Configuration.FlatButton();
             this.expandButton = new OpenFMB.Adapters.Configuration.FlatButton();
-            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.folderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
-            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.activeFileNameLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.mainSplitContainer)).BeginInit();
             this.mainSplitContainer.Panel1.SuspendLayout();
             this.mainSplitContainer.Panel2.SuspendLayout();
@@ -107,7 +109,8 @@
             // 
             this.mainSplitContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainSplitContainer.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
-            this.mainSplitContainer.Location = new System.Drawing.Point(48, 0);
+            this.mainSplitContainer.Location = new System.Drawing.Point(72, 0);
+            this.mainSplitContainer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.mainSplitContainer.Name = "mainSplitContainer";
             // 
             // mainSplitContainer.Panel1
@@ -117,10 +120,10 @@
             // mainSplitContainer.Panel2
             // 
             this.mainSplitContainer.Panel2.Controls.Add(this.detailSplitContainer);
-            this.mainSplitContainer.Size = new System.Drawing.Size(752, 600);
+            this.mainSplitContainer.Size = new System.Drawing.Size(1128, 923);
             this.mainSplitContainer.SplitterDistance = 270;
             this.mainSplitContainer.SplitterIncrement = 10;
-            this.mainSplitContainer.SplitterWidth = 2;
+            this.mainSplitContainer.SplitterWidth = 3;
             this.mainSplitContainer.TabIndex = 0;
             // 
             // tabControl
@@ -130,9 +133,10 @@
             this.tabControl.Controls.Add(this.tabPage2);
             this.tabControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl.Location = new System.Drawing.Point(0, 0);
+            this.tabControl.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(270, 600);
+            this.tabControl.Size = new System.Drawing.Size(270, 923);
             this.tabControl.TabIndex = 1;
             this.tabControl.SelectedIndexChanged += new System.EventHandler(this.TabControl_SelectedIndexChanged);
             // 
@@ -143,7 +147,7 @@
             this.directoryPage.Location = new System.Drawing.Point(4, 4);
             this.directoryPage.Margin = new System.Windows.Forms.Padding(0);
             this.directoryPage.Name = "directoryPage";
-            this.directoryPage.Size = new System.Drawing.Size(262, 574);
+            this.directoryPage.Size = new System.Drawing.Size(262, 890);
             this.directoryPage.TabIndex = 0;
             this.directoryPage.Text = "Workspace";
             this.directoryPage.UseVisualStyleBackColor = true;
@@ -162,12 +166,13 @@
             this.workspaceTree.Indent = 20;
             this.workspaceTree.ItemHeight = 21;
             this.workspaceTree.LabelEdit = true;
-            this.workspaceTree.Location = new System.Drawing.Point(0, 55);
+            this.workspaceTree.Location = new System.Drawing.Point(0, 85);
+            this.workspaceTree.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.workspaceTree.Name = "workspaceTree";
             this.workspaceTree.SelectedImageIndex = 0;
             this.workspaceTree.ShowLines = false;
             this.workspaceTree.ShowNodeToolTips = true;
-            this.workspaceTree.Size = new System.Drawing.Size(262, 519);
+            this.workspaceTree.Size = new System.Drawing.Size(262, 805);
             this.workspaceTree.TabIndex = 1;
             this.workspaceTree.AfterLabelEdit += new System.Windows.Forms.NodeLabelEditEventHandler(this.WorkspaceTree_AfterLabelEdit);
             this.workspaceTree.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.WorkspaceTree_AfterSelect);
@@ -176,6 +181,7 @@
             // 
             // workspaceTreeContextMenu
             // 
+            this.workspaceTreeContextMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.workspaceTreeContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newAdapterConfigurationToolStripMenuItem,
             this.newTemplateToolStripMenuItem,
@@ -197,130 +203,130 @@
             this.workSpaceExpandAllToolStripMenuItem,
             this.workspaceCollapseAllToolStripMenuItem});
             this.workspaceTreeContextMenu.Name = "workspaceTreeContextMenu";
-            this.workspaceTreeContextMenu.Size = new System.Drawing.Size(221, 310);
+            this.workspaceTreeContextMenu.Size = new System.Drawing.Size(311, 430);
             this.workspaceTreeContextMenu.Opening += new System.ComponentModel.CancelEventHandler(this.WorkspaceTreeContextMenu_Opening);
             // 
             // newAdapterConfigurationToolStripMenuItem
             // 
             this.newAdapterConfigurationToolStripMenuItem.Name = "newAdapterConfigurationToolStripMenuItem";
-            this.newAdapterConfigurationToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
+            this.newAdapterConfigurationToolStripMenuItem.Size = new System.Drawing.Size(310, 32);
             this.newAdapterConfigurationToolStripMenuItem.Text = "New Adapter Configuration";
             this.newAdapterConfigurationToolStripMenuItem.Click += new System.EventHandler(this.NewConfigButton_Click);
             // 
             // newTemplateToolStripMenuItem
             // 
             this.newTemplateToolStripMenuItem.Name = "newTemplateToolStripMenuItem";
-            this.newTemplateToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
+            this.newTemplateToolStripMenuItem.Size = new System.Drawing.Size(310, 32);
             this.newTemplateToolStripMenuItem.Text = "New Template";
             this.newTemplateToolStripMenuItem.Click += new System.EventHandler(this.NewTemplateButton_Click);
             // 
             // toolStripSeparator8
             // 
             this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(217, 6);
+            this.toolStripSeparator8.Size = new System.Drawing.Size(307, 6);
             // 
             // newFolderToolStripMenuItem
             // 
             this.newFolderToolStripMenuItem.Image = global::OpenFMB.Adapters.Configuration.Properties.Resources.folder_small;
             this.newFolderToolStripMenuItem.Name = "newFolderToolStripMenuItem";
-            this.newFolderToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
+            this.newFolderToolStripMenuItem.Size = new System.Drawing.Size(310, 32);
             this.newFolderToolStripMenuItem.Text = "New Folder";
             this.newFolderToolStripMenuItem.Click += new System.EventHandler(this.NewFolderToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(217, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(307, 6);
             // 
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.Image = global::OpenFMB.Adapters.Configuration.Properties.Resources.edit;
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(310, 32);
             this.editToolStripMenuItem.Text = "Edit...";
             this.editToolStripMenuItem.Click += new System.EventHandler(this.EditToolStripMenuItem_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(217, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(307, 6);
             // 
             // deleteToolStripMenuItem
             // 
             this.deleteToolStripMenuItem.Image = global::OpenFMB.Adapters.Configuration.Properties.Resources.delete;
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(310, 32);
             this.deleteToolStripMenuItem.Text = "Delete";
             this.deleteToolStripMenuItem.Click += new System.EventHandler(this.DeleteToolStripMenuItem_Click);
             // 
             // renameToolStripMenuItem
             // 
             this.renameToolStripMenuItem.Name = "renameToolStripMenuItem";
-            this.renameToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
+            this.renameToolStripMenuItem.Size = new System.Drawing.Size(310, 32);
             this.renameToolStripMenuItem.Text = "Rename";
             this.renameToolStripMenuItem.Click += new System.EventHandler(this.RenameToolStripMenuItem_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(217, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(307, 6);
             // 
             // copyToolStripMenuItem
             // 
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(310, 32);
             this.copyToolStripMenuItem.Text = "Copy";
             this.copyToolStripMenuItem.Click += new System.EventHandler(this.CopyToolStripMenuItem_Click);
             // 
             // pasteToolStripMenuItem
             // 
             this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
+            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(310, 32);
             this.pasteToolStripMenuItem.Text = "Paste";
             this.pasteToolStripMenuItem.Click += new System.EventHandler(this.PasteToolStripMenuItem_Click);
             // 
             // toolStripSeparator9
             // 
             this.toolStripSeparator9.Name = "toolStripSeparator9";
-            this.toolStripSeparator9.Size = new System.Drawing.Size(217, 6);
+            this.toolStripSeparator9.Size = new System.Drawing.Size(307, 6);
             // 
             // reloadToolStripMenuItem
             // 
             this.reloadToolStripMenuItem.Image = global::OpenFMB.Adapters.Configuration.Properties.Resources.refresh;
             this.reloadToolStripMenuItem.Name = "reloadToolStripMenuItem";
-            this.reloadToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
+            this.reloadToolStripMenuItem.Size = new System.Drawing.Size(310, 32);
             this.reloadToolStripMenuItem.Text = "Refresh";
             this.reloadToolStripMenuItem.Click += new System.EventHandler(this.ReloadToolStripMenuItem_Click);
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(217, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(307, 6);
             // 
             // openContainingFolderToolStripMenuItem
             // 
             this.openContainingFolderToolStripMenuItem.Image = global::OpenFMB.Adapters.Configuration.Properties.Resources.folder_arrow;
             this.openContainingFolderToolStripMenuItem.Name = "openContainingFolderToolStripMenuItem";
-            this.openContainingFolderToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
+            this.openContainingFolderToolStripMenuItem.Size = new System.Drawing.Size(310, 32);
             this.openContainingFolderToolStripMenuItem.Text = "Open Containing Folder";
             this.openContainingFolderToolStripMenuItem.Click += new System.EventHandler(this.OpenContainingFolderToolStripMenuItem_Click);
             // 
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(217, 6);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(307, 6);
             // 
             // workSpaceExpandAllToolStripMenuItem
             // 
             this.workSpaceExpandAllToolStripMenuItem.Name = "workSpaceExpandAllToolStripMenuItem";
-            this.workSpaceExpandAllToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
+            this.workSpaceExpandAllToolStripMenuItem.Size = new System.Drawing.Size(310, 32);
             this.workSpaceExpandAllToolStripMenuItem.Text = "Expand All";
             this.workSpaceExpandAllToolStripMenuItem.Click += new System.EventHandler(this.ExpandAllToolStripMenuItem_Click);
             // 
             // workspaceCollapseAllToolStripMenuItem
             // 
             this.workspaceCollapseAllToolStripMenuItem.Name = "workspaceCollapseAllToolStripMenuItem";
-            this.workspaceCollapseAllToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
+            this.workspaceCollapseAllToolStripMenuItem.Size = new System.Drawing.Size(310, 32);
             this.workspaceCollapseAllToolStripMenuItem.Text = "Collapse All";
             this.workspaceCollapseAllToolStripMenuItem.Click += new System.EventHandler(this.CollapseAllToolStripMenuItem_Click);
             // 
@@ -341,8 +347,9 @@
             this.activeEditorPanel.Controls.Add(this.label1);
             this.activeEditorPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.activeEditorPanel.Location = new System.Drawing.Point(0, 0);
+            this.activeEditorPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.activeEditorPanel.Name = "activeEditorPanel";
-            this.activeEditorPanel.Size = new System.Drawing.Size(262, 55);
+            this.activeEditorPanel.Size = new System.Drawing.Size(262, 85);
             this.activeEditorPanel.TabIndex = 2;
             this.activeEditorPanel.Visible = false;
             // 
@@ -352,9 +359,10 @@
             this.activeEditorLink.AutoSize = true;
             this.activeEditorLink.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.activeEditorLink.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.activeEditorLink.Location = new System.Drawing.Point(3, 28);
+            this.activeEditorLink.Location = new System.Drawing.Point(4, 43);
+            this.activeEditorLink.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.activeEditorLink.Name = "activeEditorLink";
-            this.activeEditorLink.Size = new System.Drawing.Size(53, 13);
+            this.activeEditorLink.Size = new System.Drawing.Size(77, 20);
             this.activeEditorLink.TabIndex = 1;
             this.activeEditorLink.TabStop = true;
             this.activeEditorLink.Text = "ActiveFile";
@@ -365,20 +373,22 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 5);
+            this.label1.Location = new System.Drawing.Point(4, 8);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 13);
+            this.label1.Size = new System.Drawing.Size(123, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Active Editor:";
             // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.adapterTreeView);
+            this.tabPage2.Controls.Add(this.activeFileNameLabel);
             this.tabPage2.Controls.Add(this.panel2);
             this.tabPage2.Location = new System.Drawing.Point(4, 4);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(0);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(262, 574);
+            this.tabPage2.Size = new System.Drawing.Size(262, 890);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Configuration";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -393,18 +403,19 @@
             this.adapterTreeView.HideSelection = false;
             this.adapterTreeView.Indent = 20;
             this.adapterTreeView.ItemHeight = 21;
-            this.adapterTreeView.Location = new System.Drawing.Point(0, 27);
-            this.adapterTreeView.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
+            this.adapterTreeView.Location = new System.Drawing.Point(0, 42);
+            this.adapterTreeView.Margin = new System.Windows.Forms.Padding(4, 9, 4, 5);
             this.adapterTreeView.Name = "adapterTreeView";
             this.adapterTreeView.ShowLines = false;
             this.adapterTreeView.ShowNodeToolTips = true;
-            this.adapterTreeView.Size = new System.Drawing.Size(262, 547);
+            this.adapterTreeView.Size = new System.Drawing.Size(262, 788);
             this.adapterTreeView.TabIndex = 0;
             this.adapterTreeView.DrawNode += new System.Windows.Forms.DrawTreeNodeEventHandler(this.TreeView_DrawNode);
             this.adapterTreeView.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.TreeView_AfterSelect);
             // 
             // adapterTreeContextMenuStrip
             // 
+            this.adapterTreeContextMenuStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.adapterTreeContextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addProfileToolStripMenuItem,
             this.addProfileFromCSVFileToolStripMenuItem,
@@ -417,78 +428,79 @@
             this.adapterExpandAllToolStripMenuItem,
             this.adapterCollapseAllToolStripMenuItem});
             this.adapterTreeContextMenuStrip.Name = "contextMenuStrip";
-            this.adapterTreeContextMenuStrip.Size = new System.Drawing.Size(217, 192);
+            this.adapterTreeContextMenuStrip.Size = new System.Drawing.Size(298, 272);
             this.adapterTreeContextMenuStrip.Opening += new System.ComponentModel.CancelEventHandler(this.ContextMenuStrip_Opening);
             // 
             // addProfileToolStripMenuItem
             // 
             this.addProfileToolStripMenuItem.Name = "addProfileToolStripMenuItem";
-            this.addProfileToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
+            this.addProfileToolStripMenuItem.Size = new System.Drawing.Size(297, 32);
             this.addProfileToolStripMenuItem.Text = "Add Profile...";
             this.addProfileToolStripMenuItem.Click += new System.EventHandler(this.AddProfileToolStripMenuItem_Click);
             // 
             // addProfileFromCSVFileToolStripMenuItem
             // 
             this.addProfileFromCSVFileToolStripMenuItem.Name = "addProfileFromCSVFileToolStripMenuItem";
-            this.addProfileFromCSVFileToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
+            this.addProfileFromCSVFileToolStripMenuItem.Size = new System.Drawing.Size(297, 32);
             this.addProfileFromCSVFileToolStripMenuItem.Text = "Add Profile from CSV File...";
             this.addProfileFromCSVFileToolStripMenuItem.Click += new System.EventHandler(this.AddProfileFromCSVFileToolStripMenuItem_Click);
             // 
             // deleteProfileToolStripMenuItem
             // 
             this.deleteProfileToolStripMenuItem.Name = "deleteProfileToolStripMenuItem";
-            this.deleteProfileToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
+            this.deleteProfileToolStripMenuItem.Size = new System.Drawing.Size(297, 32);
             this.deleteProfileToolStripMenuItem.Text = "Delete Profile";
             this.deleteProfileToolStripMenuItem.Click += new System.EventHandler(this.DeleteProfileToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(213, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(294, 6);
             // 
             // addSessionToolStripMenuItem
             // 
             this.addSessionToolStripMenuItem.Name = "addSessionToolStripMenuItem";
-            this.addSessionToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
+            this.addSessionToolStripMenuItem.Size = new System.Drawing.Size(297, 32);
             this.addSessionToolStripMenuItem.Text = "Add Session...";
             this.addSessionToolStripMenuItem.Click += new System.EventHandler(this.AddSessionToolStripMenuItem_Click);
             // 
             // deleteSessionToolStripMenuItem
             // 
             this.deleteSessionToolStripMenuItem.Name = "deleteSessionToolStripMenuItem";
-            this.deleteSessionToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
+            this.deleteSessionToolStripMenuItem.Size = new System.Drawing.Size(297, 32);
             this.deleteSessionToolStripMenuItem.Text = "Delete Session";
             this.deleteSessionToolStripMenuItem.Click += new System.EventHandler(this.DeleteSessionToolStripMenuItem_Click);
             // 
             // openFolderInFileExplorerToolStripMenuItem
             // 
             this.openFolderInFileExplorerToolStripMenuItem.Name = "openFolderInFileExplorerToolStripMenuItem";
-            this.openFolderInFileExplorerToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
+            this.openFolderInFileExplorerToolStripMenuItem.Size = new System.Drawing.Size(297, 32);
             this.openFolderInFileExplorerToolStripMenuItem.Text = "Open Containing Folder";
             this.openFolderInFileExplorerToolStripMenuItem.Click += new System.EventHandler(this.OpenFolderInFileExplorerToolStripMenuItem_Click);
             // 
             // toolStripSeparator7
             // 
             this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(213, 6);
+            this.toolStripSeparator7.Size = new System.Drawing.Size(294, 6);
             // 
             // adapterExpandAllToolStripMenuItem
             // 
             this.adapterExpandAllToolStripMenuItem.Name = "adapterExpandAllToolStripMenuItem";
-            this.adapterExpandAllToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
+            this.adapterExpandAllToolStripMenuItem.Size = new System.Drawing.Size(297, 32);
             this.adapterExpandAllToolStripMenuItem.Text = "Expand All";
             this.adapterExpandAllToolStripMenuItem.Click += new System.EventHandler(this.ExpandAllToolStripMenuItem_Click);
             // 
             // adapterCollapseAllToolStripMenuItem
             // 
             this.adapterCollapseAllToolStripMenuItem.Name = "adapterCollapseAllToolStripMenuItem";
-            this.adapterCollapseAllToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
+            this.adapterCollapseAllToolStripMenuItem.Size = new System.Drawing.Size(297, 32);
             this.adapterCollapseAllToolStripMenuItem.Text = "Collapse All";
             this.adapterCollapseAllToolStripMenuItem.Click += new System.EventHandler(this.CollapseAllToolStripMenuItem_Click);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel2.Controls.Add(this.activeFileTypeLabel);
             this.panel2.Controls.Add(this.saveAdapterButton);
             this.panel2.Controls.Add(this.closeAdapterButton);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -496,8 +508,66 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(262, 27);
+            this.panel2.Size = new System.Drawing.Size(262, 42);
             this.panel2.TabIndex = 2;
+            // 
+            // activeFileTypeLabel
+            // 
+            this.activeFileTypeLabel.AutoSize = true;
+            this.activeFileTypeLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.activeFileTypeLabel.Location = new System.Drawing.Point(12, 11);
+            this.activeFileTypeLabel.Name = "activeFileTypeLabel";
+            this.activeFileTypeLabel.Size = new System.Drawing.Size(80, 20);
+            this.activeFileTypeLabel.TabIndex = 2;
+            this.activeFileTypeLabel.Text = "File Type: ";
+            // 
+            // detailSplitContainer
+            // 
+            this.detailSplitContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.detailSplitContainer.Location = new System.Drawing.Point(0, 0);
+            this.detailSplitContainer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.detailSplitContainer.Name = "detailSplitContainer";
+            this.detailSplitContainer.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // detailSplitContainer.Panel1
+            // 
+            this.detailSplitContainer.Panel1.Controls.Add(this.placeHolder);
+            // 
+            // detailSplitContainer.Panel2
+            // 
+            this.detailSplitContainer.Panel2.Controls.Add(this.outputControl);
+            this.detailSplitContainer.Size = new System.Drawing.Size(855, 923);
+            this.detailSplitContainer.SplitterDistance = 687;
+            this.detailSplitContainer.SplitterWidth = 6;
+            this.detailSplitContainer.TabIndex = 1;
+            // 
+            // placeHolder
+            // 
+            this.placeHolder.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.placeHolder.Location = new System.Drawing.Point(0, 0);
+            this.placeHolder.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.placeHolder.Name = "placeHolder";
+            this.placeHolder.Size = new System.Drawing.Size(855, 687);
+            this.placeHolder.TabIndex = 0;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.GrayText;
+            this.panel1.Controls.Add(this.newTemplateButton);
+            this.panel1.Controls.Add(this.newConfigButton);
+            this.panel1.Controls.Add(this.logShowHideButton);
+            this.panel1.Controls.Add(this.expandButton);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(72, 923);
+            this.panel1.TabIndex = 0;
+            // 
+            // openFileDialog
+            // 
+            this.openFileDialog.Filter = "CSV files|*.csv|All files|*.*";
+            this.openFileDialog.Title = "Select Profile CSV File";
             // 
             // saveAdapterButton
             // 
@@ -506,9 +576,10 @@
             this.saveAdapterButton.FlatAppearance.BorderSize = 0;
             this.saveAdapterButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.saveAdapterButton.Image = global::OpenFMB.Adapters.Configuration.Properties.Resources.save;
-            this.saveAdapterButton.Location = new System.Drawing.Point(204, 1);
+            this.saveAdapterButton.Location = new System.Drawing.Point(175, 2);
+            this.saveAdapterButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.saveAdapterButton.Name = "saveAdapterButton";
-            this.saveAdapterButton.Size = new System.Drawing.Size(25, 25);
+            this.saveAdapterButton.Size = new System.Drawing.Size(38, 38);
             this.saveAdapterButton.TabIndex = 1;
             this.saveAdapterButton.UseVisualStyleBackColor = true;
             this.saveAdapterButton.Click += new System.EventHandler(this.SaveAdapterButton_Click);
@@ -520,59 +591,22 @@
             this.closeAdapterButton.FlatAppearance.BorderSize = 0;
             this.closeAdapterButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.closeAdapterButton.Image = global::OpenFMB.Adapters.Configuration.Properties.Resources.close;
-            this.closeAdapterButton.Location = new System.Drawing.Point(232, 1);
+            this.closeAdapterButton.Location = new System.Drawing.Point(217, 2);
+            this.closeAdapterButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.closeAdapterButton.Name = "closeAdapterButton";
-            this.closeAdapterButton.Size = new System.Drawing.Size(25, 25);
+            this.closeAdapterButton.Size = new System.Drawing.Size(38, 38);
             this.closeAdapterButton.TabIndex = 0;
             this.closeAdapterButton.UseVisualStyleBackColor = true;
             this.closeAdapterButton.Click += new System.EventHandler(this.CloseAdapterButton_Click);
-            // 
-            // detailSplitContainer
-            // 
-            this.detailSplitContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.detailSplitContainer.Location = new System.Drawing.Point(0, 0);
-            this.detailSplitContainer.Name = "detailSplitContainer";
-            this.detailSplitContainer.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
-            // detailSplitContainer.Panel1
-            // 
-            this.detailSplitContainer.Panel1.Controls.Add(this.placeHolder);
-            // 
-            // detailSplitContainer.Panel2
-            // 
-            this.detailSplitContainer.Panel2.Controls.Add(this.outputControl);
-            this.detailSplitContainer.Size = new System.Drawing.Size(480, 600);
-            this.detailSplitContainer.SplitterDistance = 447;
-            this.detailSplitContainer.TabIndex = 1;
-            // 
-            // placeHolder
-            // 
-            this.placeHolder.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.placeHolder.Location = new System.Drawing.Point(0, 0);
-            this.placeHolder.Name = "placeHolder";
-            this.placeHolder.Size = new System.Drawing.Size(480, 447);
-            this.placeHolder.TabIndex = 0;
             // 
             // outputControl
             // 
             this.outputControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.outputControl.Location = new System.Drawing.Point(0, 0);
+            this.outputControl.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.outputControl.Name = "outputControl";
-            this.outputControl.Size = new System.Drawing.Size(480, 149);
+            this.outputControl.Size = new System.Drawing.Size(855, 230);
             this.outputControl.TabIndex = 0;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.GrayText;
-            this.panel1.Controls.Add(this.newTemplateButton);
-            this.panel1.Controls.Add(this.newConfigButton);
-            this.panel1.Controls.Add(this.logShowHideButton);
-            this.panel1.Controls.Add(this.expandButton);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(48, 600);
-            this.panel1.TabIndex = 0;
             // 
             // newTemplateButton
             // 
@@ -583,9 +617,10 @@
             this.newTemplateButton.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GrayText;
             this.newTemplateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.newTemplateButton.Image = global::OpenFMB.Adapters.Configuration.Properties.Resources.new_template;
-            this.newTemplateButton.Location = new System.Drawing.Point(11, 90);
+            this.newTemplateButton.Location = new System.Drawing.Point(16, 138);
+            this.newTemplateButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.newTemplateButton.Name = "newTemplateButton";
-            this.newTemplateButton.Size = new System.Drawing.Size(25, 25);
+            this.newTemplateButton.Size = new System.Drawing.Size(38, 38);
             this.newTemplateButton.TabIndex = 3;
             this.newTemplateButton.UseVisualStyleBackColor = true;
             this.newTemplateButton.Click += new System.EventHandler(this.NewTemplateButton_Click);
@@ -599,9 +634,10 @@
             this.newConfigButton.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GrayText;
             this.newConfigButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.newConfigButton.Image = global::OpenFMB.Adapters.Configuration.Properties.Resources.new_config;
-            this.newConfigButton.Location = new System.Drawing.Point(9, 49);
+            this.newConfigButton.Location = new System.Drawing.Point(14, 75);
+            this.newConfigButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.newConfigButton.Name = "newConfigButton";
-            this.newConfigButton.Size = new System.Drawing.Size(25, 25);
+            this.newConfigButton.Size = new System.Drawing.Size(38, 38);
             this.newConfigButton.TabIndex = 2;
             this.newConfigButton.UseVisualStyleBackColor = true;
             this.newConfigButton.Click += new System.EventHandler(this.NewConfigButton_Click);
@@ -615,9 +651,10 @@
             this.logShowHideButton.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GrayText;
             this.logShowHideButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logShowHideButton.Image = global::OpenFMB.Adapters.Configuration.Properties.Resources.logs;
-            this.logShowHideButton.Location = new System.Drawing.Point(11, 563);
+            this.logShowHideButton.Location = new System.Drawing.Point(16, 866);
+            this.logShowHideButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.logShowHideButton.Name = "logShowHideButton";
-            this.logShowHideButton.Size = new System.Drawing.Size(25, 25);
+            this.logShowHideButton.Size = new System.Drawing.Size(38, 38);
             this.logShowHideButton.TabIndex = 1;
             this.logShowHideButton.UseVisualStyleBackColor = true;
             this.logShowHideButton.Click += new System.EventHandler(this.LogShowHideButton_Click);
@@ -631,26 +668,36 @@
             this.expandButton.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GrayText;
             this.expandButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.expandButton.Image = global::OpenFMB.Adapters.Configuration.Properties.Resources.menu;
-            this.expandButton.Location = new System.Drawing.Point(12, 9);
+            this.expandButton.Location = new System.Drawing.Point(18, 14);
+            this.expandButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.expandButton.Name = "expandButton";
-            this.expandButton.Size = new System.Drawing.Size(25, 25);
+            this.expandButton.Size = new System.Drawing.Size(38, 38);
             this.expandButton.TabIndex = 0;
             this.expandButton.UseVisualStyleBackColor = true;
             this.expandButton.Click += new System.EventHandler(this.ExpandButton_Click);
             // 
-            // openFileDialog
+            // activeFileNameLabel
             // 
-            this.openFileDialog.Filter = "CSV files|*.csv|All files|*.*";
-            this.openFileDialog.Title = "Select Profile CSV File";
+            this.activeFileNameLabel.AutoEllipsis = true;
+            this.activeFileNameLabel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.activeFileNameLabel.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.activeFileNameLabel.Location = new System.Drawing.Point(0, 830);
+            this.activeFileNameLabel.Name = "activeFileNameLabel";
+            this.activeFileNameLabel.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
+            this.activeFileNameLabel.Size = new System.Drawing.Size(262, 60);
+            this.activeFileNameLabel.TabIndex = 3;
+            this.activeFileNameLabel.Text = "File Path";
+            this.toolTip.SetToolTip(this.activeFileNameLabel, "File Path");
             // 
             // ConfigurationControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.mainSplitContainer);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "ConfigurationControl";
-            this.Size = new System.Drawing.Size(800, 600);
+            this.Size = new System.Drawing.Size(1200, 923);
             this.mainSplitContainer.Panel1.ResumeLayout(false);
             this.mainSplitContainer.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.mainSplitContainer)).EndInit();
@@ -663,6 +710,7 @@
             this.tabPage2.ResumeLayout(false);
             this.adapterTreeContextMenuStrip.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.detailSplitContainer.Panel1.ResumeLayout(false);
             this.detailSplitContainer.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.detailSplitContainer)).EndInit();
@@ -729,5 +777,7 @@
         private System.Windows.Forms.ToolStripMenuItem pasteToolStripMenuItem;
         private FlatButton newConfigButton;
         private FlatButton newTemplateButton;
+        private System.Windows.Forms.Label activeFileTypeLabel;
+        private System.Windows.Forms.Label activeFileNameLabel;
     }
 }

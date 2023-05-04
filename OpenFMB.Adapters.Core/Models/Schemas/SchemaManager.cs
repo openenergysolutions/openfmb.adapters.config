@@ -28,6 +28,13 @@ namespace OpenFMB.Adapters.Core.Models.Schemas
         private static readonly Dictionary<string, string> _resources = new Dictionary<string, string>();
 
         public static string DefaultEdition { get; set; } = "2.0";
+        public static string LatestEdition
+        {
+            get
+            {
+                return SupportEditions.Last();
+            }
+        }
         public static string[] SupportEditions { get; } = new string[] { "2.0", "2.1" };
 
         public static void Init(string defaultEdition)
@@ -107,6 +114,21 @@ namespace OpenFMB.Adapters.Core.Models.Schemas
             }
 
             ParseOpenFMBDocument("OpenFMB.Models.xml");
+        }
+
+        public static bool IsLatestEdition(string edition)
+        {
+            try
+            {
+                var v1 = new Version(edition);
+                var v2 = new Version(LatestEdition);
+
+                return v2.CompareTo(v1) > 0;
+            }
+            catch
+            {
+                return false;
+            }
         }
 
         public static JSchema GetSchemaForPlugin(string pluginName, string edition)

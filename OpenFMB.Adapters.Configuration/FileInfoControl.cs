@@ -3,6 +3,10 @@
 // SPDX-License-Identifier: Apache-2.0
 
 using OpenFMB.Adapters.Core;
+using OpenFMB.Adapters.Core.Models;
+using OpenFMB.Adapters.Core.Models.Plugins;
+using OpenFMB.Adapters.Core.Models.Schemas;
+using OpenFMB.Adapters.Core.Utility;
 using OpenFMB.Adapters.Core.Utility.Logs;
 using System;
 using System.Diagnostics;
@@ -26,6 +30,7 @@ namespace OpenFMB.Adapters.Configuration
         public FileInfoControl()
         {
             InitializeComponent();
+            upgradeButton.Text = $"Upgrade to OpenFMB Edtion {SchemaManager.LatestEdition}";
         }
 
         public override object DataSource
@@ -83,6 +88,8 @@ namespace OpenFMB.Adapters.Configuration
                     editionTextBox.Text = fileNode.FileInformation.Edition ?? fileNode.FileInformation.Edition;
 
                     pluginLabel.Visible = plugInTypeTextBox.Visible = false;
+
+                    upgradeButton.Visible = SchemaManager.IsLatestEdition(editionTextBox.Text);
                 }
                 else if (fileNode.FileInformation.Id == ConfigFileType.Template)
                 {
@@ -95,6 +102,8 @@ namespace OpenFMB.Adapters.Configuration
                     versionTextBox.Text = fileNode.FileInformation.Version ?? fileNode.FileInformation.Version;
                     editionTextBox.Text = fileNode.FileInformation.Edition ?? fileNode.FileInformation.Edition;
                     plugInTypeTextBox.Text = fileNode.FileInformation.Plugin ?? fileNode.FileInformation.Plugin;
+
+                    upgradeButton.Visible = SchemaManager.IsLatestEdition(editionTextBox.Text);
                 }
                 else
                 {
@@ -108,6 +117,11 @@ namespace OpenFMB.Adapters.Configuration
         }
 
         private void OpenButton_Click(object sender, EventArgs e)
+        {
+            OpenFile();
+        }
+
+        private void OpenFile()
         {
             try
             {
@@ -133,6 +147,41 @@ namespace OpenFMB.Adapters.Configuration
                 _logger.Log(Level.Error, ex.Message, ex);
                 MessageBox.Show(this, ex.Message, Program.AppName, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void UpgradeButton_Click(object sender, EventArgs e)
+        {
+            var fileNode = DataNode as FileNode;
+            if (fileNode != null && (fileNode.FileInformation.Id == ConfigFileType.Template || fileNode.FileInformation.Id == ConfigFileType.MainAdapter))
+            {
+                var result = MessageBox.Show($"This would change the current file to OpenFMB Edition {SchemaManager.LatestEdition} and start the migration.  \nDo you want to proceed?", Program.AppName, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
+                {
+                    if (fileNode.FileInformation.Id == ConfigFileType.Template)
+                    {
+                        string baseDirectory = Path.GetDirectoryName(DataNode.Path);
+                        string filePath = DataNode.Path;
+                        var relative = FileHelper.MakeRelativePath(baseDirectory, filePath);
+                        var session = Session.FromFile(baseDirectory, relative);
+                        session.SessionConfiguration.SessionSpecificConfig.SetEdition(SchemaManager.LatestEdition);                        
+                        session.Name = relative;
+                        session.Save();
+                        editionTextBox.Text = SchemaManager.LatestEdition;
+                        upgradeButton.Visible = false;
+                        OpenFile();
+                    }
+                    else
+                    {
+                        AdapterConfiguration config = new AdapterConfiguration();
+                        config.Load(fileNode.Path);
+                        config.FileInformation.Edition = SchemaManager.LatestEdition;
+                        config.Save(mainConfigOnly: true);
+                        editionTextBox.Text = SchemaManager.LatestEdition;
+                        upgradeButton.Visible = false;
+                        OpenFile();
+                    }
+                }
+            }            
         }
     }
 }

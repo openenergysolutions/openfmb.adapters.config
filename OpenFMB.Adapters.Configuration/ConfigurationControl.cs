@@ -108,6 +108,9 @@ namespace OpenFMB.Adapters.Configuration
                 return;
             }
 
+            activeFileNameLabel.Text = adapterConfiguration.FullPath;
+            activeFileTypeLabel.Text = "Type: Adapter Config";
+
             var adapterName = string.IsNullOrEmpty(adapterConfiguration.FullPath) ? "adapter" : Path.GetFileNameWithoutExtension(adapterConfiguration.FullPath);
             TreeNode node = new TreeNode(adapterName);
             node.ToolTipText = adapterConfiguration.FullPath;
@@ -173,7 +176,7 @@ namespace OpenFMB.Adapters.Configuration
                 activeEditorPanel.Visible = true;                
 
                 // enable save and close buttons
-                saveAdapterButton.Enabled = closeAdapterButton.Enabled = true;
+                saveAdapterButton.Enabled = closeAdapterButton.Enabled = true;                
             }
         }
 
@@ -188,11 +191,14 @@ namespace OpenFMB.Adapters.Configuration
                 return;
             }
 
+            activeFileNameLabel.Text = session.FullPath;
+            activeFileTypeLabel.Text = "Type: Device Template";
+
             session.IsStandAlone = true;
 
             var adapterName = session.LocalFilePath;
             TreeNode node = new TreeNode(adapterName);
-            node.ToolTipText = session.LocalFilePath;
+            node.ToolTipText = session.FullPath;
 
             node.Tag = session;
 
@@ -1404,6 +1410,8 @@ namespace OpenFMB.Adapters.Configuration
             
             activeEditorPanel.Visible = false;
             activeEditorLink.Text = string.Empty;
+            activeFileTypeLabel.Text = string.Empty;
+            activeFileNameLabel.Text = string.Empty;
 
             placeHolder.Controls.Clear();
 

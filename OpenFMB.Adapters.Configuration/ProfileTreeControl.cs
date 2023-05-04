@@ -372,7 +372,8 @@ namespace OpenFMB.Adapters.Configuration
 
         private void ValidateNode(Node node)
         {
-            var message = _profile.ErrorMessages.FirstOrDefault(x => x.NodePath != "" && node.Path.EndsWith(x.NodePath, StringComparison.InvariantCultureIgnoreCase));
+            string nodePath = Utils.RemoveDotBeforeArray(node.Path);
+            var message = _profile.ErrorMessages.FirstOrDefault(x => x.NodePath != "" && nodePath.EndsWith(x.NodePath, StringComparison.InvariantCultureIgnoreCase));
             if (message != null)
             {
                 node.Error = message.Message;

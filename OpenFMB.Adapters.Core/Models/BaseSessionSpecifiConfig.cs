@@ -33,7 +33,7 @@ namespace OpenFMB.Adapters.Core.Models
 
         [JsonProperty("file")]
         [Browsable(false)]
-        public FileInformation FileInformation { get; set; }
+        public FileInformation FileInformation { get; set; }         
 
         public BaseSessionSpecifiConfig(string edition)
         {
@@ -46,7 +46,7 @@ namespace OpenFMB.Adapters.Core.Models
             {
                 Id = ConfigFileType.Template,
                 Edition = edition,
-            };
+            };            
         }
 
         public virtual void ToYaml(YamlMappingNode root)
@@ -78,6 +78,11 @@ namespace OpenFMB.Adapters.Core.Models
         {
             HasModified = true;
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        public void SetEdition(string edition)
+        {
+            FileInformation.Edition = edition;
         }
     }
 

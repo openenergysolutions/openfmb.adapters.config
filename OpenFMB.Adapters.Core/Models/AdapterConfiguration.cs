@@ -36,7 +36,12 @@ namespace OpenFMB.Adapters.Core.Models
 
         public void Save()
         {
-            Save(FullPath);
+            Save(mainConfigOnly: false);
+        }
+
+        public void Save(bool mainConfigOnly = false)
+        {
+            Save(FullPath, mainConfigOnly);
         }
 
         public bool HasChanged()
@@ -94,7 +99,7 @@ namespace OpenFMB.Adapters.Core.Models
             return stream;
         }
 
-        private void Save(string filePath)
+        private void Save(string filePath, bool mainConfigOnly = false)
         {
             var stream = GetYamlStream();
             using (var writer = new StringWriter())
@@ -110,19 +115,21 @@ namespace OpenFMB.Adapters.Core.Models
                 CheckSum = Utility.Utils.ChecksumForString(s);
             }
 
-            // Save sessions
-            foreach (var p in Plugins.Plugins)
+            if (!mainConfigOnly)
             {
-                ISessionable s = p as ISessionable;
-                if (s != null)
+                // Save sessions
+                foreach (var p in Plugins.Plugins)
                 {
-                    foreach (var session in s.Sessions)
-                    {                        
-                        session.SessionConfiguration.Save(session.FullPath);
+                    ISessionable s = p as ISessionable;
+                    if (s != null)
+                    {
+                        foreach (var session in s.Sessions)
+                        {
+                            session.SessionConfiguration.Save(session.FullPath);
+                        }
                     }
                 }
             }
-
         }
 
         public string SaveForWeb(string filePath)

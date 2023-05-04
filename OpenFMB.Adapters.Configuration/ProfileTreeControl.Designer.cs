@@ -277,7 +277,7 @@
             // 
             this.copyMappedItemsToolStripMenuItem.Name = "copyMappedItemsToolStripMenuItem";
             this.copyMappedItemsToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
-            this.copyMappedItemsToolStripMenuItem.Text = "Copy All Mapped Path";
+            this.copyMappedItemsToolStripMenuItem.Text = "Copy All Mapped Paths";
             this.copyMappedItemsToolStripMenuItem.Click += new System.EventHandler(this.CopyMappedItemsToolStripMenuItem_Click);
             // 
             // toolStripSeparator6
