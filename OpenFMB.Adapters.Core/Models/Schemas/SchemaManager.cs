@@ -111,8 +111,8 @@ namespace OpenFMB.Adapters.Core.Models.Schemas
                     }
                 }
             }
-
-            ParseOpenFMBDocument("OpenFMB.Models.xml");
+            var xmlDocFile = Path.Combine(FileHelper.GetAppDataFolder(), "OpenFMB.Models.xml");
+            ParseOpenFMBDocument(xmlDocFile);
         }
 
         public static bool IsLatestEdition(string edition)

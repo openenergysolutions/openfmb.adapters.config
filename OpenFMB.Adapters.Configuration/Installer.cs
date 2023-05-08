@@ -28,5 +28,19 @@ namespace OpenFMB.Adapters.Configuration
             catch { }
             base.Uninstall(savedState);
         }
+
+        public override void Install(IDictionary stateSaver)
+        {
+            base.Install(stateSaver);
+
+            try
+            {
+                var path = Context.Parameters["targetdir"].TrimEnd('\\');                
+                var appDataDir = FileHelper.GetAppDataFolder();
+                File.Copy(Path.Combine(path, "OpenFMB.Models.xml"), Path.Combine(appDataDir, "OpenFMB.Models.xml"));
+            }
+            catch { }
+            
+        }
     }
 }
