@@ -15,18 +15,6 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_07F5F2B014CBB07A4B5BEED054F844F9"
-        "OwnerKey" = "8:_B16065DBDD37A2981626B2A70F2C92F8"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_07F5F2B014CBB07A4B5BEED054F844F9"
-        "OwnerKey" = "8:_1ACA63DB93EA4F37AAF47800287234B0"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_1ACA63DB93EA4F37AAF47800287234B0"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -34,7 +22,7 @@
         "Entry"
         {
         "MsmKey" = "8:_1D6A9429F2F2CF3A44FF75B7B4FE32BD"
-        "OwnerKey" = "8:_B16065DBDD37A2981626B2A70F2C92F8"
+        "OwnerKey" = "8:_6049065FF06CDCDEBB85C0699B510029"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -123,6 +111,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_6049065FF06CDCDEBB85C0699B510029"
+        "OwnerKey" = "8:_1ACA63DB93EA4F37AAF47800287234B0"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_66680EDF79A5AB0EDE78CB95B2D1CEEF"
         "OwnerKey" = "8:_1ACA63DB93EA4F37AAF47800287234B0"
         "MsmSig" = "8:_UNDEFINED"
@@ -148,37 +142,37 @@
         "Entry"
         {
         "MsmKey" = "8:_83C2FC17CF3C8BFE6AA4F17C4CB90CD8"
-        "OwnerKey" = "8:_07F5F2B014CBB07A4B5BEED054F844F9"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_83C2FC17CF3C8BFE6AA4F17C4CB90CD8"
-        "OwnerKey" = "8:_B16065DBDD37A2981626B2A70F2C92F8"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_83C2FC17CF3C8BFE6AA4F17C4CB90CD8"
         "OwnerKey" = "8:_1ACA63DB93EA4F37AAF47800287234B0"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
+        "MsmKey" = "8:_83C2FC17CF3C8BFE6AA4F17C4CB90CD8"
+        "OwnerKey" = "8:_6049065FF06CDCDEBB85C0699B510029"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_83C2FC17CF3C8BFE6AA4F17C4CB90CD8"
+        "OwnerKey" = "8:_D6973D5964CB38B054B45835F47FE258"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_9E13FC00EAC1595088AC04C478A9ED41"
-        "OwnerKey" = "8:_B16065DBDD37A2981626B2A70F2C92F8"
+        "OwnerKey" = "8:_D6973D5964CB38B054B45835F47FE258"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_9E13FC00EAC1595088AC04C478A9ED41"
+        "OwnerKey" = "8:_6049065FF06CDCDEBB85C0699B510029"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_9E13FC00EAC1595088AC04C478A9ED41"
         "OwnerKey" = "8:_1ACA63DB93EA4F37AAF47800287234B0"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_9E13FC00EAC1595088AC04C478A9ED41"
-        "OwnerKey" = "8:_07F5F2B014CBB07A4B5BEED054F844F9"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -190,7 +184,7 @@
         "Entry"
         {
         "MsmKey" = "8:_9FB9B97EA3D7A7A3654D5F666A7E53D7"
-        "OwnerKey" = "8:_B16065DBDD37A2981626B2A70F2C92F8"
+        "OwnerKey" = "8:_6049065FF06CDCDEBB85C0699B510029"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -202,7 +196,7 @@
         "Entry"
         {
         "MsmKey" = "8:_ABDDD3046820DCD12CDA16BB8B993C2E"
-        "OwnerKey" = "8:_B16065DBDD37A2981626B2A70F2C92F8"
+        "OwnerKey" = "8:_6049065FF06CDCDEBB85C0699B510029"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -231,14 +225,20 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_B16065DBDD37A2981626B2A70F2C92F8"
+        "MsmKey" = "8:_D6973D5964CB38B054B45835F47FE258"
+        "OwnerKey" = "8:_6049065FF06CDCDEBB85C0699B510029"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D6973D5964CB38B054B45835F47FE258"
         "OwnerKey" = "8:_1ACA63DB93EA4F37AAF47800287234B0"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_DCBCA44A2DA523E8AE87EFDCD8D61E3A"
-        "OwnerKey" = "8:_B16065DBDD37A2981626B2A70F2C92F8"
+        "OwnerKey" = "8:_6049065FF06CDCDEBB85C0699B510029"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -496,37 +496,6 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_07F5F2B014CBB07A4B5BEED054F844F9"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:OpenFMB.Models, Version=2.1.2.0, Culture=neutral, PublicKeyToken=075786cb6654c603, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_07F5F2B014CBB07A4B5BEED054F844F9"
-                    {
-                    "Name" = "8:OpenFMB.Models.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:OpenFMB.Models.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_90BCAD65446A4C4B9372D42C998A47F4"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_1D6A9429F2F2CF3A44FF75B7B4FE32BD"
             {
             "AssemblyRegister" = "3:1"
@@ -740,7 +709,7 @@
             "SharedLegacy" = "11:FALSE"
             "PackageAs" = "3:1"
             "Register" = "3:1"
-            "Exclude" = "11:FALSE"
+            "Exclude" = "11:TRUE"
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
@@ -771,7 +740,7 @@
             "SharedLegacy" = "11:FALSE"
             "PackageAs" = "3:1"
             "Register" = "3:1"
-            "Exclude" = "11:FALSE"
+            "Exclude" = "11:TRUE"
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
@@ -793,6 +762,37 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_6049065FF06CDCDEBB85C0699B510029"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:OpenFMB.Adapters.Core, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_6049065FF06CDCDEBB85C0699B510029"
+                    {
+                    "Name" = "8:OpenFMB.Adapters.Core.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:OpenFMB.Adapters.Core.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_90BCAD65446A4C4B9372D42C998A47F4"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_66680EDF79A5AB0EDE78CB95B2D1CEEF"
@@ -822,7 +822,7 @@
             "SharedLegacy" = "11:FALSE"
             "PackageAs" = "3:1"
             "Register" = "3:1"
-            "Exclude" = "11:FALSE"
+            "Exclude" = "11:TRUE"
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
@@ -884,7 +884,7 @@
             "SharedLegacy" = "11:FALSE"
             "PackageAs" = "3:1"
             "Register" = "3:1"
-            "Exclude" = "11:FALSE"
+            "Exclude" = "11:TRUE"
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
@@ -915,7 +915,7 @@
             "SharedLegacy" = "11:FALSE"
             "PackageAs" = "3:1"
             "Register" = "3:1"
-            "Exclude" = "11:FALSE"
+            "Exclude" = "11:TRUE"
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
@@ -1125,20 +1125,20 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_B16065DBDD37A2981626B2A70F2C92F8"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_D6973D5964CB38B054B45835F47FE258"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:OpenFMB.Adapters.Core, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:OpenFMB.Models, Version=2.1.2.0, Culture=neutral, PublicKeyToken=075786cb6654c603, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_B16065DBDD37A2981626B2A70F2C92F8"
+                    "_D6973D5964CB38B054B45835F47FE258"
                     {
-                    "Name" = "8:OpenFMB.Adapters.Core.dll"
+                    "Name" = "8:OpenFMB.Models.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:OpenFMB.Adapters.Core.dll"
+            "SourcePath" = "8:OpenFMB.Models.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_90BCAD65446A4C4B9372D42C998A47F4"
@@ -1266,7 +1266,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:OpenFMB Adapter Configuration"
         "ProductCode" = "8:{E028B2C1-ACBC-4929-AC64-2967B686F8C6}"
-        "PackageCode" = "8:{A8591178-E11A-4EF6-92F8-C58BA048F07E}"
+        "PackageCode" = "8:{35063309-43E5-4A94-A66D-9FF50B76A58D}"
         "UpgradeCode" = "8:{F8112F8B-3FB5-408F-9259-ED2CBB1AAE1B}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -1801,7 +1801,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_1ACA63DB93EA4F37AAF47800287234B0"
             {
-            "SourcePath" = "8:..\\OpenFMB.Adapters.Configuration\\obj\\Debug\\OpenFMB.Adapters.Configuration.exe"
+            "SourcePath" = "8:..\\OpenFMB.Adapters.Configuration\\obj\\Release\\OpenFMB.Adapters.Configuration.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_90BCAD65446A4C4B9372D42C998A47F4"
