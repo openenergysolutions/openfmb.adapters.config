@@ -8,7 +8,7 @@ on: [push, pull_request]
 
 jobs:
   build:
-    runs-on: windows-2019    
+    runs-on: windows-latest    
     steps:
     - uses: actions/checkout@v2
     
@@ -21,6 +21,9 @@ jobs:
     - name: setup-msbuild
       uses: microsoft/setup-msbuild@v1.1
     
+    - name: Restore Packages
+      run: nuget restore OpenFMB.Adapters.Core/OpenFMB.Adapters.Core.csproj
+      
     - name: Restore Packages
       run: nuget restore OpenFMB.Adapters.Config.sln
     
