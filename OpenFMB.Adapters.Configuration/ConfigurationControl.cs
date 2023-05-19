@@ -56,7 +56,7 @@ namespace OpenFMB.Adapters.Configuration
             toolTip.SetToolTip(saveAdapterButton, "Save");
             toolTip.SetToolTip(closeAdapterButton, "Close");
             toolTip.SetToolTip(newConfigButton, "New Adapter Configuration");
-            toolTip.SetToolTip(newTemplateButton, "New Adapter Configuration");
+            toolTip.SetToolTip(newTemplateButton, "New Template");
 
             _configurationManager.OnConfigurationSaved += OnConfigurationSaved;
 
