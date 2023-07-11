@@ -163,6 +163,7 @@ namespace OpenFMB.Adapters.Configuration
                         var session = Session.FromFile(baseDirectory, relative);
                         session.SessionConfiguration.SessionSpecificConfig.SetEdition(SchemaManager.LatestEdition);
                         session.Name = relative;
+                        session.FullPath = filePath;
                         session.Save();
                         editionTextBox.Text = SchemaManager.LatestEdition;
                         upgradeButton.Visible = false;

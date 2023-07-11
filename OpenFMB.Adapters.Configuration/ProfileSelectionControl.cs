@@ -119,13 +119,7 @@ namespace OpenFMB.Adapters.Configuration
 
             foreach (var p in profiles)
             {
-                // TODO:: remove this when the schemas are ready for these profiles
-                //if (p.StartsWith("Coordination") || p.StartsWith("Reserve") || p.StartsWith("PlannedInterconnection") || p.StartsWith("RequestedInterconnection") || p.StartsWith("CircuitSegment"))
-                //{
-                //    continue;
-                //}
-
-                if (SchemaManager.GetSchemaForProfile("modbus-master", p, SelectedEdition) == null)
+                if (SchemaManager.GetSchemaForProfile("dnp3-master", p, SelectedEdition) == null)
                 {
                     continue;
                 }
