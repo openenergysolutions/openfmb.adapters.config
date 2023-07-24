@@ -16,6 +16,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
@@ -1198,6 +1199,7 @@ namespace OpenFMB.Adapters.Configuration
             suggestedCorrectionToolStripMenuItem.Enabled = false;
             quickFixToolStripMenuItem.Visible = false;
             resetToolStripMenuItem.Enabled = false;
+            generateTestFileToolStripMenuItem.Enabled = _profile.PluginName == PluginsSection.Dnp3Master;
             if (navTreeView.SelectedNode is DataTreeNode selectedNode)
             {
                 if (selectedNode == navTreeView.Nodes[0]) // root
@@ -1379,5 +1381,286 @@ namespace OpenFMB.Adapters.Configuration
                 }
             }
         }
+
+        private void GenerateTestFileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (navTreeView.Nodes.Count > 0)
+            {
+                saveFileDialog.FileName = $"{_profile.ProfileName}.csv";
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    Random random = new Random();
+                    var allNodes = (navTreeView.Nodes[0] as DataTreeNode).GetAllNodes();
+                    var mappedNode = allNodes.Where(x => x.Data.Value == "mapped").ToList();
+                    StringBuilder sb = new StringBuilder();
+
+                    ExtractCommonFields(sb, allNodes, random);
+
+                    foreach (var node in mappedNode)
+                    {
+                        // Go up to parent
+                        var parent = node.Parent as DataTreeNode;
+                        if (parent != null)
+                        {
+                            switch (_profile.PluginName)
+                            {
+                                case PluginsSection.Dnp3Master:
+                                    {
+                                        // source
+                                        if (!ProfileRegistry.IsControlProfile(_profile.ProfileName))
+                                        {
+                                            var line = ExtractDnp3ReadingStatus(random, node);
+                                            if (!string.IsNullOrWhiteSpace(line))
+                                            {
+                                                sb.AppendLine(line);
+                                            }
+                                        }
+                                        else
+                                        {
+                                            var line = ExtractDnp3Control(random, node);
+                                            if (!string.IsNullOrWhiteSpace(line))
+                                            {
+                                                sb.AppendLine(line);
+                                            }
+                                        }
+                                    }
+                                    break;
+                                case PluginsSection.ModbusMaster:
+                                    break;
+                                default:
+                                    break;
+
+                            }
+                        }
+                    }
+                
+                    File.WriteAllText(saveFileDialog.FileName, sb.ToString());
+                }
+            }
+        }
+
+        private void ExtractCommonFields(StringBuilder sb, IEnumerable<DataTreeNode> allNodes, Random random)
+        {            
+            var tag = ProfileRegistry.GetDeviceTagForProfile(_profile.ProfileName);
+            string[] keys = new string[]
+            {
+                ".messageInfo.identifiedObject.mRID.value",
+                ".messageInfo.messageTimeStamp",
+                $".{tag}.conductingEquipment.mRID",
+                $".{tag}.applicationSystem.mRID",
+                ".requesterCircuitSegmentService.mRID"
+            };
+
+            switch (_profile.PluginName)
+            {
+                case PluginsSection.Dnp3Master:
+                    {
+                        sb.AppendLine("Path,Index,Point Type,Expected Value");
+
+                        foreach (var key in keys)
+                        {
+                            var node = allNodes.FirstOrDefault(x => x.FullPath.EndsWith(key));
+                            if (node != null)
+                            {
+                                sb.AppendLine($"{node.FullPath},,,");
+                            }
+                        }
+
+                        var schedules = allNodes.Where(x => x.FullPath.EndsWith(".schpts")).ToList();
+
+                        for (int i = 0; i < schedules.Count; ++i)
+                        {
+                            var p = schedules[i].Data;
+                            var a = p?.Nodes.FirstOrDefault(x => x.Name == $"[{i}]");
+
+                            var scheduleParamterTypes = a?.Nodes.Where(x => x.Name == "scheduleParameter").ToList();
+
+                            for (int j = 0; j < scheduleParamterTypes?.Count; ++j)
+                            {
+                                var scheduleParameterNode = scheduleParamterTypes[i];
+                                var t = scheduleParameterNode?.Nodes.FirstOrDefault(x => x.Name == $"[{j}]");
+
+                                var oneOfs = t.Schema.Items.FirstOrDefault()?.OneOf;                                
+
+                                var typ = t?.Nodes.FirstOrDefault(x => x.Name == "scheduleParameterType")?.Value;
+
+                                var scheduleParameterTypeValue = string.Empty;
+
+                                foreach (var s in oneOfs)
+                                {
+                                    var propVal = s.Properties.FirstOrDefault(x => x.Key == "scheduleParameterType");
+
+                                    if (propVal.Value != null)
+                                    {
+                                        if (propVal.Value.Const?.ToString() == typ)
+                                        {
+                                            scheduleParameterTypeValue = oneOfs.IndexOf(s).ToString();
+                                            break;
+                                        }
+                                    }                                    
+                                }
+
+                                var index = t?.Nodes.FirstOrDefault(x => x.Name == "outputs")
+                                    .Nodes.FirstOrDefault()?
+                                    .Nodes.FirstOrDefault(x => x.Name == "index")?.Value;
+                                if (index != null)
+                                {
+                                    sb.AppendLine($"{Utils.RemoveDotBeforeArray(a.Path)}.startTime.seconds,,,");
+                                    sb.AppendLine($"{Utils.RemoveDotBeforeArray(t.Path)}.scheduleParameterType,,,{scheduleParameterTypeValue}");
+                                    sb.AppendLine($"{Utils.RemoveDotBeforeArray(t.Path)}.value,{index},analog,{random.Next(0, 1000)}");
+                                }
+                            }
+                        }
+                    }
+                    break;
+                case PluginsSection.ModbusMaster:
+                    {
+                        sb.AppendLine("Path,Low Index,High Index,Data Type,Expected Value");
+                        foreach (var key in keys)
+                        {
+                            var node = allNodes.FirstOrDefault(x => x.FullPath.EndsWith(key));
+                            if (node != null)
+                            {
+                                sb.AppendLine($"{node.FullPath},,,,");
+                            }
+                        }
+                    }
+                    break;
+                default:
+                    break;
+
+            }            
+        }
+
+        private string ExtractDnp3ReadingStatus (Random random, DataTreeNode mappedNode)
+        { 
+            var parent = mappedNode.Parent as DataTreeNode;
+            var node = parent.Data;
+
+            // Path,Indx,Point Type, Expected Value
+            string type = "";
+            string index = "";
+            string value = "";
+
+            var sourceTypeNode = node.Nodes.FirstOrDefault(x => x.Name == "source-type");
+            if (sourceTypeNode != null)
+            {
+                type = sourceTypeNode.Value;
+            }
+
+            var indexNode = node.Nodes.FirstOrDefault(x => x.Name == "index");
+            if (indexNode != null)
+            {
+                index = indexNode.Value;
+            }
+
+            if (type == "none")
+            {
+                return string.Empty;
+            }
+            else if (type == "binary")
+            {
+                value = (random.Next() % 2) == 0 ? "0" : "1";
+            }
+            else if (type == "analog" || type == "counter")
+            {
+                var fieldType = mappedNode.Text.Replace(" ", "").Replace(":mapped", "").Trim();
+                if (fieldType == "enum-field-type")
+                {
+                    // maps
+                    var mapping = node.Nodes.FirstOrDefault(x => x.Name == "mapping");
+
+                    if (mapping != null && mapping.Nodes.Count > 0)
+                    {
+                        var n = mapping.Nodes[random.Next() % mapping.Nodes.Count];
+                        var v = n.Nodes.FirstOrDefault(x => x.Name == "value");
+                        if (v != null)
+                        {
+                            value = v.Value;
+                        }
+                    }
+                }
+                else
+                {
+                    value = random.Next(0, 100).ToString();
+                }
+            }             
+
+            return $"{Utils.RemoveDotBeforeArray(node.Path)},{index},{type},{value}";
+        }
+
+        private string ExtractDnp3Control(Random random, DataTreeNode mappedNode)
+        {
+            var parent = mappedNode.Parent as DataTreeNode;
+            var parentNode = parent.Data;
+
+            // Path,Indx,Point Type, Expected Value
+            string type = "";
+            string index = "";
+            string value = "";
+
+            var fieldType = mappedNode.Text.Replace(" ", "").Replace(":mapped", "").Trim();
+            if (fieldType.StartsWith("bool"))
+            {
+                type = "binary";
+                var child = parentNode.Nodes.FirstOrDefault(x => x.Name == "when-true");
+                if (child == null)
+                {
+                    child = parentNode.Nodes.FirstOrDefault(x => x.Name == "when-false");                   
+                }
+                index = child?.Nodes.FirstOrDefault()?.Nodes.FirstOrDefault(x => x.Name == "index")?.Value;
+                value = (random.Next() % 2) == 0 ? "0" : "1";
+            }
+            else
+            {
+                type = "analog";
+
+                if (fieldType == "enum-field-type")
+                {
+                    // maps
+                    var mapping = parentNode.Nodes.FirstOrDefault(x => x.Name == "mapping");
+
+                    if (mapping != null && mapping.Nodes.Count > 0)
+                    {
+                        var n = mapping.Nodes[random.Next() % mapping.Nodes.Count];
+                        var v = n.Nodes.FirstOrDefault(x => x.Name == "name");
+                        if (v != null)
+                        {
+                            // Translate enum name to int                           
+
+                            for (int i = 0; i < v.Schema.Enum.Count; ++i)
+                            {
+                                var jval = v.Schema.Enum[i] as JValue;
+                                if (jval.Value.ToString() == v.Value)
+                                {
+                                    value = i.ToString();
+                                    break;
+                                }
+                            }
+
+                            var outputs = n.Nodes.FirstOrDefault(x => x.Name == "outputs");
+                            if (outputs != null)
+                            {
+                                var child = outputs.Nodes.FirstOrDefault()?.Nodes.FirstOrDefault(x => x.Name == "index");
+                                index = child?.Value;
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    value = random.Next(0, 100).ToString();
+
+                    var outputs = parentNode.Nodes.FirstOrDefault(x => x.Name == "outputs");
+                    if (outputs != null)
+                    {
+                        var child = outputs.Nodes.FirstOrDefault()?.Nodes.FirstOrDefault(x => x.Name == "index");
+                        index = child?.Value;
+                    }
+                }
+            }
+
+            return $"{Utils.RemoveDotBeforeArray(parentNode.Path)},{index},{type},{value}";
+        }    
     }
 }
