@@ -26,7 +26,7 @@ namespace OpenFMB.Adapters.Core.Models.Schemas
 
         private static readonly Dictionary<string, string> _resources = new Dictionary<string, string>();
 
-        public static string DefaultEdition { get; set; } = "2.0";
+        public static string DefaultEdition { get; set; } = "2.2";
         public static string LatestEdition
         {
             get
@@ -34,7 +34,7 @@ namespace OpenFMB.Adapters.Core.Models.Schemas
                 return SupportEditions.Last();
             }
         }
-        public static string[] SupportEditions { get; } = new string[] { "2.0", "2.1" };
+        public static string[] SupportEditions { get; } = new string[] { "2.0", "2.1", "2.2" };
 
         public static void Init(string defaultEdition)
         {
