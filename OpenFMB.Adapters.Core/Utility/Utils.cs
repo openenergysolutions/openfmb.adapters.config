@@ -3,13 +3,13 @@
 // SPDX-License-Identifier: Apache-2.0
 
 using System;
+using System.Globalization;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Xml.Serialization;
-using System.Text.RegularExpressions;
 using System.Security.Cryptography;
-using System.Globalization;
+using System.Text;
+using System.Text.RegularExpressions;
+using System.Xml.Serialization;
 
 namespace OpenFMB.Adapters.Core.Utility
 {
@@ -22,7 +22,7 @@ namespace OpenFMB.Adapters.Core.Utility
         private static readonly string BadCharsRegex = "[" + Regex.Escape(new string(Path.GetInvalidFileNameChars())) + "]";
 
         private static readonly Regex ContainsABadCharacter = new Regex(BadCharsRegex);
-        private static readonly Regex EndArrayRegex = new Regex("\\[\\d+\\]$");        
+        private static readonly Regex EndArrayRegex = new Regex("\\[\\d+\\]$");
         private static readonly Regex PathWithArrayNoDot = new Regex("\\w\\[\\d+\\]");
         private static readonly Regex PathWithArray = new Regex("\\.\\[\\d+\\]");
 
@@ -87,10 +87,9 @@ namespace OpenFMB.Adapters.Core.Utility
         /// <returns></returns>
         public static bool IsValidFileName(string fileName)
         {
-            System.IO.FileInfo fi = null;
             try
             {
-                fi = new System.IO.FileInfo(fileName);
+                FileInfo fi = new System.IO.FileInfo(fileName);
 
                 if (fileName.IndexOfAny(Slashes) > 0)
                 {
@@ -109,7 +108,7 @@ namespace OpenFMB.Adapters.Core.Utility
                 return false;
             }
         }
-        
+
 
         public static Stream GenerateStreamFromString(string s)
         {
@@ -224,7 +223,7 @@ namespace OpenFMB.Adapters.Core.Utility
             }
             return dt;
         }
-    
+
         public static string RemoveEndArray(string input)
         {
             return EndArrayRegex.Replace(input, string.Empty);
@@ -239,7 +238,7 @@ namespace OpenFMB.Adapters.Core.Utility
                 input = input.Replace(m.Value, m.Value.Substring(1));
             }
             return input;
-        }
+        }        
 
         public static string AddDotBeforeArray(string input)
         {

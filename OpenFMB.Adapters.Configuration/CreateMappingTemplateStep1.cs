@@ -2,11 +2,11 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 
+using OpenFMB.Adapters.Core;
+using OpenFMB.Adapters.Core.Models.Plugins;
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using OpenFMB.Adapters.Core.Models.Plugins;
-using OpenFMB.Adapters.Core;
 
 namespace OpenFMB.Adapters.Configuration
 {
@@ -70,9 +70,8 @@ namespace OpenFMB.Adapters.Configuration
         private void ModuleCombo_SelectedValueChanged(object sender, EventArgs e)
         {
             profileCombo.Items.Clear();
-            var module = moduleCombo.SelectedItem as ModuleValue;
 
-            if (module != null && module.Value != null)
+            if (moduleCombo.SelectedItem is ModuleValue module && module.Value != null)
             {
                 foreach (var p in module.Value)
                 {

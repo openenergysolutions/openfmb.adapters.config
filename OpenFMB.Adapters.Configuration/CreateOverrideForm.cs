@@ -8,7 +8,7 @@ using System.Windows.Forms;
 namespace OpenFMB.Adapters.Configuration
 {
     public partial class CreateOverrideForm : Form
-    {        
+    {
         public string Key { get { return keyTextBox.Text; } }
         public string Value { get { return valueTextBox.Text; } }
 

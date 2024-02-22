@@ -107,8 +107,7 @@ namespace DiffMatchPatch
             }
 
             // If parameter cannot be cast to Diff return false.
-            Diff p = obj as Diff;
-            if ((System.Object)p == null)
+            if (!(obj is Diff p))
             {
                 return false;
             }
@@ -475,7 +474,7 @@ namespace DiffMatchPatch
                             List<Diff> subDiff =
                                 this.diff_main(text_delete, text_insert, false, deadline);
                             diffs.InsertRange(pointer, subDiff);
-                            pointer = pointer + subDiff.Count;
+                            pointer += subDiff.Count;
                         }
                         count_insert = 0;
                         count_delete = 0;
@@ -634,9 +633,11 @@ namespace DiffMatchPatch
             }
             // Diff took too long and hit the deadline or
             // number of diffs equals number of characters, no commonality at all.
-            List<Diff> diffs = new List<Diff>();
-            diffs.Add(new Diff(Operation.DELETE, text1));
-            diffs.Add(new Diff(Operation.INSERT, text2));
+            List<Diff> diffs = new List<Diff>
+            {
+                new Diff(Operation.DELETE, text1),
+                new Diff(Operation.INSERT, text2)
+            };
             return diffs;
         }
 

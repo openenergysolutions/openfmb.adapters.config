@@ -1,0 +1,31 @@
+# SPDX-FileCopyrightText: 2023 Open Energy Solutions Inc
+#
+# SPDX-License-Identifier: Apache-2.0
+
+name: Build
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: windows-latest    
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v1
+    
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v1.0.5
+      
+    - name: setup-msbuild
+      uses: microsoft/setup-msbuild@v1.1
+    
+    - name: Restore Packages
+      run: nuget restore OpenFMB.Adapters.Core/OpenFMB.Adapters.Core.csproj
+      
+    - name: Restore Packages
+      run: nuget restore OpenFMB.Adapters.Config.sln
+    
+    - name: Build solution
+      run: msbuild OpenFMB.Adapters.Config.sln -t:rebuild -property:Configuration=Release

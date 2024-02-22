@@ -13,7 +13,7 @@ namespace OpenFMB.Adapters.Configuration
 
         public string Path
         {
-            get { return pathTextBox.Text;  }
+            get { return pathTextBox.Text; }
             set { pathTextBox.Text = value; }
         }
 
@@ -28,10 +28,7 @@ namespace OpenFMB.Adapters.Configuration
             {
                 pathTextBox.Text = openFileDialog.FileName;
 
-                if (SelectionChanged != null)
-                {
-                    SelectionChanged(this, EventArgs.Empty);
-                }
+                SelectionChanged?.Invoke(this, EventArgs.Empty);
             }
         }
 
@@ -39,10 +36,7 @@ namespace OpenFMB.Adapters.Configuration
         {
             pathTextBox.Text = string.Empty;
 
-            if (SelectionChanged != null)
-            {
-                SelectionChanged(this, EventArgs.Empty);
-            }
+            SelectionChanged?.Invoke(this, EventArgs.Empty);
         }
     }
 }

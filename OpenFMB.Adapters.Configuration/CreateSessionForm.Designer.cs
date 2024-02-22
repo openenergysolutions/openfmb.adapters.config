@@ -36,18 +36,20 @@
             this.browseButton = new System.Windows.Forms.Button();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.copyLabel = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.editionCombo = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // templateFileName
             // 
-            this.templateFileName.Location = new System.Drawing.Point(91, 44);
+            this.templateFileName.Location = new System.Drawing.Point(110, 44);
             this.templateFileName.Name = "templateFileName";
-            this.templateFileName.Size = new System.Drawing.Size(279, 20);
+            this.templateFileName.Size = new System.Drawing.Size(260, 20);
             this.templateFileName.TabIndex = 0;
             // 
             // okButton
             // 
-            this.okButton.Location = new System.Drawing.Point(377, 96);
+            this.okButton.Location = new System.Drawing.Point(376, 119);
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size(96, 23);
             this.okButton.TabIndex = 1;
@@ -58,7 +60,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 48);
+            this.label1.Location = new System.Drawing.Point(37, 47);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(66, 13);
             this.label1.TabIndex = 3;
@@ -67,7 +69,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 73);
+            this.label2.Location = new System.Drawing.Point(25, 73);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(78, 13);
             this.label2.TabIndex = 5;
@@ -75,9 +77,9 @@
             // 
             // namedTextBox
             // 
-            this.namedTextBox.Location = new System.Drawing.Point(91, 70);
+            this.namedTextBox.Location = new System.Drawing.Point(110, 70);
             this.namedTextBox.Name = "namedTextBox";
-            this.namedTextBox.Size = new System.Drawing.Size(279, 20);
+            this.namedTextBox.Size = new System.Drawing.Size(260, 20);
             this.namedTextBox.TabIndex = 4;
             this.namedTextBox.Text = "Session";
             // 
@@ -108,13 +110,33 @@
             this.copyLabel.Text = "Copy file to work folder?";
             this.copyLabel.Visible = false;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(7, 101);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(96, 13);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "OpenFMB Version:";
+            // 
+            // openFMBVersionCombo
+            // 
+            this.editionCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.editionCombo.FormattingEnabled = true;
+            this.editionCombo.Location = new System.Drawing.Point(110, 97);
+            this.editionCombo.Name = "openFMBVersionCombo";
+            this.editionCombo.Size = new System.Drawing.Size(68, 21);
+            this.editionCombo.TabIndex = 9;
+            // 
             // CreateSessionForm
             // 
             this.AcceptButton = this.okButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(485, 127);
+            this.ClientSize = new System.Drawing.Size(485, 154);
+            this.Controls.Add(this.editionCombo);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.copyLabel);
             this.Controls.Add(this.browseButton);
             this.Controls.Add(this.label2);
@@ -144,5 +166,7 @@
         private System.Windows.Forms.Button browseButton;
         private System.Windows.Forms.OpenFileDialog openFileDialog;
         private System.Windows.Forms.Label copyLabel;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox editionCombo;
     }
 }

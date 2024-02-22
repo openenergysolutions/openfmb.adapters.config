@@ -88,7 +88,7 @@ namespace OpenFMB.Adapters.Configuration
                 {
                     RaisePropertyChangedEvent(new System.ComponentModel.PropertyChangedEventArgs("natsplugin"));
                 }
-                
+
                 foreach (var p in selectedProfiles)
                 {
                     if (_plugin.Publishes.FirstOrDefault(x => x.Profile == p) == null)
@@ -161,7 +161,7 @@ namespace OpenFMB.Adapters.Configuration
         {
             if (MessageBox.Show("Pub/Sub subjects will be reset and populated.  Proceed?", Program.AppName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                ConfigurationManager.Instance.UpdatePubSubTopics(type:TransportPluginType.NATS, reset:true);
+                ConfigurationManager.Instance.UpdatePubSubTopics(type: TransportPluginType.NATS, reset: true);
                 LoadData(_plugin);
                 RaisePropertyChangedEvent(new System.ComponentModel.PropertyChangedEventArgs("natsplugin"));
             }

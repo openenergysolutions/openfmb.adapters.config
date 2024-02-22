@@ -24,17 +24,20 @@ namespace OpenFMB.Adapters.Core.Models.Logging
 
         public YamlNode ToYaml()
         {
-            var node = new YamlMappingNode();
+            var node = new YamlMappingNode
+            {
+                { "logger-name", LoggerName },
+                { "console", new YamlMappingNode(new YamlScalarNode("enabled"), new YamlScalarNode(ConsoleEnable.ToString().ToLower())) },
 
-            node.Add("logger-name", LoggerName);
-            node.Add("console", new YamlMappingNode(new YamlScalarNode("enabled"), new YamlScalarNode(ConsoleEnable.ToString().ToLower())));
-
-            node.Add("rotating-file", new YamlMappingNode(
-                new YamlScalarNode("enabled"), new YamlScalarNode(RotatingFileEnable.ToString().ToLower()),
-                new YamlScalarNode("path"), new YamlScalarNode(RotatingFilePath),
-                new YamlScalarNode("max-size"), new YamlScalarNode(RotatingFileMaxSize.ToString()),
-                new YamlScalarNode("max-files"), new YamlScalarNode(RotatingFileMaxFiles.ToString()))
-            );
+                {
+                    "rotating-file",
+                    new YamlMappingNode(
+                        new YamlScalarNode("enabled"), new YamlScalarNode(RotatingFileEnable.ToString().ToLower()),
+                        new YamlScalarNode("path"), new YamlScalarNode(RotatingFilePath),
+                        new YamlScalarNode("max-size"), new YamlScalarNode(RotatingFileMaxSize.ToString()),
+                        new YamlScalarNode("max-files"), new YamlScalarNode(RotatingFileMaxFiles.ToString()))
+                }
+            };
 
             return node;
         }

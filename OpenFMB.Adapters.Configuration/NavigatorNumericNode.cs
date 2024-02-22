@@ -12,17 +12,17 @@ using System.ComponentModel;
 namespace OpenFMB.Adapters.Configuration
 {
     public partial class NavigatorNumericNode : BaseNavigatorNode, IDataNode, INavigatorNode
-    {         
+    {
         public NavigatorNumericNode()
         {
-            InitializeComponent();            
+            InitializeComponent();
         }
 
         public NavigatorNumericNode(Node node) : this()
         {
             nodeText.Text = node.Name;
             Data = node;
-                        
+
             if (node.Schema.Minimum.HasValue)
             {
                 valueControl.Minimum = (decimal)node.Schema.Minimum.Value;

@@ -20,7 +20,7 @@ namespace OpenFMB.Adapters.Configuration
         private int _rowIndexFromMouseDown;
         private int _rowIndexOfItemUnderMouseToDrop;
 
-        private readonly List<string> _commandIds = new List<string>();        
+        private readonly List<string> _commandIds = new List<string>();
 
         public event EventHandler OnDrillDown
         {
@@ -61,7 +61,7 @@ namespace OpenFMB.Adapters.Configuration
             var properties = commandOrderNode.Tag as JProperty;
 
             var list = properties.FirstOrDefault();
-            foreach(JValue item in list)
+            foreach (JValue item in list.Cast<JValue>())
             {
                 dataGridView.Rows.Add(item.Value.ToString());
             }
@@ -78,7 +78,7 @@ namespace OpenFMB.Adapters.Configuration
                 {
 
                     // Proceed with the drag and drop, passing in the list item.                    
-                    DragDropEffects dropEffect = dataGridView.DoDragDrop(
+                    _ = dataGridView.DoDragDrop(
                     dataGridView.Rows[_rowIndexFromMouseDown],
                     DragDropEffects.Move);
                 }
@@ -132,7 +132,7 @@ namespace OpenFMB.Adapters.Configuration
                 dataGridView.Rows.RemoveAt(_rowIndexFromMouseDown);
                 dataGridView.Rows.Insert(_rowIndexOfItemUnderMouseToDrop, rowToMove);
                 UpdateValues();
-                
+
             }
         }
 

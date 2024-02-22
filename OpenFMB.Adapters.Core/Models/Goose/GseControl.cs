@@ -9,7 +9,7 @@ namespace OpenFMB.Adapters.Core.Models.Goose
         public IED IED { get; set; }
         public string LogicalDevice { get; set; }
         public string LogicalNode { get; set; }
-        public string Name { get; set; }       
+        public string Name { get; set; }
         public string GooseId { get; set; }
         public int AppId { get; set; }
         public string ConfRev { get; set; }

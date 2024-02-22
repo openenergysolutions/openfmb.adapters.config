@@ -10,7 +10,7 @@ namespace OpenFMB.Adapters.Configuration
     public interface INavigatorNode : IDataNode
     {
         event EventHandler OnDrillDown;
-       
+
         bool IsValid { get; }
 
         bool IsLeafNode { get; }

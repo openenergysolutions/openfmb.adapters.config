@@ -43,6 +43,7 @@
             this.rightButton = new System.Windows.Forms.Button();
             this.navTreeView = new System.Windows.Forms.TreeView();
             this.navTreeContextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.expandToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.expandAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -52,14 +53,18 @@
             this.showAllMappedNodesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showAllErrorNodesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.copyMappedItemsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.copyPathToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.viewErrorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.suggestedCorrectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.quickFixToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.resetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.viewSchemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
+            this.generateTestFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.mappedLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.mappedValue = new System.Windows.Forms.ToolStripStatusLabel();
@@ -73,7 +78,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.deviceMridLabel = new System.Windows.Forms.Label();
             this.headerLabel = new System.Windows.Forms.Label();
-            this.quickFixToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -247,6 +252,7 @@
             // navTreeContextMenu
             // 
             this.navTreeContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripSeparator6,
             this.expandToolStripMenuItem,
             this.expandAllToolStripMenuItem,
             this.toolStripSeparator1,
@@ -256,6 +262,7 @@
             this.showAllMappedNodesToolStripMenuItem,
             this.showAllErrorNodesToolStripMenuItem,
             this.toolStripSeparator3,
+            this.copyMappedItemsToolStripMenuItem,
             this.copyPathToolStripMenuItem,
             this.copyToolStripMenuItem,
             this.toolStripSeparator4,
@@ -264,10 +271,24 @@
             this.quickFixToolStripMenuItem,
             this.resetToolStripMenuItem,
             this.toolStripSeparator5,
-            this.viewSchemaToolStripMenuItem});
+            this.viewSchemaToolStripMenuItem,
+            this.toolStripSeparator7,
+            this.generateTestFileToolStripMenuItem});
             this.navTreeContextMenu.Name = "navTreeContextMenu";
-            this.navTreeContextMenu.Size = new System.Drawing.Size(205, 342);
+            this.navTreeContextMenu.Size = new System.Drawing.Size(205, 376);
             this.navTreeContextMenu.Opening += new System.ComponentModel.CancelEventHandler(this.NavTreeContextMenu_Opening);
+            // 
+            // copyMappedItemsToolStripMenuItem
+            // 
+            this.copyMappedItemsToolStripMenuItem.Name = "copyMappedItemsToolStripMenuItem";
+            this.copyMappedItemsToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.copyMappedItemsToolStripMenuItem.Text = "Copy All Mapped Paths";
+            this.copyMappedItemsToolStripMenuItem.Click += new System.EventHandler(this.CopyMappedItemsToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator6
+            // 
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            this.toolStripSeparator6.Size = new System.Drawing.Size(201, 6);
             // 
             // expandToolStripMenuItem
             // 
@@ -326,6 +347,13 @@
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(201, 6);
             // 
+            // copyMappedItemsToolStripMenuItem
+            // 
+            this.copyMappedItemsToolStripMenuItem.Name = "copyMappedItemsToolStripMenuItem";
+            this.copyMappedItemsToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.copyMappedItemsToolStripMenuItem.Text = "Copy All Mapped Path";
+            this.copyMappedItemsToolStripMenuItem.Click += new System.EventHandler(this.CopyMappedItemsToolStripMenuItem_Click);
+            // 
             // copyPathToolStripMenuItem
             // 
             this.copyPathToolStripMenuItem.Name = "copyPathToolStripMenuItem";
@@ -361,6 +389,13 @@
             this.suggestedCorrectionToolStripMenuItem.Text = "Suggested Correction...";
             this.suggestedCorrectionToolStripMenuItem.Click += new System.EventHandler(this.SuggestedCorrectionToolStripMenuItem_Click);
             // 
+            // quickFixToolStripMenuItem
+            // 
+            this.quickFixToolStripMenuItem.Name = "quickFixToolStripMenuItem";
+            this.quickFixToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.quickFixToolStripMenuItem.Text = "Quick Fix All Errors";
+            this.quickFixToolStripMenuItem.Click += new System.EventHandler(this.QuickFixToolStripMenuItem_Click);
+            // 
             // resetToolStripMenuItem
             // 
             this.resetToolStripMenuItem.Name = "resetToolStripMenuItem";
@@ -380,6 +415,18 @@
             this.viewSchemaToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
             this.viewSchemaToolStripMenuItem.Text = "View Schema...";
             this.viewSchemaToolStripMenuItem.Click += new System.EventHandler(this.ViewSchemaToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator7
+            // 
+            this.toolStripSeparator7.Name = "toolStripSeparator7";
+            this.toolStripSeparator7.Size = new System.Drawing.Size(201, 6);
+            // 
+            // generateTestFileToolStripMenuItem
+            // 
+            this.generateTestFileToolStripMenuItem.Name = "generateTestFileToolStripMenuItem";
+            this.generateTestFileToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.generateTestFileToolStripMenuItem.Text = "Generate Test File...";
+            this.generateTestFileToolStripMenuItem.Click += new System.EventHandler(this.GenerateTestFileToolStripMenuItem_Click);
             // 
             // statusStrip1
             // 
@@ -514,12 +561,10 @@
             this.headerLabel.TabIndex = 0;
             this.headerLabel.Text = "SECTION HEADER";
             // 
-            // quickFixToolStripMenuItem
+            // saveFileDialog
             // 
-            this.quickFixToolStripMenuItem.Name = "quickFixToolStripMenuItem";
-            this.quickFixToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
-            this.quickFixToolStripMenuItem.Text = "Quick Fix All Errors";
-            this.quickFixToolStripMenuItem.Click += new System.EventHandler(this.QuickFixToolStripMenuItem_Click);
+            this.saveFileDialog.Filter = "CSV files|*.csv";
+            this.saveFileDialog.Title = "Save File";
             // 
             // ProfileTreeControl
             // 
@@ -591,5 +636,10 @@
         private System.Windows.Forms.ToolStripMenuItem viewErrorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem copyToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem quickFixToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem copyMappedItemsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
+        private System.Windows.Forms.ToolStripMenuItem generateTestFileToolStripMenuItem;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog;
     }
 }

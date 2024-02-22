@@ -17,14 +17,14 @@ namespace OpenFMB.Adapters.Core
 
         [ReadOnly(true)]
         [Description("Name of the node")]
-        public string Name { get; set; }       
+        public string Name { get; set; }
 
         [Browsable(false)]
         public NavNode Parent { get; set; }
-        
+
 
         [Browsable(false)]
-        public List<NavNode> Nodes { get; } = new List<NavNode>();              
+        public List<NavNode> Nodes { get; } = new List<NavNode>();
 
         [Browsable(false)]
         public object Tag { get; set; }
@@ -49,7 +49,7 @@ namespace OpenFMB.Adapters.Core
         {
             Nodes.Add(node);
             node.Parent = this;
-        }        
+        }
 
         public override string ToString()
         {

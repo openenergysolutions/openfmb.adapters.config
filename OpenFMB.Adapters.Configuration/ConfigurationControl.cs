@@ -31,9 +31,8 @@ namespace OpenFMB.Adapters.Configuration
         private readonly string FileInfoControlKey = "FileInfoControl";
 
         private readonly ConfigurationManager _configurationManager = ConfigurationManager.Instance;
-                                
+
         private const int FolderIcon = 3;
-        private const int ActiveEditorIcon = 4;
 
         private readonly ILogger _logger = MasterLogger.Instance;
 
@@ -47,23 +46,23 @@ namespace OpenFMB.Adapters.Configuration
         public string WorkspaceDir
         {
             get { return _configurationManager.WorkingDirectory; }
-        }        
+        }
 
         public ConfigurationControl()
         {
-            InitializeComponent();            
+            InitializeComponent();
             toolTip.SetToolTip(expandButton, "Hide/Show Navigation Pane");
             toolTip.SetToolTip(logShowHideButton, "Hide/Show Log Pane");
             toolTip.SetToolTip(saveAdapterButton, "Save");
             toolTip.SetToolTip(closeAdapterButton, "Close");
             toolTip.SetToolTip(newConfigButton, "New Adapter Configuration");
-            toolTip.SetToolTip(newTemplateButton, "New Adapter Configuration");
+            toolTip.SetToolTip(newTemplateButton, "New Template");
 
             _configurationManager.OnConfigurationSaved += OnConfigurationSaved;
 
             LoadFile(_configurationManager.ActiveConfiguration);
             LoadWorkspaceTree();
-            
+
             if (adapterTreeView.Nodes.Count > 0)
             {
                 tabControl.SelectedIndex = 1;
@@ -79,13 +78,13 @@ namespace OpenFMB.Adapters.Configuration
             _configurationManager.OnFileSystemRenamed += FileSystemWatcher_DeletedOrRenamed;
 
             _configurationManager.OnFileSystemCreated += FileSystemWatcher_Created;
-            
+
 
             // Hide logs
             detailSplitContainer.Panel2Collapsed = true;
-        }        
+        }
 
-        private void LoadFile(Editable editable)
+        private void LoadFile(IEditable editable)
         {
             if (editable is AdapterConfiguration)
             {
@@ -100,7 +99,7 @@ namespace OpenFMB.Adapters.Configuration
         private void LoadFile(AdapterConfiguration adapterConfiguration)
         {
             adapterTreeView.Nodes.Clear();
-            
+
             activeEditorPanel.Visible = false;
 
             if (adapterConfiguration == null)
@@ -108,11 +107,15 @@ namespace OpenFMB.Adapters.Configuration
                 return;
             }
 
+            activeFileNameLabel.Text = adapterConfiguration.FullPath;
+            activeFileTypeLabel.Text = "Type: Adapter Config";
+
             var adapterName = string.IsNullOrEmpty(adapterConfiguration.FullPath) ? "adapter" : Path.GetFileNameWithoutExtension(adapterConfiguration.FullPath);
-            TreeNode node = new TreeNode(adapterName);
-            node.ToolTipText = adapterConfiguration.FullPath;
-            
-            node.Tag = adapterConfiguration;
+            TreeNode node = new TreeNode(adapterName)
+            {
+                ToolTipText = adapterConfiguration.FullPath,
+                Tag = adapterConfiguration
+            };
 
             adapterTreeView.Nodes.Add(node);
 
@@ -161,16 +164,16 @@ namespace OpenFMB.Adapters.Configuration
             adapterTreeView.ExpandAll();
 
             if (adapterTreeView.Nodes.Count > 0)
-            {               
+            {
                 activeEditorLink.Text = Path.GetFileName(adapterConfiguration.FullPath);
-                
+
                 toolTip.SetToolTip(activeEditorLink, $"{adapterConfiguration.FullPath}");
                 activeEditorLink.Tag = new FileNode
                 {
                     Path = adapterConfiguration.FullPath,
                     FileInformation = ConfigurationManager.GetFileInformation(adapterConfiguration.FullPath),
                 };
-                activeEditorPanel.Visible = true;                
+                activeEditorPanel.Visible = true;
 
                 // enable save and close buttons
                 saveAdapterButton.Enabled = closeAdapterButton.Enabled = true;
@@ -180,7 +183,7 @@ namespace OpenFMB.Adapters.Configuration
         private void LoadFile(Session session)
         {
             adapterTreeView.Nodes.Clear();
-            
+
             activeEditorPanel.Visible = false;
 
             if (session == null)
@@ -188,13 +191,17 @@ namespace OpenFMB.Adapters.Configuration
                 return;
             }
 
+            activeFileNameLabel.Text = session.FullPath;
+            activeFileTypeLabel.Text = "Type: Device Template";
+
             session.IsStandAlone = true;
 
             var adapterName = session.LocalFilePath;
-            TreeNode node = new TreeNode(adapterName);
-            node.ToolTipText = session.LocalFilePath;
-
-            node.Tag = session;
+            TreeNode node = new TreeNode(adapterName)
+            {
+                ToolTipText = session.FullPath,
+                Tag = session
+            };
 
             adapterTreeView.Nodes.Add(node);
 
@@ -210,7 +217,7 @@ namespace OpenFMB.Adapters.Configuration
             adapterTreeView.ExpandAll();
 
             if (adapterTreeView.Nodes.Count > 0)
-            {                
+            {
                 activeEditorLink.Text = Path.GetFileName(session.FullPath);
                 toolTip.SetToolTip(activeEditorLink, $"{session.FullPath}");
                 activeEditorLink.Tag = new FileNode
@@ -219,7 +226,7 @@ namespace OpenFMB.Adapters.Configuration
                     FileInformation = ConfigurationManager.GetFileInformation(session.FullPath),
                 };
 
-                activeEditorPanel.Visible = true;                
+                activeEditorPanel.Visible = true;
 
                 // enable save and close buttons
                 saveAdapterButton.Enabled = closeAdapterButton.Enabled = true;
@@ -237,10 +244,9 @@ namespace OpenFMB.Adapters.Configuration
             var controls = placeHolder.Controls.Find(key, true);
             if (controls != null)
             {
-                foreach(Control c in controls)
+                foreach (Control c in controls)
                 {
-                    SessionSettingsControl sc = c as SessionSettingsControl;
-                    if (sc != null && sc.DataSource == session)
+                    if (c is SessionSettingsControl sc && sc.DataSource == session)
                     {
                         return sc;
                     }
@@ -256,8 +262,7 @@ namespace OpenFMB.Adapters.Configuration
             {
                 foreach (Control c in controls)
                 {
-                    ProfileTreeControl sc = c as ProfileTreeControl;
-                    if (sc != null && sc.DataSource == profile)
+                    if (c is ProfileTreeControl sc && sc.DataSource == profile)
                     {
                         return sc;
                     }
@@ -270,8 +275,7 @@ namespace OpenFMB.Adapters.Configuration
         {
             if (e.Node.Tag is LoggingSection)
             {
-                LoggingSectionControl c = FindControl(LoggingSectionKey) as LoggingSectionControl;
-                if (c == null)
+                if (!(FindControl(LoggingSectionKey) is LoggingSectionControl c))
                 {
                     c = new LoggingSectionControl()
                     {
@@ -286,8 +290,7 @@ namespace OpenFMB.Adapters.Configuration
             }
             else if (e.Node.Tag is PluginsSection)
             {
-                PluginsSectionControl c = FindControl(PluginsSectionKey) as PluginsSectionControl;
-                if (c == null)
+                if (!(FindControl(PluginsSectionKey) is PluginsSectionControl c))
                 {
                     c = new PluginsSectionControl()
                     {
@@ -338,41 +341,39 @@ namespace OpenFMB.Adapters.Configuration
             }
             else if (e.Node.Tag is Session)
             {
-                SessionSettingsControl c = FindSessionControl(SessionSettingsControlKey, e.Node.Tag) as SessionSettingsControl;
-                if (c == null)
+                if (!(FindSessionControl(SessionSettingsControlKey, e.Node.Tag) is SessionSettingsControl c))
                 {
-                    c = new SessionSettingsControl()
+                    c = new SessionSettingsControl
                     {
                         Name = SessionSettingsControlKey,
-                        Dock = DockStyle.Fill
+                        Dock = DockStyle.Fill,
+                        DataSource = e.Node.Tag,
+                        SelectedTreeNode = e.Node
                     };
-                    c.DataSource = e.Node.Tag;
-                    c.SelectedTreeNode = e.Node;
                     c.PropertyChanged += OnPropertyChanged;
                     c.OnLocalFilePathChanged += OnSessionLocalFilePathChanged;
                     placeHolder.Controls.Add(c);
-                }                
+                }
                 c.BringToFront();
             }
             else if (e.Node.Tag is Profile)
             {
-                ProfileTreeControl c = FindProfileControl(ProfileSettingsControlKey, e.Node.Tag) as ProfileTreeControl;
-                if (c == null)
+                if (!(FindProfileControl(ProfileSettingsControlKey, e.Node.Tag) is ProfileTreeControl c))
                 {
-                    c = new ProfileTreeControl()
+                    c = new ProfileTreeControl
                     {
                         Name = ProfileSettingsControlKey,
-                        Dock = DockStyle.Fill
+                        Dock = DockStyle.Fill,
+                        DataSource = e.Node.Tag
                     };
-                    c.DataSource = e.Node.Tag;
                     c.PropertyChanged += OnPropertyChanged;
                     placeHolder.Controls.Add(c);
-                }                                
+                }
                 c.BringToFront();
             }
-            else {                
-                AdapterConfigurationDetailControl c = FindControl(AdapterConfigurationKey) as AdapterConfigurationDetailControl;
-                if (c == null)
+            else
+            {
+                if (!(FindControl(AdapterConfigurationKey) is AdapterConfigurationDetailControl c))
                 {
                     c = new AdapterConfigurationDetailControl()
                     {
@@ -401,7 +402,7 @@ namespace OpenFMB.Adapters.Configuration
                 {
                     return;
                 }
-            }            
+            }
 
             try
             {
@@ -419,7 +420,7 @@ namespace OpenFMB.Adapters.Configuration
 
                 session.Reload(_configurationManager.WorkingDirectory, relative);
 
-                TreeNode node = control.SelectedTreeNode;                
+                TreeNode node = control.SelectedTreeNode;
                 node.Nodes.Clear();
 
                 foreach (var profile in session.SessionConfiguration?.GetProfiles())
@@ -452,14 +453,13 @@ namespace OpenFMB.Adapters.Configuration
         private void OnPluginSelected(object sender, EventArgs e)
         {
             // navigate to plugin
-            var section = sender as PluginsSectionControl;
-            if (section != null)
+            if (sender is PluginsSectionControl section)
             {
-                foreach(TreeNode node in adapterTreeView.Nodes[0].Nodes)
+                foreach (TreeNode node in adapterTreeView.Nodes[0].Nodes)
                 {
                     if (node.Tag == section.DataSource)
                     {
-                        foreach(TreeNode n in node.Nodes)
+                        foreach (TreeNode n in node.Nodes)
                         {
                             if (n.Tag == section.Plugin)
                             {
@@ -473,21 +473,21 @@ namespace OpenFMB.Adapters.Configuration
         }
 
         private void OnPropertyChanged(object sender, PropertyChangedEventArgs e)
-        {            
+        {
             MarkDirty(true);
         }
 
         private void OnConfigurationSaved(object sender, EventArgs e)
         {
-            MarkDirty(false);            
+            MarkDirty(false);
         }
 
         private void MarkDirty(bool dirty)
-        {           
+        {
             if (adapterTreeView.Nodes.Count > 0)
             {
                 MarkDirty(dirty, adapterTreeView.Nodes[0]);
-                                        
+
             }
 
             MarkDirty(dirty, activeEditorLink);
@@ -501,7 +501,7 @@ namespace OpenFMB.Adapters.Configuration
             {
                 if (!node.Text.EndsWith(txt))
                 {
-                    node.Text = node.Text + txt;
+                    node.Text += txt;
                 }
             }
             else
@@ -518,7 +518,7 @@ namespace OpenFMB.Adapters.Configuration
             {
                 if (!node.Text.EndsWith(txt))
                 {
-                    node.Text = node.Text + txt;
+                    node.Text += txt;
                 }
             }
             else
@@ -539,7 +539,7 @@ namespace OpenFMB.Adapters.Configuration
                     addSessionToolStripMenuItem.Visible = false;
                     deleteSessionToolStripMenuItem.Visible = false;
                     addProfileToolStripMenuItem.Visible = false;
-                    addProfileFromCSVFileToolStripMenuItem.Visible = false;                    
+                    addProfileFromCSVFileToolStripMenuItem.Visible = false;
                     deleteProfileToolStripMenuItem.Visible = false;
                     toolStripSeparator1.Visible = false;
                     return;
@@ -551,7 +551,7 @@ namespace OpenFMB.Adapters.Configuration
                     addSessionToolStripMenuItem.Visible = true;
                     deleteSessionToolStripMenuItem.Visible = true;
                     addProfileToolStripMenuItem.Visible = true;
-                    addProfileFromCSVFileToolStripMenuItem.Visible = true;                    
+                    addProfileFromCSVFileToolStripMenuItem.Visible = true;
                     deleteProfileToolStripMenuItem.Visible = true;
                     toolStripSeparator1.Visible = true;
                 }
@@ -561,7 +561,7 @@ namespace OpenFMB.Adapters.Configuration
                     addSessionToolStripMenuItem.Enabled = true;
                     deleteSessionToolStripMenuItem.Enabled = false;
                     addProfileToolStripMenuItem.Enabled = false;
-                    addProfileFromCSVFileToolStripMenuItem.Enabled = false;                    
+                    addProfileFromCSVFileToolStripMenuItem.Enabled = false;
                     deleteProfileToolStripMenuItem.Enabled = false;
                 }
                 else if (selectedNode.Tag is Session)
@@ -585,7 +585,7 @@ namespace OpenFMB.Adapters.Configuration
                     addSessionToolStripMenuItem.Enabled = false;
                     deleteSessionToolStripMenuItem.Enabled = false;
                     addProfileToolStripMenuItem.Enabled = false;
-                    addProfileFromCSVFileToolStripMenuItem.Enabled = false;                    
+                    addProfileFromCSVFileToolStripMenuItem.Enabled = false;
                     deleteProfileToolStripMenuItem.Enabled = true;
                 }
                 else
@@ -601,29 +601,26 @@ namespace OpenFMB.Adapters.Configuration
 
         private void AddProfileToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Session session = adapterTreeView.SelectedNode?.Tag as Session;
-            if (session != null)
+            if (adapterTreeView.SelectedNode?.Tag is Session session)
             {
-                ProfileSelectionForm form = new ProfileSelectionForm();
+                ProfileSelectionForm form = new ProfileSelectionForm(session.Edition, false);
                 if (form.ShowDialog() == DialogResult.OK)
                 {
                     try
-                    {                        
+                    {
                         var sessionNode = adapterTreeView.SelectedNode;
-
-                        ISessionable plugin = adapterTreeView.SelectedNode.Parent?.Tag as ISessionable;
 
                         foreach (var p in form.SelectedProfiles)
                         {
                             MarkDirty(true);
 
-                            if (plugin != null)
+                            if (adapterTreeView.SelectedNode.Parent?.Tag is ISessionable plugin)
                             {
                                 plugin.Enabled = true;
                             }
 
-                            Profile profile = Profile.Create(p, session.PluginName);                            
-                            session.SessionConfiguration.AddProfile(profile);                                                        
+                            Profile profile = Profile.Create(p, session.PluginName, null);
+                            session.SessionConfiguration.AddProfile(profile);
 
                             TreeNode pNode = new TreeNode(profile.ProfileName)
                             {
@@ -650,8 +647,7 @@ namespace OpenFMB.Adapters.Configuration
 
         private void AddProfileFromCSVFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Session session = adapterTreeView.SelectedNode?.Tag as Session;
-            if (session != null)
+            if (adapterTreeView.SelectedNode?.Tag is Session session)
             {
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
@@ -659,8 +655,7 @@ namespace OpenFMB.Adapters.Configuration
                     {
                         Cursor = Cursors.WaitCursor;
 
-                        ISessionable plugin = adapterTreeView.SelectedNode.Parent?.Tag as ISessionable;
-                        if (plugin != null)
+                        if (adapterTreeView.SelectedNode.Parent?.Tag is ISessionable plugin)
                         {
                             plugin.Enabled = true;
                         }
@@ -673,8 +668,8 @@ namespace OpenFMB.Adapters.Configuration
                         {
                             mrid = row.Value;
                         }
-                        
-                        session.SessionConfiguration.AddProfile(profile);                        
+
+                        session.SessionConfiguration.AddProfile(profile);
 
                         TreeNode pNode = new TreeNode(profile.ProfileName)
                         {
@@ -696,15 +691,14 @@ namespace OpenFMB.Adapters.Configuration
                     }
                 }
             }
-        }        
+        }
 
         private void DeleteProfileToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var selectedNode = adapterTreeView.SelectedNode;
             if (selectedNode != null)
             {
-                var profile = selectedNode.Tag as Profile;
-                if (profile != null)
+                if (selectedNode.Tag is Profile profile)
                 {
                     var parent = selectedNode.Parent;
                     var session = parent.Tag as Session;
@@ -727,8 +721,7 @@ namespace OpenFMB.Adapters.Configuration
 
         private void AddSessionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ISessionable plugin = adapterTreeView.SelectedNode.Tag as ISessionable;
-            if (plugin != null)
+            if (adapterTreeView.SelectedNode.Tag is ISessionable plugin)
             {
                 CreateSessionForm form = new CreateSessionForm(plugin);
                 if (form.ShowDialog() == DialogResult.OK)
@@ -755,15 +748,14 @@ namespace OpenFMB.Adapters.Configuration
 
                     MarkDirty(true);
 
-                   
+
                 }
             }
         }
 
         private void DeleteSessionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Session session = adapterTreeView.SelectedNode?.Tag as Session;
-            if (session != null)
+            if (adapterTreeView.SelectedNode?.Tag is Session session)
             {
                 var result = MessageBox.Show(this, $"Session will be deleted.{Environment.NewLine}Click YES to also delete the referenced template file.{Environment.NewLine}Click NO to keep the referenced template file.{Environment.NewLine}Click CANCEL to abort.", Program.AppName, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
 
@@ -776,7 +768,7 @@ namespace OpenFMB.Adapters.Configuration
                 var plugin = parent.Tag as ISessionable;
                 plugin.Sessions.Remove(session);
                 adapterTreeView.SelectedNode.Remove();
-                adapterTreeView.SelectedNode = parent;               
+                adapterTreeView.SelectedNode = parent;
 
                 MarkDirty(true);
 
@@ -797,7 +789,7 @@ namespace OpenFMB.Adapters.Configuration
                         _logger.Log(Level.Error, ex.Message, ex);
                         MessageBox.Show(this, $"Unable to delete {session.LocalFilePath}.", Program.AppName, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
-                }                
+                }
             }
         }
 
@@ -808,8 +800,7 @@ namespace OpenFMB.Adapters.Configuration
                 var node = adapterTreeView.SelectedNode;
                 if (node != null)
                 {
-                    var config = node.Tag as AdapterConfiguration;
-                    if (config != null)
+                    if (node.Tag is AdapterConfiguration config)
                     {
                         Process.Start(Path.GetDirectoryName(config.FullPath));
                     }
@@ -863,18 +854,17 @@ namespace OpenFMB.Adapters.Configuration
             {
                 _logger.Log(Level.Debug, ex.Message, ex);
             }
-        }        
+        }
 
         private TreeNode CreateDirectoryNode(DirectoryInfo directoryInfo)
         {
             var directoryNode = new TreeNode(directoryInfo.Name)
             {
-                Name = directoryInfo.FullName
-            };
-            
-            directoryNode.Tag = new FolderNode()
-            {
-                Path = directoryInfo.FullName                
+                Name = directoryInfo.FullName,
+                Tag = new FolderNode()
+                {
+                    Path = directoryInfo.FullName
+                }
             };
             directoryNode.ImageIndex = directoryNode.SelectedImageIndex = FolderIcon;
             directoryNode.ToolTipText = directoryInfo.FullName;
@@ -897,7 +887,7 @@ namespace OpenFMB.Adapters.Configuration
                 {
                     Path = file.FullName,
                     FileInformation = fileType
-                };                
+                };
                 var text = fileType.Id == ConfigFileType.MainAdapter ? "Adapter Configuration" : fileType.Id == ConfigFileType.Template ? "Template file" : "Not an OpenFMB config file";
                 treeNode.ToolTipText = $"{file.FullName} ({text})";
                 treeNode.ImageIndex = treeNode.SelectedImageIndex = (int)fileType.Id;
@@ -946,7 +936,7 @@ namespace OpenFMB.Adapters.Configuration
                             if (node.Tag is FolderNode)
                             {
                                 Directory.Delete((node.Tag as FolderNode).Path, true);
-                                node.Remove();                                
+                                node.Remove();
                             }
                             else
                             {
@@ -979,8 +969,7 @@ namespace OpenFMB.Adapters.Configuration
             var selectedNode = workspaceTree.SelectedNode;
             if (selectedNode != null)
             {
-                var folder = selectedNode.Tag as FolderNode;
-                if (folder != null)
+                if (selectedNode.Tag is FolderNode folder)
                 {
                     NewFolderForm form = new NewFolderForm();
                     if (form.ShowDialog() == DialogResult.OK)
@@ -998,10 +987,12 @@ namespace OpenFMB.Adapters.Configuration
                                 {
                                     _configurationManager.SuspendFileWatcher();
                                     var directoryInfo = Directory.CreateDirectory(path);
-                                    var directoryNode = new TreeNode(directoryInfo.Name);
-                                    directoryNode.Tag = new FolderNode()
+                                    var directoryNode = new TreeNode(directoryInfo.Name)
                                     {
-                                        Path = directoryInfo.FullName
+                                        Tag = new FolderNode()
+                                        {
+                                            Path = directoryInfo.FullName
+                                        }
                                     };
                                     directoryNode.ImageIndex = directoryNode.SelectedImageIndex = FolderIcon;
                                     selectedNode.Nodes.Add(directoryNode);
@@ -1012,7 +1003,7 @@ namespace OpenFMB.Adapters.Configuration
                                     _configurationManager.ResumeFileWatcher();
                                 }
                             }
-                        }                        
+                        }
                     }
                 }
             }
@@ -1046,14 +1037,8 @@ namespace OpenFMB.Adapters.Configuration
 
         private void NewConfigButton_Click(object sender, EventArgs e)
         {
-            var selectedNode = workspaceTree.SelectedNode;
-            if (selectedNode == null)
-            {
-                selectedNode = workspaceTree.Nodes[0];
-            }
-
-            var folder = selectedNode.Tag as FolderNode;
-            if (folder == null)
+            var selectedNode = workspaceTree.SelectedNode ?? workspaceTree.Nodes[0];
+            if (!(selectedNode.Tag is FolderNode folder))
             {
                 selectedNode = selectedNode.Parent;
                 folder = selectedNode.Tag as FolderNode;
@@ -1065,14 +1050,8 @@ namespace OpenFMB.Adapters.Configuration
 
         private void NewTemplateButton_Click(object sender, EventArgs e)
         {
-            var selectedNode = workspaceTree.SelectedNode;
-            if (selectedNode == null)
-            {
-                selectedNode = workspaceTree.Nodes[0];
-            }
-
-            var folder = selectedNode.Tag as FolderNode;
-            if (folder == null)
+            var selectedNode = workspaceTree.SelectedNode ?? workspaceTree.Nodes[0];
+            if (!(selectedNode.Tag is FolderNode folder))
             {
                 selectedNode = selectedNode.Parent;
                 folder = selectedNode.Tag as FolderNode;
@@ -1090,8 +1069,8 @@ namespace OpenFMB.Adapters.Configuration
                 CreateAdapterConfigurationForm form = new CreateAdapterConfigurationForm(folderPath, false);
                 if (form.ShowDialog() == DialogResult.OK)
                 {
-                    Editable editable = form.Output;
-                    HandleFileAddedToWorkspace(selectedNode, editable);                   
+                    IEditable editable = form.Output;
+                    HandleFileAddedToWorkspace(selectedNode, editable);
                 }
             }
             finally
@@ -1110,8 +1089,8 @@ namespace OpenFMB.Adapters.Configuration
                 CreateTemplateConfigurationForm form = new CreateTemplateConfigurationForm(folderPath, false);
                 if (form.ShowDialog() == DialogResult.OK)
                 {
-                    Editable editable = form.Output;
-                    HandleFileAddedToWorkspace(selectedNode, editable);                    
+                    IEditable editable = form.Output;
+                    HandleFileAddedToWorkspace(selectedNode, editable);
                 }
             }
             finally
@@ -1121,14 +1100,14 @@ namespace OpenFMB.Adapters.Configuration
             }
         }
 
-        private void HandleFileAddedToWorkspace(TreeNode selectedNode, Editable editable)
-        {            
+        private void HandleFileAddedToWorkspace(TreeNode selectedNode, IEditable editable)
+        {
             var directory = Path.GetDirectoryName(editable.FullPath);
             try
             {
                 workspaceTree.BeginUpdate();
-                var parent = selectedNode.Parent;               
-                              
+                var parent = selectedNode.Parent;
+
                 var rootDirectoryInfo = new DirectoryInfo(directory);
                 var node = CreateDirectoryNode(rootDirectoryInfo);
                 if (parent != null)
@@ -1186,12 +1165,11 @@ namespace OpenFMB.Adapters.Configuration
         }
 
         private void OnEditFileRequested(object sender, EventArgs e)
-        {            
-            var control = sender as FileInfoControl;
-            if (control != null)
+        {
+            if (sender is FileInfoControl control)
             {
                 if (control.DataNode is FileNode)
-                {                    
+                {
                     HandleOnEditFileRequested(control.DataNode as FileNode);
                 }
             }
@@ -1262,7 +1240,7 @@ namespace OpenFMB.Adapters.Configuration
                     {
                         HandleActiveConfigFileChanged(e);
                     }
-                }               
+                }
             }
             LoadWorkspaceTree();
         }
@@ -1282,7 +1260,7 @@ namespace OpenFMB.Adapters.Configuration
                     {
                         _configurationManager.UnloadConfiguration();
                         adapterTreeView.Nodes.Clear();
-                        
+
                         activeEditorPanel.Visible = false;
 
                         placeHolder.Controls.Clear();
@@ -1301,7 +1279,7 @@ namespace OpenFMB.Adapters.Configuration
                     }
                 }
             }));
-        }        
+        }
 
         private void FileSystemWatcher_Created(object sender, FileSystemEventArgs e)
         {
@@ -1309,7 +1287,7 @@ namespace OpenFMB.Adapters.Configuration
         }
 
         private void FileSystemWatcher_DeletedOrRenamed(object sender, FileSystemEventArgs e)
-        {            
+        {
             if (_configurationManager.ActiveConfiguration != null)
             {
                 if (!File.Exists(_configurationManager.ActiveConfiguration.FullPath))
@@ -1334,8 +1312,7 @@ namespace OpenFMB.Adapters.Configuration
 
         private void OpenContainingFolderToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var selectedNode = workspaceTree.SelectedNode?.Tag as DataNode;
-            if (selectedNode != null)
+            if (workspaceTree.SelectedNode?.Tag is DataNode selectedNode)
             {
                 try
                 {
@@ -1345,7 +1322,7 @@ namespace OpenFMB.Adapters.Configuration
                 {
                     _logger.Log(Level.Error, ex.Message, ex);
                 }
-            }            
+            }
         }
 
         private void ExpandAllToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1401,9 +1378,11 @@ namespace OpenFMB.Adapters.Configuration
         {
             _configurationManager.UnloadConfiguration();
             adapterTreeView.Nodes.Clear();
-            
+
             activeEditorPanel.Visible = false;
             activeEditorLink.Text = string.Empty;
+            activeFileTypeLabel.Text = string.Empty;
+            activeFileNameLabel.Text = string.Empty;
 
             placeHolder.Controls.Clear();
 
@@ -1440,7 +1419,7 @@ namespace OpenFMB.Adapters.Configuration
         private void WorkspaceTree_AfterSelect(object sender, TreeViewEventArgs e)
         {
             SelectWorkspaceTreeNode(e.Node);
-        }       
+        }
 
         private void WorkspaceTree_NodeClick(object sender, EventArgs e)
         {
@@ -1453,8 +1432,7 @@ namespace OpenFMB.Adapters.Configuration
 
         private void SelectWorkspaceTreeNode(TreeNode selectedNode)
         {
-            FileInfoControl c = FindControl(FileInfoControlKey) as FileInfoControl;
-            if (c == null)
+            if (!(FindControl(FileInfoControlKey) is FileInfoControl c))
             {
                 c = new FileInfoControl()
                 {
@@ -1478,7 +1456,7 @@ namespace OpenFMB.Adapters.Configuration
                 c.DataSource = file;
                 c.BringToFront();
             }
-        }        
+        }
 
         private void WorkspaceTree_KeyUp(object sender, KeyEventArgs e)
         {
@@ -1487,12 +1465,12 @@ namespace OpenFMB.Adapters.Configuration
                 HandleWorkspaceItemDeleting();
             }
             else if (e.KeyData == (Keys.Control | Keys.C))
-            {                
+            {
                 HandleWorkspaceNodeCopying();
                 e.Handled = e.SuppressKeyPress = true;
             }
-            else if (e.KeyData == (Keys.Control |  Keys.V))
-            {                
+            else if (e.KeyData == (Keys.Control | Keys.V))
+            {
                 HandleWorkspaceNodePasting();
                 e.Handled = e.SuppressKeyPress = true;
             }
@@ -1500,8 +1478,7 @@ namespace OpenFMB.Adapters.Configuration
 
         private void TabControl_SelectedIndexChanged(object sender, EventArgs e)
         {
-            FileInfoControl c = FindControl(FileInfoControlKey) as FileInfoControl;
-            if (c != null)
+            if (FindControl(FileInfoControlKey) is FileInfoControl c)
             {
                 if (tabControl.SelectedIndex == 0)
                 {
@@ -1538,10 +1515,7 @@ namespace OpenFMB.Adapters.Configuration
         private void RenameToolStripMenuItem_Click(object sender, EventArgs e)
         {
             TreeNode node = workspaceTree.SelectedNode;
-            if (node != null)
-            {
-                node.BeginEdit();
-            }
+            node?.BeginEdit();
         }
 
         private void WorkspaceTree_AfterLabelEdit(object sender, NodeLabelEditEventArgs e)
@@ -1598,7 +1572,7 @@ namespace OpenFMB.Adapters.Configuration
         {
             TreeNode node = workspaceTree.SelectedNode;
             if (node != null)
-            {               
+            {
                 _copiedDataNode = node.Tag as DataNode;
             }
         }
@@ -1620,7 +1594,7 @@ namespace OpenFMB.Adapters.Configuration
 
                 var tag = _copiedDataNode;
                 if (tag != null)
-                {                    
+                {
                     if (tag is FolderNode)
                     {
                         string name = Path.GetFileName(tag.Path);
@@ -1649,7 +1623,7 @@ namespace OpenFMB.Adapters.Configuration
         private void PasteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             HandleWorkspaceNodePasting();
-        }        
+        }
     }
 
     [Serializable]

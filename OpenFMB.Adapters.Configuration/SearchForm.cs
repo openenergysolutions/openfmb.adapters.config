@@ -3,7 +3,6 @@
 // SPDX-License-Identifier: Apache-2.0
 
 using OpenFMB.Adapters.Core;
-using OpenFMB.Adapters.Core.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,7 +12,6 @@ namespace OpenFMB.Adapters.Configuration
 {
     public partial class SearchForm : Form
     {
-        private readonly Profile _profile;
         private readonly List<Topic> _topics;
 
         public Topic SelectedTopic
@@ -26,9 +24,8 @@ namespace OpenFMB.Adapters.Configuration
             InitializeComponent();
         }
 
-        public SearchForm(Profile profile, List<Topic> topics) : this()
+        public SearchForm(List<Topic> topics) : this()
         {
-            _profile = profile;
             _topics = topics;
             topicBindingSource.DataSource = new BindingList<Topic>(_topics);
         }

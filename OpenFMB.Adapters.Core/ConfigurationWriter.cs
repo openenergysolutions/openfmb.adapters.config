@@ -28,7 +28,7 @@ namespace OpenFMB.Adapters.Core
         }
 
         public List<string> WriteGooseConfigurationFiles(List<GseControlSelection> selections, string directory)
-        {            
+        {
             return null;
         }
     }

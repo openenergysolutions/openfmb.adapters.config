@@ -17,19 +17,26 @@ namespace OpenFMB.Adapters.Core.Models.Schemas
 {
     public static class SchemaManager
     {
-        private static readonly string AppName = "OpenFMB Adapter Configuration";
         private static readonly string SchemaDirectory = "schemas";
         private static string DefaultSchemaDirectory;
 
-        private static readonly ILogger _logger = MasterLogger.Instance;    
+        private static readonly ILogger _logger = MasterLogger.Instance;
 
         private static readonly Dictionary<string, Schema> _schema = new Dictionary<string, Schema>();
 
         private static readonly Dictionary<string, string> _resources = new Dictionary<string, string>();
 
-        public static string DefaultVersion { get; private set; } = "2.0";
+        public static string DefaultEdition { get; set; } = "2.0";
+        public static string LatestEdition
+        {
+            get
+            {
+                return SupportEditions.Last();
+            }
+        }
+        public static string[] SupportEditions { get; } = new string[] { "2.0", "2.1" };
 
-        public static void Init(string version = null)
+        public static void Init(string defaultEdition)
         {
             _logger.Log(Level.Info, "Initialize schema manager...");
             var appDataDir = FileHelper.GetAppDataFolder();
@@ -38,27 +45,28 @@ namespace OpenFMB.Adapters.Core.Models.Schemas
 
             DefaultSchemaDirectory = Path.Combine(appDataDir, SchemaDirectory);
 
-            if (!string.IsNullOrWhiteSpace(version))
+            _logger.Log(Level.Info, $"Checking schema directories '{DefaultSchemaDirectory}'...");
+
+            if (!string.IsNullOrWhiteSpace(defaultEdition))
             {
-                DefaultVersion = version;
+                DefaultEdition = defaultEdition;
             }
-
-            Directory.CreateDirectory(Path.Combine(DefaultSchemaDirectory, DefaultVersion));
-
-            var versions = Directory.GetDirectories(DefaultSchemaDirectory);
 
             var assembly = Assembly.GetAssembly(typeof(SchemaManager));
             var adapterConfig = new AdapterConfiguration();
 
-            foreach(var v in versions)
+            foreach (var ver in SupportEditions)
             {
+                Directory.CreateDirectory(Path.Combine(DefaultSchemaDirectory, ver));
+                var v = Path.Combine(DefaultSchemaDirectory, ver);
                 Schema sm = new Schema(v);
 
-                _schema[sm.Version] = sm;
+                _schema[sm.Edition] = sm;
 
                 foreach (var p in adapterConfig.Plugins.Plugins)
                 {
-                    var resourceName = $"{typeof(SchemaManager).Namespace}.{p.Name}.json";
+                    // version 2.0 -> v2_0
+                    var resourceName = $"{typeof(SchemaManager).Namespace}.v{Path.GetFileName(v).Replace('.', '_')}.{p.Name}.json";
 
                     var local = Path.Combine(v, $"{p.Name}.json");
 
@@ -66,26 +74,22 @@ namespace OpenFMB.Adapters.Core.Models.Schemas
                     {
                         if (!File.Exists(local))
                         {
-                            if (sm.Version.Equals(DefaultVersion, StringComparison.InvariantCultureIgnoreCase))
+                            using (Stream stream = assembly.GetManifestResourceStream(resourceName))
                             {
-                                using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+                                if (stream != null)
                                 {
-                                    if (stream != null)
-                                    {                                        
-                                        using (StreamReader reader = new StreamReader(stream))
-                                        {
-                                            var template = reader.ReadToEnd();
-                                            File.WriteAllText(local, template);
-                                        }
+                                    using (StreamReader reader = new StreamReader(stream))
+                                    {
+                                        var template = reader.ReadToEnd();
+                                        File.WriteAllText(local, template);
                                     }
                                 }
                             }
-                            
                         }
 
                         if (File.Exists(local))
                         {
-                            _logger.Log(Level.Info, $"Loading schema for {p.Name}");
+                            _logger.Log(Level.Info, $"Loading schema for {p.Name} (v{ver})");
 
                             using (StreamReader reader = new StreamReader(local))
                             {
@@ -96,6 +100,10 @@ namespace OpenFMB.Adapters.Core.Models.Schemas
                                 sm.AddSchema(p.Name, schema);
                             }
                         }
+                        else
+                        {
+                            _logger.Log(Level.Info, $"Schema for {p.Name} (v{ver}) not supported");
+                        }
                     }
                     catch (Exception ex)
                     {
@@ -103,49 +111,61 @@ namespace OpenFMB.Adapters.Core.Models.Schemas
                     }
                 }
             }
-
-            ParseOpenFMBDocument("OpenFMB.Models.xml");
+            var xmlDocFile = Path.Combine(FileHelper.GetAppDataFolder(), "OpenFMB.Models.xml");
+            ParseOpenFMBDocument(xmlDocFile);
         }
 
-        public static JSchema GetSchemaForPlugin(string pluginName, string version = null)
+        public static bool IsLatestEdition(string edition)
         {
-            Schema schema;
-            if (string.IsNullOrWhiteSpace(version))
+            try
             {
-                version = DefaultVersion;
+                var v1 = new Version(edition);
+                var v2 = new Version(LatestEdition);
+
+                return v2.CompareTo(v1) > 0;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public static JSchema GetSchemaForPlugin(string pluginName, string edition)
+        {
+            if (string.IsNullOrWhiteSpace(edition))
+            {
+                edition = DefaultEdition;
             }
 
-            if (_schema.TryGetValue(version, out schema))
+            if (_schema.TryGetValue(edition, out Schema schema))
             {
                 return schema.GetSchemaForPlugin(pluginName);
             }
             return null;
         }
 
-        public static JSchema GetSchemaForProfile(string pluginName, string profileName, string version = null)
+        public static JSchema GetSchemaForProfile(string pluginName, string profileName, string edition)
         {
-            Schema schema;
-            if (string.IsNullOrWhiteSpace(version))
+            if (string.IsNullOrWhiteSpace(edition))
             {
-                version = DefaultVersion;
+                edition = DefaultEdition;
             }
 
-            if (_schema.TryGetValue(version, out schema))
+            if (_schema.TryGetValue(edition, out Schema schema))
             {
                 return schema.GetSchemaForProfile(pluginName, profileName);
             }
             return null;
         }
 
-        public static Dictionary<string, List<Node>> GetSchemaDictionary(string plugInName, string profileName, string version = null)
+        public static Dictionary<string, List<Node>> GetSchemaDictionary(string plugInName, string profileName, string edition)
         {
-            Schema schema;
-            if (string.IsNullOrWhiteSpace(version))
+            if (string.IsNullOrWhiteSpace(edition))
             {
-                version = DefaultVersion;
+                edition = DefaultEdition;
             }
 
-            if (_schema.TryGetValue(version, out schema))
+            if (_schema.TryGetValue(edition, out Schema schema))
             {
                 return schema.GetSchemaDictionary(plugInName, profileName);
             }
@@ -182,7 +202,7 @@ namespace OpenFMB.Adapters.Core.Models.Schemas
                     if (!summary.StartsWith("MISSING DOCUMENTATION")) // ignore missing documentation
                     {
                         _resources[tag.ToLower()] = summary;
-                    }                    
+                    }
                 }
             }
             catch (Exception ex)
@@ -193,8 +213,8 @@ namespace OpenFMB.Adapters.Core.Models.Schemas
 
         public static string GetDescription(string tag)
         {
-            string desc;
-            if (_resources.TryGetValue(tag.ToLower(), out desc)) {
+            if (_resources.TryGetValue(tag.ToLower(), out string desc))
+            {
                 return desc;
             }
             return "No description";
@@ -203,7 +223,7 @@ namespace OpenFMB.Adapters.Core.Models.Schemas
 
     public class Schema
     {
-        public string Version { get; private set; }
+        public string Edition { get; private set; }
 
         public string Directory { get; private set; }
 
@@ -214,7 +234,7 @@ namespace OpenFMB.Adapters.Core.Models.Schemas
         public Schema(string directory)
         {
             Directory = directory;
-            Version = Path.GetFileName(directory);
+            Edition = Path.GetFileName(directory);
         }
 
         internal void AddSchema(string pluginName, JSchema schema)
@@ -224,8 +244,7 @@ namespace OpenFMB.Adapters.Core.Models.Schemas
 
         public JSchema GetSchemaForPlugin(string pluginName)
         {
-            JSchema schema;
-            if (_schemas.TryGetValue(pluginName, out schema))
+            if (_schemas.TryGetValue(pluginName, out JSchema schema))
             {
                 return schema;
             }
@@ -255,15 +274,16 @@ namespace OpenFMB.Adapters.Core.Models.Schemas
 
         public Dictionary<string, List<Node>> GetSchemaDictionary(string plugInName, string profileName)
         {
-            Dictionary<string, List<Node>> dict;
             string key = $"{plugInName}:{profileName}";
-            if (!_schemaNodesDictionary.TryGetValue(key, out dict))
+            if (!_schemaNodesDictionary.TryGetValue(key, out Dictionary<string, List<Node>> dict))
             {
                 dict = new Dictionary<string, List<Node>>();
                 _schemaNodesDictionary[key] = dict;
 
-                var node = new Node(profileName);
-                node.Schema = GetSchemaForProfile(plugInName, profileName);
+                var node = new Node(profileName)
+                {
+                    Schema = GetSchemaForProfile(plugInName, profileName)
+                };
                 JsonGenerator.LoadSchema(node.Schema, node);
 
                 var allNodes = node.Traverse();

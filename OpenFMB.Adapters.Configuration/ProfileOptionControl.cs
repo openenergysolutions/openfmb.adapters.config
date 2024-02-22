@@ -17,12 +17,12 @@ namespace OpenFMB.Adapters.Configuration
             hideTimeQuality.Checked = Settings.Default.HideTimeAndQuality;
             var list = Settings.Default.HideTagList.Split(',');
 
-            foreach(var s in list)
+            foreach (var s in list)
             {
                 dataGridView.Rows.Add(s);
             }
 
-            schemaVersionCombo.Items.AddRange(SchemaManager.GetSchemaVersions().ToArray());
+            schemaVersionCombo.Items.AddRange(SchemaManager.SupportEditions);
 
             var v = Settings.Default.DefaultSchemaVersion;
             schemaVersionCombo.SelectedItem = v;
@@ -32,11 +32,11 @@ namespace OpenFMB.Adapters.Configuration
         {
             Settings.Default.HideTimeAndQuality = hideTimeQuality.Checked;
 
-            Settings.Default.DefaultSchemaVersion = schemaVersionCombo.SelectedItem as string;
+            Settings.Default.DefaultSchemaVersion = SchemaManager.DefaultEdition = schemaVersionCombo.SelectedItem as string;
 
             List<string> list = new List<string>();
 
-            foreach(DataGridViewRow row in dataGridView.Rows)
+            foreach (DataGridViewRow row in dataGridView.Rows)
             {
                 if (!row.IsNewRow)
                 {

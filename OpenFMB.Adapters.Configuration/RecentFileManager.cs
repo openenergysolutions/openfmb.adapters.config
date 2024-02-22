@@ -54,10 +54,7 @@ namespace OpenFMB.Adapters.Configuration
             Settings.Default.RecentFiles.AddRange(list.ToArray());
             Settings.Default.Save();
 
-            if (OnRecentFileChanged != null)
-            {
-                OnRecentFileChanged(filePath, EventArgs.Empty);
-            }
+            OnRecentFileChanged?.Invoke(filePath, EventArgs.Empty);
         }
 
         public static void RemoveFile(string filePath)
@@ -76,10 +73,7 @@ namespace OpenFMB.Adapters.Configuration
             Settings.Default.RecentFiles.AddRange(list.ToArray());
             Settings.Default.Save();
 
-            if (OnRecentFileChanged != null)
-            {
-                OnRecentFileChanged(filePath, EventArgs.Empty);
-            }
+            OnRecentFileChanged?.Invoke(filePath, EventArgs.Empty);
         }
 
         public static string TruncateFile(this string str, int maxLength = 50, char delimiter = '\\')
@@ -91,7 +85,7 @@ namespace OpenFMB.Adapters.Configuration
                 return str;
             }
 
-            string final = str;
+            string final;
             List<string> parts;
 
             int loops = 0;

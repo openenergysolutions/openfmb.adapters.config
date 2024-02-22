@@ -7,10 +7,10 @@ using System.Windows.Forms;
 namespace OpenFMB.Adapters.Configuration
 {
     public class FlatButton : Button
-    {        
+    {
         protected override void OnMouseMove(MouseEventArgs e)
         {
-            Cursor = Cursors.Hand;            
+            Cursor = Cursors.Hand;
             base.OnMouseMove(e);
         }
     }

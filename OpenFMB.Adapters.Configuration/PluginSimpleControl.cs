@@ -38,7 +38,7 @@ namespace OpenFMB.Adapters.Configuration
             {
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(linkLabel.Text));
             };
-        }        
+        }
 
         private void LinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {

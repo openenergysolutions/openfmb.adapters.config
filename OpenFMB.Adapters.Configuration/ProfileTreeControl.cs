@@ -16,19 +16,21 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Text;
 using System.Windows.Forms;
 
 namespace OpenFMB.Adapters.Configuration
 {
     public partial class ProfileTreeControl : UserControl, INotifyPropertyChanged
     {
-        private ILogger _logger = MasterLogger.Instance;
+        private readonly ILogger _logger = MasterLogger.Instance;
         private Profile _profile;
         private readonly List<string> _hideTagList = new List<string>();
-        private bool _hideTimeAndQuality = true;
+        private readonly bool _hideTimeAndQuality;
 
-        private Node _selectedNode;       
+        private Node _selectedNode;
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -66,9 +68,9 @@ namespace OpenFMB.Adapters.Configuration
 
         public ProfileTreeControl()
         {
-            InitializeComponent();            
+            InitializeComponent();
             SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
-            
+
             flowLayoutPanel.DoubleBuffered(true);
             searchTextBox.DoubleBuffered(true);
             navTreeSearch.DoubleBuffered(true);
@@ -108,7 +110,7 @@ namespace OpenFMB.Adapters.Configuration
 
         private void SetDeviceMRIDHeader()
         {
-            deviceMridLabel.Text =  $"mRID: {_profile.GetDeviceMRID()}";
+            deviceMridLabel.Text = $"mRID: {_profile.GetDeviceMRID()}";
         }
 
         private void LoadMappings(Profile profile)
@@ -120,12 +122,14 @@ namespace OpenFMB.Adapters.Configuration
 
         private LinkLabel CreateLinkLabel(Node node)
         {
-            LinkLabel l = new LinkLabel();
-            l.AutoSize = true;
-            l.LinkColor = Color.Maroon;
-            l.LinkBehavior = LinkBehavior.NeverUnderline;
-            l.ForeColor = Color.DarkGray;
-            l.Text = node.Name + "  ::";
+            LinkLabel l = new LinkLabel
+            {
+                AutoSize = true,
+                LinkColor = Color.Maroon,
+                LinkBehavior = LinkBehavior.NeverUnderline,
+                ForeColor = Color.DarkGray,
+                Text = node.Name + "  ::"
+            };
             l.Click += (sender, e) =>
             {
                 ShowMappingNodes(node);
@@ -171,8 +175,7 @@ namespace OpenFMB.Adapters.Configuration
             }
             else
             {
-                var parent = node?.Parent as DataTreeNode;
-                if (parent != null)
+                if (node?.Parent is DataTreeNode parent)
                 {
                     ShowMappingNodes(parent.Data);
                     // Select
@@ -183,7 +186,7 @@ namespace OpenFMB.Adapters.Configuration
         private void ShowMappingNodes(Node parentNode)
         {
             if (parentNode != null)
-            {                
+            {
                 _selectedNode = parentNode;
 
                 addNewElementButton.Enabled = !parentNode.IsRepeatable && parentNode.Schema?.Type == JSchemaType.Array;
@@ -224,9 +227,11 @@ namespace OpenFMB.Adapters.Configuration
                                 if (node.Schema == null)
                                 {
                                     // Error node
-                                    var mapping = new NavigatorStringNode(node);
-                                    // profile name is not allowed to modify.  Make it readonly
-                                    mapping.ReadOnly = true;
+                                    var mapping = new NavigatorStringNode(node)
+                                    {
+                                        // profile name is not allowed to modify.  Make it readonly
+                                        ReadOnly = true
+                                    };
                                     flowLayoutPanel.Controls.Add(mapping);
                                 }
                                 else
@@ -282,9 +287,11 @@ namespace OpenFMB.Adapters.Configuration
                                                 {
                                                     if (node.Name == "name" && IsProfileName(parentNode.Name))
                                                     {
-                                                        var mapping = new NavigatorStringNode(node, "Name of OpenFMB profile");
-                                                        // profile name is not allowed to modify.  Make it readonly
-                                                        mapping.ReadOnly = true;
+                                                        var mapping = new NavigatorStringNode(node, "Name of OpenFMB profile")
+                                                        {
+                                                            // profile name is not allowed to modify.  Make it readonly
+                                                            ReadOnly = true
+                                                        };
                                                         mapping.PropertyChanged += NavigatorNode_PropertyChanged;
                                                         flowLayoutPanel.Controls.Add(mapping);
                                                     }
@@ -331,11 +338,13 @@ namespace OpenFMB.Adapters.Configuration
         }
 
         private void BuildBreadScrum(Node parentNode)
-        {            
+        {
             breadScrumFlow.Controls.Clear();
             Node temp = parentNode;
-            List<LinkLabel> labels = new List<LinkLabel>();
-            labels.Add(CreateLinkLabel(parentNode));
+            List<LinkLabel> labels = new List<LinkLabel>
+            {
+                CreateLinkLabel(parentNode)
+            };
             while (true)
             {
                 if (temp.Parent != null)
@@ -350,7 +359,7 @@ namespace OpenFMB.Adapters.Configuration
             }
             labels.Reverse();
             breadScrumFlow.Controls.AddRange(labels.ToArray());
-        }        
+        }
 
         private void MappingOnDrillDown(object sender, EventArgs e)
         {
@@ -359,7 +368,7 @@ namespace OpenFMB.Adapters.Configuration
         }
 
         private void DrillDown(NavigatorNode mappingNode)
-        {            
+        {
             ShowMappingNodes(mappingNode.Data);
         }
 
@@ -371,7 +380,8 @@ namespace OpenFMB.Adapters.Configuration
 
         private void ValidateNode(Node node)
         {
-            var message = _profile.ErrorMessages.FirstOrDefault(x => x.NodePath != "" && node.Path.EndsWith(x.NodePath, StringComparison.InvariantCultureIgnoreCase));
+            string nodePath = node.Path.EndsWith("]") ? node.Path : Utils.RemoveDotBeforeArray(node.Path);
+            var message = _profile.ErrorMessages.FirstOrDefault(x => x.NodePath != "" && nodePath.EndsWith(x.NodePath, StringComparison.InvariantCultureIgnoreCase));
             if (message != null)
             {
                 node.Error = message.Message;
@@ -384,17 +394,19 @@ namespace OpenFMB.Adapters.Configuration
 
         private void AddNode(Profile profile)
         {
-            Node root = new Node(profile.ProfileName);
-            root.Tag = profile.Token;
-            root.Schema = profile.Schema;
+            Node root = new Node(profile.ProfileName)
+            {
+                Tag = profile.Token,
+                Schema = profile.Schema
+            };
 
             profile.NavigatorRoot = root;
 
-            DataTreeNode treeRoot = new DataTreeNode(root);            
+            DataTreeNode treeRoot = new DataTreeNode(root);
             navTreeView.Nodes.Add(treeRoot);
 
             AddNode(profile.Token, root, treeRoot);
-        }        
+        }
 
         private void AddNode(JToken token, Node nodeParent, DataTreeNode treeParent)
         {
@@ -406,9 +418,9 @@ namespace OpenFMB.Adapters.Configuration
             if (token is JValue)
             {
                 if (nodeParent.Schema == null)
-                {                    
+                {
                     nodeParent.Schema = _profile.GetSchemaByPath(nodeParent, token.SchemaType())?.Schema;
-                }                
+                }
             }
             else if (token is JObject)
             {
@@ -417,15 +429,17 @@ namespace OpenFMB.Adapters.Configuration
                 {
                     if (CanDisplayNode(property.Name, nodeParent))
                     {
-                        var childNode = new Node(property.Name);
-                        childNode.Tag = property;
-                        childNode.Parent = nodeParent;
-                        nodeParent.Nodes.Add(childNode);                       
-                        childNode.Schema = _profile.GetSchemaByPath(childNode, property.Value.SchemaType())?.Schema;                        
+                        var childNode = new Node(property.Name)
+                        {
+                            Tag = property,
+                            Parent = nodeParent
+                        };
+                        nodeParent.Nodes.Add(childNode);
+                        childNode.Schema = _profile.GetSchemaByPath(childNode, property.Value.SchemaType())?.Schema;
 
                         ValidateNode(childNode);
 
-                        var treeNode = new DataTreeNode(childNode);                        
+                        var treeNode = new DataTreeNode(childNode);
                         treeParent.Nodes.Add(treeNode);
 
                         AddNode(property.Value, childNode, treeNode);
@@ -437,16 +451,18 @@ namespace OpenFMB.Adapters.Configuration
                 var array = token as JArray;
                 for (int i = 0; i < array.Count; i++)
                 {
-                    var childNode = new Node($"[{i}]");
-                    childNode.IsRepeatable = true;
-                    childNode.Tag = array[i];
-                    childNode.Parent = nodeParent;
+                    var childNode = new Node($"[{i}]")
+                    {
+                        IsRepeatable = true,
+                        Tag = array[i],
+                        Parent = nodeParent
+                    };
                     nodeParent.Nodes.Add(childNode);
-                    childNode.Schema = _profile.GetSchemaByPath(childNode, token.SchemaType())?.Schema;                   
+                    childNode.Schema = _profile.GetSchemaByPath(childNode, token.SchemaType())?.Schema;
 
                     ValidateNode(childNode);
 
-                    var treeNode = new DataTreeNode(childNode);                    
+                    var treeNode = new DataTreeNode(childNode);
                     treeParent.Nodes.Add(treeNode);
 
                     AddNode(array[i], childNode, treeNode);
@@ -456,16 +472,16 @@ namespace OpenFMB.Adapters.Configuration
             {
                 var property = token as JProperty;
 
-                foreach(JToken p in property)
+                foreach (JToken p in property)
                 {
-                    AddNode(p, nodeParent, treeParent);                    
+                    AddNode(p, nodeParent, treeParent);
                 }
             }
             else
             {
                 Debug.WriteLine(string.Format("{0} not implemented", token.Type));
             }
-        }        
+        }
 
         private bool CanDisplayNode(string name, Node parent)
         {
@@ -481,16 +497,6 @@ namespace OpenFMB.Adapters.Configuration
 
             return parent.Nodes.FirstOrDefault(x => x.Name == name) == null;
         }
-
-        private static void SetNodeError(TreeNode node, bool isError)
-        {
-            node.ForeColor = isError ? Color.Red : Color.Black;
-        }
-
-        private static void SetNodeDisabled(TreeNode node, bool enabled)
-        {
-            node.ForeColor = enabled ? Color.Black : Color.Gray;
-        }        
 
         private void NavigatorNode_PropertyChanged(object sender, EventArgs e)
         {
@@ -534,10 +540,12 @@ namespace OpenFMB.Adapters.Configuration
                     var array = navTag.Value as JArray;
                     for (int i = 0; i < array.Count; ++i)
                     {
-                        var childNode = new Node($"[{i}]");
-                        childNode.IsRepeatable = true;
-                        childNode.Tag = array[i];
-                        childNode.Parent = navNode;
+                        var childNode = new Node($"[{i}]")
+                        {
+                            IsRepeatable = true,
+                            Tag = array[i],
+                            Parent = navNode
+                        };
                         navNode.Nodes.Add(childNode);
                         childNode.Schema = navNode.Schema;
 
@@ -552,7 +560,7 @@ namespace OpenFMB.Adapters.Configuration
         }
 
         private void HandleNodePropertyChanged(Node data, string selectedValue)
-        {            
+        {
             if (data.HasEnums)
             {
                 // this is option from Enum 
@@ -618,14 +626,14 @@ namespace OpenFMB.Adapters.Configuration
                             {
                                 //val.Add(p.Name, p.Value);  
                                 ApplyValue(parentNode, val, p);
-                            }  
+                            }
                             else
                             {
                                 ResetValue(val, p);
                             }
-                        }                        
+                        }
 
-                        foreach(var n in parentNode.Nodes)
+                        foreach (var n in parentNode.Nodes)
                         {
                             parentNode.ReserveValue(n.Name, n.Value);
                         }
@@ -649,8 +657,8 @@ namespace OpenFMB.Adapters.Configuration
             // try to use value from previous settings
             var reserved = parentNode.GetReservedValue(prop.Name);
             if (reserved != null)
-            {                
-                 if (prop.Value.Type == JTokenType.Integer)
+            {
+                if (prop.Value.Type == JTokenType.Integer)
                 {
                     val.Add(prop.Name, new JValue(Convert.ToInt32(reserved)));
                 }
@@ -732,7 +740,7 @@ namespace OpenFMB.Adapters.Configuration
                 }
                 else // > 1
                 {
-                    SearchForm form = new SearchForm(_profile, topics);
+                    SearchForm form = new SearchForm(topics);
                     if (form.ShowDialog() == DialogResult.OK)
                     {
                         var topic = form.SelectedTopic;
@@ -767,37 +775,25 @@ namespace OpenFMB.Adapters.Configuration
         private void ExpandAllToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var selectedNode = navTreeView.SelectedNode;
-            if (selectedNode != null)
-            {
-                selectedNode.ExpandAll();
-            }
+            selectedNode?.ExpandAll();
         }
 
         private void ExpandToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var selectedNode = navTreeView.SelectedNode;
-            if (selectedNode != null)
-            {
-                selectedNode.Expand();
-            }
+            selectedNode?.Expand();
         }
 
         private void CollapseAllToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var selectedNode = navTreeView.SelectedNode;
-            if (selectedNode != null)
-            {
-                selectedNode.Collapse(false);
-            }
+            selectedNode?.Collapse(false);
         }
 
         private void CollapseToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var selectedNode = navTreeView.SelectedNode;
-            if (selectedNode != null)
-            {
-                selectedNode.Collapse(true);
-            }
+            selectedNode?.Collapse(true);
         }
 
         private void ShowAllMappedNodesToolStripMenuItem_Click(object sender, EventArgs e)
@@ -901,7 +897,7 @@ namespace OpenFMB.Adapters.Configuration
         {
             HandleNavTreeFilter();
         }
-        
+
         private void HandleNavTreeFilter()
         {
             if (navTreeView.Nodes.Count > 0)
@@ -959,8 +955,7 @@ namespace OpenFMB.Adapters.Configuration
         {
             if (_filterResults.Count > 0)
             {
-                var selected = navTreeView.SelectedNode as DataTreeNode;
-                if (selected != null)
+                if (navTreeView.SelectedNode is DataTreeNode selected)
                 {
                     int index = _filterResults.IndexOf(selected);
                     if (index >= 0)
@@ -982,8 +977,7 @@ namespace OpenFMB.Adapters.Configuration
 
         private void CopyPathToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var selected = navTreeView.SelectedNode as DataTreeNode;
-            if (selected != null)
+            if (navTreeView.SelectedNode is DataTreeNode selected)
             {
                 var path = selected.Data?.Path;
                 if (!string.IsNullOrWhiteSpace(path))
@@ -998,12 +992,12 @@ namespace OpenFMB.Adapters.Configuration
             if (_selectedNode != null)
             {
                 if (_selectedNode.Schema.Type == JSchemaType.Array)
-                {                    
+                {
                     var prop = _selectedNode.Tag as JProperty;
                     var array = prop.Value as JArray;
                     int i = -1;
 
-                    foreach(var n in _selectedNode.Nodes)
+                    foreach (var n in _selectedNode.Nodes)
                     {
                         var index = Convert.ToInt32(n.Name.TrimStart('[').TrimEnd(']'));
                         if (index > i)
@@ -1023,8 +1017,8 @@ namespace OpenFMB.Adapters.Configuration
                             cloning = true;
                         }
                     }
-                    
-                    JToken token = null;
+
+                    JToken token;
                     if (cloning == true)
                     {
                         token = array[0].DeepClone();
@@ -1038,10 +1032,12 @@ namespace OpenFMB.Adapters.Configuration
                     {
                         array.Add(token);
 
-                        var childNode = new Node($"[{i}]");
-                        childNode.IsRepeatable = true;
-                        childNode.Tag = token;
-                        childNode.Parent = _selectedNode;
+                        var childNode = new Node($"[{i}]")
+                        {
+                            IsRepeatable = true,
+                            Tag = token,
+                            Parent = _selectedNode
+                        };
                         _selectedNode.Nodes.Add(childNode);
                         childNode.Schema = _selectedNode.Schema;
 
@@ -1074,7 +1070,7 @@ namespace OpenFMB.Adapters.Configuration
                     navTreeView.SelectedNode = (parentNode.DataNode as DataTreeNode);
 
                     // rename index
-                    for(int i = 0; i < parentNode.Nodes.Count; ++i)
+                    for (int i = 0; i < parentNode.Nodes.Count; ++i)
                     {
                         parentNode.Nodes[i].Name = $"[{i}]";
                         (parentNode.Nodes[i].DataNode as DataTreeNode).Text = $"[{i}]";
@@ -1097,7 +1093,7 @@ namespace OpenFMB.Adapters.Configuration
 
                     Node parentNode = parentTreeNode.Data;
 
-                    SuggestedCorrectionForm form = new SuggestedCorrectionForm(selectedTreeNode.Data, _profile);
+                    SuggestedCorrectionForm form = new SuggestedCorrectionForm(selectedTreeNode.Data);
                     if (form.ShowDialog() == DialogResult.OK)
                     {
                         if (form.CorrectionType == CorrectionType.Replace)
@@ -1111,10 +1107,10 @@ namespace OpenFMB.Adapters.Configuration
                                 _profile.Validate();
 
                                 AddNode(parentNode.Tag as JToken, parentNode, parentTreeNode);
-                                ShowMappingNodes(parentNode);                                
+                                ShowMappingNodes(parentNode);
 
                                 if (!parentNode.IsValid)
-                                {                                    
+                                {
                                     ValidateNode(parentTreeNode);
                                 }
 
@@ -1127,7 +1123,7 @@ namespace OpenFMB.Adapters.Configuration
                             }
                         }
                     }
-                }                
+                }
             }
         }
 
@@ -1160,11 +1156,11 @@ namespace OpenFMB.Adapters.Configuration
                                         var selectedTreeNode = treeNode as DataTreeNode;
 
                                         Node parentNode = parentTreeNode.Data;
-                                        
+
                                         parentTreeNode.Nodes.Clear();
                                         parentNode.Nodes.Clear();
 
-                                        AddNode(parentNode.Tag as JToken, parentNode, parentTreeNode);                                        
+                                        AddNode(parentNode.Tag as JToken, parentNode, parentTreeNode);
                                     }
                                 }
                             }
@@ -1179,14 +1175,11 @@ namespace OpenFMB.Adapters.Configuration
 
                     // mag node for modbus
                     var errorNodes = _profile.GetAllNavigatorNodes(true).Where(x => (x.Name == "mag" || x.Name == "ang") && x.IsValid == false);
-                    foreach(var n in errorNodes)
+                    foreach (var n in errorNodes)
                     {
                         ValidateNode(n);
                         var treeNode = allTreeNodes.FirstOrDefault(x => x.Data == n);
-                        if (treeNode != null)
-                        {
-                            treeNode.Update();
-                        }
+                        treeNode?.Update();
                     }
                 }
                 finally
@@ -1203,11 +1196,11 @@ namespace OpenFMB.Adapters.Configuration
 
         private void NavTreeContextMenu_Opening(object sender, CancelEventArgs e)
         {
-            var selectedNode = navTreeView.SelectedNode as DataTreeNode;
             suggestedCorrectionToolStripMenuItem.Enabled = false;
             quickFixToolStripMenuItem.Visible = false;
             resetToolStripMenuItem.Enabled = false;
-            if (selectedNode != null)
+            generateTestFileToolStripMenuItem.Enabled = _profile.PluginName == PluginsSection.Dnp3Master;
+            if (navTreeView.SelectedNode is DataTreeNode selectedNode)
             {
                 if (selectedNode == navTreeView.Nodes[0]) // root
                 {
@@ -1236,8 +1229,7 @@ namespace OpenFMB.Adapters.Configuration
 
         private void ResetToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var selectedNode = navTreeView.SelectedNode as DataTreeNode;
-            if (selectedNode != null)
+            if (navTreeView.SelectedNode is DataTreeNode selectedNode)
             {
                 if (MessageBox.Show($"Node '{selectedNode.Text}' shall be reset to default mapping.{Environment.NewLine}Continue?", Program.AppName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
@@ -1262,7 +1254,7 @@ namespace OpenFMB.Adapters.Configuration
 
                                 _profile.Validate();
 
-                                ValidateNode(selectedNode);                                
+                                ValidateNode(selectedNode);
 
                                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(""));
                                 UpdateProfileDetails();
@@ -1297,7 +1289,7 @@ namespace OpenFMB.Adapters.Configuration
                     catch (Exception ex)
                     {
                         _logger.Log(Level.Debug, ex.Message, ex);
-                    }                    
+                    }
                 }
             }
         }
@@ -1317,8 +1309,7 @@ namespace OpenFMB.Adapters.Configuration
 
         private void ViewSchemaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var selectedNode = navTreeView.SelectedNode as DataTreeNode;
-            if (selectedNode != null)
+            if (navTreeView.SelectedNode is DataTreeNode selectedNode)
             {
                 var node = selectedNode.Data;
                 if (node.Schema != null)
@@ -1331,8 +1322,7 @@ namespace OpenFMB.Adapters.Configuration
 
         private void ShowError_Click(object sender, EventArgs e)
         {
-            var selectedNode = navTreeView.SelectedNode as DataTreeNode;
-            if (selectedNode != null)
+            if (navTreeView.SelectedNode is DataTreeNode selectedNode)
             {
                 var error = selectedNode.Data.Error;
                 if (string.IsNullOrWhiteSpace(error))
@@ -1349,15 +1339,14 @@ namespace OpenFMB.Adapters.Configuration
                 NodeErrorForm form = new NodeErrorForm(error);
                 form.ShowDialog();
             }
-            
+
         }
 
         private void CopyToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try
             {
-                var selectedNode = navTreeView.SelectedNode as DataTreeNode;
-                if (selectedNode != null)
+                if (navTreeView.SelectedNode is DataTreeNode selectedNode)
                 {
                     var token = selectedNode.Data.Tag as JToken;
 
@@ -1368,7 +1357,310 @@ namespace OpenFMB.Adapters.Configuration
             {
                 _logger.Log(Level.Debug, ex.Message, ex);
             }
-                 
-        }        
+
+        }
+
+        private void CopyMappedItemsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (navTreeView.Nodes.Count > 0)
+            {
+                var allNodes = (navTreeView.Nodes[0] as DataTreeNode).GetAllNodes();
+                var mappedNode = allNodes.Where(x => x.Data.Value == "mapped").ToList();
+                StringBuilder sb = new StringBuilder();
+                foreach (var node in mappedNode)
+                {
+                    // Go up to parent
+                    if (node.Parent is DataTreeNode parent)
+                    {
+                        sb.AppendLine(parent.FullPath);
+                    }
+                }
+                if (sb.Length > 0)
+                {
+                    Clipboard.SetText(sb.ToString());
+                }
+            }
+        }
+
+        private void GenerateTestFileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (navTreeView.Nodes.Count > 0)
+            {
+                saveFileDialog.FileName = $"{_profile.ProfileName}.csv";
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    Random random = new Random();
+                    var allNodes = (navTreeView.Nodes[0] as DataTreeNode).GetAllNodes();
+                    var mappedNode = allNodes.Where(x => x.Data.Value == "mapped").ToList();
+                    StringBuilder sb = new StringBuilder();
+
+                    ExtractCommonFields(sb, allNodes, random);
+
+                    foreach (var node in mappedNode)
+                    {
+                        // Go up to parent
+                        var parent = node.Parent as DataTreeNode;
+                        if (parent != null)
+                        {
+                            switch (_profile.PluginName)
+                            {
+                                case PluginsSection.Dnp3Master:
+                                    {
+                                        // source
+                                        if (!ProfileRegistry.IsControlProfile(_profile.ProfileName))
+                                        {
+                                            var line = ExtractDnp3ReadingStatus(random, node);
+                                            if (!string.IsNullOrWhiteSpace(line))
+                                            {
+                                                sb.AppendLine(line);
+                                            }
+                                        }
+                                        else
+                                        {
+                                            var line = ExtractDnp3Control(random, node);
+                                            if (!string.IsNullOrWhiteSpace(line))
+                                            {
+                                                sb.AppendLine(line);
+                                            }
+                                        }
+                                    }
+                                    break;
+                                case PluginsSection.ModbusMaster:
+                                    break;
+                                default:
+                                    break;
+
+                            }
+                        }
+                    }
+                
+                    File.WriteAllText(saveFileDialog.FileName, sb.ToString());
+                }
+            }
+        }
+
+        private void ExtractCommonFields(StringBuilder sb, IEnumerable<DataTreeNode> allNodes, Random random)
+        {            
+            var tag = ProfileRegistry.GetDeviceTagForProfile(_profile.ProfileName);
+            string[] keys = new string[]
+            {
+                ".messageInfo.identifiedObject.mRID.value",
+                ".messageInfo.messageTimeStamp",
+                $".{tag}.conductingEquipment.mRID",
+                $".{tag}.applicationSystem.mRID",
+                ".requesterCircuitSegmentService.mRID"
+            };
+
+            switch (_profile.PluginName)
+            {
+                case PluginsSection.Dnp3Master:
+                    {
+                        sb.AppendLine("Path,Index,Point Type,Expected Value");
+
+                        foreach (var key in keys)
+                        {
+                            var node = allNodes.FirstOrDefault(x => x.FullPath.EndsWith(key));
+                            if (node != null)
+                            {
+                                sb.AppendLine($"{node.FullPath},,,");
+                            }
+                        }
+
+                        var schedules = allNodes.Where(x => x.FullPath.EndsWith(".schpts")).ToList();
+
+                        for (int i = 0; i < schedules.Count; ++i)
+                        {
+                            var p = schedules[i].Data;
+                            var a = p?.Nodes.FirstOrDefault(x => x.Name == $"[{i}]");
+
+                            var scheduleParamterTypes = a?.Nodes.Where(x => x.Name == "scheduleParameter").ToList();
+
+                            for (int j = 0; j < scheduleParamterTypes?.Count; ++j)
+                            {
+                                var scheduleParameterNode = scheduleParamterTypes[i];
+                                var t = scheduleParameterNode?.Nodes.FirstOrDefault(x => x.Name == $"[{j}]");
+
+                                var oneOfs = t.Schema.Items.FirstOrDefault()?.OneOf;                                
+
+                                var typ = t?.Nodes.FirstOrDefault(x => x.Name == "scheduleParameterType")?.Value;
+
+                                var scheduleParameterTypeValue = string.Empty;
+
+                                foreach (var s in oneOfs)
+                                {
+                                    var propVal = s.Properties.FirstOrDefault(x => x.Key == "scheduleParameterType");
+
+                                    if (propVal.Value != null)
+                                    {
+                                        if (propVal.Value.Const?.ToString() == typ)
+                                        {
+                                            scheduleParameterTypeValue = oneOfs.IndexOf(s).ToString();
+                                            break;
+                                        }
+                                    }                                    
+                                }
+
+                                var index = t?.Nodes.FirstOrDefault(x => x.Name == "outputs")
+                                    .Nodes.FirstOrDefault()?
+                                    .Nodes.FirstOrDefault(x => x.Name == "index")?.Value;
+                                if (index != null)
+                                {
+                                    sb.AppendLine($"{Utils.RemoveDotBeforeArray(a.Path)}.startTime.seconds,,,");
+                                    sb.AppendLine($"{Utils.RemoveDotBeforeArray(t.Path)}.scheduleParameterType,,,{scheduleParameterTypeValue}");
+                                    sb.AppendLine($"{Utils.RemoveDotBeforeArray(t.Path)}.value,{index},analog,{random.Next(0, 1000)}");
+                                }
+                            }
+                        }
+                    }
+                    break;
+                case PluginsSection.ModbusMaster:
+                    {
+                        sb.AppendLine("Path,Low Index,High Index,Data Type,Expected Value");
+                        foreach (var key in keys)
+                        {
+                            var node = allNodes.FirstOrDefault(x => x.FullPath.EndsWith(key));
+                            if (node != null)
+                            {
+                                sb.AppendLine($"{node.FullPath},,,,");
+                            }
+                        }
+                    }
+                    break;
+                default:
+                    break;
+
+            }            
+        }
+
+        private string ExtractDnp3ReadingStatus (Random random, DataTreeNode mappedNode)
+        { 
+            var parent = mappedNode.Parent as DataTreeNode;
+            var node = parent.Data;
+
+            // Path,Indx,Point Type, Expected Value
+            string type = "";
+            string index = "";
+            string value = "";
+
+            var sourceTypeNode = node.Nodes.FirstOrDefault(x => x.Name == "source-type");
+            if (sourceTypeNode != null)
+            {
+                type = sourceTypeNode.Value;
+            }
+
+            var indexNode = node.Nodes.FirstOrDefault(x => x.Name == "index");
+            if (indexNode != null)
+            {
+                index = indexNode.Value;
+            }
+
+            if (type == "none")
+            {
+                return string.Empty;
+            }
+            else if (type == "binary")
+            {
+                value = (random.Next() % 2) == 0 ? "0" : "1";
+            }
+            else if (type == "analog" || type == "counter")
+            {
+                var fieldType = mappedNode.Text.Replace(" ", "").Replace(":mapped", "").Trim();
+                if (fieldType == "enum-field-type")
+                {
+                    // maps
+                    var mapping = node.Nodes.FirstOrDefault(x => x.Name == "mapping");
+
+                    if (mapping != null && mapping.Nodes.Count > 0)
+                    {
+                        var n = mapping.Nodes[random.Next() % mapping.Nodes.Count];
+                        var v = n.Nodes.FirstOrDefault(x => x.Name == "value");
+                        if (v != null)
+                        {
+                            value = v.Value;
+                        }
+                    }
+                }
+                else
+                {
+                    value = random.Next(0, 100).ToString();
+                }
+            }             
+
+            return $"{Utils.RemoveDotBeforeArray(node.Path)},{index},{type},{value}";
+        }
+
+        private string ExtractDnp3Control(Random random, DataTreeNode mappedNode)
+        {
+            var parent = mappedNode.Parent as DataTreeNode;
+            var parentNode = parent.Data;
+
+            // Path,Indx,Point Type, Expected Value
+            string type = "";
+            string index = "";
+            string value = "";
+
+            var fieldType = mappedNode.Text.Replace(" ", "").Replace(":mapped", "").Trim();
+            if (fieldType.StartsWith("bool"))
+            {
+                type = "binary";
+                var child = parentNode.Nodes.FirstOrDefault(x => x.Name == "when-true");
+                if (child == null)
+                {
+                    child = parentNode.Nodes.FirstOrDefault(x => x.Name == "when-false");                   
+                }
+                index = child?.Nodes.FirstOrDefault()?.Nodes.FirstOrDefault(x => x.Name == "index")?.Value;
+                value = (random.Next() % 2) == 0 ? "0" : "1";
+            }
+            else
+            {
+                type = "analog";
+
+                if (fieldType == "enum-field-type")
+                {
+                    // maps
+                    var mapping = parentNode.Nodes.FirstOrDefault(x => x.Name == "mapping");
+
+                    if (mapping != null && mapping.Nodes.Count > 0)
+                    {
+                        var n = mapping.Nodes[random.Next() % mapping.Nodes.Count];
+                        var v = n.Nodes.FirstOrDefault(x => x.Name == "name");
+                        if (v != null)
+                        {
+                            // Translate enum name to int                           
+
+                            for (int i = 0; i < v.Schema.Enum.Count; ++i)
+                            {
+                                var jval = v.Schema.Enum[i] as JValue;
+                                if (jval.Value.ToString() == v.Value)
+                                {
+                                    value = i.ToString();
+                                    break;
+                                }
+                            }
+
+                            var outputs = n.Nodes.FirstOrDefault(x => x.Name == "outputs");
+                            if (outputs != null)
+                            {
+                                var child = outputs.Nodes.FirstOrDefault()?.Nodes.FirstOrDefault(x => x.Name == "index");
+                                index = child?.Value;
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    value = random.Next(0, 100).ToString();
+
+                    var outputs = parentNode.Nodes.FirstOrDefault(x => x.Name == "outputs");
+                    if (outputs != null)
+                    {
+                        var child = outputs.Nodes.FirstOrDefault()?.Nodes.FirstOrDefault(x => x.Name == "index");
+                        index = child?.Value;
+                    }
+                }
+            }
+
+            return $"{Utils.RemoveDotBeforeArray(parentNode.Path)},{index},{type},{value}";
+        }    
     }
 }

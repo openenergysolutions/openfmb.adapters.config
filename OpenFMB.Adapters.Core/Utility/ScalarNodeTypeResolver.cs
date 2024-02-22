@@ -15,9 +15,8 @@ namespace OpenFMB.Adapters.Core.Utility
         {
             if (currentType == typeof(object))
             {
-                var scalar = nodeEvent as Scalar;
-                if (scalar != null)
-                {     
+                if (nodeEvent is Scalar scalar)
+                {
                     if (scalar.Value.StartsWith("0x", StringComparison.OrdinalIgnoreCase))
                     {
                         currentType = typeof(int);

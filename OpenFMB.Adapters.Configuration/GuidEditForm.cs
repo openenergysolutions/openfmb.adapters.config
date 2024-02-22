@@ -16,7 +16,7 @@ namespace OpenFMB.Adapters.Configuration
 
         public GuidEditForm()
         {
-            InitializeComponent();           
+            InitializeComponent();
         }
 
         public GuidEditForm(string s) : this()
@@ -26,8 +26,7 @@ namespace OpenFMB.Adapters.Configuration
 
         private void OkButton_Click(object sender, EventArgs e)
         {
-            Guid guid;
-            if (Guid.TryParse(idTextBox.Text.Trim(), out guid))
+            if (Guid.TryParse(idTextBox.Text.Trim(), out Guid guid))
             {
                 Output = guid.ToString().ToLower();
                 DialogResult = DialogResult.OK;

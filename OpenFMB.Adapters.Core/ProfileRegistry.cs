@@ -34,7 +34,9 @@ namespace OpenFMB.Adapters.Core
                         || t.Name.EndsWith("ControlProfile")
                         || t.Name.EndsWith("ScheduleProfile")
                         || t.Name.EndsWith("AvailabilityProfile")
-                        || t.Name.EndsWith("RequestProfile"))
+                        || t.Name.EndsWith("RequestProfile")
+                        || t.Name.EndsWith("CapabilityProfile")
+                        || t.Name.EndsWith("CapabilityOverrideProfile"))
                     {
                         var prop = t.GetProperty("Descriptor");
                         if (prop != null)
@@ -42,8 +44,7 @@ namespace OpenFMB.Adapters.Core
                             var descriptor = prop.GetValue(null) as MessageDescriptor;
                             Profiles.Add(t.Name, descriptor);
                             var module = descriptor.FullName.Split('.')[0];
-                            string tag;
-                            if (!ProfileDeviceTagMap.TryGetValue(module, out tag))
+                            if (!ProfileDeviceTagMap.TryGetValue(module, out string tag))
                             {
                                 foreach (var f in descriptor.Fields.InFieldNumberOrder())
                                 {
@@ -97,8 +98,7 @@ namespace OpenFMB.Adapters.Core
 
         public static string GetProfileFullName(string profileName)
         {
-            MessageDescriptor descriptor;
-            if (Profiles.TryGetValue(profileName, out descriptor))
+            if (Profiles.TryGetValue(profileName, out MessageDescriptor descriptor))
             {
                 return descriptor.ClrType.FullName;
             }
@@ -111,8 +111,7 @@ namespace OpenFMB.Adapters.Core
         public static string GetDeviceTagForProfile(string profileName)
         {
             string deviceName = null;
-            MessageDescriptor descriptor;
-            if (Profiles.TryGetValue(profileName, out descriptor))
+            if (Profiles.TryGetValue(profileName, out MessageDescriptor descriptor))
             {
                 var module = descriptor.FullName.Split('.')[0];
                 ProfileDeviceTagMap.TryGetValue(module, out deviceName);
@@ -123,8 +122,7 @@ namespace OpenFMB.Adapters.Core
 
         public static string GetDeviceTagForModule(string module)
         {
-            string tag = string.Empty;
-            ProfileDeviceTagMap.TryGetValue(module, out tag);
+            ProfileDeviceTagMap.TryGetValue(module, out string tag);
             return tag;
         }
 
@@ -141,6 +139,11 @@ namespace OpenFMB.Adapters.Core
         public static bool IsEventProfile(string profileName)
         {
             return profileName.EndsWith("EventProfile");
+        }
+
+        public static bool IsCapabilityProfile(string profileName)
+        {
+            return profileName.EndsWith("CapabilityProfile") || profileName.EndsWith("CapabilityOverrideProfile");
         }
 
         public static bool IsControlProfile(string profileName)
@@ -162,6 +165,10 @@ namespace OpenFMB.Adapters.Core
             {
                 return ProfileType.Status;
             }
+            if (IsCapabilityProfile(profileName))
+            {
+                return ProfileType.Capability;
+            }
             if (IsReadingProfile(profileName))
             {
                 return ProfileType.Reading;
@@ -176,6 +183,7 @@ namespace OpenFMB.Adapters.Core
         Control,
         Event,
         Reading,
-        Status
+        Status,
+        Capability
     }
 }

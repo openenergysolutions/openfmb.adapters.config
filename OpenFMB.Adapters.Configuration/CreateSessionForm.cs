@@ -2,9 +2,12 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 
+using OpenFMB.Adapters.Configuration.Properties;
 using OpenFMB.Adapters.Core;
 using OpenFMB.Adapters.Core.Models.Plugins;
+using OpenFMB.Adapters.Core.Models.Schemas;
 using OpenFMB.Adapters.Core.Utility;
+using OpenFMB.Adapters.Core.Utility.Logs;
 using System;
 using System.IO;
 using System.Windows.Forms;
@@ -28,11 +31,16 @@ namespace OpenFMB.Adapters.Configuration
 
         private Action _action = Action.CreateNew;
 
+        private readonly ILogger _logger = MasterLogger.Instance;
+
         public Session Output { get; private set; }
 
         public CreateSessionForm()
         {
-            InitializeComponent();            
+            InitializeComponent();
+            editionCombo.Items.AddRange(SchemaManager.SupportEditions);
+            var v = Settings.Default.DefaultSchemaVersion;
+            editionCombo.SelectedItem = v;
         }
 
         public CreateSessionForm(ISessionable plugin) : this()
@@ -46,65 +54,76 @@ namespace OpenFMB.Adapters.Configuration
         }
 
         private void OkButton_Click(object sender, EventArgs e)
-        {            
+        {
             if (string.IsNullOrEmpty(templateFileName.Text.Trim()))
             {
-                MessageBox.Show("Please specify file name for this session.", Program.AppName, MessageBoxButtons.OK, MessageBoxIcon.Error);               
+                MessageBox.Show("Please specify file name for this session.", Program.AppName, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                var fileName = Path.Combine(_configurationManager.WorkingDirectory, templateFileName.Text.Trim());
-
-                switch (_action)
+                try
                 {
-                    case Action.CreateNew:
-                        {
-                            if (File.Exists(fileName))
+                    var fileName = Path.Combine(_configurationManager.WorkingDirectory, templateFileName.Text.Trim());
+
+                    switch (_action)
+                    {
+                        case Action.CreateNew:
                             {
-                                var result = MessageBox.Show($"'{fileName}' already exist.  Replace it?", Program.AppName, MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-                                if (result == DialogResult.No)
+                                if (File.Exists(fileName))
                                 {
-                                    return;
+                                    var result = MessageBox.Show($"'{fileName}' already exist.  Replace it?", Program.AppName, MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                                    if (result == DialogResult.No)
+                                    {
+                                        return;
+                                    }
+                                }
+
+                                Session session = new Session(_plugin.Name, FileHelper.ConvertToForwardSlash(templateFileName.Text.Trim()), editionCombo.SelectedItem as string)
+                                {
+                                    Name = string.IsNullOrWhiteSpace(namedTextBox.Text.Trim()) ? "Session" : namedTextBox.Text.Trim()
+                                }; // Relative path               
+                                _plugin.Sessions.Add(session);
+                                session.Index = _plugin.Sessions.Count - 1;
+                                Output = session;
+
+                                try
+                                {
+                                    _configurationManager.SuspendFileWatcher();
+                                    session.SessionConfiguration.Save(session.FullPath);
+                                }
+                                finally
+                                {
+                                    _configurationManager.ResumeFileWatcher();
                                 }
                             }
-                            
-                            Session session = new Session(_plugin.Name, FileHelper.ConvertToForwardSlash(templateFileName.Text.Trim())); // Relative path               
-                            session.Name = string.IsNullOrWhiteSpace(namedTextBox.Text.Trim()) ? "Session" : namedTextBox.Text.Trim();
-                            _plugin.Sessions.Add(session);
-                            session.Index = _plugin.Sessions.Count - 1;
-                            Output = session;
+                            break;
+                        case Action.ImportTemplate:
+                        case Action.SelectTemplateInWorkspace:
+                            {
+                                if (!string.IsNullOrWhiteSpace(_fileToImport))
+                                {
+                                    _configurationManager.CopyFile(_fileToImport, fileName);
+                                }
 
-                            try
-                            {
-                                _configurationManager.SuspendFileWatcher();                                
-                                session.SessionConfiguration.Save(session.FullPath);
+                                var relative = FileHelper.MakeRelativePath(_configurationManager.WorkingDirectory, fileName);
+                                Session session = Session.FromFile(_configurationManager.WorkingDirectory, relative);
+                                session.Name = string.IsNullOrWhiteSpace(namedTextBox.Text.Trim()) ? "Session" : namedTextBox.Text.Trim();
+                                _plugin.Sessions.Add(session);
+                                session.Index = _plugin.Sessions.Count - 1;
+                                Output = session;
                             }
-                            finally
-                            {
-                                _configurationManager.ResumeFileWatcher();
-                            }                            
-                        }
-                        break;
-                    case Action.ImportTemplate:
-                    case Action.SelectTemplateInWorkspace:
-                        {
-                            if (!string.IsNullOrWhiteSpace(_fileToImport))
-                            {
-                                _configurationManager.CopyFile(_fileToImport, fileName);                                
-                            }
+                            break;
 
-                            var relative = FileHelper.MakeRelativePath(_configurationManager.WorkingDirectory, fileName);
-                            Session session = Session.FromFile(_configurationManager.WorkingDirectory, relative);
-                            session.Name = string.IsNullOrWhiteSpace(namedTextBox.Text.Trim()) ? "Session" : namedTextBox.Text.Trim();
-                            _plugin.Sessions.Add(session);
-                            session.Index = _plugin.Sessions.Count - 1;
-                            Output = session;
-                        }
-                        break;
-                    
+                    }
+
+                    DialogResult = DialogResult.OK;
                 }
-                
-                DialogResult = DialogResult.OK;
+                catch (Exception ex)
+                {
+                    MessageBox.Show(this, "An unexpected error occurred when creating session.", Program.AppName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    _logger.Log(Level.Error, ex.Message, ex);
+                    DialogResult = DialogResult.None;
+                }
             }
         }
 
@@ -160,6 +179,10 @@ namespace OpenFMB.Adapters.Configuration
 
                     _action = Action.SelectTemplateInWorkspace;
                 }
+
+                editionCombo.SelectedItem = fileInformation.Edition;
+                editionCombo.Enabled = false;
+                templateFileName.Enabled = false;
             }
         }
     }

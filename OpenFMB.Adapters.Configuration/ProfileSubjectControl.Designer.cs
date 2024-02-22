@@ -74,8 +74,8 @@
             this.subjectTextBox.Name = "subjectTextBox";
             this.subjectTextBox.Size = new System.Drawing.Size(266, 20);
             this.subjectTextBox.TabIndex = 1;
-            this.subjectTextBox.Enter += new System.EventHandler(this.subjectTextBox_Enter);
-            this.subjectTextBox.Leave += new System.EventHandler(this.subjectTextBox_Leave);
+            this.subjectTextBox.Enter += new System.EventHandler(this.SubjectTextBox_Enter);
+            this.subjectTextBox.Leave += new System.EventHandler(this.SubjectTextBox_Leave);
             // 
             // deleteButton
             // 

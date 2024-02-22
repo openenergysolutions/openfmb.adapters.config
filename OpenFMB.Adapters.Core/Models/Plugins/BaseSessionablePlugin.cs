@@ -4,6 +4,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using YamlDotNet.RepresentationModel;
 
 namespace OpenFMB.Adapters.Core.Models.Plugins
@@ -53,7 +54,7 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
             Sessions.Clear();
 
             var seq = node[SessionTagName] as YamlSequenceNode;
-            foreach (YamlMappingNode master in seq.Children)
+            foreach (YamlMappingNode master in seq.Children.Cast<YamlMappingNode>())
             {
                 var session = Session.FromYaml(Name, master);
                 Sessions.Add(session);

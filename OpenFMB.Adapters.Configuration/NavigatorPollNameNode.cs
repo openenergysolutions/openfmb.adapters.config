@@ -2,18 +2,18 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 
+using Newtonsoft.Json.Linq;
+using OpenFMB.Adapters.Core.Models;
+using OpenFMB.Adapters.Core.Models.Schemas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
-using OpenFMB.Adapters.Core.Models;
-using Newtonsoft.Json.Linq;
-using OpenFMB.Adapters.Core.Models.Schemas;
 
 namespace OpenFMB.Adapters.Configuration
 {
     public partial class NavigatorPollNameNode : BaseNavigatorNode, IDataNode, INavigatorNode
-    { 
+    {
         public string Value
         {
             get { return valueControl.SelectedItem?.ToString(); }
@@ -21,13 +21,13 @@ namespace OpenFMB.Adapters.Configuration
 
         public NavigatorPollNameNode()
         {
-            InitializeComponent();            
+            InitializeComponent();
         }
 
         public NavigatorPollNameNode(Node node, IEnumerable<string> dropdownValues) : this()
         {
             nodeText.Text = node.Name;
-            Data = node;                                                      
+            Data = node;
 
             valueControl.Items.AddRange(dropdownValues.ToArray());
             var val = (node.Tag as JProperty).Value as JValue;

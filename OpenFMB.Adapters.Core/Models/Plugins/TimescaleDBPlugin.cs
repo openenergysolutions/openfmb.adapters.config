@@ -8,7 +8,7 @@ using YamlDotNet.RepresentationModel;
 namespace OpenFMB.Adapters.Core.Models.Plugins
 {
     public class TimescaleDBPlugin : IYamlNode, IPlugin
-    {        
+    {
         public bool Enabled { get; set; }
 
         public string Name => PluginsSection.TimescaleDB;
@@ -29,18 +29,23 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
 
         public RawDataFormat RawDataFormat { get; set; }
 
+        public int DataStoreIntervalSeconds { get; set; }
+
         public YamlNode ToYaml()
         {
-            var node = new YamlMappingNode();
-            node.Add("enabled", Enabled.ToString().ToLower());
-            node.Add("database-url", DatabaseUrl);
-            node.Add("store-measurement", StoreMeasurement.ToString().ToLower());
-            node.Add("table-name", TableName);
-            node.Add("store-raw-message", StoreRawMessage.ToString().ToLower());
-            node.Add("raw-table-name", RawTableName);
-            node.Add("raw-data-format", ((int)RawDataFormat).ToString());
-            node.Add("max-queued-messages", MaxQueuedMessages.ToString());
-            node.Add("connect-retry-seconds", ConnectRetrySeconds.ToString());
+            var node = new YamlMappingNode
+            {
+                { "enabled", Enabled.ToString().ToLower() },
+                { "database-url", DatabaseUrl },
+                { "store-measurement", StoreMeasurement.ToString().ToLower() },
+                { "table-name", TableName },
+                { "store-raw-message", StoreRawMessage.ToString().ToLower() },
+                { "raw-table-name", RawTableName },
+                { "raw-data-format", ((int)RawDataFormat).ToString() },
+                { "max-queued-messages", MaxQueuedMessages.ToString() },
+                { "connect-retry-seconds", ConnectRetrySeconds.ToString() },
+                { "data-store-interval-seconds", DataStoreIntervalSeconds.ToString() }
+            };
 
             return node;
         }
@@ -57,6 +62,11 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
             TableName = (node["table-name"] as YamlScalarNode).Value;
             RawTableName = (node["raw-table-name"] as YamlScalarNode).Value;
             RawDataFormat = (RawDataFormat)Convert.ToInt32((node["raw-data-format"] as YamlScalarNode).Value);
+
+            if (node.ContainsKey("data-store-interval-seconds"))
+            {
+                DataStoreIntervalSeconds = Convert.ToInt32((node["data-store-interval-seconds"] as YamlScalarNode).Value);
+            }
         }
     }
 

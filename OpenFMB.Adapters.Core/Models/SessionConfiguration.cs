@@ -11,6 +11,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
+using System.Linq;
 using System.Runtime.CompilerServices;
 using YamlDotNet.RepresentationModel;
 using YamlDotNet.Serialization;
@@ -29,31 +30,35 @@ namespace OpenFMB.Adapters.Core.Models
 
         public string PluginName { get; protected set; }
 
+        public string Edition { get; protected set; }
+
+        public int ProfileCount { get { return Profiles.Count; } }
+
         private List<Profile> Profiles { get; } = new List<Profile>();
 
-        protected static ILogger _logger = MasterLogger.Instance;        
+        protected static ILogger _logger = MasterLogger.Instance;
 
         private YamlDocument ToYamlDocument(bool validate)
         {
             var root = new YamlMappingNode();
-            var doc = new YamlDocument(root);            
+            var doc = new YamlDocument(root);
 
             SessionSpecificConfig.ToYaml(root);
 
             var seq = new YamlSequenceNode();
-            root.Add("profiles", seq);            
+            root.Add("profiles", seq);
 
-            foreach(var p in Profiles)
+            foreach (var p in Profiles)
             {
                 p.ErrorMessages.Clear();
                 if (validate)
                 {
                     var result = p.Validate();
-                    
+
                     if (!result)
                     {
                         _logger.Log(Level.Error, $"Validation failed for profile {p.ProfileName} at {FilePath}.");
-                        foreach(var err in p.ErrorMessages)
+                        foreach (var err in p.ErrorMessages)
                         {
                             _logger.Log(Level.Error, $"{err.Message}: {err.NodePath}");
                         }
@@ -74,7 +79,7 @@ namespace OpenFMB.Adapters.Core.Models
         private void LoadSessionConfiguration(Dictionary<object, object> dictionary)
         {
             Dictionary<object, object> data = new Dictionary<object, object>();
-            foreach(var kvp in dictionary)
+            foreach (var kvp in dictionary)
             {
                 if (kvp.Key.ToString() != "profiles")
                 {
@@ -87,7 +92,7 @@ namespace OpenFMB.Adapters.Core.Models
 
         protected abstract void LoadSessionConfigurationFromJson(string json);
 
-        protected virtual void InitDefaultProfileSettings(Profile profile) 
+        protected virtual void InitDefaultProfileSettings(Profile profile)
         {
             // do nothing
         }
@@ -105,12 +110,14 @@ namespace OpenFMB.Adapters.Core.Models
                 flag = checksum != CheckSum;
             }
             return flag;
-        }       
+        }
 
         private YamlStream GetYamlStream(bool validate = true)
         {
-            var stream = new YamlStream();
-            stream.Add(ToYamlDocument(validate));
+            var stream = new YamlStream
+            {
+                ToYamlDocument(validate)
+            };
             return stream;
         }
 
@@ -123,7 +130,7 @@ namespace OpenFMB.Adapters.Core.Models
             if (!Directory.Exists(dir))
             {
                 Directory.CreateDirectory(dir);
-            }            
+            }
 
             using (var writer = new StringWriter())
             {
@@ -144,9 +151,9 @@ namespace OpenFMB.Adapters.Core.Models
             Profiles.Clear();
 
             if (File.Exists(filePath))
-            {                
+            {
                 using (StreamReader reader = new StreamReader(filePath))
-                {                   
+                {
                     var builder = new DeserializerBuilder().WithNodeTypeResolver(new ScalarNodeTypeResolver());
                     var des = builder.Build();
                     var dic = des.Deserialize(reader) as Dictionary<object, object>;
@@ -154,9 +161,22 @@ namespace OpenFMB.Adapters.Core.Models
                     reader.BaseStream.Seek(0, SeekOrigin.Begin);
                     CheckSum = Utils.ChecksumForString(reader.ReadToEnd());
 
+                    string edition = SchemaManager.DefaultEdition;
+
+                    if (dic["file"] is Dictionary<object, object> file)
+                    {
+                        var temp = file["edition"];
+                        if (temp != null)
+                        {
+                            edition = Convert.ToDouble(temp).ToString("0.0");
+                        }
+                    }
+
+                    Edition = edition;
+
                     var profiles = dic["profiles"] as List<object>;
 
-                    foreach(Dictionary<object, object> p in profiles)
+                    foreach (Dictionary<object, object> p in profiles.Cast<Dictionary<object, object>>())
                     {
                         try
                         {
@@ -170,7 +190,7 @@ namespace OpenFMB.Adapters.Core.Models
 
                             try
                             {
-                                Profile profile = new Profile(p["name"].ToString(), PluginName, token);
+                                Profile profile = Profile.CreateWithToken(p["name"].ToString(), PluginName, token, edition);
                                 AddProfile(profile);
                             }
                             catch (NoSchemaFoundException)
@@ -194,7 +214,7 @@ namespace OpenFMB.Adapters.Core.Models
 
                                 (token as JObject)["name"] = new JValue(profileName);
 
-                                Profile profile = new Profile(profileName, PluginName, token);
+                                Profile profile = Profile.CreateWithToken(profileName, PluginName, token, edition);
                                 AddProfile(profile);
                             }
                         }
@@ -204,19 +224,19 @@ namespace OpenFMB.Adapters.Core.Models
                         }
                     }
 
-                    LoadSessionConfiguration(dic);                    
+                    LoadSessionConfiguration(dic);
                 }
 
                 FilePath = filePath;
             }
             else
-            {                
-                _logger.Log(Level.Warning, $"The file path '{filePath}' referenced by the adapter does not exist.");                
+            {
+                _logger.Log(Level.Warning, $"The file path '{filePath}' referenced by the adapter does not exist.");
             }
         }
 
         protected void NotifyPropertyChanged([CallerMemberName] string propertyName = "")
-        {            
+        {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
@@ -241,5 +261,5 @@ namespace OpenFMB.Adapters.Core.Models
         {
             return Profiles;
         }
-    }     
+    }
 }

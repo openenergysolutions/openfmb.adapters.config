@@ -28,16 +28,16 @@ namespace OpenFMB.Adapters.Core.Models
         public string Name { get; set; }
 
         [Browsable(false)]
-        public JSchema Schema { get; set; }        
+        public JSchema Schema { get; set; }
 
         [Browsable(false)]
         public Node Parent { get; set; }
-        
-        [Browsable(false)]
-        public List<Node> Nodes { get; } = new List<Node>();        
 
         [Browsable(false)]
-        public bool IsRepeatable { get; set; }                 
+        public List<Node> Nodes { get; } = new List<Node>();
+
+        [Browsable(false)]
+        public bool IsRepeatable { get; set; }
 
         [Browsable(false)]
         public bool HasEnums
@@ -58,11 +58,11 @@ namespace OpenFMB.Adapters.Core.Models
         }
 
         [Browsable(false)]
-        public object Tag { get; set; }  
-        
+        public object Tag { get; set; }
+
         [Browsable(false)]
         [JsonIgnore]
-        public IDataNode DataNode { get; set; }       
+        public IDataNode DataNode { get; set; }
 
         public string Path
         {
@@ -81,12 +81,11 @@ namespace OpenFMB.Adapters.Core.Models
         public string Value
         {
             get
-            {                
+            {
                 if (Tag is JProperty)
                 {
                     var prop = Tag as JProperty;
-                    var val = prop.Value as JValue;
-                    if (val != null)
+                    if (prop.Value is JValue val)
                     {
                         return val.Value?.ToString();
                     }
@@ -116,8 +115,7 @@ namespace OpenFMB.Adapters.Core.Models
             {
                 if (Schema != null)
                 {
-                    IList<string> messages;
-                    var result = (Tag as JProperty).Value.IsValid(Schema, out messages);
+                    var result = (Tag as JProperty).Value.IsValid(Schema, out IList<string> messages);
                     if (!result)
                     {
                         Error = string.Join(Environment.NewLine, messages);
@@ -149,7 +147,7 @@ namespace OpenFMB.Adapters.Core.Models
         {
             if (schema.Type == JSchemaType.Array)
             {
-                foreach(var item in schema.Items)
+                foreach (var item in schema.Items)
                 {
                     var result = GetOptionSchema(key, value, item);
                     if (result != null)
@@ -184,7 +182,7 @@ namespace OpenFMB.Adapters.Core.Models
         {
             if (schema.Type == JSchemaType.Array)
             {
-                foreach(var item in schema.Items)
+                foreach (var item in schema.Items)
                 {
                     GetOptionsForKey(key, item, options);
                     if (options.Count > 0)
@@ -207,7 +205,7 @@ namespace OpenFMB.Adapters.Core.Models
                         if (!options.Contains(f))
                         {
                             options.Add(f);
-                        }                        
+                        }
                     }
                 }
 
@@ -291,7 +289,7 @@ namespace OpenFMB.Adapters.Core.Models
         }
 
         public static List<string> GetRequiredProperties(Node parentNode)
-        {           
+        {
             List<string> tempList = new List<string>();
 
             var schema = parentNode.Schema;
@@ -306,7 +304,7 @@ namespace OpenFMB.Adapters.Core.Models
 
                 foreach (var oneOf in schema.OneOf)
                 {
-                    foreach(var prop in oneOf.Properties)
+                    foreach (var prop in oneOf.Properties)
                     {
                         if (baseRequired.Contains(prop.Key))
                         {
@@ -320,7 +318,7 @@ namespace OpenFMB.Adapters.Core.Models
                     }
                 }
             }
-            
+
 
             return tempList;
         }
@@ -334,7 +332,7 @@ namespace OpenFMB.Adapters.Core.Models
 
             if (schema.Type == JSchemaType.Array)
             {
-                foreach(var item in schema.Items)
+                foreach (var item in schema.Items)
                 {
                     if (HasOptionsForKey(key, item))
                     {
@@ -389,9 +387,8 @@ namespace OpenFMB.Adapters.Core.Models
 
         public object GetReservedValue(string nodeName)
         {
-            object val;
-            _previousValues.TryGetValue(nodeName, out val);
+            _previousValues.TryGetValue(nodeName, out object val);
             return val;
         }
-    }        
+    }
 }

@@ -8,7 +8,7 @@ using OpenFMB.Adapters.Core.Models.Schemas;
 namespace OpenFMB.Adapters.Configuration
 {
     public partial class NavigatorNode : BaseNavigatorNode, IDataNode, INavigatorNode
-    { 
+    {
         public NavigatorNode()
         {
             InitializeComponent();

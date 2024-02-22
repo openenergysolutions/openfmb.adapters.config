@@ -12,7 +12,7 @@ namespace OpenFMB.Adapters.Core.Utility
         private static readonly string AppName = "OpenFMB Adapter Configuration";
 
         public static string GetNextConfigFileName(this string folder, string fileBaseName)
-        {            
+        {
             int i = 1;
             string output = fileBaseName;
             while (true)
@@ -44,7 +44,7 @@ namespace OpenFMB.Adapters.Core.Utility
                 {
                     if (!baseName.EndsWith(" copy"))
                     {
-                        baseName = baseName + " copy";
+                        baseName += " copy";
                         output = baseName;
                     }
                     else
@@ -71,7 +71,7 @@ namespace OpenFMB.Adapters.Core.Utility
                 {
                     if (!baseName.EndsWith(" copy"))
                     {
-                        baseName = baseName + " copy";
+                        baseName += " copy";
                         output = baseName;
                     }
                     else
@@ -154,14 +154,14 @@ namespace OpenFMB.Adapters.Core.Utility
 
             return relativePath;
         }
-                
+
         public static string GetRelativePath(string relativeTo, string path)
         {
             var uri = new Uri(relativeTo);
             var rel = Uri.UnescapeDataString(uri.MakeRelativeUri(new Uri(path)).ToString()).Replace(Path.AltDirectorySeparatorChar, Path.DirectorySeparatorChar);
             if (rel.Contains(Path.DirectorySeparatorChar.ToString()) == false)
             {
-                rel = $".{ Path.DirectorySeparatorChar }{ rel }";
+                rel = $".{Path.DirectorySeparatorChar}{rel}";
             }
             return rel;
         }

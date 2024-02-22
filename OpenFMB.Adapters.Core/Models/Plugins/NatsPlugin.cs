@@ -4,6 +4,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using YamlDotNet.RepresentationModel;
 
 namespace OpenFMB.Adapters.Core.Models.Plugins
@@ -12,7 +13,7 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
     {
         public bool Enabled { get; set; }
 
-        public string Name => PluginsSection.Nats;        
+        public string Name => PluginsSection.Nats;
 
         public int MaxQueuedMessages { get; set; } = 100;
 
@@ -28,28 +29,33 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
 
         public YamlNode ToYaml()
         {
-            var node = new YamlMappingNode();
-            node.Add("enabled", Enabled.ToString().ToLower());
-            node.Add("max-queued-messages", MaxQueuedMessages.ToString());
-            node.Add("connect-url", ConnectUrl);
-            node.Add("connect-retry-seconds", ConnectRetrySeconds.ToString());
+            var node = new YamlMappingNode
+            {
+                { "enabled", Enabled.ToString().ToLower() },
+                { "max-queued-messages", MaxQueuedMessages.ToString() },
+                { "connect-url", ConnectUrl },
+                { "connect-retry-seconds", ConnectRetrySeconds.ToString() },
 
-            node.Add("security", new YamlMappingNode(
-                new YamlScalarNode("security-type"), new YamlScalarNode(Security.SecurityType.ToString().ToLower()),
-                new YamlScalarNode("ca-trusted-cert-file"), new YamlScalarNode(Security.CertFile),
-                new YamlScalarNode("client-private-key-file"), new YamlScalarNode(Security.ClientKey),
-                new YamlScalarNode("client-cert-chain-file"), new YamlScalarNode(Security.ClientCert),
-                new YamlScalarNode("jwt-creds-file"), new YamlScalarNode(Security.JwtCredsFile)));
+                {
+                    "security",
+                    new YamlMappingNode(
+                        new YamlScalarNode("security-type"), new YamlScalarNode(Security.SecurityType.ToString().ToLower()),
+                        new YamlScalarNode("ca-trusted-cert-file"), new YamlScalarNode(Security.CertFile),
+                        new YamlScalarNode("client-private-key-file"), new YamlScalarNode(Security.ClientKey),
+                        new YamlScalarNode("client-cert-chain-file"), new YamlScalarNode(Security.ClientCert),
+                        new YamlScalarNode("jwt-creds-file"), new YamlScalarNode(Security.JwtCredsFile))
+                }
+            };
 
             var publish = new YamlSequenceNode();
             node.Add("publish", publish);
 
-            foreach(var p in Publishes)
+            foreach (var p in Publishes)
             {
                 publish.Add(new YamlMappingNode(
                     new YamlScalarNode("profile"), new YamlScalarNode(p.Profile),
                     new YamlScalarNode("subject"), new YamlScalarNode(p.Subject)));
-            }            
+            }
 
             var subscribe = new YamlSequenceNode();
             node.Add("subscribe", subscribe);
@@ -72,9 +78,8 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
             ConnectUrl = (node["connect-url"] as YamlScalarNode).Value;
             ConnectRetrySeconds = Convert.ToInt32((node["connect-retry-seconds"] as YamlScalarNode).Value);
 
-            var security = node.GetValueByKey("security") as YamlMappingNode;
-            if (security != null)
-            { 
+            if (node.GetValueByKey("security") is YamlMappingNode security)
+            {
                 try
                 {
                     Security.SecurityType = (SecurityType)Enum.Parse(typeof(SecurityType), (security["security-type"] as YamlScalarNode)?.Value);
@@ -89,7 +94,7 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
             Publishes.Clear();
 
             var publishes = node["publish"] as YamlSequenceNode;
-            foreach(YamlMappingNode p in publishes)
+            foreach (YamlMappingNode p in publishes.Cast<YamlMappingNode>())
             {
                 Publishes.Add(new Publish()
                 {
@@ -101,7 +106,7 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
             Subscribes.Clear();
 
             var subscribes = node["subscribe"] as YamlSequenceNode;
-            foreach (YamlMappingNode p in subscribes)
+            foreach (YamlMappingNode p in subscribes.Cast<YamlMappingNode>())
             {
                 Subscribes.Add(new Subscribe()
                 {
@@ -123,5 +128,5 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
         public string ClientCert { get; set; } = "client_cert.pem";
 
         public string JwtCredsFile { get; set; } = "";
-    }    
+    }
 }

@@ -9,9 +9,9 @@ namespace OpenFMB.Adapters.Configuration
 {
     public partial class CreateAdapterConfigurationPluginOptions : UserControl
     {
-        private CreateAdapterConfigurationSelectFile _selectFileControl;
-        private CreateAdapterConfigurationSelectFolder _selectFolderControl;
-        private ProfileSelectionControl _selectProfilesControl;
+        private readonly CreateAdapterConfigurationSelectFile _selectFileControl;
+        private readonly CreateAdapterConfigurationSelectFolder _selectFolderControl;
+        private readonly ProfileSelectionControl _selectProfilesControl;
 
         private PluginOptions _options;
 
@@ -24,22 +24,33 @@ namespace OpenFMB.Adapters.Configuration
                 if (_options != null)
                     LoadOptions(_options);
             }
-        }        
+        }
+
+        public string SelectedVersion
+        {
+            get { return _selectProfilesControl.SelectedEdition; }
+        }
 
         public CreateAdapterConfigurationPluginOptions()
         {
             InitializeComponent();
 
-            _selectFileControl = new CreateAdapterConfigurationSelectFile();
-            _selectFileControl.Dock = DockStyle.Fill;
+            _selectFileControl = new CreateAdapterConfigurationSelectFile
+            {
+                Dock = DockStyle.Fill
+            };
             placeHolder.Controls.Add(_selectFileControl);
 
-            _selectFolderControl = new CreateAdapterConfigurationSelectFolder();
-            _selectFolderControl.Dock = DockStyle.Fill;
+            _selectFolderControl = new CreateAdapterConfigurationSelectFolder
+            {
+                Dock = DockStyle.Fill
+            };
             placeHolder.Controls.Add(_selectFolderControl);
 
-            _selectProfilesControl = new ProfileSelectionControl();
-            _selectProfilesControl.Dock = DockStyle.Fill;
+            _selectProfilesControl = new ProfileSelectionControl
+            {
+                Dock = DockStyle.Fill
+            };
             placeHolder.Controls.Add(_selectProfilesControl);
             _selectProfilesControl.BringToFront();
 
@@ -62,24 +73,20 @@ namespace OpenFMB.Adapters.Configuration
         {
             Options.SelectedProfiles.Clear();
             Options.SelectedProfiles.AddRange(_selectProfilesControl.SelectedProfiles);
+            Options.Edition = _selectProfilesControl.SelectedEdition;
         }
 
         private void SelectProfileRadio_CheckedChanged(object sender, EventArgs e)
         {
-            if (selectProfileRadio.Checked)
+            if (_selectProfilesControl.SelectProfileRadio)
             {
                 _selectProfilesControl.BringToFront();
                 Options.Mode = ProfileCreateMode.SelectedProfiles;
             }
-            if (fromFileRadio.Checked)
+            if (_selectProfilesControl.FromFileRadio)
             {
                 _selectFileControl.BringToFront();
                 Options.Mode = ProfileCreateMode.LoadFromFile;
-            }
-            if (fromFolderRadio.Checked)
-            {
-                _selectFolderControl.BringToFront();
-                Options.Mode = ProfileCreateMode.LoadFromFolder;
             }
         }
 
@@ -87,26 +94,21 @@ namespace OpenFMB.Adapters.Configuration
         {
             if (options.ModeSelectionEnabled)
             {
-                modeSelectionPanel.Visible = true;
-                selectProfileRadio.Enabled = fromFileRadio.Enabled = fromFolderRadio.Enabled = true;
-                if (options.Mode == ProfileCreateMode.LoadFromFolder)
+                _selectProfilesControl.SelectProfileRadioVisible = _selectProfilesControl.FromFileRadioVisible = true;
+
+                if (options.Mode == ProfileCreateMode.LoadFromFile)
                 {
-                    fromFolderRadio.Checked = true;
-                }
-                else if (options.Mode == ProfileCreateMode.LoadFromFile)
-                {
-                    fromFileRadio.Checked = true;
+                    _selectProfilesControl.FromFileRadio = true;
                 }
                 else
                 {
-                    selectProfileRadio.Checked = true;
+                    _selectProfilesControl.SelectProfileRadio = true;
                 }
             }
             else
             {
-                selectProfileRadio.Checked = true;
-                modeSelectionPanel.Visible = false;
-                selectProfileRadio.Enabled = fromFileRadio.Enabled = fromFolderRadio.Enabled = false;
+                _selectProfilesControl.SelectProfileRadio = true;
+                _selectProfilesControl.SelectProfileRadioVisible = _selectProfilesControl.FromFileRadioVisible = false;
             }
 
             _selectProfilesControl.SelectProfiles(options.SelectedProfiles);

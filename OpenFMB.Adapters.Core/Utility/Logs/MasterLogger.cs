@@ -10,7 +10,7 @@ namespace OpenFMB.Adapters.Core.Utility.Logs
     public class MasterLogger : ILogger, ILogMessagePublisher
     {
         private static readonly MasterLogger _instance = new MasterLogger();
-        private List<ILogger> _loggers = new List<ILogger>();
+        private readonly List<ILogger> _loggers = new List<ILogger>();
 
         public static MasterLogger Instance
         {

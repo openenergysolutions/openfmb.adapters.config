@@ -60,42 +60,22 @@ namespace OpenFMB.Adapters.Core.Models
         }
 
         private readonly Dictionary<string, List<Node>> _schemaLookup;
-       
+
         private List<Node> _allNavigatorNodes;
 
         public JToken Token { get; private set; }
 
         public JSchema Schema
-        {            
+        {
             get; private set;
         }
 
-        public Profile(string profileName, string plugInName)
+        public Profile(string profileName, string plugInName, string edition)
         {
             ProfileName = profileName;
             PluginName = plugInName;
 
-            Schema = SchemaManager.GetSchemaForProfile(plugInName, profileName);
-
-            if (Schema == null) 
-            {
-                _logger.Log(Level.Error, $"Unable to find schema for {profileName} [{plugInName}]");
-                throw new NoSchemaFoundException($"Unable to find schema for {profileName} [{plugInName}]", profileName, plugInName);
-            }
-           
-            Token = JsonGenerator.Generate(Schema);
-           
-            _schemaLookup = SchemaManager.GetSchemaDictionary(plugInName, profileName);
-
-            Validate();
-        }
-
-        public Profile(string profileName, string plugInName, JToken token)
-        {
-            ProfileName = profileName;
-            PluginName = plugInName;
-
-            Schema = SchemaManager.GetSchemaForProfile(plugInName, profileName);
+            Schema = SchemaManager.GetSchemaForProfile(plugInName, profileName, edition);
 
             if (Schema == null)
             {
@@ -103,18 +83,80 @@ namespace OpenFMB.Adapters.Core.Models
                 throw new NoSchemaFoundException($"Unable to find schema for {profileName} [{plugInName}]", profileName, plugInName);
             }
 
-            if (token == null)
-            {               
-                throw new ArgumentNullException("token", $"Unable to create profile {profileName} [{plugInName}] with null token.");
+            Token = JsonGenerator.Generate(Schema);
+
+            _schemaLookup = SchemaManager.GetSchemaDictionary(plugInName, profileName, edition);
+
+            Validate();
+        }
+
+        private Profile(string profileName, string plugInName, JToken token, string edition)
+        {
+            ProfileName = profileName;
+            PluginName = plugInName;
+
+            Schema = SchemaManager.GetSchemaForProfile(plugInName, profileName, edition);
+
+            if (Schema == null)
+            {
+                _logger.Log(Level.Error, $"Unable to find schema for {profileName} [{plugInName}]");
+                throw new NoSchemaFoundException($"Unable to find schema for {profileName} [{plugInName}]", profileName, plugInName);
             }
 
-            Token = token;            
+            Token = token ?? throw new ArgumentNullException("token", $"Unable to create profile {profileName} [{plugInName}] with null token.");
 
-            _schemaLookup = SchemaManager.GetSchemaDictionary(plugInName, profileName);
+            _schemaLookup = SchemaManager.GetSchemaDictionary(plugInName, profileName, edition);
 
             Validate();
 
             MitigateErrors();
+        }
+
+        public static Profile CreateWithToken(string profileName, string plugInName, JToken schema, string edition)
+        {
+            return new Profile(profileName, plugInName, schema, edition);
+        }
+
+        public static Profile Create(string profileName, string pluginName, string edition)
+        {
+            return Activator.CreateInstance(typeof(Profile), new object[] { profileName, pluginName, edition }) as Profile;
+        }
+
+        public static Profile CreateWithCsv(string profileName, string pluginName, List<ICsvRow> mappedData)
+        {
+            var profile = Activator.CreateInstance(typeof(Profile), new object[] { profileName, pluginName, null }) as Profile;
+            profile.AddNode();
+
+            foreach (var row in mappedData)
+            {
+                var node = profile.GetAllNavigatorNodes().FirstOrDefault(x => x.Path.ToLower() == row.FormattedPath.ToLower());
+                if (node != null)
+                {
+                    var schema = node.Schema;
+                    var required = Node.GetRequiredProperties(node);
+
+                    foreach (var name in required)
+                    {
+                        foreach (var oneOf in schema.OneOf)
+                        {
+                            var prop = oneOf.Properties.FirstOrDefault(x => x.Key == name && x.Value.Const?.ToString() == "mapped");
+                            if (prop.Key == name)
+                            {
+                                // Found
+                                var token = JsonGenerator.Generate(oneOf, row) as JObject;
+                                (node.Tag as JProperty).Value = token;
+
+                                node.Nodes.Clear();
+                                profile.AddNode(token, node);
+
+                                break;
+                            }
+                        }
+                    }
+                }
+            }
+
+            return profile;
         }
 
         public string GetDeviceMRID()
@@ -131,19 +173,19 @@ namespace OpenFMB.Adapters.Core.Models
             return mrid;
         }
 
-        public void SetDeviceMRID(string mrid)
-        {
-            var mridNode = GetDeviceMRIDNode();
-
-            if (mridNode != null)
-            {
-                
-            }
-        }
-
         public Node GetDeviceMRIDNode()
         {
-            return GetAllNavigatorNodes().FirstOrDefault(x => x.Path.EndsWith(".conductingEquipment.mRID.value"));
+            var node = GetAllNavigatorNodes().FirstOrDefault(x => x.Path.EndsWith(".conductingEquipment.mRID.value"));
+            if (node == null)
+            {
+                node = GetAllNavigatorNodes().FirstOrDefault(x => x.Path.EndsWith(".applicationSystem.mRID.value"));
+
+                if (node == null)
+                {
+                    node = GetAllNavigatorNodes().FirstOrDefault(x => x.Path.EndsWith(".requesterCircuitSegmentService.mRID.value"));
+                }
+            }
+            return node;
         }
 
         public bool Validate()
@@ -151,10 +193,9 @@ namespace OpenFMB.Adapters.Core.Models
             bool valid = true;
             ErrorMessages.Clear();
 
-            IList<string> messages;
             var obj = Token as JObject;
-            if (!obj.IsValid(Schema, out messages))
-            {                
+            if (!obj.IsValid(Schema, out IList<string> messages))
+            {
                 ErrorMessages.AddRange(messages.Select(x => ValidationErrorMessage.Parse(x)));
                 valid = false;
             };
@@ -166,7 +207,7 @@ namespace OpenFMB.Adapters.Core.Models
 
         private void MitigateErrors()
         {
-            foreach(var error in ErrorMessages)
+            foreach (var error in ErrorMessages)
             {
                 if (error.Message.StartsWith("Required properties are missing from object"))
                 {
@@ -187,11 +228,9 @@ namespace OpenFMB.Adapters.Core.Models
 
         public Node GetSchemaByPath(string path, JSchemaType? schemaType)
         {
-            List<Node> nodes;
-
             path = Utils.ReplaceWithIndexZeroArray(path);
 
-            if (_schemaLookup.TryGetValue(path, out nodes))
+            if (_schemaLookup.TryGetValue(path, out List<Node> nodes))
             {
                 var node = nodes.LastOrDefault(x => x.Schema.Type == schemaType || !x.Schema.Type.HasValue);
                 if (node == null)
@@ -208,7 +247,6 @@ namespace OpenFMB.Adapters.Core.Models
 
         public Node GetSchemaByPath(Node targetNode, JSchemaType? schemaType)
         {
-            List<Node> nodes;
 
             var path = Utils.ReplaceWithIndexZeroArray(targetNode.Path);
 
@@ -216,19 +254,18 @@ namespace OpenFMB.Adapters.Core.Models
             {
                 if (!path.EndsWith(".[0]"))
                 {
-                    path = path + ".[0]";
+                    path += ".[0]";
                 }
-            }                        
+            }
 
-            if (_schemaLookup.TryGetValue(path, out nodes))
+            if (_schemaLookup.TryGetValue(path, out List<Node> nodes))
             {
                 if (nodes.Count > 1)
                 {
                     if (targetNode.Parent != null)
                     {
-                        List<Node> parentNodes;
                         var parentPath = Utils.ReplaceWithIndexZeroArray(targetNode.Parent.Path);
-                        if (_schemaLookup.TryGetValue(parentPath, out parentNodes))
+                        if (_schemaLookup.TryGetValue(parentPath, out List<Node> parentNodes))
                         {
                             var parentNode = parentNodes.FirstOrDefault();
                             if (parentNode != null)
@@ -245,9 +282,9 @@ namespace OpenFMB.Adapters.Core.Models
                                     return child;
                                 }
                                 else
-                                {                                    
-                                    foreach(var sibling in targetNode.Parent.Nodes)
-                                    {                                        
+                                {
+                                    foreach (var sibling in targetNode.Parent.Nodes)
+                                    {
                                         if (sibling != targetNode)
                                         {
                                             var temp = parentNode.Nodes.FirstOrDefault(x => x.Schema.Const?.ToString() == sibling.Value);
@@ -269,12 +306,12 @@ namespace OpenFMB.Adapters.Core.Models
                         {
                             return nodes.FirstOrDefault(x => x.Schema.Type == schemaType);
                         }
-                    }                    
+                    }
                 }
                 else
                 {
                     return nodes.FirstOrDefault();
-                }                
+                }
             }
             return null;
         }
@@ -287,70 +324,30 @@ namespace OpenFMB.Adapters.Core.Models
             }
             return _allNavigatorNodes;
         }
-        
+
         public YamlNode ToYaml()
-        {            
+        {
             var serializer = new YamlDotNet.Serialization.Serializer();
-            
+
             string json = JsonConvert.SerializeObject(Token);
             var dict = JsonConvert.DeserializeObject<ExpandoObject>(json, new ExpandoObjectConverter());
 
             var yaml = serializer.Serialize(dict);
-            var deserializer = new YamlDotNet.Serialization.Deserializer();            
+            var deserializer = new YamlDotNet.Serialization.Deserializer();
 
             using (TextReader reader = new StringReader(yaml))
             {
-                return deserializer.Deserialize(reader, typeof(YamlMappingNode)) as YamlMappingNode;                                                
+                return deserializer.Deserialize(reader, typeof(YamlMappingNode)) as YamlMappingNode;
             }
         }
 
-        public static Profile Create(string profileName, string pluginName)
-        {            
-            return Activator.CreateInstance(typeof(Profile), new object[] { profileName, pluginName }) as Profile;
-        }
-
-        public static Profile Create(string profileName, string pluginName, List<ICsvRow> mappedData)
-        {
-            var profile = Activator.CreateInstance(typeof(Profile), new object[] { profileName, pluginName }) as Profile;
-            profile.AddNode();
-
-            foreach(var row in mappedData)
-            {
-                var node = profile.GetAllNavigatorNodes().FirstOrDefault(x => x.Path.ToLower() == row.FormattedPath.ToLower());
-                if (node != null)
-                {
-                    var schema = node.Schema;
-                    var required = Node.GetRequiredProperties(node);
-
-                    foreach(var name in required)
-                    {                        
-                        foreach(var oneOf in schema.OneOf)
-                        {
-                            var prop = oneOf.Properties.FirstOrDefault(x => x.Key == name && x.Value.Const?.ToString() == "mapped");
-                            if (prop.Key == name)
-                            {
-                                // Found
-                                var token = JsonGenerator.Generate(oneOf, row) as JObject;
-                                (node.Tag as JProperty).Value = token;
-
-                                node.Nodes.Clear();
-                                profile.AddNode(token, node);                                
-
-                                break;
-                            }
-                        }
-                    }
-                }
-            }
-
-            return profile;
-        }
-                
         private void AddNode()
         {
-            Node root = new Node(ProfileName);
-            root.Tag = Token;
-            root.Schema = Schema;
+            Node root = new Node(ProfileName)
+            {
+                Tag = Token,
+                Schema = Schema
+            };
 
             NavigatorRoot = root;
 
@@ -376,9 +373,11 @@ namespace OpenFMB.Adapters.Core.Models
                 var obj = token as JObject;
                 foreach (var property in obj.Properties())
                 {
-                    var childNode = new Node(property.Name);
-                    childNode.Tag = property;
-                    childNode.Parent = nodeParent;
+                    var childNode = new Node(property.Name)
+                    {
+                        Tag = property,
+                        Parent = nodeParent
+                    };
                     nodeParent.Nodes.Add(childNode);
                     childNode.Schema = GetSchemaByPath(childNode, property.Value.SchemaType())?.Schema;
                     //if (childNode.Schema == null)
@@ -394,12 +393,14 @@ namespace OpenFMB.Adapters.Core.Models
                 var array = token as JArray;
                 for (int i = 0; i < array.Count; i++)
                 {
-                    var childNode = new Node($"[{i}]");
-                    childNode.IsRepeatable = true;
-                    childNode.Tag = array[i];
-                    childNode.Parent = nodeParent;
+                    var childNode = new Node($"[{i}]")
+                    {
+                        IsRepeatable = true,
+                        Tag = array[i],
+                        Parent = nodeParent
+                    };
                     nodeParent.Nodes.Add(childNode);
-                    childNode.Schema = GetSchemaByPath(childNode, token.SchemaType())?.Schema;                   
+                    childNode.Schema = GetSchemaByPath(childNode, token.SchemaType())?.Schema;
 
                     AddNode(array[i], childNode);
                 }
@@ -407,14 +408,16 @@ namespace OpenFMB.Adapters.Core.Models
             else if (token is JProperty)
             {
                 var property = token as JProperty;
-                foreach (JArray array in property)
+                foreach (JArray array in property.Cast<JArray>())
                 {
                     for (int i = 0; i < array.Count; i++)
                     {
-                        var childNode = new Node($"[{i}]");
-                        childNode.IsRepeatable = true;
-                        childNode.Tag = array[i];
-                        childNode.Parent = nodeParent;
+                        var childNode = new Node($"[{i}]")
+                        {
+                            IsRepeatable = true,
+                            Tag = array[i],
+                            Parent = nodeParent
+                        };
                         nodeParent.Nodes.Add(childNode);
                         childNode.Schema = GetSchemaByPath(childNode, token.SchemaType())?.Schema;
                     }
@@ -429,21 +432,21 @@ namespace OpenFMB.Adapters.Core.Models
         public JArray UpdateCommandIds(List<string> allCommandId)
         {
             try
-            {  
+            {
                 var obj = Token as JObject;
                 if (obj.ContainsKey("command-order"))
                 {
-                    var array = obj["command-order"] as JArray;                    
+                    var array = obj["command-order"] as JArray;
                     array.Clear();
 
                     for (int i = 0; i < allCommandId.Count; ++i)
                     {
                         var value = new JValue(allCommandId[i]);
-                        array.Add(value);                        
+                        array.Add(value);
                     }
 
                     return array;
-                }                
+                }
             }
             catch (Exception ex)
             {
@@ -451,5 +454,5 @@ namespace OpenFMB.Adapters.Core.Models
             }
             return null;
         }
-    }    
+    }
 }

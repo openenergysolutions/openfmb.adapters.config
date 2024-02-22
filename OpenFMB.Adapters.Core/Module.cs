@@ -3,8 +3,6 @@
 // SPDX-License-Identifier: Apache-2.0
 
 using Google.Protobuf.Reflection;
-using System.Collections.Generic;
-using System.Linq;
 using openfmb.breakermodule;
 using openfmb.capbankmodule;
 using openfmb.circuitsegmentservicemodule;
@@ -19,6 +17,8 @@ using openfmb.reservemodule;
 using openfmb.resourcemodule;
 using openfmb.solarmodule;
 using openfmb.switchmodule;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace OpenFMB.Adapters.Core
 {
@@ -33,7 +33,7 @@ namespace OpenFMB.Adapters.Core
             GenerationmoduleReflection.Descriptor,
             InterconnectionmoduleReflection.Descriptor,
             LoadmoduleReflection.Descriptor,
-            MetermoduleReflection.Descriptor,            
+            MetermoduleReflection.Descriptor,
             ReclosermoduleReflection.Descriptor,
             RegulatormoduleReflection.Descriptor,
             ReservemoduleReflection.Descriptor,

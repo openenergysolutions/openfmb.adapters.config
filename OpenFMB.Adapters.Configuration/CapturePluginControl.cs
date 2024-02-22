@@ -2,14 +2,14 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 
+using OpenFMB.Adapters.Core.Models.Plugins;
 using System;
 using System.ComponentModel;
-using OpenFMB.Adapters.Core.Models.Plugins;
 
 namespace OpenFMB.Adapters.Configuration
 {
     public partial class CapturePluginControl : BaseDetailControl
-    {        
+    {
         public override object DataSource
         {
             get
@@ -32,9 +32,9 @@ namespace OpenFMB.Adapters.Configuration
         private void LoadData(IPlugin plugin)
         {
             if (plugin != null)
-            {                
-                headerLabel.Text = plugin.Name.ToUpper();               
-                capturePluginBindingSource.DataSource = plugin;                
+            {
+                headerLabel.Text = plugin.Name.ToUpper();
+                capturePluginBindingSource.DataSource = plugin;
             }
         }
 

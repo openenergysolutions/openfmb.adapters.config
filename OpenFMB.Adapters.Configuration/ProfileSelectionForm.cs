@@ -23,6 +23,12 @@ namespace OpenFMB.Adapters.Configuration
 
         }
 
+        public ProfileSelectionForm(string edition, bool selectableEdition = false) : this()
+        {
+            profileSelectionControl.SelectedEdition = edition;
+            profileSelectionControl.SelectableEdition = selectableEdition;
+        }
+
         private void OkButton_Click(object sender, EventArgs e)
         {
             DialogResult = DialogResult.OK;

@@ -22,29 +22,35 @@ namespace OpenFMB.Adapters.Configuration
         {
             treeView.Nodes.Clear();
 
-            EnvironmentOptionControl env = new EnvironmentOptionControl();
-            env.Dock = DockStyle.Fill;
+            EnvironmentOptionControl env = new EnvironmentOptionControl
+            {
+                Dock = DockStyle.Fill
+            };
             placeHolder.Controls.Add(env);
             _optionControls.Add(env);
-                       
+
             // Json parsor
-            TreeNode environmentNode = new TreeNode("Environment");            
+            TreeNode environmentNode = new TreeNode("Environment");
             TreeNode jGeneral = new TreeNode("General");
             environmentNode.Tag = env;
             jGeneral.Tag = env;
             environmentNode.Nodes.Add(jGeneral);
 
-            ProfileOptionControl profileOptions = new ProfileOptionControl();
-            profileOptions.Dock = DockStyle.Fill;
+            ProfileOptionControl profileOptions = new ProfileOptionControl
+            {
+                Dock = DockStyle.Fill
+            };
             placeHolder.Controls.Add(profileOptions);
             _optionControls.Add(profileOptions);
 
-            TreeNode openFMBNode = new TreeNode("OpenFMB");
-            openFMBNode.Tag = profileOptions;
+            TreeNode openFMBNode = new TreeNode("OpenFMB")
+            {
+                Tag = profileOptions
+            };
             environmentNode.Nodes.Add(openFMBNode);
 
             treeView.Nodes.Add(environmentNode);
-            treeView.SelectedNode = environmentNode;                        
+            treeView.SelectedNode = environmentNode;
 
             treeView.ExpandAll();
 
@@ -71,7 +77,7 @@ namespace OpenFMB.Adapters.Configuration
         {
             DialogResult = DialogResult.OK;
 
-            foreach(var c in _optionControls)
+            foreach (var c in _optionControls)
             {
                 c.Save();
             }

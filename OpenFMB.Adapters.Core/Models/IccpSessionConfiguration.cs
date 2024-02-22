@@ -23,12 +23,12 @@ namespace OpenFMB.Adapters.Core.Models
                 {
                     if (PluginName == PluginsSection.IccpClient)
                     {
-                        _sessionSpecific = new IccpClientSpecificConfig();
+                        _sessionSpecific = new IccpClientSpecificConfig(Edition);
                         _sessionSpecific.PropertyChanged += OnPropertyChanged;
                     }
                     else
                     {
-                        _sessionSpecific = new IccpServerSpecificConfig();
+                        _sessionSpecific = new IccpServerSpecificConfig(Edition);
                         _sessionSpecific.PropertyChanged += OnPropertyChanged;
                     }
                 }
@@ -36,9 +36,10 @@ namespace OpenFMB.Adapters.Core.Models
             }
         }
 
-        public IccpSessionConfiguration(string pluginName)
+        public IccpSessionConfiguration(string pluginName, string edition)
         {
             PluginName = pluginName;
+            Edition = edition;
         }
 
         protected override void LoadSessionConfigurationFromJson(string json)
@@ -123,7 +124,7 @@ namespace OpenFMB.Adapters.Core.Models
         private int autoReconnectTries = 0;
         private int autoReconnectWaitTimeMs = 1000;
 
-        public IccpClientSpecificConfig()
+        public IccpClientSpecificConfig(string edition) : base(edition)
         {
             PlugIn = PluginsSection.IccpClient;
         }
@@ -161,7 +162,7 @@ namespace OpenFMB.Adapters.Core.Models
 
         [Browsable(false)]
         [JsonProperty("client-specific")]
-        public IcppAddressing ClientAddress { get; set; } = new IcppAddressing();                
+        public IcppAddressing ClientAddress { get; set; } = new IcppAddressing();
 
         [Category("Client Specific"), DisplayName("AE Invoke ID"), Description("ACSE AE Invoke ID")]
         [JsonIgnore]
@@ -369,8 +370,9 @@ namespace OpenFMB.Adapters.Core.Models
         private string name = "service1";
         private string serverIp = "127.0.0.1";
         private int serverPort = 102;
+        private string serverFilePath = "server-model.csv";
 
-        public IccpServerSpecificConfig()
+        public IccpServerSpecificConfig(string edition) : base(edition)
         {
             PlugIn = PluginsSection.IccpServer;
         }
@@ -391,6 +393,10 @@ namespace OpenFMB.Adapters.Core.Models
         [Category("Basic"), DisplayName("Server TCP Port"), Description("The TCP port number.  Default port is 102")]
         [JsonProperty("server-port")]
         public int ServerPort { get => serverPort; set { serverPort = value; NotifyPropertyChanged(); } }
+
+        [Category("Basic"), DisplayName("Server Model File"), Description("Path to file described server's model")]
+        [JsonProperty("server-file-path")]
+        public string ServerFilePath { get => serverFilePath; set { serverFilePath = value; NotifyPropertyChanged(); } }
 
         // server specific
 

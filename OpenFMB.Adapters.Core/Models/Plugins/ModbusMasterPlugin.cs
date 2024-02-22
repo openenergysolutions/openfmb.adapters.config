@@ -5,7 +5,7 @@
 namespace OpenFMB.Adapters.Core.Models.Plugins
 {
     public class ModbusMasterPlugin : BaseSessionablePlugin, IYamlNode, ISessionable
-    {       
+    {
         public override string Name => PluginsSection.ModbusMaster;
 
         public override string SessionTagName => "sessions";

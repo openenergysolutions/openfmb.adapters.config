@@ -11,17 +11,20 @@ namespace OpenFMB.Adapters.Core
     {
         private static YamlMappingNode CreateDefaultLoggingConfig()
         {
-            var node = new YamlMappingNode();
+            var node = new YamlMappingNode
+            {
+                { "logger-name", "application" },
+                { "console", new YamlMappingNode(new YamlScalarNode("enabled"), new YamlScalarNode("true")) },
 
-            node.Add("logger-name", "application");
-            node.Add("console", new YamlMappingNode(new YamlScalarNode("enabled"), new YamlScalarNode("true")));
-
-            node.Add("rotating-file", new YamlMappingNode(
+                {
+                    "rotating-file",
+                    new YamlMappingNode(
                 new YamlScalarNode("enabled"), new YamlScalarNode("false"),
                 new YamlScalarNode("path"), new YamlScalarNode("adapter.log"),
                 new YamlScalarNode("max-size"), new YamlScalarNode("1048576"),
                 new YamlScalarNode("max-files"), new YamlScalarNode("3"))
-            );
+                }
+            };
 
             return node;
         }
@@ -53,13 +56,18 @@ namespace OpenFMB.Adapters.Core
 
         private static YamlMappingNode CreateGoosePluginNode()
         {
-            var node = new YamlMappingNode();
-            node.Add("enabled", "false");
-            node.Add("goCb", new YamlSequenceNode(
+            var node = new YamlMappingNode
+            {
+                { "enabled", "false" },
+                {
+                    "goCb",
+                    new YamlSequenceNode(
                 new YamlMappingNode(
                     new YamlScalarNode("path"), new YamlScalarNode("goCb-template.yaml"),
                     new YamlScalarNode("overrides"), new YamlSequenceNode(
-                        new YamlScalarNode("a.b.c = 4")))));
+                        new YamlScalarNode("a.b.c = 4"))))
+                }
+            };
             return node;
         }
 
@@ -83,17 +91,22 @@ namespace OpenFMB.Adapters.Core
 
         private static YamlMappingNode CreateNatsPluginNode()
         {
-            var node = new YamlMappingNode();
-            node.Add("enabled", "false");
-            node.Add("max-queued-messages", "100");
-            node.Add("connect-url", "nats://localhost:4222");
-            node.Add("connect-retry-seconds", "5");
+            var node = new YamlMappingNode
+            {
+                { "enabled", "false" },
+                { "max-queued-messages", "100" },
+                { "connect-url", "nats://localhost:4222" },
+                { "connect-retry-seconds", "5" },
 
-            node.Add("security", new YamlMappingNode(
-                new YamlScalarNode("security-type"), new YamlScalarNode("none"),
-                new YamlScalarNode("ca-trusted-cert-file"), new YamlScalarNode("cert.pem"),
-                new YamlScalarNode("client-private-key-file"), new YamlScalarNode("client_key.pem"),
-                new YamlScalarNode("client-cert-chain-file"), new YamlScalarNode("client_cert.pem")));
+                {
+                    "security",
+                    new YamlMappingNode(
+                        new YamlScalarNode("security-type"), new YamlScalarNode("none"),
+                        new YamlScalarNode("ca-trusted-cert-file"), new YamlScalarNode("cert.pem"),
+                        new YamlScalarNode("client-private-key-file"), new YamlScalarNode("client_key.pem"),
+                        new YamlScalarNode("client-cert-chain-file"), new YamlScalarNode("client_cert.pem"))
+                }
+            };
 
             var publish = new YamlSequenceNode();
             node.Add("publish", publish);
@@ -117,50 +130,54 @@ namespace OpenFMB.Adapters.Core
 
         private static YamlMappingNode CreateTimescaleDbPluginNode()
         {
-            var node = new YamlMappingNode();
-            node.Add("enabled", "false");
-            node.Add("database-url", "postgresql://user:password@localhost:5432/dbname");
-            node.Add("store-measurement", "true");
-            node.Add("table-name", "data");
-            node.Add("store-raw-message", "false");
-            node.Add("raw-table-name", "raw_data");
-            node.Add("raw-data-format", "0");
-            node.Add("max-queued-messages", "100");
-            node.Add("connect-retry-seconds", "5");
+            var node = new YamlMappingNode
+            {
+                { "enabled", "false" },
+                { "database-url", "postgresql://user:password@localhost:5432/dbname" },
+                { "store-measurement", "true" },
+                { "table-name", "data" },
+                { "store-raw-message", "false" },
+                { "raw-table-name", "raw_data" },
+                { "raw-data-format", "0" },
+                { "max-queued-messages", "100" },
+                { "connect-retry-seconds", "5" },
+                { "data-store-interval-seconds", "0" }
+            };
 
             return node;
         }
 
         private static YamlMappingNode CreateDefaultPluginConfig()
         {
-            var node = new YamlMappingNode();
+            var node = new YamlMappingNode
+            {
+                // capture
+                { "capture", CreateCapturePluginNode() },
 
-            // capture
-            node.Add("capture", CreateCapturePluginNode());
+                // dnp3
+                { "dnp3", CreateDnp3PluginNode() },
 
-            // dnp3
-            node.Add("dnp3", CreateDnp3PluginNode());
+                // goose-pub
+                { "goose-pub", CreateGoosePluginNode() },
 
-            // goose-pub
-            node.Add("goose-pub", CreateGoosePluginNode());
+                // goose-sub
+                { "goose-sub", CreateGoosePluginNode() },
 
-            // goose-sub
-            node.Add("goose-sub", CreateGoosePluginNode());
+                // log
+                { "log", CreateLogPluginNode() },
 
-            // log
-            node.Add("log", CreateLogPluginNode());
+                // modbus
+                { "modbus", CreateModbusPluginNode() },
 
-            // modbus
-            node.Add("modbus", CreateModbusPluginNode());
+                // nats
+                { "nats", CreateNatsPluginNode() },
 
-            // nats
-            node.Add("nats", CreateNatsPluginNode());
+                // replay
+                { "replay", CreateReplayPluginNode() },
 
-            // replay
-            node.Add("replay", CreateReplayPluginNode());
-
-            // timescaledb
-            node.Add("timescaledb", CreateTimescaleDbPluginNode());
+                // timescaledb
+                { "timescaledb", CreateTimescaleDbPluginNode() }
+            };
 
             return node;
         }

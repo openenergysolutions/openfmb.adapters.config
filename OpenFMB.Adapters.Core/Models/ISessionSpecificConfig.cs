@@ -10,5 +10,7 @@ namespace OpenFMB.Adapters.Core.Models
     public interface ISessionSpecificConfig : INotifyPropertyChanged
     {
         void ToYaml(YamlMappingNode root);
+
+        void SetEdition(string edition);
     }
 }

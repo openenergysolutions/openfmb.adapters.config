@@ -12,10 +12,10 @@ using System.Windows.Forms;
 namespace OpenFMB.Adapters.Configuration
 {
     public partial class NavigatorGuidNode : BaseNavigatorNode, IDataNode, INavigatorNode
-    {  
+    {
         public NavigatorGuidNode()
         {
-            InitializeComponent();            
+            InitializeComponent();
         }
 
         public NavigatorGuidNode(Node node) : this()

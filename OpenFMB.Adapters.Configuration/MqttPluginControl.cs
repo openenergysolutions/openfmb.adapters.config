@@ -150,7 +150,7 @@ namespace OpenFMB.Adapters.Configuration
         {
             if (MessageBox.Show("Pub/Sub topics will be reset and populated.  Proceed?", Program.AppName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                ConfigurationManager.Instance.UpdatePubSubTopics(type:TransportPluginType.MQTT, reset:true);
+                ConfigurationManager.Instance.UpdatePubSubTopics(type: TransportPluginType.MQTT, reset: true);
                 LoadData(_plugin);
                 RaisePropertyChangedEvent(new System.ComponentModel.PropertyChangedEventArgs("mqttplugin"));
             }

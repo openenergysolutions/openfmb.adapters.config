@@ -16,7 +16,7 @@ namespace OpenFMB.Adapters.Core.Parsers
         private static readonly Regex CsvParser = new Regex(",(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))");
 
         public static bool IsConfiguredForType(SessionablePluginType type, string filePath)
-        {            
+        {
             using (var reader = new StreamReader(filePath))
             {
                 var headers = reader.ReadLine().Split(',');
@@ -41,7 +41,7 @@ namespace OpenFMB.Adapters.Core.Parsers
 
                 if (pluginName == PluginsSection.ModbusMaster)
                 {
-                    string line;                    
+                    string line;
 
                     while ((line = reader.ReadLine()) != null)
                     {
@@ -131,18 +131,10 @@ namespace OpenFMB.Adapters.Core.Parsers
             {
                 var profileName = rows[0].Path.Split('.')[0];
 
-                return Profile.Create(profileName, pluginName, rows);
+                return Profile.CreateWithCsv(profileName, pluginName, rows);
             }
 
             throw new Exception("Invalid template file.");
-        }
-
-        private static Type SetFieldTypeNode(Node node, string value = "mapped")
-        {
-            var property = node.GetType().GetProperty("Value");
-            var v = Enum.Parse(property.PropertyType, value);
-            property.SetValue(node, v);
-            return property.PropertyType;
         }
     }
 

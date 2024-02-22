@@ -13,7 +13,7 @@ namespace OpenFMB.Adapters.Core
 {
     [Serializable]
     public class FileInformation : IYamlNode
-    {       
+    {
         [JsonProperty("id")]
         [JsonConverter(typeof(StringEnumConverter))]
         public ConfigFileType Id { get; set; }
@@ -22,7 +22,7 @@ namespace OpenFMB.Adapters.Core
         public string Edition { get; set; } = string.Empty;
 
         [JsonProperty("version")]
-        public string Version { get; set; } = string.Empty;    
+        public string Version { get; set; } = string.Empty;
 
         [JsonProperty("plugin")]
         public string Plugin { get; set; } = string.Empty;
@@ -40,12 +40,12 @@ namespace OpenFMB.Adapters.Core
             }
 
             if (node.ContainsKey("edition"))
-            {                
-                Edition = (node["edition"] as YamlScalarNode).Value;                
+            {
+                Edition = (node["edition"] as YamlScalarNode).Value;
             }
 
             if (node.ContainsKey("version"))
-            {                
+            {
                 Version = (node["version"] as YamlScalarNode).Value;
             }
 
@@ -57,16 +57,16 @@ namespace OpenFMB.Adapters.Core
 
         public YamlNode ToYaml()
         {
-            var node = new YamlMappingNode();
-
-            node.Add("id", ConfigFileTypeString.ToString(Id));
-
-            var edition = string.IsNullOrWhiteSpace(Edition) ? SchemaManager.DefaultVersion : Edition;
+            var edition = string.IsNullOrWhiteSpace(Edition) ? SchemaManager.DefaultEdition : Edition;
             var version = string.IsNullOrWhiteSpace(Version) ? ConfigurationManager.Version : Version;
 
-            node.Add("edition", edition);
-            node.Add("version", version);
-            node.Add("plugin", Plugin);
+            var node = new YamlMappingNode
+            {
+                { "id", ConfigFileTypeString.ToString(Id) },
+                { "edition", edition },
+                { "version", version },
+                { "plugin", Plugin }
+            };
 
             return node;
         }

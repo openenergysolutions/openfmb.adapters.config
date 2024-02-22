@@ -16,12 +16,13 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
         public const string ModbusMaster = "modbus-master";
         public const string ModbusOutstation = "modbus-outstation";
         public const string Log = "log";
-        public const string GoosePub = "goose-pub";
-        public const string GooseSub = "goose-sub";
+        public const string IEC61850Client = "IEC61850-client";
+        public const string IEC61850Server = "IEC61850-server";
         public const string IccpClient = "iccp-client";
         public const string IccpServer = "iccp-server";
         public const string Mqtt = "mqtt";
         public const string Nats = "nats";
+        public const string Zenoh = "zenoh";
         public const string TimescaleDB = "timescaledb";
 
         public static readonly List<string> ClientPlugins = new List<string>() { Dnp3Master, ModbusMaster, IccpClient };
@@ -40,9 +41,9 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
 
         //public LogPlugin LogPlugin { get; } = new LogPlugin();
 
-        public GoosePubPlugin GoosePubPlugin { get; } = new GoosePubPlugin();
+        public IEC61850ClientPlugin IEC61850ClientPlugin { get; } = new IEC61850ClientPlugin();
 
-        public GooseSubPlugin GooseSubPlugin { get; } = new GooseSubPlugin();
+        public IEC61850ServerPlugin IEC61850ServerPlugin { get; } = new IEC61850ServerPlugin();
 
         public IccpClientPlugin IccpClientPlugin { get; } = new IccpClientPlugin();
 
@@ -52,13 +53,14 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
 
         public MqttPlugin MqttPlugin { get; } = new MqttPlugin();
 
+        public ZenohPlugin ZenohPlugin { get; } = new ZenohPlugin();
+
         public TimescaleDBPlugin TimescaleDBPlugin { get; } = new TimescaleDBPlugin();
 
         public string Name => "plugins";
 
         [Newtonsoft.Json.JsonIgnore]
         public readonly IList<IPlugin> Plugins = new List<IPlugin>();
-       
 
         public PluginsSection()
         {
@@ -68,13 +70,24 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
             Plugins.Add(Dnp3SlavePlugin);
             Plugins.Add(ModbusMasterPlugin);
             Plugins.Add(ModbusOutstationPlugin);
-            //Plugins.Add(LogPlugin);
-            Plugins.Add(GoosePubPlugin);
-            Plugins.Add(GooseSubPlugin);
-            Plugins.Add(IccpClientPlugin);
-            Plugins.Add(IccpServerPlugin);
+
+            if (System.Configuration.ConfigurationManager.AppSettings["IEC61850Support"] == "True")
+            {
+                Plugins.Add(IEC61850ClientPlugin);
+                Plugins.Add(IEC61850ServerPlugin);
+            }
+            if (System.Configuration.ConfigurationManager.AppSettings["ICCPSupport"] == "True")
+            {
+                Plugins.Add(IccpClientPlugin);
+                Plugins.Add(IccpServerPlugin);
+            }
             Plugins.Add(MqttPlugin);
             Plugins.Add(NatsPlugin);
+
+            if (System.Configuration.ConfigurationManager.AppSettings["ZenohSupport"] == "True")
+            {
+                Plugins.Add(ZenohPlugin);
+            }
             Plugins.Add(TimescaleDBPlugin);
         }
 
@@ -83,19 +96,19 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
         {
             var node = new YamlMappingNode();
 
-            foreach(var p in Plugins)
+            foreach (var p in Plugins)
             {
                 node.Add(p.Name, p.ToYaml());
-            }           
+            }
 
             return node;
-        }       
+        }
 
         public void FromYaml(YamlNode yamlNode)
         {
             YamlMappingNode node = yamlNode as YamlMappingNode;
 
-            foreach(var p in Plugins)
+            foreach (var p in Plugins)
             {
                 if (p.Name == ModbusMaster)
                 {
@@ -126,7 +139,7 @@ namespace OpenFMB.Adapters.Core.Models.Plugins
                         p.FromYaml(node[p.Name]);
                     }
                 }
-            }                         
+            }
         }
 
         public static bool IsClientPlugin(string pluginName)

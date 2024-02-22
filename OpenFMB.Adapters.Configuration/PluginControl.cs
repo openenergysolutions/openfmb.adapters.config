@@ -33,20 +33,22 @@ namespace OpenFMB.Adapters.Configuration
         {
             InitializeComponent();
 
-            _bindingSource = new BindingSource();            
-            _bindingSource.DataSource = null;
+            _bindingSource = new BindingSource
+            {
+                DataSource = null
+            };
         }
 
         private void LoadData(IPlugin plugin)
-        {                        
+        {
             if (plugin != null)
             {
                 // !important:  The orders here are crucial.  Set datasource first, then do the binding
                 headerLabel.Text = plugin.Name.ToUpper();
                 _bindingSource.DataSource = plugin;
                 enableCheckBox.DataBindings.Clear();
-                enableCheckBox.DataBindings.Add(new Binding("Checked", _bindingSource, "Enabled", true, DataSourceUpdateMode.OnPropertyChanged));                
-            }            
+                enableCheckBox.DataBindings.Add(new Binding("Checked", _bindingSource, "Enabled", true, DataSourceUpdateMode.OnPropertyChanged));
+            }
         }
 
         private void PluginBindingSource_CurrentItemChanged(object sender, System.EventArgs e)

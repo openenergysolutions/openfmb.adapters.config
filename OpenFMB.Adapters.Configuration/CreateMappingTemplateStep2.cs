@@ -2,12 +2,12 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 
+using OpenFMB.Adapters.Core;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Windows.Forms;
-using OpenFMB.Adapters.Core;
 
 namespace OpenFMB.Adapters.Configuration
 {
@@ -33,7 +33,7 @@ namespace OpenFMB.Adapters.Configuration
         public List<Data> SelectedData
         {
             get
-            {                
+            {
                 if (_datasource != null)
                 {
                     return _datasource.Where(x => x.Selected).ToList();
@@ -44,7 +44,7 @@ namespace OpenFMB.Adapters.Configuration
 
         public CreateMappingTemplateStep2()
         {
-            InitializeComponent();           
+            InitializeComponent();
         }
 
         private void LoadGrid()
