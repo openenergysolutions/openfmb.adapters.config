@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>2.1.0</Version>
+    <Version>2.2.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -90,7 +90,7 @@
   <ItemGroup>
     <PackageReference Include="Google.Protobuf" Version="3.21.9" />
     <PackageReference Include="Newtonsoft.Json.Schema" Version="3.0.14" />
-    <PackageReference Include="OpenFMB.NET" Version="2.2.0-alpha" />
+    <PackageReference Include="OpenFMB.NET" Version="2.2.1-alpha" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
     <PackageReference Include="YamlDotNet" Version="12.0.2" />
   </ItemGroup>
